@@ -18,20 +18,6 @@
       }
     },
     {
-      "slug": "watch_officer",
-      "title_ru": "Watch Officer",
-      "title_en": "Watch Officer",
-      "description_ru": "Локальный 2D greybox-прототип решений вахтенного помощника: безопасная вода, один встречный сценарий трафика, AIS-вектор и черновая оценка результата.",
-      "hub_note_ru": "Стадированный Web-кандидат: prototype/draft, не финальный учебный продукт и не навигационная инструкция.",
-      "status": "prototype",
-      "stage_ru": "Прототип / draft",
-      "entry_route": "/games/watch-officer",
-      "launch_route": "/play/watch-officer/",
-      "review_status": "draft_not_final_training_content",
-      "icon": "watch",
-      "navdesk_card": null
-    },
-    {
       "slug": "wind_rider",
       "title_ru": "Оседлавший ветер",
       "title_en": "Wind Rider",

@@ -1,16 +1,38 @@
 # game.brkovic.ltd
 
-Standalone maritime learning game platform for `https://game.brkovic.ltd`.
+Standalone Captain Ether maritime learning game platform for
+`https://game.brkovic.ltd`.
 
-First game:
+Current game:
 
 - `captain_ether` — `Капитан — Эфир`, a Sea Speak / maritime radio communication trainer.
 
-Second product in pre-production:
-
-- `watch_officer` — `Watch Officer`, a short-session maritime decision simulator for watchkeeping, buoyage, COLREGS, AIS and VHF/VTS decisions.
-
 The main `brkovic.ltd` / Nav Desk project should only link to this app.
+
+## Repository Sync Rule
+
+This repository is the canonical GitHub mirror for Captain Ether material and
+the Captain Ether PWA/site shell.
+
+Sync into this repository:
+
+- Captain Ether content, batches, roles, reports, tools, QA material, and docs;
+- Captain Ether public PWA/site files under `public/`;
+- shared platform glue required for Captain Ether to run locally;
+- examples such as `private/config.example.php`.
+
+Never sync into this repository:
+
+- `private/config.php`;
+- runtime storage data, users, sessions, login codes, progress, locks, logs;
+- `.env`, keys, certificates, database dumps, cookies, CSRF values, player
+  email, or player identity data;
+- Watch Officer docs, prototypes, exports, public build artifacts, tasks, or
+  game registry entries;
+- unrelated `brkovic-ltd` website/Nav Desk/service files.
+
+Every future push to `git@github.com:vetus-nauta/captain-ether.git` must use
+this filter. GitHub sync is not production deploy.
 
 ## Current Handoff
 
@@ -82,9 +104,8 @@ This first MVP uses a small server-side JSON store so the platform can run on or
 The public root is a game selection hub. Individual games use app routes such as:
 
 - `/games/captain-ether`
-- `/games/watch-officer`
 
-Only `captain_ether` is playable now. `watch_officer` is registered as a pre-production product card and should not receive gameplay code before the Game Director/project-office stage is approved.
+Only `captain_ether` is in scope for this repository.
 
 Planned migration targets:
 

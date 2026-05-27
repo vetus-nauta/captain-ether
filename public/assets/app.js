@@ -49,7 +49,6 @@ const I18N = {
     'notFound.title': 'This game is not in the registry',
     'notFound.copy': 'Path {path} does not match entry_route in the game registry.',
     'nav.games': 'Game selection',
-    'brief.watchOfficerCopy': 'Watch Officer is currently open as a staged prototype candidate: draft/non-final training content, not navigation instruction and not final training.',
     'brief.status': 'Status',
     'brief.route': 'Route',
     'brief.prototype': 'Prototype',
@@ -168,12 +167,6 @@ const GAME_COPY = {
       hub_note: 'Active Nav Desk game for Sea Speak, VHF, and working radio phrases.',
       stage: 'Available',
     },
-    watch_officer: {
-      title: 'Watch Officer',
-      description: 'Local 2D greybox prototype for watchkeeping decisions: safe water, one crossing traffic scenario, AIS vector, and draft outcome scoring.',
-      hub_note: 'Staged web candidate: prototype/draft, not final training content and not navigation instruction.',
-      stage: 'Prototype / draft',
-    },
     wind_rider: {
       title: 'Wind Rider',
       description: 'Sails, wind, sail physics, and helm control.',
@@ -192,12 +185,6 @@ const GAME_COPY = {
       hub_note: 'Активная игра Nav Desk для Sea Speak, УКВ и рабочих фраз радиообмена.',
       stage: 'Доступно',
     },
-    watch_officer: {
-      title: 'Watch Officer',
-      description: 'Локальный 2D greybox-прототип решений вахтенного помощника: безопасная вода, один встречный сценарий трафика, AIS-вектор и черновая оценка результата.',
-      hub_note: 'Стадированный Web-кандидат: prototype/draft, не финальный учебный продукт и не навигационная инструкция.',
-      stage: 'Прототип / draft',
-    },
     wind_rider: {
       title: 'Оседлавший ветер',
       description: 'Паруса, ветер, физика паруса и управление.',
@@ -211,31 +198,26 @@ const GAME_COPY = {
   },
   de: {
     captain_ether: { title: 'Captain Ether', description: 'Maritimes Funkverkehr-Trainingsspiel.', hub_note: 'Aktives Nav-Desk-Spiel für Sea Speak, UKW und Arbeitsphrasen im Funk.', stage: 'Verfügbar' },
-    watch_officer: { title: 'Watch Officer', description: 'Lokaler 2D-Greybox-Prototyp für Wachentscheidungen: sicheres Wasser, eine Verkehrssituation, AIS-Vektor und Entwurfswertung.', hub_note: 'Gestaffelter Web-Kandidat: Prototyp/Draft, kein finales Training und keine Navigationsanweisung.', stage: 'Prototyp / Draft' },
     wind_rider: { title: 'Wind Rider', description: 'Segel, Wind, Segelphysik und Steuerung.', stage: 'Geplant' },
     mystic_boatswain: { title: 'Mystic Boatswain', description: 'Namen von Teilen, Räumen, Ausrüstung und Beschlägen auf Yachten und Schiffen.', stage: 'Geplant' },
   },
   it: {
     captain_ether: { title: 'Captain Ether', description: 'Gioco di training per comunicazioni radio marittime.', hub_note: 'Gioco Nav Desk attivo per Sea Speak, VHF e frasi operative radio.', stage: 'Disponibile' },
-    watch_officer: { title: 'Watch Officer', description: 'Prototipo greybox 2D locale per decisioni di guardia: acqua sicura, uno scenario traffico, vettore AIS e valutazione bozza.', hub_note: 'Candidato web staged: prototipo/draft, non contenuto formativo finale e non istruzione di navigazione.', stage: 'Prototipo / draft' },
     wind_rider: { title: 'Wind Rider', description: 'Vele, vento, fisica della vela e governo.', stage: 'Pianificato' },
     mystic_boatswain: { title: 'Mystic Boatswain', description: 'Nomi di parti, locali, attrezzature e accessori di yacht e navi.', stage: 'Pianificato' },
   },
   es: {
     captain_ether: { title: 'Captain Ether', description: 'Juego de entrenamiento de comunicación radio marítima.', hub_note: 'Juego activo de Nav Desk para Sea Speak, VHF y frases operativas de radio.', stage: 'Disponible' },
-    watch_officer: { title: 'Watch Officer', description: 'Prototipo greybox 2D local para decisiones de guardia: agua segura, un escenario de tráfico, vector AIS y evaluación borrador.', hub_note: 'Candidato web staged: prototipo/borrador, no contenido final de entrenamiento ni instrucción de navegación.', stage: 'Prototipo / borrador' },
     wind_rider: { title: 'Wind Rider', description: 'Velas, viento, física de vela y gobierno.', stage: 'Planificado' },
     mystic_boatswain: { title: 'Mystic Boatswain', description: 'Nombres de partes, espacios, equipos y herrajes de yates y buques.', stage: 'Planificado' },
   },
   sr: {
     captain_ether: { title: 'Captain Ether', description: 'Pomorska igra za trening radio-komunikacije.', hub_note: 'Aktivna Nav Desk igra za Sea Speak, VHF i radne radio fraze.', stage: 'Dostupno' },
-    watch_officer: { title: 'Watch Officer', description: 'Lokalni 2D greybox prototip odluka na straži: sigurna voda, jedan scenario saobraćaja, AIS vektor i nacrt ocene.', hub_note: 'Staged web kandidat: prototip/draft, nije finalni trening i nije navigaciona instrukcija.', stage: 'Prototip / draft' },
     wind_rider: { title: 'Wind Rider', description: 'Jedra, vetar, fizika jedra i upravljanje.', stage: 'Planirano' },
     mystic_boatswain: { title: 'Mystic Boatswain', description: 'Nazivi delova, prostora, opreme i okova na jahtama i brodovima.', stage: 'Planirano' },
   },
   zh: {
     captain_ether: { title: 'Captain Ether', description: '海事无线电通信训练游戏。', hub_note: '用于 Sea Speak、VHF 和工作无线电短语的 Nav Desk 活跃游戏。', stage: '可用' },
-    watch_officer: { title: 'Watch Officer', description: '值班决策的本地 2D greybox 原型：安全水域、一个会遇交通场景、AIS 向量和草稿评分。', hub_note: '分阶段 Web 候选：原型/草稿，不是最终训练内容，也不是航行指令。', stage: '原型 / 草稿' },
     wind_rider: { title: 'Wind Rider', description: '帆、风、帆的物理和操控。', stage: '已计划' },
     mystic_boatswain: { title: 'Mystic Boatswain', description: '游艇和船舶的部件、舱室、设备和属具名称。', stage: '已计划' },
   },
@@ -279,7 +261,6 @@ I18N.ru = {
   'notFound.title': 'Такой игры нет в реестре',
   'notFound.copy': 'Путь {path} не совпадает с entry_route в игровом реестре.',
   'nav.games': 'К выбору игр',
-  'brief.watchOfficerCopy': 'Watch Officer сейчас открыт как staged prototype candidate: draft/non-final training content, не навигационная инструкция и не финальное обучение.',
   'brief.status': 'Статус',
   'brief.route': 'Маршрут',
   'brief.prototype': 'Прототип',
@@ -749,7 +730,6 @@ function renderNotFoundRoute(path) {
 
 function renderGameBrief(game) {
   const status = gameStatusCopy(game);
-  const isWatchOfficer = game.slug === 'watch_officer';
   const launchRoute = game.launch_route || '';
   app.innerHTML = html`
     ${languageReminderMarkup()}
@@ -758,9 +738,6 @@ function renderGameBrief(game) {
       <h1>${escapeHtml(localGameField(game, 'title'))}</h1>
       <p class="muted">${escapeHtml(localGameField(game, 'description'))}</p>
       ${localGameField(game, 'hub_note') ? `<p class="muted">${escapeHtml(localGameField(game, 'hub_note'))}</p>` : ''}
-      ${isWatchOfficer ? html`
-        <p class="muted">${escapeHtml(t('brief.watchOfficerCopy'))}</p>
-      ` : ''}
       <div class="stat-grid product-brief__meta">
         <div class="stat-card"><small>${escapeHtml(t('brief.status'))}</small><strong>${escapeHtml(status.label)}</strong></div>
         <div class="stat-card"><small>${escapeHtml(t('brief.route'))}</small><strong>${escapeHtml(game.entry_route || '/')}</strong></div>
