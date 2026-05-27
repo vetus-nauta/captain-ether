@@ -1,0 +1,16 @@
+{
+  "id": "/captain-ether/",
+  "name": "Captain Ether",
+  "short_name": "Captain Ether",
+  "description": "Captain Ether is a brkovic web game project.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/captain-ether/",
+  "scope": "/captain-ether/",
+  "display": "standalone",
+  "orientation": "landscape-primary",
+  "background_color": "#101826",
+  "theme_color": "#101826",
+  "categories": ["games", "entertainment"]
+}
+
