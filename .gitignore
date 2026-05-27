@@ -5,4 +5,6 @@ build/
 .env
 .env.*
 *.log
-
+private/config.php
+storage/*
+!storage/.gitkeep

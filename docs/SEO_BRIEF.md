@@ -1,26 +1,32 @@
-# SEO Brief: Captain Ether
+# SEO Brief: Captain Ether / game.brkovic.ltd
 
 Date: 2026-05-27
 
 Project: `captain-ether`
 
-Domain slot: `game.brkovic.ltd/captain-ether/`
+Domain: `game.brkovic.ltd`
 
 ## Role
 
-Captain Ether is a public game discovery page and future playable game surface.
+This repository currently contains the public `game.brkovic.ltd` maritime game hub.
+
+Captain Ether is the active Sea Speak / maritime radio training game. Watch Officer is present as a prototype / draft product card and staged playable artifact.
 
 ## Search Intent
 
-- Captain Ether
-- web game
-- browser game
-- brkovic game
-- game universe / devlog
+- Captain Ether;
+- Sea Speak training;
+- maritime radio game;
+- Watch Officer;
+- maritime decision simulator;
+- browser maritime games;
+- brkovic game hub.
 
 ## Public Indexable Surface
 
-- game landing page;
+- `/`;
+- `/games/captain-ether`;
+- `/games/watch-officer` only with visible prototype/draft status;
 - screenshots and trailer when real assets exist;
 - gameplay description;
 - devlog / release notes;
@@ -28,15 +34,19 @@ Captain Ether is a public game discovery page and future playable game surface.
 
 ## Private / Noindex Surface
 
+- `/api/`;
 - admin tools;
+- accounts and sessions;
 - private test builds;
-- accounts;
-- internal APIs;
-- storage and raw debug logs.
+- `private/`;
+- `storage/`;
+- raw debug logs.
 
 ## Current Status
 
-Starter SEO/PWA shell only. Real gameplay content is not implemented in this repository yet.
+Repository content is attached. SEO/PWA shell has been connected without replacing the existing app.
+
+Important: do not index Watch Officer as final training. It must remain clearly marked as prototype/draft until the game office approves final content.
 
 ## Shared Rules
 
@@ -44,4 +54,3 @@ Read:
 
 - `/home/alexey/GitHub/BRKOVIC_SEO_OFFICE/00_START_HERE.md`
 - `/home/alexey/GitHub/BRKOVIC_SEO_OFFICE/projects/game.brkovic.ltd/SEO_BRIEF.md`
-
