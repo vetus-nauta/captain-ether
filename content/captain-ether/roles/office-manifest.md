@@ -34,6 +34,39 @@ Every role folder must contain:
 - `tasks/README.md`
 - `reports/README.md`
 
+## Start-of-Day Protocol
+
+Use this sequence at each new day start:
+
+1. Select the active Captain Ether repository:
+   `cd /tmp/captain-ether-export`
+
+2. Verify clean local state and remote alignment:
+   `git status --short --branch`
+
+3. Sync with remote origin:
+   `git fetch origin`
+   `git pull --ff-only origin main`
+
+4. Read mandatory startup docs:
+   - `docs/game-director/task-registry.md`
+   - `content/captain-ether/roles/README.md`
+   - latest handoff in `content/captain-ether/captain-ether-handoff-YYYY-MM-DD.md`
+
+5. Resolve outstanding gates:
+   - continue `NEEDS DIRECTOR DECISION` items first
+   - then clear `FAIL` items with a valid updated contract path
+
+6. Assign next work:
+   - if blocked: dispatch one explicit role-task
+   - if clear: assign one narrow implementation slice
+
+7. End-of-day hygiene:
+   - each change set must be in allowed files
+   - commit + push after meaningful progress
+
+If step 1 is not `/tmp/captain-ether-export`, stop and switch repository before doing any role change.
+
 Role task files go under:
 
 ```text
