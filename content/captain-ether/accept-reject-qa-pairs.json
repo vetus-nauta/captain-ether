@@ -4949,12 +4949,12 @@
       "should_accept": [
         "assistance",
         "ASSISTANCE",
-        "assistance."
+        "assistance.",
+        "help"
       ],
       "should_reject": [
         "advice",
-        "rescue",
-        "help"
+        "rescue"
       ]
     },
     {

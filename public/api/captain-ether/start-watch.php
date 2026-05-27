@@ -79,10 +79,98 @@ function captain_filter_error(string $error, string $reason, int $status = 400):
 }
 
 function captain_focused_branch_enabled(string $branch, string $level): bool {
-    if (in_array($branch, ['core_radio', 'marina_harbour', 'navigation_reports'], true)) {
+    if (in_array($branch, ['core_radio', 'marina_harbour'], true)) {
         return true;
     }
-    return $branch === 'safety_securite' && in_array($level, ['intermediate', 'advanced'], true);
+    return in_array($branch, ['navigation_reports', 'safety_securite'], true)
+        && in_array($level, ['intermediate', 'advanced'], true);
+}
+
+function captain_type_floor(int $watchLength): array {
+    if ($watchLength === 20) {
+        return ['word' => 6, 'short_expression' => 6, 'phrase' => 8];
+    }
+    if ($watchLength === 16) {
+        return ['word' => 4, 'short_expression' => 5, 'phrase' => 7];
+    }
+    return ['word' => 3, 'short_expression' => 3, 'phrase' => 6];
+}
+
+function captain_item_type(array $item): string {
+    $type = (string) ($item['type'] ?? 'phrase');
+    return in_array($type, ['word', 'short_expression', 'phrase'], true) ? $type : 'phrase';
+}
+
+function captain_type_count(array $items, string $type): int {
+    return count(array_filter($items, static fn($item) => captain_item_type($item) === $type));
+}
+
+function captain_meets_type_floor(array $items, int $watchLength): bool {
+    $counts = ['word' => 0, 'short_expression' => 0, 'phrase' => 0];
+    foreach ($items as $item) {
+        $counts[captain_item_type($item)]++;
+    }
+
+    foreach (captain_type_floor($watchLength) as $type => $floor) {
+        if ($counts[$type] < $floor) return false;
+    }
+    return true;
+}
+
+function captain_normalize_weak_set(array $weakItemIds): array {
+    return array_fill_keys(array_map(static fn($id): string => (string) $id, $weakItemIds), true);
+}
+
+function captain_weak_selected_count(array $selected, array $weakItemIds): int {
+    $weakSet = captain_normalize_weak_set($weakItemIds);
+    return count(array_filter($selected, static fn($selectedItem) => isset($weakSet[(string) ($selectedItem['id'] ?? '')])));
+}
+
+function captain_weak_pool(array $byId, array $weakItemIds, ?string $branch = null, bool $sameBranch = true): array {
+    $pool = [];
+    foreach ($weakItemIds as $weakItemId) {
+        if (!isset($byId[$weakItemId])) continue;
+        if ($branch !== null) {
+            $matchesBranch = ($byId[$weakItemId]['branch'] ?? '') === $branch;
+            if ($sameBranch !== $matchesBranch) continue;
+        }
+        $pool[] = $byId[$weakItemId];
+    }
+    return $pool;
+}
+
+function captain_pool_by_branch(array $byId, array $selected, array $weakSet, ?string $branch = null, ?bool $sameBranch = null, ?string $type = null): array {
+    return array_values(array_filter($byId, static function ($item) use ($selected, $weakSet, $branch, $sameBranch, $type) {
+        $id = (string) ($item['id'] ?? '');
+        if ($id === '' || isset($selected[$id]) || isset($weakSet[$id])) return false;
+        if ($type !== null && captain_item_type($item) !== $type) return false;
+        if ($branch === null || $sameBranch === null) return true;
+        return $sameBranch ? (($item['branch'] ?? '') === $branch) : (($item['branch'] ?? '') !== $branch);
+    }));
+}
+
+function captain_selected_branch_count(array $selected, string $branch): int {
+    return count(array_filter($selected, static fn($item) => ($item['branch'] ?? '') === $branch));
+}
+
+function captain_selected_review_count(array $selected, string $branch): int {
+    return count($selected) - captain_selected_branch_count($selected, $branch);
+}
+
+function captain_add_candidates(array &$selected, array $pool, int $limit, string $level): void {
+    foreach (captain_selection_pool($pool, $level) as $item) {
+        if (count($selected) >= $limit) break;
+        $selected[(string) $item['id']] = $item;
+    }
+}
+
+function captain_select_limited_weak_items(array $byId, array $weakItemIds, int $weakQuota, string $level, ?string $branch = null, bool $sameBranch = true): array {
+    $selected = [];
+    foreach (captain_selection_pool(captain_weak_pool($byId, $weakItemIds, $branch, $sameBranch), $level) as $item) {
+        if (count($selected) >= $weakQuota) break;
+        $selected[(string) $item['id']] = $item;
+    }
+    return $selected;
 }
 
 function captain_selection_pool(array $items, string $level): array {
@@ -108,24 +196,13 @@ function captain_select_watch_items(array $items, array $weakItemIds, int $watch
         }
     }
 
-    $selected = [];
-    $weakPool = [];
-    foreach ($weakItemIds as $weakItemId) {
-        if (isset($byId[$weakItemId])) {
-            $weakPool[] = $byId[$weakItemId];
-        }
-    }
-
-    foreach (captain_selection_pool($weakPool, $level) as $item) {
-        if (count($selected) >= captain_weak_item_quota($watchLength)) {
-            break;
-        }
-        $selected[(string) $item['id']] = $item;
-    }
+    $selected = captain_select_limited_weak_items($byId, $weakItemIds, captain_weak_item_quota($watchLength), $level);
+    $weakSet = captain_normalize_weak_set($weakItemIds);
 
     $groups = ['word' => [], 'short_expression' => [], 'phrase' => []];
     foreach ($byId as $id => $item) {
         if (isset($selected[$id])) continue;
+        if (isset($weakSet[$id])) continue;
         $type = (string) ($item['type'] ?? 'phrase');
         if (!isset($groups[$type])) $type = 'phrase';
         $groups[$type][$id] = $item;
@@ -148,7 +225,7 @@ function captain_select_watch_items(array $items, array $weakItemIds, int $watch
     }
 
     $remaining = captain_selection_pool(
-        array_values(array_filter($byId, static fn($item) => !isset($selected[(string) $item['id']]))),
+        array_values(array_filter($byId, static fn($item) => !isset($selected[(string) $item['id']]) && !isset($weakSet[(string) $item['id']]))),
         $level
     );
     foreach ($remaining as $item) {
@@ -176,73 +253,76 @@ function captain_select_focused_branch_items(array $items, array $weakItemIds, i
     $focusQuota = captain_focus_quota($watchLength);
     $weakQuota = captain_weak_item_quota($watchLength);
     $selected = [];
+    $weakSet = captain_normalize_weak_set($weakItemIds);
 
-    $branchWeakPool = [];
-    foreach ($weakItemIds as $weakItemId) {
-        if (isset($byId[$weakItemId]) && ($byId[$weakItemId]['branch'] ?? '') === $branch) {
-            $branchWeakPool[] = $byId[$weakItemId];
+    $branchWeak = captain_select_limited_weak_items($byId, $weakItemIds, min($weakQuota, $focusQuota), $level, $branch);
+    foreach ($branchWeak as $id => $item) {
+        if (captain_selected_branch_count($selected, $branch) >= $focusQuota) break;
+        $selected[$id] = $item;
+    }
+
+    $reviewWeak = captain_select_limited_weak_items($byId, $weakItemIds, $weakQuota - count($selected), $level, $branch, false);
+    foreach ($reviewWeak as $id => $item) {
+        if (isset($selected[$id])) continue;
+        if (($item['branch'] ?? '') === $branch) continue;
+        if (captain_selected_review_count($selected, $branch) >= $watchLength - $focusQuota) break;
+        $selected[$id] = $item;
+    }
+
+    foreach (captain_type_floor($watchLength) as $type => $floor) {
+        while (captain_type_count(array_values($selected), $type) < $floor) {
+            $before = count($selected);
+            if (captain_selected_branch_count($selected, $branch) < $focusQuota) {
+                captain_add_candidates(
+                    $selected,
+                    captain_pool_by_branch($byId, $selected, $weakSet, $branch, true, $type),
+                    count($selected) + 1,
+                    $level
+                );
+            }
+            if ($before === count($selected) && captain_selected_review_count($selected, $branch) < $watchLength - $focusQuota) {
+                captain_add_candidates(
+                    $selected,
+                    captain_pool_by_branch($byId, $selected, $weakSet, $branch, false, $type),
+                    count($selected) + 1,
+                    $level
+                );
+            }
+            if ($before === count($selected)) {
+                return [];
+            }
         }
     }
 
-    foreach (captain_selection_pool($branchWeakPool, $level) as $item) {
-        if (count($selected) >= $weakQuota || count($selected) >= $focusQuota) {
-            break;
-        }
-        $selected[(string) $item['id']] = $item;
+    while (captain_selected_branch_count($selected, $branch) < $focusQuota) {
+        $before = count($selected);
+        captain_add_candidates(
+            $selected,
+            captain_pool_by_branch($byId, $selected, $weakSet, $branch, true),
+            count($selected) + 1,
+            $level
+        );
+        if ($before === count($selected)) return [];
     }
 
-    $branchPool = array_values(array_filter($byId, static function ($item) use ($branch, $selected) {
-        return ($item['branch'] ?? '') === $branch && !isset($selected[(string) $item['id']]);
-    }));
-
-    foreach (captain_selection_pool($branchPool, $level) as $item) {
-        if (count($selected) >= $focusQuota) {
-            break;
-        }
-        $selected[(string) $item['id']] = $item;
+    while (count($selected) < $watchLength) {
+        $before = count($selected);
+        captain_add_candidates(
+            $selected,
+            captain_pool_by_branch($byId, $selected, $weakSet, $branch, false),
+            count($selected) + 1,
+            $level
+        );
+        if ($before === count($selected)) return [];
     }
 
-    if (count($selected) < $focusQuota) {
-        return [];
-    }
-
-    $reviewQuota = $watchLength - count($selected);
-    $reviewSelected = [];
-    $crossBranchWeakPool = [];
-    foreach ($weakItemIds as $weakItemId) {
-        if (
-            isset($byId[$weakItemId])
-            && ($byId[$weakItemId]['branch'] ?? '') !== $branch
-            && !isset($selected[$weakItemId])
-        ) {
-            $crossBranchWeakPool[] = $byId[$weakItemId];
-        }
-    }
-
-    foreach (captain_selection_pool($crossBranchWeakPool, $level) as $item) {
-        $weakSelectedCount = count(array_filter($selected + $reviewSelected, static function ($selectedItem) use ($weakItemIds): bool {
-            return in_array((string) ($selectedItem['id'] ?? ''), $weakItemIds, true);
-        }));
-        if (count($reviewSelected) >= $reviewQuota || $weakSelectedCount >= $weakQuota) {
-            break;
-        }
-        $reviewSelected[(string) $item['id']] = $item;
-    }
-
-    $reviewPool = array_values(array_filter($byId, static function ($item) use ($selected, $reviewSelected) {
-        $id = (string) ($item['id'] ?? '');
-        return $id !== '' && !isset($selected[$id]) && !isset($reviewSelected[$id]);
-    }));
-
-    foreach (captain_selection_pool($reviewPool, $level) as $item) {
-        if (count($reviewSelected) >= $reviewQuota) {
-            break;
-        }
-        $reviewSelected[(string) $item['id']] = $item;
-    }
-
-    $result = array_values($selected + $reviewSelected);
-    if (count($result) !== $watchLength) {
+    $result = array_values($selected);
+    if (
+        count($result) !== $watchLength
+        || captain_weak_selected_count($result, $weakItemIds) > $weakQuota
+        || captain_selected_branch_count($result, $branch) !== $focusQuota
+        || !captain_meets_type_floor($result, $watchLength)
+    ) {
         return [];
     }
 
