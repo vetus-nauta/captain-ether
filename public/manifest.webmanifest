@@ -1,12 +1,23 @@
 {
+  "id": "/",
   "name": "Brkovic Maritime Games",
   "short_name": "Brkovic Games",
-  "description": "Maritime training games.",
+  "description": "Captain Ether Sea Speak and maritime radio training.",
+  "lang": "en",
+  "dir": "ltr",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
+  "categories": ["games", "education", "entertainment"],
   "background_color": "#f7f8fa",
   "theme_color": "#10243a",
+  "shortcuts": [
+    {
+      "name": "Captain Ether",
+      "short_name": "Captain Ether",
+      "url": "/games/captain-ether"
+    }
+  ],
   "icons": [
     {
       "src": "/assets/icons/icon-192.png",

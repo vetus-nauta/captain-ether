@@ -113,3 +113,24 @@ Planned migration targets:
 - game registry
 - Captain Ether knowledge items, sessions, answers, weak points
 - groups, crews, competitions, results
+
+## Shared SEO Office
+
+This repository is attached to the shared Brkovic SEO office:
+
+```text
+/home/alexey/GitHub/BRKOVIC_SEO_OFFICE
+```
+
+Project SEO brief:
+
+```text
+docs/SEO_BRIEF.md
+```
+
+SEO rules:
+
+- keep real public game pages indexable;
+- keep admin, API, accounts, private profiles, test builds, raw storage, and debug logs out of search;
+- do not publish fake screenshots, fake trailers, or thin keyword pages;
+- English is the fallback public language until real localized pages exist.
