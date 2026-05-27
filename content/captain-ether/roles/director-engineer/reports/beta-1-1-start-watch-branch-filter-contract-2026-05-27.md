@@ -240,7 +240,7 @@ Hidden/internal first-implementation expected fixtures:
 | --- | --- | --- | --- | --- |
 | `core_radio` | success | success | success | Primary success fixture for all levels. |
 | `marina_harbour` | success | success | success | Hidden QA only; not public UI-ready. |
-| `navigation_reports` | success | success | success | Hidden QA only; beginner has no public repetition buffer. |
+| `navigation_reports` | reject | success | success | Beginner rejects: beginner pool has no phrases and cannot meet the type floor. |
 | `safety_securite` | reject | success | success | Beginner rejects as underfilled for safe focus. |
 | `traffic_collision` | reject | reject | reject | No current content pool. |
 | `urgency_panpan` | reject | reject | reject | No current content pool. |

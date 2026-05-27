@@ -6,7 +6,22 @@ Use only after Director-Engineer names the exact target and test type.
 
 ## Current Pending QA
 
-None for Captain Ether.
+TASK-CE-0016 API smoke fixture acceptance:
+
+- task file:
+  `content/captain-ether/roles/qa/tasks/task-ce-0016-api-smoke-fixture-acceptance-qa-2026-05-27.md`
+- required report file:
+  `content/captain-ether/roles/qa/reports/task-ce-0016-api-smoke-fixture-acceptance-qa-2026-05-27.md`
+- mode:
+  report-only
+- target:
+  `content/captain-ether/tools/smoke-start-watch-api.php`
+- required focus:
+  local API/session mutation fixture coverage, storage restore behavior,
+  payload privacy, and command reproducibility.
+- expected baseline:
+  PHP lint PASS, API smoke `PASS captain-ether-api-smoke checks=180`,
+  Captain Ether validator PASS with known `WARN (9)`.
 
 Batch 004 production smoke rerun is complete and accepted by Director-Engineer.
 

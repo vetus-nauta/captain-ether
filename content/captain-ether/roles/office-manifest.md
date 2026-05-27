@@ -23,6 +23,7 @@ Every role is narrow by default. No role self-activates.
 | `gamification-designer/` | Dormant, ready | Motivation, progression, pacing, review loops | Report-only | `content/captain-ether/roles/gamification-designer/reports/` |
 | `answer-log-analyst/` | Dormant, ready | Admin answer-log clustering and disputed-answer triage | Report-only | `content/captain-ether/roles/answer-log-analyst/reports/` |
 | `localization-architect/` | Dormant, ready | UI language policy, system-language detection, fallback behavior, localization QA | Report-only | `content/captain-ether/roles/localization-architect/reports/` |
+| `validation-steward/` | Dormant, ready | Local validation environment, reproducible gates, validator triage, smoke preparation | Report-only | `content/captain-ether/roles/validation-steward/reports/` |
 
 ## Standard Folder Contract
 
@@ -108,7 +109,7 @@ Answer Log Analyst -> Sea Speak Linguist -> Director-Engineer -> QA
 For runtime/API work:
 
 ```text
-Director-Engineer implementation -> QA review -> Director-Engineer acceptance -> Game Director decision if production/deploy is needed
+Director-Engineer implementation -> Validation Steward command gate -> QA review -> Director-Engineer acceptance -> Game Director decision if production/deploy is needed
 ```
 
 For public UI selector work:

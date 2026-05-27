@@ -7,8 +7,8 @@ Mode: implementation
 
 ## Result
 
-PASS for the scoped hidden/internal Beta 1.1 `start-watch` branch-filter
-implementation.
+PASS for the scoped hidden/internal Beta 1.1 `start-watch` branch-filter path
+after local PHP CLI verification.
 
 Changed file:
 
@@ -48,7 +48,7 @@ Focused branch availability follows the accepted hidden/internal fixture table:
 
 - `core_radio`: beginner/intermediate/advanced success;
 - `marina_harbour`: beginner/intermediate/advanced success;
-- `navigation_reports`: beginner/intermediate/advanced success;
+- `navigation_reports`: beginner reject, intermediate/advanced success;
 - `safety_securite`: beginner reject, intermediate/advanced success;
 - `traffic_collision`, `urgency_panpan`, `distress_mayday`,
   `onboard_operations`, `vts_port_control`, `review_minimal_pairs`: reject for
@@ -58,8 +58,12 @@ Focused branch selection keeps:
 
 - existing watch lengths: beginner `12`, intermediate `16`, advanced `20`;
 - selected-branch weak priority inside the current weak quota;
-- selected-branch focus quota before review fill;
+- weak-item quota as a hard cap by excluding unselected weak items from ordinary
+  fill pools;
+- exact selected-branch focus quota before review fill;
 - cross-branch weak/review items only inside the review quota;
+- same-branch items excluded from the review quota;
+- type-floor enforcement before a focused watch can be returned;
 - final progressive order: `word -> short_expression -> phrase`.
 
 ## Mutation Safety
@@ -74,11 +78,13 @@ values, player email, or player identity data.
 
 ## Checks
 
-- `php -l public/api/captain-ether/start-watch.php`: not run; `php` is not
-  installed in this shell (`/bin/sh: line 1: php: command not found`).
+- `$HOME/.local/php-codex/bin/php -l public/api/captain-ether/start-watch.php`:
+  PASS.
+- `$HOME/.local/php-codex/bin/php content/captain-ether/tools/validate-captain-ether.php`:
+  PASS with 9 duplicate-normalization warnings and no failures.
 - `jq empty content/captain-ether/starter.json`: PASS.
-- Node read-only branch fixture count check against the accepted fixture table:
-  PASS for all listed branch/level combinations.
+- Node read-only branch fixture check against the corrected fixture table: PASS
+  for all listed branch/level combinations.
 - Static question payload check in `start-watch.php`: PASS; stored question
   records include only `index`, `item_id`, and `level`.
 
@@ -100,4 +106,5 @@ values, player email, or player identity data.
 
 ## Next Expected
 
-QA 32-case local smoke for the hidden/internal branch-filter contract.
+QA 32-case local smoke for the hidden/internal branch-filter contract using the
+local PHP CLI.

@@ -54,6 +54,8 @@ Director-Engineer explicitly assigns a task.
 - `answer-log-analyst/`: player answer-log analysis and disputed-answer reports.
 - `localization-architect/`: UI localization policy, system-language detection,
   fallback behavior, and localization QA scope.
+- `validation-steward/`: local validation environment, reproducible gates,
+  validator triage, and QA smoke preparation.
 
 ## Activation Rule
 
