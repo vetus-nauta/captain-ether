@@ -29,21 +29,24 @@ Captain Ether UI changes are allowed only when explicitly needed.
 
 ## Current State
 
-Batch 001, Batch 002, Batch 003, and Batch 004 are merged into playable
-`starter.json`.
+Batch 001, Batch 002, Batch 003, Batch 004, and Batch 005 are merged into
+playable `starter.json`.
+
+Batch 006 English-native Sea Speak pilot is accepted as `draft_internal` for
+hidden integration only and is not merged into `starter.json`.
 
 Local playable corpus:
 
-- `230` playable items;
+- `255` playable items;
 - `112` grammar patterns;
 - `2` scenarios.
 
 Regression corpus:
 
-- `230` QA item entries;
-- `631` should-accept examples;
-- `709` should-reject examples;
-- `49` dangerous minimal-pair groups.
+- `255` QA item entries;
+- `711` should-accept examples;
+- `783` should-reject examples;
+- `57` dangerous minimal-pair groups.
 
 Latest local validation passed:
 
@@ -182,19 +185,77 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None.
+None. `CE-SPRINT-0019 Public Stream Selector Contract` is closed as PASS.
 
-## Next Recommended Task
+Sprint closure:
 
-Make the next management choice:
+```text
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0019-public-stream-selector-contract-closed-2026-05-28.md
+```
 
-- assign a new content-growth batch;
-- or run an MVP-hardening pass based on production use and answer logs.
-- after enough real entries exist, assign Answer Log Analyst to summarize
-  `review_groups` for Sea Speak Linguist.
+Closed sprint:
 
-Game Director's stated next work direction is Watch Officer. That is outside
-Captain Ether scope unless a new Captain Ether task is explicitly assigned.
+```text
+CE-SPRINT-0019 Public Stream Selector Contract
+```
+
+Accepted reports:
+
+```text
+content/captain-ether/roles/director-engineer/reports/director-analysis-public-stream-selector-contract-2026-05-28.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0019-public-stream-selector-contract-2026-05-28.md
+content/captain-ether/roles/ux-hud-designer/reports/task-ce-0019-public-stream-selector-ux-contract-2026-05-28.md
+content/captain-ether/roles/localization-architect/reports/task-ce-0020-public-stream-selector-localization-contract-2026-05-28.md
+content/captain-ether/roles/director-engineer/reports/task-ce-0021-public-stream-selector-api-ui-contract-2026-05-28.md
+content/captain-ether/roles/qa/reports/task-ce-0022-public-stream-selector-contract-qa-2026-05-28.md
+```
+
+Next recommended summit, only after explicit Director command:
+
+```text
+CE-BETA-1.1-LOCAL-STREAM-SELECTOR-IMPLEMENTATION
+```
+
+Expected task range: `TASK-CE-0023+`.
+
+No public selector implementation, production deploy, router change, registry
+change, `starter.json` merge, auth/platform edit, or public English-native
+release is authorized by `CE-SPRINT-0019`.
+
+## Previous Closed Sprint
+
+`CE-SPRINT-0017 Hidden English-Native Stream` is closed as PASS.
+
+Sprint closure:
+
+```text
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0017-hidden-english-native-stream-closed-2026-05-28.md
+```
+
+Implemented sprint:
+
+```text
+CE-SPRINT-0017 Hidden English-Native Stream
+```
+
+Director decision and sprint plan:
+
+```text
+content/captain-ether/roles/director-engineer/reports/director-analysis-next-summit-2026-05-28.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0017-hidden-english-native-stream-2026-05-28.md
+```
+
+Implementation report:
+
+```text
+content/captain-ether/roles/director-engineer/reports/task-ce-0017-hidden-english-native-stream-implementation-2026-05-28.md
+```
+
+QA report:
+
+```text
+content/captain-ether/roles/qa/reports/task-ce-0018-hidden-english-native-stream-qa-2026-05-28.md
+```
 
 ## Report Shape
 

@@ -24,12 +24,30 @@ Required PWA UI language set from Director/User consultation:
 
 Unsupported system languages must start in English.
 
+## Last Completed Task
+
+TASK-CE-0020 Public Stream Selector Localization Contract:
+
+- task:
+  `content/captain-ether/roles/localization-architect/tasks/task-ce-0020-public-stream-selector-localization-contract-2026-05-28.md`;
+- report:
+  `content/captain-ether/roles/localization-architect/reports/task-ce-0020-public-stream-selector-localization-contract-2026-05-28.md`;
+- sprint:
+  `CE-SPRINT-0019 Public Stream Selector Contract`;
+- mode:
+  report-only / contract-first;
+- result:
+  `PASS`.
+
+The selector contract must keep UI locale separate from learner stream. Browser
+or system locale may choose interface copy, but must not silently select
+`english_native` training content.
+
 ## First Useful Task
 
-Define and verify a locale-detection contract for the public PWA:
-system language aliases, English fallback, localized static UI copy, registry
-field fallback, login text, Captain Ether watch UI, Lost Oars, answer log
-admin text, and a visible reminder that language follows system settings.
+When the local selector implementation sprint opens, verify that selector keys
+exist for `en`, `ru`, `de`, `it`, `es`, `sr`, and `zh`, with English fallback
+and no locale-to-stream inference.
 
 ## Standing Rule
 

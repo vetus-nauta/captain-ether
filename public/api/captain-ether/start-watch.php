@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 require __DIR__ . '/../../../private/bootstrap.php';
+require __DIR__ . '/_learner-streams.php';
 
 require_method('POST');
 $user = current_user();
@@ -336,6 +337,9 @@ if (!in_array($level, ['beginner', 'intermediate', 'advanced'], true)) {
     $level = 'beginner';
 }
 
+$learnerStream = captain_learner_stream_from_input($input);
+captain_require_learner_stream_access($user, $learnerStream);
+
 $mode = 'mixed';
 if (array_key_exists('mode', $input)) {
     if (!is_string($input['mode']) || !in_array($input['mode'], ['mixed', 'focused_branch', 'focused_module'], true)) {
@@ -359,14 +363,14 @@ if ($mode === 'focused_branch') {
     $branch = $input['branch'];
 }
 
-$content = captain_content();
+$content = captain_stream_content($learnerStream);
 $items = array_values(array_filter($content['items'] ?? [], static function ($item) use ($level) {
     if (!is_array($item)) return false;
     return in_array($item['level'] ?? '', captain_allowed_levels($level), true);
 }));
 
-$byId = captain_items_by_id();
-$weak = unresolved_weak_points($user['id']);
+$byId = captain_stream_items_by_id($learnerStream);
+$weak = captain_stream_unresolved_weak_points($user['id'], $learnerStream);
 
 if (!$items) {
     json_response(500, ['ok' => false, 'error' => 'Captain Ether content is empty']);
@@ -374,6 +378,9 @@ if (!$items) {
 
 $watchLength = captain_watch_length($level);
 if ($mode === 'focused_branch') {
+    if ($learnerStream === CAPTAIN_LEARNER_STREAM_ENGLISH_NATIVE) {
+        captain_filter_error('branch_watch_unavailable', 'Focused watch pool is below threshold', 409);
+    }
     $items = captain_select_focused_branch_items($items, array_keys($weak), $watchLength, $level, $branch);
     if (!$items) {
         captain_filter_error('branch_watch_unavailable', 'Focused watch pool is below threshold', 409);
@@ -392,11 +399,12 @@ foreach ($items as $i => $item) {
 }
 
 $sessionId = 'watch_' . bin2hex(random_bytes(8));
-storage_mutate('watch_sessions', watch_sessions_default(), function (array &$store) use ($sessionId, $user, $level, $questions) {
+storage_mutate('watch_sessions', watch_sessions_default(), function (array &$store) use ($sessionId, $user, $level, $questions, $learnerStream) {
     $store['sessions'][$sessionId] = [
         'id' => $sessionId,
         'user_id' => $user['id'],
         'game' => 'captain_ether',
+        'learner_stream' => $learnerStream,
         'level' => $level,
         'status' => 'active',
         'created_at' => iso_time(),
@@ -405,8 +413,8 @@ storage_mutate('watch_sessions', watch_sessions_default(), function (array &$sto
     ];
 });
 
-storage_mutate('progress', progress_default(), function (array &$store) use ($user, $level) {
-    $store['users'][$user['id']] = array_replace(user_progress($user['id']), [
+captain_mutate_stream_progress($user['id'], $learnerStream, function (array &$progress) use ($level) {
+    $progress = array_replace($progress, [
         'last_level' => $level,
         'updated_at' => iso_time(),
     ]);
@@ -416,6 +424,7 @@ json_response(200, [
     'ok' => true,
     'watch' => [
         'id' => $sessionId,
+        'learner_stream' => $learnerStream,
         'level' => $level,
         'total' => count($questions),
         'current' => visible_question($questions[0], $byId[$questions[0]['item_id']]),

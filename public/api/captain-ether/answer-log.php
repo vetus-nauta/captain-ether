@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 require __DIR__ . '/../../../private/bootstrap.php';
+require __DIR__ . '/_learner-streams.php';
 require __DIR__ . '/_answer-logging.php';
 
 require_method('GET');
@@ -13,14 +14,16 @@ if (($user['role'] ?? 'player') !== 'admin') {
 $limit = max(1, min(200, (int) ($_GET['limit'] ?? 100)));
 $groupLimit = max(1, min(50, (int) ($_GET['group_limit'] ?? 20)));
 $answerLimit = max(1, min(10, (int) ($_GET['answer_limit'] ?? 5)));
-$itemId = preg_replace('/[^a-z0-9_]/i', '', (string) ($_GET['item_id'] ?? ''));
+$itemId = preg_replace('/[^a-z0-9_-]/i', '', (string) ($_GET['item_id'] ?? ''));
 $kind = preg_replace('/[^a-z_]/i', '', (string) ($_GET['kind'] ?? ''));
+$learnerStream = captain_learner_stream_from_query(CAPTAIN_LEARNER_STREAM_ALL, true);
 
 $store = storage_read('captain_answer_logs', captain_answer_logs_default());
-$entries = array_values(array_filter($store['entries'] ?? [], static function ($entry) use ($itemId, $kind) {
+$entries = array_values(array_filter($store['entries'] ?? [], static function ($entry) use ($itemId, $kind, $learnerStream) {
     if (!is_array($entry)) return false;
     if ($itemId !== '' && ($entry['item_id'] ?? '') !== $itemId) return false;
     if ($kind !== '' && ($entry['log_kind'] ?? '') !== $kind) return false;
+    if ($learnerStream !== CAPTAIN_LEARNER_STREAM_ALL && captain_answer_log_entry_learner_stream($entry) !== $learnerStream) return false;
     return true;
 }));
 
@@ -41,6 +44,7 @@ json_response(200, [
         'filters' => [
             'item_id' => $itemId,
             'kind' => $kind,
+            'learner_stream' => $learnerStream,
         ],
     ] + $summary,
     'review_groups' => $reviewGroups,

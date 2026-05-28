@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 require __DIR__ . '/../../../private/bootstrap.php';
+require __DIR__ . '/_learner-streams.php';
 require __DIR__ . '/_answer-matching.php';
 require __DIR__ . '/_answer-logging.php';
 
@@ -15,9 +16,8 @@ $index = (int) ($input['index'] ?? -1);
 $answer = trim((string) ($input['answer'] ?? ''));
 $usedHint = !empty($input['used_hint']);
 $skipped = !empty($input['skipped']);
-$items = captain_items_by_id();
 
-$result = storage_mutate('watch_sessions', watch_sessions_default(), function (array &$store) use ($sessionId, $index, $answer, $usedHint, $skipped, $items, $user) {
+$result = storage_mutate('watch_sessions', watch_sessions_default(), function (array &$store) use ($sessionId, $index, $answer, $usedHint, $skipped, $user) {
     $watch = $store['sessions'][$sessionId] ?? null;
     if (!is_array($watch) || ($watch['user_id'] ?? '') !== $user['id']) {
         return ['error' => 'Watch not found', 'status' => 404];
@@ -29,6 +29,11 @@ $result = storage_mutate('watch_sessions', watch_sessions_default(), function (a
         return ['error' => 'Question not found', 'status' => 404];
     }
 
+    $learnerStream = captain_watch_learner_stream($watch);
+    if ($learnerStream === CAPTAIN_LEARNER_STREAM_ENGLISH_NATIVE && ($user['role'] ?? 'player') !== 'admin') {
+        return ['error' => 'learner_stream_unavailable', 'status' => 403];
+    }
+    $items = captain_stream_items_by_id($learnerStream);
     $question = $watch['questions'][$index];
     $item = $items[$question['item_id']] ?? null;
     if (!is_array($item)) {
@@ -54,9 +59,9 @@ $result = storage_mutate('watch_sessions', watch_sessions_default(), function (a
     $store['sessions'][$sessionId] = $watch;
 
     if ($reason === 'wrong' || $reason === 'skip' || $reason === 'hint') {
-        mark_weak_point($user['id'], $item, $reason, $answer);
+        captain_mark_stream_weak_point($user['id'], $learnerStream, $item, $reason, $answer);
     } elseif (in_array($reason, ['clean', 'spelling'], true)) {
-        resolve_weak_point($user['id'], (string) $item['id']);
+        captain_resolve_stream_weak_point($user['id'], $learnerStream, (string) $item['id']);
     }
 
     $nextIndex = $index + 1;
@@ -66,6 +71,7 @@ $result = storage_mutate('watch_sessions', watch_sessions_default(), function (a
 
     return [
         'ok' => true,
+        'learner_stream' => $learnerStream,
         'correct' => $correct,
         'points' => $points,
         'reason' => $reason,
@@ -79,6 +85,7 @@ $result = storage_mutate('watch_sessions', watch_sessions_default(), function (a
             'user' => $user,
             'watch_id' => $sessionId,
             'question_index' => $index,
+            'learner_stream' => $learnerStream,
             'level' => $watch['level'] ?? '',
             'item' => $item,
             'answer' => $answer,

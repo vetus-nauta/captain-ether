@@ -63,7 +63,8 @@ Use this sequence at each new day start:
 
 7. End-of-day hygiene:
    - each change set must be in allowed files
-   - commit + push after meaningful progress
+   - commit + push after a closed gate/task package, QA checkpoint, Director
+     checkpoint, or explicit intermediate checkpoint
 
 If step 1 is not `/tmp/captain-ether-export`, stop and switch repository before doing any role change.
 
@@ -113,6 +114,44 @@ Captain Ether roles must not touch:
 
 Production deploy and auth access always require a separate Game Director or
 Platform Auth task.
+
+## GitHub Sync Discipline
+
+After each closed gate or task package, sync the accepted state to:
+
+```text
+git@github.com:vetus-nauta/captain-ether.git
+```
+
+Do not push half-finished work. Push only after QA, a Director checkpoint, or an
+explicit intermediate checkpoint.
+
+Before every commit, verify staged scope and exclude unrelated files:
+
+- WebStorm or IDE scaffold;
+- Vite scaffold;
+- `node_modules/`;
+- `exports/`;
+- `.godot/`;
+- secrets, private config, sessions, cookies, CSRF, SMTP, `.netrc`, player
+  email, or player identity data;
+- Watch Officer, Nav Desk, auth/platform, router/registry, or other unrelated
+  project files unless the current gate explicitly authorizes them.
+
+After push, verify:
+
+```text
+git rev-list --left-right --count HEAD...origin/main
+```
+
+The required result is:
+
+```text
+0 0
+```
+
+Final status after sync must include the pushed commit SHA and the exact gate or
+task package synchronized.
 
 ## Localization Gate
 

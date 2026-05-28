@@ -41,11 +41,13 @@ function captain_answer_log_entry(array $event): array {
     $user = is_array($event['user'] ?? null) ? $event['user'] : [];
     $answer = clean_text($event['answer'] ?? '', 500);
     $target = clean_text($item['target_text'] ?? ($event['target_text'] ?? ''), 500);
+    $stream = captain_answer_log_entry_learner_stream($event);
 
     return [
         'id' => 'ans_' . bin2hex(random_bytes(8)),
         'observed_at' => iso_time(),
         'source' => clean_text($event['source'] ?? 'watch', 40),
+        'learner_stream' => $stream,
         'player_hash' => substr(hash('sha256', (string) ($user['id'] ?? 'anonymous')), 0, 16),
         'watch_id' => clean_text($event['watch_id'] ?? '', 80),
         'question_index' => isset($event['question_index']) ? (int) $event['question_index'] : null,
@@ -65,6 +67,11 @@ function captain_answer_log_entry(array $event): array {
         'used_hint' => !empty($event['used_hint']),
         'skipped' => !empty($event['skipped']),
     ];
+}
+
+function captain_answer_log_entry_learner_stream(array $entry): string {
+    $stream = clean_text($entry['learner_stream'] ?? 'ru_source', 40);
+    return in_array($stream, ['ru_source', 'english_native'], true) ? $stream : 'ru_source';
 }
 
 function captain_log_answer_event(array $event): void {
@@ -88,11 +95,13 @@ function captain_answer_log_summary(array $entries): array {
     foreach ($entries as $entry) {
         $kind = (string) ($entry['log_kind'] ?? 'unknown');
         $matchType = (string) ($entry['match_type'] ?? 'unknown');
+        $stream = captain_answer_log_entry_learner_stream($entry);
         $itemId = (string) ($entry['item_id'] ?? 'unknown');
+        $itemKey = $stream . ':' . $itemId;
 
         $byKind[$kind] = ($byKind[$kind] ?? 0) + 1;
         $byMatchType[$matchType] = ($byMatchType[$matchType] ?? 0) + 1;
-        $byItem[$itemId] = ($byItem[$itemId] ?? 0) + 1;
+        $byItem[$itemKey] = ($byItem[$itemKey] ?? 0) + 1;
     }
 
     arsort($byItem);
@@ -133,8 +142,10 @@ function captain_answer_log_review_groups(array $entries, int $groupLimit = 20, 
     foreach ($entries as $entry) {
         if (!is_array($entry)) continue;
 
+        $stream = captain_answer_log_entry_learner_stream($entry);
         $itemId = clean_text($entry['item_id'] ?? 'unknown', 120);
         if ($itemId === '') $itemId = 'unknown';
+        $groupKey = $stream . "\n" . $itemId;
         $kind = clean_text($entry['log_kind'] ?? 'unknown', 40) ?: 'unknown';
         $matchType = clean_text($entry['match_type'] ?? 'unknown', 40) ?: 'unknown';
         $source = clean_text($entry['source'] ?? 'unknown', 40) ?: 'unknown';
@@ -144,8 +155,9 @@ function captain_answer_log_review_groups(array $entries, int $groupLimit = 20, 
         $normalizedAnswer = normalize_answer($answer);
         $answerKey = $normalizedAnswer !== '' ? $normalizedAnswer : '[empty]';
 
-        if (!isset($groups[$itemId])) {
-            $groups[$itemId] = [
+        if (!isset($groups[$groupKey])) {
+            $groups[$groupKey] = [
+                'learner_stream' => $stream,
                 'item_id' => $itemId,
                 'item_type' => clean_text($entry['item_type'] ?? '', 80),
                 'topic' => clean_text($entry['topic'] ?? '', 120),
@@ -161,7 +173,7 @@ function captain_answer_log_review_groups(array $entries, int $groupLimit = 20, 
             ];
         }
 
-        $group =& $groups[$itemId];
+        $group =& $groups[$groupKey];
         $group['total']++;
         if ($observedAt !== '' && strcmp($observedAt, (string) $group['latest_at']) > 0) {
             $group['latest_at'] = $observedAt;

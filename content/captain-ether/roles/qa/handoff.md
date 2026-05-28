@@ -4,28 +4,68 @@
 
 Use only after Director-Engineer names the exact target and test type.
 
-## Current Pending QA
+## Current Prepared QA
+
+None.
+
+## Last QA
+
+TASK-CE-0022 Public Stream Selector Contract QA:
+
+- task file:
+  `content/captain-ether/roles/qa/tasks/task-ce-0022-public-stream-selector-contract-qa-2026-05-28.md`
+- report file:
+  `content/captain-ether/roles/qa/reports/task-ce-0022-public-stream-selector-contract-qa-2026-05-28.md`
+- mode:
+  report-only / contract review
+- target:
+  `CE-SPRINT-0019 Public Stream Selector Contract`
+- result:
+  `PASS`
+- accepted by Director-Engineer:
+  `content/captain-ether/roles/director-engineer/reports/sprint-ce-0019-public-stream-selector-contract-closed-2026-05-28.md`
+- confirmed:
+  no forced first-run gate, default `ru_source`, no locale-to-stream inference,
+  opt-in/reversible stream choice, no progress overwrite, no public exposure of
+  hidden/admin-only stream before explicit release, clear future smoke matrix,
+  and no production deploy implied by the contract sprint.
+
+TASK-CE-0018 Hidden English-Native Stream QA:
+
+- task file:
+  `content/captain-ether/roles/qa/tasks/task-ce-0018-hidden-english-native-stream-qa-2026-05-28.md`
+- report file:
+  `content/captain-ether/roles/qa/reports/task-ce-0018-hidden-english-native-stream-qa-2026-05-28.md`
+- mode:
+  report-only
+- target:
+  hidden/admin-only English-native stream implementation from TASK-CE-0017.
+- result:
+  `PASS`
+- accepted by Director-Engineer:
+  `content/captain-ether/roles/director-engineer/reports/sprint-ce-0017-hidden-english-native-stream-closed-2026-05-28.md`
+- confirmed:
+  legacy RU-source preservation, admin-only English-native gate, stream-scoped
+  progress/Lost Oars/answer-log behavior, payload privacy, storage restore, and
+  command reproducibility.
 
 TASK-CE-0016 API smoke fixture acceptance:
 
 - task file:
   `content/captain-ether/roles/qa/tasks/task-ce-0016-api-smoke-fixture-acceptance-qa-2026-05-27.md`
-- required report file:
+- report file:
   `content/captain-ether/roles/qa/reports/task-ce-0016-api-smoke-fixture-acceptance-qa-2026-05-27.md`
 - mode:
   report-only
 - target:
   `content/captain-ether/tools/smoke-start-watch-api.php`
-- required focus:
-  local API/session mutation fixture coverage, storage restore behavior,
-  payload privacy, and command reproducibility.
-- expected baseline:
+- result:
+  `PASS`
+- accepted by Director-Engineer:
+  `content/captain-ether/roles/director-engineer/reports/task-ce-0016-api-smoke-fixture-acceptance-accepted-2026-05-27.md`
+- confirmed:
   PHP lint PASS, API smoke `PASS captain-ether-api-smoke checks=180`,
   Captain Ether validator PASS with known `WARN (9)`.
-
-Batch 004 production smoke rerun is complete and accepted by Director-Engineer.
-
-## Last QA
 
 Batch 004 production smoke rerun:
 
