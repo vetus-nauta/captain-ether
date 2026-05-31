@@ -74,6 +74,73 @@ function captain_answer_log_entry_learner_stream(array $entry): string {
     return in_array($stream, ['ru_source', 'english_native'], true) ? $stream : 'ru_source';
 }
 
+function captain_answer_log_matches_filters(array $entry, string $itemId, string $kind, string $learnerStream): bool {
+    if ($itemId !== '' && ($entry['item_id'] ?? '') !== $itemId) return false;
+    if ($kind !== '' && ($entry['log_kind'] ?? '') !== $kind) return false;
+    if ($learnerStream !== CAPTAIN_LEARNER_STREAM_ALL && captain_answer_log_entry_learner_stream($entry) !== $learnerStream) return false;
+    return true;
+}
+
+function captain_answer_log_filter_entries(array $entries, string $itemId, string $kind, string $learnerStream): array {
+    return array_values(array_filter($entries, static function ($entry) use ($itemId, $kind, $learnerStream) {
+        return is_array($entry) && captain_answer_log_matches_filters($entry, $itemId, $kind, $learnerStream);
+    }));
+}
+
+function captain_answer_logs_live_read_enabled(): bool {
+    return atlas_primary_write_store_enabled('captain_answer_logs') || atlas_live_read_store_enabled('answer_logs');
+}
+
+function captain_answer_logs_store(): array {
+    $jsonStore = storage_read('captain_answer_logs', captain_answer_logs_default());
+    if (!captain_answer_logs_live_read_enabled()) {
+        return $jsonStore;
+    }
+
+    $mongoDocuments = atlas_live_read_collection_documents('answer_logs');
+    if ($mongoDocuments === null) {
+        return $jsonStore;
+    }
+
+    $mongoEntries = captain_answer_logs_mongo_entries($mongoDocuments);
+    if (!captain_answer_logs_parity_ok($jsonStore, $mongoEntries)) {
+        atlas_live_read_log('parity_error', 'answer_logs', [
+            'json_entries' => count($jsonStore['entries'] ?? []),
+            'mongo_entries' => count($mongoEntries),
+        ]);
+        return $jsonStore;
+    }
+
+    return [
+        'entries' => $mongoEntries,
+        'total_logged' => (int) ($jsonStore['total_logged'] ?? 0),
+        'updated_at' => $jsonStore['updated_at'] ?? null,
+    ];
+}
+
+function captain_answer_logs_mongo_entries(array $documents): array {
+    $entries = [];
+    foreach ($documents as $document) {
+        if (!is_array($document)) continue;
+        if (($document['_id'] ?? '') === '__meta__') continue;
+        unset($document['_id'], $document['mirrored_at']);
+        if (!isset($document['id']) || !is_string($document['id'])) continue;
+        $entries[] = $document;
+    }
+    return $entries;
+}
+
+function captain_answer_logs_parity_ok(array $jsonStore, array $mongoEntries): bool {
+    $jsonEntries = array_values(array_filter($jsonStore['entries'] ?? [], 'is_array'));
+    if (count($jsonEntries) !== count($mongoEntries)) return false;
+
+    $jsonIds = array_map(static fn(array $entry): string => (string) ($entry['id'] ?? ''), $jsonEntries);
+    $mongoIds = array_map(static fn(array $entry): string => (string) ($entry['id'] ?? ''), $mongoEntries);
+    if ($jsonIds !== $mongoIds) return false;
+
+    return captain_answer_log_summary($jsonEntries) === captain_answer_log_summary($mongoEntries);
+}
+
 function captain_log_answer_event(array $event): void {
     if (!captain_should_log_answer_event($event)) return;
     $entry = captain_answer_log_entry($event);

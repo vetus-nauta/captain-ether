@@ -17,7 +17,7 @@ $answer = trim((string) ($input['answer'] ?? ''));
 $usedHint = !empty($input['used_hint']);
 $skipped = !empty($input['skipped']);
 
-$result = storage_mutate('watch_sessions', watch_sessions_default(), function (array &$store) use ($sessionId, $index, $answer, $usedHint, $skipped, $user) {
+$result = watch_sessions_mutate(function (array &$store) use ($sessionId, $index, $answer, $usedHint, $skipped, $user) {
     $watch = $store['sessions'][$sessionId] ?? null;
     if (!is_array($watch) || ($watch['user_id'] ?? '') !== $user['id']) {
         return ['error' => 'Watch not found', 'status' => 404];
