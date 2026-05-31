@@ -51,6 +51,7 @@ $watchResult = watch_sessions_mutate(function (array &$store) use ($sessionId, $
     return [
         'learner_stream' => $learnerStream,
         'summary' => $watch['summary'],
+        'questions' => $watch['questions'] ?? [],
     ];
 });
 
@@ -60,6 +61,7 @@ if (!empty($watchResult['error'])) {
 
 $learnerStream = (string) ($watchResult['learner_stream'] ?? CAPTAIN_LEARNER_STREAM_RU);
 $summary = is_array($watchResult['summary'] ?? null) ? $watchResult['summary'] : [];
+$questions = is_array($watchResult['questions'] ?? null) ? $watchResult['questions'] : [];
 $unresolved = captain_stream_unresolved_count($user['id'], $learnerStream);
 $progress = captain_stream_user_progress($user['id'], $learnerStream);
 $multiplier = match ((int) ($progress['skip_cleanup_count'] ?? 0)) {
@@ -80,6 +82,16 @@ captain_mutate_stream_progress($user['id'], $learnerStream, function (array &$pr
     $progress['updated_at'] = iso_time();
 });
 
+$updatedProgress = captain_stream_user_progress($user['id'], $learnerStream);
+$updatedWeakPoints = captain_stream_unresolved_weak_points($user['id'], $learnerStream);
+$itemsById = captain_stream_items_by_id($learnerStream);
+$progressSummary = captain_progress_summary(
+    $updatedProgress + ['learner_stream' => $learnerStream],
+    $updatedWeakPoints,
+    $itemsById
+);
+$debrief = captain_watch_debrief($summary, $questions, $itemsById, $progressSummary);
+
 json_response(200, [
     'ok' => true,
     'summary' => $summary + [
@@ -87,5 +99,10 @@ json_response(200, [
         'unresolved_lost_oars' => $unresolved,
         'reward_multiplier' => $multiplier,
         'final_score' => round(((float) $summary['base_score']) * $multiplier - ($unresolved * 0.1), 2),
+        'recommended_level' => $progressSummary['recommended_level'],
+        'recommended_branch' => $progressSummary['recommended_branch'],
+        'recommended_watch' => $progressSummary['recommended_watch'],
+        'next_step' => $progressSummary['next_step'],
+        'debrief' => $debrief,
     ],
 ]);

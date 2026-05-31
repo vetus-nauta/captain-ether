@@ -8,14 +8,6 @@ require_method('POST');
 $user = current_user();
 require_csrf($user);
 
-function captain_watch_length(string $level): int {
-    return match ($level) {
-        'advanced' => 20,
-        'intermediate' => 16,
-        default => 12,
-    };
-}
-
 function captain_allowed_levels(string $level): array {
     if ($level === 'advanced') return ['beginner', 'intermediate', 'advanced'];
     if ($level === 'intermediate') return ['beginner', 'intermediate'];
@@ -55,6 +47,14 @@ function captain_focus_quota(int $watchLength): int {
     };
 }
 
+function captain_mixed_focus_quota(int $watchLength): int {
+    return match ($watchLength) {
+        20 => 6,
+        16 => 5,
+        default => 4,
+    };
+}
+
 function captain_valid_branches(): array {
     return [
         'core_radio',
@@ -87,11 +87,25 @@ function captain_focused_branch_enabled(string $branch, string $level): bool {
         && in_array($level, ['intermediate', 'advanced'], true);
 }
 
-function captain_type_floor(int $watchLength): array {
-    if ($watchLength === 20) {
+function captain_type_floor(int $watchLength, string $intensity = 'standard'): array {
+    if ($intensity === 'lighter') {
+        $word = max(3, (int) ceil($watchLength * 0.30));
+        $short = max(3, (int) ceil($watchLength * 0.30));
+        $phrase = max(4, $watchLength - $word - $short);
+        return ['word' => $word, 'short_expression' => $short, 'phrase' => $phrase];
+    }
+
+    if ($intensity === 'denser') {
+        $word = max(2, (int) floor($watchLength * 0.23));
+        $short = max(3, (int) floor($watchLength * 0.27));
+        $phrase = max(6, $watchLength - $word - $short);
+        return ['word' => $word, 'short_expression' => $short, 'phrase' => $phrase];
+    }
+
+    if ($watchLength >= 20) {
         return ['word' => 6, 'short_expression' => 6, 'phrase' => 8];
     }
-    if ($watchLength === 16) {
+    if ($watchLength >= 16) {
         return ['word' => 4, 'short_expression' => 5, 'phrase' => 7];
     }
     return ['word' => 3, 'short_expression' => 3, 'phrase' => 6];
@@ -106,13 +120,13 @@ function captain_type_count(array $items, string $type): int {
     return count(array_filter($items, static fn($item) => captain_item_type($item) === $type));
 }
 
-function captain_meets_type_floor(array $items, int $watchLength): bool {
+function captain_meets_type_floor(array $items, int $watchLength, string $intensity = 'standard'): bool {
     $counts = ['word' => 0, 'short_expression' => 0, 'phrase' => 0];
     foreach ($items as $item) {
         $counts[captain_item_type($item)]++;
     }
 
-    foreach (captain_type_floor($watchLength) as $type => $floor) {
+    foreach (captain_type_floor($watchLength, $intensity) as $type => $floor) {
         if ($counts[$type] < $floor) return false;
     }
     return true;
@@ -140,6 +154,77 @@ function captain_weak_pool(array $byId, array $weakItemIds, ?string $branch = nu
     return $pool;
 }
 
+function captain_recent_watch_item_ids(array $progress): array {
+    $history = $progress['history'] ?? [];
+    if (!is_array($history) || !$history) {
+        return [];
+    }
+
+    $recent = end($history);
+    if (!is_array($recent)) {
+        return [];
+    }
+
+    $watchId = trim((string) ($recent['watch_id'] ?? ''));
+    if ($watchId === '') {
+        return [];
+    }
+
+    $store = watch_sessions_store();
+    $watch = $store['sessions'][$watchId] ?? null;
+    if (!is_array($watch)) {
+        return [];
+    }
+
+    $ids = [];
+    foreach ($watch['questions'] ?? [] as $question) {
+        if (!is_array($question)) continue;
+        $itemId = trim((string) ($question['item_id'] ?? ''));
+        if ($itemId !== '') {
+            $ids[$itemId] = true;
+        }
+    }
+
+    return array_keys($ids);
+}
+
+function captain_selection_context(array $progress, array $weakPoints, array $itemsById): array {
+    $summary = captain_progress_summary($progress, $weakPoints, $itemsById);
+    return [
+        'recommended_branch' => (string) ($summary['recommended_branch'] ?? ''),
+        'weak_by_branch' => is_array($summary['weak_points_summary']['by_branch'] ?? null) ? $summary['weak_points_summary']['by_branch'] : [],
+        'top_topics' => is_array($summary['weak_points_summary']['top_topics'] ?? null) ? $summary['weak_points_summary']['top_topics'] : [],
+        'recent_item_ids' => array_fill_keys(captain_recent_watch_item_ids($progress), true),
+    ];
+}
+
+function captain_selection_score(array $item, string $level, array $context = []): int {
+    $score = (($item['level'] ?? '') === $level) ? 120 : 70;
+    $branch = trim((string) ($item['branch'] ?? ''));
+    $topic = trim((string) ($item['topic'] ?? ''));
+    $id = trim((string) ($item['id'] ?? ''));
+
+    if ($branch !== '' && $branch === (string) ($context['recommended_branch'] ?? '')) {
+        $score += 70;
+    }
+
+    $branchWeight = (int) (($context['weak_by_branch'][$branch] ?? 0));
+    if ($branchWeight > 0) {
+        $score += $branchWeight * 18;
+    }
+
+    $topicWeight = (int) (($context['top_topics'][$topic] ?? 0));
+    if ($topicWeight > 0) {
+        $score += $topicWeight * 12;
+    }
+
+    if ($id !== '' && !empty($context['recent_item_ids'][$id])) {
+        $score -= 95;
+    }
+
+    return $score;
+}
+
 function captain_pool_by_branch(array $byId, array $selected, array $weakSet, ?string $branch = null, ?bool $sameBranch = null, ?string $type = null): array {
     return array_values(array_filter($byId, static function ($item) use ($selected, $weakSet, $branch, $sameBranch, $type) {
         $id = (string) ($item['id'] ?? '');
@@ -158,38 +243,36 @@ function captain_selected_review_count(array $selected, string $branch): int {
     return count($selected) - captain_selected_branch_count($selected, $branch);
 }
 
-function captain_add_candidates(array &$selected, array $pool, int $limit, string $level): void {
-    foreach (captain_selection_pool($pool, $level) as $item) {
+function captain_add_candidates(array &$selected, array $pool, int $limit, string $level, array $context = []): void {
+    foreach (captain_selection_pool($pool, $level, $context) as $item) {
         if (count($selected) >= $limit) break;
         $selected[(string) $item['id']] = $item;
     }
 }
 
-function captain_select_limited_weak_items(array $byId, array $weakItemIds, int $weakQuota, string $level, ?string $branch = null, bool $sameBranch = true): array {
+function captain_select_limited_weak_items(array $byId, array $weakItemIds, int $weakQuota, string $level, ?string $branch = null, bool $sameBranch = true, array $context = []): array {
     $selected = [];
-    foreach (captain_selection_pool(captain_weak_pool($byId, $weakItemIds, $branch, $sameBranch), $level) as $item) {
+    foreach (captain_selection_pool(captain_weak_pool($byId, $weakItemIds, $branch, $sameBranch), $level, $context) as $item) {
         if (count($selected) >= $weakQuota) break;
         $selected[(string) $item['id']] = $item;
     }
     return $selected;
 }
 
-function captain_selection_pool(array $items, string $level): array {
-    $preferred = [];
-    $other = [];
-    foreach ($items as $item) {
-        if (($item['level'] ?? '') === $level) {
-            $preferred[] = $item;
-        } else {
-            $other[] = $item;
-        }
+function captain_selection_pool(array $items, string $level, array $context = []): array {
+    if (!$items) {
+        return [];
     }
-    shuffle($preferred);
-    shuffle($other);
-    return array_merge($preferred, $other);
+
+    shuffle($items);
+    usort($items, static function (array $a, array $b) use ($level, $context): int {
+        return captain_selection_score($b, $level, $context) <=> captain_selection_score($a, $level, $context)
+            ?: strcmp((string) ($a['id'] ?? ''), (string) ($b['id'] ?? ''));
+    });
+    return $items;
 }
 
-function captain_select_watch_items(array $items, array $weakItemIds, int $watchLength, string $level): array {
+function captain_select_watch_items(array $items, array $weakItemIds, int $watchLength, string $level, array $context = []): array {
     $byId = [];
     foreach ($items as $item) {
         if (is_array($item) && isset($item['id'])) {
@@ -197,8 +280,25 @@ function captain_select_watch_items(array $items, array $weakItemIds, int $watch
         }
     }
 
-    $selected = captain_select_limited_weak_items($byId, $weakItemIds, captain_weak_item_quota($watchLength), $level);
+    $selected = captain_select_limited_weak_items($byId, $weakItemIds, captain_weak_item_quota($watchLength), $level, null, true, $context);
     $weakSet = captain_normalize_weak_set($weakItemIds);
+    $recommendedBranch = (string) ($context['recommended_branch'] ?? '');
+
+    if ($recommendedBranch !== '' && captain_focused_branch_enabled($recommendedBranch, $level)) {
+        while (captain_selected_branch_count($selected, $recommendedBranch) < captain_mixed_focus_quota($watchLength) && count($selected) < $watchLength) {
+            $before = count($selected);
+            captain_add_candidates(
+                $selected,
+                captain_pool_by_branch($byId, $selected, $weakSet, $recommendedBranch, true),
+                count($selected) + 1,
+                $level,
+                $context
+            );
+            if ($before === count($selected)) {
+                break;
+            }
+        }
+    }
 
     $groups = ['word' => [], 'short_expression' => [], 'phrase' => []];
     foreach ($byId as $id => $item) {
@@ -209,14 +309,27 @@ function captain_select_watch_items(array $items, array $weakItemIds, int $watch
         $groups[$type][$id] = $item;
     }
 
-    $quotas = [
-        'word' => max(2, (int) floor($watchLength * 0.30)),
-        'short_expression' => max(3, (int) floor($watchLength * 0.32)),
-        'phrase' => $watchLength,
-    ];
+    $intensity = (string) (($context['pacing']['intensity'] ?? 'standard'));
+    $quotas = match ($intensity) {
+        'lighter' => [
+            'word' => max(3, (int) ceil($watchLength * 0.38)),
+            'short_expression' => max(3, (int) ceil($watchLength * 0.36)),
+            'phrase' => $watchLength,
+        ],
+        'denser' => [
+            'word' => max(2, (int) ceil($watchLength * 0.26)),
+            'short_expression' => max(3, (int) ceil($watchLength * 0.30)),
+            'phrase' => $watchLength,
+        ],
+        default => [
+            'word' => max(2, (int) floor($watchLength * 0.30)),
+            'short_expression' => max(3, (int) floor($watchLength * 0.32)),
+            'phrase' => $watchLength,
+        ],
+    };
 
     foreach (['word', 'short_expression', 'phrase'] as $type) {
-        $pool = captain_selection_pool(array_values($groups[$type]), $level);
+        $pool = captain_selection_pool(array_values($groups[$type]), $level, $context);
         foreach ($pool as $item) {
             if (count($selected) >= $watchLength || count(array_filter($selected, static fn($selectedItem) => ($selectedItem['type'] ?? 'phrase') === $type)) >= $quotas[$type]) {
                 break;
@@ -227,7 +340,8 @@ function captain_select_watch_items(array $items, array $weakItemIds, int $watch
 
     $remaining = captain_selection_pool(
         array_values(array_filter($byId, static fn($item) => !isset($selected[(string) $item['id']]) && !isset($weakSet[(string) $item['id']]))),
-        $level
+        $level,
+        $context
     );
     foreach ($remaining as $item) {
         if (count($selected) >= $watchLength) break;
@@ -239,7 +353,7 @@ function captain_select_watch_items(array $items, array $weakItemIds, int $watch
     return array_slice($result, 0, $watchLength);
 }
 
-function captain_select_focused_branch_items(array $items, array $weakItemIds, int $watchLength, string $level, string $branch): array {
+function captain_select_focused_branch_items(array $items, array $weakItemIds, int $watchLength, string $level, string $branch, array $context = []): array {
     if (!captain_focused_branch_enabled($branch, $level)) {
         return [];
     }
@@ -256,13 +370,13 @@ function captain_select_focused_branch_items(array $items, array $weakItemIds, i
     $selected = [];
     $weakSet = captain_normalize_weak_set($weakItemIds);
 
-    $branchWeak = captain_select_limited_weak_items($byId, $weakItemIds, min($weakQuota, $focusQuota), $level, $branch);
+    $branchWeak = captain_select_limited_weak_items($byId, $weakItemIds, min($weakQuota, $focusQuota), $level, $branch, true, $context);
     foreach ($branchWeak as $id => $item) {
         if (captain_selected_branch_count($selected, $branch) >= $focusQuota) break;
         $selected[$id] = $item;
     }
 
-    $reviewWeak = captain_select_limited_weak_items($byId, $weakItemIds, $weakQuota - count($selected), $level, $branch, false);
+    $reviewWeak = captain_select_limited_weak_items($byId, $weakItemIds, $weakQuota - count($selected), $level, $branch, false, $context);
     foreach ($reviewWeak as $id => $item) {
         if (isset($selected[$id])) continue;
         if (($item['branch'] ?? '') === $branch) continue;
@@ -270,7 +384,8 @@ function captain_select_focused_branch_items(array $items, array $weakItemIds, i
         $selected[$id] = $item;
     }
 
-    foreach (captain_type_floor($watchLength) as $type => $floor) {
+    $intensity = (string) (($context['pacing']['intensity'] ?? 'standard'));
+    foreach (captain_type_floor($watchLength, $intensity) as $type => $floor) {
         while (captain_type_count(array_values($selected), $type) < $floor) {
             $before = count($selected);
             if (captain_selected_branch_count($selected, $branch) < $focusQuota) {
@@ -278,7 +393,8 @@ function captain_select_focused_branch_items(array $items, array $weakItemIds, i
                     $selected,
                     captain_pool_by_branch($byId, $selected, $weakSet, $branch, true, $type),
                     count($selected) + 1,
-                    $level
+                    $level,
+                    $context
                 );
             }
             if ($before === count($selected) && captain_selected_review_count($selected, $branch) < $watchLength - $focusQuota) {
@@ -286,7 +402,8 @@ function captain_select_focused_branch_items(array $items, array $weakItemIds, i
                     $selected,
                     captain_pool_by_branch($byId, $selected, $weakSet, $branch, false, $type),
                     count($selected) + 1,
-                    $level
+                    $level,
+                    $context
                 );
             }
             if ($before === count($selected)) {
@@ -301,7 +418,8 @@ function captain_select_focused_branch_items(array $items, array $weakItemIds, i
             $selected,
             captain_pool_by_branch($byId, $selected, $weakSet, $branch, true),
             count($selected) + 1,
-            $level
+            $level,
+            $context
         );
         if ($before === count($selected)) return [];
     }
@@ -312,7 +430,8 @@ function captain_select_focused_branch_items(array $items, array $weakItemIds, i
             $selected,
             captain_pool_by_branch($byId, $selected, $weakSet, $branch, false),
             count($selected) + 1,
-            $level
+            $level,
+            $context
         );
         if ($before === count($selected)) return [];
     }
@@ -322,7 +441,7 @@ function captain_select_focused_branch_items(array $items, array $weakItemIds, i
         count($result) !== $watchLength
         || captain_weak_selected_count($result, $weakItemIds) > $weakQuota
         || captain_selected_branch_count($result, $branch) !== $focusQuota
-        || !captain_meets_type_floor($result, $watchLength)
+        || !captain_meets_type_floor($result, $watchLength, $intensity)
     ) {
         return [];
     }
@@ -371,41 +490,54 @@ $items = array_values(array_filter($content['items'] ?? [], static function ($it
 
 $byId = captain_stream_items_by_id($learnerStream);
 $weak = captain_stream_unresolved_weak_points($user['id'], $learnerStream);
+$progress = captain_stream_user_progress($user['id'], $learnerStream);
+$selectionContext = captain_selection_context($progress + ['learner_stream' => $learnerStream], $weak, $byId);
+$selectionContext['pacing'] = captain_watch_pacing($level, $progress + ['learner_stream' => $learnerStream], count($weak));
+$hintPolicy = captain_hint_policy($selectionContext['pacing'], $level);
+$sessionSkipPolicy = captain_skip_policy($selectionContext['pacing'], ['type' => 'phrase']);
 
 if (!$items) {
     json_response(500, ['ok' => false, 'error' => 'Captain Ether content is empty']);
 }
 
-$watchLength = captain_watch_length($level);
+$watchLength = (int) (($selectionContext['pacing']['target_length'] ?? captain_base_watch_length($level)));
 if ($mode === 'focused_branch') {
     if ($learnerStream === CAPTAIN_LEARNER_STREAM_ENGLISH_NATIVE) {
         captain_filter_error('branch_watch_unavailable', 'Focused watch pool is below threshold', 409);
     }
-    $items = captain_select_focused_branch_items($items, array_keys($weak), $watchLength, $level, $branch);
+    $items = captain_select_focused_branch_items($items, array_keys($weak), $watchLength, $level, $branch, $selectionContext);
     if (!$items) {
         captain_filter_error('branch_watch_unavailable', 'Focused watch pool is below threshold', 409);
     }
 } else {
-    $items = captain_select_watch_items($items, array_keys($weak), $watchLength, $level);
+    $items = captain_select_watch_items($items, array_keys($weak), $watchLength, $level, $selectionContext);
 }
 
 $questions = [];
 foreach ($items as $i => $item) {
+    $skipPolicy = captain_skip_policy($selectionContext['pacing'], $item);
     $questions[] = [
         'index' => $i,
         'item_id' => $item['id'],
         'level' => $level,
+        'hint_mode' => $hintPolicy['mode'],
+        'hint_level' => $hintPolicy['hint_level'],
+        'hint_reward' => $hintPolicy['reward'],
+        'skip_mode' => $skipPolicy['mode'],
+        'skip_available' => $skipPolicy['available'],
+        'skip_reward' => $skipPolicy['reward'],
     ];
 }
 
 $sessionId = 'watch_' . bin2hex(random_bytes(8));
-watch_sessions_mutate(function (array &$store) use ($sessionId, $user, $level, $questions, $learnerStream) {
+watch_sessions_mutate(function (array &$store) use ($sessionId, $user, $level, $questions, $learnerStream, $hintPolicy) {
     $store['sessions'][$sessionId] = [
         'id' => $sessionId,
         'user_id' => $user['id'],
         'game' => 'captain_ether',
         'learner_stream' => $learnerStream,
         'level' => $level,
+        'hint_policy' => $hintPolicy,
         'status' => 'active',
         'created_at' => iso_time(),
         'finished_at' => null,
@@ -426,6 +558,9 @@ json_response(200, [
         'id' => $sessionId,
         'learner_stream' => $learnerStream,
         'level' => $level,
+        'pacing' => $selectionContext['pacing'],
+        'hint_policy' => $hintPolicy,
+        'skip_policy' => $sessionSkipPolicy,
         'total' => count($questions),
         'current' => visible_question($questions[0], $byId[$questions[0]['item_id']]),
     ],

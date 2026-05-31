@@ -49,6 +49,14 @@ captain_log_answer_event([
     'skipped' => false,
 ]);
 
+$remainingWeakPoints = captain_stream_unresolved_weak_points($user['id'], $learnerStream);
+$progress = captain_stream_user_progress($user['id'], $learnerStream);
+$progressSummary = captain_progress_summary(
+    $progress + ['learner_stream' => $learnerStream],
+    $remainingWeakPoints,
+    $items
+);
+
 json_response(200, [
     'ok' => true,
     'learner_stream' => $learnerStream,
@@ -56,5 +64,10 @@ json_response(200, [
     'match_type' => $match['match_type'],
     'message' => $correct ? ($match['match_type'] === 'spelling' ? 'Засчитано. Только проверь написание ниже.' : maritime_message('hangar')) : maritime_message('weak'),
     'target_text' => $item['target_text'],
-    'remaining' => captain_stream_unresolved_count($user['id'], $learnerStream),
+    'remaining' => count($remainingWeakPoints),
+    'resolved_all' => count($remainingWeakPoints) === 0,
+    'recommended_level' => $progressSummary['recommended_level'],
+    'recommended_branch' => $progressSummary['recommended_branch'],
+    'recommended_watch' => $progressSummary['recommended_watch'],
+    'next_step' => $progressSummary['next_step'],
 ]);

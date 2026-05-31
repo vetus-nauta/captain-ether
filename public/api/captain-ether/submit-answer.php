@@ -40,13 +40,24 @@ $result = watch_sessions_mutate(function (array &$store) use ($sessionId, $index
         return ['error' => 'Content item not found', 'status' => 500];
     }
 
+    $hintAvailable = !empty(visible_question($question, $item)['hint_available']);
+    $effectiveHint = $usedHint && $hintAvailable;
+    $skipAvailable = !empty($question['skip_available']);
+    if ($skipped && !$skipAvailable) {
+        return ['error' => 'skip_unavailable', 'status' => 409];
+    }
+
     $match = captain_match_answer($answer, $item, $skipped);
     $correct = (bool) $match['correct'];
-    $points = $correct ? ($usedHint ? 0.5 : 1.0) : 0.0;
-    $reason = $skipped ? 'skip' : ($correct && $usedHint ? 'hint' : ($correct ? ((string) $match['match_type'] === 'spelling' ? 'spelling' : 'clean') : 'wrong'));
+    $hintReward = max(0.0, min(1.0, (float) ($question['hint_reward'] ?? 0.5)));
+    $skipReward = max(0.0, min(1.0, (float) ($question['skip_reward'] ?? 0.0)));
+    $points = $skipped
+        ? $skipReward
+        : ($correct ? ($effectiveHint ? $hintReward : 1.0) : 0.0);
+    $reason = $skipped ? 'skip' : ($correct && $effectiveHint ? 'hint' : ($correct ? ((string) $match['match_type'] === 'spelling' ? 'spelling' : 'clean') : 'wrong'));
 
     $watch['questions'][$index]['answer'] = $answer;
-    $watch['questions'][$index]['used_hint'] = $usedHint;
+    $watch['questions'][$index]['used_hint'] = $effectiveHint;
     $watch['questions'][$index]['skipped'] = $skipped;
     $watch['questions'][$index]['result'] = [
         'correct' => $correct,
@@ -75,8 +86,10 @@ $result = watch_sessions_mutate(function (array &$store) use ($sessionId, $index
         'correct' => $correct,
         'points' => $points,
         'reason' => $reason,
+        'hint_applied' => $effectiveHint,
+        'skip_applied' => $skipped,
         'match_type' => $match['match_type'],
-        'message' => $usedHint && $correct ? maritime_message('hint') : (string) $match['message'],
+        'message' => $effectiveHint && $correct ? maritime_message('hint') : (string) $match['message'],
         'target_text' => $item['target_text'] ?? '',
         'next' => $next,
         'done' => $next === null,
@@ -92,7 +105,7 @@ $result = watch_sessions_mutate(function (array &$store) use ($sessionId, $index
             'correct' => $correct,
             'reason' => $reason,
             'match_type' => $match['match_type'],
-            'used_hint' => $usedHint,
+            'used_hint' => $effectiveHint,
             'skipped' => $skipped,
         ],
     ];

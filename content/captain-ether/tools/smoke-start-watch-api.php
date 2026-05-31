@@ -145,6 +145,20 @@ function smoke_seed_weak_points(string $userId, array $itemIds): void {
     smoke_write_json('weak_points', ['users' => [$userId => $points]]);
 }
 
+function smoke_seed_progress(string $userId, array $progress): void {
+    $default = [
+        'skip_cleanup_count' => 0,
+        'completed_watches' => 0,
+        'last_level' => 'beginner',
+        'history' => [],
+    ];
+    smoke_write_json('progress', [
+        'users' => [
+            $userId => array_replace($default, $progress),
+        ],
+    ]);
+}
+
 function smoke_start_server(string $phpBin, string $appRoot, int $port, string $logPath): mixed {
     $command = escapeshellarg($phpBin) . ' -S 127.0.0.1:' . $port . ' -t ' . escapeshellarg($appRoot . '/public');
     $descriptorSpec = [
@@ -289,16 +303,28 @@ function smoke_watch_length(string $level): int {
     };
 }
 
-function smoke_focus_quota(string $level): int {
-    return match ($level) {
-        'advanced' => 15,
-        'intermediate' => 12,
+function smoke_focus_quota_total(int $total): int {
+    return match ($total) {
+        20 => 15,
+        16 => 12,
         default => 9,
     };
 }
 
-function smoke_weak_quota(string $level): int {
-    return max(2, (int) floor(smoke_watch_length($level) * 0.35));
+function smoke_mixed_focus_quota_total(int $total): int {
+    return match ($total) {
+        20 => 6,
+        16 => 5,
+        default => 4,
+    };
+}
+
+function smoke_valid_next_step(string $step): bool {
+    return in_array($step, ['clear_revision', 'build_rhythm', 'step_up', 'hold_course'], true);
+}
+
+function smoke_weak_quota_total(int $total): int {
+    return max(2, (int) floor($total * 0.35));
 }
 
 function smoke_selected_ids(string $watchId): array {
@@ -336,17 +362,29 @@ function smoke_type_counts(array $items): array {
     return $counts;
 }
 
-function smoke_type_floor(string $level): array {
-    return match ($level) {
-        'advanced' => ['word' => 6, 'short_expression' => 6, 'phrase' => 8],
-        'intermediate' => ['word' => 4, 'short_expression' => 5, 'phrase' => 7],
-        default => ['word' => 3, 'short_expression' => 3, 'phrase' => 6],
-    };
+function smoke_type_floor_total(int $total, string $intensity = 'standard'): array {
+    if ($intensity === 'lighter') {
+        $word = max(3, (int) ceil($total * 0.30));
+        $short = max(3, (int) ceil($total * 0.30));
+        $phrase = max(4, $total - $word - $short);
+        return ['word' => $word, 'short_expression' => $short, 'phrase' => $phrase];
+    }
+
+    if ($intensity === 'denser') {
+        $word = max(2, (int) floor($total * 0.23));
+        $short = max(3, (int) floor($total * 0.27));
+        $phrase = max(6, $total - $word - $short);
+        return ['word' => $word, 'short_expression' => $short, 'phrase' => $phrase];
+    }
+
+    if ($total >= 20) return ['word' => 6, 'short_expression' => 6, 'phrase' => 8];
+    if ($total >= 16) return ['word' => 4, 'short_expression' => 5, 'phrase' => 7];
+    return ['word' => 3, 'short_expression' => 3, 'phrase' => 6];
 }
 
-function smoke_meets_type_floor(array $items, string $level): bool {
+function smoke_meets_type_floor(array $items, int $total, string $intensity = 'standard'): bool {
     $counts = smoke_type_counts($items);
-    foreach (smoke_type_floor($level) as $type => $floor) {
+    foreach (smoke_type_floor_total($total, $intensity) as $type => $floor) {
         if (($counts[$type] ?? 0) < $floor) return false;
     }
     return true;
@@ -392,7 +430,7 @@ function smoke_expect_start_error_no_mutation(string $name, array $body, int $st
     smoke_check($name . ' error privacy', smoke_no_public_keys($response['json'], ['token', 'csrf', 'email', 'user_id', 'player_hash']), 'error payload exposed private keys');
 }
 
-function smoke_start_watch(string $name, array $body, string $level, ?string $branch = null, string $stream = CAPTAIN_LEARNER_STREAM_RU, string $role = 'admin'): string {
+function smoke_start_watch(string $name, array $body, string $level, ?string $branch = null, string $stream = CAPTAIN_LEARNER_STREAM_RU, string $role = 'admin', ?int $expectedTotal = null): string {
     $response = smoke_post_as($role, '/api/captain-ether/start-watch.php', $body);
     smoke_check($name . ' status', $response['status'] === 200, 'expected 200, got ' . $response['status']);
     smoke_check($name . ' ok', ($response['json']['ok'] ?? false) === true, 'ok was not true');
@@ -401,15 +439,17 @@ function smoke_start_watch(string $name, array $body, string $level, ?string $br
     smoke_check($name . ' watch id', $watchId !== '', 'watch id missing');
     smoke_check($name . ' stream', ($watch['learner_stream'] ?? '') === $stream, 'stream mismatch');
     smoke_check($name . ' level', ($watch['level'] ?? '') === $level, 'level mismatch');
-    smoke_check($name . ' total', (int) ($watch['total'] ?? 0) === smoke_watch_length($level), 'total mismatch');
+    smoke_check($name . ' total', (int) ($watch['total'] ?? 0) === ($expectedTotal ?? smoke_watch_length($level)), 'total mismatch');
     smoke_check($name . ' response privacy', smoke_no_public_keys($response['json'], ['accepted_answers', 'qa_notes', 'answer', 'branch', 'module', 'user_id', 'email', 'token', 'csrf', 'cookie', 'session_id', 'player_hash']), 'public response exposed private keys');
+    $actualTotal = (int) ($watch['total'] ?? 0);
+    $pacingIntensity = (string) ($watch['pacing']['intensity'] ?? 'standard');
 
     $items = $watchId !== '' ? smoke_selected_items($watchId) : [];
-    smoke_check($name . ' stored count', count($items) === smoke_watch_length($level), 'stored item count mismatch');
+    smoke_check($name . ' stored count', count($items) === ($expectedTotal ?? smoke_watch_length($level)), 'stored item count mismatch');
     smoke_check($name . ' stored stream', $watchId === '' || smoke_watch_stream($watchId) === $stream, 'stored stream mismatch');
     if ($branch !== null) {
-        smoke_check($name . ' focus quota', smoke_count_branch($items, $branch) === smoke_focus_quota($level), 'focused branch quota mismatch');
-        smoke_check($name . ' type floor', smoke_meets_type_floor($items, $level), 'focused type floor failed');
+        smoke_check($name . ' focus quota', smoke_count_branch($items, $branch) === smoke_focus_quota_total($actualTotal), 'focused branch quota mismatch');
+        smoke_check($name . ' type floor', smoke_meets_type_floor($items, $actualTotal, $pacingIntensity), 'focused type floor failed');
     }
 
     return $watchId;
@@ -493,9 +533,9 @@ try {
 
     $weakIds = smoke_ids_for(static fn(array $item): bool => in_array($item['level'] ?? '', smoke_allowed_levels('advanced'), true), 12);
     smoke_seed_weak_points($adminUserId, $weakIds);
-    $mixedWeakWatch = smoke_start_watch('mixed weak hard cap', ['level' => 'advanced'], 'advanced');
+    $mixedWeakWatch = smoke_start_watch('mixed weak hard cap', ['level' => 'advanced'], 'advanced', null, CAPTAIN_LEARNER_STREAM_RU, 'admin', 17);
     $mixedWeakSelected = array_intersect(smoke_selected_ids($mixedWeakWatch), $weakIds);
-    smoke_check('mixed weak hard cap count', count($mixedWeakSelected) <= smoke_weak_quota('advanced'), 'selected too many weak items');
+    smoke_check('mixed weak hard cap count', count($mixedWeakSelected) <= smoke_weak_quota_total(count(smoke_selected_ids($mixedWeakWatch))), 'selected too many weak items');
 
     smoke_seed_weak_points($adminUserId, []);
     smoke_expect_start_error_no_mutation('invalid mode', ['level' => 'beginner', 'mode' => 'bad_mode'], 400, 'invalid_watch_mode');
@@ -599,11 +639,38 @@ try {
     $branchWeakIds = smoke_ids_for(static fn(array $item): bool => ($item['branch'] ?? '') === 'core_radio' && in_array($item['level'] ?? '', smoke_allowed_levels('intermediate'), true), 2);
     $reviewWeakIds = smoke_ids_for(static fn(array $item): bool => ($item['branch'] ?? '') !== 'core_radio' && ($item['branch'] ?? '') !== '' && in_array($item['level'] ?? '', smoke_allowed_levels('intermediate'), true), 2);
     smoke_seed_weak_points($adminUserId, array_merge($branchWeakIds, $reviewWeakIds));
-    $focusedWeakWatch = smoke_start_watch('focused branch weak distribution', ['level' => 'intermediate', 'mode' => 'focused_branch', 'branch' => 'core_radio'], 'intermediate', 'core_radio');
+    $prioritizedLost = smoke_get('/api/captain-ether/lost-oars.php');
+    smoke_check('lost oars prioritized status', $prioritizedLost['status'] === 200, 'expected 200, got ' . $prioritizedLost['status']);
+    smoke_check('lost oars recommended branch', ($prioritizedLost['json']['recommended_branch'] ?? '') === 'core_radio', 'recommended branch mismatch');
+    smoke_check('lost oars priority first branch', ($prioritizedLost['json']['lost_oars'][0]['branch'] ?? '') === 'core_radio', 'priority ordering did not start from focus branch');
+    smoke_check('lost oars priority first match', ($prioritizedLost['json']['lost_oars'][0]['focus_match'] ?? false) === true, 'priority item was not marked as focus match');
+    smoke_check('lost oars recommended watch mode', in_array(($prioritizedLost['json']['recommended_watch']['mode'] ?? ''), ['mixed', 'focused_branch'], true), 'lost oars recommended watch mode missing or invalid');
+    smoke_check('lost oars recommended watch pacing', ($prioritizedLost['json']['recommended_watch']['pacing']['profile'] ?? '') === 'recovery', 'lost oars pacing profile mismatch');
+    $guidedMixedWatch = smoke_start_watch('mixed guided branch distribution', ['level' => 'intermediate'], 'intermediate', null, CAPTAIN_LEARNER_STREAM_RU, 'admin', 13);
+    $guidedMixedItems = smoke_selected_items($guidedMixedWatch);
+    smoke_check('mixed guided branch soft quota', smoke_count_branch($guidedMixedItems, 'core_radio') >= smoke_mixed_focus_quota_total(count($guidedMixedItems)), 'mixed watch did not lean into recommended branch');
+    $guidedMixedResponse = smoke_post('/api/captain-ether/start-watch.php', ['level' => 'intermediate']);
+    smoke_check('mixed guided pacing recovery length', (int) ($guidedMixedResponse['json']['watch']['total'] ?? 0) === 13, 'recovery pacing did not shorten intermediate watch');
+    smoke_check('mixed guided pacing recovery profile', ($guidedMixedResponse['json']['watch']['pacing']['profile'] ?? '') === 'recovery', 'recovery pacing profile missing from watch');
+    smoke_check('mixed guided hint mode', ($guidedMixedResponse['json']['watch']['hint_policy']['mode'] ?? '') === 'supportive', 'recovery hint mode mismatch');
+    smoke_check('mixed guided hint reward', abs((float) ($guidedMixedResponse['json']['watch']['current']['hint_reward'] ?? 0) - 0.75) < 0.001, 'recovery hint reward mismatch');
+    smoke_check('mixed guided skip mode', ($guidedMixedResponse['json']['watch']['skip_policy']['mode'] ?? '') === 'supportive', 'recovery skip mode mismatch');
+    smoke_check('mixed guided skip reward', abs((float) ($guidedMixedResponse['json']['watch']['current']['skip_reward'] ?? 0) - 0.25) < 0.001, 'recovery skip reward mismatch');
+    $guidedWatchId = (string) ($guidedMixedResponse['json']['watch']['id'] ?? '');
+    $guidedFirstItemId = smoke_first_item_id($guidedWatchId);
+    $guidedSubmit = smoke_answer_watch_item($guidedWatchId, 0, smoke_target_text($guidedFirstItemId), true);
+    smoke_check('recovery hint applied status', $guidedSubmit['status'] === 200, 'expected 200, got ' . $guidedSubmit['status']);
+    smoke_check('recovery hint applied', ($guidedSubmit['json']['hint_applied'] ?? false) === true, 'recovery hint was not applied');
+    smoke_check('recovery hint points', abs((float) ($guidedSubmit['json']['points'] ?? 0) - 0.75) < 0.001, 'recovery hint points mismatch');
+    $guidedSkip = smoke_answer_watch_item($guidedWatchId, 1, '', false, true);
+    smoke_check('recovery skip status', $guidedSkip['status'] === 200, 'expected 200, got ' . $guidedSkip['status']);
+    smoke_check('recovery skip applied', ($guidedSkip['json']['skip_applied'] ?? false) === true, 'recovery skip was not applied');
+    smoke_check('recovery skip points', abs((float) ($guidedSkip['json']['points'] ?? 0) - 0.25) < 0.001, 'recovery skip points mismatch');
+    $focusedWeakWatch = smoke_start_watch('focused branch weak distribution', ['level' => 'intermediate', 'mode' => 'focused_branch', 'branch' => 'core_radio'], 'intermediate', 'core_radio', CAPTAIN_LEARNER_STREAM_RU, 'admin', 13);
     $focusedWeakItems = smoke_selected_items($focusedWeakWatch);
     $focusedWeakIds = smoke_selected_ids($focusedWeakWatch);
-    smoke_check('focused weak hard cap count', count(array_intersect($focusedWeakIds, array_merge($branchWeakIds, $reviewWeakIds))) <= smoke_weak_quota('intermediate'), 'selected too many weak items');
-    smoke_check('focused review excludes same branch overflow', count($focusedWeakItems) - smoke_count_branch($focusedWeakItems, 'core_radio') === smoke_watch_length('intermediate') - smoke_focus_quota('intermediate'), 'review quota mismatch');
+    smoke_check('focused weak hard cap count', count(array_intersect($focusedWeakIds, array_merge($branchWeakIds, $reviewWeakIds))) <= smoke_weak_quota_total(count($focusedWeakIds)), 'selected too many weak items');
+    smoke_check('focused review excludes same branch overflow', count($focusedWeakItems) - smoke_count_branch($focusedWeakItems, 'core_radio') === count($focusedWeakItems) - smoke_focus_quota_total(count($focusedWeakItems)), 'review quota mismatch');
 
     smoke_seed_weak_points($adminUserId, []);
     $flowWatch = smoke_start_watch('submit flow watch', ['level' => 'beginner', 'mode' => 'focused_branch', 'branch' => 'core_radio'], 'beginner', 'core_radio');
@@ -620,16 +687,29 @@ try {
     $finish = smoke_post('/api/captain-ether/finish-watch.php', ['watch_id' => $flowWatch]);
     smoke_check('finish status', $finish['status'] === 200, 'expected 200, got ' . $finish['status']);
     smoke_check('finish summary', isset($finish['json']['summary']['final_score']), 'final score missing');
+    smoke_check('finish recommended level', in_array(($finish['json']['summary']['recommended_level'] ?? ''), ['beginner', 'intermediate', 'advanced'], true), 'recommended level missing or invalid');
+    smoke_check('finish next step', smoke_valid_next_step((string) ($finish['json']['summary']['next_step'] ?? '')), 'next step missing or invalid');
+    smoke_check('finish recommended watch level parity', ($finish['json']['summary']['recommended_watch']['level'] ?? '') === ($finish['json']['summary']['recommended_level'] ?? ''), 'recommended watch level mismatch');
+    smoke_check('finish recommended watch mode', in_array(($finish['json']['summary']['recommended_watch']['mode'] ?? ''), ['mixed', 'focused_branch'], true), 'recommended watch mode missing or invalid');
+    smoke_check('finish debrief drivers', count($finish['json']['summary']['debrief']['drivers'] ?? []) >= 1, 'finish debrief drivers missing');
+    smoke_check('finish debrief branch map', is_array($finish['json']['summary']['debrief']['pressure_by_branch'] ?? null), 'finish debrief branch map missing');
+    smoke_check('finish debrief type map', is_array($finish['json']['summary']['debrief']['pressure_by_type'] ?? null), 'finish debrief type map missing');
 
     $progress = smoke_get('/api/captain-ether/progress.php');
     smoke_check('progress status', $progress['status'] === 200, 'expected 200, got ' . $progress['status']);
     smoke_check('progress completed', (int) ($progress['json']['progress']['completed_watches'] ?? 0) >= 1, 'completed watch not recorded');
+    smoke_check('progress recommended level', in_array(($progress['json']['progress']['recommended_level'] ?? ''), ['beginner', 'intermediate', 'advanced'], true), 'progress recommended level missing or invalid');
+    smoke_check('progress next step', smoke_valid_next_step((string) ($progress['json']['progress']['next_step'] ?? '')), 'progress next step missing or invalid');
+    smoke_check('progress recommended watch mode', in_array(($progress['json']['progress']['recommended_watch']['mode'] ?? ''), ['mixed', 'focused_branch'], true), 'progress recommended watch mode missing or invalid');
+    smoke_check('progress branch summary present', is_array($progress['json']['progress']['weak_points_summary']['by_branch'] ?? null), 'progress branch summary missing');
 
     $lostWatch = smoke_start_watch('lost oar source watch', ['level' => 'beginner'], 'beginner');
     smoke_answer_watch_item($lostWatch, 0, 'definitely wrong answer');
     $lost = smoke_get('/api/captain-ether/lost-oars.php');
     smoke_check('lost oars status', $lost['status'] === 200, 'expected 200, got ' . $lost['status']);
     smoke_check('lost oars present', count($lost['json']['lost_oars'] ?? []) >= 1, 'lost oar not created');
+    smoke_check('lost oars next step', smoke_valid_next_step((string) ($lost['json']['next_step'] ?? '')), 'lost-oars next step missing or invalid');
+    smoke_check('lost oars branch key', isset($lost['json']['lost_oars'][0]['branch']), 'lost-oars branch key missing');
     smoke_check('lost oars privacy', smoke_no_public_keys($lost['json'], ['accepted_answers', 'qa_notes', 'email', 'user_id', 'token', 'csrf', 'cookie', 'session_id', 'player_hash']), 'lost-oars payload exposed private keys');
 
     $answerLog = smoke_get('/api/captain-ether/answer-log.php?limit=20');
@@ -650,6 +730,48 @@ try {
     $resolve = smoke_post('/api/captain-ether/resolve-lost-oar.php', ['item_id' => $lostItemId, 'answer' => smoke_target_text($lostItemId)]);
     smoke_check('resolve lost oar status', $resolve['status'] === 200, 'expected 200, got ' . $resolve['status']);
     smoke_check('resolve lost oar correct', ($resolve['json']['correct'] ?? false) === true, 'lost oar was not resolved');
+    smoke_check('resolve lost oar recommended mode', in_array(($resolve['json']['recommended_watch']['mode'] ?? ''), ['mixed', 'focused_branch'], true), 'resolve recommended watch mode missing or invalid');
+
+    smoke_seed_weak_points($adminUserId, []);
+    smoke_seed_progress($adminUserId, [
+        'completed_watches' => 5,
+        'last_level' => 'intermediate',
+        'history' => [
+            ['watch_id' => 'push_1', 'summary' => ['clean' => 12, 'hint' => 0, 'lost' => 0, 'spelling' => 0], 'finished_at' => gmdate('c')],
+            ['watch_id' => 'push_2', 'summary' => ['clean' => 13, 'hint' => 1, 'lost' => 0, 'spelling' => 0], 'finished_at' => gmdate('c')],
+            ['watch_id' => 'push_3', 'summary' => ['clean' => 12, 'hint' => 0, 'lost' => 0, 'spelling' => 0], 'finished_at' => gmdate('c')],
+        ],
+    ]);
+    $pushProgress = smoke_get('/api/captain-ether/progress.php');
+    smoke_check('push progress pace profile', ($pushProgress['json']['progress']['recommended_watch']['pacing']['profile'] ?? '') === 'push', 'push pacing profile missing in progress');
+    smoke_check('push progress pace length', (int) ($pushProgress['json']['progress']['recommended_watch']['length'] ?? 0) === 18, 'push pacing length mismatch in progress');
+    $pushWatch = smoke_post('/api/captain-ether/start-watch.php', ['level' => 'intermediate']);
+    smoke_check('push watch status', $pushWatch['status'] === 200, 'expected 200, got ' . $pushWatch['status']);
+    smoke_check('push watch length', (int) ($pushWatch['json']['watch']['total'] ?? 0) === 18, 'push pacing did not extend intermediate watch');
+    smoke_check('push watch profile', ($pushWatch['json']['watch']['pacing']['profile'] ?? '') === 'push', 'push pacing profile missing from watch');
+    smoke_check('push hint mode', ($pushWatch['json']['watch']['hint_policy']['mode'] ?? '') === 'sparse', 'push hint mode mismatch');
+    smoke_check('push hint reward', abs((float) ($pushWatch['json']['watch']['hint_policy']['reward'] ?? 0) - 0.25) < 0.001, 'push hint reward mismatch');
+    smoke_check('push skip mode', ($pushWatch['json']['watch']['skip_policy']['mode'] ?? '') === 'limited', 'push skip mode mismatch');
+    $pushWatchId = (string) ($pushWatch['json']['watch']['id'] ?? '');
+    $pushFirstItemId = smoke_first_item_id($pushWatchId);
+    $pushSubmit = smoke_answer_watch_item($pushWatchId, 0, smoke_target_text($pushFirstItemId), true);
+    smoke_check('push submit status', $pushSubmit['status'] === 200, 'expected 200, got ' . $pushSubmit['status']);
+    if (($pushWatch['json']['watch']['current']['hint_available'] ?? false) === true) {
+        smoke_check('push hint applied', ($pushSubmit['json']['hint_applied'] ?? false) === true, 'push hint was available but not applied');
+        smoke_check('push hint points', abs((float) ($pushSubmit['json']['points'] ?? 0) - 0.25) < 0.001, 'push hint points mismatch');
+    } else {
+        smoke_check('push hint blocked', ($pushSubmit['json']['hint_applied'] ?? true) === false, 'push hint applied despite being unavailable');
+        smoke_check('push hint blocked points', abs((float) ($pushSubmit['json']['points'] ?? 0) - 1.0) < 0.001, 'push blocked hint altered scoring');
+    }
+    if (($pushWatch['json']['watch']['current']['skip_available'] ?? false) === true) {
+        $pushSkip = smoke_answer_watch_item($pushWatchId, 0, '', false, true);
+        smoke_check('push skip allowed status', $pushSkip['status'] === 200, 'expected 200, got ' . $pushSkip['status']);
+        smoke_check('push skip allowed points', abs((float) ($pushSkip['json']['points'] ?? 999) - 0.0) < 0.001, 'push skip points mismatch');
+    } else {
+        $pushSkip = smoke_answer_watch_item($pushWatchId, 0, '', false, true);
+        smoke_check('push skip blocked status', $pushSkip['status'] === 409, 'push skip was not blocked');
+        smoke_check('push skip blocked error', ($pushSkip['json']['error'] ?? '') === 'skip_unavailable', 'push skip error mismatch');
+    }
 
     $skip = smoke_post('/api/captain-ether/skip-cleanup.php', []);
     smoke_check('skip cleanup no unresolved status', $skip['status'] === 200, 'expected 200, got ' . $skip['status']);

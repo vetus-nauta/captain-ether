@@ -36,6 +36,24 @@ const I18N = {
     'home.planned': 'In work',
     'home.watches': 'Watches',
     'home.oars': 'Oars',
+    'home.progressTitle': 'Training progress',
+    'home.progressCopy': 'Your next useful move should come from revision load and recent watches, not guesswork.',
+    'home.progressAction': 'Start recommended watch',
+    'home.progressLastLevel': 'Last level',
+    'home.progressRecommended': 'Recommended',
+    'home.progressBranch': 'Recommended branch',
+    'home.progressNextStep': 'Next step',
+    'home.progressPace': 'Recommended pace',
+    'home.progressLength': 'Recommended length',
+    'home.progressWeakTypes': 'Weak by type',
+    'home.progressWeakBranches': 'Weak by branch',
+    'home.progressTopTopics': 'Top topics',
+    'home.progressRecent': 'Recent watch',
+    'home.progressEmpty': 'No completed watches yet. Start with a short watch and build rhythm first.',
+    'home.progressStep.clear_revision': 'Clear the current revision load before stepping up.',
+    'home.progressStep.build_rhythm': 'Build three clean short watches before pushing the pace.',
+    'home.progressStep.step_up': 'Revision is under control. Step up to the next watch level.',
+    'home.progressStep.hold_course': 'Hold this level and smooth out repeated weak points.',
     'home.gamesTitle': 'Maritime games',
     'home.management': 'Management',
     'home.managementCopy': 'A shared base for users, groups, crews, competitions, and results. The game scenario stays separate.',
@@ -60,6 +78,16 @@ const I18N = {
     'type.word': 'Word',
     'type.short_expression': 'Short phrase',
     'type.phrase': 'Radio phrase',
+    'branch.core_radio': 'Core radio',
+    'branch.marina_harbour': 'Marina / harbour',
+    'branch.navigation_reports': 'Navigation reports',
+    'branch.safety_securite': 'Safety / securite',
+    'branch.traffic_collision': 'Traffic / collision',
+    'branch.urgency_panpan': 'Urgency / pan-pan',
+    'branch.distress_mayday': 'Distress / mayday',
+    'branch.onboard_operations': 'Onboard operations',
+    'branch.vts_port_control': 'VTS / port control',
+    'branch.review_minimal_pairs': 'Minimal pairs',
     'lostReason.wrong': 'for revision',
     'lostReason.skip': 'skipped',
     'lostReason.hint': 'after hint',
@@ -94,7 +122,13 @@ const I18N = {
     'watch.answerLabel': 'Your answer',
     'watch.answer': 'Answer',
     'watch.hint': 'Hint',
+    'watch.hintSupportive': 'Hint support',
+    'watch.hintStandard': 'Hint support',
+    'watch.hintSparse': 'Hint pressure',
     'watch.skip': 'Skip',
+    'watch.skipSupportive': 'Skip support',
+    'watch.skipStandard': 'Skip pressure',
+    'watch.skipLimited': 'Skip pressure',
     'watch.noHint': 'No hints. The radio is honest.',
     'watch.hintLabel': 'Hint',
     'watch.side': 'Watch',
@@ -111,9 +145,47 @@ const I18N = {
     'summary.revision': 'To revise',
     'summary.score': 'Score',
     'summary.continue': 'Continue',
+    'summary.nextTitle': 'Next move',
+    'summary.nextWatch': 'Start recommended watch',
+    'summary.nextBranchWatch': 'Start focused watch',
+    'summary.reviseNow': 'Revise now',
+    'summary.recommendedLevel': 'Recommended level',
+    'summary.recommendedBranch': 'Recommended branch',
+    'summary.recommendedPace': 'Recommended pace',
+    'summary.recommendedLength': 'Recommended length',
+    'summary.debriefTitle': 'Why this route',
+    'summary.pressureBranches': 'Pressure by branch',
+    'summary.pressureTypes': 'Pressure by type',
+    'summary.driver.revision_load': 'Revision load is still high: {count}',
+    'summary.driver.branch_pressure': 'Most pressure in {branch}: {count}',
+    'summary.driver.type_pressure': 'Main friction in {type}: {count}',
+    'summary.driver.hint_load': 'Hints still carry too much of the watch: {count}',
+    'summary.driver.spelling_load': 'Spelling slowed the watch: {count}',
+    'summary.driver.rhythm_build': 'You still need watch rhythm before stepping up: {count}',
+    'summary.driver.step_up_ready': 'This watch is steady enough for {level}: {count}',
+    'summary.driver.watch_errors': 'Wrong or skipped calls still distort the route: {count}',
+    'summary.driver.consistency': 'Clean calls are holding the route together: {count}',
+    'pace.profile.recovery': 'Recovery',
+    'pace.profile.steady': 'Steady',
+    'pace.profile.push': 'Push',
+    'pace.intensity.lighter': 'lighter',
+    'pace.intensity.standard': 'standard',
+    'pace.intensity.denser': 'denser',
+    'pace.calls': '{count} calls',
+    'hint.mode.supportive': 'supportive',
+    'hint.mode.standard': 'standard',
+    'hint.mode.sparse': 'sparse',
+    'skip.mode.supportive': 'supportive',
+    'skip.mode.standard': 'standard',
+    'skip.mode.limited': 'limited',
     'lost.title': 'Calm revision',
     'lost.hasItems': 'Not a penalty: fix a few phrases and return to watch.',
     'lost.empty': 'All calm: nothing to revise right now.',
+    'lost.priorityTitle': 'Revision route',
+    'lost.priorityCopy': 'Clear the heaviest weak points first, then return straight into the recommended watch.',
+    'lost.priorityBranch': 'Priority branch',
+    'lost.returnRecommended': 'Return to recommended watch',
+    'lost.autoReturn': 'Revision cleared. Returning to recommended watch...',
     'lost.answerAria': 'Revision answer',
     'lost.check': 'Check',
     'lost.home': 'Hub',
@@ -248,6 +320,24 @@ I18N.ru = {
   'home.planned': 'В работе',
   'home.watches': 'Вахты',
   'home.oars': 'Вёсла',
+  'home.progressTitle': 'Учебный прогресс',
+  'home.progressCopy': 'Следующий полезный шаг игрока должен идти из нагрузки на доработку и недавних вахт, а не из догадки.',
+  'home.progressAction': 'Начать рекомендованную вахту',
+  'home.progressLastLevel': 'Последний уровень',
+  'home.progressRecommended': 'Рекомендовано',
+  'home.progressBranch': 'Рекомендованная ветка',
+  'home.progressNextStep': 'Следующий шаг',
+  'home.progressPace': 'Рекомендованный темп',
+  'home.progressLength': 'Рекомендованная длина',
+  'home.progressWeakTypes': 'Слабые места по типу',
+  'home.progressWeakBranches': 'Слабые места по ветке',
+  'home.progressTopTopics': 'Основные темы',
+  'home.progressRecent': 'Последняя вахта',
+  'home.progressEmpty': 'Пока нет завершённых вахт. Начни с короткой и набери ритм.',
+  'home.progressStep.clear_revision': 'Сначала сними текущую нагрузку на доработку, потом поднимай уровень.',
+  'home.progressStep.build_rhythm': 'Собери три спокойные короткие вахты, потом ускоряйся.',
+  'home.progressStep.step_up': 'Доработка под контролем. Можно переходить на следующий уровень.',
+  'home.progressStep.hold_course': 'Держи этот уровень и вычищай повторяющиеся слабые места.',
   'home.gamesTitle': 'Морские игры',
   'home.management': 'Управление',
   'home.managementCopy': 'Общая основа для пользователей, групп, экипажей, соревнований и результатов. Игровой сценарий остаётся отдельным.',
@@ -272,6 +362,16 @@ I18N.ru = {
   'type.word': 'Слово',
   'type.short_expression': 'Короткая фраза',
   'type.phrase': 'Радиофраза',
+  'branch.core_radio': 'Базовый радиообмен',
+  'branch.marina_harbour': 'Марина / гавань',
+  'branch.navigation_reports': 'Навигационные доклады',
+  'branch.safety_securite': 'Безопасность / securite',
+  'branch.traffic_collision': 'Трафик / столкновение',
+  'branch.urgency_panpan': 'Срочность / pan-pan',
+  'branch.distress_mayday': 'Бедствие / mayday',
+  'branch.onboard_operations': 'Судовые операции',
+  'branch.vts_port_control': 'VTS / порт-контроль',
+  'branch.review_minimal_pairs': 'Минимальные пары',
   'lostReason.wrong': 'на доработку',
   'lostReason.skip': 'пропущено',
   'lostReason.hint': 'после подсказки',
@@ -305,7 +405,13 @@ I18N.ru = {
   'watch.answerLabel': 'Ваш ответ',
   'watch.answer': 'Ответить',
   'watch.hint': 'Подсказка',
+  'watch.hintSupportive': 'Поддержка подсказки',
+  'watch.hintStandard': 'Поддержка подсказки',
+  'watch.hintSparse': 'Давление подсказки',
   'watch.skip': 'Пропустить',
+  'watch.skipSupportive': 'Поддержка пропуска',
+  'watch.skipStandard': 'Давление пропуска',
+  'watch.skipLimited': 'Давление пропуска',
   'watch.noHint': 'Подсказок нет. Эфир честный.',
   'watch.hintLabel': 'Подсказка',
   'watch.side': 'Вахта',
@@ -322,9 +428,47 @@ I18N.ru = {
   'summary.revision': 'На доработку',
   'summary.score': 'Счёт',
   'summary.continue': 'Продолжить',
+  'summary.nextTitle': 'Следующий ход',
+  'summary.nextWatch': 'Начать рекомендованную вахту',
+  'summary.nextBranchWatch': 'Начать целевую вахту',
+  'summary.reviseNow': 'Сразу в доработку',
+  'summary.recommendedLevel': 'Рекомендованный уровень',
+  'summary.recommendedBranch': 'Рекомендованная ветка',
+  'summary.recommendedPace': 'Рекомендованный темп',
+  'summary.recommendedLength': 'Рекомендованная длина',
+  'summary.debriefTitle': 'Почему такой маршрут',
+  'summary.pressureBranches': 'Давление по ветке',
+  'summary.pressureTypes': 'Давление по типу',
+  'summary.driver.revision_load': 'Нагрузка на доработку все еще высокая: {count}',
+  'summary.driver.branch_pressure': 'Главное давление идет из ветки {branch}: {count}',
+  'summary.driver.type_pressure': 'Основное трение сейчас в типе {type}: {count}',
+  'summary.driver.hint_load': 'Подсказки все еще слишком сильно держат вахту: {count}',
+  'summary.driver.spelling_load': 'Орфография тормозила ход вахты: {count}',
+  'summary.driver.rhythm_build': 'До следующего шага еще нужен ритм вахт: {count}',
+  'summary.driver.step_up_ready': 'Эта вахта уже достаточно ровная для {level}: {count}',
+  'summary.driver.watch_errors': 'Ошибки и пропуски еще заметно искажают маршрут: {count}',
+  'summary.driver.consistency': 'Чистые вызовы уже держат маршрут: {count}',
+  'pace.profile.recovery': 'Восстановительный',
+  'pace.profile.steady': 'Ровный',
+  'pace.profile.push': 'Ускоряющий',
+  'pace.intensity.lighter': 'легче',
+  'pace.intensity.standard': 'стандарт',
+  'pace.intensity.denser': 'плотнее',
+  'pace.calls': '{count} вызовов',
+  'hint.mode.supportive': 'щадящий',
+  'hint.mode.standard': 'стандарт',
+  'hint.mode.sparse': 'жестче',
+  'skip.mode.supportive': 'щадящий',
+  'skip.mode.standard': 'стандарт',
+  'skip.mode.limited': 'ограничен',
   'lost.title': 'Спокойная доработка',
   'lost.hasItems': 'Не штраф: закрепим пару фраз и вернёмся на вахту.',
   'lost.empty': 'Всё спокойно: сейчас нечего дорабатывать.',
+  'lost.priorityTitle': 'Маршрут доработки',
+  'lost.priorityCopy': 'Сначала снимай самые тяжелые слабые места, потом сразу возвращайся в рекомендованную вахту.',
+  'lost.priorityBranch': 'Приоритетная ветка',
+  'lost.returnRecommended': 'Вернуться в рекомендованную вахту',
+  'lost.autoReturn': 'Доработка закрыта. Возвращаю в рекомендованную вахту...',
   'lost.answerAria': 'Ответ для доработки',
   'lost.check': 'Проверить',
   'lost.home': 'В хаб',
@@ -585,6 +729,153 @@ async function loadProgress() {
   return state.progress;
 }
 
+function progressStepCopy(step) {
+  return t(`home.progressStep.${step}`) || step || '';
+}
+
+function nextWatchActionLabel(summary) {
+  if ((summary?.next_step || '') === 'clear_revision') {
+    return t('summary.reviseNow');
+  }
+  if ((summary?.recommended_watch?.mode || '') === 'focused_branch') {
+    return t('summary.nextBranchWatch');
+  }
+  return t('summary.nextWatch');
+}
+
+function branchLabel(branch) {
+  return t(`branch.${branch}`) || branch || '';
+}
+
+function paceProfileLabel(profile) {
+  return t(`pace.profile.${profile}`) || profile || '';
+}
+
+function paceIntensityLabel(intensity) {
+  return t(`pace.intensity.${intensity}`) || intensity || '';
+}
+
+function watchPacingLabel(pacing) {
+  if (!pacing || typeof pacing !== 'object') return t('empty.none');
+  return `${paceProfileLabel(pacing.profile || 'steady')} / ${paceIntensityLabel(pacing.intensity || 'standard')}`;
+}
+
+function watchLengthCopy(length) {
+  return tf('pace.calls', { count: length ?? 0 });
+}
+
+function hintModeLabel(mode) {
+  return t(`hint.mode.${mode}`) || mode || '';
+}
+
+function skipModeLabel(mode) {
+  return t(`skip.mode.${mode}`) || mode || '';
+}
+
+function summaryDriverCopy(driver) {
+  if (!driver || typeof driver !== 'object') return '';
+  switch (driver.kind) {
+    case 'revision_load':
+    case 'hint_load':
+    case 'spelling_load':
+    case 'rhythm_build':
+    case 'watch_errors':
+    case 'consistency':
+      return tf(`summary.driver.${driver.kind}`, { count: driver.count ?? 0 });
+    case 'branch_pressure':
+      return tf('summary.driver.branch_pressure', { branch: branchLabel(driver.branch || ''), count: driver.count ?? 0 });
+    case 'type_pressure':
+      return tf('summary.driver.type_pressure', { type: questionTypeLabel(driver.type || 'phrase'), count: driver.count ?? 0 });
+    case 'step_up_ready':
+      return tf('summary.driver.step_up_ready', { level: levelLabel(driver.level || 'beginner'), count: driver.count ?? 0 });
+    default:
+      return '';
+  }
+}
+
+function labeledCountMapMarkup(map, labeler = (key) => key) {
+  const entries = Object.entries(map || {});
+  if (!entries.length) return `<span class="muted">${escapeHtml(t('empty.none'))}</span>`;
+  return entries.map(([key, value]) => html`
+    <span class="mini-pill">${escapeHtml(labeler(key))} ${escapeHtml(value)}</span>
+  `).join('');
+}
+
+function progressRecentWatchMarkup(progress) {
+  const recent = progress?.recent_watch;
+  if (!recent) {
+    return `<p class="muted">${escapeHtml(t('home.progressEmpty'))}</p>`;
+  }
+
+  return html`
+    <div class="stat-grid progress-overview__recent">
+      <div class="stat-card"><small>${escapeHtml(t('summary.clean'))}</small><strong>${recent.clean}</strong></div>
+      <div class="stat-card"><small>${escapeHtml(t('summary.hint'))}</small><strong>${recent.hint}</strong></div>
+      <div class="stat-card"><small>${escapeHtml(t('summary.revision'))}</small><strong>${recent.lost}</strong></div>
+      <div class="stat-card"><small>${escapeHtml(t('home.watches'))}</small><strong>${progress.completed_watches ?? 0}</strong></div>
+    </div>
+  `;
+}
+
+function progressOverviewMarkup() {
+  if (!state.user || !state.progress) return '';
+
+  const progress = state.progress;
+  const weakSummary = progress.weak_points_summary || {};
+  const recommendedWatch = progress.recommended_watch || { level: progress.recommended_level || 'beginner', mode: 'mixed' };
+  const recommendedLevel = recommendedWatch.level || progress.recommended_level || 'beginner';
+  const recommendedBranch = progress.recommended_branch || recommendedWatch.branch || '';
+  const recommendedPacing = recommendedWatch.pacing || { profile: 'steady', intensity: 'standard' };
+  const recommendedLength = recommendedWatch.length || recommendedPacing.target_length || 0;
+
+  return html`
+    <section class="panel progress-overview">
+      <div class="section-head">
+        <p class="eyebrow">${escapeHtml(t('levels.eyebrow'))}</p>
+        <h2>${escapeHtml(t('home.progressTitle'))}</h2>
+        <p class="muted">${escapeHtml(t('home.progressCopy'))}</p>
+      </div>
+      <div class="progress-overview__grid">
+        <div class="progress-overview__meta">
+          <div class="stat-grid">
+            <div class="stat-card"><small>${escapeHtml(t('home.progressLastLevel'))}</small><strong>${escapeHtml(levelLabel(progress.last_level || 'beginner'))}</strong></div>
+            <div class="stat-card"><small>${escapeHtml(t('home.progressRecommended'))}</small><strong>${escapeHtml(levelLabel(recommendedLevel))}</strong></div>
+            <div class="stat-card"><small>${escapeHtml(t('home.progressBranch'))}</small><strong>${escapeHtml(recommendedBranch ? branchLabel(recommendedBranch) : t('empty.none'))}</strong></div>
+            <div class="stat-card"><small>${escapeHtml(t('home.oars'))}</small><strong>${progress.unresolved_lost_oars ?? 0}</strong></div>
+          </div>
+          <div>
+            <p class="eyebrow">${escapeHtml(t('home.progressNextStep'))}</p>
+            <p class="muted">${escapeHtml(progressStepCopy(progress.next_step))}</p>
+            <p class="muted">${escapeHtml(t('home.progressPace'))}: ${escapeHtml(watchPacingLabel(recommendedPacing))} · ${escapeHtml(watchLengthCopy(recommendedLength))}</p>
+          </div>
+          <div class="actions">
+            <button class="button primary" id="recommendedWatchButton">${escapeHtml(t('home.progressAction'))}</button>
+            <button class="button amber" id="progressLostOarsButton">${escapeHtml(t('home.lostOars'))}</button>
+          </div>
+        </div>
+        <div class="progress-overview__meta">
+          <div>
+            <p class="eyebrow">${escapeHtml(t('home.progressWeakTypes'))}</p>
+            <div class="pill-row">${labeledCountMapMarkup(weakSummary.by_type, questionTypeLabel)}</div>
+          </div>
+          <div>
+            <p class="eyebrow">${escapeHtml(t('home.progressWeakBranches'))}</p>
+            <div class="pill-row">${labeledCountMapMarkup(weakSummary.by_branch, branchLabel)}</div>
+          </div>
+          <div>
+            <p class="eyebrow">${escapeHtml(t('home.progressTopTopics'))}</p>
+            <div class="pill-row">${countMapMarkup(weakSummary.top_topics)}</div>
+          </div>
+          <div>
+            <p class="eyebrow">${escapeHtml(t('home.progressRecent'))}</p>
+            ${progressRecentWatchMarkup(progress)}
+          </div>
+        </div>
+      </div>
+    </section>
+  `;
+}
+
 async function renderHome() {
   await ensureRegistry();
   if (state.user) {
@@ -616,6 +907,8 @@ async function renderHome() {
         </div>
       </aside>
     </section>
+
+    ${progressOverviewMarkup()}
 
     <section class="panel">
       <div class="section-head">
@@ -652,6 +945,14 @@ async function renderHome() {
 
   document.querySelector('#startWatchButton')?.addEventListener('click', () => openGame('captain_ether'));
   document.querySelector('#lostOarsButton')?.addEventListener('click', () => {
+    if (!state.user) renderLogin();
+    else renderLostOars();
+  });
+  document.querySelector('#recommendedWatchButton')?.addEventListener('click', () => {
+    const recommendation = state.progress?.recommended_watch || { level: state.progress?.recommended_level || 'beginner', mode: 'mixed' };
+    startWatch(recommendation.level || 'beginner', recommendation);
+  });
+  document.querySelector('#progressLostOarsButton')?.addEventListener('click', () => {
     if (!state.user) renderLogin();
     else renderLostOars();
   });
@@ -873,11 +1174,17 @@ function levelCopy(level) {
   }[level];
 }
 
-async function startWatch(level) {
+async function startWatch(level, options = {}) {
   app.innerHTML = `<section class="panel"><p class="status-line">${escapeHtml(t('status.loadingRadio'))}</p></section>`;
+  const body = { level };
+  if (options && typeof options === 'object') {
+    if (options.mode) body.mode = options.mode;
+    if (options.branch) body.branch = options.branch;
+    if (options.learner_stream) body.learner_stream = options.learner_stream;
+  }
   const data = await api('/api/captain-ether/start-watch.php', {
     method: 'POST',
-    body: JSON.stringify({ level }),
+    body: JSON.stringify(body),
   });
   state.watch = data.watch;
   state.currentQuestion = data.watch.current;
@@ -890,6 +1197,14 @@ function renderWatch() {
   const q = state.currentQuestion;
   const progress = Math.round((q.index / state.watch.total) * 100);
   const remainingAfterThis = state.watch.total - q.index - 1;
+  const hintPolicy = state.watch.hint_policy || {};
+  const hintMode = q.hint_mode || hintPolicy.mode || 'standard';
+  const hintReward = q.hint_reward ?? hintPolicy.reward ?? 0.5;
+  const hintAvailable = q.hint_available !== false;
+  const skipPolicy = state.watch.skip_policy || {};
+  const skipMode = q.skip_mode || skipPolicy.mode || 'standard';
+  const skipReward = q.skip_reward ?? skipPolicy.reward ?? 0;
+  const skipAvailable = q.skip_available !== false;
   app.innerHTML = html`
     <section class="watch-layout captain-watch">
       <div class="panel question-card">
@@ -924,8 +1239,8 @@ function renderWatch() {
           <button class="button primary" id="answerButton" type="submit">${escapeHtml(t('watch.answer'))}</button>
         </form>
         <div class="watch-tools">
-          <button class="button" id="hintButton" type="button">${escapeHtml(t('watch.hint'))}</button>
-          <button class="button ghost" id="skipButton" type="button">${escapeHtml(t('watch.skip'))}</button>
+          <button class="button" id="hintButton" type="button" ${hintAvailable ? '' : 'disabled'}>${escapeHtml(t('watch.hint'))}</button>
+          <button class="button ghost" id="skipButton" type="button" ${skipAvailable ? '' : 'disabled'}>${escapeHtml(t('watch.skip'))}</button>
         </div>
         <div id="hintBox" class="result-box result-box--hint is-hidden">
           <span class="result-box__label">${escapeHtml(t('watch.hintLabel'))}</span>
@@ -938,6 +1253,8 @@ function renderWatch() {
           <div><small>${escapeHtml(t('watch.level'))}</small><strong>${levelLabel(q.level)}</strong></div>
           <div><small>${escapeHtml(t('watch.type'))}</small><strong>${questionTypeLabel(q.type)}</strong></div>
           <div><small>${escapeHtml(t('watch.topic'))}</small><strong>${escapeHtml(q.topic)}</strong></div>
+          <div><small>${escapeHtml(hintMode === 'sparse' ? t('watch.hintSparse') : (hintMode === 'supportive' ? t('watch.hintSupportive') : t('watch.hintStandard')))}</small><strong>${escapeHtml(hintModeLabel(hintMode))} · ${hintReward}</strong></div>
+          <div><small>${escapeHtml(skipMode === 'limited' ? t('watch.skipLimited') : (skipMode === 'supportive' ? t('watch.skipSupportive') : t('watch.skipStandard')))}</small><strong>${escapeHtml(skipModeLabel(skipMode))} · ${skipReward}</strong></div>
         </div>
         <button class="button ghost" id="backHomeButton">${escapeHtml(t('watch.exitHub'))}</button>
       </aside>
@@ -946,6 +1263,7 @@ function renderWatch() {
 
   document.querySelector('#answerInput')?.focus();
   document.querySelector('#hintButton')?.addEventListener('click', () => {
+    if (!hintAvailable) return;
     state.usedHint = true;
     document.querySelector('#hintBox')?.classList.remove('is-hidden');
   });
@@ -953,7 +1271,10 @@ function renderWatch() {
     event.preventDefault();
     submitAnswer(false);
   });
-  document.querySelector('#skipButton')?.addEventListener('click', () => submitAnswer(true));
+  document.querySelector('#skipButton')?.addEventListener('click', () => {
+    if (!skipAvailable) return;
+    submitAnswer(true);
+  });
   document.querySelector('#backHomeButton')?.addEventListener('click', navigateHome);
 }
 
@@ -1007,6 +1328,13 @@ async function finishWatch() {
     body: JSON.stringify({ watch_id: state.watch.id }),
   });
   const s = data.summary;
+  const recommendedLevel = s.recommended_level || 'beginner';
+  const recommendedBranch = s.recommended_branch || '';
+  const recommendedWatch = s.recommended_watch || { level: recommendedLevel, mode: 'mixed' };
+  const recommendedPacing = recommendedWatch.pacing || { profile: 'steady', intensity: 'standard' };
+  const recommendedLength = recommendedWatch.length || recommendedPacing.target_length || 0;
+  const debrief = s.debrief || {};
+  const drivers = Array.isArray(debrief.drivers) ? debrief.drivers.map(summaryDriverCopy).filter(Boolean) : [];
   app.innerHTML = html`
     <section class="panel watch-summary">
       <p class="eyebrow">${escapeHtml(t('summary.eyebrow'))}</p>
@@ -1017,9 +1345,37 @@ async function finishWatch() {
         <div class="stat-card"><small>${escapeHtml(t('summary.revision'))}</small><strong>${s.unresolved_lost_oars}</strong></div>
         <div class="stat-card"><small>${escapeHtml(t('summary.score'))}</small><strong>${s.final_score}</strong></div>
       </div>
+      <div class="progress-overview__meta watch-summary__next">
+        <div>
+          <p class="eyebrow">${escapeHtml(t('summary.nextTitle'))}</p>
+          <p class="muted">${escapeHtml(progressStepCopy(s.next_step))}</p>
+        </div>
+        <div class="stat-grid progress-overview__recent">
+          <div class="stat-card"><small>${escapeHtml(t('summary.recommendedLevel'))}</small><strong>${escapeHtml(levelLabel(recommendedLevel))}</strong></div>
+          <div class="stat-card"><small>${escapeHtml(t('summary.recommendedBranch'))}</small><strong>${escapeHtml(recommendedBranch ? branchLabel(recommendedBranch) : t('empty.none'))}</strong></div>
+          <div class="stat-card"><small>${escapeHtml(t('summary.recommendedPace'))}</small><strong>${escapeHtml(watchPacingLabel(recommendedPacing))}</strong></div>
+          <div class="stat-card"><small>${escapeHtml(t('summary.recommendedLength'))}</small><strong>${escapeHtml(watchLengthCopy(recommendedLength))}</strong></div>
+        </div>
+      </div>
+      <div class="progress-overview__meta watch-summary__debrief">
+        <div>
+          <p class="eyebrow">${escapeHtml(t('summary.debriefTitle'))}</p>
+          <div class="pill-row">
+            ${drivers.length ? drivers.map((driver) => `<span class="mini-pill amber">${escapeHtml(driver)}</span>`).join('') : `<span class="muted">${escapeHtml(t('empty.none'))}</span>`}
+          </div>
+        </div>
+        <div>
+          <p class="eyebrow">${escapeHtml(t('summary.pressureBranches'))}</p>
+          <div class="pill-row">${labeledCountMapMarkup(debrief.pressure_by_branch, branchLabel)}</div>
+        </div>
+        <div>
+          <p class="eyebrow">${escapeHtml(t('summary.pressureTypes'))}</p>
+          <div class="pill-row">${labeledCountMapMarkup(debrief.pressure_by_type, questionTypeLabel)}</div>
+        </div>
+      </div>
       <div class="actions">
         <button class="button amber" id="collectButton">${escapeHtml(t('home.lostOars'))}</button>
-        <button class="button" id="continueButton">${escapeHtml(t('summary.continue'))}</button>
+        <button class="button primary" id="continueButton">${escapeHtml(nextWatchActionLabel(s))}</button>
       </div>
       <p class="status-line" id="summaryStatus"></p>
     </section>
@@ -1027,29 +1383,55 @@ async function finishWatch() {
   document.querySelector('#collectButton')?.addEventListener('click', renderLostOars);
   document.querySelector('#continueButton')?.addEventListener('click', async () => {
     const status = document.querySelector('#summaryStatus');
-    const skip = await api('/api/captain-ether/skip-cleanup.php', { method: 'POST', body: '{}' });
-    status.textContent = skip.message;
-    if (skip.force_hangar) {
-      setTimeout(renderLostOars, 800);
-    } else {
-      await loadProgress();
+    if ((s.next_step || '') === 'clear_revision') {
+      renderLostOars();
+      return;
     }
+
+    if ((s.unresolved_lost_oars || 0) > 0) {
+      const skip = await api('/api/captain-ether/skip-cleanup.php', {
+        method: 'POST',
+        body: JSON.stringify({ learner_stream: s.learner_stream }),
+      });
+      status.textContent = skip.message;
+      if (skip.force_hangar) {
+        setTimeout(renderLostOars, 800);
+        return;
+      }
+    }
+
+    await loadProgress().catch(() => null);
+    startWatch(recommendedLevel, s.recommended_watch || { level: recommendedLevel, mode: 'mixed' });
   });
 }
 
 async function renderLostOars() {
-  const data = await api('/api/captain-ether/lost-oars.php');
-  const items = data.lost_oars || [];
+  const lostData = await api('/api/captain-ether/lost-oars.php');
+  const items = lostData.lost_oars || [];
+  const recommendedWatch = lostData.recommended_watch || state.progress?.recommended_watch || { level: lostData.recommended_level || 'beginner', mode: 'mixed' };
+  const recommendedLevel = recommendedWatch.level || lostData.recommended_level || 'beginner';
+  const recommendedBranch = lostData.recommended_branch || recommendedWatch.branch || '';
   app.innerHTML = html`
     <section class="panel lost-oars-panel">
       <p class="eyebrow">Lost Oars</p>
       <h1>${escapeHtml(t('lost.title'))}</h1>
       <p class="muted">${items.length ? escapeHtml(t('lost.hasItems')) : escapeHtml(t('lost.empty'))}</p>
+      <div class="progress-overview__meta watch-summary__next">
+        <div>
+          <p class="eyebrow">${escapeHtml(t('lost.priorityTitle'))}</p>
+          <p class="muted">${escapeHtml(t('lost.priorityCopy'))}</p>
+          <p class="muted">${escapeHtml(progressStepCopy(lostData.next_step))}</p>
+        </div>
+        <div class="stat-grid progress-overview__recent">
+          <div class="stat-card"><small>${escapeHtml(t('summary.recommendedLevel'))}</small><strong>${escapeHtml(levelLabel(recommendedLevel))}</strong></div>
+          <div class="stat-card"><small>${escapeHtml(t('lost.priorityBranch'))}</small><strong>${escapeHtml(recommendedBranch ? branchLabel(recommendedBranch) : t('empty.none'))}</strong></div>
+        </div>
+      </div>
       <div class="lost-list">
         ${items.map((item) => html`
-          <article class="lost-item" data-lost="${escapeHtml(item.item_id)}">
+          <article class="lost-item ${item.focus_match ? 'is-priority' : ''}" data-lost="${escapeHtml(item.item_id)}">
             <strong>${escapeHtml(item.prompt)}</strong>
-            <small class="muted">${questionTypeLabel(item.type)} · ${escapeHtml(item.topic)} · ${lostReasonLabel(item.reason)}</small>
+            <small class="muted">${questionTypeLabel(item.type)} · ${escapeHtml(item.topic)} · ${escapeHtml(item.branch ? branchLabel(item.branch) : t('empty.none'))} · ${lostReasonLabel(item.reason)}</small>
             <div class="answer-row lost-answer-row">
               <input placeholder="English radio phrase" aria-label="${escapeHtml(t('lost.answerAria'))}" />
               <button class="button primary">${escapeHtml(t('lost.check'))}</button>
@@ -1064,10 +1446,17 @@ async function renderLostOars() {
       </div>
       <div class="actions">
         <button class="button" id="homeFromHangar">${escapeHtml(t('lost.home'))}</button>
-        <button class="button primary" id="newWatchFromHangar">${escapeHtml(t('lost.newWatch'))}</button>
+        <button class="button primary" id="newWatchFromHangar">${escapeHtml(t('lost.returnRecommended'))}</button>
       </div>
+      <p class="status-line" id="lostStatus"></p>
     </section>
   `;
+
+  const goToRecommendedWatch = async (watch = recommendedWatch) => {
+    await loadProgress().catch(() => null);
+    const nextWatch = watch || state.progress?.recommended_watch || { level: state.progress?.recommended_level || 'beginner', mode: 'mixed' };
+    startWatch(nextWatch.level || 'beginner', nextWatch);
+  };
 
   document.querySelectorAll('[data-lost]').forEach((card) => {
     card.querySelector('[data-hint]')?.addEventListener('click', () => {
@@ -1076,27 +1465,32 @@ async function renderLostOars() {
     card.querySelector('.button.primary')?.addEventListener('click', async () => {
       const input = card.querySelector('input');
       const resultBox = card.querySelector('.result-box');
-      const data = await api('/api/captain-ether/resolve-lost-oar.php', {
+      const resolveData = await api('/api/captain-ether/resolve-lost-oar.php', {
         method: 'POST',
-        body: JSON.stringify({ item_id: card.dataset.lost, answer: input.value }),
+        body: JSON.stringify({ item_id: card.dataset.lost, learner_stream: lostData.learner_stream, answer: input.value }),
       });
       resultBox.classList.remove('is-hidden');
       resultBox.classList.remove('is-correct', 'is-wrong', 'is-soft-correct');
-      resultBox.classList.add(resultClass(data));
-      resultBox.innerHTML = resultMarkup(data, t('lost.review'));
-      if (data.correct) {
+      resultBox.classList.add(resultClass(resolveData));
+      resultBox.innerHTML = resultMarkup(resolveData, t('lost.review'));
+      if (resolveData.correct) {
         card.remove();
+        await loadProgress().catch(() => null);
         const remainingCards = document.querySelectorAll('[data-lost]');
         if (remainingCards.length === 0) {
           document.querySelector('.lost-list').innerHTML = `<p class="muted">${escapeHtml(t('lost.empty'))}</p>`;
           document.querySelector('.lost-oars-panel > .muted').textContent = t('lost.empty');
+          document.querySelector('#lostStatus').textContent = t('lost.autoReturn');
+          setTimeout(() => {
+            goToRecommendedWatch(resolveData.recommended_watch || recommendedWatch);
+          }, 450);
         }
       }
     });
   });
 
   document.querySelector('#homeFromHangar')?.addEventListener('click', navigateHome);
-  document.querySelector('#newWatchFromHangar')?.addEventListener('click', renderLevelSelect);
+  document.querySelector('#newWatchFromHangar')?.addEventListener('click', () => goToRecommendedWatch());
 }
 
 function countMapMarkup(map) {

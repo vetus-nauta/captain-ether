@@ -1309,6 +1309,19 @@ function captain_items_by_id(): array {
 }
 
 function visible_question(array $question, array $item): array {
+    $hintMode = (string) ($question['hint_mode'] ?? 'standard');
+    $hintLevel = (string) ($question['hint_level'] ?? ($question['level'] ?? 'beginner'));
+    $hint = '';
+    if ($hintMode === 'supportive') {
+        $hint = (string) ($item['hint_beginner'] ?? $item['hint_' . $hintLevel] ?? '');
+    } elseif ($hintMode === 'sparse') {
+        if (in_array((string) ($item['type'] ?? 'phrase'), ['phrase'], true)) {
+            $hint = (string) ($item['hint_' . $hintLevel] ?? $item['hint_intermediate'] ?? '');
+        }
+    } else {
+        $hint = (string) ($item['hint_' . $hintLevel] ?? $item['hint_beginner'] ?? '');
+    }
+
     return [
         'index' => $question['index'],
         'item_id' => $item['id'],
@@ -1316,7 +1329,13 @@ function visible_question(array $question, array $item): array {
         'level' => $item['level'],
         'topic' => $item['topic'],
         'prompt' => $item['source_text'],
-        'hint' => $item['hint_' . ($question['level'] ?? 'beginner')] ?? $item['hint_beginner'] ?? '',
+        'hint' => $hint,
+        'hint_available' => $hint !== '',
+        'hint_mode' => $hintMode,
+        'hint_reward' => (float) ($question['hint_reward'] ?? 0.5),
+        'skip_available' => !empty($question['skip_available']),
+        'skip_mode' => (string) ($question['skip_mode'] ?? 'standard'),
+        'skip_reward' => (float) ($question['skip_reward'] ?? 0.0),
         'answered' => isset($question['answer']),
         'result' => $question['result'] ?? null,
     ];
