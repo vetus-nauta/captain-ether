@@ -208,20 +208,20 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `TASK-CE-0042 Adaptive Result Messaging Implementation` is closed as
-PASS.
+None. `TASK-CE-0043 Corpus Gap Map` is closed as PASS.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/task-ce-0042-adaptive-result-messaging-implementation-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0043-corpus-gap-map-2026-06-01.md
 ```
 
 Latest local validation:
 
 ```text
-captain-ether-api-smoke checks=334
-content/captain-ether/tools/validate-captain-ether.php PASS
+Report-only sprint.
+Node corpus count over starter.json PASS.
+Node batch count over batches/*.json PASS.
 ```
 
 Scope preserved:
@@ -234,13 +234,12 @@ production config, deploy/FTP state, or secrets changed.
 Next recommended work, only after explicit Director command:
 
 ```text
-Select the next Captain Ether content-growth or polish task from the game bible
-and current production/local delta.
+CE-SPRINT-0044 Batch 007 Traffic / Collision.
 ```
 
 No production deploy, router change, registry change, `starter.json` merge,
-auth/platform edit, or public English-native release is authorized by
-`TASK-CE-0042`.
+auth/platform edit, matcher change, API/runtime change, or public
+English-native release is authorized by `TASK-CE-0043`.
 
 ## Previous Closed Sprint
 
