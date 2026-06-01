@@ -128,6 +128,20 @@ None.
 Latest closed assignment:
 
 ```text
+TASK-CE-0075 Batch 012 Urgency Equipment Status Risk Review
+content/captain-ether/batches/batch-012-urgency-equipment-status-reinforcement.json
+content/captain-ether/roles/sea-speak-linguist/reports/batch-012-urgency-equipment-status-risk-review-2026-06-01.md
+```
+
+Next gate:
+
+```text
+Director-Engineer engineering gate before QA or starter.json merge.
+```
+
+Previous closed assignment:
+
+```text
 TASK-CE-0069 Batch 011 Review Minimal Pairs Risk Review
 content/captain-ether/batches/batch-011-review-minimal-pairs-basics.json
 content/captain-ether/roles/sea-speak-linguist/reports/batch-011-review-minimal-pairs-risk-review-2026-06-01.md

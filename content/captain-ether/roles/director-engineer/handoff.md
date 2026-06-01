@@ -208,13 +208,13 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0074 Batch 012 Urgency Equipment Status Draft` is closed as
-PASS and routed to Sea Speak Linguist review.
+None. `CE-SPRINT-0075 Batch 012 Linguist Review` is closed as PASS and routed
+to Director-Engineer engineering gate.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0074-batch-012-urgency-equipment-status-draft-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0075-batch-012-linguist-review-2026-06-01.md
 ```
 
 Latest local validation:
@@ -239,6 +239,7 @@ Batch 011 validator PASS with known starter WARN (9).
 Batch 011 post-merge QA PASS.
 Batch 012 Urgency Equipment Status draft created.
 Batch 012 status: draft.
+Batch 012 Sea Speak Linguist review PASS.
 Batch 012 validator PASS with known starter WARN (9).
 ```
 
@@ -276,15 +277,16 @@ local site/runtime parity check.
 Next active gate:
 
 ```text
-TASK-CE-0075 Batch 012 Urgency Equipment Status Sea Speak Linguist review.
-Owner: Sea Speak Linguist.
-Goal: review Pan-Pan equipment/status boundaries before engineering gate.
+TASK-CE-0076 Batch 012 Urgency Equipment Status engineering gate.
+Owner: Director-Engineer.
+Goal: verify schema, matcher regression, dangerous-pair executability, content
+counts, scope boundaries, and merge readiness before QA acceptance.
 ```
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
 matcher change, API/runtime change, UI change, Atlas change, playable merge, or
-public English-native release is authorized by `CE-SPRINT-0074`.
+public English-native release is authorized by `CE-SPRINT-0075`.
 
 ## Previous Closed Sprint
 
