@@ -105,6 +105,20 @@ batch task.
 Latest closed draft:
 
 ```text
+TASK-CE-0056 Batch 009 Onboard Operations
+content/captain-ether/batches/batch-009-onboard-operations-basics.json
+content/captain-ether/roles/content-producer/reports/batch-009-onboard-operations-basics-card-2026-06-01.md
+```
+
+Mode:
+
+```text
+content draft only; routed to Sea Speak Linguist review by Director-Engineer
+```
+
+Previous closed draft:
+
+```text
 TASK-CE-0050 Batch 008 VTS / Port Control
 content/captain-ether/batches/batch-008-vts-port-control-basics.json
 content/captain-ether/roles/content-producer/reports/batch-008-vts-port-control-basics-card-2026-06-01.md

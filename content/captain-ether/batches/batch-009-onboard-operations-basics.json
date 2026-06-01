@@ -1,0 +1,2268 @@
+{
+  "version": 1,
+  "batch_id": "batch-009-onboard-operations-basics",
+  "status": "draft",
+  "date": "2026-06-01",
+  "branch": "onboard_operations",
+  "scope": "Bridge-team and onboard operational language for M3 corpus growth, kept separate from radio-to-shore Sea Speak.",
+  "items": [
+    {
+      "id": "word_onboard_watch_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 7,
+      "topic": "watchkeeping",
+      "branch": "onboard_operations",
+      "module": "watch_handover",
+      "source_language": "ru",
+      "source_text": "Вахта",
+      "target_language": "en",
+      "target_text": "watch",
+      "accepted_answers": [
+        "watch"
+      ],
+      "hint_beginner": "w___h",
+      "hint_intermediate": "watch...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "watch",
+          "WATCH",
+          "watch."
+        ],
+        "should_reject": [
+          "shift",
+          "lookout",
+          "clock"
+        ],
+        "dangerous_minimal_pairs": [],
+        "linguist_note": "Watch is the duty period, not a clock or casual lookout word."
+      }
+    },
+    {
+      "id": "word_onboard_handover_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "watch_handover",
+      "branch": "onboard_operations",
+      "module": "watch_handover",
+      "source_language": "ru",
+      "source_text": "Передача вахты",
+      "target_language": "en",
+      "target_text": "handover",
+      "accepted_answers": [
+        "handover",
+        "hand over"
+      ],
+      "hint_beginner": "h______r",
+      "hint_intermediate": "handover...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "handover",
+          "hand over"
+        ],
+        "should_reject": [
+          "takeover",
+          "watch",
+          "report"
+        ],
+        "dangerous_minimal_pairs": [],
+        "linguist_note": "Handover is the transfer process, not the next watch or report alone."
+      }
+    },
+    {
+      "id": "word_onboard_helm_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "helm_orders",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Руль / управление рулем",
+      "target_language": "en",
+      "target_text": "helm",
+      "accepted_answers": [
+        "helm"
+      ],
+      "hint_beginner": "h__m",
+      "hint_intermediate": "helm...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "helm",
+          "HELM",
+          "helm."
+        ],
+        "should_reject": [
+          "help",
+          "wheelhouse",
+          "course"
+        ],
+        "dangerous_minimal_pairs": [],
+        "linguist_note": "Helm is steering control, not help or the wheelhouse."
+      }
+    },
+    {
+      "id": "word_onboard_rudder_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 10,
+      "topic": "helm_orders",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Руль судна",
+      "target_language": "en",
+      "target_text": "rudder",
+      "accepted_answers": [
+        "rudder"
+      ],
+      "hint_beginner": "r____r",
+      "hint_intermediate": "rudder...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "rudder",
+          "RUDDER",
+          "rudder."
+        ],
+        "should_reject": [
+          "helm",
+          "propeller",
+          "steering gear"
+        ],
+        "dangerous_minimal_pairs": [],
+        "linguist_note": "Rudder, helm, propeller, and steering gear remain separate concepts."
+      }
+    },
+    {
+      "id": "word_onboard_anchor_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "anchor_handling",
+      "branch": "onboard_operations",
+      "module": "anchor_handling",
+      "source_language": "ru",
+      "source_text": "Якорь",
+      "target_language": "en",
+      "target_text": "anchor",
+      "accepted_answers": [
+        "anchor"
+      ],
+      "hint_beginner": "a____r",
+      "hint_intermediate": "anchor...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "anchor",
+          "ANCHOR",
+          "anchor."
+        ],
+        "should_reject": [
+          "berth",
+          "moor",
+          "fender"
+        ],
+        "dangerous_minimal_pairs": [
+          "anchor / moor / berth"
+        ],
+        "linguist_note": "Anchor is equipment/action area, not berth or mooring."
+      }
+    },
+    {
+      "id": "word_onboard_windlass_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 11,
+      "topic": "anchor_handling",
+      "branch": "onboard_operations",
+      "module": "anchor_handling",
+      "source_language": "ru",
+      "source_text": "Брашпиль",
+      "target_language": "en",
+      "target_text": "windlass",
+      "accepted_answers": [
+        "windlass"
+      ],
+      "hint_beginner": "w______s",
+      "hint_intermediate": "windlass...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "windlass",
+          "WINDLASS",
+          "windlass."
+        ],
+        "should_reject": [
+          "winch",
+          "anchor",
+          "line"
+        ],
+        "dangerous_minimal_pairs": [],
+        "linguist_note": "Windlass is anchor-handling equipment, not generic winch or anchor itself."
+      }
+    },
+    {
+      "id": "word_onboard_bow_station_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Носовой пост",
+      "target_language": "en",
+      "target_text": "bow station",
+      "accepted_answers": [
+        "bow station"
+      ],
+      "hint_beginner": "b________n",
+      "hint_intermediate": "bow...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "bow station",
+          "BOW STATION"
+        ],
+        "should_reject": [
+          "stern station",
+          "port station",
+          "starboard station"
+        ],
+        "dangerous_minimal_pairs": [
+          "bow station / stern station / port station / starboard station"
+        ],
+        "linguist_note": "Station positions must stay exact."
+      }
+    },
+    {
+      "id": "word_onboard_stern_station_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Кормовой пост",
+      "target_language": "en",
+      "target_text": "stern station",
+      "accepted_answers": [
+        "stern station"
+      ],
+      "hint_beginner": "s__________n",
+      "hint_intermediate": "stern...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "stern station",
+          "STERN STATION"
+        ],
+        "should_reject": [
+          "bow station",
+          "port station",
+          "starboard station"
+        ],
+        "dangerous_minimal_pairs": [
+          "bow station / stern station / port station / starboard station"
+        ],
+        "linguist_note": "Station positions must stay exact."
+      }
+    },
+    {
+      "id": "word_onboard_lifebuoy_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "safety_equipment",
+      "branch": "onboard_operations",
+      "module": "safety_checks",
+      "source_language": "ru",
+      "source_text": "Спасательный круг",
+      "target_language": "en",
+      "target_text": "lifebuoy",
+      "accepted_answers": [
+        "lifebuoy",
+        "life buoy"
+      ],
+      "hint_beginner": "l______y",
+      "hint_intermediate": "lifebuoy...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "lifebuoy",
+          "life buoy"
+        ],
+        "should_reject": [
+          "lifejacket",
+          "fire extinguisher",
+          "fender"
+        ],
+        "dangerous_minimal_pairs": [],
+        "linguist_note": "Lifebuoy is not lifejacket, fire extinguisher, or fender."
+      }
+    },
+    {
+      "id": "word_onboard_fire_extinguisher_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "safety_equipment",
+      "branch": "onboard_operations",
+      "module": "safety_checks",
+      "source_language": "ru",
+      "source_text": "Огнетушитель",
+      "target_language": "en",
+      "target_text": "fire extinguisher",
+      "accepted_answers": [
+        "fire extinguisher"
+      ],
+      "hint_beginner": "f______________r",
+      "hint_intermediate": "fire...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "fire extinguisher",
+          "FIRE EXTINGUISHER"
+        ],
+        "should_reject": [
+          "lifebuoy",
+          "fire pump",
+          "flare"
+        ],
+        "dangerous_minimal_pairs": [],
+        "linguist_note": "Fire extinguisher must not collapse into other safety equipment."
+      }
+    },
+    {
+      "id": "expr_onboard_watch_handover_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "watch_handover",
+      "branch": "onboard_operations",
+      "module": "watch_handover",
+      "source_language": "ru",
+      "source_text": "Передать вахту",
+      "target_language": "en",
+      "target_text": "hand over watch",
+      "accepted_answers": [
+        "hand over watch",
+        "handover watch"
+      ],
+      "hint_beginner": "hand o___ w____",
+      "hint_intermediate": "hand...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "hand over watch",
+          "handover watch"
+        ],
+        "should_reject": [
+          "take over watch",
+          "keep watch",
+          "report watch"
+        ],
+        "dangerous_minimal_pairs": [
+          "hand over watch / take over watch"
+        ],
+        "linguist_note": "Hand over and take over watch are opposite workflow actions."
+      }
+    },
+    {
+      "id": "expr_onboard_take_over_watch_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "watch_handover",
+      "branch": "onboard_operations",
+      "module": "watch_handover",
+      "source_language": "ru",
+      "source_text": "Принять вахту",
+      "target_language": "en",
+      "target_text": "take over watch",
+      "accepted_answers": [
+        "take over watch"
+      ],
+      "hint_beginner": "take o___ w____",
+      "hint_intermediate": "take...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "take over watch",
+          "TAKE OVER WATCH"
+        ],
+        "should_reject": [
+          "hand over watch",
+          "leave watch",
+          "watch over"
+        ],
+        "dangerous_minimal_pairs": [
+          "hand over watch / take over watch"
+        ],
+        "linguist_note": "Taking over watch is not handing it over."
+      }
+    },
+    {
+      "id": "expr_onboard_log_entry_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "watch_handover",
+      "branch": "onboard_operations",
+      "module": "watch_handover",
+      "source_language": "ru",
+      "source_text": "Запись в журнале",
+      "target_language": "en",
+      "target_text": "log entry",
+      "accepted_answers": [
+        "log entry"
+      ],
+      "hint_beginner": "log e____",
+      "hint_intermediate": "log...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "log entry",
+          "LOG ENTRY"
+        ],
+        "should_reject": [
+          "engine log",
+          "watch handover",
+          "entry port"
+        ],
+        "dangerous_minimal_pairs": [],
+        "linguist_note": "Log entry is a record, not port entry or handover itself."
+      }
+    },
+    {
+      "id": "expr_onboard_helm_port_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "helm_order",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Руль влево",
+      "target_language": "en",
+      "target_text": "port helm",
+      "accepted_answers": [
+        "port helm",
+        "helm to port"
+      ],
+      "hint_beginner": "port h___",
+      "hint_intermediate": "port...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "port helm",
+          "helm to port"
+        ],
+        "should_reject": [
+          "starboard helm",
+          "left turn",
+          "port side station"
+        ],
+        "dangerous_minimal_pairs": [
+          "port helm / starboard helm"
+        ],
+        "linguist_note": "Port helm remains the trained helm order, not ordinary left or station language."
+      }
+    },
+    {
+      "id": "expr_onboard_helm_starboard_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "helm_order",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Руль вправо",
+      "target_language": "en",
+      "target_text": "starboard helm",
+      "accepted_answers": [
+        "starboard helm",
+        "helm to starboard"
+      ],
+      "hint_beginner": "starboard h___",
+      "hint_intermediate": "starboard...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "starboard helm",
+          "helm to starboard"
+        ],
+        "should_reject": [
+          "port helm",
+          "right turn",
+          "starboard station"
+        ],
+        "dangerous_minimal_pairs": [
+          "port helm / starboard helm"
+        ],
+        "linguist_note": "Starboard helm remains the trained helm order, not ordinary right or station language."
+      }
+    },
+    {
+      "id": "expr_onboard_midships_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 11,
+      "topic": "helm_order",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Руль прямо",
+      "target_language": "en",
+      "target_text": "midships",
+      "accepted_answers": [
+        "midships",
+        "helm midships"
+      ],
+      "hint_beginner": "midships",
+      "hint_intermediate": "midships...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "midships",
+          "helm midships"
+        ],
+        "should_reject": [
+          "hard to port",
+          "steady course",
+          "amidships station"
+        ],
+        "dangerous_minimal_pairs": [],
+        "linguist_note": "Midships is a helm order, not a station or steady-course report."
+      }
+    },
+    {
+      "id": "expr_onboard_steady_course_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "helm_order",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Держать курс",
+      "target_language": "en",
+      "target_text": "steady course",
+      "accepted_answers": [
+        "steady course",
+        "keep steady course"
+      ],
+      "hint_beginner": "steady c_____",
+      "hint_intermediate": "steady...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "steady course",
+          "keep steady course"
+        ],
+        "should_reject": [
+          "alter course",
+          "midships",
+          "course reported"
+        ],
+        "dangerous_minimal_pairs": [
+          "helm order / action completed"
+        ],
+        "linguist_note": "Steady course is not alter course or midships."
+      }
+    },
+    {
+      "id": "expr_onboard_let_go_anchor_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "anchor_handling",
+      "branch": "onboard_operations",
+      "module": "anchor_handling",
+      "source_language": "ru",
+      "source_text": "Отдать якорь",
+      "target_language": "en",
+      "target_text": "let go anchor",
+      "accepted_answers": [
+        "let go anchor",
+        "let go the anchor"
+      ],
+      "hint_beginner": "let g_ a_____",
+      "hint_intermediate": "let...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "let go anchor",
+          "let go the anchor"
+        ],
+        "should_reject": [
+          "heave up anchor",
+          "let go lines",
+          "drop fender"
+        ],
+        "dangerous_minimal_pairs": [
+          "anchor / moor / berth",
+          "let go anchor / heave up anchor"
+        ],
+        "linguist_note": "Let go anchor and heave up anchor are opposite anchor actions."
+      }
+    },
+    {
+      "id": "expr_onboard_heave_up_anchor_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "anchor_handling",
+      "branch": "onboard_operations",
+      "module": "anchor_handling",
+      "source_language": "ru",
+      "source_text": "Поднять якорь",
+      "target_language": "en",
+      "target_text": "heave up anchor",
+      "accepted_answers": [
+        "heave up anchor",
+        "weigh anchor"
+      ],
+      "hint_beginner": "heave u_ a_____",
+      "hint_intermediate": "heave...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "heave up anchor",
+          "weigh anchor"
+        ],
+        "should_reject": [
+          "let go anchor",
+          "heave up line",
+          "anchor ready"
+        ],
+        "dangerous_minimal_pairs": [
+          "let go anchor / heave up anchor"
+        ],
+        "linguist_note": "Heave up/weigh anchor is not letting go the anchor."
+      }
+    },
+    {
+      "id": "expr_onboard_anchor_ready_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "anchor_handling",
+      "branch": "onboard_operations",
+      "module": "anchor_handling",
+      "source_language": "ru",
+      "source_text": "Якорь готов",
+      "target_language": "en",
+      "target_text": "anchor ready",
+      "accepted_answers": [
+        "anchor ready"
+      ],
+      "hint_beginner": "anchor r____",
+      "hint_intermediate": "anchor...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "anchor ready",
+          "ANCHOR READY"
+        ],
+        "should_reject": [
+          "anchor aweigh",
+          "anchor down",
+          "lines ready"
+        ],
+        "dangerous_minimal_pairs": [],
+        "linguist_note": "Anchor ready is a readiness status, not anchor down or aweigh."
+      }
+    },
+    {
+      "id": "expr_onboard_make_fast_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Закрепить швартов",
+      "target_language": "en",
+      "target_text": "make fast",
+      "accepted_answers": [
+        "make fast",
+        "make fast the line"
+      ],
+      "hint_beginner": "make f___",
+      "hint_intermediate": "make...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "make fast",
+          "make fast the line"
+        ],
+        "should_reject": [
+          "let go",
+          "cast off",
+          "hold fast"
+        ],
+        "dangerous_minimal_pairs": [
+          "anchor / moor / berth",
+          "make fast / let go lines"
+        ],
+        "linguist_note": "Make fast is securing a line, not letting go or casting off."
+      }
+    },
+    {
+      "id": "expr_onboard_let_go_lines_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Отдать швартовы",
+      "target_language": "en",
+      "target_text": "let go lines",
+      "accepted_answers": [
+        "let go lines",
+        "let go the lines"
+      ],
+      "hint_beginner": "let g_ l____",
+      "hint_intermediate": "let...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "let go lines",
+          "let go the lines"
+        ],
+        "should_reject": [
+          "make fast lines",
+          "heave up anchor",
+          "lines ready"
+        ],
+        "dangerous_minimal_pairs": [
+          "make fast / let go lines"
+        ],
+        "linguist_note": "Let go lines is not make fast or anchor work."
+      }
+    },
+    {
+      "id": "expr_onboard_stand_by_bow_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Носовой пост, приготовиться",
+      "target_language": "en",
+      "target_text": "stand by bow",
+      "accepted_answers": [
+        "stand by bow",
+        "bow station stand by"
+      ],
+      "hint_beginner": "stand b_ b__",
+      "hint_intermediate": "stand...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "stand by bow",
+          "bow station stand by"
+        ],
+        "should_reject": [
+          "standing by bow",
+          "stand by stern",
+          "stand by port"
+        ],
+        "dangerous_minimal_pairs": [
+          "stand by / standing by"
+        ],
+        "linguist_note": "Stand by command and standing-by status must stay separate."
+      }
+    },
+    {
+      "id": "expr_onboard_standing_by_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Готов / ожидаю",
+      "target_language": "en",
+      "target_text": "standing by",
+      "accepted_answers": [
+        "standing by"
+      ],
+      "hint_beginner": "standing b_",
+      "hint_intermediate": "standing...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "standing by",
+          "STANDING BY"
+        ],
+        "should_reject": [
+          "stand by",
+          "go ahead",
+          "not ready"
+        ],
+        "dangerous_minimal_pairs": [
+          "stand by / standing by"
+        ],
+        "linguist_note": "Standing by is a status, not the command stand by."
+      }
+    },
+    {
+      "id": "expr_onboard_safety_check_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "safety_checks",
+      "branch": "onboard_operations",
+      "module": "safety_checks",
+      "source_language": "ru",
+      "source_text": "Проверка безопасности",
+      "target_language": "en",
+      "target_text": "safety check",
+      "accepted_answers": [
+        "safety check"
+      ],
+      "hint_beginner": "safety c____",
+      "hint_intermediate": "safety...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "safety check",
+          "SAFETY CHECK"
+        ],
+        "should_reject": [
+          "equipment failure",
+          "emergency action",
+          "security check"
+        ],
+        "dangerous_minimal_pairs": [
+          "safety check / emergency action"
+        ],
+        "linguist_note": "Safety check is planned verification, not an emergency action."
+      }
+    },
+    {
+      "id": "expr_onboard_fire_on_board_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 13,
+      "topic": "emergency_aboard",
+      "branch": "onboard_operations",
+      "module": "emergency_actions_aboard",
+      "source_language": "ru",
+      "source_text": "Пожар на борту",
+      "target_language": "en",
+      "target_text": "fire on board",
+      "accepted_answers": [
+        "fire on board"
+      ],
+      "hint_beginner": "fire o_ b____",
+      "hint_intermediate": "fire...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "fire on board",
+          "FIRE ON BOARD"
+        ],
+        "should_reject": [
+          "flooding on board",
+          "man overboard",
+          "fire drill"
+        ],
+        "dangerous_minimal_pairs": [
+          "fire / flooding / man overboard"
+        ],
+        "linguist_note": "Fire, flooding, and man overboard are different emergencies."
+      }
+    },
+    {
+      "id": "expr_onboard_flooding_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 13,
+      "topic": "emergency_aboard",
+      "branch": "onboard_operations",
+      "module": "emergency_actions_aboard",
+      "source_language": "ru",
+      "source_text": "Поступление воды",
+      "target_language": "en",
+      "target_text": "flooding on board",
+      "accepted_answers": [
+        "flooding on board"
+      ],
+      "hint_beginner": "flooding o_ b____",
+      "hint_intermediate": "flooding...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "flooding on board",
+          "FLOODING ON BOARD"
+        ],
+        "should_reject": [
+          "fire on board",
+          "water on deck",
+          "bilge pump ready"
+        ],
+        "dangerous_minimal_pairs": [
+          "fire / flooding / man overboard"
+        ],
+        "linguist_note": "Flooding is not fire, deck water, or pump readiness."
+      }
+    },
+    {
+      "id": "phrase_onboard_handover_complete_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "watch_handover",
+      "branch": "onboard_operations",
+      "module": "watch_handover",
+      "source_language": "ru",
+      "source_text": "Передача вахты завершена.",
+      "target_language": "en",
+      "target_text": "Watch handover complete.",
+      "accepted_answers": [
+        "watch handover complete",
+        "handover complete"
+      ],
+      "grammar_pattern": "onboard_watch_handover_basic",
+      "hint_beginner": "Watch handover complete....",
+      "hint_intermediate": "Watch handover complete.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Watch handover complete.",
+          "handover complete"
+        ],
+        "should_reject": [
+          "watch handover started",
+          "watch takeover complete",
+          "watch report complete"
+        ],
+        "dangerous_minimal_pairs": [],
+        "linguist_note": "Completion, start, takeover, and report completion stay separate."
+      }
+    },
+    {
+      "id": "phrase_onboard_take_over_bridge_watch_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "watch_handover",
+      "branch": "onboard_operations",
+      "module": "watch_handover",
+      "source_language": "ru",
+      "source_text": "Я принимаю ходовую вахту.",
+      "target_language": "en",
+      "target_text": "I take over the bridge watch.",
+      "accepted_answers": [
+        "i take over the bridge watch",
+        "take over bridge watch"
+      ],
+      "grammar_pattern": "onboard_watch_handover_basic",
+      "hint_beginner": "I take over...",
+      "hint_intermediate": "the bridge watch.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "I take over the bridge watch.",
+          "take over bridge watch"
+        ],
+        "should_reject": [
+          "i hand over the bridge watch",
+          "i leave the bridge watch",
+          "i take over engine watch"
+        ],
+        "dangerous_minimal_pairs": [
+          "hand over watch / take over watch"
+        ],
+        "linguist_note": "Bridge-watch takeover must stay separate from handover and engine watch."
+      }
+    },
+    {
+      "id": "phrase_onboard_report_watch_status_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "watch_handover",
+      "branch": "onboard_operations",
+      "module": "watch_handover",
+      "source_language": "ru",
+      "source_text": "Доложите состояние вахты.",
+      "target_language": "en",
+      "target_text": "Report watch status.",
+      "accepted_answers": [
+        "report watch status",
+        "report the watch status"
+      ],
+      "grammar_pattern": "onboard_watch_status_report",
+      "hint_beginner": "Report watch status....",
+      "hint_intermediate": "Report watch status.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Report watch status.",
+          "report the watch status"
+        ],
+        "should_reject": [
+          "request watch status",
+          "report engine status",
+          "watch status complete"
+        ],
+        "dangerous_minimal_pairs": [],
+        "linguist_note": "Report/request and watch/engine status must stay exact."
+      }
+    },
+    {
+      "id": "phrase_onboard_log_entry_complete_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "watch_handover",
+      "branch": "onboard_operations",
+      "module": "watch_handover",
+      "source_language": "ru",
+      "source_text": "Запись в журнале сделана.",
+      "target_language": "en",
+      "target_text": "Log entry complete.",
+      "accepted_answers": [
+        "log entry complete",
+        "log entry is complete"
+      ],
+      "grammar_pattern": "onboard_watch_status_report",
+      "hint_beginner": "Log entry complete....",
+      "hint_intermediate": "Log entry complete.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Log entry complete.",
+          "log entry is complete"
+        ],
+        "should_reject": [
+          "log entry missing",
+          "engine log complete",
+          "entry port complete"
+        ],
+        "dangerous_minimal_pairs": [],
+        "linguist_note": "Log-entry status must stay distinct."
+      }
+    },
+    {
+      "id": "phrase_onboard_port_helm_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "helm_order",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Руль лево десять.",
+      "target_language": "en",
+      "target_text": "Port helm ten.",
+      "accepted_answers": [
+        "port helm ten",
+        "helm to port ten"
+      ],
+      "grammar_pattern": "onboard_helm_order_basic",
+      "hint_beginner": "Port helm ten....",
+      "hint_intermediate": "Port helm ten.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Port helm ten.",
+          "helm to port ten"
+        ],
+        "should_reject": [
+          "starboard helm ten",
+          "port station ten",
+          "left ten"
+        ],
+        "dangerous_minimal_pairs": [
+          "port helm / starboard helm"
+        ],
+        "linguist_note": "Port helm order must not become starboard or ordinary left wording."
+      }
+    },
+    {
+      "id": "phrase_onboard_starboard_helm_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "helm_order",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Руль право десять.",
+      "target_language": "en",
+      "target_text": "Starboard helm ten.",
+      "accepted_answers": [
+        "starboard helm ten",
+        "helm to starboard ten"
+      ],
+      "grammar_pattern": "onboard_helm_order_basic",
+      "hint_beginner": "Starboard helm ten....",
+      "hint_intermediate": "Starboard helm ten.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Starboard helm ten.",
+          "helm to starboard ten"
+        ],
+        "should_reject": [
+          "port helm ten",
+          "starboard station ten",
+          "right ten"
+        ],
+        "dangerous_minimal_pairs": [
+          "port helm / starboard helm"
+        ],
+        "linguist_note": "Starboard helm order must not become port or ordinary right wording."
+      }
+    },
+    {
+      "id": "phrase_onboard_helm_midships_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 17,
+      "topic": "helm_order",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Руль прямо.",
+      "target_language": "en",
+      "target_text": "Helm midships.",
+      "accepted_answers": [
+        "helm midships",
+        "midships"
+      ],
+      "grammar_pattern": "onboard_helm_order_basic",
+      "hint_beginner": "Helm midships....",
+      "hint_intermediate": "Helm midships.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Helm midships.",
+          "midships"
+        ],
+        "should_reject": [
+          "helm hard to port",
+          "steady course",
+          "midships station"
+        ],
+        "dangerous_minimal_pairs": [],
+        "linguist_note": "Midships remains a helm order."
+      }
+    },
+    {
+      "id": "phrase_onboard_steady_on_course_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "helm_order",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Держите курс ноль девять ноль.",
+      "target_language": "en",
+      "target_text": "Steady on course zero nine zero.",
+      "accepted_answers": [
+        "steady on course zero nine zero",
+        "steady on course 090"
+      ],
+      "grammar_pattern": "onboard_course_steady_order",
+      "hint_beginner": "Steady on course...",
+      "hint_intermediate": "zero nine zero.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Steady on course zero nine zero.",
+          "steady on course 090"
+        ],
+        "should_reject": [
+          "alter course zero nine zero",
+          "steady on heading 90",
+          "course reported zero nine zero"
+        ],
+        "dangerous_minimal_pairs": [],
+        "linguist_note": "Steady order, heading digits, and report forms must stay exact."
+      }
+    },
+    {
+      "id": "phrase_onboard_order_completed_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "helm_order",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Команда выполнена.",
+      "target_language": "en",
+      "target_text": "Order completed.",
+      "accepted_answers": [
+        "order completed",
+        "order is completed"
+      ],
+      "grammar_pattern": "onboard_order_completion",
+      "hint_beginner": "Order completed....",
+      "hint_intermediate": "Order completed.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Order completed.",
+          "order is completed"
+        ],
+        "should_reject": [
+          "order received",
+          "action completed",
+          "order cancelled"
+        ],
+        "dangerous_minimal_pairs": [
+          "helm order / action completed"
+        ],
+        "linguist_note": "Order completed is not action completed or receipt only."
+      }
+    },
+    {
+      "id": "phrase_onboard_action_completed_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 16,
+      "topic": "emergency_action",
+      "branch": "onboard_operations",
+      "module": "emergency_actions_aboard",
+      "source_language": "ru",
+      "source_text": "Действие выполнено.",
+      "target_language": "en",
+      "target_text": "Action completed.",
+      "accepted_answers": [
+        "action completed",
+        "action is completed"
+      ],
+      "grammar_pattern": "onboard_order_completion",
+      "hint_beginner": "Action completed....",
+      "hint_intermediate": "Action completed.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Action completed.",
+          "action is completed"
+        ],
+        "should_reject": [
+          "order completed",
+          "action required",
+          "action cancelled"
+        ],
+        "dangerous_minimal_pairs": [
+          "helm order / action completed"
+        ],
+        "linguist_note": "Action completed and order completed stay separate for this contrast drill."
+      }
+    },
+    {
+      "id": "phrase_onboard_anchor_ready_report_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 15,
+      "topic": "anchor_handling",
+      "branch": "onboard_operations",
+      "module": "anchor_handling",
+      "source_language": "ru",
+      "source_text": "Якорь готов к отдаче.",
+      "target_language": "en",
+      "target_text": "Anchor ready for letting go.",
+      "accepted_answers": [
+        "anchor ready for letting go",
+        "anchor is ready for letting go"
+      ],
+      "grammar_pattern": "onboard_anchor_handling_basic",
+      "hint_beginner": "Anchor ready for...",
+      "hint_intermediate": "for letting go.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Anchor ready for letting go.",
+          "anchor is ready for letting go"
+        ],
+        "should_reject": [
+          "anchor is down",
+          "anchor aweigh",
+          "lines ready for letting go"
+        ],
+        "dangerous_minimal_pairs": [],
+        "linguist_note": "Anchor readiness is not anchor state or line readiness."
+      }
+    },
+    {
+      "id": "phrase_onboard_let_go_anchor_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "anchor_handling",
+      "branch": "onboard_operations",
+      "module": "anchor_handling",
+      "source_language": "ru",
+      "source_text": "Отдать якорь по команде.",
+      "target_language": "en",
+      "target_text": "Let go anchor on command.",
+      "accepted_answers": [
+        "let go anchor on command",
+        "let go the anchor on command"
+      ],
+      "grammar_pattern": "onboard_anchor_handling_basic",
+      "hint_beginner": "Let go anchor...",
+      "hint_intermediate": "anchor on command.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Let go anchor on command.",
+          "let go the anchor on command"
+        ],
+        "should_reject": [
+          "heave up anchor on command",
+          "let go lines on command",
+          "anchor ready on command"
+        ],
+        "dangerous_minimal_pairs": [
+          "anchor / moor / berth",
+          "let go anchor / heave up anchor"
+        ],
+        "linguist_note": "Anchor action must not become opposite anchor or line action."
+      }
+    },
+    {
+      "id": "phrase_onboard_anchor_aweigh_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "anchor_handling",
+      "branch": "onboard_operations",
+      "module": "anchor_handling",
+      "source_language": "ru",
+      "source_text": "Якорь оторвался от грунта.",
+      "target_language": "en",
+      "target_text": "Anchor aweigh.",
+      "accepted_answers": [
+        "anchor aweigh"
+      ],
+      "grammar_pattern": "onboard_anchor_status_report",
+      "hint_beginner": "Anchor aweigh....",
+      "hint_intermediate": "Anchor aweigh.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Anchor aweigh."
+        ],
+        "should_reject": [
+          "anchor down",
+          "anchor ready",
+          "anchor dragging"
+        ],
+        "dangerous_minimal_pairs": [
+          "let go anchor / heave up anchor"
+        ],
+        "linguist_note": "Anchor aweigh, anchor down, ready, and dragging are different states."
+      }
+    },
+    {
+      "id": "phrase_onboard_anchor_down_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "anchor_handling",
+      "branch": "onboard_operations",
+      "module": "anchor_handling",
+      "source_language": "ru",
+      "source_text": "Якорь на грунте.",
+      "target_language": "en",
+      "target_text": "Anchor is down.",
+      "accepted_answers": [
+        "anchor is down",
+        "anchor down"
+      ],
+      "grammar_pattern": "onboard_anchor_status_report",
+      "hint_beginner": "Anchor is down....",
+      "hint_intermediate": "Anchor is down.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Anchor is down.",
+          "anchor down"
+        ],
+        "should_reject": [
+          "anchor aweigh",
+          "anchor ready",
+          "anchor dragging"
+        ],
+        "dangerous_minimal_pairs": [],
+        "linguist_note": "Anchor-down status must stay exact."
+      }
+    },
+    {
+      "id": "phrase_onboard_bow_station_ready_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Носовой пост готов.",
+      "target_language": "en",
+      "target_text": "Bow station ready.",
+      "accepted_answers": [
+        "bow station ready"
+      ],
+      "grammar_pattern": "onboard_station_ready_report",
+      "hint_beginner": "Bow station ready....",
+      "hint_intermediate": "Bow station ready.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Bow station ready."
+        ],
+        "should_reject": [
+          "stern station ready",
+          "port station ready",
+          "bow line ready"
+        ],
+        "dangerous_minimal_pairs": [
+          "bow station / stern station / port station / starboard station"
+        ],
+        "linguist_note": "Station readiness must not become another station or a line status."
+      }
+    },
+    {
+      "id": "phrase_onboard_stern_station_ready_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Кормовой пост готов.",
+      "target_language": "en",
+      "target_text": "Stern station ready.",
+      "accepted_answers": [
+        "stern station ready"
+      ],
+      "grammar_pattern": "onboard_station_ready_report",
+      "hint_beginner": "Stern station ready....",
+      "hint_intermediate": "Stern station ready.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Stern station ready."
+        ],
+        "should_reject": [
+          "bow station ready",
+          "starboard station ready",
+          "stern line ready"
+        ],
+        "dangerous_minimal_pairs": [
+          "bow station / stern station / port station / starboard station"
+        ],
+        "linguist_note": "Station readiness must stay exact."
+      }
+    },
+    {
+      "id": "phrase_onboard_make_fast_forward_line_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Закрепить носовой швартов.",
+      "target_language": "en",
+      "target_text": "Make fast forward line.",
+      "accepted_answers": [
+        "make fast forward line",
+        "make fast the forward line"
+      ],
+      "grammar_pattern": "onboard_line_handling_basic",
+      "hint_beginner": "Make fast forward...",
+      "hint_intermediate": "fast forward line.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Make fast forward line.",
+          "make fast the forward line"
+        ],
+        "should_reject": [
+          "let go forward line",
+          "make fast aft line",
+          "make fast anchor line"
+        ],
+        "dangerous_minimal_pairs": [
+          "make fast / let go lines"
+        ],
+        "linguist_note": "Make fast/let go and forward/aft lines must stay separate."
+      }
+    },
+    {
+      "id": "phrase_onboard_let_go_aft_line_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Отдать кормовой швартов.",
+      "target_language": "en",
+      "target_text": "Let go aft line.",
+      "accepted_answers": [
+        "let go aft line",
+        "let go the aft line"
+      ],
+      "grammar_pattern": "onboard_line_handling_basic",
+      "hint_beginner": "Let go aft...",
+      "hint_intermediate": "go aft line.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Let go aft line.",
+          "let go the aft line"
+        ],
+        "should_reject": [
+          "make fast aft line",
+          "let go forward line",
+          "let go anchor line"
+        ],
+        "dangerous_minimal_pairs": [
+          "make fast / let go lines"
+        ],
+        "linguist_note": "Let go/make fast and aft/forward lines must stay separate."
+      }
+    },
+    {
+      "id": "phrase_onboard_check_lifebuoy_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "safety_checks",
+      "branch": "onboard_operations",
+      "module": "safety_checks",
+      "source_language": "ru",
+      "source_text": "Проверьте спасательный круг.",
+      "target_language": "en",
+      "target_text": "Check the lifebuoy.",
+      "accepted_answers": [
+        "check the lifebuoy",
+        "check lifebuoy"
+      ],
+      "grammar_pattern": "onboard_safety_check_basic",
+      "hint_beginner": "Check the lifebuoy....",
+      "hint_intermediate": "Check the lifebuoy.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Check the lifebuoy.",
+          "check lifebuoy"
+        ],
+        "should_reject": [
+          "check the lifejacket",
+          "check the fire extinguisher",
+          "throw the lifebuoy"
+        ],
+        "dangerous_minimal_pairs": [],
+        "linguist_note": "Check target and action must stay item-specific."
+      }
+    },
+    {
+      "id": "phrase_onboard_check_fire_extinguisher_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "safety_checks",
+      "branch": "onboard_operations",
+      "module": "safety_checks",
+      "source_language": "ru",
+      "source_text": "Проверьте огнетушитель.",
+      "target_language": "en",
+      "target_text": "Check the fire extinguisher.",
+      "accepted_answers": [
+        "check the fire extinguisher",
+        "check fire extinguisher"
+      ],
+      "grammar_pattern": "onboard_safety_check_basic",
+      "hint_beginner": "Check the fire...",
+      "hint_intermediate": "the fire extinguisher.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Check the fire extinguisher.",
+          "check fire extinguisher"
+        ],
+        "should_reject": [
+          "use the fire extinguisher",
+          "check the lifebuoy",
+          "check the fire pump"
+        ],
+        "dangerous_minimal_pairs": [
+          "safety check / emergency action"
+        ],
+        "linguist_note": "Safety check is not use action and equipment must stay exact."
+      }
+    },
+    {
+      "id": "phrase_onboard_report_fire_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 20,
+      "topic": "emergency_aboard",
+      "branch": "onboard_operations",
+      "module": "emergency_actions_aboard",
+      "source_language": "ru",
+      "source_text": "Доложите пожар на борту.",
+      "target_language": "en",
+      "target_text": "Report fire on board.",
+      "accepted_answers": [
+        "report fire on board"
+      ],
+      "grammar_pattern": "onboard_emergency_report_basic",
+      "hint_beginner": "Report fire on...",
+      "hint_intermediate": "fire on board.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Report fire on board."
+        ],
+        "should_reject": [
+          "report flooding on board",
+          "report man overboard",
+          "fire drill on board"
+        ],
+        "dangerous_minimal_pairs": [
+          "fire / flooding / man overboard"
+        ],
+        "linguist_note": "Fire, flooding, and man overboard must stay separate."
+      }
+    },
+    {
+      "id": "phrase_onboard_report_man_overboard_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 20,
+      "topic": "emergency_aboard",
+      "branch": "onboard_operations",
+      "module": "emergency_actions_aboard",
+      "source_language": "ru",
+      "source_text": "Доложите человек за бортом.",
+      "target_language": "en",
+      "target_text": "Report man overboard.",
+      "accepted_answers": [
+        "report man overboard"
+      ],
+      "grammar_pattern": "onboard_emergency_report_basic",
+      "hint_beginner": "Report man overboard....",
+      "hint_intermediate": "Report man overboard.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Report man overboard."
+        ],
+        "should_reject": [
+          "report fire on board",
+          "report person on board",
+          "man overboard drill"
+        ],
+        "dangerous_minimal_pairs": [
+          "fire / flooding / man overboard"
+        ],
+        "linguist_note": "Man overboard is an emergency, not person on board or a drill."
+      }
+    },
+    {
+      "id": "phrase_onboard_start_fire_pump_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 24,
+      "topic": "emergency_aboard",
+      "branch": "onboard_operations",
+      "module": "emergency_actions_aboard",
+      "source_language": "ru",
+      "source_text": "Запустите пожарный насос.",
+      "target_language": "en",
+      "target_text": "Start the fire pump.",
+      "accepted_answers": [
+        "start the fire pump",
+        "start fire pump"
+      ],
+      "grammar_pattern": "onboard_emergency_action_basic",
+      "hint_beginner": "Start the fire...",
+      "hint_intermediate": "the fire pump.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Start the fire pump.",
+          "start fire pump"
+        ],
+        "should_reject": [
+          "stop the fire pump",
+          "start bilge pump",
+          "check the fire pump"
+        ],
+        "dangerous_minimal_pairs": [
+          "safety check / emergency action"
+        ],
+        "linguist_note": "Start/stop/check and fire/bilge pump boundaries must stay exact."
+      }
+    }
+  ],
+  "grammar_patterns": [
+    {
+      "id": "onboard_watch_handover_basic",
+      "pattern": "watch handover/takeover completion or action",
+      "examples": [
+        "Watch handover complete.",
+        "I take over the bridge watch."
+      ]
+    },
+    {
+      "id": "onboard_watch_status_report",
+      "pattern": "report or complete watch/log status",
+      "examples": [
+        "Report watch status.",
+        "Log entry complete."
+      ]
+    },
+    {
+      "id": "onboard_helm_order_basic",
+      "pattern": "helm order + direction or midships",
+      "examples": [
+        "Port helm ten.",
+        "Helm midships."
+      ]
+    },
+    {
+      "id": "onboard_course_steady_order",
+      "pattern": "steady on course + radio course value",
+      "examples": [
+        "Steady on course zero nine zero."
+      ]
+    },
+    {
+      "id": "onboard_order_completion",
+      "pattern": "order/action + completed",
+      "examples": [
+        "Order completed.",
+        "Action completed."
+      ]
+    },
+    {
+      "id": "onboard_anchor_handling_basic",
+      "pattern": "anchor readiness or action on command",
+      "examples": [
+        "Anchor ready for letting go.",
+        "Let go anchor on command."
+      ]
+    },
+    {
+      "id": "onboard_anchor_status_report",
+      "pattern": "anchor status report",
+      "examples": [
+        "Anchor aweigh.",
+        "Anchor is down."
+      ]
+    },
+    {
+      "id": "onboard_station_ready_report",
+      "pattern": "mooring station + ready",
+      "examples": [
+        "Bow station ready.",
+        "Stern station ready."
+      ]
+    },
+    {
+      "id": "onboard_line_handling_basic",
+      "pattern": "make fast or let go + line position",
+      "examples": [
+        "Make fast forward line.",
+        "Let go aft line."
+      ]
+    },
+    {
+      "id": "onboard_safety_check_basic",
+      "pattern": "check + safety equipment",
+      "examples": [
+        "Check the lifebuoy.",
+        "Check the fire extinguisher."
+      ]
+    },
+    {
+      "id": "onboard_emergency_report_basic",
+      "pattern": "report + onboard emergency type",
+      "examples": [
+        "Report fire on board.",
+        "Report man overboard."
+      ]
+    },
+    {
+      "id": "onboard_emergency_action_basic",
+      "pattern": "start/stop/check + emergency equipment",
+      "examples": [
+        "Start the fire pump."
+      ]
+    }
+  ],
+  "dangerous_minimal_pairs": [
+    {
+      "pair": "hand over watch / take over watch",
+      "items": [
+        "expr_onboard_watch_handover_001",
+        "expr_onboard_take_over_watch_001",
+        "phrase_onboard_take_over_bridge_watch_001"
+      ],
+      "must_accept": {
+        "expr_onboard_watch_handover_001": [
+          "hand over watch"
+        ],
+        "expr_onboard_take_over_watch_001": [
+          "take over watch"
+        ],
+        "phrase_onboard_take_over_bridge_watch_001": [
+          "I take over the bridge watch."
+        ]
+      },
+      "must_reject": {
+        "expr_onboard_watch_handover_001": [
+          "take over watch",
+          "keep watch",
+          "report watch"
+        ],
+        "expr_onboard_take_over_watch_001": [
+          "hand over watch",
+          "leave watch",
+          "watch over"
+        ],
+        "phrase_onboard_take_over_bridge_watch_001": [
+          "i hand over the bridge watch",
+          "i leave the bridge watch",
+          "i take over engine watch"
+        ]
+      },
+      "reason": "Watch handover and takeover are opposite watch-transfer actions."
+    },
+    {
+      "pair": "helm order / action completed",
+      "items": [
+        "phrase_onboard_order_completed_001",
+        "phrase_onboard_action_completed_001",
+        "expr_onboard_steady_course_001"
+      ],
+      "must_accept": {
+        "phrase_onboard_order_completed_001": [
+          "Order completed."
+        ],
+        "phrase_onboard_action_completed_001": [
+          "Action completed."
+        ],
+        "expr_onboard_steady_course_001": [
+          "steady course"
+        ]
+      },
+      "must_reject": {
+        "phrase_onboard_order_completed_001": [
+          "order received",
+          "action completed",
+          "order cancelled"
+        ],
+        "phrase_onboard_action_completed_001": [
+          "order completed",
+          "action required",
+          "action cancelled"
+        ],
+        "expr_onboard_steady_course_001": [
+          "alter course",
+          "midships",
+          "course reported"
+        ]
+      },
+      "reason": "Order completion, action completion, and ongoing helm order language must stay separate."
+    },
+    {
+      "pair": "port helm / starboard helm",
+      "items": [
+        "expr_onboard_helm_port_001",
+        "expr_onboard_helm_starboard_001",
+        "phrase_onboard_port_helm_001",
+        "phrase_onboard_starboard_helm_001"
+      ],
+      "must_accept": {
+        "expr_onboard_helm_port_001": [
+          "port helm"
+        ],
+        "expr_onboard_helm_starboard_001": [
+          "starboard helm"
+        ],
+        "phrase_onboard_port_helm_001": [
+          "Port helm ten."
+        ],
+        "phrase_onboard_starboard_helm_001": [
+          "Starboard helm ten."
+        ]
+      },
+      "must_reject": {
+        "expr_onboard_helm_port_001": [
+          "starboard helm",
+          "left turn",
+          "port side station"
+        ],
+        "expr_onboard_helm_starboard_001": [
+          "port helm",
+          "right turn",
+          "starboard station"
+        ],
+        "phrase_onboard_port_helm_001": [
+          "starboard helm ten",
+          "port station ten",
+          "left ten"
+        ],
+        "phrase_onboard_starboard_helm_001": [
+          "port helm ten",
+          "starboard station ten",
+          "right ten"
+        ]
+      },
+      "reason": "Port and starboard helm orders reverse the vessel steering order."
+    },
+    {
+      "pair": "anchor / moor / berth",
+      "items": [
+        "word_onboard_anchor_001",
+        "expr_onboard_let_go_anchor_001",
+        "expr_onboard_make_fast_001",
+        "phrase_onboard_let_go_anchor_001"
+      ],
+      "must_accept": {
+        "word_onboard_anchor_001": [
+          "anchor"
+        ],
+        "expr_onboard_let_go_anchor_001": [
+          "let go anchor"
+        ],
+        "expr_onboard_make_fast_001": [
+          "make fast"
+        ],
+        "phrase_onboard_let_go_anchor_001": [
+          "Let go anchor on command."
+        ]
+      },
+      "must_reject": {
+        "word_onboard_anchor_001": [
+          "berth",
+          "moor",
+          "fender"
+        ],
+        "expr_onboard_let_go_anchor_001": [
+          "heave up anchor",
+          "let go lines",
+          "drop fender"
+        ],
+        "expr_onboard_make_fast_001": [
+          "let go",
+          "cast off",
+          "hold fast"
+        ],
+        "phrase_onboard_let_go_anchor_001": [
+          "heave up anchor on command",
+          "let go lines on command",
+          "anchor ready on command"
+        ]
+      },
+      "reason": "Anchor handling, mooring lines, and berth concepts must not collapse."
+    },
+    {
+      "pair": "let go anchor / heave up anchor",
+      "items": [
+        "expr_onboard_let_go_anchor_001",
+        "expr_onboard_heave_up_anchor_001",
+        "phrase_onboard_let_go_anchor_001",
+        "phrase_onboard_anchor_aweigh_001"
+      ],
+      "must_accept": {
+        "expr_onboard_let_go_anchor_001": [
+          "let go anchor"
+        ],
+        "expr_onboard_heave_up_anchor_001": [
+          "heave up anchor"
+        ],
+        "phrase_onboard_let_go_anchor_001": [
+          "Let go anchor on command."
+        ],
+        "phrase_onboard_anchor_aweigh_001": [
+          "Anchor aweigh."
+        ]
+      },
+      "must_reject": {
+        "expr_onboard_let_go_anchor_001": [
+          "heave up anchor",
+          "let go lines",
+          "drop fender"
+        ],
+        "expr_onboard_heave_up_anchor_001": [
+          "let go anchor",
+          "heave up line",
+          "anchor ready"
+        ],
+        "phrase_onboard_let_go_anchor_001": [
+          "heave up anchor on command",
+          "let go lines on command",
+          "anchor ready on command"
+        ],
+        "phrase_onboard_anchor_aweigh_001": [
+          "anchor down",
+          "anchor ready",
+          "anchor dragging"
+        ]
+      },
+      "reason": "Let go anchor and heave up/weigh anchor are opposite anchor operations."
+    },
+    {
+      "pair": "make fast / let go lines",
+      "items": [
+        "expr_onboard_make_fast_001",
+        "expr_onboard_let_go_lines_001",
+        "phrase_onboard_make_fast_forward_line_001",
+        "phrase_onboard_let_go_aft_line_001"
+      ],
+      "must_accept": {
+        "expr_onboard_make_fast_001": [
+          "make fast"
+        ],
+        "expr_onboard_let_go_lines_001": [
+          "let go lines"
+        ],
+        "phrase_onboard_make_fast_forward_line_001": [
+          "Make fast forward line."
+        ],
+        "phrase_onboard_let_go_aft_line_001": [
+          "Let go aft line."
+        ]
+      },
+      "must_reject": {
+        "expr_onboard_make_fast_001": [
+          "let go",
+          "cast off",
+          "hold fast"
+        ],
+        "expr_onboard_let_go_lines_001": [
+          "make fast lines",
+          "heave up anchor",
+          "lines ready"
+        ],
+        "phrase_onboard_make_fast_forward_line_001": [
+          "let go forward line",
+          "make fast aft line",
+          "make fast anchor line"
+        ],
+        "phrase_onboard_let_go_aft_line_001": [
+          "make fast aft line",
+          "let go forward line",
+          "let go anchor line"
+        ]
+      },
+      "reason": "Securing and releasing lines are opposite mooring actions."
+    },
+    {
+      "pair": "bow station / stern station / port station / starboard station",
+      "items": [
+        "word_onboard_bow_station_001",
+        "word_onboard_stern_station_001",
+        "phrase_onboard_bow_station_ready_001",
+        "phrase_onboard_stern_station_ready_001"
+      ],
+      "must_accept": {
+        "word_onboard_bow_station_001": [
+          "bow station"
+        ],
+        "word_onboard_stern_station_001": [
+          "stern station"
+        ],
+        "phrase_onboard_bow_station_ready_001": [
+          "Bow station ready."
+        ],
+        "phrase_onboard_stern_station_ready_001": [
+          "Stern station ready."
+        ]
+      },
+      "must_reject": {
+        "word_onboard_bow_station_001": [
+          "stern station",
+          "port station",
+          "starboard station"
+        ],
+        "word_onboard_stern_station_001": [
+          "bow station",
+          "port station",
+          "starboard station"
+        ],
+        "phrase_onboard_bow_station_ready_001": [
+          "stern station ready",
+          "port station ready",
+          "bow line ready"
+        ],
+        "phrase_onboard_stern_station_ready_001": [
+          "bow station ready",
+          "starboard station ready",
+          "stern line ready"
+        ]
+      },
+      "reason": "Mooring station positions must stay exact."
+    },
+    {
+      "pair": "stand by / standing by",
+      "items": [
+        "expr_onboard_stand_by_bow_001",
+        "expr_onboard_standing_by_001"
+      ],
+      "must_accept": {
+        "expr_onboard_stand_by_bow_001": [
+          "stand by bow"
+        ],
+        "expr_onboard_standing_by_001": [
+          "standing by"
+        ]
+      },
+      "must_reject": {
+        "expr_onboard_stand_by_bow_001": [
+          "standing by bow",
+          "stand by stern",
+          "stand by port"
+        ],
+        "expr_onboard_standing_by_001": [
+          "stand by",
+          "go ahead",
+          "not ready"
+        ]
+      },
+      "reason": "Stand by as a command and standing by as a readiness status must stay separate."
+    },
+    {
+      "pair": "safety check / emergency action",
+      "items": [
+        "expr_onboard_safety_check_001",
+        "phrase_onboard_check_fire_extinguisher_001",
+        "phrase_onboard_start_fire_pump_001"
+      ],
+      "must_accept": {
+        "expr_onboard_safety_check_001": [
+          "safety check"
+        ],
+        "phrase_onboard_check_fire_extinguisher_001": [
+          "Check the fire extinguisher."
+        ],
+        "phrase_onboard_start_fire_pump_001": [
+          "Start the fire pump."
+        ]
+      },
+      "must_reject": {
+        "expr_onboard_safety_check_001": [
+          "equipment failure",
+          "emergency action",
+          "security check"
+        ],
+        "phrase_onboard_check_fire_extinguisher_001": [
+          "use the fire extinguisher",
+          "check the lifebuoy",
+          "check the fire pump"
+        ],
+        "phrase_onboard_start_fire_pump_001": [
+          "stop the fire pump",
+          "start bilge pump",
+          "check the fire pump"
+        ]
+      },
+      "reason": "Safety checks and emergency actions are different workflows."
+    },
+    {
+      "pair": "fire / flooding / man overboard",
+      "items": [
+        "expr_onboard_fire_on_board_001",
+        "expr_onboard_flooding_001",
+        "phrase_onboard_report_fire_001",
+        "phrase_onboard_report_man_overboard_001"
+      ],
+      "must_accept": {
+        "expr_onboard_fire_on_board_001": [
+          "fire on board"
+        ],
+        "expr_onboard_flooding_001": [
+          "flooding on board"
+        ],
+        "phrase_onboard_report_fire_001": [
+          "Report fire on board."
+        ],
+        "phrase_onboard_report_man_overboard_001": [
+          "Report man overboard."
+        ]
+      },
+      "must_reject": {
+        "expr_onboard_fire_on_board_001": [
+          "flooding on board",
+          "man overboard",
+          "fire drill"
+        ],
+        "expr_onboard_flooding_001": [
+          "fire on board",
+          "water on deck",
+          "bilge pump ready"
+        ],
+        "phrase_onboard_report_fire_001": [
+          "report flooding on board",
+          "report man overboard",
+          "fire drill on board"
+        ],
+        "phrase_onboard_report_man_overboard_001": [
+          "report fire on board",
+          "report person on board",
+          "man overboard drill"
+        ]
+      },
+      "reason": "Onboard emergency type changes the required response."
+    }
+  ],
+  "producer_notes": {
+    "status": "draft; not linguist reviewed; not merged into starter.json",
+    "learner_source_language": "ru",
+    "target_language": "en",
+    "next_gate": "Sea Speak Linguist Onboard Operations risk review before engineering gate or playable merge",
+    "open_questions": [
+      "Confirm whether onboard helm orders should accept ordinary left/right wording or keep port/starboard helm strict.",
+      "Confirm whether handover and take over watch should remain strict opposites in beginner items.",
+      "Confirm anchor ready, anchor down, and anchor aweigh status boundaries before regression expansion.",
+      "Confirm stand by bow versus standing by should remain a command/status contrast.",
+      "Confirm whether onboard emergency phrases should remain internal-action language rather than distress radio calls."
+    ],
+    "risk_focus": [
+      "hand over watch / take over watch",
+      "helm order / action completed",
+      "port helm / starboard helm",
+      "anchor / moor / berth",
+      "let go anchor / heave up anchor",
+      "make fast / let go lines",
+      "bow/stern/port/starboard station",
+      "stand by / standing by",
+      "safety check / emergency action",
+      "fire / flooding / man overboard"
+    ]
+  }
+}

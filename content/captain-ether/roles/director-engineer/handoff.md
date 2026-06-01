@@ -208,25 +208,21 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0055 Batch 008 Post-Merge QA` is closed as PASS and accepted.
+None. `CE-SPRINT-0056 Batch 009 Onboard Operations Draft` is closed as PASS.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0055-batch-008-post-merge-qa-accepted-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0056-batch-009-onboard-operations-draft-2026-06-01.md
 ```
 
 Latest local validation:
 
 ```text
-Batch 008 VTS / Port Control linguist review PASS.
-Batch status: merged.
-Engineering gate PASS FOR QA ACCEPTANCE.
-QA acceptance PASS.
+Batch 009 Onboard Operations draft created.
+Batch status: draft.
 Batch validator PASS with known starter WARN (9).
-API smoke PASS captain-ether-api-smoke checks=334.
-Playable merge completed locally.
-Post-merge QA PASS.
+No playable merge performed.
 ```
 
 Current local playable corpus:
@@ -240,6 +236,7 @@ should_reject=1083
 dangerous_pairs=77
 traffic_collision_items=50
 vts_port_control_items=50
+batch_009_onboard_operations_draft_items=50
 ```
 
 Scope preserved:
@@ -253,15 +250,16 @@ production config, deploy/FTP state, or secrets changed.
 Next recommended work:
 
 ```text
-TASK-CE-0056 Onboard Operations corpus gap and Batch 009 draft.
-Owner: Director-Engineer then Content Producer.
-Goal: extend M3 corpus toward onboard/bridge-team operational language while
-preserving radio-branch boundaries.
+TASK-CE-0057 Batch 009 Sea Speak Linguist risk review.
+Owner: Sea Speak Linguist.
+Goal: review helm-order language, watch handover, anchor/line handling,
+station positions, command/status wording, and onboard emergency boundaries
+before engineering gate.
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
-matcher change, API/runtime change, UI change, Atlas change, or public
-English-native release is authorized by `CE-SPRINT-0055`.
+matcher change, API/runtime change, UI change, Atlas change, starter merge, or
+public English-native release is authorized by `CE-SPRINT-0056`.
 
 ## Previous Closed Sprint
 

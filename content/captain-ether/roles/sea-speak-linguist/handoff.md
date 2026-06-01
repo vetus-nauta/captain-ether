@@ -121,7 +121,27 @@ PASS; no matcher/API/policy change requested; routed to QA acceptance by Directo
 
 ## Current Assignment
 
-None.
+TASK-CE-0057 Batch 009 Onboard Operations Risk Review:
+
+- target batch:
+  `content/captain-ether/batches/batch-009-onboard-operations-basics.json`
+- source sprint:
+  `content/captain-ether/roles/director-engineer/reports/sprint-ce-0056-batch-009-onboard-operations-draft-2026-06-01.md`
+- content report:
+  `content/captain-ether/roles/content-producer/reports/batch-009-onboard-operations-basics-card-2026-06-01.md`
+- mode:
+  linguistic review with content-side patch allowed for assigned batch only
+- required focus:
+  `hand over watch / take over watch`, `helm order / action completed`,
+  `port helm / starboard helm`, `anchor / moor / berth`,
+  `let go anchor / heave up anchor`, `make fast / let go lines`,
+  `bow station / stern station / port station / starboard station`,
+  `stand by / standing by`, `safety check / emergency action`, and
+  `fire / flooding / man overboard`.
+
+Do not edit matcher/API/UI/runtime, playable `starter.json`, accept/reject
+regression, Atlas, auth, router, registry, Watch Officer, Nav Desk, production
+config, deploy state, or secrets.
 
 ## Next Valid Work
 
