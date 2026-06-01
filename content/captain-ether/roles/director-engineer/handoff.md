@@ -208,37 +208,37 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0053 Batch 008 Acceptance QA` is closed as PASS.
+None. `CE-SPRINT-0054 Batch 008 Merge Preparation` is closed as PASS.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0053-batch-008-acceptance-qa-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0054-batch-008-merge-preparation-2026-06-01.md
 ```
 
 Latest local validation:
 
 ```text
 Batch 008 VTS / Port Control linguist review PASS.
-Batch status: linguist_reviewed.
+Batch status: merged.
 Engineering gate PASS FOR QA ACCEPTANCE.
 QA acceptance PASS.
 Batch validator PASS with known starter WARN (9).
 API smoke PASS captain-ether-api-smoke checks=334.
-No playable merge performed.
+Playable merge completed locally.
 ```
 
 Current local playable corpus:
 
 ```text
-starter_items=305
-grammar_patterns=115
-qa_items=305
-should_accept=817
-should_reject=933
-dangerous_pairs=67
+starter_items=355
+grammar_patterns=124
+qa_items=355
+should_accept=926
+should_reject=1083
+dangerous_pairs=77
 traffic_collision_items=50
-batch_008_vts_port_control_draft_items=50
+vts_port_control_items=50
 ```
 
 Scope preserved:
@@ -252,15 +252,16 @@ production config, deploy/FTP state, or secrets changed.
 Next recommended work:
 
 ```text
-TASK-CE-0054 Batch 008 merge-preparation.
-Owner: Director-Engineer.
-Goal: merge Batch 008 into starter.json and accept-reject regression locally
-only, then run full validator and API smoke.
+TASK-CE-0055 Batch 008 post-merge QA.
+Owner: QA.
+Goal: independently verify merged playable corpus and regression after Batch
+008 merge, including VTS / port-control reachability and dangerous-pair
+coverage.
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
 matcher change, API/runtime change, UI change, Atlas change, or public
-English-native release is authorized by `CE-SPRINT-0053`.
+English-native release is authorized by `CE-SPRINT-0054`.
 
 ## Previous Closed Sprint
 

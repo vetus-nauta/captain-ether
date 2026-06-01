@@ -1,7 +1,7 @@
 {
   "version": 1,
   "batch_id": "batch-008-vts-port-control-basics",
-  "status": "linguist_reviewed",
+  "status": "merged",
   "date": "2026-06-01",
   "branch": "vts_port_control",
   "scope": "VTS, port-control, pilot, tug, and traffic-authority communication for M3 corpus growth.",
@@ -2271,10 +2271,10 @@
     }
   ],
   "producer_notes": {
-    "status": "linguist reviewed; not merged into starter.json",
+    "status": "merged into starter.json after QA acceptance",
     "learner_source_language": "ru",
     "target_language": "en",
-    "next_gate": "Director-Engineer engineering gate before QA or playable merge",
+    "next_gate": "Post-merge validation and QA acceptance before any production deploy",
     "open_questions": [
       "Confirm whether VTS and Port Control should both be trained as station identities in this beginner/intermediate batch.",
       "Confirm whether request clearance and request permission should both be accepted item-locally for port entry/departure.",
@@ -2313,6 +2313,18 @@
           "reason": "Nonstandard duplicated wording; canonical vessel-crossing wording remains accepted."
         }
       ]
+    },
+    "merge_notes": {
+      "date": "2026-06-01",
+      "task": "TASK-CE-0054",
+      "playable_items_added": 50,
+      "qa_items_added": 50,
+      "dangerous_pair_groups_added": 10,
+      "grammar_patterns_added": 9,
+      "report": "content/captain-ether/roles/director-engineer/reports/sprint-ce-0054-batch-008-merge-preparation-2026-06-01.md"
     }
-  }
+  },
+  "merged_into": "content/captain-ether/starter.json",
+  "merged_date": "2026-06-01",
+  "merge_gate": "content/captain-ether/roles/director-engineer/reports/sprint-ce-0054-batch-008-merge-preparation-2026-06-01.md"
 }

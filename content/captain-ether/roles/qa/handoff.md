@@ -6,7 +6,26 @@ Use only after Director-Engineer names the exact target and test type.
 
 ## Current Prepared QA
 
-None.
+TASK-CE-0055 Batch 008 post-merge QA:
+
+- mode:
+  local post-merge verification
+- target:
+  `content/captain-ether/starter.json`,
+  `content/captain-ether/accept-reject-qa-pairs.json`, and
+  `content/captain-ether/batches/batch-008-vts-port-control-basics.json`
+- source sprint:
+  `content/captain-ether/roles/director-engineer/reports/sprint-ce-0054-batch-008-merge-preparation-2026-06-01.md`
+- required focus:
+  merged `vts_port_control` reachability, Batch 008 regression rows,
+  dangerous-pair coverage for station identity, instruction/advice/information,
+  request/report, pilot/tug/tow, entry/departure, permitted/not-permitted,
+  exact channels, port areas, proceed/hold/wait, inbound/outbound; confirm no
+  `qa_notes` exist in playable `starter.json`.
+- forbidden:
+  production deploy, Atlas config/data writes, auth/platform,
+  router/registry, Watch Officer, Nav Desk, matcher/API/UI changes, secrets,
+  sessions, cookies, CSRF, SMTP, player email, or player identity data.
 
 ## Last QA
 

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "task_label": "2026-05-27-second-sea-speak-qa-pass",
-  "scope": "Captain Ether starter items, including Batch 001 core radio procedure, Batch 002 marina/harbour basics, Batch 003 navigation reports, Batch 004 safety warnings, Batch 005 urgency basics, and Batch 007 traffic/collision basics after merge.",
+  "scope": "Captain Ether starter items, including Batch 001 core radio procedure, Batch 002 marina/harbour basics, Batch 003 navigation reports, Batch 004 safety warnings, Batch 005 urgency basics, Batch 007 traffic/collision basics, and Batch 008 VTS/port-control basics after merge.",
   "purpose": "Regression-oriented Sea Speak accept/reject pairs. These pairs protect against rejecting clear maritime meaning and against accepting changed maritime meaning.",
   "dangerous_minimal_pairs": [
     {
@@ -2242,6 +2242,457 @@
         ]
       },
       "reason": "Bearing observations must stay separate from heading and course wording."
+    },
+    {
+      "pair": "request / report",
+      "items": [
+        "expr_vts_report_position_001",
+        "expr_vts_request_clearance_001",
+        "phrase_vts_request_enter_port_001",
+        "phrase_vts_report_passing_alpha_001"
+      ],
+      "must_accept": {
+        "expr_vts_report_position_001": [
+          "report position"
+        ],
+        "expr_vts_request_clearance_001": [
+          "request clearance"
+        ],
+        "phrase_vts_request_enter_port_001": [
+          "Request permission to enter port."
+        ],
+        "phrase_vts_report_passing_alpha_001": [
+          "Report when passing reporting point Alpha."
+        ]
+      },
+      "must_reject": {
+        "expr_vts_report_position_001": [
+          "request position",
+          "say position",
+          "report intentions"
+        ],
+        "expr_vts_request_clearance_001": [
+          "report clearance",
+          "request information",
+          "clearance granted"
+        ],
+        "phrase_vts_request_enter_port_001": [
+          "report permission to enter port",
+          "request permission to leave port",
+          "request permission to enter marina"
+        ],
+        "phrase_vts_report_passing_alpha_001": [
+          "report when passing reporting point bravo",
+          "request reporting point alpha",
+          "report when at anchorage alpha"
+        ]
+      },
+      "reason": "Request asks for authority or service; report provides information."
+    },
+    {
+      "pair": "instruction / advice / information",
+      "items": [
+        "word_vts_instruction_001",
+        "word_vts_advice_001",
+        "word_vts_traffic_information_001",
+        "phrase_vts_follow_instruction_001",
+        "phrase_vts_traffic_crossing_ahead_001"
+      ],
+      "must_accept": {
+        "word_vts_instruction_001": [
+          "instruction"
+        ],
+        "word_vts_advice_001": [
+          "advice"
+        ],
+        "word_vts_traffic_information_001": [
+          "traffic information"
+        ],
+        "phrase_vts_follow_instruction_001": [
+          "Follow VTS instruction."
+        ],
+        "phrase_vts_traffic_crossing_ahead_001": [
+          "Traffic information: vessel crossing ahead."
+        ]
+      },
+      "must_reject": {
+        "word_vts_instruction_001": [
+          "advice",
+          "information",
+          "request"
+        ],
+        "word_vts_advice_001": [
+          "instruction",
+          "information",
+          "advise"
+        ],
+        "word_vts_traffic_information_001": [
+          "navigation warning",
+          "weather information",
+          "pilot information"
+        ],
+        "phrase_vts_follow_instruction_001": [
+          "follow vts advice",
+          "request vts instruction",
+          "follow pilot instruction"
+        ],
+        "phrase_vts_traffic_crossing_ahead_001": [
+          "navigation warning vessel crossing ahead",
+          "traffic information vessel crossing astern",
+          "traffic clear ahead"
+        ]
+      },
+      "reason": "Instruction, advice, and information have different authority weight."
+    },
+    {
+      "pair": "VTS / port control / marina control / pilot station",
+      "items": [
+        "word_vts_vts_001",
+        "word_vts_port_control_001",
+        "phrase_vts_call_aurora_001",
+        "phrase_vts_switch_channel_12_001"
+      ],
+      "must_accept": {
+        "word_vts_vts_001": [
+          "VTS"
+        ],
+        "word_vts_port_control_001": [
+          "port control"
+        ],
+        "phrase_vts_call_aurora_001": [
+          "VTS, this is sailing yacht Aurora."
+        ],
+        "phrase_vts_switch_channel_12_001": [
+          "Switch to VTS channel 12."
+        ]
+      },
+      "must_reject": {
+        "word_vts_vts_001": [
+          "port control",
+          "marina control",
+          "pilot station"
+        ],
+        "word_vts_port_control_001": [
+          "vts",
+          "marina control",
+          "coast guard"
+        ],
+        "phrase_vts_call_aurora_001": [
+          "marina control this is sailing yacht aurora",
+          "pilot station this is sailing yacht aurora",
+          "aurora this is vts"
+        ],
+        "phrase_vts_switch_channel_12_001": [
+          "switch to vts channel 13",
+          "switch to port channel 12",
+          "switch to pilot channel 12"
+        ]
+      },
+      "reason": "Station identity must not collapse across traffic authority, marina, and pilot stations."
+    },
+    {
+      "pair": "pilot / tug / tow",
+      "items": [
+        "word_vts_pilot_001",
+        "word_vts_tug_001",
+        "expr_vts_pilot_required_001",
+        "expr_vts_tug_required_001",
+        "phrase_vts_request_pilot_001",
+        "phrase_vts_request_tug_assistance_001"
+      ],
+      "must_accept": {
+        "word_vts_pilot_001": [
+          "pilot"
+        ],
+        "word_vts_tug_001": [
+          "tug"
+        ],
+        "expr_vts_pilot_required_001": [
+          "pilot required"
+        ],
+        "expr_vts_tug_required_001": [
+          "tug required"
+        ],
+        "phrase_vts_request_pilot_001": [
+          "Port Control, request pilot."
+        ],
+        "phrase_vts_request_tug_assistance_001": [
+          "Request tug assistance."
+        ]
+      },
+      "must_reject": {
+        "word_vts_pilot_001": [
+          "tug",
+          "port control",
+          "crew"
+        ],
+        "word_vts_tug_001": [
+          "pilot",
+          "tow",
+          "tender"
+        ],
+        "expr_vts_pilot_required_001": [
+          "tug required",
+          "pilot requested",
+          "pilot on board"
+        ],
+        "expr_vts_tug_required_001": [
+          "pilot required",
+          "tow required",
+          "tug available"
+        ],
+        "phrase_vts_request_pilot_001": [
+          "port control request tug",
+          "port control request berth",
+          "port control report pilot"
+        ],
+        "phrase_vts_request_tug_assistance_001": [
+          "request pilot assistance",
+          "request towing assistance",
+          "request berth assistance"
+        ]
+      },
+      "reason": "Pilotage and tug assistance are separate services."
+    },
+    {
+      "pair": "enter port / leave port",
+      "items": [
+        "expr_vts_enter_port_001",
+        "expr_vts_leave_port_001",
+        "phrase_vts_request_enter_port_001",
+        "phrase_vts_request_leave_port_001"
+      ],
+      "must_accept": {
+        "expr_vts_enter_port_001": [
+          "enter port"
+        ],
+        "expr_vts_leave_port_001": [
+          "leave port"
+        ],
+        "phrase_vts_request_enter_port_001": [
+          "Request permission to enter port."
+        ],
+        "phrase_vts_request_leave_port_001": [
+          "Request permission to leave port."
+        ]
+      },
+      "must_reject": {
+        "expr_vts_enter_port_001": [
+          "leave port",
+          "report port",
+          "enter fairway"
+        ],
+        "expr_vts_leave_port_001": [
+          "enter port",
+          "leave berth",
+          "report departure"
+        ],
+        "phrase_vts_request_enter_port_001": [
+          "report permission to enter port",
+          "request permission to leave port",
+          "request permission to enter marina"
+        ],
+        "phrase_vts_request_leave_port_001": [
+          "request permission to enter port",
+          "report permission to leave port",
+          "request permission to leave berth"
+        ]
+      },
+      "reason": "Entry and departure instructions are opposite port movements."
+    },
+    {
+      "pair": "permitted / not permitted",
+      "items": [
+        "phrase_vts_entry_permitted_001",
+        "phrase_vts_entry_not_permitted_001"
+      ],
+      "must_accept": {
+        "phrase_vts_entry_permitted_001": [
+          "Port entry is permitted."
+        ],
+        "phrase_vts_entry_not_permitted_001": [
+          "Port entry is not permitted."
+        ]
+      },
+      "must_reject": {
+        "phrase_vts_entry_permitted_001": [
+          "port entry is not permitted",
+          "port departure is permitted",
+          "request port entry"
+        ],
+        "phrase_vts_entry_not_permitted_001": [
+          "port entry is permitted",
+          "port departure is not permitted",
+          "port closed"
+        ]
+      },
+      "reason": "Permission and refusal are opposite authority results."
+    },
+    {
+      "pair": "reporting point / anchorage / berth / fairway",
+      "items": [
+        "word_vts_anchorage_001",
+        "word_vts_fairway_001",
+        "phrase_vts_at_reporting_point_alpha_001",
+        "phrase_vts_proceed_reporting_point_charlie_001",
+        "phrase_vts_keep_clear_fairway_001"
+      ],
+      "must_accept": {
+        "word_vts_anchorage_001": [
+          "anchorage"
+        ],
+        "word_vts_fairway_001": [
+          "fairway"
+        ],
+        "phrase_vts_at_reporting_point_alpha_001": [
+          "I am at reporting point Alpha."
+        ],
+        "phrase_vts_proceed_reporting_point_charlie_001": [
+          "Proceed to reporting point Charlie."
+        ],
+        "phrase_vts_keep_clear_fairway_001": [
+          "Keep clear of the fairway."
+        ]
+      },
+      "must_reject": {
+        "word_vts_anchorage_001": [
+          "berth",
+          "fairway",
+          "reporting point"
+        ],
+        "word_vts_fairway_001": [
+          "anchorage",
+          "traffic lane",
+          "berth"
+        ],
+        "phrase_vts_at_reporting_point_alpha_001": [
+          "i am at reporting point bravo",
+          "i am at anchorage alpha",
+          "i am passing reporting point alpha"
+        ],
+        "phrase_vts_proceed_reporting_point_charlie_001": [
+          "proceed to reporting point alpha",
+          "proceed to anchorage charlie",
+          "report to reporting point charlie"
+        ],
+        "phrase_vts_keep_clear_fairway_001": [
+          "keep clear of anchorage",
+          "enter the fairway",
+          "fairway clear"
+        ]
+      },
+      "reason": "Port areas and reporting points are operationally different locations."
+    },
+    {
+      "pair": "channel 12 / channel 13 / channel 16 / channel 72",
+      "items": [
+        "expr_vts_channel_one_two_001",
+        "phrase_vts_switch_channel_12_001",
+        "phrase_vts_stand_by_channel_12_001"
+      ],
+      "must_accept": {
+        "expr_vts_channel_one_two_001": [
+          "channel 12"
+        ],
+        "phrase_vts_switch_channel_12_001": [
+          "Switch to VTS channel 12."
+        ],
+        "phrase_vts_stand_by_channel_12_001": [
+          "Stand by on VTS channel 12."
+        ]
+      },
+      "must_reject": {
+        "expr_vts_channel_one_two_001": [
+          "channel 13",
+          "channel 16",
+          "channel 72"
+        ],
+        "phrase_vts_switch_channel_12_001": [
+          "switch to vts channel 13",
+          "switch to port channel 12",
+          "switch to pilot channel 12"
+        ],
+        "phrase_vts_stand_by_channel_12_001": [
+          "go ahead on vts channel 12",
+          "stand by on vts channel 13",
+          "stand by on pilot channel 12"
+        ]
+      },
+      "reason": "Channel numbers must remain exact."
+    },
+    {
+      "pair": "proceed / hold / wait",
+      "items": [
+        "expr_vts_wait_in_area_001",
+        "expr_vts_proceed_reporting_point_001",
+        "expr_vts_hold_position_001",
+        "phrase_vts_hold_until_instruction_001",
+        "phrase_vts_wait_outside_limits_001"
+      ],
+      "must_accept": {
+        "expr_vts_wait_in_area_001": [
+          "wait in area"
+        ],
+        "expr_vts_proceed_reporting_point_001": [
+          "proceed to reporting point"
+        ],
+        "expr_vts_hold_position_001": [
+          "hold position"
+        ],
+        "phrase_vts_hold_until_instruction_001": [
+          "Hold position until further instruction."
+        ],
+        "phrase_vts_wait_outside_limits_001": [
+          "Wait outside port limits."
+        ]
+      },
+      "must_reject": {
+        "expr_vts_wait_in_area_001": [
+          "proceed in area",
+          "leave area",
+          "wait outside"
+        ],
+        "expr_vts_proceed_reporting_point_001": [
+          "proceed to anchorage",
+          "report at reporting point",
+          "stop at reporting point"
+        ],
+        "expr_vts_hold_position_001": [
+          "report position",
+          "change position",
+          "hold course"
+        ],
+        "phrase_vts_hold_until_instruction_001": [
+          "report position until further instruction",
+          "proceed until further instruction",
+          "hold course until further instruction"
+        ],
+        "phrase_vts_wait_outside_limits_001": [
+          "wait inside port limits",
+          "enter port limits",
+          "wait at berth"
+        ]
+      },
+      "reason": "Proceed, hold, and wait are different movement instructions."
+    },
+    {
+      "pair": "inbound / outbound",
+      "items": [
+        "phrase_vts_outbound_vessel_fairway_001"
+      ],
+      "must_accept": {
+        "phrase_vts_outbound_vessel_fairway_001": [
+          "Traffic information: outbound vessel in fairway."
+        ]
+      },
+      "must_reject": {
+        "phrase_vts_outbound_vessel_fairway_001": [
+          "traffic information inbound vessel in fairway",
+          "traffic information outbound vessel at anchorage",
+          "traffic information pilot vessel in fairway"
+        ]
+      },
+      "reason": "Inbound and outbound traffic directions must not be interchangeable."
     }
   ],
   "items": [
@@ -6434,6 +6885,665 @@
         "i will take small action",
         "i will wait"
       ]
+    },
+    {
+      "id": "word_vts_vts_001",
+      "target_text": "VTS",
+      "should_accept": [
+        "VTS",
+        "v t s",
+        "vessel traffic service"
+      ],
+      "should_reject": [
+        "port control",
+        "marina control",
+        "pilot station"
+      ]
+    },
+    {
+      "id": "word_vts_port_control_001",
+      "target_text": "port control",
+      "should_accept": [
+        "port control",
+        "PORT CONTROL",
+        "port control."
+      ],
+      "should_reject": [
+        "vts",
+        "marina control",
+        "coast guard"
+      ]
+    },
+    {
+      "id": "word_vts_instruction_001",
+      "target_text": "instruction",
+      "should_accept": [
+        "instruction",
+        "INSTRUCTION",
+        "instruction."
+      ],
+      "should_reject": [
+        "advice",
+        "information",
+        "request"
+      ]
+    },
+    {
+      "id": "word_vts_advice_001",
+      "target_text": "advice",
+      "should_accept": [
+        "advice",
+        "ADVICE",
+        "advice."
+      ],
+      "should_reject": [
+        "instruction",
+        "information",
+        "advise"
+      ]
+    },
+    {
+      "id": "word_vts_traffic_information_001",
+      "target_text": "traffic information",
+      "should_accept": [
+        "traffic information",
+        "TRAFFIC INFORMATION",
+        "traffic information."
+      ],
+      "should_reject": [
+        "navigation warning",
+        "weather information",
+        "pilot information"
+      ]
+    },
+    {
+      "id": "word_vts_pilot_001",
+      "target_text": "pilot",
+      "should_accept": [
+        "pilot",
+        "PILOT",
+        "pilot."
+      ],
+      "should_reject": [
+        "tug",
+        "port control",
+        "crew"
+      ]
+    },
+    {
+      "id": "word_vts_tug_001",
+      "target_text": "tug",
+      "should_accept": [
+        "tug",
+        "TUG",
+        "tug."
+      ],
+      "should_reject": [
+        "pilot",
+        "tow",
+        "tender"
+      ]
+    },
+    {
+      "id": "word_vts_clearance_001",
+      "target_text": "clearance",
+      "should_accept": [
+        "clearance",
+        "CLEARANCE",
+        "clearance."
+      ],
+      "should_reject": [
+        "advice",
+        "information",
+        "request"
+      ]
+    },
+    {
+      "id": "word_vts_anchorage_001",
+      "target_text": "anchorage",
+      "should_accept": [
+        "anchorage",
+        "ANCHORAGE",
+        "anchorage."
+      ],
+      "should_reject": [
+        "berth",
+        "fairway",
+        "reporting point"
+      ]
+    },
+    {
+      "id": "word_vts_fairway_001",
+      "target_text": "fairway",
+      "should_accept": [
+        "fairway",
+        "FAIRWAY",
+        "fairway."
+      ],
+      "should_reject": [
+        "anchorage",
+        "traffic lane",
+        "berth"
+      ]
+    },
+    {
+      "id": "expr_vts_call_vts_001",
+      "target_text": "call VTS",
+      "should_accept": [
+        "call VTS",
+        "contact VTS"
+      ],
+      "should_reject": [
+        "call pilot",
+        "call marina",
+        "call traffic"
+      ]
+    },
+    {
+      "id": "expr_vts_report_position_001",
+      "target_text": "report position",
+      "should_accept": [
+        "report position",
+        "REPORT POSITION"
+      ],
+      "should_reject": [
+        "request position",
+        "say position",
+        "report intentions"
+      ]
+    },
+    {
+      "id": "expr_vts_request_clearance_001",
+      "target_text": "request clearance",
+      "should_accept": [
+        "request clearance",
+        "REQUEST CLEARANCE"
+      ],
+      "should_reject": [
+        "report clearance",
+        "request information",
+        "clearance granted"
+      ]
+    },
+    {
+      "id": "expr_vts_wait_in_area_001",
+      "target_text": "wait in area",
+      "should_accept": [
+        "wait in area",
+        "WAIT IN AREA"
+      ],
+      "should_reject": [
+        "proceed in area",
+        "leave area",
+        "wait outside"
+      ]
+    },
+    {
+      "id": "expr_vts_proceed_reporting_point_001",
+      "target_text": "proceed to reporting point",
+      "should_accept": [
+        "proceed to reporting point",
+        "PROCEED TO REPORTING POINT"
+      ],
+      "should_reject": [
+        "proceed to anchorage",
+        "report at reporting point",
+        "stop at reporting point"
+      ]
+    },
+    {
+      "id": "expr_vts_hold_position_001",
+      "target_text": "hold position",
+      "should_accept": [
+        "hold position",
+        "HOLD POSITION"
+      ],
+      "should_reject": [
+        "report position",
+        "change position",
+        "hold course"
+      ]
+    },
+    {
+      "id": "expr_vts_keep_listening_watch_001",
+      "target_text": "keep listening watch",
+      "should_accept": [
+        "keep listening watch",
+        "keep a listening watch"
+      ],
+      "should_reject": [
+        "stand by",
+        "go ahead",
+        "stop transmitting"
+      ]
+    },
+    {
+      "id": "expr_vts_traffic_clear_001",
+      "target_text": "traffic clear",
+      "should_accept": [
+        "traffic clear",
+        "TRAFFIC CLEAR"
+      ],
+      "should_reject": [
+        "traffic information",
+        "traffic dense",
+        "traffic not clear"
+      ]
+    },
+    {
+      "id": "expr_vts_traffic_dense_001",
+      "target_text": "traffic dense",
+      "should_accept": [
+        "traffic dense",
+        "TRAFFIC DENSE"
+      ],
+      "should_reject": [
+        "traffic clear",
+        "traffic information",
+        "dense fog"
+      ]
+    },
+    {
+      "id": "expr_vts_pilot_required_001",
+      "target_text": "pilot required",
+      "should_accept": [
+        "pilot required",
+        "PILOT REQUIRED"
+      ],
+      "should_reject": [
+        "tug required",
+        "pilot requested",
+        "pilot on board"
+      ]
+    },
+    {
+      "id": "expr_vts_pilot_on_board_001",
+      "target_text": "pilot on board",
+      "should_accept": [
+        "pilot on board",
+        "PILOT ON BOARD"
+      ],
+      "should_reject": [
+        "pilot required",
+        "tug on board",
+        "pilot ashore"
+      ]
+    },
+    {
+      "id": "expr_vts_tug_required_001",
+      "target_text": "tug required",
+      "should_accept": [
+        "tug required",
+        "TUG REQUIRED"
+      ],
+      "should_reject": [
+        "pilot required",
+        "tow required",
+        "tug available"
+      ]
+    },
+    {
+      "id": "expr_vts_enter_port_001",
+      "target_text": "enter port",
+      "should_accept": [
+        "enter port",
+        "ENTER PORT"
+      ],
+      "should_reject": [
+        "leave port",
+        "report port",
+        "enter fairway"
+      ]
+    },
+    {
+      "id": "expr_vts_leave_port_001",
+      "target_text": "leave port",
+      "should_accept": [
+        "leave port",
+        "LEAVE PORT"
+      ],
+      "should_reject": [
+        "enter port",
+        "leave berth",
+        "report departure"
+      ]
+    },
+    {
+      "id": "expr_vts_embark_pilot_001",
+      "target_text": "embark pilot",
+      "should_accept": [
+        "embark pilot",
+        "EMBARK PILOT"
+      ],
+      "should_reject": [
+        "disembark pilot",
+        "embark tug",
+        "pilot required"
+      ]
+    },
+    {
+      "id": "expr_vts_disembark_pilot_001",
+      "target_text": "disembark pilot",
+      "should_accept": [
+        "disembark pilot",
+        "DISEMBARK PILOT"
+      ],
+      "should_reject": [
+        "embark pilot",
+        "disembark crew",
+        "pilot on board"
+      ]
+    },
+    {
+      "id": "expr_vts_channel_one_two_001",
+      "target_text": "channel 12",
+      "should_accept": [
+        "channel 12",
+        "channel one two",
+        "channel twelve"
+      ],
+      "should_reject": [
+        "channel 13",
+        "channel 16",
+        "channel 72"
+      ]
+    },
+    {
+      "id": "phrase_vts_call_aurora_001",
+      "target_text": "VTS, this is sailing yacht Aurora.",
+      "should_accept": [
+        "VTS, this is sailing yacht Aurora.",
+        "VTS this is Aurora"
+      ],
+      "should_reject": [
+        "marina control this is sailing yacht aurora",
+        "pilot station this is sailing yacht aurora",
+        "aurora this is vts"
+      ]
+    },
+    {
+      "id": "phrase_vts_at_reporting_point_alpha_001",
+      "target_text": "I am at reporting point Alpha.",
+      "should_accept": [
+        "I am at reporting point Alpha.",
+        "at reporting point Alpha"
+      ],
+      "should_reject": [
+        "i am at reporting point bravo",
+        "i am at anchorage alpha",
+        "i am passing reporting point alpha"
+      ]
+    },
+    {
+      "id": "phrase_vts_approaching_reporting_point_bravo_001",
+      "target_text": "I am approaching reporting point Bravo.",
+      "should_accept": [
+        "I am approaching reporting point Bravo.",
+        "approaching reporting point Bravo"
+      ],
+      "should_reject": [
+        "i am leaving reporting point bravo",
+        "i am approaching reporting point alpha",
+        "i am approaching anchorage bravo"
+      ]
+    },
+    {
+      "id": "phrase_vts_request_enter_port_001",
+      "target_text": "Request permission to enter port.",
+      "should_accept": [
+        "Request permission to enter port.",
+        "request clearance to enter port"
+      ],
+      "should_reject": [
+        "report permission to enter port",
+        "request permission to leave port",
+        "request permission to enter marina"
+      ]
+    },
+    {
+      "id": "phrase_vts_request_leave_port_001",
+      "target_text": "Request permission to leave port.",
+      "should_accept": [
+        "Request permission to leave port.",
+        "request clearance to leave port"
+      ],
+      "should_reject": [
+        "request permission to enter port",
+        "report permission to leave port",
+        "request permission to leave berth"
+      ]
+    },
+    {
+      "id": "phrase_vts_request_pilot_001",
+      "target_text": "Port Control, request pilot.",
+      "should_accept": [
+        "Port Control, request pilot.",
+        "request pilot"
+      ],
+      "should_reject": [
+        "port control request tug",
+        "port control request berth",
+        "port control report pilot"
+      ]
+    },
+    {
+      "id": "phrase_vts_pilot_on_board_001",
+      "target_text": "Pilot is on board.",
+      "should_accept": [
+        "Pilot is on board.",
+        "pilot on board"
+      ],
+      "should_reject": [
+        "pilot required",
+        "tug is on board",
+        "pilot is ashore"
+      ]
+    },
+    {
+      "id": "phrase_vts_request_tug_assistance_001",
+      "target_text": "Request tug assistance.",
+      "should_accept": [
+        "Request tug assistance.",
+        "tug assistance requested"
+      ],
+      "should_reject": [
+        "request pilot assistance",
+        "request towing assistance",
+        "request berth assistance"
+      ]
+    },
+    {
+      "id": "phrase_vts_tug_required_001",
+      "target_text": "Tug assistance required.",
+      "should_accept": [
+        "Tug assistance required.",
+        "require tug assistance"
+      ],
+      "should_reject": [
+        "pilot assistance required",
+        "towing assistance required",
+        "tug assistance available"
+      ]
+    },
+    {
+      "id": "phrase_vts_proceed_reporting_point_charlie_001",
+      "target_text": "Proceed to reporting point Charlie.",
+      "should_accept": [
+        "Proceed to reporting point Charlie."
+      ],
+      "should_reject": [
+        "proceed to reporting point alpha",
+        "proceed to anchorage charlie",
+        "report to reporting point charlie"
+      ]
+    },
+    {
+      "id": "phrase_vts_hold_until_instruction_001",
+      "target_text": "Hold position until further instruction.",
+      "should_accept": [
+        "Hold position until further instruction.",
+        "hold position until instruction"
+      ],
+      "should_reject": [
+        "report position until further instruction",
+        "proceed until further instruction",
+        "hold course until further instruction"
+      ]
+    },
+    {
+      "id": "phrase_vts_follow_instruction_001",
+      "target_text": "Follow VTS instruction.",
+      "should_accept": [
+        "Follow VTS instruction.",
+        "comply with VTS instruction"
+      ],
+      "should_reject": [
+        "follow vts advice",
+        "request vts instruction",
+        "follow pilot instruction"
+      ]
+    },
+    {
+      "id": "phrase_vts_traffic_crossing_ahead_001",
+      "target_text": "Traffic information: vessel crossing ahead.",
+      "should_accept": [
+        "Traffic information: vessel crossing ahead."
+      ],
+      "should_reject": [
+        "navigation warning vessel crossing ahead",
+        "traffic information vessel crossing astern",
+        "traffic clear ahead"
+      ]
+    },
+    {
+      "id": "phrase_vts_outbound_vessel_fairway_001",
+      "target_text": "Traffic information: outbound vessel in fairway.",
+      "should_accept": [
+        "Traffic information: outbound vessel in fairway.",
+        "outbound vessel in fairway"
+      ],
+      "should_reject": [
+        "traffic information inbound vessel in fairway",
+        "traffic information outbound vessel at anchorage",
+        "traffic information pilot vessel in fairway"
+      ]
+    },
+    {
+      "id": "phrase_vts_keep_clear_fairway_001",
+      "target_text": "Keep clear of the fairway.",
+      "should_accept": [
+        "Keep clear of the fairway.",
+        "keep clear of fairway"
+      ],
+      "should_reject": [
+        "keep clear of anchorage",
+        "enter the fairway",
+        "fairway clear"
+      ]
+    },
+    {
+      "id": "phrase_vts_do_not_enter_fairway_001",
+      "target_text": "Do not enter the fairway.",
+      "should_accept": [
+        "Do not enter the fairway.",
+        "do not enter fairway"
+      ],
+      "should_reject": [
+        "enter the fairway",
+        "do not leave the fairway",
+        "proceed in fairway"
+      ]
+    },
+    {
+      "id": "phrase_vts_wait_outside_limits_001",
+      "target_text": "Wait outside port limits.",
+      "should_accept": [
+        "Wait outside port limits.",
+        "wait outside the port limits"
+      ],
+      "should_reject": [
+        "wait inside port limits",
+        "enter port limits",
+        "wait at berth"
+      ]
+    },
+    {
+      "id": "phrase_vts_report_pilot_on_board_001",
+      "target_text": "Report when pilot on board.",
+      "should_accept": [
+        "Report when pilot on board.",
+        "report when pilot is on board"
+      ],
+      "should_reject": [
+        "report when tug connected",
+        "report pilot required",
+        "request pilot on board"
+      ]
+    },
+    {
+      "id": "phrase_vts_report_passing_alpha_001",
+      "target_text": "Report when passing reporting point Alpha.",
+      "should_accept": [
+        "Report when passing reporting point Alpha.",
+        "report passing reporting point Alpha"
+      ],
+      "should_reject": [
+        "report when passing reporting point bravo",
+        "request reporting point alpha",
+        "report when at anchorage alpha"
+      ]
+    },
+    {
+      "id": "phrase_vts_switch_channel_12_001",
+      "target_text": "Switch to VTS channel 12.",
+      "should_accept": [
+        "Switch to VTS channel 12.",
+        "switch to VTS channel one two"
+      ],
+      "should_reject": [
+        "switch to vts channel 13",
+        "switch to port channel 12",
+        "switch to pilot channel 12"
+      ]
+    },
+    {
+      "id": "phrase_vts_stand_by_channel_12_001",
+      "target_text": "Stand by on VTS channel 12.",
+      "should_accept": [
+        "Stand by on VTS channel 12.",
+        "stand by on VTS channel one two"
+      ],
+      "should_reject": [
+        "go ahead on vts channel 12",
+        "stand by on vts channel 13",
+        "stand by on pilot channel 12"
+      ]
+    },
+    {
+      "id": "phrase_vts_entry_permitted_001",
+      "target_text": "Port entry is permitted.",
+      "should_accept": [
+        "Port entry is permitted.",
+        "port entry permitted"
+      ],
+      "should_reject": [
+        "port entry is not permitted",
+        "port departure is permitted",
+        "request port entry"
+      ]
+    },
+    {
+      "id": "phrase_vts_entry_not_permitted_001",
+      "target_text": "Port entry is not permitted.",
+      "should_accept": [
+        "Port entry is not permitted.",
+        "port entry not permitted"
+      ],
+      "should_reject": [
+        "port entry is permitted",
+        "port departure is not permitted",
+        "port closed"
+      ]
     }
   ],
   "matcher_suggestions": [
@@ -6446,7 +7556,8 @@
     "Harbour lookalikes must not pass through typo matching: berth versus birth, fender versus finder, and fenders versus finders.",
     "Keep compact berth identifiers such as B12 rejected until alphanumeric berth matching is intentionally designed and regression-tested.",
     "Navigation reports must keep heading/course/bearing, ETA values, radio numeric forms, units, decimal wording, cardinal directions, port/starboard, and say again/read back boundaries protected.",
-    "Traffic/collision matching must preserve port/starboard, ahead/astern, CPA/TCPA/ETA, give-way/stand-on roles, crossing/overtaking/passing, and bearing/heading/course distinctions."
+    "Traffic/collision matching must preserve port/starboard, ahead/astern, CPA/TCPA/ETA, give-way/stand-on roles, crossing/overtaking/passing, and bearing/heading/course distinctions.",
+    "VTS/port-control matching must preserve station identity, instruction/advice/information, request/report, pilot/tug/tow, entry/departure, permission negation, exact channels, port-area terms, movement instructions, and inbound/outbound distinctions."
   ],
   "current_matcher_findings": [],
   "resolved_matcher_findings": [

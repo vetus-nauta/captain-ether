@@ -6423,6 +6423,1008 @@
       "hint_beginner": "I will take...",
       "hint_intermediate": "early action",
       "hint_advanced": ""
+    },
+    {
+      "id": "word_vts_vts_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "vts_station",
+      "branch": "vts_port_control",
+      "module": "vts_instructions",
+      "source_language": "ru",
+      "source_text": "Служба управления движением судов",
+      "target_language": "en",
+      "target_text": "VTS",
+      "accepted_answers": [
+        "vts",
+        "v t s",
+        "vessel traffic service"
+      ],
+      "hint_beginner": "V_S",
+      "hint_intermediate": "VTS...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_vts_port_control_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "port_control",
+      "branch": "vts_port_control",
+      "module": "vts_instructions",
+      "source_language": "ru",
+      "source_text": "Портовый контроль",
+      "target_language": "en",
+      "target_text": "port control",
+      "accepted_answers": [
+        "port control"
+      ],
+      "hint_beginner": "p_________l",
+      "hint_intermediate": "port...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_vts_instruction_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "authority_message",
+      "branch": "vts_port_control",
+      "module": "vts_instructions",
+      "source_language": "ru",
+      "source_text": "Указание / инструкция",
+      "target_language": "en",
+      "target_text": "instruction",
+      "accepted_answers": [
+        "instruction"
+      ],
+      "hint_beginner": "i_________n",
+      "hint_intermediate": "instruction...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_vts_advice_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 10,
+      "topic": "authority_message",
+      "branch": "vts_port_control",
+      "module": "vts_instructions",
+      "source_language": "ru",
+      "source_text": "Совет / рекомендация",
+      "target_language": "en",
+      "target_text": "advice",
+      "accepted_answers": [
+        "advice"
+      ],
+      "hint_beginner": "a____e",
+      "hint_intermediate": "advice...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_vts_traffic_information_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "traffic_information",
+      "branch": "vts_port_control",
+      "module": "traffic_information",
+      "source_language": "ru",
+      "source_text": "Информация о движении",
+      "target_language": "en",
+      "target_text": "traffic information",
+      "accepted_answers": [
+        "traffic information"
+      ],
+      "hint_beginner": "t________________n",
+      "hint_intermediate": "traffic...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_vts_pilot_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "pilotage",
+      "branch": "vts_port_control",
+      "module": "pilot_request",
+      "source_language": "ru",
+      "source_text": "Лоцман",
+      "target_language": "en",
+      "target_text": "pilot",
+      "accepted_answers": [
+        "pilot"
+      ],
+      "hint_beginner": "p___t",
+      "hint_intermediate": "pilot...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_vts_tug_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "tug_assistance",
+      "branch": "vts_port_control",
+      "module": "tug_assistance",
+      "source_language": "ru",
+      "source_text": "Буксир",
+      "target_language": "en",
+      "target_text": "tug",
+      "accepted_answers": [
+        "tug"
+      ],
+      "hint_beginner": "t_g",
+      "hint_intermediate": "tug...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_vts_clearance_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 11,
+      "topic": "port_clearance",
+      "branch": "vts_port_control",
+      "module": "port_entry_departure",
+      "source_language": "ru",
+      "source_text": "Разрешение на вход/выход",
+      "target_language": "en",
+      "target_text": "clearance",
+      "accepted_answers": [
+        "clearance"
+      ],
+      "hint_beginner": "c_______e",
+      "hint_intermediate": "clearance...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_vts_anchorage_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 10,
+      "topic": "port_area",
+      "branch": "vts_port_control",
+      "module": "port_entry_departure",
+      "source_language": "ru",
+      "source_text": "Якорная стоянка",
+      "target_language": "en",
+      "target_text": "anchorage",
+      "accepted_answers": [
+        "anchorage"
+      ],
+      "hint_beginner": "a_______e",
+      "hint_intermediate": "anchorage...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_vts_fairway_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 10,
+      "topic": "port_area",
+      "branch": "vts_port_control",
+      "module": "port_entry_departure",
+      "source_language": "ru",
+      "source_text": "Фарватер",
+      "target_language": "en",
+      "target_text": "fairway",
+      "accepted_answers": [
+        "fairway"
+      ],
+      "hint_beginner": "f_____y",
+      "hint_intermediate": "fairway...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_vts_call_vts_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "station_call",
+      "branch": "vts_port_control",
+      "module": "vts_instructions",
+      "source_language": "ru",
+      "source_text": "Вызовите VTS",
+      "target_language": "en",
+      "target_text": "call VTS",
+      "accepted_answers": [
+        "call vts",
+        "contact vts"
+      ],
+      "hint_beginner": "call V__",
+      "hint_intermediate": "call...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_vts_report_position_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "position_reporting",
+      "branch": "vts_port_control",
+      "module": "reporting_points",
+      "source_language": "ru",
+      "source_text": "Сообщите позицию",
+      "target_language": "en",
+      "target_text": "report position",
+      "accepted_answers": [
+        "report position"
+      ],
+      "hint_beginner": "report p_______",
+      "hint_intermediate": "report...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_vts_request_clearance_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "port_clearance",
+      "branch": "vts_port_control",
+      "module": "port_entry_departure",
+      "source_language": "ru",
+      "source_text": "Запросите разрешение",
+      "target_language": "en",
+      "target_text": "request clearance",
+      "accepted_answers": [
+        "request clearance"
+      ],
+      "hint_beginner": "request c________",
+      "hint_intermediate": "request...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_vts_wait_in_area_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 11,
+      "topic": "vts_instruction",
+      "branch": "vts_port_control",
+      "module": "vts_instructions",
+      "source_language": "ru",
+      "source_text": "Ожидайте в зоне",
+      "target_language": "en",
+      "target_text": "wait in area",
+      "accepted_answers": [
+        "wait in area"
+      ],
+      "hint_beginner": "wait i_ a___",
+      "hint_intermediate": "wait...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_vts_proceed_reporting_point_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 13,
+      "topic": "reporting_point_instruction",
+      "branch": "vts_port_control",
+      "module": "reporting_points",
+      "source_language": "ru",
+      "source_text": "Следуйте к контрольной точке доклада",
+      "target_language": "en",
+      "target_text": "proceed to reporting point",
+      "accepted_answers": [
+        "proceed to reporting point"
+      ],
+      "hint_beginner": "proceed t_ r________ p____",
+      "hint_intermediate": "proceed...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_vts_hold_position_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "vts_instruction",
+      "branch": "vts_port_control",
+      "module": "vts_instructions",
+      "source_language": "ru",
+      "source_text": "Удерживайте позицию",
+      "target_language": "en",
+      "target_text": "hold position",
+      "accepted_answers": [
+        "hold position"
+      ],
+      "hint_beginner": "hold p_______",
+      "hint_intermediate": "hold...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_vts_keep_listening_watch_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "radio_watch",
+      "branch": "vts_port_control",
+      "module": "vts_instructions",
+      "source_language": "ru",
+      "source_text": "Ведите радионаблюдение",
+      "target_language": "en",
+      "target_text": "keep listening watch",
+      "accepted_answers": [
+        "keep listening watch",
+        "keep a listening watch"
+      ],
+      "hint_beginner": "keep l________ w____",
+      "hint_intermediate": "keep...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_vts_traffic_clear_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "traffic_information",
+      "branch": "vts_port_control",
+      "module": "traffic_information",
+      "source_language": "ru",
+      "source_text": "Движение свободно",
+      "target_language": "en",
+      "target_text": "traffic clear",
+      "accepted_answers": [
+        "traffic clear"
+      ],
+      "hint_beginner": "traffic c____",
+      "hint_intermediate": "traffic...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_vts_traffic_dense_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 11,
+      "topic": "traffic_information",
+      "branch": "vts_port_control",
+      "module": "traffic_information",
+      "source_language": "ru",
+      "source_text": "Движение плотное",
+      "target_language": "en",
+      "target_text": "traffic dense",
+      "accepted_answers": [
+        "traffic dense"
+      ],
+      "hint_beginner": "traffic d____",
+      "hint_intermediate": "traffic...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_vts_pilot_required_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "pilotage",
+      "branch": "vts_port_control",
+      "module": "pilot_request",
+      "source_language": "ru",
+      "source_text": "Лоцман обязателен",
+      "target_language": "en",
+      "target_text": "pilot required",
+      "accepted_answers": [
+        "pilot required"
+      ],
+      "hint_beginner": "pilot r_______",
+      "hint_intermediate": "pilot...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_vts_pilot_on_board_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "pilotage",
+      "branch": "vts_port_control",
+      "module": "pilot_request",
+      "source_language": "ru",
+      "source_text": "Лоцман на борту",
+      "target_language": "en",
+      "target_text": "pilot on board",
+      "accepted_answers": [
+        "pilot on board"
+      ],
+      "hint_beginner": "pilot o_ b____",
+      "hint_intermediate": "pilot...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_vts_tug_required_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "tug_assistance",
+      "branch": "vts_port_control",
+      "module": "tug_assistance",
+      "source_language": "ru",
+      "source_text": "Буксир обязателен",
+      "target_language": "en",
+      "target_text": "tug required",
+      "accepted_answers": [
+        "tug required"
+      ],
+      "hint_beginner": "tug r_______",
+      "hint_intermediate": "tug...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_vts_enter_port_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "port_entry",
+      "branch": "vts_port_control",
+      "module": "port_entry_departure",
+      "source_language": "ru",
+      "source_text": "Войти в порт",
+      "target_language": "en",
+      "target_text": "enter port",
+      "accepted_answers": [
+        "enter port"
+      ],
+      "hint_beginner": "enter p___",
+      "hint_intermediate": "enter...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_vts_leave_port_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "port_departure",
+      "branch": "vts_port_control",
+      "module": "port_entry_departure",
+      "source_language": "ru",
+      "source_text": "Выйти из порта",
+      "target_language": "en",
+      "target_text": "leave port",
+      "accepted_answers": [
+        "leave port"
+      ],
+      "hint_beginner": "leave p___",
+      "hint_intermediate": "leave...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_vts_embark_pilot_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "pilotage",
+      "branch": "vts_port_control",
+      "module": "pilot_request",
+      "source_language": "ru",
+      "source_text": "Принять лоцмана на борт",
+      "target_language": "en",
+      "target_text": "embark pilot",
+      "accepted_answers": [
+        "embark pilot"
+      ],
+      "hint_beginner": "embark p____",
+      "hint_intermediate": "embark...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_vts_disembark_pilot_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "pilotage",
+      "branch": "vts_port_control",
+      "module": "pilot_request",
+      "source_language": "ru",
+      "source_text": "Высадить лоцмана",
+      "target_language": "en",
+      "target_text": "disembark pilot",
+      "accepted_answers": [
+        "disembark pilot"
+      ],
+      "hint_beginner": "disembark p____",
+      "hint_intermediate": "disembark...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_vts_channel_one_two_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "radio_channel",
+      "branch": "vts_port_control",
+      "module": "vts_instructions",
+      "source_language": "ru",
+      "source_text": "Канал 12",
+      "target_language": "en",
+      "target_text": "channel 12",
+      "accepted_answers": [
+        "channel 12",
+        "channel one two",
+        "channel twelve"
+      ],
+      "hint_beginner": "channel 1_",
+      "hint_intermediate": "channel...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_call_aurora_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "station_call",
+      "branch": "vts_port_control",
+      "module": "vts_instructions",
+      "source_language": "ru",
+      "source_text": "VTS, это парусная яхта Aurora.",
+      "target_language": "en",
+      "target_text": "VTS, this is sailing yacht Aurora.",
+      "accepted_answers": [
+        "vts this is sailing yacht aurora",
+        "vts this is aurora",
+        "vessel traffic service this is sailing yacht aurora"
+      ],
+      "grammar_pattern": "vts_station_call_basic",
+      "hint_beginner": "VTS, this is...",
+      "hint_intermediate": "sailing yacht Aurora.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_at_reporting_point_alpha_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 15,
+      "topic": "reporting_point",
+      "branch": "vts_port_control",
+      "module": "reporting_points",
+      "source_language": "ru",
+      "source_text": "Я нахожусь у точки доклада Alpha.",
+      "target_language": "en",
+      "target_text": "I am at reporting point Alpha.",
+      "accepted_answers": [
+        "i am at reporting point alpha",
+        "at reporting point alpha"
+      ],
+      "grammar_pattern": "vts_reporting_point_report",
+      "hint_beginner": "I am at...",
+      "hint_intermediate": "reporting point Alpha.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_approaching_reporting_point_bravo_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "reporting_point",
+      "branch": "vts_port_control",
+      "module": "reporting_points",
+      "source_language": "ru",
+      "source_text": "Я подхожу к точке доклада Bravo.",
+      "target_language": "en",
+      "target_text": "I am approaching reporting point Bravo.",
+      "accepted_answers": [
+        "i am approaching reporting point bravo",
+        "approaching reporting point bravo"
+      ],
+      "grammar_pattern": "vts_reporting_point_report",
+      "hint_beginner": "I am approaching...",
+      "hint_intermediate": "reporting point Bravo.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_request_enter_port_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 20,
+      "topic": "port_entry",
+      "branch": "vts_port_control",
+      "module": "port_entry_departure",
+      "source_language": "ru",
+      "source_text": "Запрашиваю разрешение войти в порт.",
+      "target_language": "en",
+      "target_text": "Request permission to enter port.",
+      "accepted_answers": [
+        "request permission to enter port",
+        "request clearance to enter port"
+      ],
+      "grammar_pattern": "vts_port_permission_request",
+      "hint_beginner": "Request permission to...",
+      "hint_intermediate": "to enter port.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_request_leave_port_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 20,
+      "topic": "port_departure",
+      "branch": "vts_port_control",
+      "module": "port_entry_departure",
+      "source_language": "ru",
+      "source_text": "Запрашиваю разрешение выйти из порта.",
+      "target_language": "en",
+      "target_text": "Request permission to leave port.",
+      "accepted_answers": [
+        "request permission to leave port",
+        "request clearance to leave port"
+      ],
+      "grammar_pattern": "vts_port_permission_request",
+      "hint_beginner": "Request permission to...",
+      "hint_intermediate": "to leave port.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_request_pilot_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 15,
+      "topic": "pilotage",
+      "branch": "vts_port_control",
+      "module": "pilot_request",
+      "source_language": "ru",
+      "source_text": "Портовый контроль, запрашиваю лоцмана.",
+      "target_language": "en",
+      "target_text": "Port Control, request pilot.",
+      "accepted_answers": [
+        "port control request pilot",
+        "request pilot"
+      ],
+      "grammar_pattern": "vts_pilot_tug_request",
+      "hint_beginner": "Port Control, request...",
+      "hint_intermediate": "Control, request pilot.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_pilot_on_board_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "pilotage",
+      "branch": "vts_port_control",
+      "module": "pilot_request",
+      "source_language": "ru",
+      "source_text": "Лоцман на борту.",
+      "target_language": "en",
+      "target_text": "Pilot is on board.",
+      "accepted_answers": [
+        "pilot is on board",
+        "pilot on board"
+      ],
+      "grammar_pattern": "vts_pilot_status_report",
+      "hint_beginner": "Pilot is on...",
+      "hint_intermediate": "is on board.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_request_tug_assistance_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "tug_assistance",
+      "branch": "vts_port_control",
+      "module": "tug_assistance",
+      "source_language": "ru",
+      "source_text": "Запрашиваю помощь буксира.",
+      "target_language": "en",
+      "target_text": "Request tug assistance.",
+      "accepted_answers": [
+        "request tug assistance",
+        "tug assistance requested"
+      ],
+      "grammar_pattern": "vts_pilot_tug_request",
+      "hint_beginner": "Request tug assistance....",
+      "hint_intermediate": "Request tug assistance.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_tug_required_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "tug_assistance",
+      "branch": "vts_port_control",
+      "module": "tug_assistance",
+      "source_language": "ru",
+      "source_text": "Требуется помощь буксира.",
+      "target_language": "en",
+      "target_text": "Tug assistance required.",
+      "accepted_answers": [
+        "tug assistance required",
+        "require tug assistance"
+      ],
+      "grammar_pattern": "vts_pilot_tug_request",
+      "hint_beginner": "Tug assistance required....",
+      "hint_intermediate": "Tug assistance required.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_proceed_reporting_point_charlie_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 21,
+      "topic": "reporting_point_instruction",
+      "branch": "vts_port_control",
+      "module": "reporting_points",
+      "source_language": "ru",
+      "source_text": "Следуйте к точке доклада Charlie.",
+      "target_language": "en",
+      "target_text": "Proceed to reporting point Charlie.",
+      "accepted_answers": [
+        "proceed to reporting point charlie"
+      ],
+      "grammar_pattern": "vts_instruction_wait_hold",
+      "hint_beginner": "Proceed to reporting...",
+      "hint_intermediate": "reporting point Charlie.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_hold_until_instruction_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 22,
+      "topic": "vts_instruction",
+      "branch": "vts_port_control",
+      "module": "vts_instructions",
+      "source_language": "ru",
+      "source_text": "Удерживайте позицию до дальнейших указаний.",
+      "target_language": "en",
+      "target_text": "Hold position until further instruction.",
+      "accepted_answers": [
+        "hold position until further instruction",
+        "hold position until instruction"
+      ],
+      "grammar_pattern": "vts_instruction_wait_hold",
+      "hint_beginner": "Hold position until...",
+      "hint_intermediate": "until further instruction.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_follow_instruction_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 19,
+      "topic": "vts_instruction",
+      "branch": "vts_port_control",
+      "module": "vts_instructions",
+      "source_language": "ru",
+      "source_text": "Следуйте указанию VTS.",
+      "target_language": "en",
+      "target_text": "Follow VTS instruction.",
+      "accepted_answers": [
+        "follow vts instruction",
+        "comply with vts instruction"
+      ],
+      "grammar_pattern": "vts_instruction_wait_hold",
+      "hint_beginner": "Follow VTS instruction....",
+      "hint_intermediate": "Follow VTS instruction.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_traffic_crossing_ahead_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 21,
+      "topic": "traffic_information",
+      "branch": "vts_port_control",
+      "module": "traffic_information",
+      "source_language": "ru",
+      "source_text": "Информация о движении: судно пересекает курс впереди.",
+      "target_language": "en",
+      "target_text": "Traffic information: vessel crossing ahead.",
+      "accepted_answers": [
+        "traffic information vessel crossing ahead"
+      ],
+      "grammar_pattern": "vts_traffic_information_report",
+      "hint_beginner": "Traffic information: vessel...",
+      "hint_intermediate": "vessel crossing ahead.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_outbound_vessel_fairway_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 25,
+      "topic": "traffic_information",
+      "branch": "vts_port_control",
+      "module": "traffic_information",
+      "source_language": "ru",
+      "source_text": "Информация о движении: выходящее судно в фарватере.",
+      "target_language": "en",
+      "target_text": "Traffic information: outbound vessel in fairway.",
+      "accepted_answers": [
+        "traffic information outbound vessel in fairway",
+        "outbound vessel in fairway"
+      ],
+      "grammar_pattern": "vts_traffic_information_report",
+      "hint_beginner": "Traffic information: outbound...",
+      "hint_intermediate": "vessel in fairway.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_keep_clear_fairway_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 20,
+      "topic": "fairway_instruction",
+      "branch": "vts_port_control",
+      "module": "port_entry_departure",
+      "source_language": "ru",
+      "source_text": "Держитесь в стороне от фарватера.",
+      "target_language": "en",
+      "target_text": "Keep clear of the fairway.",
+      "accepted_answers": [
+        "keep clear of the fairway",
+        "keep clear of fairway"
+      ],
+      "grammar_pattern": "vts_instruction_wait_hold",
+      "hint_beginner": "Keep clear of...",
+      "hint_intermediate": "of the fairway.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_do_not_enter_fairway_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 22,
+      "topic": "fairway_instruction",
+      "branch": "vts_port_control",
+      "module": "port_entry_departure",
+      "source_language": "ru",
+      "source_text": "Не входите в фарватер.",
+      "target_language": "en",
+      "target_text": "Do not enter the fairway.",
+      "accepted_answers": [
+        "do not enter the fairway",
+        "do not enter fairway"
+      ],
+      "grammar_pattern": "vts_instruction_wait_hold",
+      "hint_beginner": "Do not enter...",
+      "hint_intermediate": "enter the fairway.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_wait_outside_limits_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 20,
+      "topic": "port_limits",
+      "branch": "vts_port_control",
+      "module": "port_entry_departure",
+      "source_language": "ru",
+      "source_text": "Ожидайте вне пределов порта.",
+      "target_language": "en",
+      "target_text": "Wait outside port limits.",
+      "accepted_answers": [
+        "wait outside port limits",
+        "wait outside the port limits"
+      ],
+      "grammar_pattern": "vts_instruction_wait_hold",
+      "hint_beginner": "Wait outside port...",
+      "hint_intermediate": "outside port limits.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_report_pilot_on_board_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 24,
+      "topic": "pilotage",
+      "branch": "vts_port_control",
+      "module": "pilot_request",
+      "source_language": "ru",
+      "source_text": "Сообщите, когда лоцман будет на борту.",
+      "target_language": "en",
+      "target_text": "Report when pilot on board.",
+      "accepted_answers": [
+        "report when pilot on board",
+        "report when pilot is on board"
+      ],
+      "grammar_pattern": "vts_pilot_status_report",
+      "hint_beginner": "Report when pilot...",
+      "hint_intermediate": "pilot on board.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_report_passing_alpha_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 24,
+      "topic": "reporting_point",
+      "branch": "vts_port_control",
+      "module": "reporting_points",
+      "source_language": "ru",
+      "source_text": "Сообщите при прохождении точки доклада Alpha.",
+      "target_language": "en",
+      "target_text": "Report when passing reporting point Alpha.",
+      "accepted_answers": [
+        "report when passing reporting point alpha",
+        "report passing reporting point alpha"
+      ],
+      "grammar_pattern": "vts_reporting_point_report",
+      "hint_beginner": "Report when passing...",
+      "hint_intermediate": "reporting point Alpha.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_switch_channel_12_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 16,
+      "topic": "radio_channel",
+      "branch": "vts_port_control",
+      "module": "vts_instructions",
+      "source_language": "ru",
+      "source_text": "Перейдите на канал VTS 12.",
+      "target_language": "en",
+      "target_text": "Switch to VTS channel 12.",
+      "accepted_answers": [
+        "switch to vts channel 12",
+        "switch to vts channel one two",
+        "switch to vessel traffic service channel 12"
+      ],
+      "grammar_pattern": "vts_channel_instruction",
+      "hint_beginner": "Switch to VTS...",
+      "hint_intermediate": "VTS channel 12.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_stand_by_channel_12_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 16,
+      "topic": "radio_channel",
+      "branch": "vts_port_control",
+      "module": "vts_instructions",
+      "source_language": "ru",
+      "source_text": "Ожидайте на канале VTS 12.",
+      "target_language": "en",
+      "target_text": "Stand by on VTS channel 12.",
+      "accepted_answers": [
+        "stand by on vts channel 12",
+        "stand by on vts channel one two"
+      ],
+      "grammar_pattern": "vts_channel_instruction",
+      "hint_beginner": "Stand by on...",
+      "hint_intermediate": "VTS channel 12.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_entry_permitted_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 19,
+      "topic": "port_clearance",
+      "branch": "vts_port_control",
+      "module": "port_entry_departure",
+      "source_language": "ru",
+      "source_text": "Вход в порт разрешен.",
+      "target_language": "en",
+      "target_text": "Port entry is permitted.",
+      "accepted_answers": [
+        "port entry is permitted",
+        "port entry permitted"
+      ],
+      "grammar_pattern": "vts_port_permission_result",
+      "hint_beginner": "Port entry is...",
+      "hint_intermediate": "entry is permitted.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_vts_entry_not_permitted_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 23,
+      "topic": "port_clearance",
+      "branch": "vts_port_control",
+      "module": "port_entry_departure",
+      "source_language": "ru",
+      "source_text": "Вход в порт не разрешен.",
+      "target_language": "en",
+      "target_text": "Port entry is not permitted.",
+      "accepted_answers": [
+        "port entry is not permitted",
+        "port entry not permitted"
+      ],
+      "grammar_pattern": "vts_port_permission_result",
+      "hint_beginner": "Port entry is...",
+      "hint_intermediate": "is not permitted.",
+      "hint_advanced": ""
     }
   ],
   "grammar_patterns": [
@@ -7815,6 +8817,77 @@
       "examples": [
         "My CPA is one cable.",
         "My TCPA is five minutes."
+      ]
+    },
+    {
+      "id": "vts_station_call_basic",
+      "pattern": "authority station + this is + vessel identity",
+      "examples": [
+        "VTS, this is sailing yacht Aurora."
+      ]
+    },
+    {
+      "id": "vts_reporting_point_report",
+      "pattern": "reporting point movement/status report",
+      "examples": [
+        "I am at reporting point Alpha.",
+        "Report when passing reporting point Alpha."
+      ]
+    },
+    {
+      "id": "vts_port_permission_request",
+      "pattern": "request permission/clearance to enter or leave port",
+      "examples": [
+        "Request permission to enter port.",
+        "Request clearance to leave port."
+      ]
+    },
+    {
+      "id": "vts_pilot_tug_request",
+      "pattern": "request or report pilot/tug service status",
+      "examples": [
+        "Port Control, request pilot.",
+        "Request tug assistance."
+      ]
+    },
+    {
+      "id": "vts_instruction_wait_hold",
+      "pattern": "VTS movement instruction: proceed, hold, wait, keep clear",
+      "examples": [
+        "Hold position until further instruction.",
+        "Wait outside port limits."
+      ]
+    },
+    {
+      "id": "vts_traffic_information_report",
+      "pattern": "traffic information + vessel movement/location",
+      "examples": [
+        "Traffic information: vessel crossing ahead.",
+        "Traffic information: outbound vessel in fairway."
+      ]
+    },
+    {
+      "id": "vts_channel_instruction",
+      "pattern": "procedure word + authority station + exact channel",
+      "examples": [
+        "Switch to VTS channel 12.",
+        "Stand by on VTS channel 12."
+      ]
+    },
+    {
+      "id": "vts_port_permission_result",
+      "pattern": "port entry/departure permission result",
+      "examples": [
+        "Port entry is permitted.",
+        "Port entry is not permitted."
+      ]
+    },
+    {
+      "id": "vts_pilot_status_report",
+      "pattern": "pilot status report or report trigger",
+      "examples": [
+        "Pilot is on board.",
+        "Report when pilot on board."
       ]
     }
   ],
