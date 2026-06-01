@@ -3108,6 +3108,403 @@
         ]
       },
       "reason": "Onboard emergency type changes the required response."
+    },
+    {
+      "pair": "Mayday / Pan-Pan / Securite",
+      "items": [
+        "word_distress_mayday_001",
+        "expr_distress_mayday_signal_001",
+        "phrase_distress_mayday_three_times_001"
+      ],
+      "must_accept": {
+        "word_distress_mayday_001": [
+          "Mayday"
+        ],
+        "expr_distress_mayday_signal_001": [
+          "Mayday"
+        ],
+        "phrase_distress_mayday_three_times_001": [
+          "Mayday, Mayday, Mayday."
+        ]
+      },
+      "must_reject": {
+        "word_distress_mayday_001": [
+          "Pan-Pan",
+          "Securite",
+          "May"
+        ],
+        "expr_distress_mayday_signal_001": [
+          "Pan-Pan",
+          "Securite",
+          "distress"
+        ],
+        "phrase_distress_mayday_three_times_001": [
+          "Pan-Pan Pan-Pan Pan-Pan",
+          "Securite Securite Securite",
+          "Mayday"
+        ]
+      },
+      "reason": "Distress, urgency, and safety signals must remain strict."
+    },
+    {
+      "pair": "distress / urgency / safety",
+      "items": [
+        "word_distress_distress_001",
+        "expr_distress_nature_of_distress_001"
+      ],
+      "must_accept": {
+        "word_distress_distress_001": [
+          "distress"
+        ],
+        "expr_distress_nature_of_distress_001": [
+          "nature of distress"
+        ]
+      },
+      "must_reject": {
+        "word_distress_distress_001": [
+          "urgency",
+          "safety",
+          "emergency"
+        ],
+        "expr_distress_nature_of_distress_001": [
+          "nature of urgency",
+          "safety warning",
+          "traffic report"
+        ]
+      },
+      "reason": "Mayday distress language must not weaken Pan-Pan or Securite boundaries."
+    },
+    {
+      "pair": "Mayday / Mayday relay / Pan-Pan relay",
+      "items": [
+        "expr_distress_mayday_relay_001",
+        "phrase_distress_mayday_relay_from_orion_001"
+      ],
+      "must_accept": {
+        "expr_distress_mayday_relay_001": [
+          "Mayday relay"
+        ],
+        "phrase_distress_mayday_relay_from_orion_001": [
+          "Mayday relay from vessel Orion."
+        ]
+      },
+      "must_reject": {
+        "expr_distress_mayday_relay_001": [
+          "Mayday",
+          "Pan-Pan relay",
+          "read back Mayday"
+        ],
+        "phrase_distress_mayday_relay_from_orion_001": [
+          "Mayday from vessel Orion",
+          "Pan-Pan relay from vessel Orion",
+          "Securite from vessel Orion"
+        ]
+      },
+      "reason": "Relay means forwarding another station's distress and must not collapse into own distress or urgency relay."
+    },
+    {
+      "pair": "position / course / bearing / destination",
+      "items": [
+        "word_distress_position_001",
+        "expr_distress_my_position_001",
+        "phrase_distress_my_position_4550n_01310e_001"
+      ],
+      "must_accept": {
+        "word_distress_position_001": [
+          "position"
+        ],
+        "expr_distress_my_position_001": [
+          "my position"
+        ],
+        "phrase_distress_my_position_4550n_01310e_001": [
+          "My position is four five five zero north, zero one three one zero east."
+        ]
+      },
+      "must_reject": {
+        "word_distress_position_001": [
+          "destination",
+          "course",
+          "bearing"
+        ],
+        "expr_distress_my_position_001": [
+          "my destination",
+          "my course",
+          "my bearing"
+        ],
+        "phrase_distress_my_position_4550n_01310e_001": [
+          "My course is four five five zero north",
+          "My destination is zero one three one zero east",
+          "Position four five north zero one east"
+        ]
+      },
+      "reason": "Distress location information must stay distinct from course, bearing, and destination data."
+    },
+    {
+      "pair": "vessel name / call sign / MMSI",
+      "items": [
+        "expr_distress_vessel_name_001",
+        "expr_distress_call_sign_001",
+        "expr_distress_mmsi_number_001"
+      ],
+      "must_accept": {
+        "expr_distress_vessel_name_001": [
+          "vessel name"
+        ],
+        "expr_distress_call_sign_001": [
+          "call sign"
+        ],
+        "expr_distress_mmsi_number_001": [
+          "MMSI number"
+        ]
+      },
+      "must_reject": {
+        "expr_distress_vessel_name_001": [
+          "call sign",
+          "MMSI",
+          "vessel type"
+        ],
+        "expr_distress_call_sign_001": [
+          "vessel name",
+          "MMSI",
+          "position"
+        ],
+        "expr_distress_mmsi_number_001": [
+          "call sign",
+          "phone number",
+          "position"
+        ]
+      },
+      "reason": "Distress identity fields are separate and should not be interchangeable."
+    },
+    {
+      "pair": "fire / flooding / sinking / listing / aground",
+      "items": [
+        "expr_distress_fire_on_board_001",
+        "expr_distress_flooding_001",
+        "word_distress_sinking_001",
+        "word_distress_listing_001",
+        "word_distress_aground_001"
+      ],
+      "must_accept": {
+        "expr_distress_fire_on_board_001": [
+          "fire on board"
+        ],
+        "expr_distress_flooding_001": [
+          "flooding"
+        ],
+        "word_distress_sinking_001": [
+          "sinking"
+        ],
+        "word_distress_listing_001": [
+          "listing"
+        ],
+        "word_distress_aground_001": [
+          "aground"
+        ]
+      },
+      "must_reject": {
+        "expr_distress_fire_on_board_001": [
+          "fire drill",
+          "fire pump",
+          "engine overheating"
+        ],
+        "expr_distress_flooding_001": [
+          "fire",
+          "sinking",
+          "water depth"
+        ],
+        "word_distress_sinking_001": [
+          "listing",
+          "drifting",
+          "disabled"
+        ],
+        "word_distress_listing_001": [
+          "sinking",
+          "grounding",
+          "collision"
+        ],
+        "word_distress_aground_001": [
+          "anchored",
+          "alongside",
+          "underway"
+        ]
+      },
+      "reason": "Nature-of-distress casualties must remain exact."
+    },
+    {
+      "pair": "rescue / towage / pilot / berth",
+      "items": [
+        "word_distress_rescue_001",
+        "expr_distress_require_rescue_001",
+        "phrase_distress_rescue_required_001",
+        "phrase_distress_tow_not_enough_001"
+      ],
+      "must_accept": {
+        "word_distress_rescue_001": [
+          "rescue"
+        ],
+        "expr_distress_require_rescue_001": [
+          "require rescue"
+        ],
+        "phrase_distress_rescue_required_001": [
+          "Rescue required."
+        ],
+        "phrase_distress_tow_not_enough_001": [
+          "Towage is not enough, rescue required."
+        ]
+      },
+      "must_reject": {
+        "word_distress_rescue_001": [
+          "assistance",
+          "escort",
+          "towage"
+        ],
+        "expr_distress_require_rescue_001": [
+          "require pilot",
+          "need berth",
+          "need weather"
+        ],
+        "phrase_distress_rescue_required_001": [
+          "Towage required",
+          "Pilot required",
+          "Berth required"
+        ],
+        "phrase_distress_tow_not_enough_001": [
+          "Towage required",
+          "Tug assistance requested",
+          "Routine tow requested"
+        ]
+      },
+      "reason": "Rescue-level distress help must stay above port-service and towage language."
+    },
+    {
+      "pair": "persons on board / persons overboard / abandoning vessel",
+      "items": [
+        "expr_distress_persons_on_board_001",
+        "phrase_distress_persons_on_board_twelve_001",
+        "phrase_distress_man_overboard_001",
+        "expr_distress_abandoning_vessel_001"
+      ],
+      "must_accept": {
+        "expr_distress_persons_on_board_001": [
+          "persons on board"
+        ],
+        "phrase_distress_persons_on_board_twelve_001": [
+          "Twelve persons on board."
+        ],
+        "phrase_distress_man_overboard_001": [
+          "Man overboard."
+        ],
+        "expr_distress_abandoning_vessel_001": [
+          "abandoning vessel"
+        ]
+      },
+      "must_reject": {
+        "expr_distress_persons_on_board_001": [
+          "crew on watch",
+          "passengers ashore",
+          "persons overboard"
+        ],
+        "phrase_distress_persons_on_board_twelve_001": [
+          "Two persons on board",
+          "Twelve persons overboard",
+          "Twelve crew on watch"
+        ],
+        "phrase_distress_man_overboard_001": [
+          "Persons on board",
+          "Crew on board",
+          "Man on deck"
+        ],
+        "expr_distress_abandoning_vessel_001": [
+          "boarding vessel",
+          "leaving berth",
+          "disembarking passengers"
+        ]
+      },
+      "reason": "People-count, overboard, and abandoning-vessel concepts must not merge."
+    },
+    {
+      "pair": "read back / relay / say again / cancel",
+      "items": [
+        "expr_distress_read_back_001",
+        "phrase_distress_read_back_position_nature_001",
+        "expr_distress_mayday_relay_001",
+        "phrase_distress_cancel_false_alert_001"
+      ],
+      "must_accept": {
+        "expr_distress_read_back_001": [
+          "read back Mayday"
+        ],
+        "phrase_distress_read_back_position_nature_001": [
+          "Read back position and nature of distress."
+        ],
+        "expr_distress_mayday_relay_001": [
+          "Mayday relay"
+        ],
+        "phrase_distress_cancel_false_alert_001": [
+          "Cancel false distress alert."
+        ]
+      },
+      "must_reject": {
+        "expr_distress_read_back_001": [
+          "Mayday relay",
+          "say again Mayday",
+          "cancel Mayday"
+        ],
+        "phrase_distress_read_back_position_nature_001": [
+          "Relay position and nature of distress",
+          "Say again all after distress",
+          "Read back weather warning"
+        ],
+        "expr_distress_mayday_relay_001": [
+          "Mayday",
+          "Pan-Pan relay",
+          "read back Mayday"
+        ],
+        "phrase_distress_cancel_false_alert_001": [
+          "Cancel Mayday",
+          "Mayday finished",
+          "Test distress alert"
+        ]
+      },
+      "reason": "Distress workflow verbs have different operational meanings."
+    },
+    {
+      "pair": "distress traffic / safety watch / routine traffic",
+      "items": [
+        "expr_distress_silence_mayday_001",
+        "phrase_distress_silence_distress_traffic_001",
+        "phrase_distress_all_stations_keep_clear_001"
+      ],
+      "must_accept": {
+        "expr_distress_silence_mayday_001": [
+          "silence Mayday"
+        ],
+        "phrase_distress_silence_distress_traffic_001": [
+          "Keep silence for distress traffic."
+        ],
+        "phrase_distress_all_stations_keep_clear_001": [
+          "All stations, keep clear for distress traffic."
+        ]
+      },
+      "must_reject": {
+        "expr_distress_silence_mayday_001": [
+          "cancel Mayday",
+          "finish Mayday",
+          "radio check"
+        ],
+        "phrase_distress_silence_distress_traffic_001": [
+          "Keep listening watch for safety traffic",
+          "Cancel distress traffic",
+          "Continue routine traffic"
+        ],
+        "phrase_distress_all_stations_keep_clear_001": [
+          "All stations keep listening watch for safety",
+          "All stations continue routine traffic",
+          "All stations switch to marina channel"
+        ]
+      },
+      "reason": "Distress channel protection is not Securite listening watch or normal traffic."
     }
   ],
   "items": [
@@ -8608,6 +9005,656 @@
         "stop the fire pump",
         "start bilge pump",
         "check the fire pump"
+      ]
+    },
+    {
+      "id": "word_distress_distress_001",
+      "target_text": "distress",
+      "should_accept": [
+        "distress",
+        "DISTRESS"
+      ],
+      "should_reject": [
+        "urgency",
+        "safety",
+        "emergency"
+      ]
+    },
+    {
+      "id": "word_distress_mayday_001",
+      "target_text": "Mayday",
+      "should_accept": [
+        "Mayday",
+        "may day"
+      ],
+      "should_reject": [
+        "Pan-Pan",
+        "Securite",
+        "May"
+      ]
+    },
+    {
+      "id": "word_distress_relay_001",
+      "target_text": "relay",
+      "should_accept": [
+        "relay",
+        "RELAY"
+      ],
+      "should_reject": [
+        "read back",
+        "repeat",
+        "reply"
+      ]
+    },
+    {
+      "id": "word_distress_position_001",
+      "target_text": "position",
+      "should_accept": [
+        "position",
+        "POSITION"
+      ],
+      "should_reject": [
+        "destination",
+        "course",
+        "bearing"
+      ]
+    },
+    {
+      "id": "word_distress_listing_001",
+      "target_text": "listing",
+      "should_accept": [
+        "listing",
+        "LISTING"
+      ],
+      "should_reject": [
+        "sinking",
+        "grounding",
+        "collision"
+      ]
+    },
+    {
+      "id": "word_distress_sinking_001",
+      "target_text": "sinking",
+      "should_accept": [
+        "sinking",
+        "SINKING"
+      ],
+      "should_reject": [
+        "listing",
+        "drifting",
+        "disabled"
+      ]
+    },
+    {
+      "id": "word_distress_aground_001",
+      "target_text": "aground",
+      "should_accept": [
+        "aground",
+        "AGROUND"
+      ],
+      "should_reject": [
+        "anchored",
+        "alongside",
+        "underway"
+      ]
+    },
+    {
+      "id": "word_distress_abandon_001",
+      "target_text": "abandon",
+      "should_accept": [
+        "abandon",
+        "ABANDON"
+      ],
+      "should_reject": [
+        "embark",
+        "disembark",
+        "evacuate port"
+      ]
+    },
+    {
+      "id": "word_distress_liferaft_001",
+      "target_text": "liferaft",
+      "should_accept": [
+        "liferaft",
+        "life raft"
+      ],
+      "should_reject": [
+        "lifejacket",
+        "rescue boat",
+        "pilot boat"
+      ]
+    },
+    {
+      "id": "word_distress_rescue_001",
+      "target_text": "rescue",
+      "should_accept": [
+        "rescue",
+        "RESCUE"
+      ],
+      "should_reject": [
+        "assistance",
+        "escort",
+        "towage"
+      ]
+    },
+    {
+      "id": "expr_distress_mayday_signal_001",
+      "target_text": "Mayday",
+      "should_accept": [
+        "Mayday",
+        "may day"
+      ],
+      "should_reject": [
+        "Pan-Pan",
+        "Securite",
+        "distress"
+      ]
+    },
+    {
+      "id": "expr_distress_mayday_relay_001",
+      "target_text": "Mayday relay",
+      "should_accept": [
+        "Mayday relay",
+        "may day relay"
+      ],
+      "should_reject": [
+        "Mayday",
+        "Pan-Pan relay",
+        "read back Mayday"
+      ]
+    },
+    {
+      "id": "expr_distress_my_position_001",
+      "target_text": "my position",
+      "should_accept": [
+        "my position",
+        "MY POSITION"
+      ],
+      "should_reject": [
+        "my destination",
+        "my course",
+        "my bearing"
+      ]
+    },
+    {
+      "id": "expr_distress_vessel_name_001",
+      "target_text": "vessel name",
+      "should_accept": [
+        "vessel name",
+        "ship name"
+      ],
+      "should_reject": [
+        "call sign",
+        "MMSI",
+        "vessel type"
+      ]
+    },
+    {
+      "id": "expr_distress_call_sign_001",
+      "target_text": "call sign",
+      "should_accept": [
+        "call sign",
+        "callsign"
+      ],
+      "should_reject": [
+        "vessel name",
+        "MMSI",
+        "position"
+      ]
+    },
+    {
+      "id": "expr_distress_mmsi_number_001",
+      "target_text": "MMSI number",
+      "should_accept": [
+        "MMSI number",
+        "MMSI"
+      ],
+      "should_reject": [
+        "call sign",
+        "phone number",
+        "position"
+      ]
+    },
+    {
+      "id": "expr_distress_nature_of_distress_001",
+      "target_text": "nature of distress",
+      "should_accept": [
+        "nature of distress",
+        "distress nature"
+      ],
+      "should_reject": [
+        "nature of urgency",
+        "safety warning",
+        "traffic report"
+      ]
+    },
+    {
+      "id": "expr_distress_fire_on_board_001",
+      "target_text": "fire on board",
+      "should_accept": [
+        "fire on board",
+        "fire onboard"
+      ],
+      "should_reject": [
+        "fire drill",
+        "fire pump",
+        "engine overheating"
+      ]
+    },
+    {
+      "id": "expr_distress_flooding_001",
+      "target_text": "flooding",
+      "should_accept": [
+        "flooding",
+        "FLOODING"
+      ],
+      "should_reject": [
+        "fire",
+        "sinking",
+        "water depth"
+      ]
+    },
+    {
+      "id": "expr_distress_collision_001",
+      "target_text": "collision",
+      "should_accept": [
+        "collision",
+        "COLLISION"
+      ],
+      "should_reject": [
+        "near miss",
+        "traffic risk",
+        "grounding"
+      ]
+    },
+    {
+      "id": "expr_distress_medical_emergency_001",
+      "target_text": "medical emergency",
+      "should_accept": [
+        "medical emergency",
+        "medical distress"
+      ],
+      "should_reject": [
+        "medical advice",
+        "first aid kit",
+        "doctor on board"
+      ]
+    },
+    {
+      "id": "expr_distress_immediate_assistance_001",
+      "target_text": "immediate assistance",
+      "should_accept": [
+        "immediate assistance",
+        "urgent assistance now"
+      ],
+      "should_reject": [
+        "routine assistance",
+        "stand by",
+        "towage requested"
+      ]
+    },
+    {
+      "id": "expr_distress_require_rescue_001",
+      "target_text": "require rescue",
+      "should_accept": [
+        "require rescue",
+        "need rescue"
+      ],
+      "should_reject": [
+        "require pilot",
+        "need berth",
+        "need weather"
+      ]
+    },
+    {
+      "id": "expr_distress_persons_on_board_001",
+      "target_text": "persons on board",
+      "should_accept": [
+        "persons on board",
+        "people on board"
+      ],
+      "should_reject": [
+        "crew on watch",
+        "passengers ashore",
+        "persons overboard"
+      ]
+    },
+    {
+      "id": "expr_distress_abandoning_vessel_001",
+      "target_text": "abandoning vessel",
+      "should_accept": [
+        "abandoning vessel",
+        "abandoning ship"
+      ],
+      "should_reject": [
+        "boarding vessel",
+        "leaving berth",
+        "disembarking passengers"
+      ]
+    },
+    {
+      "id": "expr_distress_read_back_001",
+      "target_text": "read back Mayday",
+      "should_accept": [
+        "read back Mayday",
+        "read back the Mayday"
+      ],
+      "should_reject": [
+        "Mayday relay",
+        "say again Mayday",
+        "cancel Mayday"
+      ]
+    },
+    {
+      "id": "expr_distress_silence_mayday_001",
+      "target_text": "silence Mayday",
+      "should_accept": [
+        "silence Mayday",
+        "Seelonce Mayday"
+      ],
+      "should_reject": [
+        "cancel Mayday",
+        "finish Mayday",
+        "radio check"
+      ]
+    },
+    {
+      "id": "phrase_distress_mayday_three_times_001",
+      "target_text": "Mayday, Mayday, Mayday.",
+      "should_accept": [
+        "Mayday, Mayday, Mayday.",
+        "Mayday Mayday Mayday"
+      ],
+      "should_reject": [
+        "Pan-Pan Pan-Pan Pan-Pan",
+        "Securite Securite Securite",
+        "Mayday"
+      ]
+    },
+    {
+      "id": "phrase_distress_this_is_vessel_aurora_001",
+      "target_text": "This is vessel Aurora.",
+      "should_accept": [
+        "This is vessel Aurora.",
+        "This is the vessel Aurora."
+      ],
+      "should_reject": [
+        "This is marina Aurora",
+        "This is pilot Aurora",
+        "Calling vessel Aurora"
+      ]
+    },
+    {
+      "id": "phrase_distress_my_position_4550n_01310e_001",
+      "target_text": "My position is four five five zero north, zero one three one zero east.",
+      "should_accept": [
+        "My position is four five five zero north, zero one three one zero east.",
+        "Position four five five zero north zero one three one zero east"
+      ],
+      "should_reject": [
+        "My course is four five five zero north",
+        "My destination is zero one three one zero east",
+        "Position four five north zero one east"
+      ]
+    },
+    {
+      "id": "phrase_distress_position_bearing_distance_001",
+      "target_text": "My position is bearing zero nine zero, distance two miles from the lighthouse.",
+      "should_accept": [
+        "My position is bearing zero nine zero, distance two miles from the lighthouse.",
+        "Position bearing zero nine zero distance two miles from the lighthouse"
+      ],
+      "should_reject": [
+        "My course is zero nine zero",
+        "Distance two cables from the marina",
+        "Bearing one eight zero distance two miles"
+      ]
+    },
+    {
+      "id": "phrase_distress_on_fire_001",
+      "target_text": "We are on fire.",
+      "should_accept": [
+        "We are on fire.",
+        "Vessel is on fire."
+      ],
+      "should_reject": [
+        "We have a fire drill",
+        "Start the fire pump",
+        "Fire pump is ready"
+      ]
+    },
+    {
+      "id": "phrase_distress_taking_water_001",
+      "target_text": "We are taking water.",
+      "should_accept": [
+        "We are taking water.",
+        "We are flooding."
+      ],
+      "should_reject": [
+        "We need drinking water",
+        "Water depth is two meters",
+        "We are taking fuel"
+      ]
+    },
+    {
+      "id": "phrase_distress_we_are_sinking_001",
+      "target_text": "We are sinking.",
+      "should_accept": [
+        "We are sinking.",
+        "Vessel is sinking."
+      ],
+      "should_reject": [
+        "We are listing",
+        "We are drifting",
+        "We are disabled"
+      ]
+    },
+    {
+      "id": "phrase_distress_we_are_aground_001",
+      "target_text": "We are aground.",
+      "should_accept": [
+        "We are aground.",
+        "Vessel is aground."
+      ],
+      "should_reject": [
+        "We are anchored",
+        "We are alongside",
+        "We are underway"
+      ]
+    },
+    {
+      "id": "phrase_distress_collision_with_vessel_001",
+      "target_text": "Collision with another vessel.",
+      "should_accept": [
+        "Collision with another vessel.",
+        "We had a collision with another vessel."
+      ],
+      "should_reject": [
+        "Risk of collision with another vessel",
+        "Near miss with another vessel",
+        "Collision course with another vessel"
+      ]
+    },
+    {
+      "id": "phrase_distress_man_overboard_001",
+      "target_text": "Man overboard.",
+      "should_accept": [
+        "Man overboard.",
+        "Person overboard."
+      ],
+      "should_reject": [
+        "Persons on board",
+        "Crew on board",
+        "Man on deck"
+      ]
+    },
+    {
+      "id": "phrase_distress_require_immediate_assistance_001",
+      "target_text": "I require immediate assistance.",
+      "should_accept": [
+        "I require immediate assistance.",
+        "We require immediate assistance."
+      ],
+      "should_reject": [
+        "I require pilot assistance",
+        "I require routine assistance",
+        "I request weather information"
+      ]
+    },
+    {
+      "id": "phrase_distress_need_medical_assistance_001",
+      "target_text": "I need immediate medical assistance.",
+      "should_accept": [
+        "I need immediate medical assistance.",
+        "We need immediate medical assistance."
+      ],
+      "should_reject": [
+        "I need medical advice",
+        "I need a doctor tomorrow",
+        "I need first aid kit"
+      ]
+    },
+    {
+      "id": "phrase_distress_rescue_required_001",
+      "target_text": "Rescue required.",
+      "should_accept": [
+        "Rescue required.",
+        "Rescue is required."
+      ],
+      "should_reject": [
+        "Towage required",
+        "Pilot required",
+        "Berth required"
+      ]
+    },
+    {
+      "id": "phrase_distress_tow_not_enough_001",
+      "target_text": "Towage is not enough, rescue required.",
+      "should_accept": [
+        "Towage is not enough, rescue required.",
+        "Towing is not enough rescue required"
+      ],
+      "should_reject": [
+        "Towage required",
+        "Tug assistance requested",
+        "Routine tow requested"
+      ]
+    },
+    {
+      "id": "phrase_distress_persons_on_board_twelve_001",
+      "target_text": "Twelve persons on board.",
+      "should_accept": [
+        "Twelve persons on board.",
+        "Twelve people on board."
+      ],
+      "should_reject": [
+        "Two persons on board",
+        "Twelve persons overboard",
+        "Twelve crew on watch"
+      ]
+    },
+    {
+      "id": "phrase_distress_abandoning_to_liferaft_001",
+      "target_text": "We are abandoning vessel to liferaft.",
+      "should_accept": [
+        "We are abandoning vessel to liferaft.",
+        "We are abandoning ship to life raft."
+      ],
+      "should_reject": [
+        "We are boarding the vessel",
+        "We are leaving berth",
+        "We are launching pilot boat"
+      ]
+    },
+    {
+      "id": "phrase_distress_liferaft_launched_001",
+      "target_text": "Liferaft launched.",
+      "should_accept": [
+        "Liferaft launched.",
+        "Life raft launched."
+      ],
+      "should_reject": [
+        "Lifejacket donned",
+        "Rescue boat launched",
+        "Pilot boat launched"
+      ]
+    },
+    {
+      "id": "phrase_distress_read_back_position_nature_001",
+      "target_text": "Read back position and nature of distress.",
+      "should_accept": [
+        "Read back position and nature of distress.",
+        "Read back the position and nature of distress."
+      ],
+      "should_reject": [
+        "Relay position and nature of distress",
+        "Say again all after distress",
+        "Read back weather warning"
+      ]
+    },
+    {
+      "id": "phrase_distress_mayday_relay_from_orion_001",
+      "target_text": "Mayday relay from vessel Orion.",
+      "should_accept": [
+        "Mayday relay from vessel Orion.",
+        "May day relay from vessel Orion."
+      ],
+      "should_reject": [
+        "Mayday from vessel Orion",
+        "Pan-Pan relay from vessel Orion",
+        "Securite from vessel Orion"
+      ]
+    },
+    {
+      "id": "phrase_distress_silence_distress_traffic_001",
+      "target_text": "Keep silence for distress traffic.",
+      "should_accept": [
+        "Keep silence for distress traffic.",
+        "Maintain silence for distress traffic."
+      ],
+      "should_reject": [
+        "Keep listening watch for safety traffic",
+        "Cancel distress traffic",
+        "Continue routine traffic"
+      ]
+    },
+    {
+      "id": "phrase_distress_cancel_false_alert_001",
+      "target_text": "Cancel false distress alert.",
+      "should_accept": [
+        "Cancel false distress alert.",
+        "Cancel false Mayday alert."
+      ],
+      "should_reject": [
+        "Cancel Mayday",
+        "Mayday finished",
+        "Test distress alert"
+      ]
+    },
+    {
+      "id": "phrase_distress_complete_call_001",
+      "target_text": "Mayday, this is vessel Aurora, position bearing zero nine zero from the lighthouse, fire on board, I require immediate assistance.",
+      "should_accept": [
+        "Mayday, this is vessel Aurora, position bearing zero nine zero from the lighthouse, fire on board, I require immediate assistance.",
+        "Mayday this is vessel Aurora position bearing zero nine zero from the lighthouse fire on board we require immediate assistance"
+      ],
+      "should_reject": [
+        "Pan-Pan this is vessel Aurora position bearing zero nine zero from the lighthouse fire on board",
+        "Securite this is vessel Aurora navigation warning fire on board",
+        "Mayday this is vessel Aurora destination marina fire drill"
+      ]
+    },
+    {
+      "id": "phrase_distress_all_stations_keep_clear_001",
+      "target_text": "All stations, keep clear for distress traffic.",
+      "should_accept": [
+        "All stations, keep clear for distress traffic.",
+        "All stations, clear the channel for distress traffic."
+      ],
+      "should_reject": [
+        "All stations keep listening watch for safety",
+        "All stations continue routine traffic",
+        "All stations switch to marina channel"
       ]
     }
   ],

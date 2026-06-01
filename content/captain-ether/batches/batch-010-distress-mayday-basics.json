@@ -1,7 +1,7 @@
 {
   "version": 1,
   "batch_id": "batch-010-distress-mayday-basics",
-  "status": "linguist_reviewed",
+  "status": "merged",
   "date": "2026-06-01",
   "branch": "distress_mayday",
   "scope": "Strict distress and Mayday language for M3 corpus growth, kept separate from Pan-Pan urgency, Securite safety, onboard emergency action, and ordinary traffic calls.",
@@ -2256,10 +2256,10 @@
     }
   ],
   "producer_notes": {
-    "status": "linguist reviewed; not merged into starter.json",
+    "status": "merged into starter.json after QA acceptance",
     "learner_source_language": "ru",
     "target_language": "en",
-    "next_gate": "Director-Engineer engineering gate before QA or playable merge",
+    "next_gate": "Post-merge validation and QA acceptance before any production deploy",
     "open_questions": [
       "Confirm whether may day spelling should remain accepted for beginner Mayday entries.",
       "Confirm whether Seelonce Mayday should remain accepted beside silence Mayday, or be limited before merge.",
@@ -2295,6 +2295,18 @@
         "Keep false distress alert cancellation advanced and strict; do not accept active Mayday cancellation wording."
       ],
       "content_patches": []
+    },
+    "merge_notes": {
+      "date": "2026-06-01",
+      "task": "TASK-CE-0066",
+      "playable_items_added": 50,
+      "qa_items_added": 50,
+      "dangerous_pair_groups_added": 10,
+      "grammar_patterns_added": 12,
+      "report": "content/captain-ether/roles/director-engineer/reports/sprint-ce-0066-batch-010-merge-preparation-2026-06-01.md"
     }
-  }
+  },
+  "merged_into": "content/captain-ether/starter.json",
+  "merged_date": "2026-06-01",
+  "merge_gate": "content/captain-ether/roles/director-engineer/reports/sprint-ce-0066-batch-010-merge-preparation-2026-06-01.md"
 }

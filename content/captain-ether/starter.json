@@ -8428,6 +8428,1017 @@
       "hint_beginner": "Start the fire...",
       "hint_intermediate": "the fire pump.",
       "hint_advanced": ""
+    },
+    {
+      "id": "word_distress_distress_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "distress_signal",
+      "branch": "distress_mayday",
+      "module": "distress_signal",
+      "source_language": "ru",
+      "source_text": "Бедствие",
+      "target_language": "en",
+      "target_text": "distress",
+      "accepted_answers": [
+        "distress"
+      ],
+      "hint_beginner": "d______s",
+      "hint_intermediate": "distress...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_distress_mayday_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "distress_signal",
+      "branch": "distress_mayday",
+      "module": "distress_signal",
+      "source_language": "ru",
+      "source_text": "Мэйдэй",
+      "target_language": "en",
+      "target_text": "Mayday",
+      "accepted_answers": [
+        "Mayday",
+        "may day"
+      ],
+      "hint_beginner": "M____y",
+      "hint_intermediate": "Mayday...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_distress_relay_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 10,
+      "topic": "distress_relay",
+      "branch": "distress_mayday",
+      "module": "distress_relay",
+      "source_language": "ru",
+      "source_text": "Ретрансляция",
+      "target_language": "en",
+      "target_text": "relay",
+      "accepted_answers": [
+        "relay"
+      ],
+      "hint_beginner": "r___y",
+      "hint_intermediate": "relay...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_distress_position_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "distress_position",
+      "branch": "distress_mayday",
+      "module": "identity_position",
+      "source_language": "ru",
+      "source_text": "Местоположение",
+      "target_language": "en",
+      "target_text": "position",
+      "accepted_answers": [
+        "position"
+      ],
+      "hint_beginner": "p______n",
+      "hint_intermediate": "position...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_distress_listing_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 11,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Крен",
+      "target_language": "en",
+      "target_text": "listing",
+      "accepted_answers": [
+        "listing"
+      ],
+      "hint_beginner": "l_____g",
+      "hint_intermediate": "listing...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_distress_sinking_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Тонет",
+      "target_language": "en",
+      "target_text": "sinking",
+      "accepted_answers": [
+        "sinking"
+      ],
+      "hint_beginner": "s_____g",
+      "hint_intermediate": "sinking...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_distress_aground_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 10,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "На мели",
+      "target_language": "en",
+      "target_text": "aground",
+      "accepted_answers": [
+        "aground"
+      ],
+      "hint_beginner": "a_____d",
+      "hint_intermediate": "aground...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_distress_abandon_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 11,
+      "topic": "abandoning_vessel",
+      "branch": "distress_mayday",
+      "module": "persons_abandoning",
+      "source_language": "ru",
+      "source_text": "Покинуть судно",
+      "target_language": "en",
+      "target_text": "abandon",
+      "accepted_answers": [
+        "abandon"
+      ],
+      "hint_beginner": "a_____n",
+      "hint_intermediate": "abandon...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_distress_liferaft_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "abandoning_vessel",
+      "branch": "distress_mayday",
+      "module": "persons_abandoning",
+      "source_language": "ru",
+      "source_text": "Спасательный плот",
+      "target_language": "en",
+      "target_text": "liferaft",
+      "accepted_answers": [
+        "liferaft",
+        "life raft"
+      ],
+      "hint_beginner": "l______t",
+      "hint_intermediate": "liferaft...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_distress_rescue_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "assistance_required",
+      "branch": "distress_mayday",
+      "module": "assistance_required",
+      "source_language": "ru",
+      "source_text": "Спасение",
+      "target_language": "en",
+      "target_text": "rescue",
+      "accepted_answers": [
+        "rescue"
+      ],
+      "hint_beginner": "r____e",
+      "hint_intermediate": "rescue...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_distress_mayday_signal_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "distress_signal",
+      "branch": "distress_mayday",
+      "module": "distress_signal",
+      "source_language": "ru",
+      "source_text": "Сигнал бедствия: Мэйдэй",
+      "target_language": "en",
+      "target_text": "Mayday",
+      "accepted_answers": [
+        "Mayday",
+        "may day"
+      ],
+      "hint_beginner": "May...",
+      "hint_intermediate": "Mayday...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_distress_mayday_relay_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 13,
+      "topic": "distress_relay",
+      "branch": "distress_mayday",
+      "module": "distress_relay",
+      "source_language": "ru",
+      "source_text": "Ретрансляция Мэйдэй",
+      "target_language": "en",
+      "target_text": "Mayday relay",
+      "accepted_answers": [
+        "Mayday relay",
+        "may day relay"
+      ],
+      "hint_beginner": "Mayday...",
+      "hint_intermediate": "Mayday relay...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_distress_my_position_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 11,
+      "topic": "distress_position",
+      "branch": "distress_mayday",
+      "module": "identity_position",
+      "source_language": "ru",
+      "source_text": "Моя позиция",
+      "target_language": "en",
+      "target_text": "my position",
+      "accepted_answers": [
+        "my position"
+      ],
+      "hint_beginner": "my...",
+      "hint_intermediate": "my position...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_distress_vessel_name_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "distress_identity",
+      "branch": "distress_mayday",
+      "module": "identity_position",
+      "source_language": "ru",
+      "source_text": "Название судна",
+      "target_language": "en",
+      "target_text": "vessel name",
+      "accepted_answers": [
+        "vessel name",
+        "ship name"
+      ],
+      "hint_beginner": "vessel...",
+      "hint_intermediate": "vessel name...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_distress_call_sign_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "distress_identity",
+      "branch": "distress_mayday",
+      "module": "identity_position",
+      "source_language": "ru",
+      "source_text": "Позывной",
+      "target_language": "en",
+      "target_text": "call sign",
+      "accepted_answers": [
+        "call sign",
+        "callsign"
+      ],
+      "hint_beginner": "call...",
+      "hint_intermediate": "call sign...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_distress_mmsi_number_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "distress_identity",
+      "branch": "distress_mayday",
+      "module": "identity_position",
+      "source_language": "ru",
+      "source_text": "Номер MMSI",
+      "target_language": "en",
+      "target_text": "MMSI number",
+      "accepted_answers": [
+        "MMSI number",
+        "MMSI"
+      ],
+      "hint_beginner": "MMSI...",
+      "hint_intermediate": "MMSI number...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_distress_nature_of_distress_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 12,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Характер бедствия",
+      "target_language": "en",
+      "target_text": "nature of distress",
+      "accepted_answers": [
+        "nature of distress",
+        "distress nature"
+      ],
+      "hint_beginner": "nature...",
+      "hint_intermediate": "nature of distress...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_distress_fire_on_board_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 11,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Пожар на борту",
+      "target_language": "en",
+      "target_text": "fire on board",
+      "accepted_answers": [
+        "fire on board",
+        "fire onboard"
+      ],
+      "hint_beginner": "fire...",
+      "hint_intermediate": "fire on board...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_distress_flooding_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 11,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Затопление",
+      "target_language": "en",
+      "target_text": "flooding",
+      "accepted_answers": [
+        "flooding"
+      ],
+      "hint_beginner": "f______g",
+      "hint_intermediate": "flooding...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_distress_collision_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Столкновение",
+      "target_language": "en",
+      "target_text": "collision",
+      "accepted_answers": [
+        "collision"
+      ],
+      "hint_beginner": "c________n",
+      "hint_intermediate": "collision...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_distress_medical_emergency_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 13,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Медицинская экстренная ситуация",
+      "target_language": "en",
+      "target_text": "medical emergency",
+      "accepted_answers": [
+        "medical emergency",
+        "medical distress"
+      ],
+      "hint_beginner": "medical...",
+      "hint_intermediate": "medical emergency...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_distress_immediate_assistance_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 12,
+      "topic": "assistance_required",
+      "branch": "distress_mayday",
+      "module": "assistance_required",
+      "source_language": "ru",
+      "source_text": "Немедленная помощь",
+      "target_language": "en",
+      "target_text": "immediate assistance",
+      "accepted_answers": [
+        "immediate assistance",
+        "urgent assistance now"
+      ],
+      "hint_beginner": "immediate...",
+      "hint_intermediate": "immediate assistance...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_distress_require_rescue_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 12,
+      "topic": "assistance_required",
+      "branch": "distress_mayday",
+      "module": "assistance_required",
+      "source_language": "ru",
+      "source_text": "Требуется спасение",
+      "target_language": "en",
+      "target_text": "require rescue",
+      "accepted_answers": [
+        "require rescue",
+        "need rescue"
+      ],
+      "hint_beginner": "require...",
+      "hint_intermediate": "require rescue...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_distress_persons_on_board_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 11,
+      "topic": "persons_on_board",
+      "branch": "distress_mayday",
+      "module": "persons_abandoning",
+      "source_language": "ru",
+      "source_text": "Людей на борту",
+      "target_language": "en",
+      "target_text": "persons on board",
+      "accepted_answers": [
+        "persons on board",
+        "people on board"
+      ],
+      "hint_beginner": "persons...",
+      "hint_intermediate": "persons on board...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_distress_abandoning_vessel_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 13,
+      "topic": "abandoning_vessel",
+      "branch": "distress_mayday",
+      "module": "persons_abandoning",
+      "source_language": "ru",
+      "source_text": "Покидаем судно",
+      "target_language": "en",
+      "target_text": "abandoning vessel",
+      "accepted_answers": [
+        "abandoning vessel",
+        "abandoning ship"
+      ],
+      "hint_beginner": "abandoning...",
+      "hint_intermediate": "abandoning vessel...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_distress_read_back_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "distress_readback",
+      "branch": "distress_mayday",
+      "module": "distress_readback",
+      "source_language": "ru",
+      "source_text": "Повторите Мэйдэй для подтверждения",
+      "target_language": "en",
+      "target_text": "read back Mayday",
+      "accepted_answers": [
+        "read back Mayday",
+        "read back the Mayday"
+      ],
+      "hint_beginner": "read back...",
+      "hint_intermediate": "read back Mayday...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_distress_silence_mayday_001",
+      "type": "short_expression",
+      "level": "advanced",
+      "difficulty_score": 18,
+      "topic": "distress_traffic_control",
+      "branch": "distress_mayday",
+      "module": "distress_readback",
+      "source_language": "ru",
+      "source_text": "Радиомолчание по Мэйдэй",
+      "target_language": "en",
+      "target_text": "silence Mayday",
+      "accepted_answers": [
+        "silence Mayday",
+        "Seelonce Mayday"
+      ],
+      "hint_beginner": "silence...",
+      "hint_intermediate": "silence Mayday...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_mayday_three_times_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 13,
+      "topic": "distress_signal",
+      "branch": "distress_mayday",
+      "module": "distress_signal",
+      "source_language": "ru",
+      "source_text": "Мэйдэй, Мэйдэй, Мэйдэй.",
+      "target_language": "en",
+      "target_text": "Mayday, Mayday, Mayday.",
+      "accepted_answers": [
+        "Mayday, Mayday, Mayday."
+      ],
+      "grammar_pattern": "distress_signal_three_times",
+      "hint_beginner": "Mayday...",
+      "hint_intermediate": "Mayday, Mayday...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_this_is_vessel_aurora_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "distress_identity",
+      "branch": "distress_mayday",
+      "module": "identity_position",
+      "source_language": "ru",
+      "source_text": "Это судно Аврора.",
+      "target_language": "en",
+      "target_text": "This is vessel Aurora.",
+      "accepted_answers": [
+        "This is vessel Aurora.",
+        "This is the vessel Aurora."
+      ],
+      "grammar_pattern": "distress_identity_basic",
+      "hint_beginner": "This is...",
+      "hint_intermediate": "vessel Aurora.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_my_position_4550n_01310e_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 17,
+      "topic": "distress_position",
+      "branch": "distress_mayday",
+      "module": "identity_position",
+      "source_language": "ru",
+      "source_text": "Моя позиция четыре пять пять ноль север, ноль один три один ноль восток.",
+      "target_language": "en",
+      "target_text": "My position is four five five zero north, zero one three one zero east.",
+      "accepted_answers": [
+        "My position is four five five zero north, zero one three one zero east.",
+        "Position four five five zero north zero one three one zero east"
+      ],
+      "grammar_pattern": "distress_position_coordinates",
+      "hint_beginner": "My position...",
+      "hint_intermediate": "four five five zero north...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_position_bearing_distance_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 16,
+      "topic": "distress_position",
+      "branch": "distress_mayday",
+      "module": "identity_position",
+      "source_language": "ru",
+      "source_text": "Моя позиция: пеленг ноль девять ноль, дистанция две мили от маяка.",
+      "target_language": "en",
+      "target_text": "My position is bearing zero nine zero, distance two miles from the lighthouse.",
+      "accepted_answers": [
+        "My position is bearing zero nine zero, distance two miles from the lighthouse.",
+        "Position bearing zero nine zero distance two miles from the lighthouse"
+      ],
+      "grammar_pattern": "distress_position_bearing_distance",
+      "hint_beginner": "My position...",
+      "hint_intermediate": "bearing zero nine zero...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_on_fire_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "На борту пожар.",
+      "target_language": "en",
+      "target_text": "We are on fire.",
+      "accepted_answers": [
+        "We are on fire.",
+        "Vessel is on fire."
+      ],
+      "grammar_pattern": "distress_nature_basic",
+      "hint_beginner": "We are...",
+      "hint_intermediate": "on fire.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_taking_water_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Мы принимаем воду.",
+      "target_language": "en",
+      "target_text": "We are taking water.",
+      "accepted_answers": [
+        "We are taking water.",
+        "We are flooding."
+      ],
+      "grammar_pattern": "distress_nature_basic",
+      "hint_beginner": "We are...",
+      "hint_intermediate": "taking water.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_we_are_sinking_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Мы тонем.",
+      "target_language": "en",
+      "target_text": "We are sinking.",
+      "accepted_answers": [
+        "We are sinking.",
+        "Vessel is sinking."
+      ],
+      "grammar_pattern": "distress_nature_basic",
+      "hint_beginner": "We are...",
+      "hint_intermediate": "sinking.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_we_are_aground_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 15,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Мы на мели.",
+      "target_language": "en",
+      "target_text": "We are aground.",
+      "accepted_answers": [
+        "We are aground.",
+        "Vessel is aground."
+      ],
+      "grammar_pattern": "distress_nature_basic",
+      "hint_beginner": "We are...",
+      "hint_intermediate": "aground.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_collision_with_vessel_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 15,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Столкновение с другим судном.",
+      "target_language": "en",
+      "target_text": "Collision with another vessel.",
+      "accepted_answers": [
+        "Collision with another vessel.",
+        "We had a collision with another vessel."
+      ],
+      "grammar_pattern": "distress_nature_collision",
+      "hint_beginner": "Collision...",
+      "hint_intermediate": "with another vessel.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_man_overboard_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Человек за бортом.",
+      "target_language": "en",
+      "target_text": "Man overboard.",
+      "accepted_answers": [
+        "Man overboard.",
+        "Person overboard."
+      ],
+      "grammar_pattern": "distress_person_overboard",
+      "hint_beginner": "Man...",
+      "hint_intermediate": "overboard.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_require_immediate_assistance_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "assistance_required",
+      "branch": "distress_mayday",
+      "module": "assistance_required",
+      "source_language": "ru",
+      "source_text": "Требуется немедленная помощь.",
+      "target_language": "en",
+      "target_text": "I require immediate assistance.",
+      "accepted_answers": [
+        "I require immediate assistance.",
+        "We require immediate assistance."
+      ],
+      "grammar_pattern": "distress_assistance_required",
+      "hint_beginner": "I require...",
+      "hint_intermediate": "immediate assistance.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_need_medical_assistance_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 15,
+      "topic": "assistance_required",
+      "branch": "distress_mayday",
+      "module": "assistance_required",
+      "source_language": "ru",
+      "source_text": "Требуется немедленная медицинская помощь.",
+      "target_language": "en",
+      "target_text": "I need immediate medical assistance.",
+      "accepted_answers": [
+        "I need immediate medical assistance.",
+        "We need immediate medical assistance."
+      ],
+      "grammar_pattern": "distress_assistance_required",
+      "hint_beginner": "I need...",
+      "hint_intermediate": "immediate medical assistance.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_rescue_required_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "assistance_required",
+      "branch": "distress_mayday",
+      "module": "assistance_required",
+      "source_language": "ru",
+      "source_text": "Требуется спасение.",
+      "target_language": "en",
+      "target_text": "Rescue required.",
+      "accepted_answers": [
+        "Rescue required.",
+        "Rescue is required."
+      ],
+      "grammar_pattern": "distress_assistance_required",
+      "hint_beginner": "Rescue...",
+      "hint_intermediate": "required.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_tow_not_enough_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 16,
+      "topic": "assistance_required",
+      "branch": "distress_mayday",
+      "module": "assistance_required",
+      "source_language": "ru",
+      "source_text": "Буксировки недостаточно, требуется спасение.",
+      "target_language": "en",
+      "target_text": "Towage is not enough, rescue required.",
+      "accepted_answers": [
+        "Towage is not enough, rescue required.",
+        "Towing is not enough rescue required"
+      ],
+      "grammar_pattern": "distress_assistance_required",
+      "hint_beginner": "Towage...",
+      "hint_intermediate": "rescue required.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_persons_on_board_twelve_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "persons_on_board",
+      "branch": "distress_mayday",
+      "module": "persons_abandoning",
+      "source_language": "ru",
+      "source_text": "На борту двенадцать человек.",
+      "target_language": "en",
+      "target_text": "Twelve persons on board.",
+      "accepted_answers": [
+        "Twelve persons on board.",
+        "Twelve people on board."
+      ],
+      "grammar_pattern": "distress_persons_on_board_count",
+      "hint_beginner": "Twelve...",
+      "hint_intermediate": "persons on board.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_abandoning_to_liferaft_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 16,
+      "topic": "abandoning_vessel",
+      "branch": "distress_mayday",
+      "module": "persons_abandoning",
+      "source_language": "ru",
+      "source_text": "Покидаем судно в спасательный плот.",
+      "target_language": "en",
+      "target_text": "We are abandoning vessel to liferaft.",
+      "accepted_answers": [
+        "We are abandoning vessel to liferaft.",
+        "We are abandoning ship to life raft."
+      ],
+      "grammar_pattern": "distress_abandoning_vessel",
+      "hint_beginner": "We are abandoning...",
+      "hint_intermediate": "to liferaft.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_liferaft_launched_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 15,
+      "topic": "abandoning_vessel",
+      "branch": "distress_mayday",
+      "module": "persons_abandoning",
+      "source_language": "ru",
+      "source_text": "Спасательный плот спущен.",
+      "target_language": "en",
+      "target_text": "Liferaft launched.",
+      "accepted_answers": [
+        "Liferaft launched.",
+        "Life raft launched."
+      ],
+      "grammar_pattern": "distress_survival_craft_status",
+      "hint_beginner": "Liferaft...",
+      "hint_intermediate": "launched.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_read_back_position_nature_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 16,
+      "topic": "distress_readback",
+      "branch": "distress_mayday",
+      "module": "distress_readback",
+      "source_language": "ru",
+      "source_text": "Повторите позицию и характер бедствия.",
+      "target_language": "en",
+      "target_text": "Read back position and nature of distress.",
+      "accepted_answers": [
+        "Read back position and nature of distress.",
+        "Read back the position and nature of distress."
+      ],
+      "grammar_pattern": "distress_readback_request",
+      "hint_beginner": "Read back...",
+      "hint_intermediate": "position and nature...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_mayday_relay_from_orion_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 17,
+      "topic": "distress_relay",
+      "branch": "distress_mayday",
+      "module": "distress_relay",
+      "source_language": "ru",
+      "source_text": "Мэйдэй ретрансляция от судна Орион.",
+      "target_language": "en",
+      "target_text": "Mayday relay from vessel Orion.",
+      "accepted_answers": [
+        "Mayday relay from vessel Orion.",
+        "May day relay from vessel Orion."
+      ],
+      "grammar_pattern": "distress_relay_basic",
+      "hint_beginner": "Mayday relay...",
+      "hint_intermediate": "from vessel Orion.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_silence_distress_traffic_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 20,
+      "topic": "distress_traffic_control",
+      "branch": "distress_mayday",
+      "module": "distress_readback",
+      "source_language": "ru",
+      "source_text": "Сохраняйте радиомолчание для трафика бедствия.",
+      "target_language": "en",
+      "target_text": "Keep silence for distress traffic.",
+      "accepted_answers": [
+        "Keep silence for distress traffic.",
+        "Maintain silence for distress traffic."
+      ],
+      "grammar_pattern": "distress_traffic_silence",
+      "hint_beginner": "Keep silence...",
+      "hint_intermediate": "for distress traffic.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_cancel_false_alert_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 20,
+      "topic": "distress_signal",
+      "branch": "distress_mayday",
+      "module": "distress_signal",
+      "source_language": "ru",
+      "source_text": "Отмените ложную тревогу бедствия.",
+      "target_language": "en",
+      "target_text": "Cancel false distress alert.",
+      "accepted_answers": [
+        "Cancel false distress alert.",
+        "Cancel false Mayday alert."
+      ],
+      "grammar_pattern": "distress_false_alert_cancel",
+      "hint_beginner": "Cancel...",
+      "hint_intermediate": "false distress alert.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_complete_call_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 23,
+      "topic": "distress_call_sequence",
+      "branch": "distress_mayday",
+      "module": "distress_signal",
+      "source_language": "ru",
+      "source_text": "Мэйдэй, это судно Аврора, позиция ноль девять ноль от маяка, пожар на борту, требуется немедленная помощь.",
+      "target_language": "en",
+      "target_text": "Mayday, this is vessel Aurora, position bearing zero nine zero from the lighthouse, fire on board, I require immediate assistance.",
+      "accepted_answers": [
+        "Mayday, this is vessel Aurora, position bearing zero nine zero from the lighthouse, fire on board, I require immediate assistance.",
+        "Mayday this is vessel Aurora position bearing zero nine zero from the lighthouse fire on board we require immediate assistance"
+      ],
+      "grammar_pattern": "distress_complete_call_basic",
+      "hint_beginner": "Mayday, this is...",
+      "hint_intermediate": "position bearing zero nine zero...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_distress_all_stations_keep_clear_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 19,
+      "topic": "distress_traffic_control",
+      "branch": "distress_mayday",
+      "module": "distress_readback",
+      "source_language": "ru",
+      "source_text": "Всем станциям: освободите канал для трафика бедствия.",
+      "target_language": "en",
+      "target_text": "All stations, keep clear for distress traffic.",
+      "accepted_answers": [
+        "All stations, keep clear for distress traffic.",
+        "All stations, clear the channel for distress traffic."
+      ],
+      "grammar_pattern": "distress_traffic_clear_channel",
+      "hint_beginner": "All stations...",
+      "hint_intermediate": "keep clear...",
+      "hint_advanced": ""
     }
   ],
   "grammar_patterns": [
@@ -9985,6 +10996,92 @@
       "pattern": "start/stop/check + emergency equipment",
       "examples": [
         "Start the fire pump."
+      ]
+    },
+    {
+      "id": "distress_signal_three_times",
+      "pattern": "Mayday signal repeated three times",
+      "examples": [
+        "Mayday, Mayday, Mayday."
+      ]
+    },
+    {
+      "id": "distress_identity_basic",
+      "pattern": "distressed vessel identity",
+      "examples": [
+        "This is vessel Aurora."
+      ]
+    },
+    {
+      "id": "distress_position_coordinates",
+      "pattern": "distress position by coordinates",
+      "examples": [
+        "My position is four five five zero north, zero one three one zero east."
+      ]
+    },
+    {
+      "id": "distress_position_bearing_distance",
+      "pattern": "distress position by bearing and distance",
+      "examples": [
+        "My position is bearing zero nine zero, distance two miles from the lighthouse."
+      ]
+    },
+    {
+      "id": "distress_nature_basic",
+      "pattern": "basic nature of distress statement",
+      "examples": [
+        "We are sinking.",
+        "We are taking water."
+      ]
+    },
+    {
+      "id": "distress_nature_collision",
+      "pattern": "actual collision casualty statement",
+      "examples": [
+        "Collision with another vessel."
+      ]
+    },
+    {
+      "id": "distress_person_overboard",
+      "pattern": "person overboard distress statement",
+      "examples": [
+        "Man overboard."
+      ]
+    },
+    {
+      "id": "distress_assistance_required",
+      "pattern": "distress assistance or rescue required",
+      "examples": [
+        "I require immediate assistance.",
+        "Rescue required."
+      ]
+    },
+    {
+      "id": "distress_persons_on_board_count",
+      "pattern": "persons on board count",
+      "examples": [
+        "Twelve persons on board."
+      ]
+    },
+    {
+      "id": "distress_abandoning_vessel",
+      "pattern": "abandoning vessel survival action",
+      "examples": [
+        "We are abandoning vessel to liferaft."
+      ]
+    },
+    {
+      "id": "distress_readback_request",
+      "pattern": "read back distress position and nature",
+      "examples": [
+        "Read back position and nature of distress."
+      ]
+    },
+    {
+      "id": "distress_complete_call_basic",
+      "pattern": "complete Mayday call with identity position nature and assistance",
+      "examples": [
+        "Mayday, this is vessel Aurora, position bearing zero nine zero from the lighthouse, fire on board, I require immediate assistance."
       ]
     }
   ],

@@ -208,13 +208,13 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0065 Batch 010 Acceptance QA` is closed as PASS and accepted
-for merge preparation.
+None. `CE-SPRINT-0066 Batch 010 Merge Preparation` is closed as MERGED
+LOCALLY / PASS and routed to post-merge QA.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0065-batch-010-acceptance-qa-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0066-batch-010-merge-preparation-2026-06-01.md
 ```
 
 Latest local validation:
@@ -225,24 +225,25 @@ Batch status: linguist_reviewed.
 Sea Speak Linguist review PASS.
 Engineering gate PASS FOR QA ACCEPTANCE.
 QA acceptance PASS.
+Playable merge completed locally.
 Batch validator PASS with known starter WARN (9).
 API smoke PASS captain-ether-api-smoke checks=334.
-No playable merge performed.
+Post-merge QA pending.
 ```
 
 Current local playable corpus:
 
 ```text
-starter_items=405
-grammar_patterns=136
-qa_items=405
-should_accept=1026
-should_reject=1233
-dangerous_pairs=87
+starter_items=455
+grammar_patterns=148
+qa_items=455
+should_accept=1126
+should_reject=1383
+dangerous_pairs=97
 traffic_collision_items=50
 vts_port_control_items=50
 onboard_operations_items=50
-distress_mayday_draft_items=50
+distress_mayday_items=50
 ```
 
 Scope preserved:
@@ -256,15 +257,15 @@ production config, deploy/FTP state, or secrets changed.
 Next recommended work:
 
 ```text
-TASK-CE-0066 Batch 010 Distress / Mayday merge preparation.
-Owner: Director-Engineer.
-Goal: merge the accepted Batch 010 into playable starter and regression files,
-then run validator, API smoke, and post-merge readiness checks locally.
+TASK-CE-0067 Batch 010 Distress / Mayday post-merge QA.
+Owner: QA.
+Goal: independently verify merged playable corpus and regression after Batch
+010 merge, including distress_mayday reachability and dangerous-pair coverage.
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
 matcher change, API/runtime change, UI change, Atlas change, playable merge, or
-public English-native release is authorized by `CE-SPRINT-0065`.
+public English-native release is authorized by `CE-SPRINT-0066`.
 
 ## Previous Closed Sprint
 
