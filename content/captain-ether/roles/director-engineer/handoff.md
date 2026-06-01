@@ -208,19 +208,20 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0056 Batch 009 Onboard Operations Draft` is closed as PASS.
+None. `CE-SPRINT-0057 Batch 009 Linguist Review` is closed as PASS.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0056-batch-009-onboard-operations-draft-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0057-batch-009-linguist-review-2026-06-01.md
 ```
 
 Latest local validation:
 
 ```text
 Batch 009 Onboard Operations draft created.
-Batch status: draft.
+Batch status: linguist_reviewed.
+Sea Speak Linguist review PASS.
 Batch validator PASS with known starter WARN (9).
 No playable merge performed.
 ```
@@ -250,16 +251,15 @@ production config, deploy/FTP state, or secrets changed.
 Next recommended work:
 
 ```text
-TASK-CE-0057 Batch 009 Sea Speak Linguist risk review.
-Owner: Sea Speak Linguist.
-Goal: review helm-order language, watch handover, anchor/line handling,
-station positions, command/status wording, and onboard emergency boundaries
-before engineering gate.
+TASK-CE-0058 Batch 009 engineering gate.
+Owner: Director-Engineer.
+Goal: verify schema, matcher behavior, duplicate IDs, dangerous-pair coverage,
+and merge readiness before QA acceptance.
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
 matcher change, API/runtime change, UI change, Atlas change, starter merge, or
-public English-native release is authorized by `CE-SPRINT-0056`.
+public English-native release is authorized by `CE-SPRINT-0057`.
 
 ## Previous Closed Sprint
 

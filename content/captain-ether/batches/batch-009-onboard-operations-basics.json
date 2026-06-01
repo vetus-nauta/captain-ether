@@ -1,7 +1,7 @@
 {
   "version": 1,
   "batch_id": "batch-009-onboard-operations-basics",
-  "status": "draft",
+  "status": "linguist_reviewed",
   "date": "2026-06-01",
   "branch": "onboard_operations",
   "scope": "Bridge-team and onboard operational language for M3 corpus growth, kept separate from radio-to-shore Sea Speak.",
@@ -2241,10 +2241,10 @@
     }
   ],
   "producer_notes": {
-    "status": "draft; not linguist reviewed; not merged into starter.json",
+    "status": "linguist reviewed; not merged into starter.json",
     "learner_source_language": "ru",
     "target_language": "en",
-    "next_gate": "Sea Speak Linguist Onboard Operations risk review before engineering gate or playable merge",
+    "next_gate": "Director-Engineer engineering gate before QA or playable merge",
     "open_questions": [
       "Confirm whether onboard helm orders should accept ordinary left/right wording or keep port/starboard helm strict.",
       "Confirm whether handover and take over watch should remain strict opposites in beginner items.",
@@ -2263,6 +2263,19 @@
       "stand by / standing by",
       "safety check / emergency action",
       "fire / flooding / man overboard"
-    ]
+    ],
+    "linguist_review": {
+      "date": "2026-06-01",
+      "report": "content/captain-ether/roles/sea-speak-linguist/reports/batch-009-onboard-operations-risk-review-2026-06-01.md",
+      "decisions": [
+        "Keep onboard helm orders strict: ordinary left/right wording remains rejected for port/starboard helm items.",
+        "Keep hand over watch and take over watch as strict opposite watch-transfer actions.",
+        "Keep anchor ready, anchor down, and anchor aweigh as separate anchor-status concepts.",
+        "Keep stand by as a command and standing by as a readiness status; do not collapse them globally.",
+        "Keep onboard emergency phrases as internal bridge-team/onboard operations, not distress radio-call replacements.",
+        "Keep fire, flooding, and man overboard as separate emergency categories."
+      ],
+      "content_patches": []
+    }
   }
 }
