@@ -10,6 +10,26 @@ None.
 
 ## Last QA
 
+TASK-CE-0079 Batch 012 post-merge QA:
+
+- task file:
+  `content/captain-ether/roles/qa/tasks/task-ce-0079-batch-012-post-merge-qa-2026-06-01.md`
+- report file:
+  `content/captain-ether/roles/qa/reports/batch-012-post-merge-qa-2026-06-01.md`
+- mode:
+  report-only / local post-merge verification
+- target:
+  `content/captain-ether/starter.json`,
+  `content/captain-ether/accept-reject-qa-pairs.json`, and
+  `content/captain-ether/batches/batch-012-urgency-equipment-status-reinforcement.json`
+- result:
+  `PASS`
+- confirmed:
+  Batch 012 status `merged`, `30/30` playable items, `30/30` regression
+  entries, no playable `qa_notes`, required dangerous pairs present, validator
+  PASS, API smoke `PASS captain-ether-api-smoke checks=334`, and local
+  `500` playable item state reached.
+
 TASK-CE-0077 Batch 012 Urgency Equipment Status acceptance QA:
 
 - task file:

@@ -208,13 +208,12 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0078 Batch 012 Merge Preparation` is closed as MERGED LOCALLY
-/ PASS and routed to post-merge QA.
+None. `CE-SPRINT-0079 Batch 012 Post-Merge QA` is closed as PASS and accepted.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0078-batch-012-merge-preparation-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0079-batch-012-post-merge-qa-accepted-2026-06-01.md
 ```
 
 Latest local validation:
@@ -244,6 +243,8 @@ Batch 012 engineering gate PASS FOR QA ACCEPTANCE.
 Batch 012 QA acceptance PASS.
 Batch 012 playable merge completed locally.
 Batch 012 validator PASS with known starter WARN (9).
+Batch 012 post-merge QA PASS.
+M3 local 500 playable item target reached.
 ```
 
 Current local playable corpus:
@@ -281,16 +282,14 @@ local site/runtime parity check.
 Next active gate:
 
 ```text
-TASK-CE-0079 Batch 012 Urgency Equipment Status post-merge QA.
-Owner: QA.
-Goal: independently verify merged playable corpus and regression after Batch
-012 merge, including urgency_panpan reachability and 500-item corpus state.
+Prepare a separate director-approved local site/runtime parity check or plan
+the next M4 corpus phase. Production work requires a separate explicit task.
 ```
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
 matcher change, API/runtime change, UI change, Atlas change, playable merge, or
-public English-native release is authorized by `CE-SPRINT-0078`.
+public English-native release is authorized by `CE-SPRINT-0079`.
 
 ## Previous Closed Sprint
 
