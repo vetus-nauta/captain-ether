@@ -208,20 +208,22 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `TASK-CE-0043 Corpus Gap Map` is closed as PASS.
+None. `CE-SPRINT-0044 Batch 007 Traffic / Collision Draft` is closed as
+PASS for draft gate.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0043-corpus-gap-map-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0044-batch-007-traffic-collision-draft-2026-06-01.md
 ```
 
 Latest local validation:
 
 ```text
-Report-only sprint.
-Node corpus count over starter.json PASS.
-Node batch count over batches/*.json PASS.
+Batch 007 JSON parse PASS.
+Required field and duplicate id checks PASS.
+Starter id overlap check PASS, 0 overlaps.
+Draft matcher check PASS, batch007 checks=306.
 ```
 
 Scope preserved:
@@ -234,12 +236,12 @@ production config, deploy/FTP state, or secrets changed.
 Next recommended work, only after explicit Director command:
 
 ```text
-CE-SPRINT-0044 Batch 007 Traffic / Collision.
+Sea Speak Linguist risk review for Batch 007.
 ```
 
 No production deploy, router change, registry change, `starter.json` merge,
 auth/platform edit, matcher change, API/runtime change, or public
-English-native release is authorized by `TASK-CE-0043`.
+English-native release is authorized by `CE-SPRINT-0044` draft gate.
 
 ## Previous Closed Sprint
 

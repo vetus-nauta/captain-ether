@@ -102,10 +102,19 @@ content draft only; routed to Sea Speak Linguist review by Director-Engineer
 No active Content Producer assignment until Director-Engineer gives the next
 batch task.
 
-Possible future work after Batch 004:
+Latest closed draft:
 
-- Batch 005: urgency Pan-Pan;
-- Batch 006: distress Mayday.
+```text
+TASK-CE-0044 Batch 007 Traffic / Collision
+content/captain-ether/batches/batch-007-traffic-collision-basics.json
+content/captain-ether/roles/content-producer/reports/batch-007-traffic-collision-basics-card-2026-06-01.md
+```
+
+Next gate:
+
+```text
+Sea Speak Linguist risk review before any merge into starter.json.
+```
 
 ## Report Shape
 
