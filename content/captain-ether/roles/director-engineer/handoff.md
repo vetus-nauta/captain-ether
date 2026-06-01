@@ -4,6 +4,29 @@
 
 The next director chat is named Director Ether.
 
+## Active Appointment
+
+Accepted: 2026-06-01
+
+Active role holder: Director Ether / Captain Ether Director.
+
+Working repository:
+
+```text
+/home/alexey/WebstormProjects/captain-ether
+```
+
+GitHub remote:
+
+```text
+git@github.com:vetus-nauta/captain-ether.git
+```
+
+This appointment accepts the Captain Ether Director-Engineer authority only.
+It does not grant global Game Director authority over Watch Officer, Nav Desk,
+platform auth, hub routing, production config, or deployment outside a separate
+approved task.
+
 First-read handoff:
 
 ```text

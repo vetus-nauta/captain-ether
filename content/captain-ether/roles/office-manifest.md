@@ -2,6 +2,11 @@
 
 Date: 2026-05-27
 
+Current appointment accepted: 2026-06-01
+Active Director: Director Ether / Captain Ether Director
+Working repository: `/home/alexey/WebstormProjects/captain-ether`
+GitHub remote: `git@github.com:vetus-nauta/captain-ether.git`
+
 ## Purpose
 
 This file is the quick activation map for the Captain Ether office.
@@ -39,7 +44,7 @@ Every role folder must contain:
 Use this sequence at each new day start:
 
 1. Select the active Captain Ether repository:
-   `cd /tmp/captain-ether-export`
+   `cd /home/alexey/WebstormProjects/captain-ether`
 
 2. Verify clean local state and remote alignment:
    `git status --short --branch`
@@ -66,7 +71,7 @@ Use this sequence at each new day start:
    - commit + push after a closed gate/task package, QA checkpoint, Director
      checkpoint, or explicit intermediate checkpoint
 
-If step 1 is not `/tmp/captain-ether-export`, stop and switch repository before doing any role change.
+If step 1 is not `/home/alexey/WebstormProjects/captain-ether`, stop and switch repository before doing any role change.
 
 Role task files go under:
 

@@ -92,7 +92,15 @@ For report-only tasks:
 
 ### Director-Engineer
 
-Owner: main Captain Ether engineer chat.
+Owner: Director Ether / Captain Ether Director.
+
+Current appointment accepted: 2026-06-01.
+
+Current working repository:
+
+```text
+/home/alexey/WebstormProjects/captain-ether
+```
 
 May change:
 

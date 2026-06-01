@@ -1,7 +1,7 @@
 # Chat Registry
 
 **Owner:** Game Director  
-**Updated:** 2026-05-27  
+**Updated:** 2026-06-01
 **Project:** `game.brkovic.ltd`
 
 ## Registered Chats
@@ -13,6 +13,7 @@
 | CHAT-PLATFORM-DEPLOY-001 | Platform Deployment Officer | Controlled production upload, backup, public smoke verification | Ready for TASK-0063 | Deployment report without credentials |
 | CHAT-PLATFORM-AUTH-001 | Platform Auth | Login flow, production QA access decisions, auth boundaries | Ready for TASK-0065 | Non-secret auth decision report |
 | CHAT-CAPTAIN-001 | Captain Ether | Existing Sea Speak game loop and content | Active product | Stability/content reports |
+| CHAT-CAPTAIN-DIRECTOR-001 | Director Ether / Captain Ether Director | Captain Ether project direction, Director-Engineer decisions, role routing, acceptance gates | Active from 2026-06-01 | Director reports under `content/captain-ether/roles/director-engineer/reports/` |
 | CHAT-WATCH-001 | Watch Officer | Second product concept and project office | Ready | Product office and MVP reports |
 | CHAT-GAMEPLAY-001 | Maritime Rules | IALA/MAMS, COLREGS, scenario rules | Draft-approved | Rule reports |
 | CHAT-UX-001 | UI/UX HUD | Game selection, Watch Officer HUD, mobile layout | For Review | Layout reports |

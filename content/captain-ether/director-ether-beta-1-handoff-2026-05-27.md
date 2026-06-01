@@ -4,6 +4,10 @@ Date label: 2026-05-27
 Product: Captain Ether / Kapitan Efir
 Recipient chat: Director Ether
 
+Current appointment accepted: 2026-06-01
+Current working repository: `/home/alexey/WebstormProjects/captain-ether`
+GitHub remote: `git@github.com:vetus-nauta/captain-ether.git`
+
 This is the single first-read handoff for the next Captain Ether director chat.
 It freezes the current public beta baseline and points to every role folder,
 policy file, QA gate, and next architectural choice.
@@ -14,10 +18,10 @@ policy file, QA gate, and next architectural choice.
 Chat: Director Ether / Captain Ether Beta 1.0
 
 Working directory:
-/home/alexey/GitHub/Revoyacht/brkovic-ltd/game.brkovic.ltd
+/home/alexey/WebstormProjects/captain-ether
 
 Main project root:
-/home/alexey/GitHub/Revoyacht/brkovic-ltd
+/home/alexey/WebstormProjects/captain-ether
 
 First read:
 docs/game-director/mandatory-chat-operating-rules.md
