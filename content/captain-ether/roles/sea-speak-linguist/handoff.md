@@ -128,6 +128,20 @@ None.
 Latest closed assignment:
 
 ```text
+TASK-CE-0063 Batch 010 Distress / Mayday Risk Review
+content/captain-ether/batches/batch-010-distress-mayday-basics.json
+content/captain-ether/roles/sea-speak-linguist/reports/batch-010-distress-mayday-risk-review-2026-06-01.md
+```
+
+Next gate:
+
+```text
+Director-Engineer engineering gate before QA or starter.json merge.
+```
+
+Previous closed assignment:
+
+```text
 TASK-CE-0057 Batch 009 Onboard Operations Risk Review
 content/captain-ether/batches/batch-009-onboard-operations-basics.json
 content/captain-ether/roles/sea-speak-linguist/reports/batch-009-onboard-operations-risk-review-2026-06-01.md

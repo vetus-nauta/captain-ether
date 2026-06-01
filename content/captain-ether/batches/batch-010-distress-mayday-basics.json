@@ -1,7 +1,7 @@
 {
   "version": 1,
   "batch_id": "batch-010-distress-mayday-basics",
-  "status": "draft",
+  "status": "linguist_reviewed",
   "date": "2026-06-01",
   "branch": "distress_mayday",
   "scope": "Strict distress and Mayday language for M3 corpus growth, kept separate from Pan-Pan urgency, Securite safety, onboard emergency action, and ordinary traffic calls.",
@@ -2255,9 +2255,46 @@
       "reason": "Distress channel protection is not Securite listening watch or normal traffic."
     }
   ],
-  "producer_notes": [
-    "Draft keeps Mayday distress separate from Pan-Pan urgency, Securite safety, and onboard emergency actions.",
-    "Distress relay, readback, cancellation of false alert, and traffic silence are intentionally strict and routed to linguist review before merge.",
-    "No starter, regression, matcher, API/runtime, UI, Atlas, auth, router, registry, production, Watch Officer, or Nav Desk files changed."
-  ]
+  "producer_notes": {
+    "status": "linguist reviewed; not merged into starter.json",
+    "learner_source_language": "ru",
+    "target_language": "en",
+    "next_gate": "Director-Engineer engineering gate before QA or playable merge",
+    "open_questions": [
+      "Confirm whether may day spelling should remain accepted for beginner Mayday entries.",
+      "Confirm whether Seelonce Mayday should remain accepted beside silence Mayday, or be limited before merge.",
+      "Confirm whether medical distress is acceptable for beginner/intermediate training, or should be narrowed to medical emergency.",
+      "Confirm whether Towage is not enough, rescue required should remain in this batch as a distress escalation example.",
+      "Confirm whether false distress alert cancellation should stay in beginner corpus later or remain advanced only."
+    ],
+    "risk_focus": [
+      "Mayday / Pan-Pan / Securite",
+      "distress / urgency / safety",
+      "Mayday / Mayday relay / Pan-Pan relay",
+      "position / course / bearing / destination",
+      "vessel name / call sign / MMSI",
+      "fire / flooding / sinking / listing / aground",
+      "rescue / towage / pilot / berth",
+      "persons on board / persons overboard / abandoning vessel",
+      "read back / relay / say again / cancel",
+      "distress traffic / safety watch / routine traffic"
+    ],
+    "linguist_review": {
+      "date": "2026-06-01",
+      "report": "content/captain-ether/roles/sea-speak-linguist/reports/batch-010-distress-mayday-risk-review-2026-06-01.md",
+      "decisions": [
+        "Keep Mayday, Pan-Pan, and Securite as strict distress, urgency, and safety signal families.",
+        "Keep distress and urgency/safety category terms separate; do not accept emergency as a generic replacement for distress.",
+        "Approve item-local may day spelling only for Mayday items; do not broaden it globally.",
+        "Approve Seelonce Mayday item-locally beside silence Mayday; do not broaden radio silence handling globally.",
+        "Keep Mayday relay separate from own Mayday, Pan-Pan relay, and readback wording.",
+        "Keep vessel name, call sign, MMSI, and position fields separate.",
+        "Keep fire, flooding, sinking, listing, aground, collision, and man overboard as separate nature-of-distress categories.",
+        "Keep rescue distinct from towage, pilotage, berth, and routine assistance.",
+        "Keep persons on board, persons overboard, and abandoning vessel separate.",
+        "Keep false distress alert cancellation advanced and strict; do not accept active Mayday cancellation wording."
+      ],
+      "content_patches": []
+    }
+  }
 }
