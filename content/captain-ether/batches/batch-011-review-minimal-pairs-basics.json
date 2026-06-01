@@ -1,7 +1,7 @@
 {
   "version": 1,
   "batch_id": "batch-011-review-minimal-pairs-basics",
-  "status": "draft",
+  "status": "linguist_reviewed",
   "date": "2026-06-01",
   "branch": "review_minimal_pairs",
   "scope": "Short high-risk review drills for strict Sea Speak contrasts across procedure words, directions, radio signals, numeric forms, and movement commands.",
@@ -792,9 +792,37 @@
       "reason": "Give way and stand on are opposite traffic obligations."
     }
   ],
-  "producer_notes": [
-    "Draft follows the roadmap rule that review/minimal-pair drills should be short, not a normal 50-item batch.",
-    "The batch intentionally trains strict rejection boundaries rather than adding broad synonyms.",
-    "No starter, regression, matcher, API/runtime, UI, Atlas, auth, router, registry, production, Watch Officer, or Nav Desk files changed."
-  ]
+  "producer_notes": {
+    "status": "linguist reviewed; not merged into starter.json",
+    "learner_source_language": "ru",
+    "target_language": "en",
+    "next_gate": "Director-Engineer engineering gate before QA or playable merge",
+    "risk_focus": [
+      "over / out",
+      "roger / affirmative",
+      "say again / read back",
+      "port / starboard",
+      "ahead / astern",
+      "channel one six / channel one three",
+      "zero nine zero / nine zero",
+      "one four zero zero / one five zero zero",
+      "Pan-Pan / Mayday / Securite",
+      "alter course to port / alter course to starboard",
+      "give way / stand on"
+    ],
+    "linguist_review": {
+      "date": "2026-06-01",
+      "report": "content/captain-ether/roles/sea-speak-linguist/reports/batch-011-review-minimal-pairs-risk-review-2026-06-01.md",
+      "decisions": [
+        "Keep over and out as strict procedure opposites.",
+        "Keep roger as received and affirmative as yes; do not merge them.",
+        "Keep say again and read back separate.",
+        "Keep port/starboard, ahead/astern, and port/starboard course alteration strict.",
+        "Keep channel, heading, and time digit forms exact; channel sixteen remains rejected for channel one six item.",
+        "Keep Pan-Pan, Mayday, and Securite signal families separate.",
+        "Keep give way and stand on as opposite traffic obligations."
+      ],
+      "content_patches": []
+    }
+  }
 }
