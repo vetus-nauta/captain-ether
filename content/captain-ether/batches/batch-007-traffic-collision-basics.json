@@ -1,7 +1,7 @@
 {
   "version": 1,
   "batch_id": "batch-007-traffic-collision-basics",
-  "status": "linguist_reviewed",
+  "status": "merged",
   "date": "2026-06-01",
   "branch": "traffic_collision",
   "scope": "Traffic information and collision-avoidance intentions for M3 corpus growth.",
@@ -18,14 +18,26 @@
       "source_text": "Столкновение",
       "target_language": "en",
       "target_text": "collision",
-      "accepted_answers": ["collision"],
+      "accepted_answers": [
+        "collision"
+      ],
       "hint_beginner": "c________",
       "hint_intermediate": "coll...",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["collision", "COLLISION", "collision."],
-        "should_reject": ["risk of collision", "near miss", "contact"],
-        "dangerous_minimal_pairs": ["collision / risk of collision / near miss"],
+        "should_accept": [
+          "collision",
+          "COLLISION",
+          "collision."
+        ],
+        "should_reject": [
+          "risk of collision",
+          "near miss",
+          "contact"
+        ],
+        "dangerous_minimal_pairs": [
+          "collision / risk of collision / near miss"
+        ],
         "linguist_note": "Keep the collision event separate from risk of collision."
       }
     },
@@ -41,14 +53,26 @@
       "source_text": "Пересечение курсов",
       "target_language": "en",
       "target_text": "crossing",
-      "accepted_answers": ["crossing"],
+      "accepted_answers": [
+        "crossing"
+      ],
       "hint_beginner": "c_______",
       "hint_intermediate": "cross...",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["crossing", "CROSSING", "crossing."],
-        "should_reject": ["overtaking", "passing", "meeting"],
-        "dangerous_minimal_pairs": ["crossing / overtaking / passing"],
+        "should_accept": [
+          "crossing",
+          "CROSSING",
+          "crossing."
+        ],
+        "should_reject": [
+          "overtaking",
+          "passing",
+          "meeting"
+        ],
+        "dangerous_minimal_pairs": [
+          "crossing / overtaking / passing"
+        ],
         "linguist_note": "Crossing is a traffic situation, not generic passing."
       }
     },
@@ -64,14 +88,26 @@
       "source_text": "Обгон",
       "target_language": "en",
       "target_text": "overtaking",
-      "accepted_answers": ["overtaking"],
+      "accepted_answers": [
+        "overtaking"
+      ],
       "hint_beginner": "o_________",
       "hint_intermediate": "over...",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["overtaking", "OVERTAKING", "overtaking."],
-        "should_reject": ["crossing", "passing ahead", "passing astern"],
-        "dangerous_minimal_pairs": ["overtaking / crossing / passing"],
+        "should_accept": [
+          "overtaking",
+          "OVERTAKING",
+          "overtaking."
+        ],
+        "should_reject": [
+          "crossing",
+          "passing ahead",
+          "passing astern"
+        ],
+        "dangerous_minimal_pairs": [
+          "overtaking / crossing / passing"
+        ],
         "linguist_note": "Overtaking should remain a traffic situation term."
       }
     },
@@ -87,14 +123,26 @@
       "source_text": "За кормой",
       "target_language": "en",
       "target_text": "astern",
-      "accepted_answers": ["astern"],
+      "accepted_answers": [
+        "astern"
+      ],
       "hint_beginner": "a_____",
       "hint_intermediate": "ast...",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["astern", "ASTERN", "astern."],
-        "should_reject": ["stern", "ahead", "abaft"],
-        "dangerous_minimal_pairs": ["stern / astern / ahead"],
+        "should_accept": [
+          "astern",
+          "ASTERN",
+          "astern."
+        ],
+        "should_reject": [
+          "stern",
+          "ahead",
+          "abaft"
+        ],
+        "dangerous_minimal_pairs": [
+          "stern / astern / ahead"
+        ],
         "linguist_note": "Astern is direction behind; stern is a vessel part."
       }
     },
@@ -110,14 +158,26 @@
       "source_text": "Впереди",
       "target_language": "en",
       "target_text": "ahead",
-      "accepted_answers": ["ahead"],
+      "accepted_answers": [
+        "ahead"
+      ],
       "hint_beginner": "a____",
       "hint_intermediate": "ahe...",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["ahead", "AHEAD", "ahead."],
-        "should_reject": ["astern", "bow", "forward"],
-        "dangerous_minimal_pairs": ["ahead / astern / bow"],
+        "should_accept": [
+          "ahead",
+          "AHEAD",
+          "ahead."
+        ],
+        "should_reject": [
+          "astern",
+          "bow",
+          "forward"
+        ],
+        "dangerous_minimal_pairs": [
+          "ahead / astern / bow"
+        ],
         "linguist_note": "Ahead must not collapse into bow or forward."
       }
     },
@@ -133,14 +193,25 @@
       "source_text": "Судно, уступающее дорогу",
       "target_language": "en",
       "target_text": "give-way vessel",
-      "accepted_answers": ["give-way vessel", "give way vessel"],
+      "accepted_answers": [
+        "give-way vessel"
+      ],
       "hint_beginner": "give-way...",
       "hint_intermediate": "give-way vessel",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["give-way vessel", "give way vessel"],
-        "should_reject": ["stand-on vessel", "give way", "way vessel"],
-        "dangerous_minimal_pairs": ["give-way vessel / stand-on vessel"],
+        "should_accept": [
+          "give-way vessel",
+          "give way vessel"
+        ],
+        "should_reject": [
+          "stand-on vessel",
+          "give way",
+          "way vessel"
+        ],
+        "dangerous_minimal_pairs": [
+          "give-way vessel / stand-on vessel"
+        ],
         "linguist_note": "Role must stay vessel-specific; action phrase alone is not enough."
       }
     },
@@ -156,14 +227,25 @@
       "source_text": "Судно, сохраняющее курс и скорость",
       "target_language": "en",
       "target_text": "stand-on vessel",
-      "accepted_answers": ["stand-on vessel", "stand on vessel"],
+      "accepted_answers": [
+        "stand-on vessel"
+      ],
       "hint_beginner": "stand-on...",
       "hint_intermediate": "stand-on vessel",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["stand-on vessel", "stand on vessel"],
-        "should_reject": ["give-way vessel", "stand by", "stand on"],
-        "dangerous_minimal_pairs": ["stand-on vessel / give-way vessel / stand by"],
+        "should_accept": [
+          "stand-on vessel",
+          "stand on vessel"
+        ],
+        "should_reject": [
+          "give-way vessel",
+          "stand by",
+          "stand on"
+        ],
+        "dangerous_minimal_pairs": [
+          "stand-on vessel / give-way vessel / stand by"
+        ],
         "linguist_note": "Stand-on vessel is a COLREG role, not radio stand by."
       }
     },
@@ -179,14 +261,27 @@
       "source_text": "Кратчайшее расстояние сближения",
       "target_language": "en",
       "target_text": "CPA",
-      "accepted_answers": ["cpa", "closest point of approach"],
+      "accepted_answers": [
+        "cpa",
+        "closest point of approach"
+      ],
       "hint_beginner": "C__",
       "hint_intermediate": "CPA",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["CPA", "cpa", "closest point of approach"],
-        "should_reject": ["TCPA", "distance", "approach point"],
-        "dangerous_minimal_pairs": ["CPA / TCPA"],
+        "should_accept": [
+          "CPA",
+          "cpa",
+          "closest point of approach"
+        ],
+        "should_reject": [
+          "TCPA",
+          "distance",
+          "approach point"
+        ],
+        "dangerous_minimal_pairs": [
+          "CPA / TCPA"
+        ],
         "linguist_note": "CPA is distance/point; TCPA is time to CPA."
       }
     },
@@ -202,14 +297,27 @@
       "source_text": "Время до кратчайшего сближения",
       "target_language": "en",
       "target_text": "TCPA",
-      "accepted_answers": ["tcpa", "time to closest point of approach"],
+      "accepted_answers": [
+        "tcpa",
+        "time to closest point of approach"
+      ],
       "hint_beginner": "TC__",
       "hint_intermediate": "TCPA",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["TCPA", "tcpa", "time to closest point of approach"],
-        "should_reject": ["CPA", "time of arrival", "eta"],
-        "dangerous_minimal_pairs": ["TCPA / CPA / ETA"],
+        "should_accept": [
+          "TCPA",
+          "tcpa",
+          "time to closest point of approach"
+        ],
+        "should_reject": [
+          "CPA",
+          "time of arrival",
+          "eta"
+        ],
+        "dangerous_minimal_pairs": [
+          "TCPA / CPA / ETA"
+        ],
         "linguist_note": "TCPA must remain collision-avoidance time, not ETA."
       }
     },
@@ -225,14 +333,26 @@
       "source_text": "Действие",
       "target_language": "en",
       "target_text": "action",
-      "accepted_answers": ["action"],
+      "accepted_answers": [
+        "action"
+      ],
       "hint_beginner": "a_____",
       "hint_intermediate": "act...",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["action", "ACTION", "action."],
-        "should_reject": ["reaction", "instruction", "advice"],
-        "dangerous_minimal_pairs": ["action / instruction / advice"],
+        "should_accept": [
+          "action",
+          "ACTION",
+          "action."
+        ],
+        "should_reject": [
+          "reaction",
+          "instruction",
+          "advice"
+        ],
+        "dangerous_minimal_pairs": [
+          "action / instruction / advice"
+        ],
         "linguist_note": "Action here is collision-avoidance action, not a VTS instruction."
       }
     },
@@ -248,14 +368,26 @@
       "source_text": "Риск столкновения",
       "target_language": "en",
       "target_text": "risk of collision",
-      "accepted_answers": ["risk of collision", "collision risk"],
+      "accepted_answers": [
+        "risk of collision",
+        "collision risk"
+      ],
       "hint_beginner": "risk of...",
       "hint_intermediate": "risk of collision",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["risk of collision", "collision risk"],
-        "should_reject": ["collision", "near collision", "danger"],
-        "dangerous_minimal_pairs": ["risk of collision / collision"],
+        "should_accept": [
+          "risk of collision",
+          "collision risk"
+        ],
+        "should_reject": [
+          "collision",
+          "near collision",
+          "danger"
+        ],
+        "dangerous_minimal_pairs": [
+          "risk of collision / collision"
+        ],
         "linguist_note": "Risk term must not become the collision event."
       }
     },
@@ -271,14 +403,25 @@
       "source_text": "Ситуация опасного сближения",
       "target_language": "en",
       "target_text": "close-quarters situation",
-      "accepted_answers": ["close-quarters situation", "close quarters situation"],
+      "accepted_answers": [
+        "close-quarters situation"
+      ],
       "hint_beginner": "close...",
       "hint_intermediate": "close-quarters",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["close-quarters situation", "close quarters situation"],
-        "should_reject": ["collision", "near miss", "close to shore"],
-        "dangerous_minimal_pairs": ["close-quarters situation / collision / near miss"],
+        "should_accept": [
+          "close-quarters situation",
+          "close quarters situation"
+        ],
+        "should_reject": [
+          "collision",
+          "near miss",
+          "close to shore"
+        ],
+        "dangerous_minimal_pairs": [
+          "close-quarters situation / collision / near miss"
+        ],
         "linguist_note": "Draft keeps this as a traffic risk state, not a collision report."
       }
     },
@@ -294,14 +437,26 @@
       "source_text": "Держитесь в стороне / не сближайтесь",
       "target_language": "en",
       "target_text": "keep clear",
-      "accepted_answers": ["keep clear", "keep well clear"],
+      "accepted_answers": [
+        "keep clear",
+        "keep well clear"
+      ],
       "hint_beginner": "keep...",
       "hint_intermediate": "keep clear",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["keep clear", "keep well clear"],
-        "should_reject": ["stay away", "move away", "clear out"],
-        "dangerous_minimal_pairs": ["keep clear / clear out"],
+        "should_accept": [
+          "keep clear",
+          "keep well clear"
+        ],
+        "should_reject": [
+          "stay away",
+          "move away",
+          "clear out"
+        ],
+        "dangerous_minimal_pairs": [
+          "keep clear / clear out"
+        ],
         "linguist_note": "Keep clear is the trained collision-avoidance term."
       }
     },
@@ -317,14 +472,26 @@
       "source_text": "Изменить курс",
       "target_language": "en",
       "target_text": "alter course",
-      "accepted_answers": ["alter course", "change course"],
+      "accepted_answers": [
+        "alter course",
+        "change course"
+      ],
       "hint_beginner": "alter...",
       "hint_intermediate": "alter course",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["alter course", "change course"],
-        "should_reject": ["change channel", "alter speed", "turn"],
-        "dangerous_minimal_pairs": ["alter course / change channel / alter speed"],
+        "should_accept": [
+          "alter course",
+          "change course"
+        ],
+        "should_reject": [
+          "change channel",
+          "alter speed",
+          "turn"
+        ],
+        "dangerous_minimal_pairs": [
+          "alter course / change channel / alter speed"
+        ],
         "linguist_note": "Change course is item-local; do not make change a broad alias."
       }
     },
@@ -340,14 +507,26 @@
       "source_text": "Уменьшить скорость",
       "target_language": "en",
       "target_text": "reduce speed",
-      "accepted_answers": ["reduce speed", "reduce my speed"],
+      "accepted_answers": [
+        "reduce speed",
+        "reduce my speed"
+      ],
       "hint_beginner": "reduce...",
       "hint_intermediate": "reduce speed",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["reduce speed", "reduce my speed"],
-        "should_reject": ["stop engine", "increase speed", "slow"],
-        "dangerous_minimal_pairs": ["reduce speed / stop engine / increase speed"],
+        "should_accept": [
+          "reduce speed",
+          "reduce my speed"
+        ],
+        "should_reject": [
+          "stop engine",
+          "increase speed",
+          "slow"
+        ],
+        "dangerous_minimal_pairs": [
+          "reduce speed / stop engine / increase speed"
+        ],
         "linguist_note": "Reduce speed is not stop engine."
       }
     },
@@ -363,14 +542,26 @@
       "source_text": "Пройти за кормой",
       "target_language": "en",
       "target_text": "pass astern",
-      "accepted_answers": ["pass astern", "passing astern"],
+      "accepted_answers": [
+        "pass astern",
+        "passing astern"
+      ],
       "hint_beginner": "pass...",
       "hint_intermediate": "pass astern",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["pass astern", "passing astern"],
-        "should_reject": ["pass ahead", "pass alongside", "astern"],
-        "dangerous_minimal_pairs": ["pass astern / pass ahead"],
+        "should_accept": [
+          "pass astern",
+          "passing astern"
+        ],
+        "should_reject": [
+          "pass ahead",
+          "pass alongside",
+          "astern"
+        ],
+        "dangerous_minimal_pairs": [
+          "pass astern / pass ahead"
+        ],
         "linguist_note": "The object may be needed in phrase drills; short expression trains the action."
       }
     },
@@ -386,14 +577,26 @@
       "source_text": "Пройти перед носом",
       "target_language": "en",
       "target_text": "pass ahead",
-      "accepted_answers": ["pass ahead", "passing ahead"],
+      "accepted_answers": [
+        "pass ahead",
+        "passing ahead"
+      ],
       "hint_beginner": "pass...",
       "hint_intermediate": "pass ahead",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["pass ahead", "passing ahead"],
-        "should_reject": ["pass astern", "pass behind", "ahead"],
-        "dangerous_minimal_pairs": ["pass ahead / pass astern"],
+        "should_accept": [
+          "pass ahead",
+          "passing ahead"
+        ],
+        "should_reject": [
+          "pass astern",
+          "pass behind",
+          "ahead"
+        ],
+        "dangerous_minimal_pairs": [
+          "pass ahead / pass astern"
+        ],
         "linguist_note": "Pass ahead must stay opposite from pass astern."
       }
     },
@@ -409,14 +612,25 @@
       "source_text": "Судно, пересекающее курс",
       "target_language": "en",
       "target_text": "crossing vessel",
-      "accepted_answers": ["crossing vessel"],
+      "accepted_answers": [
+        "crossing vessel"
+      ],
       "hint_beginner": "crossing...",
       "hint_intermediate": "crossing vessel",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["crossing vessel", "CROSSING VESSEL"],
-        "should_reject": ["overtaking vessel", "give-way vessel", "vessel crossing"],
-        "dangerous_minimal_pairs": ["crossing vessel / overtaking vessel"],
+        "should_accept": [
+          "crossing vessel",
+          "CROSSING VESSEL"
+        ],
+        "should_reject": [
+          "overtaking vessel",
+          "give-way vessel",
+          "vessel crossing"
+        ],
+        "dangerous_minimal_pairs": [
+          "crossing vessel / overtaking vessel"
+        ],
         "linguist_note": "Draft keeps word order strict pending linguist review."
       }
     },
@@ -432,14 +646,25 @@
       "source_text": "Обгоняющее судно",
       "target_language": "en",
       "target_text": "overtaking vessel",
-      "accepted_answers": ["overtaking vessel"],
+      "accepted_answers": [
+        "overtaking vessel"
+      ],
       "hint_beginner": "overtaking...",
       "hint_intermediate": "overtaking vessel",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["overtaking vessel", "OVERTAKING VESSEL"],
-        "should_reject": ["crossing vessel", "passing vessel", "vessel overtaking"],
-        "dangerous_minimal_pairs": ["overtaking vessel / crossing vessel"],
+        "should_accept": [
+          "overtaking vessel",
+          "OVERTAKING VESSEL"
+        ],
+        "should_reject": [
+          "crossing vessel",
+          "passing vessel",
+          "vessel overtaking"
+        ],
+        "dangerous_minimal_pairs": [
+          "overtaking vessel / crossing vessel"
+        ],
         "linguist_note": "Draft keeps word order strict pending linguist review."
       }
     },
@@ -455,14 +680,26 @@
       "source_text": "Безопасная дистанция",
       "target_language": "en",
       "target_text": "safe distance",
-      "accepted_answers": ["safe distance", "safe passing distance"],
+      "accepted_answers": [
+        "safe distance",
+        "safe passing distance"
+      ],
       "hint_beginner": "safe...",
       "hint_intermediate": "safe distance",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["safe distance", "safe passing distance"],
-        "should_reject": ["distance", "close distance", "safe speed"],
-        "dangerous_minimal_pairs": ["safe distance / safe speed"],
+        "should_accept": [
+          "safe distance",
+          "safe passing distance"
+        ],
+        "should_reject": [
+          "distance",
+          "close distance",
+          "safe speed"
+        ],
+        "dangerous_minimal_pairs": [
+          "safe distance / safe speed"
+        ],
         "linguist_note": "Safe passing distance may be accepted item-locally."
       }
     },
@@ -478,14 +715,26 @@
       "source_text": "Заблаговременное действие",
       "target_language": "en",
       "target_text": "early action",
-      "accepted_answers": ["early action", "take early action"],
+      "accepted_answers": [
+        "early action",
+        "take early action"
+      ],
       "hint_beginner": "early...",
       "hint_intermediate": "early action",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["early action", "take early action"],
-        "should_reject": ["late action", "small action", "reaction"],
-        "dangerous_minimal_pairs": ["early action / late action"],
+        "should_accept": [
+          "early action",
+          "take early action"
+        ],
+        "should_reject": [
+          "late action",
+          "small action",
+          "reaction"
+        ],
+        "dangerous_minimal_pairs": [
+          "early action / late action"
+        ],
         "linguist_note": "Action timing should remain explicit."
       }
     },
@@ -501,14 +750,25 @@
       "source_text": "Существенное действие",
       "target_language": "en",
       "target_text": "substantial action",
-      "accepted_answers": ["substantial action"],
+      "accepted_answers": [
+        "substantial action"
+      ],
       "hint_beginner": "substantial...",
       "hint_intermediate": "substantial action",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["substantial action", "SUBSTANTIAL ACTION"],
-        "should_reject": ["small action", "early action", "minor alteration"],
-        "dangerous_minimal_pairs": ["substantial action / small action"],
+        "should_accept": [
+          "substantial action",
+          "SUBSTANTIAL ACTION"
+        ],
+        "should_reject": [
+          "small action",
+          "early action",
+          "minor alteration"
+        ],
+        "dangerous_minimal_pairs": [
+          "substantial action / small action"
+        ],
         "linguist_note": "Avoid accepting vague small/minor actions."
       }
     },
@@ -524,14 +784,26 @@
       "source_text": "Безопасный проход",
       "target_language": "en",
       "target_text": "safe passing",
-      "accepted_answers": ["safe passing", "safe pass"],
+      "accepted_answers": [
+        "safe passing",
+        "safe pass"
+      ],
       "hint_beginner": "safe...",
       "hint_intermediate": "safe passing",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["safe passing", "safe pass"],
-        "should_reject": ["passing", "unsafe passing", "safe speed"],
-        "dangerous_minimal_pairs": ["safe passing / safe speed"],
+        "should_accept": [
+          "safe passing",
+          "safe pass"
+        ],
+        "should_reject": [
+          "passing",
+          "unsafe passing",
+          "safe speed"
+        ],
+        "dangerous_minimal_pairs": [
+          "safe passing / safe speed"
+        ],
         "linguist_note": "Safe pass is accepted as short expression only."
       }
     },
@@ -547,14 +819,25 @@
       "source_text": "Относительный пеленг",
       "target_language": "en",
       "target_text": "relative bearing",
-      "accepted_answers": ["relative bearing"],
+      "accepted_answers": [
+        "relative bearing"
+      ],
       "hint_beginner": "relative...",
       "hint_intermediate": "relative bearing",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["relative bearing", "RELATIVE BEARING"],
-        "should_reject": ["heading", "course", "true bearing"],
-        "dangerous_minimal_pairs": ["relative bearing / true bearing / heading"],
+        "should_accept": [
+          "relative bearing",
+          "RELATIVE BEARING"
+        ],
+        "should_reject": [
+          "heading",
+          "course",
+          "true bearing"
+        ],
+        "dangerous_minimal_pairs": [
+          "relative bearing / true bearing / heading"
+        ],
         "linguist_note": "Keep bearing terminology exact."
       }
     },
@@ -570,14 +853,25 @@
       "source_text": "Постоянный пеленг",
       "target_language": "en",
       "target_text": "constant bearing",
-      "accepted_answers": ["constant bearing"],
+      "accepted_answers": [
+        "constant bearing"
+      ],
       "hint_beginner": "constant...",
       "hint_intermediate": "constant bearing",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["constant bearing", "CONSTANT BEARING"],
-        "should_reject": ["relative bearing", "changing bearing", "constant heading"],
-        "dangerous_minimal_pairs": ["constant bearing / changing bearing / heading"],
+        "should_accept": [
+          "constant bearing",
+          "CONSTANT BEARING"
+        ],
+        "should_reject": [
+          "relative bearing",
+          "changing bearing",
+          "constant heading"
+        ],
+        "dangerous_minimal_pairs": [
+          "constant bearing / changing bearing / heading"
+        ],
         "linguist_note": "Do not collapse bearing and heading."
       }
     },
@@ -593,14 +887,26 @@
       "source_text": "Малая CPA",
       "target_language": "en",
       "target_text": "small CPA",
-      "accepted_answers": ["small cpa", "small closest point of approach"],
+      "accepted_answers": [
+        "small cpa",
+        "small closest point of approach"
+      ],
       "hint_beginner": "small...",
       "hint_intermediate": "small CPA",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["small CPA", "small cpa"],
-        "should_reject": ["small TCPA", "short ETA", "low speed"],
-        "dangerous_minimal_pairs": ["small CPA / small TCPA"],
+        "should_accept": [
+          "small CPA",
+          "small cpa"
+        ],
+        "should_reject": [
+          "small TCPA",
+          "short ETA",
+          "low speed"
+        ],
+        "dangerous_minimal_pairs": [
+          "small CPA / small TCPA"
+        ],
         "linguist_note": "CPA is distance/point, not time."
       }
     },
@@ -616,14 +922,26 @@
       "source_text": "Малое TCPA / мало времени до CPA",
       "target_language": "en",
       "target_text": "short TCPA",
-      "accepted_answers": ["short tcpa", "short time to closest point of approach"],
+      "accepted_answers": [
+        "short tcpa",
+        "short time to closest point of approach"
+      ],
       "hint_beginner": "short...",
       "hint_intermediate": "short TCPA",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["short TCPA", "short tcpa"],
-        "should_reject": ["small CPA", "short ETA", "close distance"],
-        "dangerous_minimal_pairs": ["short TCPA / small CPA / ETA"],
+        "should_accept": [
+          "short TCPA",
+          "short tcpa"
+        ],
+        "should_reject": [
+          "small CPA",
+          "short ETA",
+          "close distance"
+        ],
+        "dangerous_minimal_pairs": [
+          "short TCPA / small CPA / ETA"
+        ],
         "linguist_note": "TCPA is time; keep it separate from CPA and ETA."
       }
     },
@@ -639,15 +957,29 @@
       "source_text": "Я изменю курс вправо / на правый борт.",
       "target_language": "en",
       "target_text": "I will alter course to starboard.",
-      "accepted_answers": ["i will alter course to starboard", "will alter course to starboard", "alter course to starboard", "i am altering course to starboard"],
+      "accepted_answers": [
+        "i will alter course to starboard",
+        "will alter course to starboard",
+        "alter course to starboard",
+        "i am altering course to starboard"
+      ],
       "grammar_pattern": "collision_action_future",
       "hint_beginner": "I will alter...",
       "hint_intermediate": "alter course to starboard",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["I will alter course to starboard.", "alter course to starboard"],
-        "should_reject": ["alter course to port", "turn right", "change channel to starboard"],
-        "dangerous_minimal_pairs": ["starboard / port / channel"],
+        "should_accept": [
+          "I will alter course to starboard.",
+          "alter course to starboard"
+        ],
+        "should_reject": [
+          "alter course to port",
+          "turn right",
+          "change channel to starboard"
+        ],
+        "dangerous_minimal_pairs": [
+          "starboard / port / channel"
+        ],
         "linguist_note": "Starboard must not become ordinary right in this draft."
       }
     },
@@ -663,15 +995,29 @@
       "source_text": "Я изменю курс влево / на левый борт.",
       "target_language": "en",
       "target_text": "I will alter course to port.",
-      "accepted_answers": ["i will alter course to port", "will alter course to port", "alter course to port", "i am altering course to port"],
+      "accepted_answers": [
+        "i will alter course to port",
+        "will alter course to port",
+        "alter course to port",
+        "i am altering course to port"
+      ],
       "grammar_pattern": "collision_action_future",
       "hint_beginner": "I will alter...",
       "hint_intermediate": "alter course to port",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["I will alter course to port.", "alter course to port"],
-        "should_reject": ["alter course to starboard", "turn left", "enter port"],
-        "dangerous_minimal_pairs": ["port side / starboard / harbour port"],
+        "should_accept": [
+          "I will alter course to port.",
+          "alter course to port"
+        ],
+        "should_reject": [
+          "alter course to starboard",
+          "turn left",
+          "enter port"
+        ],
+        "dangerous_minimal_pairs": [
+          "port side / starboard / harbour port"
+        ],
         "linguist_note": "Port as side must not collapse into harbour/port facility."
       }
     },
@@ -687,15 +1033,30 @@
       "source_text": "Я уменьшаю скорость.",
       "target_language": "en",
       "target_text": "I am reducing speed.",
-      "accepted_answers": ["i am reducing speed", "reducing speed", "i reduce speed", "reduce speed", "i am reducing my speed"],
+      "accepted_answers": [
+        "i am reducing speed",
+        "reducing speed",
+        "i reduce speed",
+        "reduce speed",
+        "i am reducing my speed"
+      ],
       "grammar_pattern": "collision_action_present",
       "hint_beginner": "I am...",
       "hint_intermediate": "reducing speed",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["I am reducing speed.", "reduce speed"],
-        "should_reject": ["stop engine", "increase speed", "speed is five knots"],
-        "dangerous_minimal_pairs": ["reduce speed / stop engine / speed report"],
+        "should_accept": [
+          "I am reducing speed.",
+          "reduce speed"
+        ],
+        "should_reject": [
+          "stop engine",
+          "increase speed",
+          "speed is five knots"
+        ],
+        "dangerous_minimal_pairs": [
+          "reduce speed / stop engine / speed report"
+        ],
         "linguist_note": "This reports action, not speed value."
       }
     },
@@ -711,15 +1072,32 @@
       "source_text": "Я пройду у вас за кормой.",
       "target_language": "en",
       "target_text": "I will pass astern of you.",
-      "accepted_answers": ["i will pass astern of you", "will pass astern of you", "i am passing astern of you", "passing astern of you", "pass astern of you", "i will pass astern of your vessel", "pass astern of your vessel"],
+      "accepted_answers": [
+        "i will pass astern of you",
+        "will pass astern of you",
+        "i am passing astern of you",
+        "passing astern of you",
+        "pass astern of you",
+        "i will pass astern of your vessel",
+        "pass astern of your vessel"
+      ],
       "grammar_pattern": "passing_intention_basic",
       "hint_beginner": "I will pass...",
       "hint_intermediate": "pass astern of you",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["I will pass astern of you.", "pass astern of your vessel"],
-        "should_reject": ["pass ahead of you", "pass behind you", "pass astern"],
-        "dangerous_minimal_pairs": ["pass astern / pass ahead / missing object"],
+        "should_accept": [
+          "I will pass astern of you.",
+          "pass astern of your vessel"
+        ],
+        "should_reject": [
+          "pass ahead of you",
+          "pass behind you",
+          "pass astern"
+        ],
+        "dangerous_minimal_pairs": [
+          "pass astern / pass ahead / missing object"
+        ],
         "linguist_note": "Object should stay explicit in phrase item."
       }
     },
@@ -735,15 +1113,32 @@
       "source_text": "Я пройду перед вашим носом.",
       "target_language": "en",
       "target_text": "I will pass ahead of you.",
-      "accepted_answers": ["i will pass ahead of you", "will pass ahead of you", "i am passing ahead of you", "passing ahead of you", "pass ahead of you", "i will pass ahead of your vessel", "pass ahead of your vessel"],
+      "accepted_answers": [
+        "i will pass ahead of you",
+        "will pass ahead of you",
+        "i am passing ahead of you",
+        "passing ahead of you",
+        "pass ahead of you",
+        "i will pass ahead of your vessel",
+        "pass ahead of your vessel"
+      ],
       "grammar_pattern": "passing_intention_basic",
       "hint_beginner": "I will pass...",
       "hint_intermediate": "pass ahead of you",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["I will pass ahead of you.", "pass ahead of your vessel"],
-        "should_reject": ["pass astern of you", "pass in front", "pass ahead"],
-        "dangerous_minimal_pairs": ["pass ahead / pass astern / missing object"],
+        "should_accept": [
+          "I will pass ahead of you.",
+          "pass ahead of your vessel"
+        ],
+        "should_reject": [
+          "pass astern of you",
+          "pass in front",
+          "pass ahead"
+        ],
+        "dangerous_minimal_pairs": [
+          "pass ahead / pass astern / missing object"
+        ],
         "linguist_note": "Pass ahead is high-risk and should be reviewed."
       }
     },
@@ -759,15 +1154,28 @@
       "source_text": "Держитесь в стороне от меня.",
       "target_language": "en",
       "target_text": "Keep clear of me.",
-      "accepted_answers": ["keep clear of me", "keep well clear of me", "keep clear of my vessel"],
+      "accepted_answers": [
+        "keep clear of me",
+        "keep well clear of me",
+        "keep clear of my vessel"
+      ],
       "grammar_pattern": "collision_instruction_basic",
       "hint_beginner": "Keep clear...",
       "hint_intermediate": "keep clear of me",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["Keep clear of me.", "keep clear of my vessel"],
-        "should_reject": ["stay away", "move away from me", "clear me"],
-        "dangerous_minimal_pairs": ["keep clear / ordinary paraphrase"],
+        "should_accept": [
+          "Keep clear of me.",
+          "keep clear of my vessel"
+        ],
+        "should_reject": [
+          "stay away",
+          "move away from me",
+          "clear me"
+        ],
+        "dangerous_minimal_pairs": [
+          "keep clear / ordinary paraphrase"
+        ],
         "linguist_note": "Keep clear is preferred over ordinary paraphrase."
       }
     },
@@ -783,15 +1191,27 @@
       "source_text": "Вы являетесь судном, уступающим дорогу.",
       "target_language": "en",
       "target_text": "You are the give-way vessel.",
-      "accepted_answers": ["you are the give-way vessel", "you are give-way vessel", "you are the give way vessel"],
+      "accepted_answers": [
+        "you are the give-way vessel",
+        "you are give-way vessel"
+      ],
       "grammar_pattern": "traffic_role_statement",
       "hint_beginner": "You are...",
       "hint_intermediate": "give-way vessel",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["You are the give-way vessel.", "you are the give way vessel"],
-        "should_reject": ["you are the stand-on vessel", "give way", "you stand by"],
-        "dangerous_minimal_pairs": ["give-way vessel / stand-on vessel"],
+        "should_accept": [
+          "You are the give-way vessel.",
+          "you are the give way vessel"
+        ],
+        "should_reject": [
+          "you are the stand-on vessel",
+          "give way",
+          "you stand by"
+        ],
+        "dangerous_minimal_pairs": [
+          "give-way vessel / stand-on vessel"
+        ],
         "linguist_note": "Role statement is sensitive and needs review."
       }
     },
@@ -807,15 +1227,27 @@
       "source_text": "Я являюсь судном, сохраняющим курс и скорость.",
       "target_language": "en",
       "target_text": "I am the stand-on vessel.",
-      "accepted_answers": ["i am the stand-on vessel", "i am stand-on vessel", "i am the stand on vessel"],
+      "accepted_answers": [
+        "i am the stand-on vessel",
+        "i am stand-on vessel"
+      ],
       "grammar_pattern": "traffic_role_statement",
       "hint_beginner": "I am...",
       "hint_intermediate": "stand-on vessel",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["I am the stand-on vessel.", "i am the stand on vessel"],
-        "should_reject": ["i am the give-way vessel", "i stand by", "i keep clear"],
-        "dangerous_minimal_pairs": ["stand-on vessel / give-way vessel / stand by"],
+        "should_accept": [
+          "I am the stand-on vessel.",
+          "i am the stand on vessel"
+        ],
+        "should_reject": [
+          "i am the give-way vessel",
+          "i stand by",
+          "i keep clear"
+        ],
+        "dangerous_minimal_pairs": [
+          "stand-on vessel / give-way vessel / stand by"
+        ],
         "linguist_note": "Role statement is sensitive and needs review."
       }
     },
@@ -831,15 +1263,29 @@
       "source_text": "Существует риск столкновения.",
       "target_language": "en",
       "target_text": "Risk of collision exists.",
-      "accepted_answers": ["risk of collision exists", "there is risk of collision", "there is a risk of collision", "collision risk exists"],
+      "accepted_answers": [
+        "risk of collision exists",
+        "there is risk of collision",
+        "there is a risk of collision",
+        "collision risk exists"
+      ],
       "grammar_pattern": "risk_report_basic",
       "hint_beginner": "Risk of...",
       "hint_intermediate": "risk of collision",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["Risk of collision exists.", "there is a risk of collision"],
-        "should_reject": ["collision exists", "collision happened", "near miss"],
-        "dangerous_minimal_pairs": ["risk of collision / collision event"],
+        "should_accept": [
+          "Risk of collision exists.",
+          "there is a risk of collision"
+        ],
+        "should_reject": [
+          "collision exists",
+          "collision happened",
+          "near miss"
+        ],
+        "dangerous_minimal_pairs": [
+          "risk of collision / collision event"
+        ],
         "linguist_note": "Keep risk state separate from event."
       }
     },
@@ -855,15 +1301,29 @@
       "source_text": "Моя CPA - один кабельтов.",
       "target_language": "en",
       "target_text": "My CPA is one cable.",
-      "accepted_answers": ["my cpa is one cable", "cpa is one cable", "my closest point of approach is one cable", "cpa one cable"],
+      "accepted_answers": [
+        "my cpa is one cable",
+        "cpa is one cable",
+        "my closest point of approach is one cable",
+        "cpa one cable"
+      ],
       "grammar_pattern": "cpa_report_basic",
       "hint_beginner": "My CPA...",
       "hint_intermediate": "CPA is one cable",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["My CPA is one cable.", "CPA is one cable"],
-        "should_reject": ["my tcpa is one cable", "my cpa is one mile", "my eta is one cable"],
-        "dangerous_minimal_pairs": ["CPA / TCPA / unit exactness"],
+        "should_accept": [
+          "My CPA is one cable.",
+          "CPA is one cable"
+        ],
+        "should_reject": [
+          "my tcpa is one cable",
+          "my cpa is one mile",
+          "my eta is one cable"
+        ],
+        "dangerous_minimal_pairs": [
+          "CPA / TCPA / unit exactness"
+        ],
         "linguist_note": "Unit and CPA/TCPA distinction must stay strict."
       }
     },
@@ -879,15 +1339,29 @@
       "source_text": "Моя TCPA - пять минут.",
       "target_language": "en",
       "target_text": "My TCPA is five minutes.",
-      "accepted_answers": ["my tcpa is five minutes", "tcpa is five minutes", "my time to closest point of approach is five minutes", "tcpa five minutes"],
+      "accepted_answers": [
+        "my tcpa is five minutes",
+        "tcpa is five minutes",
+        "my time to closest point of approach is five minutes",
+        "tcpa five minutes"
+      ],
       "grammar_pattern": "tcpa_report_basic",
       "hint_beginner": "My TCPA...",
       "hint_intermediate": "TCPA is five minutes",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["My TCPA is five minutes.", "TCPA is five minutes"],
-        "should_reject": ["my cpa is five minutes", "my tcpa is five cables", "my eta is five minutes"],
-        "dangerous_minimal_pairs": ["TCPA / CPA / ETA"],
+        "should_accept": [
+          "My TCPA is five minutes.",
+          "TCPA is five minutes"
+        ],
+        "should_reject": [
+          "my cpa is five minutes",
+          "my tcpa is five cables",
+          "my eta is five minutes"
+        ],
+        "dangerous_minimal_pairs": [
+          "TCPA / CPA / ETA"
+        ],
         "linguist_note": "Time and distance must not collapse."
       }
     },
@@ -903,15 +1377,28 @@
       "source_text": "Пеленг остается постоянным.",
       "target_language": "en",
       "target_text": "The bearing is constant.",
-      "accepted_answers": ["the bearing is constant", "bearing is constant", "constant bearing"],
+      "accepted_answers": [
+        "the bearing is constant",
+        "bearing is constant",
+        "constant bearing"
+      ],
       "grammar_pattern": "bearing_report_basic",
       "hint_beginner": "The bearing...",
       "hint_intermediate": "bearing is constant",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["The bearing is constant.", "bearing is constant"],
-        "should_reject": ["the heading is constant", "bearing is changing", "constant course"],
-        "dangerous_minimal_pairs": ["bearing / heading / course"],
+        "should_accept": [
+          "The bearing is constant.",
+          "bearing is constant"
+        ],
+        "should_reject": [
+          "the heading is constant",
+          "bearing is changing",
+          "constant course"
+        ],
+        "dangerous_minimal_pairs": [
+          "bearing / heading / course"
+        ],
         "linguist_note": "Bearing must not become heading or course."
       }
     },
@@ -927,15 +1414,28 @@
       "source_text": "Пеленг расходится.",
       "target_language": "en",
       "target_text": "The bearing is opening.",
-      "accepted_answers": ["the bearing is opening", "bearing is opening", "bearing opening"],
+      "accepted_answers": [
+        "the bearing is opening",
+        "bearing is opening",
+        "bearing opening"
+      ],
       "grammar_pattern": "bearing_report_basic",
       "hint_beginner": "The bearing...",
       "hint_intermediate": "bearing is opening",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["The bearing is opening.", "bearing is opening"],
-        "should_reject": ["bearing is constant", "bearing is closing", "course is opening"],
-        "dangerous_minimal_pairs": ["bearing opening / bearing closing / constant bearing"],
+        "should_accept": [
+          "The bearing is opening.",
+          "bearing is opening"
+        ],
+        "should_reject": [
+          "bearing is constant",
+          "bearing is closing",
+          "course is opening"
+        ],
+        "dangerous_minimal_pairs": [
+          "bearing opening / bearing closing / constant bearing"
+        ],
         "linguist_note": "Opening/closing bearing language needs linguist review."
       }
     },
@@ -951,15 +1451,28 @@
       "source_text": "Пеленг сходится.",
       "target_language": "en",
       "target_text": "The bearing is closing.",
-      "accepted_answers": ["the bearing is closing", "bearing is closing", "bearing closing"],
+      "accepted_answers": [
+        "the bearing is closing",
+        "bearing is closing",
+        "bearing closing"
+      ],
       "grammar_pattern": "bearing_report_basic",
       "hint_beginner": "The bearing...",
       "hint_intermediate": "bearing is closing",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["The bearing is closing.", "bearing is closing"],
-        "should_reject": ["bearing is opening", "bearing is constant", "course is closing"],
-        "dangerous_minimal_pairs": ["bearing closing / bearing opening / constant bearing"],
+        "should_accept": [
+          "The bearing is closing.",
+          "bearing is closing"
+        ],
+        "should_reject": [
+          "bearing is opening",
+          "bearing is constant",
+          "course is closing"
+        ],
+        "dangerous_minimal_pairs": [
+          "bearing closing / bearing opening / constant bearing"
+        ],
         "linguist_note": "Closing bearing may indicate increasing collision risk; review wording."
       }
     },
@@ -975,15 +1488,28 @@
       "source_text": "Запрашиваю ваши намерения.",
       "target_language": "en",
       "target_text": "Request your intentions.",
-      "accepted_answers": ["request your intentions", "requesting your intentions", "i request your intentions"],
+      "accepted_answers": [
+        "request your intentions",
+        "requesting your intentions",
+        "i request your intentions"
+      ],
       "grammar_pattern": "traffic_request_basic",
       "hint_beginner": "Request...",
       "hint_intermediate": "your intentions",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["Request your intentions.", "requesting your intentions"],
-        "should_reject": ["report your intentions", "request your position", "what are you doing"],
-        "dangerous_minimal_pairs": ["request intentions / request position / report intentions"],
+        "should_accept": [
+          "Request your intentions.",
+          "requesting your intentions"
+        ],
+        "should_reject": [
+          "report your intentions",
+          "request your position",
+          "what are you doing"
+        ],
+        "dangerous_minimal_pairs": [
+          "request intentions / request position / report intentions"
+        ],
         "linguist_note": "Keep request/report distinction."
       }
     },
@@ -999,15 +1525,27 @@
       "source_text": "Сообщите ваши намерения.",
       "target_language": "en",
       "target_text": "Report your intentions.",
-      "accepted_answers": ["report your intentions", "please report your intentions"],
+      "accepted_answers": [
+        "report your intentions",
+        "please report your intentions"
+      ],
       "grammar_pattern": "traffic_request_basic",
       "hint_beginner": "Report...",
       "hint_intermediate": "your intentions",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["Report your intentions.", "please report your intentions"],
-        "should_reject": ["request your intentions", "report your position", "say again"],
-        "dangerous_minimal_pairs": ["report intentions / request intentions"],
+        "should_accept": [
+          "Report your intentions.",
+          "please report your intentions"
+        ],
+        "should_reject": [
+          "request your intentions",
+          "report your position",
+          "say again"
+        ],
+        "dangerous_minimal_pairs": [
+          "report intentions / request intentions"
+        ],
         "linguist_note": "Report as instruction/request should be reviewed by linguist."
       }
     },
@@ -1023,15 +1561,28 @@
       "source_text": "Намереваюсь пройти по вашему левому борту.",
       "target_language": "en",
       "target_text": "I intend to pass on your port side.",
-      "accepted_answers": ["i intend to pass on your port side", "intend to pass on your port side", "i will pass on your port side"],
+      "accepted_answers": [
+        "i intend to pass on your port side",
+        "intend to pass on your port side",
+        "i will pass on your port side"
+      ],
       "grammar_pattern": "passing_intention_side",
       "hint_beginner": "I intend...",
       "hint_intermediate": "your port side",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["I intend to pass on your port side.", "I will pass on your port side."],
-        "should_reject": ["pass on your starboard side", "pass port", "enter port"],
-        "dangerous_minimal_pairs": ["port side / starboard side / harbour port"],
+        "should_accept": [
+          "I intend to pass on your port side.",
+          "I will pass on your port side."
+        ],
+        "should_reject": [
+          "pass on your starboard side",
+          "pass port",
+          "enter port"
+        ],
+        "dangerous_minimal_pairs": [
+          "port side / starboard side / harbour port"
+        ],
         "linguist_note": "Side passing phrase is high-risk and needs review."
       }
     },
@@ -1047,15 +1598,28 @@
       "source_text": "Намереваюсь пройти по вашему правому борту.",
       "target_language": "en",
       "target_text": "I intend to pass on your starboard side.",
-      "accepted_answers": ["i intend to pass on your starboard side", "intend to pass on your starboard side", "i will pass on your starboard side"],
+      "accepted_answers": [
+        "i intend to pass on your starboard side",
+        "intend to pass on your starboard side",
+        "i will pass on your starboard side"
+      ],
       "grammar_pattern": "passing_intention_side",
       "hint_beginner": "I intend...",
       "hint_intermediate": "your starboard side",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["I intend to pass on your starboard side.", "I will pass on your starboard side."],
-        "should_reject": ["pass on your port side", "pass right", "starboard only"],
-        "dangerous_minimal_pairs": ["starboard side / port side / ordinary right"],
+        "should_accept": [
+          "I intend to pass on your starboard side.",
+          "I will pass on your starboard side."
+        ],
+        "should_reject": [
+          "pass on your port side",
+          "pass right",
+          "starboard only"
+        ],
+        "dangerous_minimal_pairs": [
+          "starboard side / port side / ordinary right"
+        ],
         "linguist_note": "Side passing phrase is high-risk and needs review."
       }
     },
@@ -1071,15 +1635,26 @@
       "source_text": "Вы пересекаете мой курс с правого борта.",
       "target_language": "en",
       "target_text": "You are crossing from my starboard side.",
-      "accepted_answers": ["you are crossing from my starboard side", "you cross from my starboard side"],
+      "accepted_answers": [
+        "you are crossing from my starboard side",
+        "you cross from my starboard side"
+      ],
       "grammar_pattern": "crossing_report_basic",
       "hint_beginner": "You are crossing...",
       "hint_intermediate": "from my starboard side",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["You are crossing from my starboard side."],
-        "should_reject": ["you are crossing from my port side", "you are overtaking me", "you are on my right"],
-        "dangerous_minimal_pairs": ["crossing from starboard / crossing from port / overtaking"],
+        "should_accept": [
+          "You are crossing from my starboard side."
+        ],
+        "should_reject": [
+          "you are crossing from my port side",
+          "you are overtaking me",
+          "you are on my right"
+        ],
+        "dangerous_minimal_pairs": [
+          "crossing from starboard / crossing from port / overtaking"
+        ],
         "linguist_note": "Starboard-side crossing is a high-risk role cue."
       }
     },
@@ -1095,15 +1670,26 @@
       "source_text": "Вы пересекаете мой курс с левого борта.",
       "target_language": "en",
       "target_text": "You are crossing from my port side.",
-      "accepted_answers": ["you are crossing from my port side", "you cross from my port side"],
+      "accepted_answers": [
+        "you are crossing from my port side",
+        "you cross from my port side"
+      ],
       "grammar_pattern": "crossing_report_basic",
       "hint_beginner": "You are crossing...",
       "hint_intermediate": "from my port side",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["You are crossing from my port side."],
-        "should_reject": ["you are crossing from my starboard side", "you are overtaking me", "you are on my left"],
-        "dangerous_minimal_pairs": ["crossing from port / crossing from starboard / overtaking"],
+        "should_accept": [
+          "You are crossing from my port side."
+        ],
+        "should_reject": [
+          "you are crossing from my starboard side",
+          "you are overtaking me",
+          "you are on my left"
+        ],
+        "dangerous_minimal_pairs": [
+          "crossing from port / crossing from starboard / overtaking"
+        ],
         "linguist_note": "Port-side crossing is a high-risk role cue."
       }
     },
@@ -1119,15 +1705,27 @@
       "source_text": "Вы обгоняете меня.",
       "target_language": "en",
       "target_text": "You are overtaking me.",
-      "accepted_answers": ["you are overtaking me", "you overtake me"],
+      "accepted_answers": [
+        "you are overtaking me",
+        "you overtake me"
+      ],
       "grammar_pattern": "overtaking_report_basic",
       "hint_beginner": "You are...",
       "hint_intermediate": "overtaking me",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["You are overtaking me.", "you overtake me"],
-        "should_reject": ["you are crossing me", "you are passing astern", "you are passing ahead"],
-        "dangerous_minimal_pairs": ["overtaking / crossing / passing"],
+        "should_accept": [
+          "You are overtaking me.",
+          "you overtake me"
+        ],
+        "should_reject": [
+          "you are crossing me",
+          "you are passing astern",
+          "you are passing ahead"
+        ],
+        "dangerous_minimal_pairs": [
+          "overtaking / crossing / passing"
+        ],
         "linguist_note": "Overtaking role must be reviewed."
       }
     },
@@ -1143,15 +1741,27 @@
       "source_text": "Я обгоняю вас.",
       "target_language": "en",
       "target_text": "I am overtaking you.",
-      "accepted_answers": ["i am overtaking you", "i overtake you"],
+      "accepted_answers": [
+        "i am overtaking you",
+        "i overtake you"
+      ],
       "grammar_pattern": "overtaking_report_basic",
       "hint_beginner": "I am...",
       "hint_intermediate": "overtaking you",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["I am overtaking you.", "i overtake you"],
-        "should_reject": ["i am crossing you", "i will pass astern of you", "i am passing ahead of you"],
-        "dangerous_minimal_pairs": ["overtaking / crossing / passing"],
+        "should_accept": [
+          "I am overtaking you.",
+          "i overtake you"
+        ],
+        "should_reject": [
+          "i am crossing you",
+          "i will pass astern of you",
+          "i am passing ahead of you"
+        ],
+        "dangerous_minimal_pairs": [
+          "overtaking / crossing / passing"
+        ],
         "linguist_note": "Overtaking declaration must be reviewed."
       }
     },
@@ -1167,15 +1777,28 @@
       "source_text": "Я предприму заблаговременное действие.",
       "target_language": "en",
       "target_text": "I will take early action.",
-      "accepted_answers": ["i will take early action", "will take early action", "i am taking early action"],
+      "accepted_answers": [
+        "i will take early action",
+        "will take early action",
+        "i am taking early action"
+      ],
       "grammar_pattern": "collision_action_future",
       "hint_beginner": "I will take...",
       "hint_intermediate": "early action",
       "hint_advanced": "",
       "qa_notes": {
-        "should_accept": ["I will take early action.", "I am taking early action."],
-        "should_reject": ["i will take late action", "i will take small action", "i will wait"],
-        "dangerous_minimal_pairs": ["early action / late action / wait"],
+        "should_accept": [
+          "I will take early action.",
+          "I am taking early action."
+        ],
+        "should_reject": [
+          "i will take late action",
+          "i will take small action",
+          "i will wait"
+        ],
+        "dangerous_minimal_pairs": [
+          "early action / late action / wait"
+        ],
         "linguist_note": "Action timing should stay explicit."
       }
     }
@@ -1184,41 +1807,539 @@
     {
       "id": "collision_action_future",
       "pattern": "I will + collision-avoidance action",
-      "examples": ["I will alter course to starboard.", "I will keep clear."]
+      "examples": [
+        "I will alter course to starboard.",
+        "I will keep clear."
+      ]
     },
     {
       "id": "passing_intention_basic",
       "pattern": "I will pass + relation + of you",
-      "examples": ["I will pass astern of you.", "I will pass ahead of you."]
+      "examples": [
+        "I will pass astern of you.",
+        "I will pass ahead of you."
+      ]
     },
     {
       "id": "traffic_role_statement",
       "pattern": "subject + be + traffic role",
-      "examples": ["You are the give-way vessel.", "I am the stand-on vessel."]
+      "examples": [
+        "You are the give-way vessel.",
+        "I am the stand-on vessel."
+      ]
     },
     {
       "id": "cpa_tcpa_report_basic",
       "pattern": "My CPA/TCPA is + value",
-      "examples": ["My CPA is one cable.", "My TCPA is five minutes."]
+      "examples": [
+        "My CPA is one cable.",
+        "My TCPA is five minutes."
+      ]
     }
   ],
   "dangerous_minimal_pairs": [
-    "port / starboard",
-    "ahead / astern",
-    "stern / astern",
-    "alter course / change channel",
-    "reduce speed / stop engine",
-    "risk of collision / collision",
-    "CPA / TCPA / ETA",
-    "give-way vessel / stand-on vessel",
-    "crossing / overtaking / passing",
-    "bearing / heading / course"
+    {
+      "pair": "port / starboard",
+      "items": [
+        "phrase_traffic_alter_starboard_001",
+        "phrase_traffic_alter_port_001",
+        "phrase_traffic_intend_pass_port_001",
+        "phrase_traffic_intend_pass_starboard_001",
+        "phrase_traffic_crossing_from_starboard_001",
+        "phrase_traffic_crossing_from_port_001"
+      ],
+      "must_accept": {
+        "phrase_traffic_alter_starboard_001": [
+          "I will alter course to starboard."
+        ],
+        "phrase_traffic_alter_port_001": [
+          "I will alter course to port."
+        ],
+        "phrase_traffic_intend_pass_port_001": [
+          "I intend to pass on your port side."
+        ],
+        "phrase_traffic_intend_pass_starboard_001": [
+          "I intend to pass on your starboard side."
+        ],
+        "phrase_traffic_crossing_from_starboard_001": [
+          "You are crossing from my starboard side."
+        ],
+        "phrase_traffic_crossing_from_port_001": [
+          "You are crossing from my port side."
+        ]
+      },
+      "must_reject": {
+        "phrase_traffic_alter_starboard_001": [
+          "alter course to port",
+          "turn right",
+          "change channel to starboard"
+        ],
+        "phrase_traffic_alter_port_001": [
+          "alter course to starboard",
+          "turn left",
+          "enter port"
+        ],
+        "phrase_traffic_intend_pass_port_001": [
+          "pass on your starboard side",
+          "pass port",
+          "enter port"
+        ],
+        "phrase_traffic_intend_pass_starboard_001": [
+          "pass on your port side",
+          "pass right",
+          "starboard only"
+        ],
+        "phrase_traffic_crossing_from_starboard_001": [
+          "you are crossing from my port side",
+          "you are overtaking me",
+          "you are on my right"
+        ],
+        "phrase_traffic_crossing_from_port_001": [
+          "you are crossing from my starboard side",
+          "you are overtaking me",
+          "you are on my left"
+        ]
+      },
+      "reason": "Port/starboard side and alteration cues must not collapse into ordinary right/left or opposite side."
+    },
+    {
+      "pair": "ahead / astern",
+      "items": [
+        "word_traffic_ahead_001",
+        "word_traffic_astern_001",
+        "expr_traffic_pass_astern_001",
+        "expr_traffic_pass_ahead_001",
+        "phrase_traffic_passing_astern_001",
+        "phrase_traffic_passing_ahead_001"
+      ],
+      "must_accept": {
+        "word_traffic_ahead_001": [
+          "ahead"
+        ],
+        "word_traffic_astern_001": [
+          "astern"
+        ],
+        "expr_traffic_pass_astern_001": [
+          "pass astern"
+        ],
+        "expr_traffic_pass_ahead_001": [
+          "pass ahead"
+        ],
+        "phrase_traffic_passing_astern_001": [
+          "I will pass astern of you."
+        ],
+        "phrase_traffic_passing_ahead_001": [
+          "I will pass ahead of you."
+        ]
+      },
+      "must_reject": {
+        "word_traffic_ahead_001": [
+          "astern",
+          "bow",
+          "forward"
+        ],
+        "word_traffic_astern_001": [
+          "stern",
+          "ahead",
+          "abaft"
+        ],
+        "expr_traffic_pass_astern_001": [
+          "pass ahead",
+          "pass alongside",
+          "astern"
+        ],
+        "expr_traffic_pass_ahead_001": [
+          "pass astern",
+          "pass behind",
+          "ahead"
+        ],
+        "phrase_traffic_passing_astern_001": [
+          "pass ahead of you",
+          "pass behind you",
+          "pass astern"
+        ],
+        "phrase_traffic_passing_ahead_001": [
+          "pass astern of you",
+          "pass in front",
+          "pass ahead"
+        ]
+      },
+      "reason": "Ahead and astern reverse the planned passing relation."
+    },
+    {
+      "pair": "stern / astern",
+      "items": [
+        "word_traffic_astern_001",
+        "phrase_traffic_passing_astern_001"
+      ],
+      "must_accept": {
+        "word_traffic_astern_001": [
+          "astern"
+        ],
+        "phrase_traffic_passing_astern_001": [
+          "I will pass astern of you."
+        ]
+      },
+      "must_reject": {
+        "word_traffic_astern_001": [
+          "stern",
+          "ahead",
+          "abaft"
+        ],
+        "phrase_traffic_passing_astern_001": [
+          "pass ahead of you",
+          "pass behind you",
+          "pass astern"
+        ]
+      },
+      "reason": "Stern is a vessel part; astern is a relative position behind the vessel."
+    },
+    {
+      "pair": "alter course / change channel",
+      "items": [
+        "expr_traffic_alter_course_001",
+        "phrase_traffic_alter_starboard_001"
+      ],
+      "must_accept": {
+        "expr_traffic_alter_course_001": [
+          "alter course"
+        ],
+        "phrase_traffic_alter_starboard_001": [
+          "I will alter course to starboard."
+        ]
+      },
+      "must_reject": {
+        "expr_traffic_alter_course_001": [
+          "change channel",
+          "alter speed",
+          "turn"
+        ],
+        "phrase_traffic_alter_starboard_001": [
+          "alter course to port",
+          "turn right",
+          "change channel to starboard"
+        ]
+      },
+      "reason": "Course alteration must not become radio channel switching."
+    },
+    {
+      "pair": "reduce speed / stop engine",
+      "items": [
+        "expr_traffic_reduce_speed_001",
+        "phrase_traffic_reducing_speed_001"
+      ],
+      "must_accept": {
+        "expr_traffic_reduce_speed_001": [
+          "reduce speed"
+        ],
+        "phrase_traffic_reducing_speed_001": [
+          "I am reducing speed."
+        ]
+      },
+      "must_reject": {
+        "expr_traffic_reduce_speed_001": [
+          "stop engine",
+          "increase speed",
+          "slow"
+        ],
+        "phrase_traffic_reducing_speed_001": [
+          "stop engine",
+          "increase speed",
+          "speed is five knots"
+        ]
+      },
+      "reason": "Speed reduction must not become stop-engine or speed-report wording."
+    },
+    {
+      "pair": "risk of collision / collision",
+      "items": [
+        "word_traffic_collision_001",
+        "expr_traffic_risk_collision_001",
+        "phrase_traffic_risk_exists_001"
+      ],
+      "must_accept": {
+        "word_traffic_collision_001": [
+          "collision"
+        ],
+        "expr_traffic_risk_collision_001": [
+          "risk of collision"
+        ],
+        "phrase_traffic_risk_exists_001": [
+          "Risk of collision exists."
+        ]
+      },
+      "must_reject": {
+        "word_traffic_collision_001": [
+          "risk of collision",
+          "near miss",
+          "contact"
+        ],
+        "expr_traffic_risk_collision_001": [
+          "collision",
+          "near collision",
+          "danger"
+        ],
+        "phrase_traffic_risk_exists_001": [
+          "collision exists",
+          "collision happened",
+          "near miss"
+        ]
+      },
+      "reason": "Collision-risk language must stay separate from an actual collision event."
+    },
+    {
+      "pair": "CPA / TCPA / ETA",
+      "items": [
+        "word_traffic_cpa_001",
+        "word_traffic_tcpa_001",
+        "expr_traffic_small_cpa_001",
+        "expr_traffic_short_tcpa_001",
+        "phrase_traffic_cpa_one_cable_001",
+        "phrase_traffic_tcpa_five_minutes_001"
+      ],
+      "must_accept": {
+        "word_traffic_cpa_001": [
+          "CPA"
+        ],
+        "word_traffic_tcpa_001": [
+          "TCPA"
+        ],
+        "expr_traffic_small_cpa_001": [
+          "small CPA"
+        ],
+        "expr_traffic_short_tcpa_001": [
+          "short TCPA"
+        ],
+        "phrase_traffic_cpa_one_cable_001": [
+          "My CPA is one cable."
+        ],
+        "phrase_traffic_tcpa_five_minutes_001": [
+          "My TCPA is five minutes."
+        ]
+      },
+      "must_reject": {
+        "word_traffic_cpa_001": [
+          "TCPA",
+          "distance",
+          "approach point"
+        ],
+        "word_traffic_tcpa_001": [
+          "CPA",
+          "time of arrival",
+          "eta"
+        ],
+        "expr_traffic_small_cpa_001": [
+          "small TCPA",
+          "short ETA",
+          "low speed"
+        ],
+        "expr_traffic_short_tcpa_001": [
+          "small CPA",
+          "short ETA",
+          "close distance"
+        ],
+        "phrase_traffic_cpa_one_cable_001": [
+          "my tcpa is one cable",
+          "my cpa is one mile",
+          "my eta is one cable"
+        ],
+        "phrase_traffic_tcpa_five_minutes_001": [
+          "my cpa is five minutes",
+          "my tcpa is five cables",
+          "my eta is five minutes"
+        ]
+      },
+      "reason": "Closest point, time to closest point, ETA, and units must remain item-specific."
+    },
+    {
+      "pair": "give-way vessel / stand-on vessel",
+      "items": [
+        "word_traffic_give_way_001",
+        "word_traffic_stand_on_001",
+        "phrase_traffic_give_way_you_001",
+        "phrase_traffic_stand_on_me_001"
+      ],
+      "must_accept": {
+        "word_traffic_give_way_001": [
+          "give-way vessel"
+        ],
+        "word_traffic_stand_on_001": [
+          "stand-on vessel"
+        ],
+        "phrase_traffic_give_way_you_001": [
+          "You are the give-way vessel."
+        ],
+        "phrase_traffic_stand_on_me_001": [
+          "I am the stand-on vessel."
+        ]
+      },
+      "must_reject": {
+        "word_traffic_give_way_001": [
+          "stand-on vessel",
+          "give way",
+          "way vessel"
+        ],
+        "word_traffic_stand_on_001": [
+          "give-way vessel",
+          "stand by",
+          "stand on"
+        ],
+        "phrase_traffic_give_way_you_001": [
+          "you are the stand-on vessel",
+          "give way",
+          "you stand by"
+        ],
+        "phrase_traffic_stand_on_me_001": [
+          "i am the give-way vessel",
+          "i stand by",
+          "i keep clear"
+        ]
+      },
+      "reason": "Give-way and stand-on roles carry opposite collision-avoidance duties."
+    },
+    {
+      "pair": "crossing / overtaking / passing",
+      "items": [
+        "word_traffic_crossing_001",
+        "word_traffic_overtaking_001",
+        "expr_traffic_crossing_vessel_001",
+        "expr_traffic_overtaking_vessel_001",
+        "phrase_traffic_crossing_from_starboard_001",
+        "phrase_traffic_crossing_from_port_001",
+        "phrase_traffic_you_are_overtaking_001",
+        "phrase_traffic_i_am_overtaking_001"
+      ],
+      "must_accept": {
+        "word_traffic_crossing_001": [
+          "crossing"
+        ],
+        "word_traffic_overtaking_001": [
+          "overtaking"
+        ],
+        "expr_traffic_crossing_vessel_001": [
+          "crossing vessel"
+        ],
+        "expr_traffic_overtaking_vessel_001": [
+          "overtaking vessel"
+        ],
+        "phrase_traffic_crossing_from_starboard_001": [
+          "You are crossing from my starboard side."
+        ],
+        "phrase_traffic_crossing_from_port_001": [
+          "You are crossing from my port side."
+        ],
+        "phrase_traffic_you_are_overtaking_001": [
+          "You are overtaking me."
+        ],
+        "phrase_traffic_i_am_overtaking_001": [
+          "I am overtaking you."
+        ]
+      },
+      "must_reject": {
+        "word_traffic_crossing_001": [
+          "overtaking",
+          "passing",
+          "meeting"
+        ],
+        "word_traffic_overtaking_001": [
+          "crossing",
+          "passing ahead",
+          "passing astern"
+        ],
+        "expr_traffic_crossing_vessel_001": [
+          "overtaking vessel",
+          "give-way vessel",
+          "vessel crossing"
+        ],
+        "expr_traffic_overtaking_vessel_001": [
+          "crossing vessel",
+          "passing vessel",
+          "vessel overtaking"
+        ],
+        "phrase_traffic_crossing_from_starboard_001": [
+          "you are crossing from my port side",
+          "you are overtaking me",
+          "you are on my right"
+        ],
+        "phrase_traffic_crossing_from_port_001": [
+          "you are crossing from my starboard side",
+          "you are overtaking me",
+          "you are on my left"
+        ],
+        "phrase_traffic_you_are_overtaking_001": [
+          "you are crossing me",
+          "you are passing astern",
+          "you are passing ahead"
+        ],
+        "phrase_traffic_i_am_overtaking_001": [
+          "i am crossing you",
+          "i will pass astern of you",
+          "i am passing ahead of you"
+        ]
+      },
+      "reason": "Traffic situation labels must not collapse across crossing, overtaking, and passing intentions."
+    },
+    {
+      "pair": "bearing / heading / course",
+      "items": [
+        "expr_traffic_relative_bearing_001",
+        "expr_traffic_constant_bearing_001",
+        "phrase_traffic_bearing_constant_001",
+        "phrase_traffic_bearing_opening_001",
+        "phrase_traffic_bearing_closing_001"
+      ],
+      "must_accept": {
+        "expr_traffic_relative_bearing_001": [
+          "relative bearing"
+        ],
+        "expr_traffic_constant_bearing_001": [
+          "constant bearing"
+        ],
+        "phrase_traffic_bearing_constant_001": [
+          "The bearing is constant."
+        ],
+        "phrase_traffic_bearing_opening_001": [
+          "The bearing is opening."
+        ],
+        "phrase_traffic_bearing_closing_001": [
+          "The bearing is closing."
+        ]
+      },
+      "must_reject": {
+        "expr_traffic_relative_bearing_001": [
+          "heading",
+          "course",
+          "true bearing"
+        ],
+        "expr_traffic_constant_bearing_001": [
+          "relative bearing",
+          "changing bearing",
+          "constant heading"
+        ],
+        "phrase_traffic_bearing_constant_001": [
+          "the heading is constant",
+          "bearing is changing",
+          "constant course"
+        ],
+        "phrase_traffic_bearing_opening_001": [
+          "bearing is constant",
+          "bearing is closing",
+          "course is opening"
+        ],
+        "phrase_traffic_bearing_closing_001": [
+          "bearing is opening",
+          "bearing is constant",
+          "course is closing"
+        ]
+      },
+      "reason": "Bearing observations must stay separate from heading and course wording."
+    }
   ],
   "producer_notes": {
-    "status": "linguist reviewed; not merged into starter.json",
+    "status": "merged into starter.json after QA acceptance",
     "learner_source_language": "ru",
     "target_language": "en",
-    "next_gate": "Director-Engineer engineering gate before QA or playable merge",
+    "next_gate": "Post-merge validation and QA acceptance before any production deploy",
     "open_questions": [
       "Confirm whether pass ahead wording should be kept, narrowed, or replaced before playable merge.",
       "Confirm CPA/TCPA wording and whether abbreviations should be accepted item-locally only.",
@@ -1236,6 +2357,21 @@
         "Keep bearing opening/closing/constant as advanced traffic-risk language with strict bearing/heading/course rejects.",
         "Keep safe pass only as an item-local short-expression variant for safe passing."
       ]
+    },
+    "merge_notes": {
+      "date": "2026-06-01",
+      "task": "TASK-CE-0048",
+      "playable_items_added": 50,
+      "qa_items_added": 50,
+      "dangerous_pair_groups_added": 10,
+      "grammar_patterns_added": 3,
+      "grammar_patterns_already_present": [
+        "passing_intention_basic"
+      ],
+      "report": "content/captain-ether/roles/director-engineer/reports/sprint-ce-0048-batch-007-merge-preparation-2026-06-01.md"
     }
-  }
+  },
+  "merged_into": "content/captain-ether/starter.json",
+  "merged_date": "2026-06-01",
+  "merge_gate": "content/captain-ether/roles/director-engineer/reports/sprint-ce-0048-batch-007-merge-preparation-2026-06-01.md"
 }

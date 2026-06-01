@@ -208,38 +208,55 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0047 Batch 007 Acceptance QA` is closed as PASS.
+None. `CE-SPRINT-0048 Batch 007 Merge Preparation` is closed as PASS.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0047-batch-007-acceptance-qa-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0048-batch-007-merge-preparation-2026-06-01.md
 ```
 
 Latest local validation:
 
 ```text
-QA acceptance PASS.
-Batch007 QA target=50 accept=106 reject=150 total=306.
-No QA failures found in assigned scope.
+Batch 007 merged locally into starter.json and accept-reject regression.
+Validator PASS with known WARN (9).
+API smoke PASS captain-ether-api-smoke checks=334.
+```
+
+Current local playable corpus:
+
+```text
+starter_items=305
+grammar_patterns=115
+qa_items=305
+should_accept=817
+should_reject=933
+dangerous_pairs=67
+traffic_collision_items=50
 ```
 
 Scope preserved:
 
 ```text
-No auth, Atlas, router, registry implementation, Watch Officer, Nav Desk,
+No production deploy, Atlas config/data write, auth, router, registry
+implementation, Watch Officer, Nav Desk, matcher/API/UI/runtime code,
 production config, deploy/FTP state, or secrets changed.
 ```
 
-Next recommended work, only after explicit Director command:
+Next recommended work:
 
 ```text
-Batch 007 merge-preparation task.
+TASK-CE-0049 post-merge QA.
+Owner: QA.
+Goal: independently verify merged playable corpus and regression after Batch
+007 merge, including traffic/collision reachability and dangerous-pair
+coverage.
 ```
 
-No production deploy, router change, registry change, `starter.json` merge,
-auth/platform edit, matcher change, API/runtime change, or public
-English-native release is authorized by `CE-SPRINT-0047` QA gate.
+No production deploy, router change, registry change, auth/platform edit,
+matcher change, API/runtime change, UI change, Atlas change, or public
+English-native release is authorized by `CE-SPRINT-0048`.
 
 ## Previous Closed Sprint
 

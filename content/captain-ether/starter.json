@@ -5383,6 +5383,1046 @@
       "hint_beginner": "R___ b___ P__-P__ d______",
       "hint_intermediate": "Read back Pan-Pan...",
       "hint_advanced": ""
+    },
+    {
+      "id": "word_traffic_collision_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "collision_avoidance",
+      "branch": "traffic_collision",
+      "module": "risk_of_collision",
+      "source_language": "ru",
+      "source_text": "Столкновение",
+      "target_language": "en",
+      "target_text": "collision",
+      "accepted_answers": [
+        "collision"
+      ],
+      "hint_beginner": "c________",
+      "hint_intermediate": "coll...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_traffic_crossing_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "crossing_situation",
+      "branch": "traffic_collision",
+      "module": "overtaking_crossing",
+      "source_language": "ru",
+      "source_text": "Пересечение курсов",
+      "target_language": "en",
+      "target_text": "crossing",
+      "accepted_answers": [
+        "crossing"
+      ],
+      "hint_beginner": "c_______",
+      "hint_intermediate": "cross...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_traffic_overtaking_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "overtaking_situation",
+      "branch": "traffic_collision",
+      "module": "overtaking_crossing",
+      "source_language": "ru",
+      "source_text": "Обгон",
+      "target_language": "en",
+      "target_text": "overtaking",
+      "accepted_answers": [
+        "overtaking"
+      ],
+      "hint_beginner": "o_________",
+      "hint_intermediate": "over...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_traffic_astern_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 7,
+      "topic": "passing_arrangement",
+      "branch": "traffic_collision",
+      "module": "passing_arrangements",
+      "source_language": "ru",
+      "source_text": "За кормой",
+      "target_language": "en",
+      "target_text": "astern",
+      "accepted_answers": [
+        "astern"
+      ],
+      "hint_beginner": "a_____",
+      "hint_intermediate": "ast...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_traffic_ahead_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 7,
+      "topic": "passing_arrangement",
+      "branch": "traffic_collision",
+      "module": "passing_arrangements",
+      "source_language": "ru",
+      "source_text": "Впереди",
+      "target_language": "en",
+      "target_text": "ahead",
+      "accepted_answers": [
+        "ahead"
+      ],
+      "hint_beginner": "a____",
+      "hint_intermediate": "ahe...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_traffic_give_way_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "collision_avoidance_roles",
+      "branch": "traffic_collision",
+      "module": "overtaking_crossing",
+      "source_language": "ru",
+      "source_text": "Судно, уступающее дорогу",
+      "target_language": "en",
+      "target_text": "give-way vessel",
+      "accepted_answers": [
+        "give-way vessel"
+      ],
+      "hint_beginner": "give-way...",
+      "hint_intermediate": "give-way vessel",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_traffic_stand_on_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "collision_avoidance_roles",
+      "branch": "traffic_collision",
+      "module": "overtaking_crossing",
+      "source_language": "ru",
+      "source_text": "Судно, сохраняющее курс и скорость",
+      "target_language": "en",
+      "target_text": "stand-on vessel",
+      "accepted_answers": [
+        "stand-on vessel"
+      ],
+      "hint_beginner": "stand-on...",
+      "hint_intermediate": "stand-on vessel",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_traffic_cpa_001",
+      "type": "word",
+      "level": "advanced",
+      "difficulty_score": 18,
+      "topic": "cpa_tcpa",
+      "branch": "traffic_collision",
+      "module": "cpa_tcpa",
+      "source_language": "ru",
+      "source_text": "Кратчайшее расстояние сближения",
+      "target_language": "en",
+      "target_text": "CPA",
+      "accepted_answers": [
+        "cpa",
+        "closest point of approach"
+      ],
+      "hint_beginner": "C__",
+      "hint_intermediate": "CPA",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_traffic_tcpa_001",
+      "type": "word",
+      "level": "advanced",
+      "difficulty_score": 19,
+      "topic": "cpa_tcpa",
+      "branch": "traffic_collision",
+      "module": "cpa_tcpa",
+      "source_language": "ru",
+      "source_text": "Время до кратчайшего сближения",
+      "target_language": "en",
+      "target_text": "TCPA",
+      "accepted_answers": [
+        "tcpa",
+        "time to closest point of approach"
+      ],
+      "hint_beginner": "TC__",
+      "hint_intermediate": "TCPA",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_traffic_action_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 11,
+      "topic": "collision_action",
+      "branch": "traffic_collision",
+      "module": "course_speed_action",
+      "source_language": "ru",
+      "source_text": "Действие",
+      "target_language": "en",
+      "target_text": "action",
+      "accepted_answers": [
+        "action"
+      ],
+      "hint_beginner": "a_____",
+      "hint_intermediate": "act...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_traffic_risk_collision_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "collision_avoidance",
+      "branch": "traffic_collision",
+      "module": "risk_of_collision",
+      "source_language": "ru",
+      "source_text": "Риск столкновения",
+      "target_language": "en",
+      "target_text": "risk of collision",
+      "accepted_answers": [
+        "risk of collision",
+        "collision risk"
+      ],
+      "hint_beginner": "risk of...",
+      "hint_intermediate": "risk of collision",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_traffic_close_quarters_001",
+      "type": "short_expression",
+      "level": "advanced",
+      "difficulty_score": 24,
+      "topic": "collision_avoidance",
+      "branch": "traffic_collision",
+      "module": "risk_of_collision",
+      "source_language": "ru",
+      "source_text": "Ситуация опасного сближения",
+      "target_language": "en",
+      "target_text": "close-quarters situation",
+      "accepted_answers": [
+        "close-quarters situation"
+      ],
+      "hint_beginner": "close...",
+      "hint_intermediate": "close-quarters",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_traffic_keep_clear_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 12,
+      "topic": "passing_arrangement",
+      "branch": "traffic_collision",
+      "module": "passing_arrangements",
+      "source_language": "ru",
+      "source_text": "Держитесь в стороне / не сближайтесь",
+      "target_language": "en",
+      "target_text": "keep clear",
+      "accepted_answers": [
+        "keep clear",
+        "keep well clear"
+      ],
+      "hint_beginner": "keep...",
+      "hint_intermediate": "keep clear",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_traffic_alter_course_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 17,
+      "topic": "collision_action",
+      "branch": "traffic_collision",
+      "module": "course_speed_action",
+      "source_language": "ru",
+      "source_text": "Изменить курс",
+      "target_language": "en",
+      "target_text": "alter course",
+      "accepted_answers": [
+        "alter course",
+        "change course"
+      ],
+      "hint_beginner": "alter...",
+      "hint_intermediate": "alter course",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_traffic_reduce_speed_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 17,
+      "topic": "collision_action",
+      "branch": "traffic_collision",
+      "module": "course_speed_action",
+      "source_language": "ru",
+      "source_text": "Уменьшить скорость",
+      "target_language": "en",
+      "target_text": "reduce speed",
+      "accepted_answers": [
+        "reduce speed",
+        "reduce my speed"
+      ],
+      "hint_beginner": "reduce...",
+      "hint_intermediate": "reduce speed",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_traffic_pass_astern_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "passing_arrangement",
+      "branch": "traffic_collision",
+      "module": "passing_arrangements",
+      "source_language": "ru",
+      "source_text": "Пройти за кормой",
+      "target_language": "en",
+      "target_text": "pass astern",
+      "accepted_answers": [
+        "pass astern",
+        "passing astern"
+      ],
+      "hint_beginner": "pass...",
+      "hint_intermediate": "pass astern",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_traffic_pass_ahead_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "passing_arrangement",
+      "branch": "traffic_collision",
+      "module": "passing_arrangements",
+      "source_language": "ru",
+      "source_text": "Пройти перед носом",
+      "target_language": "en",
+      "target_text": "pass ahead",
+      "accepted_answers": [
+        "pass ahead",
+        "passing ahead"
+      ],
+      "hint_beginner": "pass...",
+      "hint_intermediate": "pass ahead",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_traffic_crossing_vessel_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "crossing_situation",
+      "branch": "traffic_collision",
+      "module": "overtaking_crossing",
+      "source_language": "ru",
+      "source_text": "Судно, пересекающее курс",
+      "target_language": "en",
+      "target_text": "crossing vessel",
+      "accepted_answers": [
+        "crossing vessel"
+      ],
+      "hint_beginner": "crossing...",
+      "hint_intermediate": "crossing vessel",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_traffic_overtaking_vessel_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "overtaking_situation",
+      "branch": "traffic_collision",
+      "module": "overtaking_crossing",
+      "source_language": "ru",
+      "source_text": "Обгоняющее судно",
+      "target_language": "en",
+      "target_text": "overtaking vessel",
+      "accepted_answers": [
+        "overtaking vessel"
+      ],
+      "hint_beginner": "overtaking...",
+      "hint_intermediate": "overtaking vessel",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_traffic_safe_distance_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "passing_arrangement",
+      "branch": "traffic_collision",
+      "module": "passing_arrangements",
+      "source_language": "ru",
+      "source_text": "Безопасная дистанция",
+      "target_language": "en",
+      "target_text": "safe distance",
+      "accepted_answers": [
+        "safe distance",
+        "safe passing distance"
+      ],
+      "hint_beginner": "safe...",
+      "hint_intermediate": "safe distance",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_traffic_early_action_001",
+      "type": "short_expression",
+      "level": "advanced",
+      "difficulty_score": 24,
+      "topic": "collision_action",
+      "branch": "traffic_collision",
+      "module": "course_speed_action",
+      "source_language": "ru",
+      "source_text": "Заблаговременное действие",
+      "target_language": "en",
+      "target_text": "early action",
+      "accepted_answers": [
+        "early action",
+        "take early action"
+      ],
+      "hint_beginner": "early...",
+      "hint_intermediate": "early action",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_traffic_substantial_action_001",
+      "type": "short_expression",
+      "level": "advanced",
+      "difficulty_score": 25,
+      "topic": "collision_action",
+      "branch": "traffic_collision",
+      "module": "course_speed_action",
+      "source_language": "ru",
+      "source_text": "Существенное действие",
+      "target_language": "en",
+      "target_text": "substantial action",
+      "accepted_answers": [
+        "substantial action"
+      ],
+      "hint_beginner": "substantial...",
+      "hint_intermediate": "substantial action",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_traffic_safe_passing_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 13,
+      "topic": "passing_arrangement",
+      "branch": "traffic_collision",
+      "module": "passing_arrangements",
+      "source_language": "ru",
+      "source_text": "Безопасный проход",
+      "target_language": "en",
+      "target_text": "safe passing",
+      "accepted_answers": [
+        "safe passing",
+        "safe pass"
+      ],
+      "hint_beginner": "safe...",
+      "hint_intermediate": "safe passing",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_traffic_relative_bearing_001",
+      "type": "short_expression",
+      "level": "advanced",
+      "difficulty_score": 25,
+      "topic": "cpa_tcpa",
+      "branch": "traffic_collision",
+      "module": "cpa_tcpa",
+      "source_language": "ru",
+      "source_text": "Относительный пеленг",
+      "target_language": "en",
+      "target_text": "relative bearing",
+      "accepted_answers": [
+        "relative bearing"
+      ],
+      "hint_beginner": "relative...",
+      "hint_intermediate": "relative bearing",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_traffic_constant_bearing_001",
+      "type": "short_expression",
+      "level": "advanced",
+      "difficulty_score": 26,
+      "topic": "cpa_tcpa",
+      "branch": "traffic_collision",
+      "module": "cpa_tcpa",
+      "source_language": "ru",
+      "source_text": "Постоянный пеленг",
+      "target_language": "en",
+      "target_text": "constant bearing",
+      "accepted_answers": [
+        "constant bearing"
+      ],
+      "hint_beginner": "constant...",
+      "hint_intermediate": "constant bearing",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_traffic_small_cpa_001",
+      "type": "short_expression",
+      "level": "advanced",
+      "difficulty_score": 27,
+      "topic": "cpa_tcpa",
+      "branch": "traffic_collision",
+      "module": "cpa_tcpa",
+      "source_language": "ru",
+      "source_text": "Малая CPA",
+      "target_language": "en",
+      "target_text": "small CPA",
+      "accepted_answers": [
+        "small cpa",
+        "small closest point of approach"
+      ],
+      "hint_beginner": "small...",
+      "hint_intermediate": "small CPA",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_traffic_short_tcpa_001",
+      "type": "short_expression",
+      "level": "advanced",
+      "difficulty_score": 27,
+      "topic": "cpa_tcpa",
+      "branch": "traffic_collision",
+      "module": "cpa_tcpa",
+      "source_language": "ru",
+      "source_text": "Малое TCPA / мало времени до CPA",
+      "target_language": "en",
+      "target_text": "short TCPA",
+      "accepted_answers": [
+        "short tcpa",
+        "short time to closest point of approach"
+      ],
+      "hint_beginner": "short...",
+      "hint_intermediate": "short TCPA",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_alter_starboard_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 25,
+      "topic": "collision_action",
+      "branch": "traffic_collision",
+      "module": "course_speed_action",
+      "source_language": "ru",
+      "source_text": "Я изменю курс вправо / на правый борт.",
+      "target_language": "en",
+      "target_text": "I will alter course to starboard.",
+      "accepted_answers": [
+        "i will alter course to starboard",
+        "will alter course to starboard",
+        "alter course to starboard",
+        "i am altering course to starboard"
+      ],
+      "grammar_pattern": "collision_action_future",
+      "hint_beginner": "I will alter...",
+      "hint_intermediate": "alter course to starboard",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_alter_port_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 25,
+      "topic": "collision_action",
+      "branch": "traffic_collision",
+      "module": "course_speed_action",
+      "source_language": "ru",
+      "source_text": "Я изменю курс влево / на левый борт.",
+      "target_language": "en",
+      "target_text": "I will alter course to port.",
+      "accepted_answers": [
+        "i will alter course to port",
+        "will alter course to port",
+        "alter course to port",
+        "i am altering course to port"
+      ],
+      "grammar_pattern": "collision_action_future",
+      "hint_beginner": "I will alter...",
+      "hint_intermediate": "alter course to port",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_reducing_speed_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 23,
+      "topic": "collision_action",
+      "branch": "traffic_collision",
+      "module": "course_speed_action",
+      "source_language": "ru",
+      "source_text": "Я уменьшаю скорость.",
+      "target_language": "en",
+      "target_text": "I am reducing speed.",
+      "accepted_answers": [
+        "i am reducing speed",
+        "reducing speed",
+        "i reduce speed",
+        "reduce speed",
+        "i am reducing my speed"
+      ],
+      "grammar_pattern": "collision_action_present",
+      "hint_beginner": "I am...",
+      "hint_intermediate": "reducing speed",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_passing_astern_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 26,
+      "topic": "passing_arrangement",
+      "branch": "traffic_collision",
+      "module": "passing_arrangements",
+      "source_language": "ru",
+      "source_text": "Я пройду у вас за кормой.",
+      "target_language": "en",
+      "target_text": "I will pass astern of you.",
+      "accepted_answers": [
+        "i will pass astern of you",
+        "will pass astern of you",
+        "i am passing astern of you",
+        "passing astern of you",
+        "pass astern of you",
+        "i will pass astern of your vessel",
+        "pass astern of your vessel"
+      ],
+      "grammar_pattern": "passing_intention_basic",
+      "hint_beginner": "I will pass...",
+      "hint_intermediate": "pass astern of you",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_passing_ahead_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 27,
+      "topic": "passing_arrangement",
+      "branch": "traffic_collision",
+      "module": "passing_arrangements",
+      "source_language": "ru",
+      "source_text": "Я пройду перед вашим носом.",
+      "target_language": "en",
+      "target_text": "I will pass ahead of you.",
+      "accepted_answers": [
+        "i will pass ahead of you",
+        "will pass ahead of you",
+        "i am passing ahead of you",
+        "passing ahead of you",
+        "pass ahead of you",
+        "i will pass ahead of your vessel",
+        "pass ahead of your vessel"
+      ],
+      "grammar_pattern": "passing_intention_basic",
+      "hint_beginner": "I will pass...",
+      "hint_intermediate": "pass ahead of you",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_keep_clear_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 18,
+      "topic": "passing_arrangement",
+      "branch": "traffic_collision",
+      "module": "passing_arrangements",
+      "source_language": "ru",
+      "source_text": "Держитесь в стороне от меня.",
+      "target_language": "en",
+      "target_text": "Keep clear of me.",
+      "accepted_answers": [
+        "keep clear of me",
+        "keep well clear of me",
+        "keep clear of my vessel"
+      ],
+      "grammar_pattern": "collision_instruction_basic",
+      "hint_beginner": "Keep clear...",
+      "hint_intermediate": "keep clear of me",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_give_way_you_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 34,
+      "topic": "collision_avoidance_roles",
+      "branch": "traffic_collision",
+      "module": "overtaking_crossing",
+      "source_language": "ru",
+      "source_text": "Вы являетесь судном, уступающим дорогу.",
+      "target_language": "en",
+      "target_text": "You are the give-way vessel.",
+      "accepted_answers": [
+        "you are the give-way vessel",
+        "you are give-way vessel"
+      ],
+      "grammar_pattern": "traffic_role_statement",
+      "hint_beginner": "You are...",
+      "hint_intermediate": "give-way vessel",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_stand_on_me_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 34,
+      "topic": "collision_avoidance_roles",
+      "branch": "traffic_collision",
+      "module": "overtaking_crossing",
+      "source_language": "ru",
+      "source_text": "Я являюсь судном, сохраняющим курс и скорость.",
+      "target_language": "en",
+      "target_text": "I am the stand-on vessel.",
+      "accepted_answers": [
+        "i am the stand-on vessel",
+        "i am stand-on vessel"
+      ],
+      "grammar_pattern": "traffic_role_statement",
+      "hint_beginner": "I am...",
+      "hint_intermediate": "stand-on vessel",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_risk_exists_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 40,
+      "topic": "collision_avoidance",
+      "branch": "traffic_collision",
+      "module": "risk_of_collision",
+      "source_language": "ru",
+      "source_text": "Существует риск столкновения.",
+      "target_language": "en",
+      "target_text": "Risk of collision exists.",
+      "accepted_answers": [
+        "risk of collision exists",
+        "there is risk of collision",
+        "there is a risk of collision",
+        "collision risk exists"
+      ],
+      "grammar_pattern": "risk_report_basic",
+      "hint_beginner": "Risk of...",
+      "hint_intermediate": "risk of collision",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_cpa_one_cable_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 46,
+      "topic": "cpa_tcpa",
+      "branch": "traffic_collision",
+      "module": "cpa_tcpa",
+      "source_language": "ru",
+      "source_text": "Моя CPA - один кабельтов.",
+      "target_language": "en",
+      "target_text": "My CPA is one cable.",
+      "accepted_answers": [
+        "my cpa is one cable",
+        "cpa is one cable",
+        "my closest point of approach is one cable",
+        "cpa one cable"
+      ],
+      "grammar_pattern": "cpa_report_basic",
+      "hint_beginner": "My CPA...",
+      "hint_intermediate": "CPA is one cable",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_tcpa_five_minutes_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 46,
+      "topic": "cpa_tcpa",
+      "branch": "traffic_collision",
+      "module": "cpa_tcpa",
+      "source_language": "ru",
+      "source_text": "Моя TCPA - пять минут.",
+      "target_language": "en",
+      "target_text": "My TCPA is five minutes.",
+      "accepted_answers": [
+        "my tcpa is five minutes",
+        "tcpa is five minutes",
+        "my time to closest point of approach is five minutes",
+        "tcpa five minutes"
+      ],
+      "grammar_pattern": "tcpa_report_basic",
+      "hint_beginner": "My TCPA...",
+      "hint_intermediate": "TCPA is five minutes",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_bearing_constant_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 43,
+      "topic": "cpa_tcpa",
+      "branch": "traffic_collision",
+      "module": "cpa_tcpa",
+      "source_language": "ru",
+      "source_text": "Пеленг остается постоянным.",
+      "target_language": "en",
+      "target_text": "The bearing is constant.",
+      "accepted_answers": [
+        "the bearing is constant",
+        "bearing is constant",
+        "constant bearing"
+      ],
+      "grammar_pattern": "bearing_report_basic",
+      "hint_beginner": "The bearing...",
+      "hint_intermediate": "bearing is constant",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_bearing_opening_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 42,
+      "topic": "cpa_tcpa",
+      "branch": "traffic_collision",
+      "module": "cpa_tcpa",
+      "source_language": "ru",
+      "source_text": "Пеленг расходится.",
+      "target_language": "en",
+      "target_text": "The bearing is opening.",
+      "accepted_answers": [
+        "the bearing is opening",
+        "bearing is opening",
+        "bearing opening"
+      ],
+      "grammar_pattern": "bearing_report_basic",
+      "hint_beginner": "The bearing...",
+      "hint_intermediate": "bearing is opening",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_bearing_closing_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 42,
+      "topic": "cpa_tcpa",
+      "branch": "traffic_collision",
+      "module": "cpa_tcpa",
+      "source_language": "ru",
+      "source_text": "Пеленг сходится.",
+      "target_language": "en",
+      "target_text": "The bearing is closing.",
+      "accepted_answers": [
+        "the bearing is closing",
+        "bearing is closing",
+        "bearing closing"
+      ],
+      "grammar_pattern": "bearing_report_basic",
+      "hint_beginner": "The bearing...",
+      "hint_intermediate": "bearing is closing",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_request_intention_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 28,
+      "topic": "traffic_intention",
+      "branch": "traffic_collision",
+      "module": "passing_arrangements",
+      "source_language": "ru",
+      "source_text": "Запрашиваю ваши намерения.",
+      "target_language": "en",
+      "target_text": "Request your intentions.",
+      "accepted_answers": [
+        "request your intentions",
+        "requesting your intentions",
+        "i request your intentions"
+      ],
+      "grammar_pattern": "traffic_request_basic",
+      "hint_beginner": "Request...",
+      "hint_intermediate": "your intentions",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_report_intention_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 28,
+      "topic": "traffic_intention",
+      "branch": "traffic_collision",
+      "module": "passing_arrangements",
+      "source_language": "ru",
+      "source_text": "Сообщите ваши намерения.",
+      "target_language": "en",
+      "target_text": "Report your intentions.",
+      "accepted_answers": [
+        "report your intentions",
+        "please report your intentions"
+      ],
+      "grammar_pattern": "traffic_request_basic",
+      "hint_beginner": "Report...",
+      "hint_intermediate": "your intentions",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_intend_pass_port_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 30,
+      "topic": "passing_arrangement",
+      "branch": "traffic_collision",
+      "module": "passing_arrangements",
+      "source_language": "ru",
+      "source_text": "Намереваюсь пройти по вашему левому борту.",
+      "target_language": "en",
+      "target_text": "I intend to pass on your port side.",
+      "accepted_answers": [
+        "i intend to pass on your port side",
+        "intend to pass on your port side",
+        "i will pass on your port side"
+      ],
+      "grammar_pattern": "passing_intention_side",
+      "hint_beginner": "I intend...",
+      "hint_intermediate": "your port side",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_intend_pass_starboard_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 30,
+      "topic": "passing_arrangement",
+      "branch": "traffic_collision",
+      "module": "passing_arrangements",
+      "source_language": "ru",
+      "source_text": "Намереваюсь пройти по вашему правому борту.",
+      "target_language": "en",
+      "target_text": "I intend to pass on your starboard side.",
+      "accepted_answers": [
+        "i intend to pass on your starboard side",
+        "intend to pass on your starboard side",
+        "i will pass on your starboard side"
+      ],
+      "grammar_pattern": "passing_intention_side",
+      "hint_beginner": "I intend...",
+      "hint_intermediate": "your starboard side",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_crossing_from_starboard_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 38,
+      "topic": "crossing_situation",
+      "branch": "traffic_collision",
+      "module": "overtaking_crossing",
+      "source_language": "ru",
+      "source_text": "Вы пересекаете мой курс с правого борта.",
+      "target_language": "en",
+      "target_text": "You are crossing from my starboard side.",
+      "accepted_answers": [
+        "you are crossing from my starboard side",
+        "you cross from my starboard side"
+      ],
+      "grammar_pattern": "crossing_report_basic",
+      "hint_beginner": "You are crossing...",
+      "hint_intermediate": "from my starboard side",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_crossing_from_port_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 38,
+      "topic": "crossing_situation",
+      "branch": "traffic_collision",
+      "module": "overtaking_crossing",
+      "source_language": "ru",
+      "source_text": "Вы пересекаете мой курс с левого борта.",
+      "target_language": "en",
+      "target_text": "You are crossing from my port side.",
+      "accepted_answers": [
+        "you are crossing from my port side",
+        "you cross from my port side"
+      ],
+      "grammar_pattern": "crossing_report_basic",
+      "hint_beginner": "You are crossing...",
+      "hint_intermediate": "from my port side",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_you_are_overtaking_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 36,
+      "topic": "overtaking_situation",
+      "branch": "traffic_collision",
+      "module": "overtaking_crossing",
+      "source_language": "ru",
+      "source_text": "Вы обгоняете меня.",
+      "target_language": "en",
+      "target_text": "You are overtaking me.",
+      "accepted_answers": [
+        "you are overtaking me",
+        "you overtake me"
+      ],
+      "grammar_pattern": "overtaking_report_basic",
+      "hint_beginner": "You are...",
+      "hint_intermediate": "overtaking me",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_i_am_overtaking_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 36,
+      "topic": "overtaking_situation",
+      "branch": "traffic_collision",
+      "module": "overtaking_crossing",
+      "source_language": "ru",
+      "source_text": "Я обгоняю вас.",
+      "target_language": "en",
+      "target_text": "I am overtaking you.",
+      "accepted_answers": [
+        "i am overtaking you",
+        "i overtake you"
+      ],
+      "grammar_pattern": "overtaking_report_basic",
+      "hint_beginner": "I am...",
+      "hint_intermediate": "overtaking you",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_traffic_take_early_action_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 39,
+      "topic": "collision_action",
+      "branch": "traffic_collision",
+      "module": "course_speed_action",
+      "source_language": "ru",
+      "source_text": "Я предприму заблаговременное действие.",
+      "target_language": "en",
+      "target_text": "I will take early action.",
+      "accepted_answers": [
+        "i will take early action",
+        "will take early action",
+        "i am taking early action"
+      ],
+      "grammar_pattern": "collision_action_future",
+      "hint_beginner": "I will take...",
+      "hint_intermediate": "early action",
+      "hint_advanced": ""
     }
   ],
   "grammar_patterns": [
@@ -6751,6 +7791,30 @@
       "slots": [],
       "examples": [
         "Safety warning read back complete."
+      ]
+    },
+    {
+      "id": "collision_action_future",
+      "pattern": "I will + collision-avoidance action",
+      "examples": [
+        "I will alter course to starboard.",
+        "I will keep clear."
+      ]
+    },
+    {
+      "id": "traffic_role_statement",
+      "pattern": "subject + be + traffic role",
+      "examples": [
+        "You are the give-way vessel.",
+        "I am the stand-on vessel."
+      ]
+    },
+    {
+      "id": "cpa_tcpa_report_basic",
+      "pattern": "My CPA/TCPA is + value",
+      "examples": [
+        "My CPA is one cable.",
+        "My TCPA is five minutes."
       ]
     }
   ],

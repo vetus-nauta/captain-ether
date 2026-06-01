@@ -1,7 +1,7 @@
 {
   "version": 1,
   "task_label": "2026-05-27-second-sea-speak-qa-pass",
-  "scope": "Captain Ether starter items, including Batch 001 core radio procedure, Batch 002 marina/harbour basics, and Batch 003 navigation reports after merge.",
+  "scope": "Captain Ether starter items, including Batch 001 core radio procedure, Batch 002 marina/harbour basics, Batch 003 navigation reports, Batch 004 safety warnings, Batch 005 urgency basics, and Batch 007 traffic/collision basics after merge.",
   "purpose": "Regression-oriented Sea Speak accept/reject pairs. These pairs protect against rejecting clear maritime meaning and against accepting changed maritime meaning.",
   "dangerous_minimal_pairs": [
     {
@@ -1746,6 +1746,502 @@
         ]
       },
       "reason": "Urgency details are operationally significant and must not be fuzzed or loosely substituted."
+    },
+    {
+      "pair": "port / starboard",
+      "items": [
+        "phrase_traffic_alter_starboard_001",
+        "phrase_traffic_alter_port_001",
+        "phrase_traffic_intend_pass_port_001",
+        "phrase_traffic_intend_pass_starboard_001",
+        "phrase_traffic_crossing_from_starboard_001",
+        "phrase_traffic_crossing_from_port_001"
+      ],
+      "must_accept": {
+        "phrase_traffic_alter_starboard_001": [
+          "I will alter course to starboard."
+        ],
+        "phrase_traffic_alter_port_001": [
+          "I will alter course to port."
+        ],
+        "phrase_traffic_intend_pass_port_001": [
+          "I intend to pass on your port side."
+        ],
+        "phrase_traffic_intend_pass_starboard_001": [
+          "I intend to pass on your starboard side."
+        ],
+        "phrase_traffic_crossing_from_starboard_001": [
+          "You are crossing from my starboard side."
+        ],
+        "phrase_traffic_crossing_from_port_001": [
+          "You are crossing from my port side."
+        ]
+      },
+      "must_reject": {
+        "phrase_traffic_alter_starboard_001": [
+          "alter course to port",
+          "turn right",
+          "change channel to starboard"
+        ],
+        "phrase_traffic_alter_port_001": [
+          "alter course to starboard",
+          "turn left",
+          "enter port"
+        ],
+        "phrase_traffic_intend_pass_port_001": [
+          "pass on your starboard side",
+          "pass port",
+          "enter port"
+        ],
+        "phrase_traffic_intend_pass_starboard_001": [
+          "pass on your port side",
+          "pass right",
+          "starboard only"
+        ],
+        "phrase_traffic_crossing_from_starboard_001": [
+          "you are crossing from my port side",
+          "you are overtaking me",
+          "you are on my right"
+        ],
+        "phrase_traffic_crossing_from_port_001": [
+          "you are crossing from my starboard side",
+          "you are overtaking me",
+          "you are on my left"
+        ]
+      },
+      "reason": "Port/starboard side and alteration cues must not collapse into ordinary right/left or opposite side."
+    },
+    {
+      "pair": "ahead / astern",
+      "items": [
+        "word_traffic_ahead_001",
+        "word_traffic_astern_001",
+        "expr_traffic_pass_astern_001",
+        "expr_traffic_pass_ahead_001",
+        "phrase_traffic_passing_astern_001",
+        "phrase_traffic_passing_ahead_001"
+      ],
+      "must_accept": {
+        "word_traffic_ahead_001": [
+          "ahead"
+        ],
+        "word_traffic_astern_001": [
+          "astern"
+        ],
+        "expr_traffic_pass_astern_001": [
+          "pass astern"
+        ],
+        "expr_traffic_pass_ahead_001": [
+          "pass ahead"
+        ],
+        "phrase_traffic_passing_astern_001": [
+          "I will pass astern of you."
+        ],
+        "phrase_traffic_passing_ahead_001": [
+          "I will pass ahead of you."
+        ]
+      },
+      "must_reject": {
+        "word_traffic_ahead_001": [
+          "astern",
+          "bow",
+          "forward"
+        ],
+        "word_traffic_astern_001": [
+          "stern",
+          "ahead",
+          "abaft"
+        ],
+        "expr_traffic_pass_astern_001": [
+          "pass ahead",
+          "pass alongside",
+          "astern"
+        ],
+        "expr_traffic_pass_ahead_001": [
+          "pass astern",
+          "pass behind",
+          "ahead"
+        ],
+        "phrase_traffic_passing_astern_001": [
+          "pass ahead of you",
+          "pass behind you",
+          "pass astern"
+        ],
+        "phrase_traffic_passing_ahead_001": [
+          "pass astern of you",
+          "pass in front",
+          "pass ahead"
+        ]
+      },
+      "reason": "Ahead and astern reverse the planned passing relation."
+    },
+    {
+      "pair": "stern / astern",
+      "items": [
+        "word_traffic_astern_001",
+        "phrase_traffic_passing_astern_001"
+      ],
+      "must_accept": {
+        "word_traffic_astern_001": [
+          "astern"
+        ],
+        "phrase_traffic_passing_astern_001": [
+          "I will pass astern of you."
+        ]
+      },
+      "must_reject": {
+        "word_traffic_astern_001": [
+          "stern",
+          "ahead",
+          "abaft"
+        ],
+        "phrase_traffic_passing_astern_001": [
+          "pass ahead of you",
+          "pass behind you",
+          "pass astern"
+        ]
+      },
+      "reason": "Stern is a vessel part; astern is a relative position behind the vessel."
+    },
+    {
+      "pair": "alter course / change channel",
+      "items": [
+        "expr_traffic_alter_course_001",
+        "phrase_traffic_alter_starboard_001"
+      ],
+      "must_accept": {
+        "expr_traffic_alter_course_001": [
+          "alter course"
+        ],
+        "phrase_traffic_alter_starboard_001": [
+          "I will alter course to starboard."
+        ]
+      },
+      "must_reject": {
+        "expr_traffic_alter_course_001": [
+          "change channel",
+          "alter speed",
+          "turn"
+        ],
+        "phrase_traffic_alter_starboard_001": [
+          "alter course to port",
+          "turn right",
+          "change channel to starboard"
+        ]
+      },
+      "reason": "Course alteration must not become radio channel switching."
+    },
+    {
+      "pair": "reduce speed / stop engine",
+      "items": [
+        "expr_traffic_reduce_speed_001",
+        "phrase_traffic_reducing_speed_001"
+      ],
+      "must_accept": {
+        "expr_traffic_reduce_speed_001": [
+          "reduce speed"
+        ],
+        "phrase_traffic_reducing_speed_001": [
+          "I am reducing speed."
+        ]
+      },
+      "must_reject": {
+        "expr_traffic_reduce_speed_001": [
+          "stop engine",
+          "increase speed",
+          "slow"
+        ],
+        "phrase_traffic_reducing_speed_001": [
+          "stop engine",
+          "increase speed",
+          "speed is five knots"
+        ]
+      },
+      "reason": "Speed reduction must not become stop-engine or speed-report wording."
+    },
+    {
+      "pair": "risk of collision / collision",
+      "items": [
+        "word_traffic_collision_001",
+        "expr_traffic_risk_collision_001",
+        "phrase_traffic_risk_exists_001"
+      ],
+      "must_accept": {
+        "word_traffic_collision_001": [
+          "collision"
+        ],
+        "expr_traffic_risk_collision_001": [
+          "risk of collision"
+        ],
+        "phrase_traffic_risk_exists_001": [
+          "Risk of collision exists."
+        ]
+      },
+      "must_reject": {
+        "word_traffic_collision_001": [
+          "risk of collision",
+          "near miss",
+          "contact"
+        ],
+        "expr_traffic_risk_collision_001": [
+          "collision",
+          "near collision",
+          "danger"
+        ],
+        "phrase_traffic_risk_exists_001": [
+          "collision exists",
+          "collision happened",
+          "near miss"
+        ]
+      },
+      "reason": "Collision-risk language must stay separate from an actual collision event."
+    },
+    {
+      "pair": "CPA / TCPA / ETA",
+      "items": [
+        "word_traffic_cpa_001",
+        "word_traffic_tcpa_001",
+        "expr_traffic_small_cpa_001",
+        "expr_traffic_short_tcpa_001",
+        "phrase_traffic_cpa_one_cable_001",
+        "phrase_traffic_tcpa_five_minutes_001"
+      ],
+      "must_accept": {
+        "word_traffic_cpa_001": [
+          "CPA"
+        ],
+        "word_traffic_tcpa_001": [
+          "TCPA"
+        ],
+        "expr_traffic_small_cpa_001": [
+          "small CPA"
+        ],
+        "expr_traffic_short_tcpa_001": [
+          "short TCPA"
+        ],
+        "phrase_traffic_cpa_one_cable_001": [
+          "My CPA is one cable."
+        ],
+        "phrase_traffic_tcpa_five_minutes_001": [
+          "My TCPA is five minutes."
+        ]
+      },
+      "must_reject": {
+        "word_traffic_cpa_001": [
+          "TCPA",
+          "distance",
+          "approach point"
+        ],
+        "word_traffic_tcpa_001": [
+          "CPA",
+          "time of arrival",
+          "eta"
+        ],
+        "expr_traffic_small_cpa_001": [
+          "small TCPA",
+          "short ETA",
+          "low speed"
+        ],
+        "expr_traffic_short_tcpa_001": [
+          "small CPA",
+          "short ETA",
+          "close distance"
+        ],
+        "phrase_traffic_cpa_one_cable_001": [
+          "my tcpa is one cable",
+          "my cpa is one mile",
+          "my eta is one cable"
+        ],
+        "phrase_traffic_tcpa_five_minutes_001": [
+          "my cpa is five minutes",
+          "my tcpa is five cables",
+          "my eta is five minutes"
+        ]
+      },
+      "reason": "Closest point, time to closest point, ETA, and units must remain item-specific."
+    },
+    {
+      "pair": "give-way vessel / stand-on vessel",
+      "items": [
+        "word_traffic_give_way_001",
+        "word_traffic_stand_on_001",
+        "phrase_traffic_give_way_you_001",
+        "phrase_traffic_stand_on_me_001"
+      ],
+      "must_accept": {
+        "word_traffic_give_way_001": [
+          "give-way vessel"
+        ],
+        "word_traffic_stand_on_001": [
+          "stand-on vessel"
+        ],
+        "phrase_traffic_give_way_you_001": [
+          "You are the give-way vessel."
+        ],
+        "phrase_traffic_stand_on_me_001": [
+          "I am the stand-on vessel."
+        ]
+      },
+      "must_reject": {
+        "word_traffic_give_way_001": [
+          "stand-on vessel",
+          "give way",
+          "way vessel"
+        ],
+        "word_traffic_stand_on_001": [
+          "give-way vessel",
+          "stand by",
+          "stand on"
+        ],
+        "phrase_traffic_give_way_you_001": [
+          "you are the stand-on vessel",
+          "give way",
+          "you stand by"
+        ],
+        "phrase_traffic_stand_on_me_001": [
+          "i am the give-way vessel",
+          "i stand by",
+          "i keep clear"
+        ]
+      },
+      "reason": "Give-way and stand-on roles carry opposite collision-avoidance duties."
+    },
+    {
+      "pair": "crossing / overtaking / passing",
+      "items": [
+        "word_traffic_crossing_001",
+        "word_traffic_overtaking_001",
+        "expr_traffic_crossing_vessel_001",
+        "expr_traffic_overtaking_vessel_001",
+        "phrase_traffic_crossing_from_starboard_001",
+        "phrase_traffic_crossing_from_port_001",
+        "phrase_traffic_you_are_overtaking_001",
+        "phrase_traffic_i_am_overtaking_001"
+      ],
+      "must_accept": {
+        "word_traffic_crossing_001": [
+          "crossing"
+        ],
+        "word_traffic_overtaking_001": [
+          "overtaking"
+        ],
+        "expr_traffic_crossing_vessel_001": [
+          "crossing vessel"
+        ],
+        "expr_traffic_overtaking_vessel_001": [
+          "overtaking vessel"
+        ],
+        "phrase_traffic_crossing_from_starboard_001": [
+          "You are crossing from my starboard side."
+        ],
+        "phrase_traffic_crossing_from_port_001": [
+          "You are crossing from my port side."
+        ],
+        "phrase_traffic_you_are_overtaking_001": [
+          "You are overtaking me."
+        ],
+        "phrase_traffic_i_am_overtaking_001": [
+          "I am overtaking you."
+        ]
+      },
+      "must_reject": {
+        "word_traffic_crossing_001": [
+          "overtaking",
+          "passing",
+          "meeting"
+        ],
+        "word_traffic_overtaking_001": [
+          "crossing",
+          "passing ahead",
+          "passing astern"
+        ],
+        "expr_traffic_crossing_vessel_001": [
+          "overtaking vessel",
+          "give-way vessel",
+          "vessel crossing"
+        ],
+        "expr_traffic_overtaking_vessel_001": [
+          "crossing vessel",
+          "passing vessel",
+          "vessel overtaking"
+        ],
+        "phrase_traffic_crossing_from_starboard_001": [
+          "you are crossing from my port side",
+          "you are overtaking me",
+          "you are on my right"
+        ],
+        "phrase_traffic_crossing_from_port_001": [
+          "you are crossing from my starboard side",
+          "you are overtaking me",
+          "you are on my left"
+        ],
+        "phrase_traffic_you_are_overtaking_001": [
+          "you are crossing me",
+          "you are passing astern",
+          "you are passing ahead"
+        ],
+        "phrase_traffic_i_am_overtaking_001": [
+          "i am crossing you",
+          "i will pass astern of you",
+          "i am passing ahead of you"
+        ]
+      },
+      "reason": "Traffic situation labels must not collapse across crossing, overtaking, and passing intentions."
+    },
+    {
+      "pair": "bearing / heading / course",
+      "items": [
+        "expr_traffic_relative_bearing_001",
+        "expr_traffic_constant_bearing_001",
+        "phrase_traffic_bearing_constant_001",
+        "phrase_traffic_bearing_opening_001",
+        "phrase_traffic_bearing_closing_001"
+      ],
+      "must_accept": {
+        "expr_traffic_relative_bearing_001": [
+          "relative bearing"
+        ],
+        "expr_traffic_constant_bearing_001": [
+          "constant bearing"
+        ],
+        "phrase_traffic_bearing_constant_001": [
+          "The bearing is constant."
+        ],
+        "phrase_traffic_bearing_opening_001": [
+          "The bearing is opening."
+        ],
+        "phrase_traffic_bearing_closing_001": [
+          "The bearing is closing."
+        ]
+      },
+      "must_reject": {
+        "expr_traffic_relative_bearing_001": [
+          "heading",
+          "course",
+          "true bearing"
+        ],
+        "expr_traffic_constant_bearing_001": [
+          "relative bearing",
+          "changing bearing",
+          "constant heading"
+        ],
+        "phrase_traffic_bearing_constant_001": [
+          "the heading is constant",
+          "bearing is changing",
+          "constant course"
+        ],
+        "phrase_traffic_bearing_opening_001": [
+          "bearing is constant",
+          "bearing is closing",
+          "course is opening"
+        ],
+        "phrase_traffic_bearing_closing_001": [
+          "bearing is opening",
+          "bearing is constant",
+          "course is closing"
+        ]
+      },
+      "reason": "Bearing observations must stay separate from heading and course wording."
     }
   ],
   "items": [
@@ -5282,6 +5778,662 @@
         "Read back Mayday details",
         "Read back Securite details"
       ]
+    },
+    {
+      "id": "word_traffic_collision_001",
+      "target_text": "collision",
+      "should_accept": [
+        "collision",
+        "COLLISION",
+        "collision."
+      ],
+      "should_reject": [
+        "risk of collision",
+        "near miss",
+        "contact"
+      ]
+    },
+    {
+      "id": "word_traffic_crossing_001",
+      "target_text": "crossing",
+      "should_accept": [
+        "crossing",
+        "CROSSING",
+        "crossing."
+      ],
+      "should_reject": [
+        "overtaking",
+        "passing",
+        "meeting"
+      ]
+    },
+    {
+      "id": "word_traffic_overtaking_001",
+      "target_text": "overtaking",
+      "should_accept": [
+        "overtaking",
+        "OVERTAKING",
+        "overtaking."
+      ],
+      "should_reject": [
+        "crossing",
+        "passing ahead",
+        "passing astern"
+      ]
+    },
+    {
+      "id": "word_traffic_astern_001",
+      "target_text": "astern",
+      "should_accept": [
+        "astern",
+        "ASTERN",
+        "astern."
+      ],
+      "should_reject": [
+        "stern",
+        "ahead",
+        "abaft"
+      ]
+    },
+    {
+      "id": "word_traffic_ahead_001",
+      "target_text": "ahead",
+      "should_accept": [
+        "ahead",
+        "AHEAD",
+        "ahead."
+      ],
+      "should_reject": [
+        "astern",
+        "bow",
+        "forward"
+      ]
+    },
+    {
+      "id": "word_traffic_give_way_001",
+      "target_text": "give-way vessel",
+      "should_accept": [
+        "give-way vessel",
+        "give way vessel"
+      ],
+      "should_reject": [
+        "stand-on vessel",
+        "give way",
+        "way vessel"
+      ]
+    },
+    {
+      "id": "word_traffic_stand_on_001",
+      "target_text": "stand-on vessel",
+      "should_accept": [
+        "stand-on vessel",
+        "stand on vessel"
+      ],
+      "should_reject": [
+        "give-way vessel",
+        "stand by",
+        "stand on"
+      ]
+    },
+    {
+      "id": "word_traffic_cpa_001",
+      "target_text": "CPA",
+      "should_accept": [
+        "CPA",
+        "cpa",
+        "closest point of approach"
+      ],
+      "should_reject": [
+        "TCPA",
+        "distance",
+        "approach point"
+      ]
+    },
+    {
+      "id": "word_traffic_tcpa_001",
+      "target_text": "TCPA",
+      "should_accept": [
+        "TCPA",
+        "tcpa",
+        "time to closest point of approach"
+      ],
+      "should_reject": [
+        "CPA",
+        "time of arrival",
+        "eta"
+      ]
+    },
+    {
+      "id": "word_traffic_action_001",
+      "target_text": "action",
+      "should_accept": [
+        "action",
+        "ACTION",
+        "action."
+      ],
+      "should_reject": [
+        "reaction",
+        "instruction",
+        "advice"
+      ]
+    },
+    {
+      "id": "expr_traffic_risk_collision_001",
+      "target_text": "risk of collision",
+      "should_accept": [
+        "risk of collision",
+        "collision risk"
+      ],
+      "should_reject": [
+        "collision",
+        "near collision",
+        "danger"
+      ]
+    },
+    {
+      "id": "expr_traffic_close_quarters_001",
+      "target_text": "close-quarters situation",
+      "should_accept": [
+        "close-quarters situation",
+        "close quarters situation"
+      ],
+      "should_reject": [
+        "collision",
+        "near miss",
+        "close to shore"
+      ]
+    },
+    {
+      "id": "expr_traffic_keep_clear_001",
+      "target_text": "keep clear",
+      "should_accept": [
+        "keep clear",
+        "keep well clear"
+      ],
+      "should_reject": [
+        "stay away",
+        "move away",
+        "clear out"
+      ]
+    },
+    {
+      "id": "expr_traffic_alter_course_001",
+      "target_text": "alter course",
+      "should_accept": [
+        "alter course",
+        "change course"
+      ],
+      "should_reject": [
+        "change channel",
+        "alter speed",
+        "turn"
+      ]
+    },
+    {
+      "id": "expr_traffic_reduce_speed_001",
+      "target_text": "reduce speed",
+      "should_accept": [
+        "reduce speed",
+        "reduce my speed"
+      ],
+      "should_reject": [
+        "stop engine",
+        "increase speed",
+        "slow"
+      ]
+    },
+    {
+      "id": "expr_traffic_pass_astern_001",
+      "target_text": "pass astern",
+      "should_accept": [
+        "pass astern",
+        "passing astern"
+      ],
+      "should_reject": [
+        "pass ahead",
+        "pass alongside",
+        "astern"
+      ]
+    },
+    {
+      "id": "expr_traffic_pass_ahead_001",
+      "target_text": "pass ahead",
+      "should_accept": [
+        "pass ahead",
+        "passing ahead"
+      ],
+      "should_reject": [
+        "pass astern",
+        "pass behind",
+        "ahead"
+      ]
+    },
+    {
+      "id": "expr_traffic_crossing_vessel_001",
+      "target_text": "crossing vessel",
+      "should_accept": [
+        "crossing vessel",
+        "CROSSING VESSEL"
+      ],
+      "should_reject": [
+        "overtaking vessel",
+        "give-way vessel",
+        "vessel crossing"
+      ]
+    },
+    {
+      "id": "expr_traffic_overtaking_vessel_001",
+      "target_text": "overtaking vessel",
+      "should_accept": [
+        "overtaking vessel",
+        "OVERTAKING VESSEL"
+      ],
+      "should_reject": [
+        "crossing vessel",
+        "passing vessel",
+        "vessel overtaking"
+      ]
+    },
+    {
+      "id": "expr_traffic_safe_distance_001",
+      "target_text": "safe distance",
+      "should_accept": [
+        "safe distance",
+        "safe passing distance"
+      ],
+      "should_reject": [
+        "distance",
+        "close distance",
+        "safe speed"
+      ]
+    },
+    {
+      "id": "expr_traffic_early_action_001",
+      "target_text": "early action",
+      "should_accept": [
+        "early action",
+        "take early action"
+      ],
+      "should_reject": [
+        "late action",
+        "small action",
+        "reaction"
+      ]
+    },
+    {
+      "id": "expr_traffic_substantial_action_001",
+      "target_text": "substantial action",
+      "should_accept": [
+        "substantial action",
+        "SUBSTANTIAL ACTION"
+      ],
+      "should_reject": [
+        "small action",
+        "early action",
+        "minor alteration"
+      ]
+    },
+    {
+      "id": "expr_traffic_safe_passing_001",
+      "target_text": "safe passing",
+      "should_accept": [
+        "safe passing",
+        "safe pass"
+      ],
+      "should_reject": [
+        "passing",
+        "unsafe passing",
+        "safe speed"
+      ]
+    },
+    {
+      "id": "expr_traffic_relative_bearing_001",
+      "target_text": "relative bearing",
+      "should_accept": [
+        "relative bearing",
+        "RELATIVE BEARING"
+      ],
+      "should_reject": [
+        "heading",
+        "course",
+        "true bearing"
+      ]
+    },
+    {
+      "id": "expr_traffic_constant_bearing_001",
+      "target_text": "constant bearing",
+      "should_accept": [
+        "constant bearing",
+        "CONSTANT BEARING"
+      ],
+      "should_reject": [
+        "relative bearing",
+        "changing bearing",
+        "constant heading"
+      ]
+    },
+    {
+      "id": "expr_traffic_small_cpa_001",
+      "target_text": "small CPA",
+      "should_accept": [
+        "small CPA",
+        "small cpa"
+      ],
+      "should_reject": [
+        "small TCPA",
+        "short ETA",
+        "low speed"
+      ]
+    },
+    {
+      "id": "expr_traffic_short_tcpa_001",
+      "target_text": "short TCPA",
+      "should_accept": [
+        "short TCPA",
+        "short tcpa"
+      ],
+      "should_reject": [
+        "small CPA",
+        "short ETA",
+        "close distance"
+      ]
+    },
+    {
+      "id": "phrase_traffic_alter_starboard_001",
+      "target_text": "I will alter course to starboard.",
+      "should_accept": [
+        "I will alter course to starboard.",
+        "alter course to starboard"
+      ],
+      "should_reject": [
+        "alter course to port",
+        "turn right",
+        "change channel to starboard"
+      ]
+    },
+    {
+      "id": "phrase_traffic_alter_port_001",
+      "target_text": "I will alter course to port.",
+      "should_accept": [
+        "I will alter course to port.",
+        "alter course to port"
+      ],
+      "should_reject": [
+        "alter course to starboard",
+        "turn left",
+        "enter port"
+      ]
+    },
+    {
+      "id": "phrase_traffic_reducing_speed_001",
+      "target_text": "I am reducing speed.",
+      "should_accept": [
+        "I am reducing speed.",
+        "reduce speed"
+      ],
+      "should_reject": [
+        "stop engine",
+        "increase speed",
+        "speed is five knots"
+      ]
+    },
+    {
+      "id": "phrase_traffic_passing_astern_001",
+      "target_text": "I will pass astern of you.",
+      "should_accept": [
+        "I will pass astern of you.",
+        "pass astern of your vessel"
+      ],
+      "should_reject": [
+        "pass ahead of you",
+        "pass behind you",
+        "pass astern"
+      ]
+    },
+    {
+      "id": "phrase_traffic_passing_ahead_001",
+      "target_text": "I will pass ahead of you.",
+      "should_accept": [
+        "I will pass ahead of you.",
+        "pass ahead of your vessel"
+      ],
+      "should_reject": [
+        "pass astern of you",
+        "pass in front",
+        "pass ahead"
+      ]
+    },
+    {
+      "id": "phrase_traffic_keep_clear_001",
+      "target_text": "Keep clear of me.",
+      "should_accept": [
+        "Keep clear of me.",
+        "keep clear of my vessel"
+      ],
+      "should_reject": [
+        "stay away",
+        "move away from me",
+        "clear me"
+      ]
+    },
+    {
+      "id": "phrase_traffic_give_way_you_001",
+      "target_text": "You are the give-way vessel.",
+      "should_accept": [
+        "You are the give-way vessel.",
+        "you are the give way vessel"
+      ],
+      "should_reject": [
+        "you are the stand-on vessel",
+        "give way",
+        "you stand by"
+      ]
+    },
+    {
+      "id": "phrase_traffic_stand_on_me_001",
+      "target_text": "I am the stand-on vessel.",
+      "should_accept": [
+        "I am the stand-on vessel.",
+        "i am the stand on vessel"
+      ],
+      "should_reject": [
+        "i am the give-way vessel",
+        "i stand by",
+        "i keep clear"
+      ]
+    },
+    {
+      "id": "phrase_traffic_risk_exists_001",
+      "target_text": "Risk of collision exists.",
+      "should_accept": [
+        "Risk of collision exists.",
+        "there is a risk of collision"
+      ],
+      "should_reject": [
+        "collision exists",
+        "collision happened",
+        "near miss"
+      ]
+    },
+    {
+      "id": "phrase_traffic_cpa_one_cable_001",
+      "target_text": "My CPA is one cable.",
+      "should_accept": [
+        "My CPA is one cable.",
+        "CPA is one cable"
+      ],
+      "should_reject": [
+        "my tcpa is one cable",
+        "my cpa is one mile",
+        "my eta is one cable"
+      ]
+    },
+    {
+      "id": "phrase_traffic_tcpa_five_minutes_001",
+      "target_text": "My TCPA is five minutes.",
+      "should_accept": [
+        "My TCPA is five minutes.",
+        "TCPA is five minutes"
+      ],
+      "should_reject": [
+        "my cpa is five minutes",
+        "my tcpa is five cables",
+        "my eta is five minutes"
+      ]
+    },
+    {
+      "id": "phrase_traffic_bearing_constant_001",
+      "target_text": "The bearing is constant.",
+      "should_accept": [
+        "The bearing is constant.",
+        "bearing is constant"
+      ],
+      "should_reject": [
+        "the heading is constant",
+        "bearing is changing",
+        "constant course"
+      ]
+    },
+    {
+      "id": "phrase_traffic_bearing_opening_001",
+      "target_text": "The bearing is opening.",
+      "should_accept": [
+        "The bearing is opening.",
+        "bearing is opening"
+      ],
+      "should_reject": [
+        "bearing is constant",
+        "bearing is closing",
+        "course is opening"
+      ]
+    },
+    {
+      "id": "phrase_traffic_bearing_closing_001",
+      "target_text": "The bearing is closing.",
+      "should_accept": [
+        "The bearing is closing.",
+        "bearing is closing"
+      ],
+      "should_reject": [
+        "bearing is opening",
+        "bearing is constant",
+        "course is closing"
+      ]
+    },
+    {
+      "id": "phrase_traffic_request_intention_001",
+      "target_text": "Request your intentions.",
+      "should_accept": [
+        "Request your intentions.",
+        "requesting your intentions"
+      ],
+      "should_reject": [
+        "report your intentions",
+        "request your position",
+        "what are you doing"
+      ]
+    },
+    {
+      "id": "phrase_traffic_report_intention_001",
+      "target_text": "Report your intentions.",
+      "should_accept": [
+        "Report your intentions.",
+        "please report your intentions"
+      ],
+      "should_reject": [
+        "request your intentions",
+        "report your position",
+        "say again"
+      ]
+    },
+    {
+      "id": "phrase_traffic_intend_pass_port_001",
+      "target_text": "I intend to pass on your port side.",
+      "should_accept": [
+        "I intend to pass on your port side.",
+        "I will pass on your port side."
+      ],
+      "should_reject": [
+        "pass on your starboard side",
+        "pass port",
+        "enter port"
+      ]
+    },
+    {
+      "id": "phrase_traffic_intend_pass_starboard_001",
+      "target_text": "I intend to pass on your starboard side.",
+      "should_accept": [
+        "I intend to pass on your starboard side.",
+        "I will pass on your starboard side."
+      ],
+      "should_reject": [
+        "pass on your port side",
+        "pass right",
+        "starboard only"
+      ]
+    },
+    {
+      "id": "phrase_traffic_crossing_from_starboard_001",
+      "target_text": "You are crossing from my starboard side.",
+      "should_accept": [
+        "You are crossing from my starboard side."
+      ],
+      "should_reject": [
+        "you are crossing from my port side",
+        "you are overtaking me",
+        "you are on my right"
+      ]
+    },
+    {
+      "id": "phrase_traffic_crossing_from_port_001",
+      "target_text": "You are crossing from my port side.",
+      "should_accept": [
+        "You are crossing from my port side."
+      ],
+      "should_reject": [
+        "you are crossing from my starboard side",
+        "you are overtaking me",
+        "you are on my left"
+      ]
+    },
+    {
+      "id": "phrase_traffic_you_are_overtaking_001",
+      "target_text": "You are overtaking me.",
+      "should_accept": [
+        "You are overtaking me.",
+        "you overtake me"
+      ],
+      "should_reject": [
+        "you are crossing me",
+        "you are passing astern",
+        "you are passing ahead"
+      ]
+    },
+    {
+      "id": "phrase_traffic_i_am_overtaking_001",
+      "target_text": "I am overtaking you.",
+      "should_accept": [
+        "I am overtaking you.",
+        "i overtake you"
+      ],
+      "should_reject": [
+        "i am crossing you",
+        "i will pass astern of you",
+        "i am passing ahead of you"
+      ]
+    },
+    {
+      "id": "phrase_traffic_take_early_action_001",
+      "target_text": "I will take early action.",
+      "should_accept": [
+        "I will take early action.",
+        "I am taking early action."
+      ],
+      "should_reject": [
+        "i will take late action",
+        "i will take small action",
+        "i will wait"
+      ]
     }
   ],
   "matcher_suggestions": [
@@ -5293,7 +6445,8 @@
     "Marker nouns must not accept verb-form lookalikes through typo matching, for example advice versus advise.",
     "Harbour lookalikes must not pass through typo matching: berth versus birth, fender versus finder, and fenders versus finders.",
     "Keep compact berth identifiers such as B12 rejected until alphanumeric berth matching is intentionally designed and regression-tested.",
-    "Navigation reports must keep heading/course/bearing, ETA values, radio numeric forms, units, decimal wording, cardinal directions, port/starboard, and say again/read back boundaries protected."
+    "Navigation reports must keep heading/course/bearing, ETA values, radio numeric forms, units, decimal wording, cardinal directions, port/starboard, and say again/read back boundaries protected.",
+    "Traffic/collision matching must preserve port/starboard, ahead/astern, CPA/TCPA/ETA, give-way/stand-on roles, crossing/overtaking/passing, and bearing/heading/course distinctions."
   ],
   "current_matcher_findings": [],
   "resolved_matcher_findings": [

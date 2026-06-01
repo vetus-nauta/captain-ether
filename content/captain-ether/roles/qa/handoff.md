@@ -6,7 +6,25 @@ Use only after Director-Engineer names the exact target and test type.
 
 ## Current Prepared QA
 
-None.
+TASK-CE-0049 Batch 007 post-merge QA:
+
+- mode:
+  local post-merge verification
+- target:
+  `content/captain-ether/starter.json`,
+  `content/captain-ether/accept-reject-qa-pairs.json`, and
+  `content/captain-ether/batches/batch-007-traffic-collision-basics.json`
+- source sprint:
+  `content/captain-ether/roles/director-engineer/reports/sprint-ce-0048-batch-007-merge-preparation-2026-06-01.md`
+- required focus:
+  merged `traffic_collision` reachability, Batch 007 regression rows,
+  dangerous-pair coverage for port/starboard, ahead/astern, CPA/TCPA/ETA,
+  give-way/stand-on, crossing/overtaking/passing, and bearing/heading/course;
+  confirm no `qa_notes` exist in playable `starter.json`.
+- forbidden:
+  production deploy, Atlas config/data writes, auth/platform,
+  router/registry, Watch Officer, Nav Desk, matcher/API/UI changes, secrets,
+  sessions, cookies, CSRF, SMTP, player email, or player identity data.
 
 ## Last QA
 
