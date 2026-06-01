@@ -1,7 +1,7 @@
 {
   "version": 1,
   "batch_id": "batch-008-vts-port-control-basics",
-  "status": "draft",
+  "status": "linguist_reviewed",
   "date": "2026-06-01",
   "branch": "vts_port_control",
   "scope": "VTS, port-control, pilot, tug, and traffic-authority communication for M3 corpus growth.",
@@ -1364,8 +1364,7 @@
       "target_language": "en",
       "target_text": "Traffic information: vessel crossing ahead.",
       "accepted_answers": [
-        "traffic information vessel crossing ahead",
-        "traffic information traffic crossing ahead"
+        "traffic information vessel crossing ahead"
       ],
       "grammar_pattern": "vts_traffic_information_report",
       "hint_beginner": "Traffic information: vessel...",
@@ -2272,10 +2271,10 @@
     }
   ],
   "producer_notes": {
-    "status": "draft; not linguist reviewed; not merged into starter.json",
+    "status": "linguist reviewed; not merged into starter.json",
     "learner_source_language": "ru",
     "target_language": "en",
-    "next_gate": "Sea Speak Linguist VTS / port-control risk review before engineering gate or playable merge",
+    "next_gate": "Director-Engineer engineering gate before QA or playable merge",
     "open_questions": [
       "Confirm whether VTS and Port Control should both be trained as station identities in this beginner/intermediate batch.",
       "Confirm whether request clearance and request permission should both be accepted item-locally for port entry/departure.",
@@ -2294,6 +2293,26 @@
       "channel 12 / 13 / 16 / 72",
       "proceed / hold / wait",
       "inbound / outbound"
-    ]
+    ],
+    "linguist_review": {
+      "date": "2026-06-01",
+      "report": "content/captain-ether/roles/sea-speak-linguist/reports/batch-008-vts-port-control-risk-review-2026-06-01.md",
+      "decisions": [
+        "Keep VTS and Port Control as separate trainable station identities; reject marina control and pilot station substitutions.",
+        "Keep request clearance and request permission as item-local accepted variants for port entry/departure requests only.",
+        "Keep pilot, tug, and tow boundaries strict; tug assistance is not pilot assistance or towing assistance in this batch.",
+        "Keep keep listening watch as a valid VTS-context expression while rejecting stand by, go ahead, and stop transmitting for that item.",
+        "Keep port closed rejected for the item Port entry is not permitted; the item trains permission/refusal wording, not a general closure notice.",
+        "Remove nonstandard accepted variant traffic information traffic crossing ahead from the vessel-crossing traffic-information item."
+      ],
+      "content_patches": [
+        {
+          "item_id": "phrase_vts_traffic_crossing_ahead_001",
+          "field": "accepted_answers",
+          "removed": "traffic information traffic crossing ahead",
+          "reason": "Nonstandard duplicated wording; canonical vessel-crossing wording remains accepted."
+        }
+      ]
+    }
   }
 }
