@@ -3750,6 +3750,284 @@
         ]
       },
       "reason": "Give way and stand on are opposite traffic obligations."
+    },
+    {
+      "pair": "engine / steering / battery",
+      "items": [
+        "word_urgency_engine_001",
+        "word_urgency_steering_001",
+        "word_urgency_battery_001"
+      ],
+      "must_accept": {
+        "word_urgency_engine_001": [
+          "engine"
+        ],
+        "word_urgency_steering_001": [
+          "steering"
+        ],
+        "word_urgency_battery_001": [
+          "battery"
+        ]
+      },
+      "must_reject": {
+        "word_urgency_engine_001": [
+          "steering",
+          "battery",
+          "pump"
+        ],
+        "word_urgency_steering_001": [
+          "engine",
+          "rudder",
+          "helm order"
+        ],
+        "word_urgency_battery_001": [
+          "fuel",
+          "engine",
+          "radio"
+        ]
+      },
+      "reason": "Equipment components and systems must not collapse."
+    },
+    {
+      "pair": "engine failure / steering failure / fire",
+      "items": [
+        "expr_urgency_engine_failure_002",
+        "expr_urgency_steering_failure_002",
+        "phrase_urgency_engine_failure_no_danger_001"
+      ],
+      "must_accept": {
+        "expr_urgency_engine_failure_002": [
+          "engine failure"
+        ],
+        "expr_urgency_steering_failure_002": [
+          "steering failure"
+        ],
+        "phrase_urgency_engine_failure_no_danger_001": [
+          "Engine failure, no immediate danger."
+        ]
+      },
+      "must_reject": {
+        "expr_urgency_engine_failure_002": [
+          "steering failure",
+          "engine running",
+          "fire on board"
+        ],
+        "expr_urgency_steering_failure_002": [
+          "engine failure",
+          "rudder midships",
+          "helm to port"
+        ],
+        "phrase_urgency_engine_failure_no_danger_001": [
+          "Engine failure, immediate danger",
+          "Fire on board, no immediate danger",
+          "Engine running no danger"
+        ]
+      },
+      "reason": "Failure type and distress fire wording must stay strict."
+    },
+    {
+      "pair": "low battery / low fuel / radio check",
+      "items": [
+        "expr_urgency_low_battery_001",
+        "expr_urgency_low_fuel_001",
+        "phrase_urgency_low_battery_radio_limited_001"
+      ],
+      "must_accept": {
+        "expr_urgency_low_battery_001": [
+          "low battery"
+        ],
+        "expr_urgency_low_fuel_001": [
+          "low fuel"
+        ],
+        "phrase_urgency_low_battery_radio_limited_001": [
+          "Low battery, radio limited."
+        ]
+      },
+      "must_reject": {
+        "expr_urgency_low_battery_001": [
+          "low fuel",
+          "battery full",
+          "radio check"
+        ],
+        "expr_urgency_low_fuel_001": [
+          "low battery",
+          "fuel berth",
+          "no fuel required"
+        ],
+        "phrase_urgency_low_battery_radio_limited_001": [
+          "Low fuel radio limited",
+          "Radio check",
+          "Battery full radio normal"
+        ]
+      },
+      "reason": "Resource and radio-status issues are distinct."
+    },
+    {
+      "pair": "advice / assistance / rescue",
+      "items": [
+        "word_urgency_advice_001",
+        "expr_urgency_advice_needed_001",
+        "phrase_urgency_medical_advice_needed_001"
+      ],
+      "must_accept": {
+        "word_urgency_advice_001": [
+          "advice"
+        ],
+        "expr_urgency_advice_needed_001": [
+          "advice needed"
+        ],
+        "phrase_urgency_medical_advice_needed_001": [
+          "Medical advice needed."
+        ]
+      },
+      "must_reject": {
+        "word_urgency_advice_001": [
+          "assistance",
+          "rescue",
+          "advise"
+        ],
+        "expr_urgency_advice_needed_001": [
+          "assistance needed",
+          "rescue needed",
+          "doctor on board"
+        ],
+        "phrase_urgency_medical_advice_needed_001": [
+          "Medical assistance required",
+          "Immediate medical assistance",
+          "Rescue required"
+        ]
+      },
+      "reason": "Advice, assistance, and rescue carry different urgency levels."
+    },
+    {
+      "pair": "towage / rescue / pilotage / berth",
+      "items": [
+        "word_urgency_towage_001",
+        "expr_urgency_tow_required_002",
+        "phrase_urgency_tow_to_nearest_port_001"
+      ],
+      "must_accept": {
+        "word_urgency_towage_001": [
+          "towage"
+        ],
+        "expr_urgency_tow_required_002": [
+          "tow required"
+        ],
+        "phrase_urgency_tow_to_nearest_port_001": [
+          "Request tow to nearest port."
+        ]
+      },
+      "must_reject": {
+        "word_urgency_towage_001": [
+          "rescue",
+          "pilotage",
+          "berthing"
+        ],
+        "expr_urgency_tow_required_002": [
+          "rescue required",
+          "pilot required",
+          "berth required"
+        ],
+        "phrase_urgency_tow_to_nearest_port_001": [
+          "Request rescue to nearest port",
+          "Request pilot to nearest port",
+          "Request berth at nearest port"
+        ]
+      },
+      "reason": "Towage remains separate from distress rescue and port services."
+    },
+    {
+      "pair": "not in distress / in distress / Mayday",
+      "items": [
+        "expr_urgency_not_in_distress_001",
+        "expr_urgency_no_immediate_danger_001",
+        "phrase_urgency_adrift_not_in_distress_001"
+      ],
+      "must_accept": {
+        "expr_urgency_not_in_distress_001": [
+          "not in distress"
+        ],
+        "expr_urgency_no_immediate_danger_001": [
+          "no immediate danger"
+        ],
+        "phrase_urgency_adrift_not_in_distress_001": [
+          "Vessel adrift, not in distress."
+        ]
+      },
+      "must_reject": {
+        "expr_urgency_not_in_distress_001": [
+          "in distress",
+          "Mayday",
+          "distress alert"
+        ],
+        "expr_urgency_no_immediate_danger_001": [
+          "immediate danger",
+          "danger of collision",
+          "Mayday"
+        ],
+        "phrase_urgency_adrift_not_in_distress_001": [
+          "Vessel adrift in distress",
+          "Vessel aground not in distress",
+          "Vessel sinking not in distress"
+        ]
+      },
+      "reason": "Pan-Pan/non-distress boundary depends on strict negation."
+    },
+    {
+      "pair": "Pan-Pan / Mayday / Securite equipment message",
+      "items": [
+        "phrase_urgency_panpan_equipment_failure_001",
+        "phrase_urgency_cancel_panpan_001"
+      ],
+      "must_accept": {
+        "phrase_urgency_panpan_equipment_failure_001": [
+          "Pan-Pan, equipment failure."
+        ],
+        "phrase_urgency_cancel_panpan_001": [
+          "Cancel Pan-Pan, assistance no longer required."
+        ]
+      },
+      "must_reject": {
+        "phrase_urgency_panpan_equipment_failure_001": [
+          "Mayday equipment failure",
+          "Securite equipment failure",
+          "Pan-Pan fire on board"
+        ],
+        "phrase_urgency_cancel_panpan_001": [
+          "Cancel Mayday assistance no longer required",
+          "Cancel Securite",
+          "Pan-Pan assistance required"
+        ]
+      },
+      "reason": "Urgency signal and cancellation must not accept distress or safety signals."
+    },
+    {
+      "pair": "disabled vessel / distressed vessel / vessel aground",
+      "items": [
+        "expr_urgency_disabled_vessel_002",
+        "phrase_urgency_position_disabled_vessel_001"
+      ],
+      "must_accept": {
+        "expr_urgency_disabled_vessel_002": [
+          "disabled vessel"
+        ],
+        "phrase_urgency_position_disabled_vessel_001": [
+          "Disabled vessel position bearing zero nine zero, two miles from the lighthouse."
+        ]
+      },
+      "must_reject": {
+        "expr_urgency_disabled_vessel_002": [
+          "distressed vessel",
+          "vessel sinking",
+          "vessel aground"
+        ],
+        "phrase_urgency_position_disabled_vessel_001": [
+          "Distressed vessel position bearing zero nine zero",
+          "Disabled vessel course zero nine zero",
+          "Disabled vessel position bearing one eight zero"
+        ]
+      },
+      "reason": "Vessel status, report object, and bearing values must remain exact."
     }
   ],
   "items": [
@@ -10095,6 +10373,396 @@
         "stand on",
         "keep course",
         "maintain speed"
+      ]
+    },
+    {
+      "id": "word_urgency_engine_001",
+      "target_text": "engine",
+      "should_accept": [
+        "engine",
+        "ENGINE"
+      ],
+      "should_reject": [
+        "steering",
+        "battery",
+        "pump"
+      ]
+    },
+    {
+      "id": "word_urgency_steering_001",
+      "target_text": "steering",
+      "should_accept": [
+        "steering",
+        "STEERING"
+      ],
+      "should_reject": [
+        "engine",
+        "rudder",
+        "helm order"
+      ]
+    },
+    {
+      "id": "word_urgency_battery_001",
+      "target_text": "battery",
+      "should_accept": [
+        "battery",
+        "BATTERY"
+      ],
+      "should_reject": [
+        "fuel",
+        "engine",
+        "radio"
+      ]
+    },
+    {
+      "id": "word_urgency_adrift_001",
+      "target_text": "adrift",
+      "should_accept": [
+        "adrift",
+        "ADRIFT"
+      ],
+      "should_reject": [
+        "aground",
+        "sinking",
+        "anchored"
+      ]
+    },
+    {
+      "id": "word_urgency_towage_001",
+      "target_text": "towage",
+      "should_accept": [
+        "towage",
+        "towing"
+      ],
+      "should_reject": [
+        "rescue",
+        "pilotage",
+        "berthing"
+      ]
+    },
+    {
+      "id": "word_urgency_advice_001",
+      "target_text": "advice",
+      "should_accept": [
+        "advice",
+        "ADVICE"
+      ],
+      "should_reject": [
+        "assistance",
+        "rescue",
+        "advise"
+      ]
+    },
+    {
+      "id": "expr_urgency_engine_failure_002",
+      "target_text": "engine failure",
+      "should_accept": [
+        "engine failure",
+        "engine failed"
+      ],
+      "should_reject": [
+        "steering failure",
+        "engine running",
+        "fire on board"
+      ]
+    },
+    {
+      "id": "expr_urgency_steering_failure_002",
+      "target_text": "steering failure",
+      "should_accept": [
+        "steering failure",
+        "steering failed"
+      ],
+      "should_reject": [
+        "engine failure",
+        "rudder midships",
+        "helm to port"
+      ]
+    },
+    {
+      "id": "expr_urgency_power_failure_001",
+      "target_text": "power failure",
+      "should_accept": [
+        "power failure",
+        "electrical failure"
+      ],
+      "should_reject": [
+        "engine failure",
+        "shore power",
+        "battery charged"
+      ]
+    },
+    {
+      "id": "expr_urgency_low_battery_001",
+      "target_text": "low battery",
+      "should_accept": [
+        "low battery",
+        "battery low"
+      ],
+      "should_reject": [
+        "low fuel",
+        "battery full",
+        "radio check"
+      ]
+    },
+    {
+      "id": "expr_urgency_low_fuel_001",
+      "target_text": "low fuel",
+      "should_accept": [
+        "low fuel",
+        "fuel low"
+      ],
+      "should_reject": [
+        "low battery",
+        "fuel berth",
+        "no fuel required"
+      ]
+    },
+    {
+      "id": "expr_urgency_advice_needed_001",
+      "target_text": "advice needed",
+      "should_accept": [
+        "advice needed",
+        "need advice"
+      ],
+      "should_reject": [
+        "assistance needed",
+        "rescue needed",
+        "doctor on board"
+      ]
+    },
+    {
+      "id": "expr_urgency_tow_required_002",
+      "target_text": "tow required",
+      "should_accept": [
+        "tow required",
+        "towage required"
+      ],
+      "should_reject": [
+        "rescue required",
+        "pilot required",
+        "berth required"
+      ]
+    },
+    {
+      "id": "expr_urgency_not_in_distress_001",
+      "target_text": "not in distress",
+      "should_accept": [
+        "not in distress",
+        "not distress"
+      ],
+      "should_reject": [
+        "in distress",
+        "Mayday",
+        "distress alert"
+      ]
+    },
+    {
+      "id": "expr_urgency_disabled_vessel_002",
+      "target_text": "disabled vessel",
+      "should_accept": [
+        "disabled vessel",
+        "vessel disabled"
+      ],
+      "should_reject": [
+        "distressed vessel",
+        "vessel sinking",
+        "vessel aground"
+      ]
+    },
+    {
+      "id": "expr_urgency_no_immediate_danger_001",
+      "target_text": "no immediate danger",
+      "should_accept": [
+        "no immediate danger",
+        "no imminent danger"
+      ],
+      "should_reject": [
+        "immediate danger",
+        "danger of collision",
+        "Mayday"
+      ]
+    },
+    {
+      "id": "phrase_urgency_panpan_equipment_failure_001",
+      "target_text": "Pan-Pan, equipment failure.",
+      "should_accept": [
+        "Pan-Pan, equipment failure.",
+        "Pan Pan equipment failure"
+      ],
+      "should_reject": [
+        "Mayday equipment failure",
+        "Securite equipment failure",
+        "Pan-Pan fire on board"
+      ]
+    },
+    {
+      "id": "phrase_urgency_engine_failure_no_danger_001",
+      "target_text": "Engine failure, no immediate danger.",
+      "should_accept": [
+        "Engine failure, no immediate danger.",
+        "Engine failed, no immediate danger."
+      ],
+      "should_reject": [
+        "Engine failure, immediate danger",
+        "Fire on board, no immediate danger",
+        "Engine running no danger"
+      ]
+    },
+    {
+      "id": "phrase_urgency_steering_failure_tow_required_001",
+      "target_text": "Steering failure, towage required.",
+      "should_accept": [
+        "Steering failure, towage required.",
+        "Steering failed, tow required."
+      ],
+      "should_reject": [
+        "Engine failure towage required",
+        "Steering failure rescue required",
+        "Helm to port towage required"
+      ]
+    },
+    {
+      "id": "phrase_urgency_adrift_not_in_distress_001",
+      "target_text": "Vessel adrift, not in distress.",
+      "should_accept": [
+        "Vessel adrift, not in distress.",
+        "We are adrift, not in distress."
+      ],
+      "should_reject": [
+        "Vessel adrift in distress",
+        "Vessel aground not in distress",
+        "Vessel sinking not in distress"
+      ]
+    },
+    {
+      "id": "phrase_urgency_low_fuel_request_assistance_001",
+      "target_text": "Low fuel, request assistance.",
+      "should_accept": [
+        "Low fuel, request assistance.",
+        "Fuel low, request assistance."
+      ],
+      "should_reject": [
+        "Low battery request assistance",
+        "Request fuel berth",
+        "Low fuel rescue required"
+      ]
+    },
+    {
+      "id": "phrase_urgency_low_battery_radio_limited_001",
+      "target_text": "Low battery, radio limited.",
+      "should_accept": [
+        "Low battery, radio limited.",
+        "Battery low, radio limited."
+      ],
+      "should_reject": [
+        "Low fuel radio limited",
+        "Radio check",
+        "Battery full radio normal"
+      ]
+    },
+    {
+      "id": "phrase_urgency_medical_advice_needed_001",
+      "target_text": "Medical advice needed.",
+      "should_accept": [
+        "Medical advice needed.",
+        "Need medical advice."
+      ],
+      "should_reject": [
+        "Medical assistance required",
+        "Immediate medical assistance",
+        "Rescue required"
+      ]
+    },
+    {
+      "id": "phrase_urgency_position_disabled_vessel_001",
+      "target_text": "Disabled vessel position bearing zero nine zero, two miles from the lighthouse.",
+      "should_accept": [
+        "Disabled vessel position bearing zero nine zero, two miles from the lighthouse.",
+        "Disabled vessel position bearing zero nine zero two miles from the lighthouse."
+      ],
+      "should_reject": [
+        "Distressed vessel position bearing zero nine zero",
+        "Disabled vessel course zero nine zero",
+        "Disabled vessel position bearing one eight zero"
+      ]
+    },
+    {
+      "id": "phrase_urgency_tow_to_nearest_port_001",
+      "target_text": "Request tow to nearest port.",
+      "should_accept": [
+        "Request tow to nearest port.",
+        "Request towage to nearest port."
+      ],
+      "should_reject": [
+        "Request rescue to nearest port",
+        "Request pilot to nearest port",
+        "Request berth at nearest port"
+      ]
+    },
+    {
+      "id": "phrase_urgency_engine_restarted_001",
+      "target_text": "Engine restarted, assistance no longer required.",
+      "should_accept": [
+        "Engine restarted, assistance no longer required.",
+        "Engine restarted, no assistance required."
+      ],
+      "should_reject": [
+        "Engine failed assistance required",
+        "Steering restarted assistance no longer required",
+        "Engine restarted rescue required"
+      ]
+    },
+    {
+      "id": "phrase_urgency_cancel_panpan_001",
+      "target_text": "Cancel Pan-Pan, assistance no longer required.",
+      "should_accept": [
+        "Cancel Pan-Pan, assistance no longer required.",
+        "Cancel Pan Pan assistance no longer required."
+      ],
+      "should_reject": [
+        "Cancel Mayday assistance no longer required",
+        "Cancel Securite",
+        "Pan-Pan assistance required"
+      ]
+    },
+    {
+      "id": "expr_urgency_radio_failure_001",
+      "target_text": "radio failure",
+      "should_accept": [
+        "radio failure",
+        "radio failed"
+      ],
+      "should_reject": [
+        "radio check",
+        "low battery",
+        "channel one six"
+      ]
+    },
+    {
+      "id": "expr_urgency_bilge_pump_failure_001",
+      "target_text": "bilge pump failure",
+      "should_accept": [
+        "bilge pump failure",
+        "bilge pump failed"
+      ],
+      "should_reject": [
+        "fire pump failure",
+        "bilge pump running",
+        "flooding on board"
+      ]
+    },
+    {
+      "id": "phrase_urgency_radio_failure_keep_listening_001",
+      "target_text": "Radio failure, keeping listening watch on channel one six.",
+      "should_accept": [
+        "Radio failure, keeping listening watch on channel one six.",
+        "Radio failed, keeping listening watch on channel one six."
+      ],
+      "should_reject": [
+        "Radio check on channel one six",
+        "Radio failure switch to channel one three",
+        "Securite radio failure"
       ]
     }
   ],

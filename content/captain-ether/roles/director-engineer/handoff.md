@@ -208,13 +208,13 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0077 Batch 012 Acceptance QA` is closed as PASS and accepted
-for merge preparation.
+None. `CE-SPRINT-0078 Batch 012 Merge Preparation` is closed as MERGED LOCALLY
+/ PASS and routed to post-merge QA.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0077-batch-012-acceptance-qa-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0078-batch-012-merge-preparation-2026-06-01.md
 ```
 
 Latest local validation:
@@ -242,23 +242,25 @@ Batch 012 status: draft.
 Batch 012 Sea Speak Linguist review PASS.
 Batch 012 engineering gate PASS FOR QA ACCEPTANCE.
 Batch 012 QA acceptance PASS.
+Batch 012 playable merge completed locally.
 Batch 012 validator PASS with known starter WARN (9).
 ```
 
 Current local playable corpus:
 
 ```text
-starter_items=470
-grammar_patterns=151
-qa_items=470
-should_accept=1156
-should_reject=1428
-dangerous_pairs=108
+starter_items=500
+grammar_patterns=163
+qa_items=500
+should_accept=1216
+should_reject=1518
+dangerous_pairs=116
 traffic_collision_items=50
 vts_port_control_items=50
 onboard_operations_items=50
 distress_mayday_items=50
 review_minimal_pairs_items=15
+urgency_panpan_items=55
 ```
 
 Scope preserved:
@@ -279,16 +281,16 @@ local site/runtime parity check.
 Next active gate:
 
 ```text
-TASK-CE-0078 Batch 012 Urgency Equipment Status merge preparation.
-Owner: Director-Engineer.
-Goal: merge the accepted Batch 012 into playable starter and regression files,
-then run validator, API smoke, and post-merge readiness checks locally.
+TASK-CE-0079 Batch 012 Urgency Equipment Status post-merge QA.
+Owner: QA.
+Goal: independently verify merged playable corpus and regression after Batch
+012 merge, including urgency_panpan reachability and 500-item corpus state.
 ```
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
 matcher change, API/runtime change, UI change, Atlas change, playable merge, or
-public English-native release is authorized by `CE-SPRINT-0077`.
+public English-native release is authorized by `CE-SPRINT-0078`.
 
 ## Previous Closed Sprint
 

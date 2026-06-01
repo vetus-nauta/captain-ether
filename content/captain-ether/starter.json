@@ -9729,6 +9729,610 @@
       "hint_beginner": "Give...",
       "hint_intermediate": "way.",
       "hint_advanced": ""
+    },
+    {
+      "id": "word_urgency_engine_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "equipment_failure",
+      "branch": "urgency_panpan",
+      "module": "equipment_status",
+      "source_language": "ru",
+      "source_text": "Двигатель",
+      "target_language": "en",
+      "target_text": "engine",
+      "accepted_answers": [
+        "engine"
+      ],
+      "hint_beginner": "e____e",
+      "hint_intermediate": "engine...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_urgency_steering_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "equipment_failure",
+      "branch": "urgency_panpan",
+      "module": "equipment_status",
+      "source_language": "ru",
+      "source_text": "Рулевое управление",
+      "target_language": "en",
+      "target_text": "steering",
+      "accepted_answers": [
+        "steering"
+      ],
+      "hint_beginner": "s_______g",
+      "hint_intermediate": "steering...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_urgency_battery_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "power_failure",
+      "branch": "urgency_panpan",
+      "module": "power_failure",
+      "source_language": "ru",
+      "source_text": "Аккумулятор",
+      "target_language": "en",
+      "target_text": "battery",
+      "accepted_answers": [
+        "battery"
+      ],
+      "hint_beginner": "b_____y",
+      "hint_intermediate": "battery...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_urgency_adrift_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 10,
+      "topic": "vessel_status",
+      "branch": "urgency_panpan",
+      "module": "vessel_status",
+      "source_language": "ru",
+      "source_text": "В дрейфе",
+      "target_language": "en",
+      "target_text": "adrift",
+      "accepted_answers": [
+        "adrift"
+      ],
+      "hint_beginner": "a____t",
+      "hint_intermediate": "adrift...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_urgency_towage_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 10,
+      "topic": "towing_assistance",
+      "branch": "urgency_panpan",
+      "module": "towing_assistance",
+      "source_language": "ru",
+      "source_text": "Буксировка",
+      "target_language": "en",
+      "target_text": "towage",
+      "accepted_answers": [
+        "towage",
+        "towing"
+      ],
+      "hint_beginner": "t_____e",
+      "hint_intermediate": "towage...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_urgency_advice_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "medical_assistance",
+      "branch": "urgency_panpan",
+      "module": "medical_advice",
+      "source_language": "ru",
+      "source_text": "Совет / консультация",
+      "target_language": "en",
+      "target_text": "advice",
+      "accepted_answers": [
+        "advice"
+      ],
+      "hint_beginner": "a____e",
+      "hint_intermediate": "advice...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_urgency_engine_failure_002",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 11,
+      "topic": "equipment_failure",
+      "branch": "urgency_panpan",
+      "module": "equipment_status",
+      "source_language": "ru",
+      "source_text": "Отказ двигателя",
+      "target_language": "en",
+      "target_text": "engine failure",
+      "accepted_answers": [
+        "engine failure",
+        "engine failed"
+      ],
+      "hint_beginner": "engine...",
+      "hint_intermediate": "engine failure...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_urgency_steering_failure_002",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "equipment_failure",
+      "branch": "urgency_panpan",
+      "module": "equipment_status",
+      "source_language": "ru",
+      "source_text": "Отказ рулевого управления",
+      "target_language": "en",
+      "target_text": "steering failure",
+      "accepted_answers": [
+        "steering failure",
+        "steering failed"
+      ],
+      "hint_beginner": "steering...",
+      "hint_intermediate": "steering failure...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_urgency_power_failure_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "power_failure",
+      "branch": "urgency_panpan",
+      "module": "power_failure",
+      "source_language": "ru",
+      "source_text": "Отказ электропитания",
+      "target_language": "en",
+      "target_text": "power failure",
+      "accepted_answers": [
+        "power failure",
+        "electrical failure"
+      ],
+      "hint_beginner": "power...",
+      "hint_intermediate": "power failure...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_urgency_low_battery_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "power_failure",
+      "branch": "urgency_panpan",
+      "module": "power_failure",
+      "source_language": "ru",
+      "source_text": "Низкий заряд аккумулятора",
+      "target_language": "en",
+      "target_text": "low battery",
+      "accepted_answers": [
+        "low battery",
+        "battery low"
+      ],
+      "hint_beginner": "low...",
+      "hint_intermediate": "low battery...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_urgency_low_fuel_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "fuel_status",
+      "branch": "urgency_panpan",
+      "module": "fuel_status",
+      "source_language": "ru",
+      "source_text": "Мало топлива",
+      "target_language": "en",
+      "target_text": "low fuel",
+      "accepted_answers": [
+        "low fuel",
+        "fuel low"
+      ],
+      "hint_beginner": "low...",
+      "hint_intermediate": "low fuel...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_urgency_advice_needed_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "medical_assistance",
+      "branch": "urgency_panpan",
+      "module": "medical_advice",
+      "source_language": "ru",
+      "source_text": "Нужна консультация",
+      "target_language": "en",
+      "target_text": "advice needed",
+      "accepted_answers": [
+        "advice needed",
+        "need advice"
+      ],
+      "hint_beginner": "advice...",
+      "hint_intermediate": "advice needed...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_urgency_tow_required_002",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "towing_assistance",
+      "branch": "urgency_panpan",
+      "module": "towing_assistance",
+      "source_language": "ru",
+      "source_text": "Требуется буксировка",
+      "target_language": "en",
+      "target_text": "tow required",
+      "accepted_answers": [
+        "tow required",
+        "towage required"
+      ],
+      "hint_beginner": "tow...",
+      "hint_intermediate": "tow required...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_urgency_not_in_distress_001",
+      "type": "short_expression",
+      "level": "advanced",
+      "difficulty_score": 16,
+      "topic": "urgency_signal",
+      "branch": "urgency_panpan",
+      "module": "urgency_signal",
+      "source_language": "ru",
+      "source_text": "Не в бедствии",
+      "target_language": "en",
+      "target_text": "not in distress",
+      "accepted_answers": [
+        "not in distress",
+        "not distress"
+      ],
+      "hint_beginner": "not...",
+      "hint_intermediate": "not in distress...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_urgency_disabled_vessel_002",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "vessel_status",
+      "branch": "urgency_panpan",
+      "module": "vessel_status",
+      "source_language": "ru",
+      "source_text": "Судно потеряло ход",
+      "target_language": "en",
+      "target_text": "disabled vessel",
+      "accepted_answers": [
+        "disabled vessel",
+        "vessel disabled"
+      ],
+      "hint_beginner": "disabled...",
+      "hint_intermediate": "disabled vessel...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_urgency_no_immediate_danger_001",
+      "type": "short_expression",
+      "level": "advanced",
+      "difficulty_score": 16,
+      "topic": "urgency_signal",
+      "branch": "urgency_panpan",
+      "module": "urgency_signal",
+      "source_language": "ru",
+      "source_text": "Нет непосредственной опасности",
+      "target_language": "en",
+      "target_text": "no immediate danger",
+      "accepted_answers": [
+        "no immediate danger",
+        "no imminent danger"
+      ],
+      "hint_beginner": "no...",
+      "hint_intermediate": "no immediate danger...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_urgency_panpan_equipment_failure_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 15,
+      "topic": "urgency_signal",
+      "branch": "urgency_panpan",
+      "module": "urgency_signal",
+      "source_language": "ru",
+      "source_text": "Пан-Пан, отказ оборудования.",
+      "target_language": "en",
+      "target_text": "Pan-Pan, equipment failure.",
+      "accepted_answers": [
+        "Pan-Pan, equipment failure."
+      ],
+      "grammar_pattern": "urgency_equipment_status_basic",
+      "hint_beginner": "Pan-Pan...",
+      "hint_intermediate": "equipment failure.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_urgency_engine_failure_no_danger_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 16,
+      "topic": "equipment_failure",
+      "branch": "urgency_panpan",
+      "module": "equipment_status",
+      "source_language": "ru",
+      "source_text": "Отказ двигателя, нет непосредственной опасности.",
+      "target_language": "en",
+      "target_text": "Engine failure, no immediate danger.",
+      "accepted_answers": [
+        "Engine failure, no immediate danger.",
+        "Engine failed, no immediate danger."
+      ],
+      "grammar_pattern": "urgency_failure_no_immediate_danger",
+      "hint_beginner": "Engine failure...",
+      "hint_intermediate": "no immediate danger.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_urgency_steering_failure_tow_required_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 18,
+      "topic": "equipment_failure",
+      "branch": "urgency_panpan",
+      "module": "towing_assistance",
+      "source_language": "ru",
+      "source_text": "Отказ рулевого управления, требуется буксировка.",
+      "target_language": "en",
+      "target_text": "Steering failure, towage required.",
+      "accepted_answers": [
+        "Steering failure, towage required.",
+        "Steering failed, tow required."
+      ],
+      "grammar_pattern": "urgency_failure_assistance_required",
+      "hint_beginner": "Steering failure...",
+      "hint_intermediate": "towage required.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_urgency_adrift_not_in_distress_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 18,
+      "topic": "vessel_status",
+      "branch": "urgency_panpan",
+      "module": "vessel_status",
+      "source_language": "ru",
+      "source_text": "Судно в дрейфе, не в бедствии.",
+      "target_language": "en",
+      "target_text": "Vessel adrift, not in distress.",
+      "accepted_answers": [
+        "Vessel adrift, not in distress.",
+        "We are adrift, not in distress."
+      ],
+      "grammar_pattern": "urgency_status_not_distress",
+      "hint_beginner": "Vessel adrift...",
+      "hint_intermediate": "not in distress.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_urgency_low_fuel_request_assistance_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 15,
+      "topic": "fuel_status",
+      "branch": "urgency_panpan",
+      "module": "fuel_status",
+      "source_language": "ru",
+      "source_text": "Мало топлива, прошу помощь.",
+      "target_language": "en",
+      "target_text": "Low fuel, request assistance.",
+      "accepted_answers": [
+        "Low fuel, request assistance.",
+        "Fuel low, request assistance."
+      ],
+      "grammar_pattern": "urgency_resource_assistance_request",
+      "hint_beginner": "Low fuel...",
+      "hint_intermediate": "request assistance.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_urgency_low_battery_radio_limited_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 16,
+      "topic": "power_failure",
+      "branch": "urgency_panpan",
+      "module": "power_failure",
+      "source_language": "ru",
+      "source_text": "Низкий заряд аккумулятора, связь ограничена.",
+      "target_language": "en",
+      "target_text": "Low battery, radio limited.",
+      "accepted_answers": [
+        "Low battery, radio limited.",
+        "Battery low, radio limited."
+      ],
+      "grammar_pattern": "urgency_power_radio_limitation",
+      "hint_beginner": "Low battery...",
+      "hint_intermediate": "radio limited.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_urgency_medical_advice_needed_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 15,
+      "topic": "medical_assistance",
+      "branch": "urgency_panpan",
+      "module": "medical_advice",
+      "source_language": "ru",
+      "source_text": "Нужна медицинская консультация.",
+      "target_language": "en",
+      "target_text": "Medical advice needed.",
+      "accepted_answers": [
+        "Medical advice needed.",
+        "Need medical advice."
+      ],
+      "grammar_pattern": "urgency_medical_advice_request",
+      "hint_beginner": "Medical advice...",
+      "hint_intermediate": "needed.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_urgency_position_disabled_vessel_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 18,
+      "topic": "vessel_status",
+      "branch": "urgency_panpan",
+      "module": "vessel_status",
+      "source_language": "ru",
+      "source_text": "Позиция судна без хода: пеленг ноль девять ноль, две мили от маяка.",
+      "target_language": "en",
+      "target_text": "Disabled vessel position bearing zero nine zero, two miles from the lighthouse.",
+      "accepted_answers": [
+        "Disabled vessel position bearing zero nine zero, two miles from the lighthouse."
+      ],
+      "grammar_pattern": "urgency_disabled_position_report",
+      "hint_beginner": "Disabled vessel position...",
+      "hint_intermediate": "bearing zero nine zero...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_urgency_tow_to_nearest_port_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 15,
+      "topic": "towing_assistance",
+      "branch": "urgency_panpan",
+      "module": "towing_assistance",
+      "source_language": "ru",
+      "source_text": "Прошу буксировку в ближайший порт.",
+      "target_language": "en",
+      "target_text": "Request tow to nearest port.",
+      "accepted_answers": [
+        "Request tow to nearest port.",
+        "Request towage to nearest port."
+      ],
+      "grammar_pattern": "urgency_tow_destination_request",
+      "hint_beginner": "Request tow...",
+      "hint_intermediate": "nearest port.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_urgency_engine_restarted_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 14,
+      "topic": "equipment_status",
+      "branch": "urgency_panpan",
+      "module": "equipment_status",
+      "source_language": "ru",
+      "source_text": "Двигатель перезапущен, помощь больше не требуется.",
+      "target_language": "en",
+      "target_text": "Engine restarted, assistance no longer required.",
+      "accepted_answers": [
+        "Engine restarted, assistance no longer required.",
+        "Engine restarted, no assistance required."
+      ],
+      "grammar_pattern": "urgency_assistance_no_longer_required",
+      "hint_beginner": "Engine restarted...",
+      "hint_intermediate": "assistance no longer required.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_urgency_cancel_panpan_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 19,
+      "topic": "urgency_signal",
+      "branch": "urgency_panpan",
+      "module": "urgency_readback",
+      "source_language": "ru",
+      "source_text": "Отмените Пан-Пан, помощь больше не требуется.",
+      "target_language": "en",
+      "target_text": "Cancel Pan-Pan, assistance no longer required.",
+      "accepted_answers": [
+        "Cancel Pan-Pan, assistance no longer required."
+      ],
+      "grammar_pattern": "urgency_cancel_signal",
+      "hint_beginner": "Cancel Pan-Pan...",
+      "hint_intermediate": "assistance no longer required.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_urgency_radio_failure_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "equipment_failure",
+      "branch": "urgency_panpan",
+      "module": "radio_failure",
+      "source_language": "ru",
+      "source_text": "Отказ радиосвязи",
+      "target_language": "en",
+      "target_text": "radio failure",
+      "accepted_answers": [
+        "radio failure",
+        "radio failed"
+      ],
+      "hint_beginner": "radio...",
+      "hint_intermediate": "radio failure...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_urgency_bilge_pump_failure_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "equipment_failure",
+      "branch": "urgency_panpan",
+      "module": "equipment_status",
+      "source_language": "ru",
+      "source_text": "Отказ осушительного насоса",
+      "target_language": "en",
+      "target_text": "bilge pump failure",
+      "accepted_answers": [
+        "bilge pump failure",
+        "bilge pump failed"
+      ],
+      "hint_beginner": "bilge...",
+      "hint_intermediate": "bilge pump failure...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_urgency_radio_failure_keep_listening_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 18,
+      "topic": "equipment_failure",
+      "branch": "urgency_panpan",
+      "module": "radio_failure",
+      "source_language": "ru",
+      "source_text": "Отказ радиосвязи, продолжаем прослушивание канала один шесть.",
+      "target_language": "en",
+      "target_text": "Radio failure, keeping listening watch on channel one six.",
+      "accepted_answers": [
+        "Radio failure, keeping listening watch on channel one six.",
+        "Radio failed, keeping listening watch on channel one six."
+      ],
+      "grammar_pattern": "urgency_radio_failure_watch",
+      "hint_beginner": "Radio failure...",
+      "hint_intermediate": "channel one six.",
+      "hint_advanced": ""
     }
   ],
   "grammar_patterns": [
@@ -11393,6 +11997,90 @@
       "pattern": "traffic obligation contrast",
       "examples": [
         "Give way."
+      ]
+    },
+    {
+      "id": "urgency_equipment_status_basic",
+      "pattern": "Pan-Pan equipment status",
+      "examples": [
+        "Pan-Pan, equipment failure."
+      ]
+    },
+    {
+      "id": "urgency_failure_no_immediate_danger",
+      "pattern": "equipment failure with no immediate danger",
+      "examples": [
+        "Engine failure, no immediate danger."
+      ]
+    },
+    {
+      "id": "urgency_failure_assistance_required",
+      "pattern": "failure plus towage assistance",
+      "examples": [
+        "Steering failure, towage required."
+      ]
+    },
+    {
+      "id": "urgency_status_not_distress",
+      "pattern": "urgency status with explicit non-distress boundary",
+      "examples": [
+        "Vessel adrift, not in distress."
+      ]
+    },
+    {
+      "id": "urgency_resource_assistance_request",
+      "pattern": "resource status with assistance request",
+      "examples": [
+        "Low fuel, request assistance."
+      ]
+    },
+    {
+      "id": "urgency_power_radio_limitation",
+      "pattern": "power problem limiting radio operation",
+      "examples": [
+        "Low battery, radio limited."
+      ]
+    },
+    {
+      "id": "urgency_medical_advice_request",
+      "pattern": "medical advice urgency request",
+      "examples": [
+        "Medical advice needed."
+      ]
+    },
+    {
+      "id": "urgency_disabled_position_report",
+      "pattern": "disabled vessel position report",
+      "examples": [
+        "Disabled vessel position bearing zero nine zero, two miles from the lighthouse."
+      ]
+    },
+    {
+      "id": "urgency_tow_destination_request",
+      "pattern": "towage request with destination",
+      "examples": [
+        "Request tow to nearest port."
+      ]
+    },
+    {
+      "id": "urgency_assistance_no_longer_required",
+      "pattern": "urgency assistance cancellation after recovery",
+      "examples": [
+        "Engine restarted, assistance no longer required."
+      ]
+    },
+    {
+      "id": "urgency_cancel_signal",
+      "pattern": "cancel Pan-Pan after urgency resolved",
+      "examples": [
+        "Cancel Pan-Pan, assistance no longer required."
+      ]
+    },
+    {
+      "id": "urgency_radio_failure_watch",
+      "pattern": "radio failure with listening-watch channel",
+      "examples": [
+        "Radio failure, keeping listening watch on channel one six."
       ]
     }
   ],
