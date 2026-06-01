@@ -105,6 +105,20 @@ batch task.
 Latest closed draft:
 
 ```text
+TASK-CE-0074 Batch 012 Urgency Equipment Status
+content/captain-ether/batches/batch-012-urgency-equipment-status-reinforcement.json
+content/captain-ether/roles/content-producer/reports/batch-012-urgency-equipment-status-card-2026-06-01.md
+```
+
+Mode:
+
+```text
+content draft only; routed to Sea Speak Linguist review by Director-Engineer
+```
+
+Previous closed draft:
+
+```text
 TASK-CE-0068 Batch 011 Review Minimal Pairs
 content/captain-ether/batches/batch-011-review-minimal-pairs-basics.json
 content/captain-ether/roles/content-producer/reports/batch-011-review-minimal-pairs-basics-card-2026-06-01.md

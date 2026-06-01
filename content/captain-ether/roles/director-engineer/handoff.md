@@ -208,12 +208,13 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0073 Batch 011 Post-Merge QA` is closed as PASS and accepted.
+None. `CE-SPRINT-0074 Batch 012 Urgency Equipment Status Draft` is closed as
+PASS and routed to Sea Speak Linguist review.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0073-batch-011-post-merge-qa-accepted-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0074-batch-012-urgency-equipment-status-draft-2026-06-01.md
 ```
 
 Latest local validation:
@@ -236,6 +237,9 @@ Batch 011 QA acceptance PASS.
 Batch 011 playable merge completed locally.
 Batch 011 validator PASS with known starter WARN (9).
 Batch 011 post-merge QA PASS.
+Batch 012 Urgency Equipment Status draft created.
+Batch 012 status: draft.
+Batch 012 validator PASS with known starter WARN (9).
 ```
 
 Current local playable corpus:
@@ -268,11 +272,19 @@ Next recommended work:
 Continue M3 corpus growth toward `500` items with a short scenario-turn or
 equipment/weather reinforcement batch, or run a separate director-approved
 local site/runtime parity check.
+
+Next active gate:
+
+```text
+TASK-CE-0075 Batch 012 Urgency Equipment Status Sea Speak Linguist review.
+Owner: Sea Speak Linguist.
+Goal: review Pan-Pan equipment/status boundaries before engineering gate.
+```
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
 matcher change, API/runtime change, UI change, Atlas change, playable merge, or
-public English-native release is authorized by `CE-SPRINT-0073`.
+public English-native release is authorized by `CE-SPRINT-0074`.
 
 ## Previous Closed Sprint
 
