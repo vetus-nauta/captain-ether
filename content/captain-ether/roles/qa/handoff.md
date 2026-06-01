@@ -6,26 +6,25 @@ Use only after Director-Engineer names the exact target and test type.
 
 ## Current Prepared QA
 
-TASK-CE-0059 Batch 009 Onboard Operations acceptance QA:
-
-- mode:
-  report-only batch acceptance
-- target:
-  `content/captain-ether/batches/batch-009-onboard-operations-basics.json`
-- source sprint:
-  `content/captain-ether/roles/director-engineer/reports/sprint-ce-0058-batch-009-engineering-gate-2026-06-01.md`
-- required focus:
-  `target_text`, `should_accept`, `should_reject`, dangerous-pair coverage,
-  watch handover/takeover, helm order/action-completed, port/starboard helm,
-  anchor/moor/berth, let-go/heave-up anchor, make-fast/let-go lines,
-  station positions, stand-by/standing-by, safety-check/emergency-action,
-  fire/flooding/man-overboard, and scope preservation.
-- forbidden:
-  production deploy, Atlas config/data writes, auth/platform,
-  router/registry, Watch Officer, Nav Desk, matcher/API/UI changes, secrets,
-  sessions, cookies, CSRF, SMTP, player email, or player identity data.
+None.
 
 ## Last QA
+
+TASK-CE-0059 Batch 009 Onboard Operations acceptance QA:
+
+- task file:
+  `content/captain-ether/roles/qa/tasks/task-ce-0059-batch-009-onboard-operations-acceptance-qa-2026-06-01.md`
+- report file:
+  `content/captain-ether/roles/qa/reports/batch-009-onboard-operations-acceptance-qa-2026-06-01.md`
+- mode:
+  report-only
+- target:
+  `content/captain-ether/batches/batch-009-onboard-operations-basics.json`
+- result:
+  `PASS`
+- confirmed:
+  target text, `should_accept`, `should_reject`, and dangerous-pair coverage
+  pass for the reviewed batch; no merge or production deploy is implied.
 
 TASK-CE-0055 Batch 008 post-merge QA:
 
