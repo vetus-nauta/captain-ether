@@ -208,13 +208,13 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0063 Batch 010 Distress / Mayday Linguist Review` is closed
-as PASS and routed to Director-Engineer engineering gate.
+None. `CE-SPRINT-0064 Batch 010 Engineering Gate` is closed as PASS FOR QA
+ACCEPTANCE and routed to QA acceptance.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0063-batch-010-linguist-review-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0064-batch-010-engineering-gate-2026-06-01.md
 ```
 
 Latest local validation:
@@ -223,7 +223,9 @@ Latest local validation:
 Batch 010 Distress / Mayday draft created.
 Batch status: linguist_reviewed.
 Sea Speak Linguist review PASS.
+Engineering gate PASS FOR QA ACCEPTANCE.
 Batch validator PASS with known starter WARN (9).
+API smoke PASS captain-ether-api-smoke checks=334.
 No playable merge performed.
 ```
 
@@ -253,15 +255,16 @@ production config, deploy/FTP state, or secrets changed.
 Next recommended work:
 
 ```text
-TASK-CE-0064 Batch 010 Distress / Mayday engineering gate.
-Owner: Director-Engineer.
-Goal: verify schema, matcher regression, dangerous-pair executability, content
-counts, scope boundaries, and merge readiness before QA acceptance.
+TASK-CE-0065 Batch 010 Distress / Mayday QA acceptance.
+Owner: QA.
+Goal: independently verify target_text, should_accept, should_reject,
+dangerous-pair coverage, Mayday/Pan-Pan/Securite boundaries, and scope
+preservation before merge.
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
 matcher change, API/runtime change, UI change, Atlas change, playable merge, or
-public English-native release is authorized by `CE-SPRINT-0063`.
+public English-native release is authorized by `CE-SPRINT-0064`.
 
 ## Previous Closed Sprint
 
