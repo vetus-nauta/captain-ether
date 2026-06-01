@@ -208,12 +208,12 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0054 Batch 008 Merge Preparation` is closed as PASS.
+None. `CE-SPRINT-0055 Batch 008 Post-Merge QA` is closed as PASS and accepted.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0054-batch-008-merge-preparation-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0055-batch-008-post-merge-qa-accepted-2026-06-01.md
 ```
 
 Latest local validation:
@@ -226,6 +226,7 @@ QA acceptance PASS.
 Batch validator PASS with known starter WARN (9).
 API smoke PASS captain-ether-api-smoke checks=334.
 Playable merge completed locally.
+Post-merge QA PASS.
 ```
 
 Current local playable corpus:
@@ -252,16 +253,15 @@ production config, deploy/FTP state, or secrets changed.
 Next recommended work:
 
 ```text
-TASK-CE-0055 Batch 008 post-merge QA.
-Owner: QA.
-Goal: independently verify merged playable corpus and regression after Batch
-008 merge, including VTS / port-control reachability and dangerous-pair
-coverage.
+TASK-CE-0056 Onboard Operations corpus gap and Batch 009 draft.
+Owner: Director-Engineer then Content Producer.
+Goal: extend M3 corpus toward onboard/bridge-team operational language while
+preserving radio-branch boundaries.
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
 matcher change, API/runtime change, UI change, Atlas change, or public
-English-native release is authorized by `CE-SPRINT-0054`.
+English-native release is authorized by `CE-SPRINT-0055`.
 
 ## Previous Closed Sprint
 
