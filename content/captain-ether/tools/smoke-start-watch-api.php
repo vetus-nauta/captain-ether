@@ -662,10 +662,13 @@ try {
     smoke_check('recovery hint applied status', $guidedSubmit['status'] === 200, 'expected 200, got ' . $guidedSubmit['status']);
     smoke_check('recovery hint applied', ($guidedSubmit['json']['hint_applied'] ?? false) === true, 'recovery hint was not applied');
     smoke_check('recovery hint points', abs((float) ($guidedSubmit['json']['points'] ?? 0) - 0.75) < 0.001, 'recovery hint points mismatch');
+    smoke_check('recovery hint message profile', ($guidedSubmit['json']['message_profile'] ?? '') === 'recovery', 'recovery message profile mismatch');
+    smoke_check('recovery hint message key', ($guidedSubmit['json']['message_key'] ?? '') === 'result.hint.recovery', 'recovery message key mismatch');
     $guidedSkip = smoke_answer_watch_item($guidedWatchId, 1, '', false, true);
     smoke_check('recovery skip status', $guidedSkip['status'] === 200, 'expected 200, got ' . $guidedSkip['status']);
     smoke_check('recovery skip applied', ($guidedSkip['json']['skip_applied'] ?? false) === true, 'recovery skip was not applied');
     smoke_check('recovery skip points', abs((float) ($guidedSkip['json']['points'] ?? 0) - 0.25) < 0.001, 'recovery skip points mismatch');
+    smoke_check('recovery skip message key', ($guidedSkip['json']['message_key'] ?? '') === 'result.weak.recovery', 'recovery skip message key mismatch');
     $focusedWeakWatch = smoke_start_watch('focused branch weak distribution', ['level' => 'intermediate', 'mode' => 'focused_branch', 'branch' => 'core_radio'], 'intermediate', 'core_radio', CAPTAIN_LEARNER_STREAM_RU, 'admin', 13);
     $focusedWeakItems = smoke_selected_items($focusedWeakWatch);
     $focusedWeakIds = smoke_selected_ids($focusedWeakWatch);
@@ -691,6 +694,9 @@ try {
     smoke_check('finish next step', smoke_valid_next_step((string) ($finish['json']['summary']['next_step'] ?? '')), 'next step missing or invalid');
     smoke_check('finish recommended watch level parity', ($finish['json']['summary']['recommended_watch']['level'] ?? '') === ($finish['json']['summary']['recommended_level'] ?? ''), 'recommended watch level mismatch');
     smoke_check('finish recommended watch mode', in_array(($finish['json']['summary']['recommended_watch']['mode'] ?? ''), ['mixed', 'focused_branch'], true), 'recommended watch mode missing or invalid');
+    smoke_check('finish summary pacing profile', in_array(($finish['json']['summary']['pacing_profile'] ?? ''), ['recovery', 'steady', 'push'], true), 'summary pacing profile missing or invalid');
+    smoke_check('finish summary title key', ($finish['json']['summary']['title_key'] ?? '') === 'summary.title.' . ($finish['json']['summary']['pacing_profile'] ?? ''), 'summary title key mismatch');
+    smoke_check('finish summary guidance key', ($finish['json']['summary']['guidance_key'] ?? '') === 'summary.guidance.' . ($finish['json']['summary']['pacing_profile'] ?? ''), 'summary guidance key mismatch');
     smoke_check('finish debrief drivers', count($finish['json']['summary']['debrief']['drivers'] ?? []) >= 1, 'finish debrief drivers missing');
     smoke_check('finish debrief branch map', is_array($finish['json']['summary']['debrief']['pressure_by_branch'] ?? null), 'finish debrief branch map missing');
     smoke_check('finish debrief type map', is_array($finish['json']['summary']['debrief']['pressure_by_type'] ?? null), 'finish debrief type map missing');
@@ -759,10 +765,13 @@ try {
     if (($pushWatch['json']['watch']['current']['hint_available'] ?? false) === true) {
         smoke_check('push hint applied', ($pushSubmit['json']['hint_applied'] ?? false) === true, 'push hint was available but not applied');
         smoke_check('push hint points', abs((float) ($pushSubmit['json']['points'] ?? 0) - 0.25) < 0.001, 'push hint points mismatch');
+        smoke_check('push hint message key', ($pushSubmit['json']['message_key'] ?? '') === 'result.hint.push', 'push hint message key mismatch');
     } else {
         smoke_check('push hint blocked', ($pushSubmit['json']['hint_applied'] ?? true) === false, 'push hint applied despite being unavailable');
         smoke_check('push hint blocked points', abs((float) ($pushSubmit['json']['points'] ?? 0) - 1.0) < 0.001, 'push blocked hint altered scoring');
+        smoke_check('push clean message key', ($pushSubmit['json']['message_key'] ?? '') === 'result.clean.push', 'push clean message key mismatch');
     }
+    smoke_check('push submit message profile', ($pushSubmit['json']['message_profile'] ?? '') === 'push', 'push message profile mismatch');
     if (($pushWatch['json']['watch']['current']['skip_available'] ?? false) === true) {
         $pushSkip = smoke_answer_watch_item($pushWatchId, 0, '', false, true);
         smoke_check('push skip allowed status', $pushSkip['status'] === 200, 'expected 200, got ' . $pushSkip['status']);

@@ -138,8 +138,26 @@ const I18N = {
     'watch.exitHub': 'Exit to hub',
     'result.standardAccepted': 'Accepted, here is the standard form',
     'result.standardForm': 'Standard form',
+    'result.clean.recovery': 'Good. Keep it calm and repeat the standard form.',
+    'result.clean.steady': 'Accepted. Keep the watch rhythm.',
+    'result.clean.push': 'Correct. Next call.',
+    'result.hint.recovery': 'Accepted with support. Use the standard form once more.',
+    'result.hint.steady': 'Accepted with hint. Try the next call clean.',
+    'result.hint.push': 'Hint used. Standard form below.',
+    'result.soft.recovery': 'Accepted. Check the standard form calmly.',
+    'result.soft.steady': 'Accepted. Standard form below.',
+    'result.soft.push': 'Accepted. Tighten to the standard form.',
+    'result.weak.recovery': 'Not yet. Slow down and rebuild the call.',
+    'result.weak.steady': 'Not yet. The station would ask for a repeat.',
+    'result.weak.push': 'Wrong. Correct form below.',
     'summary.eyebrow': 'Watch closed',
     'summary.title': 'Watch closed calmly',
+    'summary.title.recovery': 'Recovery watch closed',
+    'summary.title.steady': 'Watch closed steadily',
+    'summary.title.push': 'Push watch closed',
+    'summary.guidance.recovery': 'Lower pressure next: clear the heaviest oars first.',
+    'summary.guidance.steady': 'Hold the rhythm and keep the next watch balanced.',
+    'summary.guidance.push': 'Shorter feedback, denser calls: keep the radio tight.',
     'summary.clean': 'Clean',
     'summary.hint': 'With hint',
     'summary.revision': 'To revise',
@@ -421,8 +439,26 @@ I18N.ru = {
   'watch.exitHub': 'Выйти в хаб',
   'result.standardAccepted': 'Засчитано, вот стандартная форма',
   'result.standardForm': 'Стандартная форма',
+  'result.clean.recovery': 'Хорошо. Спокойно повтори стандартную форму.',
+  'result.clean.steady': 'Принято. Держи ритм вахты.',
+  'result.clean.push': 'Верно. Следующий вызов.',
+  'result.hint.recovery': 'Принято с поддержкой. Еще раз закрепи стандартную форму.',
+  'result.hint.steady': 'Принято с подсказкой. Следующий вызов попробуй чисто.',
+  'result.hint.push': 'Подсказка использована. Стандартная форма ниже.',
+  'result.soft.recovery': 'Засчитано. Спокойно проверь стандартную форму.',
+  'result.soft.steady': 'Засчитано. Стандартная форма ниже.',
+  'result.soft.push': 'Засчитано. Подтяни до стандартной формы.',
+  'result.weak.recovery': 'Пока нет. Сбавь темп и собери вызов заново.',
+  'result.weak.steady': 'Пока нет. Станция попросила бы повторить.',
+  'result.weak.push': 'Неверно. Правильная форма ниже.',
   'summary.eyebrow': 'Вахта закрыта',
   'summary.title': 'Вахта закрыта спокойно',
+  'summary.title.recovery': 'Восстановительная вахта закрыта',
+  'summary.title.steady': 'Вахта закрыта ровно',
+  'summary.title.push': 'Ускоряющая вахта закрыта',
+  'summary.guidance.recovery': 'Дальше меньше давления: сначала тяжелые Lost Oars.',
+  'summary.guidance.steady': 'Держим ритм и оставляем следующую вахту сбалансированной.',
+  'summary.guidance.push': 'Короче обратная связь, плотнее вызовы: держи эфир собранным.',
   'summary.clean': 'Чисто',
   'summary.hint': 'С подсказкой',
   'summary.revision': 'На доработку',
@@ -1285,6 +1321,9 @@ function resultClass(result) {
 }
 
 function resultTitle(result) {
+  if (result?.message_key) {
+    return t(result.message_key);
+  }
   if (result.correct && ['spelling', 'variant'].includes(result.match_type)) {
     return t('result.standardAccepted');
   }
@@ -1335,10 +1374,13 @@ async function finishWatch() {
   const recommendedLength = recommendedWatch.length || recommendedPacing.target_length || 0;
   const debrief = s.debrief || {};
   const drivers = Array.isArray(debrief.drivers) ? debrief.drivers.map(summaryDriverCopy).filter(Boolean) : [];
+  const summaryTitle = s.title_key ? t(s.title_key) : t('summary.title');
+  const summaryGuidance = s.guidance_key ? t(s.guidance_key) : '';
   app.innerHTML = html`
     <section class="panel watch-summary">
       <p class="eyebrow">${escapeHtml(t('summary.eyebrow'))}</p>
-      <h1>${escapeHtml(t('summary.title'))}</h1>
+      <h1>${escapeHtml(summaryTitle)}</h1>
+      ${summaryGuidance ? `<p class="muted">${escapeHtml(summaryGuidance)}</p>` : ''}
       <div class="stat-grid">
         <div class="stat-card"><small>${escapeHtml(t('summary.clean'))}</small><strong>${s.clean}</strong></div>
         <div class="stat-card"><small>${escapeHtml(t('summary.hint'))}</small><strong>${s.hint}</strong></div>

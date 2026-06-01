@@ -55,6 +55,8 @@ $result = watch_sessions_mutate(function (array &$store) use ($sessionId, $index
         ? $skipReward
         : ($correct ? ($effectiveHint ? $hintReward : 1.0) : 0.0);
     $reason = $skipped ? 'skip' : ($correct && $effectiveHint ? 'hint' : ($correct ? ((string) $match['match_type'] === 'spelling' ? 'spelling' : 'clean') : 'wrong'));
+    $pacingProfile = captain_watch_session_pacing_profile($watch);
+    $messageKey = captain_result_message_key($pacingProfile, $correct, $reason, (string) $match['match_type']);
 
     $watch['questions'][$index]['answer'] = $answer;
     $watch['questions'][$index]['used_hint'] = $effectiveHint;
@@ -90,6 +92,8 @@ $result = watch_sessions_mutate(function (array &$store) use ($sessionId, $index
         'skip_applied' => $skipped,
         'match_type' => $match['match_type'],
         'message' => $effectiveHint && $correct ? maritime_message('hint') : (string) $match['message'],
+        'message_key' => $messageKey,
+        'message_profile' => $pacingProfile,
         'target_text' => $item['target_text'] ?? '',
         'next' => $next,
         'done' => $next === null,

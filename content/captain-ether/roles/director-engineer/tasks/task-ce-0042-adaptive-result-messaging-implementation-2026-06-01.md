@@ -3,7 +3,7 @@
 Date: 2026-06-01
 Owner: Director-Engineer
 Scope: Captain Ether only
-Status: Open
+Status: Closed
 
 ### Goal
 
@@ -31,3 +31,11 @@ Implement adaptive result messaging so recovery / steady / push are reflected no
 - feedback remains coherent with hint/skip pressure
 - no regression in watch flow
 - smoke passes
+
+### Closure
+
+Report:
+
+```text
+content/captain-ether/roles/director-engineer/reports/task-ce-0042-adaptive-result-messaging-implementation-2026-06-01.md
+```

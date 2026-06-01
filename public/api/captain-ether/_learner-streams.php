@@ -410,6 +410,54 @@ function captain_skip_policy(array $pacing, array $item): array {
     };
 }
 
+function captain_normalize_pacing_profile(string $profile): string {
+    return in_array($profile, ['recovery', 'steady', 'push'], true) ? $profile : 'steady';
+}
+
+function captain_watch_session_pacing_profile(array $watch): string {
+    $pacing = $watch['pacing'] ?? null;
+    if (is_array($pacing)) {
+        return captain_normalize_pacing_profile((string) ($pacing['profile'] ?? 'steady'));
+    }
+
+    $hintPolicy = $watch['hint_policy'] ?? null;
+    $hintMode = is_array($hintPolicy) ? (string) ($hintPolicy['mode'] ?? '') : '';
+    if ($hintMode === 'supportive') return 'recovery';
+    if ($hintMode === 'sparse') return 'push';
+
+    foreach ($watch['questions'] ?? [] as $question) {
+        if (!is_array($question)) continue;
+        $questionHintMode = (string) ($question['hint_mode'] ?? '');
+        if ($questionHintMode === 'supportive') return 'recovery';
+        if ($questionHintMode === 'sparse') return 'push';
+    }
+
+    return 'steady';
+}
+
+function captain_result_message_kind(bool $correct, string $reason, string $matchType): string {
+    if ($correct && in_array($matchType, ['spelling', 'variant'], true)) return 'soft';
+    if ($correct && $reason === 'hint') return 'hint';
+    if ($correct) return 'clean';
+    return 'weak';
+}
+
+function captain_result_message_key(string $profile, bool $correct, string $reason, string $matchType): string {
+    $kind = captain_result_message_kind($correct, $reason, $matchType);
+    return 'result.' . $kind . '.' . captain_normalize_pacing_profile($profile);
+}
+
+function captain_summary_message_keys(array $progressSummary): array {
+    $recommendedWatch = is_array($progressSummary['recommended_watch'] ?? null) ? $progressSummary['recommended_watch'] : [];
+    $pacing = is_array($recommendedWatch['pacing'] ?? null) ? $recommendedWatch['pacing'] : [];
+    $profile = captain_normalize_pacing_profile((string) ($pacing['profile'] ?? 'steady'));
+    return [
+        'pacing_profile' => $profile,
+        'title_key' => 'summary.title.' . $profile,
+        'guidance_key' => 'summary.guidance.' . $profile,
+    ];
+}
+
 function captain_progress_recommended_branch(array $branchCounts, string $recommendedLevel): string {
     foreach ($branchCounts as $branch => $count) {
         if (!is_string($branch) || !is_int($count) && !is_numeric($count)) continue;

@@ -91,6 +91,7 @@ $progressSummary = captain_progress_summary(
     $itemsById
 );
 $debrief = captain_watch_debrief($summary, $questions, $itemsById, $progressSummary);
+$summaryMessage = captain_summary_message_keys($progressSummary);
 
 json_response(200, [
     'ok' => true,
@@ -103,6 +104,9 @@ json_response(200, [
         'recommended_branch' => $progressSummary['recommended_branch'],
         'recommended_watch' => $progressSummary['recommended_watch'],
         'next_step' => $progressSummary['next_step'],
+        'pacing_profile' => $summaryMessage['pacing_profile'],
+        'title_key' => $summaryMessage['title_key'],
+        'guidance_key' => $summaryMessage['guidance_key'],
         'debrief' => $debrief,
     ],
 ]);

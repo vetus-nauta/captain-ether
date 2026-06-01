@@ -208,42 +208,39 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0019 Public Stream Selector Contract` is closed as PASS.
+None. `TASK-CE-0042 Adaptive Result Messaging Implementation` is closed as
+PASS.
 
-Sprint closure:
-
-```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0019-public-stream-selector-contract-closed-2026-05-28.md
-```
-
-Closed sprint:
+Latest task closure:
 
 ```text
-CE-SPRINT-0019 Public Stream Selector Contract
+content/captain-ether/roles/director-engineer/reports/task-ce-0042-adaptive-result-messaging-implementation-2026-06-01.md
 ```
 
-Accepted reports:
+Latest local validation:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/director-analysis-public-stream-selector-contract-2026-05-28.md
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0019-public-stream-selector-contract-2026-05-28.md
-content/captain-ether/roles/ux-hud-designer/reports/task-ce-0019-public-stream-selector-ux-contract-2026-05-28.md
-content/captain-ether/roles/localization-architect/reports/task-ce-0020-public-stream-selector-localization-contract-2026-05-28.md
-content/captain-ether/roles/director-engineer/reports/task-ce-0021-public-stream-selector-api-ui-contract-2026-05-28.md
-content/captain-ether/roles/qa/reports/task-ce-0022-public-stream-selector-contract-qa-2026-05-28.md
+captain-ether-api-smoke checks=334
+content/captain-ether/tools/validate-captain-ether.php PASS
 ```
 
-Next recommended summit, only after explicit Director command:
+Scope preserved:
 
 ```text
-CE-BETA-1.1-LOCAL-STREAM-SELECTOR-IMPLEMENTATION
+No auth, Atlas, router, registry implementation, Watch Officer, Nav Desk,
+production config, deploy/FTP state, or secrets changed.
 ```
 
-Expected task range: `TASK-CE-0023+`.
+Next recommended work, only after explicit Director command:
 
-No public selector implementation, production deploy, router change, registry
-change, `starter.json` merge, auth/platform edit, or public English-native
-release is authorized by `CE-SPRINT-0019`.
+```text
+Select the next Captain Ether content-growth or polish task from the game bible
+and current production/local delta.
+```
+
+No production deploy, router change, registry change, `starter.json` merge,
+auth/platform edit, or public English-native release is authorized by
+`TASK-CE-0042`.
 
 ## Previous Closed Sprint
 
