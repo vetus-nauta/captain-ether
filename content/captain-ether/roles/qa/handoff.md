@@ -6,28 +6,30 @@ Use only after Director-Engineer names the exact target and test type.
 
 ## Current Prepared QA
 
+None.
+
+## Last QA
+
 TASK-CE-0061 Batch 009 post-merge QA:
 
+- task file:
+  `content/captain-ether/roles/qa/tasks/task-ce-0061-batch-009-post-merge-qa-2026-06-01.md`
+- report file:
+  `content/captain-ether/roles/qa/reports/batch-009-post-merge-qa-2026-06-01.md`
 - mode:
-  local post-merge verification
+  report-only / local post-merge verification
 - target:
   `content/captain-ether/starter.json`,
   `content/captain-ether/accept-reject-qa-pairs.json`, and
   `content/captain-ether/batches/batch-009-onboard-operations-basics.json`
-- source sprint:
-  `content/captain-ether/roles/director-engineer/reports/sprint-ce-0060-batch-009-merge-preparation-2026-06-01.md`
-- required focus:
-  merged `onboard_operations` reachability, Batch 009 regression rows,
-  dangerous-pair coverage for watch handover, helm orders, anchor and line
-  handling, station positions, stand-by/standing-by, safety checks, emergency
-  actions, and fire/flooding/man-overboard; confirm no `qa_notes` exist in
-  playable `starter.json`.
-- forbidden:
-  production deploy, Atlas config/data writes, auth/platform,
-  router/registry, Watch Officer, Nav Desk, matcher/API/UI changes, secrets,
-  sessions, cookies, CSRF, SMTP, player email, or player identity data.
-
-## Last QA
+- result:
+  `PASS`
+- accepted by Director-Engineer:
+  `content/captain-ether/roles/director-engineer/reports/sprint-ce-0061-batch-009-post-merge-qa-accepted-2026-06-01.md`
+- confirmed:
+  Batch 009 status `merged`, `50/50` playable items, `50/50` regression
+  entries, no playable `qa_notes`, required dangerous pairs present, validator
+  PASS, and API smoke `PASS captain-ether-api-smoke checks=334`.
 
 TASK-CE-0059 Batch 009 Onboard Operations acceptance QA:
 
