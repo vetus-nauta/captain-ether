@@ -208,13 +208,12 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0066 Batch 010 Merge Preparation` is closed as MERGED
-LOCALLY / PASS and routed to post-merge QA.
+None. `CE-SPRINT-0067 Batch 010 Post-Merge QA` is closed as PASS and accepted.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0066-batch-010-merge-preparation-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0067-batch-010-post-merge-qa-accepted-2026-06-01.md
 ```
 
 Latest local validation:
@@ -228,7 +227,7 @@ QA acceptance PASS.
 Playable merge completed locally.
 Batch validator PASS with known starter WARN (9).
 API smoke PASS captain-ether-api-smoke checks=334.
-Post-merge QA pending.
+Post-merge QA PASS.
 ```
 
 Current local playable corpus:
@@ -257,15 +256,13 @@ production config, deploy/FTP state, or secrets changed.
 Next recommended work:
 
 ```text
-TASK-CE-0067 Batch 010 Distress / Mayday post-merge QA.
-Owner: QA.
-Goal: independently verify merged playable corpus and regression after Batch
-010 merge, including distress_mayday reachability and dangerous-pair coverage.
+Prepare the next corpus-growth batch or run a separate director-approved local
+site/runtime parity check. Production work requires a separate explicit task.
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
 matcher change, API/runtime change, UI change, Atlas change, playable merge, or
-public English-native release is authorized by `CE-SPRINT-0066`.
+public English-native release is authorized by `CE-SPRINT-0067`.
 
 ## Previous Closed Sprint
 

@@ -10,6 +10,27 @@ None.
 
 ## Last QA
 
+TASK-CE-0067 Batch 010 post-merge QA:
+
+- task file:
+  `content/captain-ether/roles/qa/tasks/task-ce-0067-batch-010-post-merge-qa-2026-06-01.md`
+- report file:
+  `content/captain-ether/roles/qa/reports/batch-010-post-merge-qa-2026-06-01.md`
+- mode:
+  report-only / local post-merge verification
+- target:
+  `content/captain-ether/starter.json`,
+  `content/captain-ether/accept-reject-qa-pairs.json`, and
+  `content/captain-ether/batches/batch-010-distress-mayday-basics.json`
+- result:
+  `PASS`
+- accepted by Director-Engineer:
+  `content/captain-ether/roles/director-engineer/reports/sprint-ce-0067-batch-010-post-merge-qa-accepted-2026-06-01.md`
+- confirmed:
+  Batch 010 status `merged`, `50/50` playable items, `50/50` regression
+  entries, no playable `qa_notes`, required dangerous pairs present, validator
+  PASS, and API smoke `PASS captain-ether-api-smoke checks=334`.
+
 TASK-CE-0065 Batch 010 Distress / Mayday acceptance QA:
 
 - task file:
