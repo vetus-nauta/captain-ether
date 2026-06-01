@@ -1,0 +1,800 @@
+{
+  "version": 1,
+  "batch_id": "batch-011-review-minimal-pairs-basics",
+  "status": "draft",
+  "date": "2026-06-01",
+  "branch": "review_minimal_pairs",
+  "scope": "Short high-risk review drills for strict Sea Speak contrasts across procedure words, directions, radio signals, numeric forms, and movement commands.",
+  "items": [
+    {
+      "id": "expr_review_over_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "procedure_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "procedure_contrasts",
+      "source_language": "ru",
+      "source_text": "Конец передачи, жду ответа.",
+      "target_language": "en",
+      "target_text": "over",
+      "accepted_answers": [
+        "over"
+      ],
+      "hint_beginner": "o__r",
+      "hint_intermediate": "over...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "over",
+          "OVER"
+        ],
+        "should_reject": [
+          "out",
+          "roger",
+          "stand by"
+        ],
+        "dangerous_minimal_pairs": [
+          "over / out"
+        ],
+        "linguist_note": "Over invites a reply; out closes the exchange."
+      }
+    },
+    {
+      "id": "expr_review_roger_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "procedure_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "procedure_contrasts",
+      "source_language": "ru",
+      "source_text": "Принято.",
+      "target_language": "en",
+      "target_text": "roger",
+      "accepted_answers": [
+        "roger"
+      ],
+      "hint_beginner": "r____r",
+      "hint_intermediate": "roger...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "roger",
+          "ROGER"
+        ],
+        "should_reject": [
+          "affirmative",
+          "negative",
+          "wilco"
+        ],
+        "dangerous_minimal_pairs": [
+          "roger / affirmative"
+        ],
+        "linguist_note": "Roger means received, not yes."
+      }
+    },
+    {
+      "id": "expr_review_affirmative_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "procedure_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "procedure_contrasts",
+      "source_language": "ru",
+      "source_text": "Да.",
+      "target_language": "en",
+      "target_text": "affirmative",
+      "accepted_answers": [
+        "affirmative"
+      ],
+      "hint_beginner": "a_________e",
+      "hint_intermediate": "affirmative...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "affirmative",
+          "AFFIRMATIVE"
+        ],
+        "should_reject": [
+          "roger",
+          "negative",
+          "received"
+        ],
+        "dangerous_minimal_pairs": [
+          "roger / affirmative"
+        ],
+        "linguist_note": "Affirmative means yes, not merely received."
+      }
+    },
+    {
+      "id": "expr_review_say_again_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "procedure_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "readback_contrasts",
+      "source_language": "ru",
+      "source_text": "Повторите.",
+      "target_language": "en",
+      "target_text": "say again",
+      "accepted_answers": [
+        "say again"
+      ],
+      "hint_beginner": "say...",
+      "hint_intermediate": "say again...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "say again",
+          "SAY AGAIN"
+        ],
+        "should_reject": [
+          "read back",
+          "repeat after me",
+          "roger"
+        ],
+        "dangerous_minimal_pairs": [
+          "say again / read back"
+        ],
+        "linguist_note": "Say again asks for repetition; read back asks for confirmation."
+      }
+    },
+    {
+      "id": "expr_review_read_back_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 10,
+      "topic": "procedure_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "readback_contrasts",
+      "source_language": "ru",
+      "source_text": "Повторите для подтверждения.",
+      "target_language": "en",
+      "target_text": "read back",
+      "accepted_answers": [
+        "read back"
+      ],
+      "hint_beginner": "read...",
+      "hint_intermediate": "read back...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "read back",
+          "READ BACK"
+        ],
+        "should_reject": [
+          "say again",
+          "repeat",
+          "stand by"
+        ],
+        "dangerous_minimal_pairs": [
+          "say again / read back"
+        ],
+        "linguist_note": "Read back is confirmation of received content, not a repetition request."
+      }
+    },
+    {
+      "id": "word_review_port_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 7,
+      "topic": "direction_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "direction_contrasts",
+      "source_language": "ru",
+      "source_text": "Левый борт.",
+      "target_language": "en",
+      "target_text": "port",
+      "accepted_answers": [
+        "port"
+      ],
+      "hint_beginner": "p__t",
+      "hint_intermediate": "port...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "port",
+          "PORT"
+        ],
+        "should_reject": [
+          "starboard",
+          "left",
+          "harbour"
+        ],
+        "dangerous_minimal_pairs": [
+          "port / starboard"
+        ],
+        "linguist_note": "Port is the vessel side, not ordinary left or harbour."
+      }
+    },
+    {
+      "id": "word_review_starboard_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "direction_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "direction_contrasts",
+      "source_language": "ru",
+      "source_text": "Правый борт.",
+      "target_language": "en",
+      "target_text": "starboard",
+      "accepted_answers": [
+        "starboard"
+      ],
+      "hint_beginner": "s_______d",
+      "hint_intermediate": "starboard...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "starboard",
+          "STARBOARD"
+        ],
+        "should_reject": [
+          "port",
+          "right",
+          "stern"
+        ],
+        "dangerous_minimal_pairs": [
+          "port / starboard"
+        ],
+        "linguist_note": "Starboard is the vessel side and must not accept ordinary right."
+      }
+    },
+    {
+      "id": "word_review_ahead_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "relative_position_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "relative_position_contrasts",
+      "source_language": "ru",
+      "source_text": "Впереди.",
+      "target_language": "en",
+      "target_text": "ahead",
+      "accepted_answers": [
+        "ahead"
+      ],
+      "hint_beginner": "a___d",
+      "hint_intermediate": "ahead...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "ahead",
+          "AHEAD"
+        ],
+        "should_reject": [
+          "astern",
+          "abeam",
+          "alongside"
+        ],
+        "dangerous_minimal_pairs": [
+          "ahead / astern"
+        ],
+        "linguist_note": "Ahead and astern are opposite relative directions."
+      }
+    },
+    {
+      "id": "word_review_astern_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "relative_position_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "relative_position_contrasts",
+      "source_language": "ru",
+      "source_text": "Позади / за кормой.",
+      "target_language": "en",
+      "target_text": "astern",
+      "accepted_answers": [
+        "astern"
+      ],
+      "hint_beginner": "a____n",
+      "hint_intermediate": "astern...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "astern",
+          "ASTERN"
+        ],
+        "should_reject": [
+          "ahead",
+          "abeam",
+          "astern line"
+        ],
+        "dangerous_minimal_pairs": [
+          "ahead / astern"
+        ],
+        "linguist_note": "Astern is behind the vessel, not ahead or abeam."
+      }
+    },
+    {
+      "id": "expr_review_channel_one_six_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "number_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "number_contrasts",
+      "source_language": "ru",
+      "source_text": "Канал один шесть.",
+      "target_language": "en",
+      "target_text": "channel one six",
+      "accepted_answers": [
+        "channel one six"
+      ],
+      "hint_beginner": "channel...",
+      "hint_intermediate": "one six.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "channel one six",
+          "CHANNEL ONE SIX"
+        ],
+        "should_reject": [
+          "channel one three",
+          "channel six one",
+          "channel sixteen"
+        ],
+        "dangerous_minimal_pairs": [
+          "channel one six / channel one three"
+        ],
+        "linguist_note": "VHF channel digits must stay exact."
+      }
+    },
+    {
+      "id": "expr_review_zero_nine_zero_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 11,
+      "topic": "number_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "number_contrasts",
+      "source_language": "ru",
+      "source_text": "Ноль девять ноль.",
+      "target_language": "en",
+      "target_text": "zero nine zero",
+      "accepted_answers": [
+        "zero nine zero"
+      ],
+      "hint_beginner": "zero...",
+      "hint_intermediate": "zero nine zero...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "zero nine zero",
+          "ZERO NINE ZERO"
+        ],
+        "should_reject": [
+          "nine zero",
+          "one eight zero",
+          "zero nine"
+        ],
+        "dangerous_minimal_pairs": [
+          "zero nine zero / nine zero"
+        ],
+        "linguist_note": "Three-digit headings and bearings must not collapse into two-digit forms."
+      }
+    },
+    {
+      "id": "expr_review_one_four_zero_zero_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 11,
+      "topic": "number_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "number_contrasts",
+      "source_language": "ru",
+      "source_text": "Один четыре ноль ноль.",
+      "target_language": "en",
+      "target_text": "one four zero zero",
+      "accepted_answers": [
+        "one four zero zero"
+      ],
+      "hint_beginner": "one four...",
+      "hint_intermediate": "one four zero zero...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "one four zero zero",
+          "ONE FOUR ZERO ZERO"
+        ],
+        "should_reject": [
+          "one five zero zero",
+          "fourteen hundred",
+          "one four zero"
+        ],
+        "dangerous_minimal_pairs": [
+          "one four zero zero / one five zero zero"
+        ],
+        "linguist_note": "Digit-by-digit time forms must preserve all digits."
+      }
+    },
+    {
+      "id": "phrase_review_pan_pan_not_mayday_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 18,
+      "topic": "signal_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "signal_contrasts",
+      "source_language": "ru",
+      "source_text": "Сигнал срочности: Пан-Пан, не Мэйдэй.",
+      "target_language": "en",
+      "target_text": "Pan-Pan, not Mayday.",
+      "accepted_answers": [
+        "Pan-Pan, not Mayday."
+      ],
+      "grammar_pattern": "review_signal_family_contrast",
+      "hint_beginner": "Pan-Pan...",
+      "hint_intermediate": "not Mayday.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Pan-Pan, not Mayday.",
+          "Pan Pan not Mayday"
+        ],
+        "should_reject": [
+          "Mayday not Pan-Pan",
+          "Securite not Mayday",
+          "Pan-Pan Mayday"
+        ],
+        "dangerous_minimal_pairs": [
+          "Pan-Pan / Mayday / Securite"
+        ],
+        "linguist_note": "Urgency and distress signal families must stay separate."
+      }
+    },
+    {
+      "id": "phrase_review_alter_course_to_port_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 14,
+      "topic": "movement_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "movement_contrasts",
+      "source_language": "ru",
+      "source_text": "Измените курс влево на порт.",
+      "target_language": "en",
+      "target_text": "Alter course to port.",
+      "accepted_answers": [
+        "Alter course to port.",
+        "Alter course port"
+      ],
+      "grammar_pattern": "review_movement_side_contrast",
+      "hint_beginner": "Alter course...",
+      "hint_intermediate": "to port.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Alter course to port.",
+          "Alter course port"
+        ],
+        "should_reject": [
+          "alter course to starboard",
+          "maintain course",
+          "alter speed to port"
+        ],
+        "dangerous_minimal_pairs": [
+          "alter course to port / alter course to starboard"
+        ],
+        "linguist_note": "Port and starboard course alterations are opposite maneuvers."
+      }
+    },
+    {
+      "id": "phrase_review_give_way_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 14,
+      "topic": "traffic_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "movement_contrasts",
+      "source_language": "ru",
+      "source_text": "Уступите дорогу.",
+      "target_language": "en",
+      "target_text": "Give way.",
+      "accepted_answers": [
+        "Give way.",
+        "Give way vessel."
+      ],
+      "grammar_pattern": "review_traffic_obligation_contrast",
+      "hint_beginner": "Give...",
+      "hint_intermediate": "way.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Give way.",
+          "Give way vessel."
+        ],
+        "should_reject": [
+          "stand on",
+          "keep course",
+          "maintain speed"
+        ],
+        "dangerous_minimal_pairs": [
+          "give way / stand on"
+        ],
+        "linguist_note": "Give way and stand on are opposite traffic obligations."
+      }
+    }
+  ],
+  "grammar_patterns": [
+    {
+      "id": "review_signal_family_contrast",
+      "pattern": "explicit contrast between radio signal families",
+      "examples": [
+        "Pan-Pan, not Mayday."
+      ]
+    },
+    {
+      "id": "review_movement_side_contrast",
+      "pattern": "movement command with exact side",
+      "examples": [
+        "Alter course to port."
+      ]
+    },
+    {
+      "id": "review_traffic_obligation_contrast",
+      "pattern": "traffic obligation contrast",
+      "examples": [
+        "Give way."
+      ]
+    }
+  ],
+  "dangerous_minimal_pairs": [
+    {
+      "pair": "over / out",
+      "items": [
+        "expr_review_over_001"
+      ],
+      "must_accept": {
+        "expr_review_over_001": [
+          "over"
+        ]
+      },
+      "must_reject": {
+        "expr_review_over_001": [
+          "out",
+          "roger",
+          "stand by"
+        ]
+      },
+      "reason": "Over expects a reply; out closes the communication."
+    },
+    {
+      "pair": "roger / affirmative",
+      "items": [
+        "expr_review_roger_001",
+        "expr_review_affirmative_001"
+      ],
+      "must_accept": {
+        "expr_review_roger_001": [
+          "roger"
+        ],
+        "expr_review_affirmative_001": [
+          "affirmative"
+        ]
+      },
+      "must_reject": {
+        "expr_review_roger_001": [
+          "affirmative",
+          "negative",
+          "wilco"
+        ],
+        "expr_review_affirmative_001": [
+          "roger",
+          "negative",
+          "received"
+        ]
+      },
+      "reason": "Received and yes are different radio meanings."
+    },
+    {
+      "pair": "say again / read back",
+      "items": [
+        "expr_review_say_again_001",
+        "expr_review_read_back_001"
+      ],
+      "must_accept": {
+        "expr_review_say_again_001": [
+          "say again"
+        ],
+        "expr_review_read_back_001": [
+          "read back"
+        ]
+      },
+      "must_reject": {
+        "expr_review_say_again_001": [
+          "read back",
+          "repeat after me",
+          "roger"
+        ],
+        "expr_review_read_back_001": [
+          "say again",
+          "repeat",
+          "stand by"
+        ]
+      },
+      "reason": "Say again is a repetition request; read back is confirmation."
+    },
+    {
+      "pair": "port / starboard",
+      "items": [
+        "word_review_port_001",
+        "word_review_starboard_001"
+      ],
+      "must_accept": {
+        "word_review_port_001": [
+          "port"
+        ],
+        "word_review_starboard_001": [
+          "starboard"
+        ]
+      },
+      "must_reject": {
+        "word_review_port_001": [
+          "starboard",
+          "left",
+          "harbour"
+        ],
+        "word_review_starboard_001": [
+          "port",
+          "right",
+          "stern"
+        ]
+      },
+      "reason": "Port and starboard are opposite vessel sides."
+    },
+    {
+      "pair": "ahead / astern",
+      "items": [
+        "word_review_ahead_001",
+        "word_review_astern_001"
+      ],
+      "must_accept": {
+        "word_review_ahead_001": [
+          "ahead"
+        ],
+        "word_review_astern_001": [
+          "astern"
+        ]
+      },
+      "must_reject": {
+        "word_review_ahead_001": [
+          "astern",
+          "abeam",
+          "alongside"
+        ],
+        "word_review_astern_001": [
+          "ahead",
+          "abeam",
+          "astern line"
+        ]
+      },
+      "reason": "Ahead and astern are opposite relative directions."
+    },
+    {
+      "pair": "channel one six / channel one three",
+      "items": [
+        "expr_review_channel_one_six_001"
+      ],
+      "must_accept": {
+        "expr_review_channel_one_six_001": [
+          "channel one six"
+        ]
+      },
+      "must_reject": {
+        "expr_review_channel_one_six_001": [
+          "channel one three",
+          "channel six one",
+          "channel sixteen"
+        ]
+      },
+      "reason": "Channel digits must remain exact."
+    },
+    {
+      "pair": "zero nine zero / nine zero",
+      "items": [
+        "expr_review_zero_nine_zero_001"
+      ],
+      "must_accept": {
+        "expr_review_zero_nine_zero_001": [
+          "zero nine zero"
+        ]
+      },
+      "must_reject": {
+        "expr_review_zero_nine_zero_001": [
+          "nine zero",
+          "one eight zero",
+          "zero nine"
+        ]
+      },
+      "reason": "Three-digit heading and bearing forms must preserve leading zero."
+    },
+    {
+      "pair": "one four zero zero / one five zero zero",
+      "items": [
+        "expr_review_one_four_zero_zero_001"
+      ],
+      "must_accept": {
+        "expr_review_one_four_zero_zero_001": [
+          "one four zero zero"
+        ]
+      },
+      "must_reject": {
+        "expr_review_one_four_zero_zero_001": [
+          "one five zero zero",
+          "fourteen hundred",
+          "one four zero"
+        ]
+      },
+      "reason": "Spoken time digits must preserve exact value."
+    },
+    {
+      "pair": "Pan-Pan / Mayday / Securite",
+      "items": [
+        "phrase_review_pan_pan_not_mayday_001"
+      ],
+      "must_accept": {
+        "phrase_review_pan_pan_not_mayday_001": [
+          "Pan-Pan, not Mayday."
+        ]
+      },
+      "must_reject": {
+        "phrase_review_pan_pan_not_mayday_001": [
+          "Mayday not Pan-Pan",
+          "Securite not Mayday",
+          "Pan-Pan Mayday"
+        ]
+      },
+      "reason": "Radio signal families must not collapse."
+    },
+    {
+      "pair": "alter course to port / alter course to starboard",
+      "items": [
+        "phrase_review_alter_course_to_port_001"
+      ],
+      "must_accept": {
+        "phrase_review_alter_course_to_port_001": [
+          "Alter course to port."
+        ]
+      },
+      "must_reject": {
+        "phrase_review_alter_course_to_port_001": [
+          "alter course to starboard",
+          "maintain course",
+          "alter speed to port"
+        ]
+      },
+      "reason": "Side and action changes alter the command."
+    },
+    {
+      "pair": "give way / stand on",
+      "items": [
+        "phrase_review_give_way_001"
+      ],
+      "must_accept": {
+        "phrase_review_give_way_001": [
+          "Give way."
+        ]
+      },
+      "must_reject": {
+        "phrase_review_give_way_001": [
+          "stand on",
+          "keep course",
+          "maintain speed"
+        ]
+      },
+      "reason": "Give way and stand on are opposite traffic obligations."
+    }
+  ],
+  "producer_notes": [
+    "Draft follows the roadmap rule that review/minimal-pair drills should be short, not a normal 50-item batch.",
+    "The batch intentionally trains strict rejection boundaries rather than adding broad synonyms.",
+    "No starter, regression, matcher, API/runtime, UI, Atlas, auth, router, registry, production, Watch Officer, or Nav Desk files changed."
+  ]
+}

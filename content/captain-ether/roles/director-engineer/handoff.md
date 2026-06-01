@@ -208,12 +208,13 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0067 Batch 010 Post-Merge QA` is closed as PASS and accepted.
+None. `CE-SPRINT-0068 Batch 011 Review Minimal Pairs Draft` is closed as PASS
+and routed to Sea Speak Linguist review.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0067-batch-010-post-merge-qa-accepted-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0068-batch-011-review-minimal-pairs-draft-2026-06-01.md
 ```
 
 Latest local validation:
@@ -228,6 +229,9 @@ Playable merge completed locally.
 Batch validator PASS with known starter WARN (9).
 API smoke PASS captain-ether-api-smoke checks=334.
 Post-merge QA PASS.
+Batch 011 Review Minimal Pairs draft created.
+Batch 011 status: draft.
+Batch 011 validator PASS with known starter WARN (9).
 ```
 
 Current local playable corpus:
@@ -256,13 +260,15 @@ production config, deploy/FTP state, or secrets changed.
 Next recommended work:
 
 ```text
-Prepare the next corpus-growth batch or run a separate director-approved local
-site/runtime parity check. Production work requires a separate explicit task.
+TASK-CE-0069 Batch 011 Review Minimal Pairs Sea Speak Linguist review.
+Owner: Sea Speak Linguist.
+Goal: review procedure, direction, numeric, signal, movement, and traffic
+minimal-pair boundaries before engineering gate.
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
 matcher change, API/runtime change, UI change, Atlas change, playable merge, or
-public English-native release is authorized by `CE-SPRINT-0067`.
+public English-native release is authorized by `CE-SPRINT-0068`.
 
 ## Previous Closed Sprint
 
