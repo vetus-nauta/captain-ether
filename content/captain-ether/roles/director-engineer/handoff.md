@@ -208,13 +208,13 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0070 Batch 011 Engineering Gate` is closed as PASS FOR QA
-ACCEPTANCE and routed to QA acceptance.
+None. `CE-SPRINT-0071 Batch 011 Acceptance QA` is closed as PASS and accepted
+for merge preparation.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0070-batch-011-engineering-gate-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0071-batch-011-acceptance-qa-2026-06-01.md
 ```
 
 Latest local validation:
@@ -233,6 +233,7 @@ Batch 011 Review Minimal Pairs draft created.
 Batch 011 status: linguist_reviewed.
 Batch 011 Sea Speak Linguist review PASS.
 Batch 011 engineering gate PASS FOR QA ACCEPTANCE.
+Batch 011 QA acceptance PASS.
 Batch 011 validator PASS with known starter WARN (9).
 ```
 
@@ -262,15 +263,15 @@ production config, deploy/FTP state, or secrets changed.
 Next recommended work:
 
 ```text
-TASK-CE-0071 Batch 011 Review Minimal Pairs QA acceptance.
-Owner: QA.
-Goal: independently verify target_text, should_accept, should_reject,
-dangerous-pair coverage, and scope preservation before merge.
+TASK-CE-0072 Batch 011 Review Minimal Pairs merge preparation.
+Owner: Director-Engineer.
+Goal: merge the accepted Batch 011 into playable starter and regression files,
+then run validator, API smoke, and post-merge readiness checks locally.
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
 matcher change, API/runtime change, UI change, Atlas change, playable merge, or
-public English-native release is authorized by `CE-SPRINT-0070`.
+public English-native release is authorized by `CE-SPRINT-0071`.
 
 ## Previous Closed Sprint
 
