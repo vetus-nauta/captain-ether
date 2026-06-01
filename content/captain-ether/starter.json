@@ -7425,6 +7425,1009 @@
       "hint_beginner": "Port entry is...",
       "hint_intermediate": "is not permitted.",
       "hint_advanced": ""
+    },
+    {
+      "id": "word_onboard_watch_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 7,
+      "topic": "watchkeeping",
+      "branch": "onboard_operations",
+      "module": "watch_handover",
+      "source_language": "ru",
+      "source_text": "Вахта",
+      "target_language": "en",
+      "target_text": "watch",
+      "accepted_answers": [
+        "watch"
+      ],
+      "hint_beginner": "w___h",
+      "hint_intermediate": "watch...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_onboard_handover_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "watch_handover",
+      "branch": "onboard_operations",
+      "module": "watch_handover",
+      "source_language": "ru",
+      "source_text": "Передача вахты",
+      "target_language": "en",
+      "target_text": "handover",
+      "accepted_answers": [
+        "handover",
+        "hand over"
+      ],
+      "hint_beginner": "h______r",
+      "hint_intermediate": "handover...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_onboard_helm_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "helm_orders",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Руль / управление рулем",
+      "target_language": "en",
+      "target_text": "helm",
+      "accepted_answers": [
+        "helm"
+      ],
+      "hint_beginner": "h__m",
+      "hint_intermediate": "helm...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_onboard_rudder_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 10,
+      "topic": "helm_orders",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Руль судна",
+      "target_language": "en",
+      "target_text": "rudder",
+      "accepted_answers": [
+        "rudder"
+      ],
+      "hint_beginner": "r____r",
+      "hint_intermediate": "rudder...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_onboard_anchor_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "anchor_handling",
+      "branch": "onboard_operations",
+      "module": "anchor_handling",
+      "source_language": "ru",
+      "source_text": "Якорь",
+      "target_language": "en",
+      "target_text": "anchor",
+      "accepted_answers": [
+        "anchor"
+      ],
+      "hint_beginner": "a____r",
+      "hint_intermediate": "anchor...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_onboard_windlass_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 11,
+      "topic": "anchor_handling",
+      "branch": "onboard_operations",
+      "module": "anchor_handling",
+      "source_language": "ru",
+      "source_text": "Брашпиль",
+      "target_language": "en",
+      "target_text": "windlass",
+      "accepted_answers": [
+        "windlass"
+      ],
+      "hint_beginner": "w______s",
+      "hint_intermediate": "windlass...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_onboard_bow_station_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Носовой пост",
+      "target_language": "en",
+      "target_text": "bow station",
+      "accepted_answers": [
+        "bow station"
+      ],
+      "hint_beginner": "b________n",
+      "hint_intermediate": "bow...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_onboard_stern_station_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Кормовой пост",
+      "target_language": "en",
+      "target_text": "stern station",
+      "accepted_answers": [
+        "stern station"
+      ],
+      "hint_beginner": "s__________n",
+      "hint_intermediate": "stern...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_onboard_lifebuoy_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "safety_equipment",
+      "branch": "onboard_operations",
+      "module": "safety_checks",
+      "source_language": "ru",
+      "source_text": "Спасательный круг",
+      "target_language": "en",
+      "target_text": "lifebuoy",
+      "accepted_answers": [
+        "lifebuoy",
+        "life buoy"
+      ],
+      "hint_beginner": "l______y",
+      "hint_intermediate": "lifebuoy...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_onboard_fire_extinguisher_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "safety_equipment",
+      "branch": "onboard_operations",
+      "module": "safety_checks",
+      "source_language": "ru",
+      "source_text": "Огнетушитель",
+      "target_language": "en",
+      "target_text": "fire extinguisher",
+      "accepted_answers": [
+        "fire extinguisher"
+      ],
+      "hint_beginner": "f______________r",
+      "hint_intermediate": "fire...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_onboard_watch_handover_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "watch_handover",
+      "branch": "onboard_operations",
+      "module": "watch_handover",
+      "source_language": "ru",
+      "source_text": "Передать вахту",
+      "target_language": "en",
+      "target_text": "hand over watch",
+      "accepted_answers": [
+        "hand over watch",
+        "handover watch"
+      ],
+      "hint_beginner": "hand o___ w____",
+      "hint_intermediate": "hand...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_onboard_take_over_watch_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "watch_handover",
+      "branch": "onboard_operations",
+      "module": "watch_handover",
+      "source_language": "ru",
+      "source_text": "Принять вахту",
+      "target_language": "en",
+      "target_text": "take over watch",
+      "accepted_answers": [
+        "take over watch"
+      ],
+      "hint_beginner": "take o___ w____",
+      "hint_intermediate": "take...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_onboard_log_entry_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "watch_handover",
+      "branch": "onboard_operations",
+      "module": "watch_handover",
+      "source_language": "ru",
+      "source_text": "Запись в журнале",
+      "target_language": "en",
+      "target_text": "log entry",
+      "accepted_answers": [
+        "log entry"
+      ],
+      "hint_beginner": "log e____",
+      "hint_intermediate": "log...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_onboard_helm_port_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "helm_order",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Руль влево",
+      "target_language": "en",
+      "target_text": "port helm",
+      "accepted_answers": [
+        "port helm",
+        "helm to port"
+      ],
+      "hint_beginner": "port h___",
+      "hint_intermediate": "port...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_onboard_helm_starboard_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "helm_order",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Руль вправо",
+      "target_language": "en",
+      "target_text": "starboard helm",
+      "accepted_answers": [
+        "starboard helm",
+        "helm to starboard"
+      ],
+      "hint_beginner": "starboard h___",
+      "hint_intermediate": "starboard...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_onboard_midships_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 11,
+      "topic": "helm_order",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Руль прямо",
+      "target_language": "en",
+      "target_text": "midships",
+      "accepted_answers": [
+        "midships",
+        "helm midships"
+      ],
+      "hint_beginner": "midships",
+      "hint_intermediate": "midships...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_onboard_steady_course_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "helm_order",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Держать курс",
+      "target_language": "en",
+      "target_text": "steady course",
+      "accepted_answers": [
+        "steady course",
+        "keep steady course"
+      ],
+      "hint_beginner": "steady c_____",
+      "hint_intermediate": "steady...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_onboard_let_go_anchor_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "anchor_handling",
+      "branch": "onboard_operations",
+      "module": "anchor_handling",
+      "source_language": "ru",
+      "source_text": "Отдать якорь",
+      "target_language": "en",
+      "target_text": "let go anchor",
+      "accepted_answers": [
+        "let go anchor",
+        "let go the anchor"
+      ],
+      "hint_beginner": "let g_ a_____",
+      "hint_intermediate": "let...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_onboard_heave_up_anchor_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "anchor_handling",
+      "branch": "onboard_operations",
+      "module": "anchor_handling",
+      "source_language": "ru",
+      "source_text": "Поднять якорь",
+      "target_language": "en",
+      "target_text": "heave up anchor",
+      "accepted_answers": [
+        "heave up anchor",
+        "weigh anchor"
+      ],
+      "hint_beginner": "heave u_ a_____",
+      "hint_intermediate": "heave...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_onboard_anchor_ready_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "anchor_handling",
+      "branch": "onboard_operations",
+      "module": "anchor_handling",
+      "source_language": "ru",
+      "source_text": "Якорь готов",
+      "target_language": "en",
+      "target_text": "anchor ready",
+      "accepted_answers": [
+        "anchor ready"
+      ],
+      "hint_beginner": "anchor r____",
+      "hint_intermediate": "anchor...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_onboard_make_fast_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Закрепить швартов",
+      "target_language": "en",
+      "target_text": "make fast",
+      "accepted_answers": [
+        "make fast",
+        "make fast the line"
+      ],
+      "hint_beginner": "make f___",
+      "hint_intermediate": "make...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_onboard_let_go_lines_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Отдать швартовы",
+      "target_language": "en",
+      "target_text": "let go lines",
+      "accepted_answers": [
+        "let go lines",
+        "let go the lines"
+      ],
+      "hint_beginner": "let g_ l____",
+      "hint_intermediate": "let...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_onboard_stand_by_bow_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Носовой пост, приготовиться",
+      "target_language": "en",
+      "target_text": "stand by bow",
+      "accepted_answers": [
+        "stand by bow",
+        "bow station stand by"
+      ],
+      "hint_beginner": "stand b_ b__",
+      "hint_intermediate": "stand...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_onboard_standing_by_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Готов / ожидаю",
+      "target_language": "en",
+      "target_text": "standing by",
+      "accepted_answers": [
+        "standing by"
+      ],
+      "hint_beginner": "standing b_",
+      "hint_intermediate": "standing...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_onboard_safety_check_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "safety_checks",
+      "branch": "onboard_operations",
+      "module": "safety_checks",
+      "source_language": "ru",
+      "source_text": "Проверка безопасности",
+      "target_language": "en",
+      "target_text": "safety check",
+      "accepted_answers": [
+        "safety check"
+      ],
+      "hint_beginner": "safety c____",
+      "hint_intermediate": "safety...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_onboard_fire_on_board_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 13,
+      "topic": "emergency_aboard",
+      "branch": "onboard_operations",
+      "module": "emergency_actions_aboard",
+      "source_language": "ru",
+      "source_text": "Пожар на борту",
+      "target_language": "en",
+      "target_text": "fire on board",
+      "accepted_answers": [
+        "fire on board"
+      ],
+      "hint_beginner": "fire o_ b____",
+      "hint_intermediate": "fire...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_onboard_flooding_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 13,
+      "topic": "emergency_aboard",
+      "branch": "onboard_operations",
+      "module": "emergency_actions_aboard",
+      "source_language": "ru",
+      "source_text": "Поступление воды",
+      "target_language": "en",
+      "target_text": "flooding on board",
+      "accepted_answers": [
+        "flooding on board"
+      ],
+      "hint_beginner": "flooding o_ b____",
+      "hint_intermediate": "flooding...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_handover_complete_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "watch_handover",
+      "branch": "onboard_operations",
+      "module": "watch_handover",
+      "source_language": "ru",
+      "source_text": "Передача вахты завершена.",
+      "target_language": "en",
+      "target_text": "Watch handover complete.",
+      "accepted_answers": [
+        "watch handover complete",
+        "handover complete"
+      ],
+      "grammar_pattern": "onboard_watch_handover_basic",
+      "hint_beginner": "Watch handover complete....",
+      "hint_intermediate": "Watch handover complete.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_take_over_bridge_watch_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "watch_handover",
+      "branch": "onboard_operations",
+      "module": "watch_handover",
+      "source_language": "ru",
+      "source_text": "Я принимаю ходовую вахту.",
+      "target_language": "en",
+      "target_text": "I take over the bridge watch.",
+      "accepted_answers": [
+        "i take over the bridge watch",
+        "take over bridge watch"
+      ],
+      "grammar_pattern": "onboard_watch_handover_basic",
+      "hint_beginner": "I take over...",
+      "hint_intermediate": "the bridge watch.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_report_watch_status_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "watch_handover",
+      "branch": "onboard_operations",
+      "module": "watch_handover",
+      "source_language": "ru",
+      "source_text": "Доложите состояние вахты.",
+      "target_language": "en",
+      "target_text": "Report watch status.",
+      "accepted_answers": [
+        "report watch status",
+        "report the watch status"
+      ],
+      "grammar_pattern": "onboard_watch_status_report",
+      "hint_beginner": "Report watch status....",
+      "hint_intermediate": "Report watch status.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_log_entry_complete_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "watch_handover",
+      "branch": "onboard_operations",
+      "module": "watch_handover",
+      "source_language": "ru",
+      "source_text": "Запись в журнале сделана.",
+      "target_language": "en",
+      "target_text": "Log entry complete.",
+      "accepted_answers": [
+        "log entry complete",
+        "log entry is complete"
+      ],
+      "grammar_pattern": "onboard_watch_status_report",
+      "hint_beginner": "Log entry complete....",
+      "hint_intermediate": "Log entry complete.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_port_helm_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "helm_order",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Руль лево десять.",
+      "target_language": "en",
+      "target_text": "Port helm ten.",
+      "accepted_answers": [
+        "port helm ten",
+        "helm to port ten"
+      ],
+      "grammar_pattern": "onboard_helm_order_basic",
+      "hint_beginner": "Port helm ten....",
+      "hint_intermediate": "Port helm ten.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_starboard_helm_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "helm_order",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Руль право десять.",
+      "target_language": "en",
+      "target_text": "Starboard helm ten.",
+      "accepted_answers": [
+        "starboard helm ten",
+        "helm to starboard ten"
+      ],
+      "grammar_pattern": "onboard_helm_order_basic",
+      "hint_beginner": "Starboard helm ten....",
+      "hint_intermediate": "Starboard helm ten.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_helm_midships_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 17,
+      "topic": "helm_order",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Руль прямо.",
+      "target_language": "en",
+      "target_text": "Helm midships.",
+      "accepted_answers": [
+        "helm midships",
+        "midships"
+      ],
+      "grammar_pattern": "onboard_helm_order_basic",
+      "hint_beginner": "Helm midships....",
+      "hint_intermediate": "Helm midships.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_steady_on_course_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "helm_order",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Держите курс ноль девять ноль.",
+      "target_language": "en",
+      "target_text": "Steady on course zero nine zero.",
+      "accepted_answers": [
+        "steady on course zero nine zero",
+        "steady on course 090"
+      ],
+      "grammar_pattern": "onboard_course_steady_order",
+      "hint_beginner": "Steady on course...",
+      "hint_intermediate": "zero nine zero.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_order_completed_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "helm_order",
+      "branch": "onboard_operations",
+      "module": "helm_orders",
+      "source_language": "ru",
+      "source_text": "Команда выполнена.",
+      "target_language": "en",
+      "target_text": "Order completed.",
+      "accepted_answers": [
+        "order completed",
+        "order is completed"
+      ],
+      "grammar_pattern": "onboard_order_completion",
+      "hint_beginner": "Order completed....",
+      "hint_intermediate": "Order completed.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_action_completed_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 16,
+      "topic": "emergency_action",
+      "branch": "onboard_operations",
+      "module": "emergency_actions_aboard",
+      "source_language": "ru",
+      "source_text": "Действие выполнено.",
+      "target_language": "en",
+      "target_text": "Action completed.",
+      "accepted_answers": [
+        "action completed",
+        "action is completed"
+      ],
+      "grammar_pattern": "onboard_order_completion",
+      "hint_beginner": "Action completed....",
+      "hint_intermediate": "Action completed.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_anchor_ready_report_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 15,
+      "topic": "anchor_handling",
+      "branch": "onboard_operations",
+      "module": "anchor_handling",
+      "source_language": "ru",
+      "source_text": "Якорь готов к отдаче.",
+      "target_language": "en",
+      "target_text": "Anchor ready for letting go.",
+      "accepted_answers": [
+        "anchor ready for letting go",
+        "anchor is ready for letting go"
+      ],
+      "grammar_pattern": "onboard_anchor_handling_basic",
+      "hint_beginner": "Anchor ready for...",
+      "hint_intermediate": "for letting go.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_let_go_anchor_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "anchor_handling",
+      "branch": "onboard_operations",
+      "module": "anchor_handling",
+      "source_language": "ru",
+      "source_text": "Отдать якорь по команде.",
+      "target_language": "en",
+      "target_text": "Let go anchor on command.",
+      "accepted_answers": [
+        "let go anchor on command",
+        "let go the anchor on command"
+      ],
+      "grammar_pattern": "onboard_anchor_handling_basic",
+      "hint_beginner": "Let go anchor...",
+      "hint_intermediate": "anchor on command.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_anchor_aweigh_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "anchor_handling",
+      "branch": "onboard_operations",
+      "module": "anchor_handling",
+      "source_language": "ru",
+      "source_text": "Якорь оторвался от грунта.",
+      "target_language": "en",
+      "target_text": "Anchor aweigh.",
+      "accepted_answers": [
+        "anchor aweigh"
+      ],
+      "grammar_pattern": "onboard_anchor_status_report",
+      "hint_beginner": "Anchor aweigh....",
+      "hint_intermediate": "Anchor aweigh.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_anchor_down_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "anchor_handling",
+      "branch": "onboard_operations",
+      "module": "anchor_handling",
+      "source_language": "ru",
+      "source_text": "Якорь на грунте.",
+      "target_language": "en",
+      "target_text": "Anchor is down.",
+      "accepted_answers": [
+        "anchor is down",
+        "anchor down"
+      ],
+      "grammar_pattern": "onboard_anchor_status_report",
+      "hint_beginner": "Anchor is down....",
+      "hint_intermediate": "Anchor is down.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_bow_station_ready_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Носовой пост готов.",
+      "target_language": "en",
+      "target_text": "Bow station ready.",
+      "accepted_answers": [
+        "bow station ready"
+      ],
+      "grammar_pattern": "onboard_station_ready_report",
+      "hint_beginner": "Bow station ready....",
+      "hint_intermediate": "Bow station ready.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_stern_station_ready_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Кормовой пост готов.",
+      "target_language": "en",
+      "target_text": "Stern station ready.",
+      "accepted_answers": [
+        "stern station ready"
+      ],
+      "grammar_pattern": "onboard_station_ready_report",
+      "hint_beginner": "Stern station ready....",
+      "hint_intermediate": "Stern station ready.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_make_fast_forward_line_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Закрепить носовой швартов.",
+      "target_language": "en",
+      "target_text": "Make fast forward line.",
+      "accepted_answers": [
+        "make fast forward line",
+        "make fast the forward line"
+      ],
+      "grammar_pattern": "onboard_line_handling_basic",
+      "hint_beginner": "Make fast forward...",
+      "hint_intermediate": "fast forward line.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_let_go_aft_line_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "mooring_station",
+      "branch": "onboard_operations",
+      "module": "mooring_stations",
+      "source_language": "ru",
+      "source_text": "Отдать кормовой швартов.",
+      "target_language": "en",
+      "target_text": "Let go aft line.",
+      "accepted_answers": [
+        "let go aft line",
+        "let go the aft line"
+      ],
+      "grammar_pattern": "onboard_line_handling_basic",
+      "hint_beginner": "Let go aft...",
+      "hint_intermediate": "go aft line.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_check_lifebuoy_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "safety_checks",
+      "branch": "onboard_operations",
+      "module": "safety_checks",
+      "source_language": "ru",
+      "source_text": "Проверьте спасательный круг.",
+      "target_language": "en",
+      "target_text": "Check the lifebuoy.",
+      "accepted_answers": [
+        "check the lifebuoy",
+        "check lifebuoy"
+      ],
+      "grammar_pattern": "onboard_safety_check_basic",
+      "hint_beginner": "Check the lifebuoy....",
+      "hint_intermediate": "Check the lifebuoy.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_check_fire_extinguisher_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 18,
+      "topic": "safety_checks",
+      "branch": "onboard_operations",
+      "module": "safety_checks",
+      "source_language": "ru",
+      "source_text": "Проверьте огнетушитель.",
+      "target_language": "en",
+      "target_text": "Check the fire extinguisher.",
+      "accepted_answers": [
+        "check the fire extinguisher",
+        "check fire extinguisher"
+      ],
+      "grammar_pattern": "onboard_safety_check_basic",
+      "hint_beginner": "Check the fire...",
+      "hint_intermediate": "the fire extinguisher.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_report_fire_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 20,
+      "topic": "emergency_aboard",
+      "branch": "onboard_operations",
+      "module": "emergency_actions_aboard",
+      "source_language": "ru",
+      "source_text": "Доложите пожар на борту.",
+      "target_language": "en",
+      "target_text": "Report fire on board.",
+      "accepted_answers": [
+        "report fire on board"
+      ],
+      "grammar_pattern": "onboard_emergency_report_basic",
+      "hint_beginner": "Report fire on...",
+      "hint_intermediate": "fire on board.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_report_man_overboard_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 20,
+      "topic": "emergency_aboard",
+      "branch": "onboard_operations",
+      "module": "emergency_actions_aboard",
+      "source_language": "ru",
+      "source_text": "Доложите человек за бортом.",
+      "target_language": "en",
+      "target_text": "Report man overboard.",
+      "accepted_answers": [
+        "report man overboard"
+      ],
+      "grammar_pattern": "onboard_emergency_report_basic",
+      "hint_beginner": "Report man overboard....",
+      "hint_intermediate": "Report man overboard.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_onboard_start_fire_pump_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 24,
+      "topic": "emergency_aboard",
+      "branch": "onboard_operations",
+      "module": "emergency_actions_aboard",
+      "source_language": "ru",
+      "source_text": "Запустите пожарный насос.",
+      "target_language": "en",
+      "target_text": "Start the fire pump.",
+      "accepted_answers": [
+        "start the fire pump",
+        "start fire pump"
+      ],
+      "grammar_pattern": "onboard_emergency_action_basic",
+      "hint_beginner": "Start the fire...",
+      "hint_intermediate": "the fire pump.",
+      "hint_advanced": ""
     }
   ],
   "grammar_patterns": [
@@ -8888,6 +9891,100 @@
       "examples": [
         "Pilot is on board.",
         "Report when pilot on board."
+      ]
+    },
+    {
+      "id": "onboard_watch_handover_basic",
+      "pattern": "watch handover/takeover completion or action",
+      "examples": [
+        "Watch handover complete.",
+        "I take over the bridge watch."
+      ]
+    },
+    {
+      "id": "onboard_watch_status_report",
+      "pattern": "report or complete watch/log status",
+      "examples": [
+        "Report watch status.",
+        "Log entry complete."
+      ]
+    },
+    {
+      "id": "onboard_helm_order_basic",
+      "pattern": "helm order + direction or midships",
+      "examples": [
+        "Port helm ten.",
+        "Helm midships."
+      ]
+    },
+    {
+      "id": "onboard_course_steady_order",
+      "pattern": "steady on course + radio course value",
+      "examples": [
+        "Steady on course zero nine zero."
+      ]
+    },
+    {
+      "id": "onboard_order_completion",
+      "pattern": "order/action + completed",
+      "examples": [
+        "Order completed.",
+        "Action completed."
+      ]
+    },
+    {
+      "id": "onboard_anchor_handling_basic",
+      "pattern": "anchor readiness or action on command",
+      "examples": [
+        "Anchor ready for letting go.",
+        "Let go anchor on command."
+      ]
+    },
+    {
+      "id": "onboard_anchor_status_report",
+      "pattern": "anchor status report",
+      "examples": [
+        "Anchor aweigh.",
+        "Anchor is down."
+      ]
+    },
+    {
+      "id": "onboard_station_ready_report",
+      "pattern": "mooring station + ready",
+      "examples": [
+        "Bow station ready.",
+        "Stern station ready."
+      ]
+    },
+    {
+      "id": "onboard_line_handling_basic",
+      "pattern": "make fast or let go + line position",
+      "examples": [
+        "Make fast forward line.",
+        "Let go aft line."
+      ]
+    },
+    {
+      "id": "onboard_safety_check_basic",
+      "pattern": "check + safety equipment",
+      "examples": [
+        "Check the lifebuoy.",
+        "Check the fire extinguisher."
+      ]
+    },
+    {
+      "id": "onboard_emergency_report_basic",
+      "pattern": "report + onboard emergency type",
+      "examples": [
+        "Report fire on board.",
+        "Report man overboard."
+      ]
+    },
+    {
+      "id": "onboard_emergency_action_basic",
+      "pattern": "start/stop/check + emergency equipment",
+      "examples": [
+        "Start the fire pump."
       ]
     }
   ],

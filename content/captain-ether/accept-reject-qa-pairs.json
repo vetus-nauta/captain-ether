@@ -1,7 +1,7 @@
 {
   "version": 1,
   "task_label": "2026-05-27-second-sea-speak-qa-pass",
-  "scope": "Captain Ether starter items, including Batch 001 core radio procedure, Batch 002 marina/harbour basics, Batch 003 navigation reports, Batch 004 safety warnings, Batch 005 urgency basics, Batch 007 traffic/collision basics, and Batch 008 VTS/port-control basics after merge.",
+  "scope": "Captain Ether starter items, including Batch 001 core radio procedure, Batch 002 marina/harbour basics, Batch 003 navigation reports, Batch 004 safety warnings, Batch 005 urgency basics, Batch 007 traffic/collision basics, Batch 008 VTS/port-control basics, and Batch 009 onboard operations basics after merge.",
   "purpose": "Regression-oriented Sea Speak accept/reject pairs. These pairs protect against rejecting clear maritime meaning and against accepting changed maritime meaning.",
   "dangerous_minimal_pairs": [
     {
@@ -2693,6 +2693,421 @@
         ]
       },
       "reason": "Inbound and outbound traffic directions must not be interchangeable."
+    },
+    {
+      "pair": "hand over watch / take over watch",
+      "items": [
+        "expr_onboard_watch_handover_001",
+        "expr_onboard_take_over_watch_001",
+        "phrase_onboard_take_over_bridge_watch_001"
+      ],
+      "must_accept": {
+        "expr_onboard_watch_handover_001": [
+          "hand over watch"
+        ],
+        "expr_onboard_take_over_watch_001": [
+          "take over watch"
+        ],
+        "phrase_onboard_take_over_bridge_watch_001": [
+          "I take over the bridge watch."
+        ]
+      },
+      "must_reject": {
+        "expr_onboard_watch_handover_001": [
+          "take over watch",
+          "keep watch",
+          "report watch"
+        ],
+        "expr_onboard_take_over_watch_001": [
+          "hand over watch",
+          "leave watch",
+          "watch over"
+        ],
+        "phrase_onboard_take_over_bridge_watch_001": [
+          "i hand over the bridge watch",
+          "i leave the bridge watch",
+          "i take over engine watch"
+        ]
+      },
+      "reason": "Watch handover and takeover are opposite watch-transfer actions."
+    },
+    {
+      "pair": "helm order / action completed",
+      "items": [
+        "phrase_onboard_order_completed_001",
+        "phrase_onboard_action_completed_001",
+        "expr_onboard_steady_course_001"
+      ],
+      "must_accept": {
+        "phrase_onboard_order_completed_001": [
+          "Order completed."
+        ],
+        "phrase_onboard_action_completed_001": [
+          "Action completed."
+        ],
+        "expr_onboard_steady_course_001": [
+          "steady course"
+        ]
+      },
+      "must_reject": {
+        "phrase_onboard_order_completed_001": [
+          "order received",
+          "action completed",
+          "order cancelled"
+        ],
+        "phrase_onboard_action_completed_001": [
+          "order completed",
+          "action required",
+          "action cancelled"
+        ],
+        "expr_onboard_steady_course_001": [
+          "alter course",
+          "midships",
+          "course reported"
+        ]
+      },
+      "reason": "Order completion, action completion, and ongoing helm order language must stay separate."
+    },
+    {
+      "pair": "port helm / starboard helm",
+      "items": [
+        "expr_onboard_helm_port_001",
+        "expr_onboard_helm_starboard_001",
+        "phrase_onboard_port_helm_001",
+        "phrase_onboard_starboard_helm_001"
+      ],
+      "must_accept": {
+        "expr_onboard_helm_port_001": [
+          "port helm"
+        ],
+        "expr_onboard_helm_starboard_001": [
+          "starboard helm"
+        ],
+        "phrase_onboard_port_helm_001": [
+          "Port helm ten."
+        ],
+        "phrase_onboard_starboard_helm_001": [
+          "Starboard helm ten."
+        ]
+      },
+      "must_reject": {
+        "expr_onboard_helm_port_001": [
+          "starboard helm",
+          "left turn",
+          "port side station"
+        ],
+        "expr_onboard_helm_starboard_001": [
+          "port helm",
+          "right turn",
+          "starboard station"
+        ],
+        "phrase_onboard_port_helm_001": [
+          "starboard helm ten",
+          "port station ten",
+          "left ten"
+        ],
+        "phrase_onboard_starboard_helm_001": [
+          "port helm ten",
+          "starboard station ten",
+          "right ten"
+        ]
+      },
+      "reason": "Port and starboard helm orders reverse the vessel steering order."
+    },
+    {
+      "pair": "anchor / moor / berth",
+      "items": [
+        "word_onboard_anchor_001",
+        "expr_onboard_let_go_anchor_001",
+        "expr_onboard_make_fast_001",
+        "phrase_onboard_let_go_anchor_001"
+      ],
+      "must_accept": {
+        "word_onboard_anchor_001": [
+          "anchor"
+        ],
+        "expr_onboard_let_go_anchor_001": [
+          "let go anchor"
+        ],
+        "expr_onboard_make_fast_001": [
+          "make fast"
+        ],
+        "phrase_onboard_let_go_anchor_001": [
+          "Let go anchor on command."
+        ]
+      },
+      "must_reject": {
+        "word_onboard_anchor_001": [
+          "berth",
+          "moor",
+          "fender"
+        ],
+        "expr_onboard_let_go_anchor_001": [
+          "heave up anchor",
+          "let go lines",
+          "drop fender"
+        ],
+        "expr_onboard_make_fast_001": [
+          "let go",
+          "cast off",
+          "hold fast"
+        ],
+        "phrase_onboard_let_go_anchor_001": [
+          "heave up anchor on command",
+          "let go lines on command",
+          "anchor ready on command"
+        ]
+      },
+      "reason": "Anchor handling, mooring lines, and berth concepts must not collapse."
+    },
+    {
+      "pair": "let go anchor / heave up anchor",
+      "items": [
+        "expr_onboard_let_go_anchor_001",
+        "expr_onboard_heave_up_anchor_001",
+        "phrase_onboard_let_go_anchor_001",
+        "phrase_onboard_anchor_aweigh_001"
+      ],
+      "must_accept": {
+        "expr_onboard_let_go_anchor_001": [
+          "let go anchor"
+        ],
+        "expr_onboard_heave_up_anchor_001": [
+          "heave up anchor"
+        ],
+        "phrase_onboard_let_go_anchor_001": [
+          "Let go anchor on command."
+        ],
+        "phrase_onboard_anchor_aweigh_001": [
+          "Anchor aweigh."
+        ]
+      },
+      "must_reject": {
+        "expr_onboard_let_go_anchor_001": [
+          "heave up anchor",
+          "let go lines",
+          "drop fender"
+        ],
+        "expr_onboard_heave_up_anchor_001": [
+          "let go anchor",
+          "heave up line",
+          "anchor ready"
+        ],
+        "phrase_onboard_let_go_anchor_001": [
+          "heave up anchor on command",
+          "let go lines on command",
+          "anchor ready on command"
+        ],
+        "phrase_onboard_anchor_aweigh_001": [
+          "anchor down",
+          "anchor ready",
+          "anchor dragging"
+        ]
+      },
+      "reason": "Let go anchor and heave up/weigh anchor are opposite anchor operations."
+    },
+    {
+      "pair": "make fast / let go lines",
+      "items": [
+        "expr_onboard_make_fast_001",
+        "expr_onboard_let_go_lines_001",
+        "phrase_onboard_make_fast_forward_line_001",
+        "phrase_onboard_let_go_aft_line_001"
+      ],
+      "must_accept": {
+        "expr_onboard_make_fast_001": [
+          "make fast"
+        ],
+        "expr_onboard_let_go_lines_001": [
+          "let go lines"
+        ],
+        "phrase_onboard_make_fast_forward_line_001": [
+          "Make fast forward line."
+        ],
+        "phrase_onboard_let_go_aft_line_001": [
+          "Let go aft line."
+        ]
+      },
+      "must_reject": {
+        "expr_onboard_make_fast_001": [
+          "let go",
+          "cast off",
+          "hold fast"
+        ],
+        "expr_onboard_let_go_lines_001": [
+          "make fast lines",
+          "heave up anchor",
+          "lines ready"
+        ],
+        "phrase_onboard_make_fast_forward_line_001": [
+          "let go forward line",
+          "make fast aft line",
+          "make fast anchor line"
+        ],
+        "phrase_onboard_let_go_aft_line_001": [
+          "make fast aft line",
+          "let go forward line",
+          "let go anchor line"
+        ]
+      },
+      "reason": "Securing and releasing lines are opposite mooring actions."
+    },
+    {
+      "pair": "bow station / stern station / port station / starboard station",
+      "items": [
+        "word_onboard_bow_station_001",
+        "word_onboard_stern_station_001",
+        "phrase_onboard_bow_station_ready_001",
+        "phrase_onboard_stern_station_ready_001"
+      ],
+      "must_accept": {
+        "word_onboard_bow_station_001": [
+          "bow station"
+        ],
+        "word_onboard_stern_station_001": [
+          "stern station"
+        ],
+        "phrase_onboard_bow_station_ready_001": [
+          "Bow station ready."
+        ],
+        "phrase_onboard_stern_station_ready_001": [
+          "Stern station ready."
+        ]
+      },
+      "must_reject": {
+        "word_onboard_bow_station_001": [
+          "stern station",
+          "port station",
+          "starboard station"
+        ],
+        "word_onboard_stern_station_001": [
+          "bow station",
+          "port station",
+          "starboard station"
+        ],
+        "phrase_onboard_bow_station_ready_001": [
+          "stern station ready",
+          "port station ready",
+          "bow line ready"
+        ],
+        "phrase_onboard_stern_station_ready_001": [
+          "bow station ready",
+          "starboard station ready",
+          "stern line ready"
+        ]
+      },
+      "reason": "Mooring station positions must stay exact."
+    },
+    {
+      "pair": "stand by / standing by",
+      "items": [
+        "expr_onboard_stand_by_bow_001",
+        "expr_onboard_standing_by_001"
+      ],
+      "must_accept": {
+        "expr_onboard_stand_by_bow_001": [
+          "stand by bow"
+        ],
+        "expr_onboard_standing_by_001": [
+          "standing by"
+        ]
+      },
+      "must_reject": {
+        "expr_onboard_stand_by_bow_001": [
+          "standing by bow",
+          "stand by stern",
+          "stand by port"
+        ],
+        "expr_onboard_standing_by_001": [
+          "stand by",
+          "go ahead",
+          "not ready"
+        ]
+      },
+      "reason": "Stand by as a command and standing by as a readiness status must stay separate."
+    },
+    {
+      "pair": "safety check / emergency action",
+      "items": [
+        "expr_onboard_safety_check_001",
+        "phrase_onboard_check_fire_extinguisher_001",
+        "phrase_onboard_start_fire_pump_001"
+      ],
+      "must_accept": {
+        "expr_onboard_safety_check_001": [
+          "safety check"
+        ],
+        "phrase_onboard_check_fire_extinguisher_001": [
+          "Check the fire extinguisher."
+        ],
+        "phrase_onboard_start_fire_pump_001": [
+          "Start the fire pump."
+        ]
+      },
+      "must_reject": {
+        "expr_onboard_safety_check_001": [
+          "equipment failure",
+          "emergency action",
+          "security check"
+        ],
+        "phrase_onboard_check_fire_extinguisher_001": [
+          "use the fire extinguisher",
+          "check the lifebuoy",
+          "check the fire pump"
+        ],
+        "phrase_onboard_start_fire_pump_001": [
+          "stop the fire pump",
+          "start bilge pump",
+          "check the fire pump"
+        ]
+      },
+      "reason": "Safety checks and emergency actions are different workflows."
+    },
+    {
+      "pair": "fire / flooding / man overboard",
+      "items": [
+        "expr_onboard_fire_on_board_001",
+        "expr_onboard_flooding_001",
+        "phrase_onboard_report_fire_001",
+        "phrase_onboard_report_man_overboard_001"
+      ],
+      "must_accept": {
+        "expr_onboard_fire_on_board_001": [
+          "fire on board"
+        ],
+        "expr_onboard_flooding_001": [
+          "flooding on board"
+        ],
+        "phrase_onboard_report_fire_001": [
+          "Report fire on board."
+        ],
+        "phrase_onboard_report_man_overboard_001": [
+          "Report man overboard."
+        ]
+      },
+      "must_reject": {
+        "expr_onboard_fire_on_board_001": [
+          "flooding on board",
+          "man overboard",
+          "fire drill"
+        ],
+        "expr_onboard_flooding_001": [
+          "fire on board",
+          "water on deck",
+          "bilge pump ready"
+        ],
+        "phrase_onboard_report_fire_001": [
+          "report flooding on board",
+          "report man overboard",
+          "fire drill on board"
+        ],
+        "phrase_onboard_report_man_overboard_001": [
+          "report fire on board",
+          "report person on board",
+          "man overboard drill"
+        ]
+      },
+      "reason": "Onboard emergency type changes the required response."
     }
   ],
   "items": [
@@ -7544,6 +7959,656 @@
         "port departure is not permitted",
         "port closed"
       ]
+    },
+    {
+      "id": "word_onboard_watch_001",
+      "target_text": "watch",
+      "should_accept": [
+        "watch",
+        "WATCH",
+        "watch."
+      ],
+      "should_reject": [
+        "shift",
+        "lookout",
+        "clock"
+      ]
+    },
+    {
+      "id": "word_onboard_handover_001",
+      "target_text": "handover",
+      "should_accept": [
+        "handover",
+        "hand over"
+      ],
+      "should_reject": [
+        "takeover",
+        "watch",
+        "report"
+      ]
+    },
+    {
+      "id": "word_onboard_helm_001",
+      "target_text": "helm",
+      "should_accept": [
+        "helm",
+        "HELM",
+        "helm."
+      ],
+      "should_reject": [
+        "help",
+        "wheelhouse",
+        "course"
+      ]
+    },
+    {
+      "id": "word_onboard_rudder_001",
+      "target_text": "rudder",
+      "should_accept": [
+        "rudder",
+        "RUDDER",
+        "rudder."
+      ],
+      "should_reject": [
+        "helm",
+        "propeller",
+        "steering gear"
+      ]
+    },
+    {
+      "id": "word_onboard_anchor_001",
+      "target_text": "anchor",
+      "should_accept": [
+        "anchor",
+        "ANCHOR",
+        "anchor."
+      ],
+      "should_reject": [
+        "berth",
+        "moor",
+        "fender"
+      ]
+    },
+    {
+      "id": "word_onboard_windlass_001",
+      "target_text": "windlass",
+      "should_accept": [
+        "windlass",
+        "WINDLASS",
+        "windlass."
+      ],
+      "should_reject": [
+        "winch",
+        "anchor",
+        "line"
+      ]
+    },
+    {
+      "id": "word_onboard_bow_station_001",
+      "target_text": "bow station",
+      "should_accept": [
+        "bow station",
+        "BOW STATION"
+      ],
+      "should_reject": [
+        "stern station",
+        "port station",
+        "starboard station"
+      ]
+    },
+    {
+      "id": "word_onboard_stern_station_001",
+      "target_text": "stern station",
+      "should_accept": [
+        "stern station",
+        "STERN STATION"
+      ],
+      "should_reject": [
+        "bow station",
+        "port station",
+        "starboard station"
+      ]
+    },
+    {
+      "id": "word_onboard_lifebuoy_001",
+      "target_text": "lifebuoy",
+      "should_accept": [
+        "lifebuoy",
+        "life buoy"
+      ],
+      "should_reject": [
+        "lifejacket",
+        "fire extinguisher",
+        "fender"
+      ]
+    },
+    {
+      "id": "word_onboard_fire_extinguisher_001",
+      "target_text": "fire extinguisher",
+      "should_accept": [
+        "fire extinguisher",
+        "FIRE EXTINGUISHER"
+      ],
+      "should_reject": [
+        "lifebuoy",
+        "fire pump",
+        "flare"
+      ]
+    },
+    {
+      "id": "expr_onboard_watch_handover_001",
+      "target_text": "hand over watch",
+      "should_accept": [
+        "hand over watch",
+        "handover watch"
+      ],
+      "should_reject": [
+        "take over watch",
+        "keep watch",
+        "report watch"
+      ]
+    },
+    {
+      "id": "expr_onboard_take_over_watch_001",
+      "target_text": "take over watch",
+      "should_accept": [
+        "take over watch",
+        "TAKE OVER WATCH"
+      ],
+      "should_reject": [
+        "hand over watch",
+        "leave watch",
+        "watch over"
+      ]
+    },
+    {
+      "id": "expr_onboard_log_entry_001",
+      "target_text": "log entry",
+      "should_accept": [
+        "log entry",
+        "LOG ENTRY"
+      ],
+      "should_reject": [
+        "engine log",
+        "watch handover",
+        "entry port"
+      ]
+    },
+    {
+      "id": "expr_onboard_helm_port_001",
+      "target_text": "port helm",
+      "should_accept": [
+        "port helm",
+        "helm to port"
+      ],
+      "should_reject": [
+        "starboard helm",
+        "left turn",
+        "port side station"
+      ]
+    },
+    {
+      "id": "expr_onboard_helm_starboard_001",
+      "target_text": "starboard helm",
+      "should_accept": [
+        "starboard helm",
+        "helm to starboard"
+      ],
+      "should_reject": [
+        "port helm",
+        "right turn",
+        "starboard station"
+      ]
+    },
+    {
+      "id": "expr_onboard_midships_001",
+      "target_text": "midships",
+      "should_accept": [
+        "midships",
+        "helm midships"
+      ],
+      "should_reject": [
+        "hard to port",
+        "steady course",
+        "amidships station"
+      ]
+    },
+    {
+      "id": "expr_onboard_steady_course_001",
+      "target_text": "steady course",
+      "should_accept": [
+        "steady course",
+        "keep steady course"
+      ],
+      "should_reject": [
+        "alter course",
+        "midships",
+        "course reported"
+      ]
+    },
+    {
+      "id": "expr_onboard_let_go_anchor_001",
+      "target_text": "let go anchor",
+      "should_accept": [
+        "let go anchor",
+        "let go the anchor"
+      ],
+      "should_reject": [
+        "heave up anchor",
+        "let go lines",
+        "drop fender"
+      ]
+    },
+    {
+      "id": "expr_onboard_heave_up_anchor_001",
+      "target_text": "heave up anchor",
+      "should_accept": [
+        "heave up anchor",
+        "weigh anchor"
+      ],
+      "should_reject": [
+        "let go anchor",
+        "heave up line",
+        "anchor ready"
+      ]
+    },
+    {
+      "id": "expr_onboard_anchor_ready_001",
+      "target_text": "anchor ready",
+      "should_accept": [
+        "anchor ready",
+        "ANCHOR READY"
+      ],
+      "should_reject": [
+        "anchor aweigh",
+        "anchor down",
+        "lines ready"
+      ]
+    },
+    {
+      "id": "expr_onboard_make_fast_001",
+      "target_text": "make fast",
+      "should_accept": [
+        "make fast",
+        "make fast the line"
+      ],
+      "should_reject": [
+        "let go",
+        "cast off",
+        "hold fast"
+      ]
+    },
+    {
+      "id": "expr_onboard_let_go_lines_001",
+      "target_text": "let go lines",
+      "should_accept": [
+        "let go lines",
+        "let go the lines"
+      ],
+      "should_reject": [
+        "make fast lines",
+        "heave up anchor",
+        "lines ready"
+      ]
+    },
+    {
+      "id": "expr_onboard_stand_by_bow_001",
+      "target_text": "stand by bow",
+      "should_accept": [
+        "stand by bow",
+        "bow station stand by"
+      ],
+      "should_reject": [
+        "standing by bow",
+        "stand by stern",
+        "stand by port"
+      ]
+    },
+    {
+      "id": "expr_onboard_standing_by_001",
+      "target_text": "standing by",
+      "should_accept": [
+        "standing by",
+        "STANDING BY"
+      ],
+      "should_reject": [
+        "stand by",
+        "go ahead",
+        "not ready"
+      ]
+    },
+    {
+      "id": "expr_onboard_safety_check_001",
+      "target_text": "safety check",
+      "should_accept": [
+        "safety check",
+        "SAFETY CHECK"
+      ],
+      "should_reject": [
+        "equipment failure",
+        "emergency action",
+        "security check"
+      ]
+    },
+    {
+      "id": "expr_onboard_fire_on_board_001",
+      "target_text": "fire on board",
+      "should_accept": [
+        "fire on board",
+        "FIRE ON BOARD"
+      ],
+      "should_reject": [
+        "flooding on board",
+        "man overboard",
+        "fire drill"
+      ]
+    },
+    {
+      "id": "expr_onboard_flooding_001",
+      "target_text": "flooding on board",
+      "should_accept": [
+        "flooding on board",
+        "FLOODING ON BOARD"
+      ],
+      "should_reject": [
+        "fire on board",
+        "water on deck",
+        "bilge pump ready"
+      ]
+    },
+    {
+      "id": "phrase_onboard_handover_complete_001",
+      "target_text": "Watch handover complete.",
+      "should_accept": [
+        "Watch handover complete.",
+        "handover complete"
+      ],
+      "should_reject": [
+        "watch handover started",
+        "watch takeover complete",
+        "watch report complete"
+      ]
+    },
+    {
+      "id": "phrase_onboard_take_over_bridge_watch_001",
+      "target_text": "I take over the bridge watch.",
+      "should_accept": [
+        "I take over the bridge watch.",
+        "take over bridge watch"
+      ],
+      "should_reject": [
+        "i hand over the bridge watch",
+        "i leave the bridge watch",
+        "i take over engine watch"
+      ]
+    },
+    {
+      "id": "phrase_onboard_report_watch_status_001",
+      "target_text": "Report watch status.",
+      "should_accept": [
+        "Report watch status.",
+        "report the watch status"
+      ],
+      "should_reject": [
+        "request watch status",
+        "report engine status",
+        "watch status complete"
+      ]
+    },
+    {
+      "id": "phrase_onboard_log_entry_complete_001",
+      "target_text": "Log entry complete.",
+      "should_accept": [
+        "Log entry complete.",
+        "log entry is complete"
+      ],
+      "should_reject": [
+        "log entry missing",
+        "engine log complete",
+        "entry port complete"
+      ]
+    },
+    {
+      "id": "phrase_onboard_port_helm_001",
+      "target_text": "Port helm ten.",
+      "should_accept": [
+        "Port helm ten.",
+        "helm to port ten"
+      ],
+      "should_reject": [
+        "starboard helm ten",
+        "port station ten",
+        "left ten"
+      ]
+    },
+    {
+      "id": "phrase_onboard_starboard_helm_001",
+      "target_text": "Starboard helm ten.",
+      "should_accept": [
+        "Starboard helm ten.",
+        "helm to starboard ten"
+      ],
+      "should_reject": [
+        "port helm ten",
+        "starboard station ten",
+        "right ten"
+      ]
+    },
+    {
+      "id": "phrase_onboard_helm_midships_001",
+      "target_text": "Helm midships.",
+      "should_accept": [
+        "Helm midships.",
+        "midships"
+      ],
+      "should_reject": [
+        "helm hard to port",
+        "steady course",
+        "midships station"
+      ]
+    },
+    {
+      "id": "phrase_onboard_steady_on_course_001",
+      "target_text": "Steady on course zero nine zero.",
+      "should_accept": [
+        "Steady on course zero nine zero.",
+        "steady on course 090"
+      ],
+      "should_reject": [
+        "alter course zero nine zero",
+        "steady on heading 90",
+        "course reported zero nine zero"
+      ]
+    },
+    {
+      "id": "phrase_onboard_order_completed_001",
+      "target_text": "Order completed.",
+      "should_accept": [
+        "Order completed.",
+        "order is completed"
+      ],
+      "should_reject": [
+        "order received",
+        "action completed",
+        "order cancelled"
+      ]
+    },
+    {
+      "id": "phrase_onboard_action_completed_001",
+      "target_text": "Action completed.",
+      "should_accept": [
+        "Action completed.",
+        "action is completed"
+      ],
+      "should_reject": [
+        "order completed",
+        "action required",
+        "action cancelled"
+      ]
+    },
+    {
+      "id": "phrase_onboard_anchor_ready_report_001",
+      "target_text": "Anchor ready for letting go.",
+      "should_accept": [
+        "Anchor ready for letting go.",
+        "anchor is ready for letting go"
+      ],
+      "should_reject": [
+        "anchor is down",
+        "anchor aweigh",
+        "lines ready for letting go"
+      ]
+    },
+    {
+      "id": "phrase_onboard_let_go_anchor_001",
+      "target_text": "Let go anchor on command.",
+      "should_accept": [
+        "Let go anchor on command.",
+        "let go the anchor on command"
+      ],
+      "should_reject": [
+        "heave up anchor on command",
+        "let go lines on command",
+        "anchor ready on command"
+      ]
+    },
+    {
+      "id": "phrase_onboard_anchor_aweigh_001",
+      "target_text": "Anchor aweigh.",
+      "should_accept": [
+        "Anchor aweigh."
+      ],
+      "should_reject": [
+        "anchor down",
+        "anchor ready",
+        "anchor dragging"
+      ]
+    },
+    {
+      "id": "phrase_onboard_anchor_down_001",
+      "target_text": "Anchor is down.",
+      "should_accept": [
+        "Anchor is down.",
+        "anchor down"
+      ],
+      "should_reject": [
+        "anchor aweigh",
+        "anchor ready",
+        "anchor dragging"
+      ]
+    },
+    {
+      "id": "phrase_onboard_bow_station_ready_001",
+      "target_text": "Bow station ready.",
+      "should_accept": [
+        "Bow station ready."
+      ],
+      "should_reject": [
+        "stern station ready",
+        "port station ready",
+        "bow line ready"
+      ]
+    },
+    {
+      "id": "phrase_onboard_stern_station_ready_001",
+      "target_text": "Stern station ready.",
+      "should_accept": [
+        "Stern station ready."
+      ],
+      "should_reject": [
+        "bow station ready",
+        "starboard station ready",
+        "stern line ready"
+      ]
+    },
+    {
+      "id": "phrase_onboard_make_fast_forward_line_001",
+      "target_text": "Make fast forward line.",
+      "should_accept": [
+        "Make fast forward line.",
+        "make fast the forward line"
+      ],
+      "should_reject": [
+        "let go forward line",
+        "make fast aft line",
+        "make fast anchor line"
+      ]
+    },
+    {
+      "id": "phrase_onboard_let_go_aft_line_001",
+      "target_text": "Let go aft line.",
+      "should_accept": [
+        "Let go aft line.",
+        "let go the aft line"
+      ],
+      "should_reject": [
+        "make fast aft line",
+        "let go forward line",
+        "let go anchor line"
+      ]
+    },
+    {
+      "id": "phrase_onboard_check_lifebuoy_001",
+      "target_text": "Check the lifebuoy.",
+      "should_accept": [
+        "Check the lifebuoy.",
+        "check lifebuoy"
+      ],
+      "should_reject": [
+        "check the lifejacket",
+        "check the fire extinguisher",
+        "throw the lifebuoy"
+      ]
+    },
+    {
+      "id": "phrase_onboard_check_fire_extinguisher_001",
+      "target_text": "Check the fire extinguisher.",
+      "should_accept": [
+        "Check the fire extinguisher.",
+        "check fire extinguisher"
+      ],
+      "should_reject": [
+        "use the fire extinguisher",
+        "check the lifebuoy",
+        "check the fire pump"
+      ]
+    },
+    {
+      "id": "phrase_onboard_report_fire_001",
+      "target_text": "Report fire on board.",
+      "should_accept": [
+        "Report fire on board."
+      ],
+      "should_reject": [
+        "report flooding on board",
+        "report man overboard",
+        "fire drill on board"
+      ]
+    },
+    {
+      "id": "phrase_onboard_report_man_overboard_001",
+      "target_text": "Report man overboard.",
+      "should_accept": [
+        "Report man overboard."
+      ],
+      "should_reject": [
+        "report fire on board",
+        "report person on board",
+        "man overboard drill"
+      ]
+    },
+    {
+      "id": "phrase_onboard_start_fire_pump_001",
+      "target_text": "Start the fire pump.",
+      "should_accept": [
+        "Start the fire pump.",
+        "start fire pump"
+      ],
+      "should_reject": [
+        "stop the fire pump",
+        "start bilge pump",
+        "check the fire pump"
+      ]
     }
   ],
   "matcher_suggestions": [
@@ -7557,7 +8622,8 @@
     "Keep compact berth identifiers such as B12 rejected until alphanumeric berth matching is intentionally designed and regression-tested.",
     "Navigation reports must keep heading/course/bearing, ETA values, radio numeric forms, units, decimal wording, cardinal directions, port/starboard, and say again/read back boundaries protected.",
     "Traffic/collision matching must preserve port/starboard, ahead/astern, CPA/TCPA/ETA, give-way/stand-on roles, crossing/overtaking/passing, and bearing/heading/course distinctions.",
-    "VTS/port-control matching must preserve station identity, instruction/advice/information, request/report, pilot/tug/tow, entry/departure, permission negation, exact channels, port-area terms, movement instructions, and inbound/outbound distinctions."
+    "VTS/port-control matching must preserve station identity, instruction/advice/information, request/report, pilot/tug/tow, entry/departure, permission negation, exact channels, port-area terms, movement instructions, and inbound/outbound distinctions.",
+    "Onboard-operations matching must preserve watch handover/takeover, helm order direction, anchor and line actions, station positions, stand-by status, safety-check versus emergency-action wording, and fire/flooding/man-overboard distinctions."
   ],
   "current_matcher_findings": [],
   "resolved_matcher_findings": [
