@@ -121,7 +121,26 @@ PASS; no matcher/API/policy change requested; routed to QA acceptance by Directo
 
 ## Current Assignment
 
-None.
+TASK-CE-0051 Batch 008 VTS / Port Control Risk Review:
+
+- target batch:
+  `content/captain-ether/batches/batch-008-vts-port-control-basics.json`
+- source sprint:
+  `content/captain-ether/roles/director-engineer/reports/sprint-ce-0050-batch-008-vts-port-control-draft-2026-06-01.md`
+- content report:
+  `content/captain-ether/roles/content-producer/reports/batch-008-vts-port-control-basics-card-2026-06-01.md`
+- mode:
+  linguistic review with content-side patch allowed for assigned batch only
+- required focus:
+  `request / report`, `instruction / advice / information`,
+  `VTS / port control / marina control / pilot station`, `pilot / tug / tow`,
+  `enter port / leave port`, `permitted / not permitted`,
+  `reporting point / anchorage / berth / fairway`, exact channel numbers,
+  `proceed / hold / wait`, and `inbound / outbound`.
+
+Do not edit matcher/API/UI/runtime, playable `starter.json`, accept/reject
+regression, Atlas, auth, router, registry, Watch Officer, Nav Desk, production
+config, deploy state, or secrets.
 
 ## Next Valid Work
 

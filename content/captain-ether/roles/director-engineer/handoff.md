@@ -208,21 +208,20 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0049 Batch 007 Post-Merge QA` is closed as PASS and accepted.
+None. `CE-SPRINT-0050 Batch 008 VTS / Port Control Draft` is closed as PASS.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0049-batch-007-post-merge-qa-accepted-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0050-batch-008-vts-port-control-draft-2026-06-01.md
 ```
 
 Latest local validation:
 
 ```text
-Batch 007 merged locally into starter.json and accept-reject regression.
-Post-merge QA PASS.
-Validator PASS with known WARN (9).
-API smoke PASS captain-ether-api-smoke checks=334.
+Batch 008 VTS / Port Control draft created.
+Batch validator PASS with known starter WARN (9).
+No playable merge performed.
 ```
 
 Current local playable corpus:
@@ -235,6 +234,7 @@ should_accept=817
 should_reject=933
 dangerous_pairs=67
 traffic_collision_items=50
+batch_008_vts_port_control_draft_items=50
 ```
 
 Scope preserved:
@@ -248,15 +248,16 @@ production config, deploy/FTP state, or secrets changed.
 Next recommended work:
 
 ```text
-TASK-CE-0050 VTS / port-control corpus gap and Batch 008 draft.
-Owner: Director-Engineer then Content Producer.
-Goal: extend M3 corpus toward operational VTS / port-control traffic while
-preserving existing traffic/collision regression.
+TASK-CE-0051 Batch 008 Sea Speak Linguist risk review.
+Owner: Sea Speak Linguist.
+Goal: review station identity, authority language, pilot/tug boundaries,
+port-entry/departure permissions, exact channel numbers, and traffic-direction
+contrasts before engineering gate.
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
-matcher change, API/runtime change, UI change, Atlas change, or public
-English-native release is authorized by `CE-SPRINT-0049`.
+matcher change, API/runtime change, UI change, Atlas change, starter merge, or
+public English-native release is authorized by `CE-SPRINT-0050`.
 
 ## Previous Closed Sprint
 

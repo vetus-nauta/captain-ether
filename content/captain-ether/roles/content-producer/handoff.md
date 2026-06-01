@@ -105,6 +105,20 @@ batch task.
 Latest closed draft:
 
 ```text
+TASK-CE-0050 Batch 008 VTS / Port Control
+content/captain-ether/batches/batch-008-vts-port-control-basics.json
+content/captain-ether/roles/content-producer/reports/batch-008-vts-port-control-basics-card-2026-06-01.md
+```
+
+Mode:
+
+```text
+content draft only; routed to Sea Speak Linguist review by Director-Engineer
+```
+
+Previous closed draft:
+
+```text
 TASK-CE-0044 Batch 007 Traffic / Collision
 content/captain-ether/batches/batch-007-traffic-collision-basics.json
 content/captain-ether/roles/content-producer/reports/batch-007-traffic-collision-basics-card-2026-06-01.md
@@ -113,7 +127,8 @@ content/captain-ether/roles/content-producer/reports/batch-007-traffic-collision
 Next gate:
 
 ```text
-Sea Speak Linguist risk review before any merge into starter.json.
+Sea Speak Linguist risk review before any engineering gate or merge into
+starter.json.
 ```
 
 ## Report Shape
