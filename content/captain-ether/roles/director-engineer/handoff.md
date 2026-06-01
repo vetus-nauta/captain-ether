@@ -208,12 +208,12 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0057 Batch 009 Linguist Review` is closed as PASS.
+None. `CE-SPRINT-0058 Batch 009 Engineering Gate` is closed as PASS.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0057-batch-009-linguist-review-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0058-batch-009-engineering-gate-2026-06-01.md
 ```
 
 Latest local validation:
@@ -222,7 +222,9 @@ Latest local validation:
 Batch 009 Onboard Operations draft created.
 Batch status: linguist_reviewed.
 Sea Speak Linguist review PASS.
+Engineering gate PASS FOR QA ACCEPTANCE.
 Batch validator PASS with known starter WARN (9).
+API smoke PASS captain-ether-api-smoke checks=334.
 No playable merge performed.
 ```
 
@@ -251,15 +253,15 @@ production config, deploy/FTP state, or secrets changed.
 Next recommended work:
 
 ```text
-TASK-CE-0058 Batch 009 engineering gate.
-Owner: Director-Engineer.
-Goal: verify schema, matcher behavior, duplicate IDs, dangerous-pair coverage,
-and merge readiness before QA acceptance.
+TASK-CE-0059 Batch 009 QA acceptance.
+Owner: QA.
+Goal: independently verify target_text, should_accept, should_reject,
+dangerous-pair coverage, and scope preservation before merge.
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
 matcher change, API/runtime change, UI change, Atlas change, starter merge, or
-public English-native release is authorized by `CE-SPRINT-0057`.
+public English-native release is authorized by `CE-SPRINT-0058`.
 
 ## Previous Closed Sprint
 
