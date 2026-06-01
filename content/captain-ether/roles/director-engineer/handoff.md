@@ -208,18 +208,19 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0048 Batch 007 Merge Preparation` is closed as PASS.
+None. `CE-SPRINT-0049 Batch 007 Post-Merge QA` is closed as PASS and accepted.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0048-batch-007-merge-preparation-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0049-batch-007-post-merge-qa-accepted-2026-06-01.md
 ```
 
 Latest local validation:
 
 ```text
 Batch 007 merged locally into starter.json and accept-reject regression.
+Post-merge QA PASS.
 Validator PASS with known WARN (9).
 API smoke PASS captain-ether-api-smoke checks=334.
 ```
@@ -247,16 +248,15 @@ production config, deploy/FTP state, or secrets changed.
 Next recommended work:
 
 ```text
-TASK-CE-0049 post-merge QA.
-Owner: QA.
-Goal: independently verify merged playable corpus and regression after Batch
-007 merge, including traffic/collision reachability and dangerous-pair
-coverage.
+TASK-CE-0050 VTS / port-control corpus gap and Batch 008 draft.
+Owner: Director-Engineer then Content Producer.
+Goal: extend M3 corpus toward operational VTS / port-control traffic while
+preserving existing traffic/collision regression.
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
 matcher change, API/runtime change, UI change, Atlas change, or public
-English-native release is authorized by `CE-SPRINT-0048`.
+English-native release is authorized by `CE-SPRINT-0049`.
 
 ## Previous Closed Sprint
 
