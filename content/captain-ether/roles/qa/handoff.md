@@ -6,7 +6,24 @@ Use only after Director-Engineer names the exact target and test type.
 
 ## Current Prepared QA
 
-None.
+TASK-CE-0053 Batch 008 VTS / Port Control acceptance QA:
+
+- mode:
+  report-only batch acceptance
+- target:
+  `content/captain-ether/batches/batch-008-vts-port-control-basics.json`
+- source sprint:
+  `content/captain-ether/roles/director-engineer/reports/sprint-ce-0052-batch-008-engineering-gate-2026-06-01.md`
+- required focus:
+  `target_text`, `should_accept`, `should_reject`, dangerous-pair coverage,
+  VTS/Port Control station identity, instruction/advice/information,
+  request/report, pilot/tug/tow, entry/departure, permitted/not-permitted,
+  exact channels, reporting point/anchorage/berth/fairway, proceed/hold/wait,
+  inbound/outbound, and scope preservation.
+- forbidden:
+  production deploy, Atlas config/data writes, auth/platform,
+  router/registry, Watch Officer, Nav Desk, matcher/API/UI changes, secrets,
+  sessions, cookies, CSRF, SMTP, player email, or player identity data.
 
 ## Last QA
 
