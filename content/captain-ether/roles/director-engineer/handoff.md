@@ -208,43 +208,36 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0079 Batch 012 Post-Merge QA` is closed as PASS and accepted.
+None. `CE-SPRINT-0080 Local Runtime Parity Check` is closed as PARTIAL PASS
+with a local PHP environment blocker.
 
-Latest task closure:
+Latest task:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0079-batch-012-post-merge-qa-accepted-2026-06-01.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0080-local-runtime-parity-2026-06-01.md
+```
+
+Latest sprint closure:
+
+```text
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0080-local-runtime-parity-2026-06-01.md
 ```
 
 Latest local validation:
 
 ```text
-Batch 010 Distress / Mayday draft created.
-Batch status: linguist_reviewed.
-Sea Speak Linguist review PASS.
-Engineering gate PASS FOR QA ACCEPTANCE.
-QA acceptance PASS.
-Playable merge completed locally.
-Batch validator PASS with known starter WARN (9).
-API smoke PASS captain-ether-api-smoke checks=334.
-Post-merge QA PASS.
-Batch 011 Review Minimal Pairs draft created.
-Batch 011 status: linguist_reviewed.
-Batch 011 Sea Speak Linguist review PASS.
-Batch 011 engineering gate PASS FOR QA ACCEPTANCE.
-Batch 011 QA acceptance PASS.
-Batch 011 playable merge completed locally.
-Batch 011 validator PASS with known starter WARN (9).
-Batch 011 post-merge QA PASS.
-Batch 012 Urgency Equipment Status draft created.
-Batch 012 status: draft.
-Batch 012 Sea Speak Linguist review PASS.
-Batch 012 engineering gate PASS FOR QA ACCEPTANCE.
-Batch 012 QA acceptance PASS.
-Batch 012 playable merge completed locally.
-Batch 012 validator PASS with known starter WARN (9).
 Batch 012 post-merge QA PASS.
 M3 local 500 playable item target reached.
+Local shell route PASS on fallback port 18111.
+Local /games/captain-ether route PASS on fallback port 18111.
+Local app.js and manifest asset checks PASS.
+Local registry and auth/me reads PASS.
+Local unauthenticated start-watch guard PASS with HTTP 401.
+PHP lint public/api/**/*.php PASS.
+PHP lint private/bootstrap.php PASS.
+JS syntax public/assets/app.js PASS.
+API smoke PASS captain-ether-api-smoke checks=334.
+Auth request-code local check BLOCKED by PHP build without filter_var().
 ```
 
 Current local playable corpus:
@@ -267,29 +260,24 @@ urgency_panpan_items=55
 Scope preserved:
 
 ```text
-No production deploy, Atlas config/data write, auth, router, registry
-implementation, Watch Officer, Nav Desk, matcher/API/UI/runtime code,
-production config, deploy/FTP state, or secrets changed.
+No production deploy, Atlas config/data write, auth/platform implementation
+change, router change, registry implementation change, Watch Officer, Nav Desk,
+matcher/API/UI/runtime code change, production config change, deploy/FTP state
+change, or secrets change.
 ```
 
 Next recommended work:
 
 ```text
-Continue M3 corpus growth toward `500` items with a short scenario-turn or
-equipment/weather reinforcement batch, or run a separate director-approved
-local site/runtime parity check.
-
-Next active gate:
-
-```text
-Prepare a separate director-approved local site/runtime parity check or plan
-the next M4 corpus phase. Production work requires a separate explicit task.
-```
+Fix or replace the local PHP runtime so the standard filter extension is
+available, then rerun the local auth-code parity flow. After that, decide
+whether to run a separate production smoke/parity task or start the next M4
+content/design phase.
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
 matcher change, API/runtime change, UI change, Atlas change, playable merge, or
-public English-native release is authorized by `CE-SPRINT-0079`.
+public English-native release is authorized by `CE-SPRINT-0080`.
 
 ## Previous Closed Sprint
 
