@@ -10,6 +10,27 @@ None.
 
 ## Last QA
 
+TASK-CE-0073 Batch 011 post-merge QA:
+
+- task file:
+  `content/captain-ether/roles/qa/tasks/task-ce-0073-batch-011-post-merge-qa-2026-06-01.md`
+- report file:
+  `content/captain-ether/roles/qa/reports/batch-011-post-merge-qa-2026-06-01.md`
+- mode:
+  report-only / local post-merge verification
+- target:
+  `content/captain-ether/starter.json`,
+  `content/captain-ether/accept-reject-qa-pairs.json`, and
+  `content/captain-ether/batches/batch-011-review-minimal-pairs-basics.json`
+- result:
+  `PASS`
+- accepted by Director-Engineer:
+  `content/captain-ether/roles/director-engineer/reports/sprint-ce-0073-batch-011-post-merge-qa-accepted-2026-06-01.md`
+- confirmed:
+  Batch 011 status `merged`, `15/15` playable items, `15/15` regression
+  entries, no playable `qa_notes`, required dangerous pairs present, validator
+  PASS, and API smoke `PASS captain-ether-api-smoke checks=334`.
+
 TASK-CE-0071 Batch 011 Review Minimal Pairs acceptance QA:
 
 - task file:
