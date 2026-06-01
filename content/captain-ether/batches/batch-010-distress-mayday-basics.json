@@ -1,0 +1,2263 @@
+{
+  "version": 1,
+  "batch_id": "batch-010-distress-mayday-basics",
+  "status": "draft",
+  "date": "2026-06-01",
+  "branch": "distress_mayday",
+  "scope": "Strict distress and Mayday language for M3 corpus growth, kept separate from Pan-Pan urgency, Securite safety, onboard emergency action, and ordinary traffic calls.",
+  "items": [
+    {
+      "id": "word_distress_distress_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "distress_signal",
+      "branch": "distress_mayday",
+      "module": "distress_signal",
+      "source_language": "ru",
+      "source_text": "Бедствие",
+      "target_language": "en",
+      "target_text": "distress",
+      "accepted_answers": [
+        "distress"
+      ],
+      "hint_beginner": "d______s",
+      "hint_intermediate": "distress...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "distress",
+          "DISTRESS"
+        ],
+        "should_reject": [
+          "urgency",
+          "safety",
+          "emergency"
+        ],
+        "dangerous_minimal_pairs": [
+          "distress / urgency / safety"
+        ],
+        "linguist_note": "Distress is the grave and imminent danger category, not Pan-Pan urgency or Securite safety."
+      }
+    },
+    {
+      "id": "word_distress_mayday_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "distress_signal",
+      "branch": "distress_mayday",
+      "module": "distress_signal",
+      "source_language": "ru",
+      "source_text": "Мэйдэй",
+      "target_language": "en",
+      "target_text": "Mayday",
+      "accepted_answers": [
+        "Mayday",
+        "may day"
+      ],
+      "hint_beginner": "M____y",
+      "hint_intermediate": "Mayday...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Mayday",
+          "may day"
+        ],
+        "should_reject": [
+          "Pan-Pan",
+          "Securite",
+          "May"
+        ],
+        "dangerous_minimal_pairs": [
+          "Mayday / Pan-Pan / Securite"
+        ],
+        "linguist_note": "Mayday is the distress signal and must not accept Pan-Pan or Securite."
+      }
+    },
+    {
+      "id": "word_distress_relay_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 10,
+      "topic": "distress_relay",
+      "branch": "distress_mayday",
+      "module": "distress_relay",
+      "source_language": "ru",
+      "source_text": "Ретрансляция",
+      "target_language": "en",
+      "target_text": "relay",
+      "accepted_answers": [
+        "relay"
+      ],
+      "hint_beginner": "r___y",
+      "hint_intermediate": "relay...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "relay",
+          "RELAY"
+        ],
+        "should_reject": [
+          "read back",
+          "repeat",
+          "reply"
+        ],
+        "dangerous_minimal_pairs": [
+          "relay / read back / repeat"
+        ],
+        "linguist_note": "Relay is forwarding a distress message, not reading back or simply repeating."
+      }
+    },
+    {
+      "id": "word_distress_position_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "distress_position",
+      "branch": "distress_mayday",
+      "module": "identity_position",
+      "source_language": "ru",
+      "source_text": "Местоположение",
+      "target_language": "en",
+      "target_text": "position",
+      "accepted_answers": [
+        "position"
+      ],
+      "hint_beginner": "p______n",
+      "hint_intermediate": "position...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "position",
+          "POSITION"
+        ],
+        "should_reject": [
+          "destination",
+          "course",
+          "bearing"
+        ],
+        "dangerous_minimal_pairs": [
+          "position / course / bearing"
+        ],
+        "linguist_note": "Position is the vessel location in distress reporting, not course or bearing."
+      }
+    },
+    {
+      "id": "word_distress_listing_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 11,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Крен",
+      "target_language": "en",
+      "target_text": "listing",
+      "accepted_answers": [
+        "listing"
+      ],
+      "hint_beginner": "l_____g",
+      "hint_intermediate": "listing...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "listing",
+          "LISTING"
+        ],
+        "should_reject": [
+          "sinking",
+          "grounding",
+          "collision"
+        ],
+        "dangerous_minimal_pairs": [
+          "listing / sinking / grounding"
+        ],
+        "linguist_note": "Listing is angle of heel, not sinking, grounding, or collision."
+      }
+    },
+    {
+      "id": "word_distress_sinking_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Тонет",
+      "target_language": "en",
+      "target_text": "sinking",
+      "accepted_answers": [
+        "sinking"
+      ],
+      "hint_beginner": "s_____g",
+      "hint_intermediate": "sinking...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "sinking",
+          "SINKING"
+        ],
+        "should_reject": [
+          "listing",
+          "drifting",
+          "disabled"
+        ],
+        "dangerous_minimal_pairs": [
+          "sinking / listing / disabled"
+        ],
+        "linguist_note": "Sinking is loss of buoyancy and must stay separate from disabled or drifting."
+      }
+    },
+    {
+      "id": "word_distress_aground_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 10,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "На мели",
+      "target_language": "en",
+      "target_text": "aground",
+      "accepted_answers": [
+        "aground"
+      ],
+      "hint_beginner": "a_____d",
+      "hint_intermediate": "aground...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "aground",
+          "AGROUND"
+        ],
+        "should_reject": [
+          "anchored",
+          "alongside",
+          "underway"
+        ],
+        "dangerous_minimal_pairs": [
+          "aground / anchored / alongside"
+        ],
+        "linguist_note": "Aground is a casualty state, not normal anchoring or alongside status."
+      }
+    },
+    {
+      "id": "word_distress_abandon_001",
+      "type": "word",
+      "level": "intermediate",
+      "difficulty_score": 11,
+      "topic": "abandoning_vessel",
+      "branch": "distress_mayday",
+      "module": "persons_abandoning",
+      "source_language": "ru",
+      "source_text": "Покинуть судно",
+      "target_language": "en",
+      "target_text": "abandon",
+      "accepted_answers": [
+        "abandon"
+      ],
+      "hint_beginner": "a_____n",
+      "hint_intermediate": "abandon...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "abandon",
+          "ABANDON"
+        ],
+        "should_reject": [
+          "embark",
+          "disembark",
+          "evacuate port"
+        ],
+        "dangerous_minimal_pairs": [
+          "abandon vessel / evacuate / disembark"
+        ],
+        "linguist_note": "Abandon is distress vessel abandonment, not routine disembarkation."
+      }
+    },
+    {
+      "id": "word_distress_liferaft_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "abandoning_vessel",
+      "branch": "distress_mayday",
+      "module": "persons_abandoning",
+      "source_language": "ru",
+      "source_text": "Спасательный плот",
+      "target_language": "en",
+      "target_text": "liferaft",
+      "accepted_answers": [
+        "liferaft",
+        "life raft"
+      ],
+      "hint_beginner": "l______t",
+      "hint_intermediate": "liferaft...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "liferaft",
+          "life raft"
+        ],
+        "should_reject": [
+          "lifejacket",
+          "rescue boat",
+          "pilot boat"
+        ],
+        "dangerous_minimal_pairs": [
+          "liferaft / lifejacket / rescue boat"
+        ],
+        "linguist_note": "Liferaft is survival craft, not personal flotation or a rescue boat."
+      }
+    },
+    {
+      "id": "word_distress_rescue_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "assistance_required",
+      "branch": "distress_mayday",
+      "module": "assistance_required",
+      "source_language": "ru",
+      "source_text": "Спасение",
+      "target_language": "en",
+      "target_text": "rescue",
+      "accepted_answers": [
+        "rescue"
+      ],
+      "hint_beginner": "r____e",
+      "hint_intermediate": "rescue...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "rescue",
+          "RESCUE"
+        ],
+        "should_reject": [
+          "assistance",
+          "escort",
+          "towage"
+        ],
+        "dangerous_minimal_pairs": [
+          "rescue / assistance / towage"
+        ],
+        "linguist_note": "Rescue is distress-level help and must not be reduced to routine assistance or towage."
+      }
+    },
+    {
+      "id": "expr_distress_mayday_signal_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "distress_signal",
+      "branch": "distress_mayday",
+      "module": "distress_signal",
+      "source_language": "ru",
+      "source_text": "Сигнал бедствия: Мэйдэй",
+      "target_language": "en",
+      "target_text": "Mayday",
+      "accepted_answers": [
+        "Mayday",
+        "may day"
+      ],
+      "hint_beginner": "May...",
+      "hint_intermediate": "Mayday...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Mayday",
+          "may day"
+        ],
+        "should_reject": [
+          "Pan-Pan",
+          "Securite",
+          "distress"
+        ],
+        "dangerous_minimal_pairs": [
+          "Mayday / Pan-Pan / Securite"
+        ],
+        "linguist_note": "The signal word itself is Mayday, not the category word distress."
+      }
+    },
+    {
+      "id": "expr_distress_mayday_relay_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 13,
+      "topic": "distress_relay",
+      "branch": "distress_mayday",
+      "module": "distress_relay",
+      "source_language": "ru",
+      "source_text": "Ретрансляция Мэйдэй",
+      "target_language": "en",
+      "target_text": "Mayday relay",
+      "accepted_answers": [
+        "Mayday relay",
+        "may day relay"
+      ],
+      "hint_beginner": "Mayday...",
+      "hint_intermediate": "Mayday relay...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Mayday relay",
+          "may day relay"
+        ],
+        "should_reject": [
+          "Mayday",
+          "Pan-Pan relay",
+          "read back Mayday"
+        ],
+        "dangerous_minimal_pairs": [
+          "Mayday / Mayday relay / Pan-Pan relay"
+        ],
+        "linguist_note": "Mayday relay is used when forwarding another station's distress, not own distress or Pan-Pan."
+      }
+    },
+    {
+      "id": "expr_distress_my_position_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 11,
+      "topic": "distress_position",
+      "branch": "distress_mayday",
+      "module": "identity_position",
+      "source_language": "ru",
+      "source_text": "Моя позиция",
+      "target_language": "en",
+      "target_text": "my position",
+      "accepted_answers": [
+        "my position"
+      ],
+      "hint_beginner": "my...",
+      "hint_intermediate": "my position...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "my position",
+          "MY POSITION"
+        ],
+        "should_reject": [
+          "my destination",
+          "my course",
+          "my bearing"
+        ],
+        "dangerous_minimal_pairs": [
+          "position / course / destination"
+        ],
+        "linguist_note": "Distress message position must not accept course, destination, or bearing alone."
+      }
+    },
+    {
+      "id": "expr_distress_vessel_name_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 10,
+      "topic": "distress_identity",
+      "branch": "distress_mayday",
+      "module": "identity_position",
+      "source_language": "ru",
+      "source_text": "Название судна",
+      "target_language": "en",
+      "target_text": "vessel name",
+      "accepted_answers": [
+        "vessel name",
+        "ship name"
+      ],
+      "hint_beginner": "vessel...",
+      "hint_intermediate": "vessel name...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "vessel name",
+          "ship name"
+        ],
+        "should_reject": [
+          "call sign",
+          "MMSI",
+          "vessel type"
+        ],
+        "dangerous_minimal_pairs": [
+          "vessel name / call sign / MMSI"
+        ],
+        "linguist_note": "Identity fields remain separate because distress format uses name, call sign, and MMSI distinctly."
+      }
+    },
+    {
+      "id": "expr_distress_call_sign_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "distress_identity",
+      "branch": "distress_mayday",
+      "module": "identity_position",
+      "source_language": "ru",
+      "source_text": "Позывной",
+      "target_language": "en",
+      "target_text": "call sign",
+      "accepted_answers": [
+        "call sign",
+        "callsign"
+      ],
+      "hint_beginner": "call...",
+      "hint_intermediate": "call sign...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "call sign",
+          "callsign"
+        ],
+        "should_reject": [
+          "vessel name",
+          "MMSI",
+          "position"
+        ],
+        "dangerous_minimal_pairs": [
+          "vessel name / call sign / MMSI"
+        ],
+        "linguist_note": "Call sign should not absorb vessel name or MMSI answers."
+      }
+    },
+    {
+      "id": "expr_distress_mmsi_number_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "distress_identity",
+      "branch": "distress_mayday",
+      "module": "identity_position",
+      "source_language": "ru",
+      "source_text": "Номер MMSI",
+      "target_language": "en",
+      "target_text": "MMSI number",
+      "accepted_answers": [
+        "MMSI number",
+        "MMSI"
+      ],
+      "hint_beginner": "MMSI...",
+      "hint_intermediate": "MMSI number...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "MMSI number",
+          "MMSI"
+        ],
+        "should_reject": [
+          "call sign",
+          "phone number",
+          "position"
+        ],
+        "dangerous_minimal_pairs": [
+          "MMSI / call sign / phone number"
+        ],
+        "linguist_note": "MMSI is a maritime identity number, not a phone number or position."
+      }
+    },
+    {
+      "id": "expr_distress_nature_of_distress_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 12,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Характер бедствия",
+      "target_language": "en",
+      "target_text": "nature of distress",
+      "accepted_answers": [
+        "nature of distress",
+        "distress nature"
+      ],
+      "hint_beginner": "nature...",
+      "hint_intermediate": "nature of distress...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "nature of distress",
+          "distress nature"
+        ],
+        "should_reject": [
+          "nature of urgency",
+          "safety warning",
+          "traffic report"
+        ],
+        "dangerous_minimal_pairs": [
+          "nature of distress / nature of urgency / safety warning"
+        ],
+        "linguist_note": "Nature of distress is a Mayday content field, not Pan-Pan or Securite language."
+      }
+    },
+    {
+      "id": "expr_distress_fire_on_board_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 11,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Пожар на борту",
+      "target_language": "en",
+      "target_text": "fire on board",
+      "accepted_answers": [
+        "fire on board",
+        "fire onboard"
+      ],
+      "hint_beginner": "fire...",
+      "hint_intermediate": "fire on board...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "fire on board",
+          "fire onboard"
+        ],
+        "should_reject": [
+          "fire drill",
+          "fire pump",
+          "engine overheating"
+        ],
+        "dangerous_minimal_pairs": [
+          "fire on board / fire drill / fire pump"
+        ],
+        "linguist_note": "Fire on board is casualty content, not drill or onboard equipment action."
+      }
+    },
+    {
+      "id": "expr_distress_flooding_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 11,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Затопление",
+      "target_language": "en",
+      "target_text": "flooding",
+      "accepted_answers": [
+        "flooding"
+      ],
+      "hint_beginner": "f______g",
+      "hint_intermediate": "flooding...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "flooding",
+          "FLOODING"
+        ],
+        "should_reject": [
+          "fire",
+          "sinking",
+          "water depth"
+        ],
+        "dangerous_minimal_pairs": [
+          "flooding / sinking / water depth"
+        ],
+        "linguist_note": "Flooding is ingress of water, not sinking state or water depth report."
+      }
+    },
+    {
+      "id": "expr_distress_collision_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Столкновение",
+      "target_language": "en",
+      "target_text": "collision",
+      "accepted_answers": [
+        "collision"
+      ],
+      "hint_beginner": "c________n",
+      "hint_intermediate": "collision...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "collision",
+          "COLLISION"
+        ],
+        "should_reject": [
+          "near miss",
+          "traffic risk",
+          "grounding"
+        ],
+        "dangerous_minimal_pairs": [
+          "collision / near miss / traffic risk"
+        ],
+        "linguist_note": "Collision is actual casualty, not near miss or general traffic risk."
+      }
+    },
+    {
+      "id": "expr_distress_medical_emergency_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 13,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Медицинская экстренная ситуация",
+      "target_language": "en",
+      "target_text": "medical emergency",
+      "accepted_answers": [
+        "medical emergency",
+        "medical distress"
+      ],
+      "hint_beginner": "medical...",
+      "hint_intermediate": "medical emergency...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "medical emergency",
+          "medical distress"
+        ],
+        "should_reject": [
+          "medical advice",
+          "first aid kit",
+          "doctor on board"
+        ],
+        "dangerous_minimal_pairs": [
+          "medical emergency / medical advice / first aid"
+        ],
+        "linguist_note": "Medical emergency can be distress-level; medical advice alone is often urgency and must stay separate."
+      }
+    },
+    {
+      "id": "expr_distress_immediate_assistance_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 12,
+      "topic": "assistance_required",
+      "branch": "distress_mayday",
+      "module": "assistance_required",
+      "source_language": "ru",
+      "source_text": "Немедленная помощь",
+      "target_language": "en",
+      "target_text": "immediate assistance",
+      "accepted_answers": [
+        "immediate assistance",
+        "urgent assistance now"
+      ],
+      "hint_beginner": "immediate...",
+      "hint_intermediate": "immediate assistance...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "immediate assistance",
+          "urgent assistance now"
+        ],
+        "should_reject": [
+          "routine assistance",
+          "stand by",
+          "towage requested"
+        ],
+        "dangerous_minimal_pairs": [
+          "immediate assistance / routine assistance / towage"
+        ],
+        "linguist_note": "Immediate assistance signals distress urgency, not routine help or ordinary towage."
+      }
+    },
+    {
+      "id": "expr_distress_require_rescue_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 12,
+      "topic": "assistance_required",
+      "branch": "distress_mayday",
+      "module": "assistance_required",
+      "source_language": "ru",
+      "source_text": "Требуется спасение",
+      "target_language": "en",
+      "target_text": "require rescue",
+      "accepted_answers": [
+        "require rescue",
+        "need rescue"
+      ],
+      "hint_beginner": "require...",
+      "hint_intermediate": "require rescue...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "require rescue",
+          "need rescue"
+        ],
+        "should_reject": [
+          "require pilot",
+          "need berth",
+          "need weather"
+        ],
+        "dangerous_minimal_pairs": [
+          "rescue / pilot / berth"
+        ],
+        "linguist_note": "Rescue must not accept port-service requests."
+      }
+    },
+    {
+      "id": "expr_distress_persons_on_board_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 11,
+      "topic": "persons_on_board",
+      "branch": "distress_mayday",
+      "module": "persons_abandoning",
+      "source_language": "ru",
+      "source_text": "Людей на борту",
+      "target_language": "en",
+      "target_text": "persons on board",
+      "accepted_answers": [
+        "persons on board",
+        "people on board"
+      ],
+      "hint_beginner": "persons...",
+      "hint_intermediate": "persons on board...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "persons on board",
+          "people on board"
+        ],
+        "should_reject": [
+          "crew on watch",
+          "passengers ashore",
+          "persons overboard"
+        ],
+        "dangerous_minimal_pairs": [
+          "persons on board / persons overboard / crew on watch"
+        ],
+        "linguist_note": "Persons on board is distress count field, not man-overboard or watch crew."
+      }
+    },
+    {
+      "id": "expr_distress_abandoning_vessel_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 13,
+      "topic": "abandoning_vessel",
+      "branch": "distress_mayday",
+      "module": "persons_abandoning",
+      "source_language": "ru",
+      "source_text": "Покидаем судно",
+      "target_language": "en",
+      "target_text": "abandoning vessel",
+      "accepted_answers": [
+        "abandoning vessel",
+        "abandoning ship"
+      ],
+      "hint_beginner": "abandoning...",
+      "hint_intermediate": "abandoning vessel...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "abandoning vessel",
+          "abandoning ship"
+        ],
+        "should_reject": [
+          "boarding vessel",
+          "leaving berth",
+          "disembarking passengers"
+        ],
+        "dangerous_minimal_pairs": [
+          "abandoning vessel / leaving berth / disembarking"
+        ],
+        "linguist_note": "Abandoning vessel is distress survival action, not port departure or passenger disembarkation."
+      }
+    },
+    {
+      "id": "expr_distress_read_back_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 12,
+      "topic": "distress_readback",
+      "branch": "distress_mayday",
+      "module": "distress_readback",
+      "source_language": "ru",
+      "source_text": "Повторите Мэйдэй для подтверждения",
+      "target_language": "en",
+      "target_text": "read back Mayday",
+      "accepted_answers": [
+        "read back Mayday",
+        "read back the Mayday"
+      ],
+      "hint_beginner": "read back...",
+      "hint_intermediate": "read back Mayday...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "read back Mayday",
+          "read back the Mayday"
+        ],
+        "should_reject": [
+          "Mayday relay",
+          "say again Mayday",
+          "cancel Mayday"
+        ],
+        "dangerous_minimal_pairs": [
+          "read back / relay / say again"
+        ],
+        "linguist_note": "Read back is confirmation, not relay, repeat request, or cancellation."
+      }
+    },
+    {
+      "id": "expr_distress_silence_mayday_001",
+      "type": "short_expression",
+      "level": "advanced",
+      "difficulty_score": 18,
+      "topic": "distress_traffic_control",
+      "branch": "distress_mayday",
+      "module": "distress_readback",
+      "source_language": "ru",
+      "source_text": "Радиомолчание по Мэйдэй",
+      "target_language": "en",
+      "target_text": "silence Mayday",
+      "accepted_answers": [
+        "silence Mayday",
+        "Seelonce Mayday"
+      ],
+      "hint_beginner": "silence...",
+      "hint_intermediate": "silence Mayday...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "silence Mayday",
+          "Seelonce Mayday"
+        ],
+        "should_reject": [
+          "cancel Mayday",
+          "finish Mayday",
+          "radio check"
+        ],
+        "dangerous_minimal_pairs": [
+          "silence Mayday / cancel Mayday / radio check"
+        ],
+        "linguist_note": "Distress traffic silence control is not cancellation or normal radio check."
+      }
+    },
+    {
+      "id": "phrase_distress_mayday_three_times_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 13,
+      "topic": "distress_signal",
+      "branch": "distress_mayday",
+      "module": "distress_signal",
+      "source_language": "ru",
+      "source_text": "Мэйдэй, Мэйдэй, Мэйдэй.",
+      "target_language": "en",
+      "target_text": "Mayday, Mayday, Mayday.",
+      "accepted_answers": [
+        "Mayday, Mayday, Mayday."
+      ],
+      "grammar_pattern": "distress_signal_three_times",
+      "hint_beginner": "Mayday...",
+      "hint_intermediate": "Mayday, Mayday...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Mayday, Mayday, Mayday.",
+          "Mayday Mayday Mayday"
+        ],
+        "should_reject": [
+          "Pan-Pan Pan-Pan Pan-Pan",
+          "Securite Securite Securite",
+          "Mayday"
+        ],
+        "dangerous_minimal_pairs": [
+          "Mayday three times / Pan-Pan three times / Securite three times"
+        ],
+        "linguist_note": "Distress signal repetition must not accept urgency, safety, or single-word incomplete signal."
+      }
+    },
+    {
+      "id": "phrase_distress_this_is_vessel_aurora_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "distress_identity",
+      "branch": "distress_mayday",
+      "module": "identity_position",
+      "source_language": "ru",
+      "source_text": "Это судно Аврора.",
+      "target_language": "en",
+      "target_text": "This is vessel Aurora.",
+      "accepted_answers": [
+        "This is vessel Aurora.",
+        "This is the vessel Aurora."
+      ],
+      "grammar_pattern": "distress_identity_basic",
+      "hint_beginner": "This is...",
+      "hint_intermediate": "vessel Aurora.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "This is vessel Aurora.",
+          "This is the vessel Aurora."
+        ],
+        "should_reject": [
+          "This is marina Aurora",
+          "This is pilot Aurora",
+          "Calling vessel Aurora"
+        ],
+        "dangerous_minimal_pairs": [
+          "vessel identity / marina / pilot"
+        ],
+        "linguist_note": "Identity line must name the distressed vessel, not marina, pilot, or generic calling phrase."
+      }
+    },
+    {
+      "id": "phrase_distress_my_position_4550n_01310e_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 17,
+      "topic": "distress_position",
+      "branch": "distress_mayday",
+      "module": "identity_position",
+      "source_language": "ru",
+      "source_text": "Моя позиция четыре пять пять ноль север, ноль один три один ноль восток.",
+      "target_language": "en",
+      "target_text": "My position is four five five zero north, zero one three one zero east.",
+      "accepted_answers": [
+        "My position is four five five zero north, zero one three one zero east.",
+        "Position four five five zero north zero one three one zero east"
+      ],
+      "grammar_pattern": "distress_position_coordinates",
+      "hint_beginner": "My position...",
+      "hint_intermediate": "four five five zero north...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "My position is four five five zero north, zero one three one zero east.",
+          "Position four five five zero north zero one three one zero east"
+        ],
+        "should_reject": [
+          "My course is four five five zero north",
+          "My destination is zero one three one zero east",
+          "Position four five north zero one east"
+        ],
+        "dangerous_minimal_pairs": [
+          "position / course / destination coordinates"
+        ],
+        "linguist_note": "Coordinate content must stay exact enough for distress location and separate from course/destination."
+      }
+    },
+    {
+      "id": "phrase_distress_position_bearing_distance_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 16,
+      "topic": "distress_position",
+      "branch": "distress_mayday",
+      "module": "identity_position",
+      "source_language": "ru",
+      "source_text": "Моя позиция: пеленг ноль девять ноль, дистанция две мили от маяка.",
+      "target_language": "en",
+      "target_text": "My position is bearing zero nine zero, distance two miles from the lighthouse.",
+      "accepted_answers": [
+        "My position is bearing zero nine zero, distance two miles from the lighthouse.",
+        "Position bearing zero nine zero distance two miles from the lighthouse"
+      ],
+      "grammar_pattern": "distress_position_bearing_distance",
+      "hint_beginner": "My position...",
+      "hint_intermediate": "bearing zero nine zero...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "My position is bearing zero nine zero, distance two miles from the lighthouse.",
+          "Position bearing zero nine zero distance two miles from the lighthouse"
+        ],
+        "should_reject": [
+          "My course is zero nine zero",
+          "Distance two cables from the marina",
+          "Bearing one eight zero distance two miles"
+        ],
+        "dangerous_minimal_pairs": [
+          "bearing / course / distance"
+        ],
+        "linguist_note": "Bearing-distance position must not collapse into course or wrong distance details."
+      }
+    },
+    {
+      "id": "phrase_distress_on_fire_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "На борту пожар.",
+      "target_language": "en",
+      "target_text": "We are on fire.",
+      "accepted_answers": [
+        "We are on fire.",
+        "Vessel is on fire."
+      ],
+      "grammar_pattern": "distress_nature_basic",
+      "hint_beginner": "We are...",
+      "hint_intermediate": "on fire.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "We are on fire.",
+          "Vessel is on fire."
+        ],
+        "should_reject": [
+          "We have a fire drill",
+          "Start the fire pump",
+          "Fire pump is ready"
+        ],
+        "dangerous_minimal_pairs": [
+          "fire casualty / fire drill / fire pump"
+        ],
+        "linguist_note": "Fire casualty language must stay separate from drill and onboard action commands."
+      }
+    },
+    {
+      "id": "phrase_distress_taking_water_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Мы принимаем воду.",
+      "target_language": "en",
+      "target_text": "We are taking water.",
+      "accepted_answers": [
+        "We are taking water.",
+        "We are flooding."
+      ],
+      "grammar_pattern": "distress_nature_basic",
+      "hint_beginner": "We are...",
+      "hint_intermediate": "taking water.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "We are taking water.",
+          "We are flooding."
+        ],
+        "should_reject": [
+          "We need drinking water",
+          "Water depth is two meters",
+          "We are taking fuel"
+        ],
+        "dangerous_minimal_pairs": [
+          "taking water / drinking water / water depth"
+        ],
+        "linguist_note": "Taking water means flooding ingress, not potable water, depth, or fuel."
+      }
+    },
+    {
+      "id": "phrase_distress_we_are_sinking_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Мы тонем.",
+      "target_language": "en",
+      "target_text": "We are sinking.",
+      "accepted_answers": [
+        "We are sinking.",
+        "Vessel is sinking."
+      ],
+      "grammar_pattern": "distress_nature_basic",
+      "hint_beginner": "We are...",
+      "hint_intermediate": "sinking.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "We are sinking.",
+          "Vessel is sinking."
+        ],
+        "should_reject": [
+          "We are listing",
+          "We are drifting",
+          "We are disabled"
+        ],
+        "dangerous_minimal_pairs": [
+          "sinking / listing / drifting"
+        ],
+        "linguist_note": "Sinking is a distinct distress state and must not accept listing, drifting, or disabled."
+      }
+    },
+    {
+      "id": "phrase_distress_we_are_aground_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 15,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Мы на мели.",
+      "target_language": "en",
+      "target_text": "We are aground.",
+      "accepted_answers": [
+        "We are aground.",
+        "Vessel is aground."
+      ],
+      "grammar_pattern": "distress_nature_basic",
+      "hint_beginner": "We are...",
+      "hint_intermediate": "aground.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "We are aground.",
+          "Vessel is aground."
+        ],
+        "should_reject": [
+          "We are anchored",
+          "We are alongside",
+          "We are underway"
+        ],
+        "dangerous_minimal_pairs": [
+          "aground / anchored / alongside"
+        ],
+        "linguist_note": "Aground casualty state must not accept normal navigational status."
+      }
+    },
+    {
+      "id": "phrase_distress_collision_with_vessel_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 15,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Столкновение с другим судном.",
+      "target_language": "en",
+      "target_text": "Collision with another vessel.",
+      "accepted_answers": [
+        "Collision with another vessel.",
+        "We had a collision with another vessel."
+      ],
+      "grammar_pattern": "distress_nature_collision",
+      "hint_beginner": "Collision...",
+      "hint_intermediate": "with another vessel.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Collision with another vessel.",
+          "We had a collision with another vessel."
+        ],
+        "should_reject": [
+          "Risk of collision with another vessel",
+          "Near miss with another vessel",
+          "Collision course with another vessel"
+        ],
+        "dangerous_minimal_pairs": [
+          "actual collision / risk of collision / collision course"
+        ],
+        "linguist_note": "Actual collision casualty must not accept traffic-risk phrases."
+      }
+    },
+    {
+      "id": "phrase_distress_man_overboard_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "nature_of_distress",
+      "branch": "distress_mayday",
+      "module": "nature_of_distress",
+      "source_language": "ru",
+      "source_text": "Человек за бортом.",
+      "target_language": "en",
+      "target_text": "Man overboard.",
+      "accepted_answers": [
+        "Man overboard.",
+        "Person overboard."
+      ],
+      "grammar_pattern": "distress_person_overboard",
+      "hint_beginner": "Man...",
+      "hint_intermediate": "overboard.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Man overboard.",
+          "Person overboard."
+        ],
+        "should_reject": [
+          "Persons on board",
+          "Crew on board",
+          "Man on deck"
+        ],
+        "dangerous_minimal_pairs": [
+          "man overboard / persons on board / crew on board"
+        ],
+        "linguist_note": "Overboard casualty must not accept persons-on-board count language."
+      }
+    },
+    {
+      "id": "phrase_distress_require_immediate_assistance_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "assistance_required",
+      "branch": "distress_mayday",
+      "module": "assistance_required",
+      "source_language": "ru",
+      "source_text": "Требуется немедленная помощь.",
+      "target_language": "en",
+      "target_text": "I require immediate assistance.",
+      "accepted_answers": [
+        "I require immediate assistance.",
+        "We require immediate assistance."
+      ],
+      "grammar_pattern": "distress_assistance_required",
+      "hint_beginner": "I require...",
+      "hint_intermediate": "immediate assistance.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "I require immediate assistance.",
+          "We require immediate assistance."
+        ],
+        "should_reject": [
+          "I require pilot assistance",
+          "I require routine assistance",
+          "I request weather information"
+        ],
+        "dangerous_minimal_pairs": [
+          "immediate assistance / routine assistance / information request"
+        ],
+        "linguist_note": "Immediate assistance in Mayday context must not accept routine port-service requests."
+      }
+    },
+    {
+      "id": "phrase_distress_need_medical_assistance_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 15,
+      "topic": "assistance_required",
+      "branch": "distress_mayday",
+      "module": "assistance_required",
+      "source_language": "ru",
+      "source_text": "Требуется немедленная медицинская помощь.",
+      "target_language": "en",
+      "target_text": "I need immediate medical assistance.",
+      "accepted_answers": [
+        "I need immediate medical assistance.",
+        "We need immediate medical assistance."
+      ],
+      "grammar_pattern": "distress_assistance_required",
+      "hint_beginner": "I need...",
+      "hint_intermediate": "immediate medical assistance.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "I need immediate medical assistance.",
+          "We need immediate medical assistance."
+        ],
+        "should_reject": [
+          "I need medical advice",
+          "I need a doctor tomorrow",
+          "I need first aid kit"
+        ],
+        "dangerous_minimal_pairs": [
+          "immediate medical assistance / medical advice / first aid"
+        ],
+        "linguist_note": "Distress medical assistance must stay stricter than ordinary medical advice."
+      }
+    },
+    {
+      "id": "phrase_distress_rescue_required_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "assistance_required",
+      "branch": "distress_mayday",
+      "module": "assistance_required",
+      "source_language": "ru",
+      "source_text": "Требуется спасение.",
+      "target_language": "en",
+      "target_text": "Rescue required.",
+      "accepted_answers": [
+        "Rescue required.",
+        "Rescue is required."
+      ],
+      "grammar_pattern": "distress_assistance_required",
+      "hint_beginner": "Rescue...",
+      "hint_intermediate": "required.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Rescue required.",
+          "Rescue is required."
+        ],
+        "should_reject": [
+          "Towage required",
+          "Pilot required",
+          "Berth required"
+        ],
+        "dangerous_minimal_pairs": [
+          "rescue / towage / pilot"
+        ],
+        "linguist_note": "Rescue is emergency help, not towage, pilotage, or berthing."
+      }
+    },
+    {
+      "id": "phrase_distress_tow_not_enough_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 16,
+      "topic": "assistance_required",
+      "branch": "distress_mayday",
+      "module": "assistance_required",
+      "source_language": "ru",
+      "source_text": "Буксировки недостаточно, требуется спасение.",
+      "target_language": "en",
+      "target_text": "Towage is not enough, rescue required.",
+      "accepted_answers": [
+        "Towage is not enough, rescue required.",
+        "Towing is not enough rescue required"
+      ],
+      "grammar_pattern": "distress_assistance_required",
+      "hint_beginner": "Towage...",
+      "hint_intermediate": "rescue required.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Towage is not enough, rescue required.",
+          "Towing is not enough rescue required"
+        ],
+        "should_reject": [
+          "Towage required",
+          "Tug assistance requested",
+          "Routine tow requested"
+        ],
+        "dangerous_minimal_pairs": [
+          "rescue / towage / tug assistance"
+        ],
+        "linguist_note": "This item marks escalation beyond towage and must not accept ordinary tug requests."
+      }
+    },
+    {
+      "id": "phrase_distress_persons_on_board_twelve_001",
+      "type": "phrase",
+      "level": "beginner",
+      "difficulty_score": 14,
+      "topic": "persons_on_board",
+      "branch": "distress_mayday",
+      "module": "persons_abandoning",
+      "source_language": "ru",
+      "source_text": "На борту двенадцать человек.",
+      "target_language": "en",
+      "target_text": "Twelve persons on board.",
+      "accepted_answers": [
+        "Twelve persons on board.",
+        "Twelve people on board."
+      ],
+      "grammar_pattern": "distress_persons_on_board_count",
+      "hint_beginner": "Twelve...",
+      "hint_intermediate": "persons on board.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Twelve persons on board.",
+          "Twelve people on board."
+        ],
+        "should_reject": [
+          "Two persons on board",
+          "Twelve persons overboard",
+          "Twelve crew on watch"
+        ],
+        "dangerous_minimal_pairs": [
+          "persons on board / persons overboard / crew on watch"
+        ],
+        "linguist_note": "Distress persons count must preserve number and on-board status."
+      }
+    },
+    {
+      "id": "phrase_distress_abandoning_to_liferaft_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 16,
+      "topic": "abandoning_vessel",
+      "branch": "distress_mayday",
+      "module": "persons_abandoning",
+      "source_language": "ru",
+      "source_text": "Покидаем судно в спасательный плот.",
+      "target_language": "en",
+      "target_text": "We are abandoning vessel to liferaft.",
+      "accepted_answers": [
+        "We are abandoning vessel to liferaft.",
+        "We are abandoning ship to life raft."
+      ],
+      "grammar_pattern": "distress_abandoning_vessel",
+      "hint_beginner": "We are abandoning...",
+      "hint_intermediate": "to liferaft.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "We are abandoning vessel to liferaft.",
+          "We are abandoning ship to life raft."
+        ],
+        "should_reject": [
+          "We are boarding the vessel",
+          "We are leaving berth",
+          "We are launching pilot boat"
+        ],
+        "dangerous_minimal_pairs": [
+          "abandoning vessel / leaving berth / launching boat"
+        ],
+        "linguist_note": "Abandoning to liferaft is survival action, not routine departure or pilot-boat operation."
+      }
+    },
+    {
+      "id": "phrase_distress_liferaft_launched_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 15,
+      "topic": "abandoning_vessel",
+      "branch": "distress_mayday",
+      "module": "persons_abandoning",
+      "source_language": "ru",
+      "source_text": "Спасательный плот спущен.",
+      "target_language": "en",
+      "target_text": "Liferaft launched.",
+      "accepted_answers": [
+        "Liferaft launched.",
+        "Life raft launched."
+      ],
+      "grammar_pattern": "distress_survival_craft_status",
+      "hint_beginner": "Liferaft...",
+      "hint_intermediate": "launched.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Liferaft launched.",
+          "Life raft launched."
+        ],
+        "should_reject": [
+          "Lifejacket donned",
+          "Rescue boat launched",
+          "Pilot boat launched"
+        ],
+        "dangerous_minimal_pairs": [
+          "liferaft / lifejacket / rescue boat"
+        ],
+        "linguist_note": "Liferaft launch status must not accept lifejacket, rescue boat, or pilot boat."
+      }
+    },
+    {
+      "id": "phrase_distress_read_back_position_nature_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 16,
+      "topic": "distress_readback",
+      "branch": "distress_mayday",
+      "module": "distress_readback",
+      "source_language": "ru",
+      "source_text": "Повторите позицию и характер бедствия.",
+      "target_language": "en",
+      "target_text": "Read back position and nature of distress.",
+      "accepted_answers": [
+        "Read back position and nature of distress.",
+        "Read back the position and nature of distress."
+      ],
+      "grammar_pattern": "distress_readback_request",
+      "hint_beginner": "Read back...",
+      "hint_intermediate": "position and nature...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Read back position and nature of distress.",
+          "Read back the position and nature of distress."
+        ],
+        "should_reject": [
+          "Relay position and nature of distress",
+          "Say again all after distress",
+          "Read back weather warning"
+        ],
+        "dangerous_minimal_pairs": [
+          "read back / relay / say again"
+        ],
+        "linguist_note": "Readback request must not accept relay, say-again, or safety warning readback."
+      }
+    },
+    {
+      "id": "phrase_distress_mayday_relay_from_orion_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 17,
+      "topic": "distress_relay",
+      "branch": "distress_mayday",
+      "module": "distress_relay",
+      "source_language": "ru",
+      "source_text": "Мэйдэй ретрансляция от судна Орион.",
+      "target_language": "en",
+      "target_text": "Mayday relay from vessel Orion.",
+      "accepted_answers": [
+        "Mayday relay from vessel Orion.",
+        "May day relay from vessel Orion."
+      ],
+      "grammar_pattern": "distress_relay_basic",
+      "hint_beginner": "Mayday relay...",
+      "hint_intermediate": "from vessel Orion.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Mayday relay from vessel Orion.",
+          "May day relay from vessel Orion."
+        ],
+        "should_reject": [
+          "Mayday from vessel Orion",
+          "Pan-Pan relay from vessel Orion",
+          "Securite from vessel Orion"
+        ],
+        "dangerous_minimal_pairs": [
+          "Mayday / Mayday relay / Pan-Pan relay"
+        ],
+        "linguist_note": "Relay source must stay explicit and not collapse into own Mayday or Pan-Pan relay."
+      }
+    },
+    {
+      "id": "phrase_distress_silence_distress_traffic_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 20,
+      "topic": "distress_traffic_control",
+      "branch": "distress_mayday",
+      "module": "distress_readback",
+      "source_language": "ru",
+      "source_text": "Сохраняйте радиомолчание для трафика бедствия.",
+      "target_language": "en",
+      "target_text": "Keep silence for distress traffic.",
+      "accepted_answers": [
+        "Keep silence for distress traffic.",
+        "Maintain silence for distress traffic."
+      ],
+      "grammar_pattern": "distress_traffic_silence",
+      "hint_beginner": "Keep silence...",
+      "hint_intermediate": "for distress traffic.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Keep silence for distress traffic.",
+          "Maintain silence for distress traffic."
+        ],
+        "should_reject": [
+          "Keep listening watch for safety traffic",
+          "Cancel distress traffic",
+          "Continue routine traffic"
+        ],
+        "dangerous_minimal_pairs": [
+          "distress silence / listening watch / routine traffic"
+        ],
+        "linguist_note": "Distress traffic silence must not accept safety listening-watch or routine traffic language."
+      }
+    },
+    {
+      "id": "phrase_distress_cancel_false_alert_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 20,
+      "topic": "distress_signal",
+      "branch": "distress_mayday",
+      "module": "distress_signal",
+      "source_language": "ru",
+      "source_text": "Отмените ложную тревогу бедствия.",
+      "target_language": "en",
+      "target_text": "Cancel false distress alert.",
+      "accepted_answers": [
+        "Cancel false distress alert.",
+        "Cancel false Mayday alert."
+      ],
+      "grammar_pattern": "distress_false_alert_cancel",
+      "hint_beginner": "Cancel...",
+      "hint_intermediate": "false distress alert.",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Cancel false distress alert.",
+          "Cancel false Mayday alert."
+        ],
+        "should_reject": [
+          "Cancel Mayday",
+          "Mayday finished",
+          "Test distress alert"
+        ],
+        "dangerous_minimal_pairs": [
+          "false distress alert / active Mayday / test alert"
+        ],
+        "linguist_note": "False alert cancellation must not teach cancellation of a real Mayday without precise context."
+      }
+    },
+    {
+      "id": "phrase_distress_complete_call_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 23,
+      "topic": "distress_call_sequence",
+      "branch": "distress_mayday",
+      "module": "distress_signal",
+      "source_language": "ru",
+      "source_text": "Мэйдэй, это судно Аврора, позиция ноль девять ноль от маяка, пожар на борту, требуется немедленная помощь.",
+      "target_language": "en",
+      "target_text": "Mayday, this is vessel Aurora, position bearing zero nine zero from the lighthouse, fire on board, I require immediate assistance.",
+      "accepted_answers": [
+        "Mayday, this is vessel Aurora, position bearing zero nine zero from the lighthouse, fire on board, I require immediate assistance.",
+        "Mayday this is vessel Aurora position bearing zero nine zero from the lighthouse fire on board we require immediate assistance"
+      ],
+      "grammar_pattern": "distress_complete_call_basic",
+      "hint_beginner": "Mayday, this is...",
+      "hint_intermediate": "position bearing zero nine zero...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "Mayday, this is vessel Aurora, position bearing zero nine zero from the lighthouse, fire on board, I require immediate assistance.",
+          "Mayday this is vessel Aurora position bearing zero nine zero from the lighthouse fire on board we require immediate assistance"
+        ],
+        "should_reject": [
+          "Pan-Pan this is vessel Aurora position bearing zero nine zero from the lighthouse fire on board",
+          "Securite this is vessel Aurora navigation warning fire on board",
+          "Mayday this is vessel Aurora destination marina fire drill"
+        ],
+        "dangerous_minimal_pairs": [
+          "complete Mayday / Pan-Pan / Securite"
+        ],
+        "linguist_note": "Complete distress call keeps signal, identity, position, nature, and assistance fields strict."
+      }
+    },
+    {
+      "id": "phrase_distress_all_stations_keep_clear_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 19,
+      "topic": "distress_traffic_control",
+      "branch": "distress_mayday",
+      "module": "distress_readback",
+      "source_language": "ru",
+      "source_text": "Всем станциям: освободите канал для трафика бедствия.",
+      "target_language": "en",
+      "target_text": "All stations, keep clear for distress traffic.",
+      "accepted_answers": [
+        "All stations, keep clear for distress traffic.",
+        "All stations, clear the channel for distress traffic."
+      ],
+      "grammar_pattern": "distress_traffic_clear_channel",
+      "hint_beginner": "All stations...",
+      "hint_intermediate": "keep clear...",
+      "hint_advanced": "",
+      "qa_notes": {
+        "should_accept": [
+          "All stations, keep clear for distress traffic.",
+          "All stations, clear the channel for distress traffic."
+        ],
+        "should_reject": [
+          "All stations keep listening watch for safety",
+          "All stations continue routine traffic",
+          "All stations switch to marina channel"
+        ],
+        "dangerous_minimal_pairs": [
+          "distress traffic / safety watch / routine traffic"
+        ],
+        "linguist_note": "Distress traffic channel control must not accept safety watch or marina traffic instructions."
+      }
+    }
+  ],
+  "grammar_patterns": [
+    {
+      "id": "distress_signal_three_times",
+      "pattern": "Mayday signal repeated three times",
+      "examples": [
+        "Mayday, Mayday, Mayday."
+      ]
+    },
+    {
+      "id": "distress_identity_basic",
+      "pattern": "distressed vessel identity",
+      "examples": [
+        "This is vessel Aurora."
+      ]
+    },
+    {
+      "id": "distress_position_coordinates",
+      "pattern": "distress position by coordinates",
+      "examples": [
+        "My position is four five five zero north, zero one three one zero east."
+      ]
+    },
+    {
+      "id": "distress_position_bearing_distance",
+      "pattern": "distress position by bearing and distance",
+      "examples": [
+        "My position is bearing zero nine zero, distance two miles from the lighthouse."
+      ]
+    },
+    {
+      "id": "distress_nature_basic",
+      "pattern": "basic nature of distress statement",
+      "examples": [
+        "We are sinking.",
+        "We are taking water."
+      ]
+    },
+    {
+      "id": "distress_nature_collision",
+      "pattern": "actual collision casualty statement",
+      "examples": [
+        "Collision with another vessel."
+      ]
+    },
+    {
+      "id": "distress_person_overboard",
+      "pattern": "person overboard distress statement",
+      "examples": [
+        "Man overboard."
+      ]
+    },
+    {
+      "id": "distress_assistance_required",
+      "pattern": "distress assistance or rescue required",
+      "examples": [
+        "I require immediate assistance.",
+        "Rescue required."
+      ]
+    },
+    {
+      "id": "distress_persons_on_board_count",
+      "pattern": "persons on board count",
+      "examples": [
+        "Twelve persons on board."
+      ]
+    },
+    {
+      "id": "distress_abandoning_vessel",
+      "pattern": "abandoning vessel survival action",
+      "examples": [
+        "We are abandoning vessel to liferaft."
+      ]
+    },
+    {
+      "id": "distress_readback_request",
+      "pattern": "read back distress position and nature",
+      "examples": [
+        "Read back position and nature of distress."
+      ]
+    },
+    {
+      "id": "distress_complete_call_basic",
+      "pattern": "complete Mayday call with identity position nature and assistance",
+      "examples": [
+        "Mayday, this is vessel Aurora, position bearing zero nine zero from the lighthouse, fire on board, I require immediate assistance."
+      ]
+    }
+  ],
+  "dangerous_minimal_pairs": [
+    {
+      "pair": "Mayday / Pan-Pan / Securite",
+      "items": [
+        "word_distress_mayday_001",
+        "expr_distress_mayday_signal_001",
+        "phrase_distress_mayday_three_times_001"
+      ],
+      "must_accept": {
+        "word_distress_mayday_001": [
+          "Mayday"
+        ],
+        "expr_distress_mayday_signal_001": [
+          "Mayday"
+        ],
+        "phrase_distress_mayday_three_times_001": [
+          "Mayday, Mayday, Mayday."
+        ]
+      },
+      "must_reject": {
+        "word_distress_mayday_001": [
+          "Pan-Pan",
+          "Securite",
+          "May"
+        ],
+        "expr_distress_mayday_signal_001": [
+          "Pan-Pan",
+          "Securite",
+          "distress"
+        ],
+        "phrase_distress_mayday_three_times_001": [
+          "Pan-Pan Pan-Pan Pan-Pan",
+          "Securite Securite Securite",
+          "Mayday"
+        ]
+      },
+      "reason": "Distress, urgency, and safety signals must remain strict."
+    },
+    {
+      "pair": "distress / urgency / safety",
+      "items": [
+        "word_distress_distress_001",
+        "expr_distress_nature_of_distress_001"
+      ],
+      "must_accept": {
+        "word_distress_distress_001": [
+          "distress"
+        ],
+        "expr_distress_nature_of_distress_001": [
+          "nature of distress"
+        ]
+      },
+      "must_reject": {
+        "word_distress_distress_001": [
+          "urgency",
+          "safety",
+          "emergency"
+        ],
+        "expr_distress_nature_of_distress_001": [
+          "nature of urgency",
+          "safety warning",
+          "traffic report"
+        ]
+      },
+      "reason": "Mayday distress language must not weaken Pan-Pan or Securite boundaries."
+    },
+    {
+      "pair": "Mayday / Mayday relay / Pan-Pan relay",
+      "items": [
+        "expr_distress_mayday_relay_001",
+        "phrase_distress_mayday_relay_from_orion_001"
+      ],
+      "must_accept": {
+        "expr_distress_mayday_relay_001": [
+          "Mayday relay"
+        ],
+        "phrase_distress_mayday_relay_from_orion_001": [
+          "Mayday relay from vessel Orion."
+        ]
+      },
+      "must_reject": {
+        "expr_distress_mayday_relay_001": [
+          "Mayday",
+          "Pan-Pan relay",
+          "read back Mayday"
+        ],
+        "phrase_distress_mayday_relay_from_orion_001": [
+          "Mayday from vessel Orion",
+          "Pan-Pan relay from vessel Orion",
+          "Securite from vessel Orion"
+        ]
+      },
+      "reason": "Relay means forwarding another station's distress and must not collapse into own distress or urgency relay."
+    },
+    {
+      "pair": "position / course / bearing / destination",
+      "items": [
+        "word_distress_position_001",
+        "expr_distress_my_position_001",
+        "phrase_distress_my_position_4550n_01310e_001"
+      ],
+      "must_accept": {
+        "word_distress_position_001": [
+          "position"
+        ],
+        "expr_distress_my_position_001": [
+          "my position"
+        ],
+        "phrase_distress_my_position_4550n_01310e_001": [
+          "My position is four five five zero north, zero one three one zero east."
+        ]
+      },
+      "must_reject": {
+        "word_distress_position_001": [
+          "destination",
+          "course",
+          "bearing"
+        ],
+        "expr_distress_my_position_001": [
+          "my destination",
+          "my course",
+          "my bearing"
+        ],
+        "phrase_distress_my_position_4550n_01310e_001": [
+          "My course is four five five zero north",
+          "My destination is zero one three one zero east",
+          "Position four five north zero one east"
+        ]
+      },
+      "reason": "Distress location information must stay distinct from course, bearing, and destination data."
+    },
+    {
+      "pair": "vessel name / call sign / MMSI",
+      "items": [
+        "expr_distress_vessel_name_001",
+        "expr_distress_call_sign_001",
+        "expr_distress_mmsi_number_001"
+      ],
+      "must_accept": {
+        "expr_distress_vessel_name_001": [
+          "vessel name"
+        ],
+        "expr_distress_call_sign_001": [
+          "call sign"
+        ],
+        "expr_distress_mmsi_number_001": [
+          "MMSI number"
+        ]
+      },
+      "must_reject": {
+        "expr_distress_vessel_name_001": [
+          "call sign",
+          "MMSI",
+          "vessel type"
+        ],
+        "expr_distress_call_sign_001": [
+          "vessel name",
+          "MMSI",
+          "position"
+        ],
+        "expr_distress_mmsi_number_001": [
+          "call sign",
+          "phone number",
+          "position"
+        ]
+      },
+      "reason": "Distress identity fields are separate and should not be interchangeable."
+    },
+    {
+      "pair": "fire / flooding / sinking / listing / aground",
+      "items": [
+        "expr_distress_fire_on_board_001",
+        "expr_distress_flooding_001",
+        "word_distress_sinking_001",
+        "word_distress_listing_001",
+        "word_distress_aground_001"
+      ],
+      "must_accept": {
+        "expr_distress_fire_on_board_001": [
+          "fire on board"
+        ],
+        "expr_distress_flooding_001": [
+          "flooding"
+        ],
+        "word_distress_sinking_001": [
+          "sinking"
+        ],
+        "word_distress_listing_001": [
+          "listing"
+        ],
+        "word_distress_aground_001": [
+          "aground"
+        ]
+      },
+      "must_reject": {
+        "expr_distress_fire_on_board_001": [
+          "fire drill",
+          "fire pump",
+          "engine overheating"
+        ],
+        "expr_distress_flooding_001": [
+          "fire",
+          "sinking",
+          "water depth"
+        ],
+        "word_distress_sinking_001": [
+          "listing",
+          "drifting",
+          "disabled"
+        ],
+        "word_distress_listing_001": [
+          "sinking",
+          "grounding",
+          "collision"
+        ],
+        "word_distress_aground_001": [
+          "anchored",
+          "alongside",
+          "underway"
+        ]
+      },
+      "reason": "Nature-of-distress casualties must remain exact."
+    },
+    {
+      "pair": "rescue / towage / pilot / berth",
+      "items": [
+        "word_distress_rescue_001",
+        "expr_distress_require_rescue_001",
+        "phrase_distress_rescue_required_001",
+        "phrase_distress_tow_not_enough_001"
+      ],
+      "must_accept": {
+        "word_distress_rescue_001": [
+          "rescue"
+        ],
+        "expr_distress_require_rescue_001": [
+          "require rescue"
+        ],
+        "phrase_distress_rescue_required_001": [
+          "Rescue required."
+        ],
+        "phrase_distress_tow_not_enough_001": [
+          "Towage is not enough, rescue required."
+        ]
+      },
+      "must_reject": {
+        "word_distress_rescue_001": [
+          "assistance",
+          "escort",
+          "towage"
+        ],
+        "expr_distress_require_rescue_001": [
+          "require pilot",
+          "need berth",
+          "need weather"
+        ],
+        "phrase_distress_rescue_required_001": [
+          "Towage required",
+          "Pilot required",
+          "Berth required"
+        ],
+        "phrase_distress_tow_not_enough_001": [
+          "Towage required",
+          "Tug assistance requested",
+          "Routine tow requested"
+        ]
+      },
+      "reason": "Rescue-level distress help must stay above port-service and towage language."
+    },
+    {
+      "pair": "persons on board / persons overboard / abandoning vessel",
+      "items": [
+        "expr_distress_persons_on_board_001",
+        "phrase_distress_persons_on_board_twelve_001",
+        "phrase_distress_man_overboard_001",
+        "expr_distress_abandoning_vessel_001"
+      ],
+      "must_accept": {
+        "expr_distress_persons_on_board_001": [
+          "persons on board"
+        ],
+        "phrase_distress_persons_on_board_twelve_001": [
+          "Twelve persons on board."
+        ],
+        "phrase_distress_man_overboard_001": [
+          "Man overboard."
+        ],
+        "expr_distress_abandoning_vessel_001": [
+          "abandoning vessel"
+        ]
+      },
+      "must_reject": {
+        "expr_distress_persons_on_board_001": [
+          "crew on watch",
+          "passengers ashore",
+          "persons overboard"
+        ],
+        "phrase_distress_persons_on_board_twelve_001": [
+          "Two persons on board",
+          "Twelve persons overboard",
+          "Twelve crew on watch"
+        ],
+        "phrase_distress_man_overboard_001": [
+          "Persons on board",
+          "Crew on board",
+          "Man on deck"
+        ],
+        "expr_distress_abandoning_vessel_001": [
+          "boarding vessel",
+          "leaving berth",
+          "disembarking passengers"
+        ]
+      },
+      "reason": "People-count, overboard, and abandoning-vessel concepts must not merge."
+    },
+    {
+      "pair": "read back / relay / say again / cancel",
+      "items": [
+        "expr_distress_read_back_001",
+        "phrase_distress_read_back_position_nature_001",
+        "expr_distress_mayday_relay_001",
+        "phrase_distress_cancel_false_alert_001"
+      ],
+      "must_accept": {
+        "expr_distress_read_back_001": [
+          "read back Mayday"
+        ],
+        "phrase_distress_read_back_position_nature_001": [
+          "Read back position and nature of distress."
+        ],
+        "expr_distress_mayday_relay_001": [
+          "Mayday relay"
+        ],
+        "phrase_distress_cancel_false_alert_001": [
+          "Cancel false distress alert."
+        ]
+      },
+      "must_reject": {
+        "expr_distress_read_back_001": [
+          "Mayday relay",
+          "say again Mayday",
+          "cancel Mayday"
+        ],
+        "phrase_distress_read_back_position_nature_001": [
+          "Relay position and nature of distress",
+          "Say again all after distress",
+          "Read back weather warning"
+        ],
+        "expr_distress_mayday_relay_001": [
+          "Mayday",
+          "Pan-Pan relay",
+          "read back Mayday"
+        ],
+        "phrase_distress_cancel_false_alert_001": [
+          "Cancel Mayday",
+          "Mayday finished",
+          "Test distress alert"
+        ]
+      },
+      "reason": "Distress workflow verbs have different operational meanings."
+    },
+    {
+      "pair": "distress traffic / safety watch / routine traffic",
+      "items": [
+        "expr_distress_silence_mayday_001",
+        "phrase_distress_silence_distress_traffic_001",
+        "phrase_distress_all_stations_keep_clear_001"
+      ],
+      "must_accept": {
+        "expr_distress_silence_mayday_001": [
+          "silence Mayday"
+        ],
+        "phrase_distress_silence_distress_traffic_001": [
+          "Keep silence for distress traffic."
+        ],
+        "phrase_distress_all_stations_keep_clear_001": [
+          "All stations, keep clear for distress traffic."
+        ]
+      },
+      "must_reject": {
+        "expr_distress_silence_mayday_001": [
+          "cancel Mayday",
+          "finish Mayday",
+          "radio check"
+        ],
+        "phrase_distress_silence_distress_traffic_001": [
+          "Keep listening watch for safety traffic",
+          "Cancel distress traffic",
+          "Continue routine traffic"
+        ],
+        "phrase_distress_all_stations_keep_clear_001": [
+          "All stations keep listening watch for safety",
+          "All stations continue routine traffic",
+          "All stations switch to marina channel"
+        ]
+      },
+      "reason": "Distress channel protection is not Securite listening watch or normal traffic."
+    }
+  ],
+  "producer_notes": [
+    "Draft keeps Mayday distress separate from Pan-Pan urgency, Securite safety, and onboard emergency actions.",
+    "Distress relay, readback, cancellation of false alert, and traffic silence are intentionally strict and routed to linguist review before merge.",
+    "No starter, regression, matcher, API/runtime, UI, Atlas, auth, router, registry, production, Watch Officer, or Nav Desk files changed."
+  ]
+}

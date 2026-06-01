@@ -105,6 +105,20 @@ batch task.
 Latest closed draft:
 
 ```text
+TASK-CE-0062 Batch 010 Distress / Mayday
+content/captain-ether/batches/batch-010-distress-mayday-basics.json
+content/captain-ether/roles/content-producer/reports/batch-010-distress-mayday-basics-card-2026-06-01.md
+```
+
+Mode:
+
+```text
+content draft only; routed to Sea Speak Linguist review by Director-Engineer
+```
+
+Previous closed draft:
+
+```text
 TASK-CE-0056 Batch 009 Onboard Operations
 content/captain-ether/batches/batch-009-onboard-operations-basics.json
 content/captain-ether/roles/content-producer/reports/batch-009-onboard-operations-basics-card-2026-06-01.md

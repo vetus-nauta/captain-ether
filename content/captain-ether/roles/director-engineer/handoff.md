@@ -208,26 +208,22 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0061 Batch 009 Post-Merge QA` is closed as PASS and accepted.
+None. `CE-SPRINT-0062 Batch 010 Distress / Mayday Draft` is closed as PASS
+and routed to Sea Speak Linguist review.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0061-batch-009-post-merge-qa-accepted-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0062-batch-010-distress-mayday-draft-2026-06-01.md
 ```
 
 Latest local validation:
 
 ```text
-Batch 009 Onboard Operations draft created.
-Batch status: merged.
-Sea Speak Linguist review PASS.
-Engineering gate PASS FOR QA ACCEPTANCE.
-QA acceptance PASS.
+Batch 010 Distress / Mayday draft created.
+Batch status: draft.
 Batch validator PASS with known starter WARN (9).
-API smoke PASS captain-ether-api-smoke checks=334.
-Playable merge completed locally.
-Post-merge QA PASS.
+No playable merge performed.
 ```
 
 Current local playable corpus:
@@ -242,6 +238,7 @@ dangerous_pairs=87
 traffic_collision_items=50
 vts_port_control_items=50
 onboard_operations_items=50
+distress_mayday_draft_items=50
 ```
 
 Scope preserved:
@@ -255,15 +252,16 @@ production config, deploy/FTP state, or secrets changed.
 Next recommended work:
 
 ```text
-TASK-CE-0062 Distress / Mayday corpus gap and Batch 010 draft.
-Owner: Director-Engineer then Content Producer.
-Goal: extend M3 corpus with a strict distress branch without weakening
-Pan-Pan, Securite, or onboard emergency boundaries.
+TASK-CE-0063 Batch 010 Distress / Mayday Sea Speak Linguist review.
+Owner: Sea Speak Linguist.
+Goal: review Mayday, distress relay, position, identity, nature-of-distress,
+rescue, persons-on-board, abandoning-vessel, readback, and distress traffic
+control boundaries before engineering gate.
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
-matcher change, API/runtime change, UI change, Atlas change, or public
-English-native release is authorized by `CE-SPRINT-0061`.
+matcher change, API/runtime change, UI change, Atlas change, playable merge, or
+public English-native release is authorized by `CE-SPRINT-0062`.
 
 ## Previous Closed Sprint
 
