@@ -208,19 +208,20 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0045 Batch 007 Linguist Review` is closed as PASS.
+None. `CE-SPRINT-0046 Batch 007 Engineering Gate` is closed as PASS FOR QA
+ACCEPTANCE.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0045-batch-007-linguist-review-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0046-batch-007-engineering-gate-2026-06-01.md
 ```
 
 Latest local validation:
 
 ```text
-JSON parse for starter and batches PASS, files=8.
-Batch 007 status/count PASS, linguist_reviewed and items=50.
+Node batch schema/count/overlap gate PASS.
+JSON parse for batch and regression file PASS.
 Draft matcher check PASS, batch007 checks=306.
 ```
 
@@ -234,12 +235,12 @@ production config, deploy/FTP state, or secrets changed.
 Next recommended work, only after explicit Director command:
 
 ```text
-Director-Engineer engineering gate for Batch 007.
+QA acceptance review for Batch 007.
 ```
 
 No production deploy, router change, registry change, `starter.json` merge,
 auth/platform edit, matcher change, API/runtime change, or public
-English-native release is authorized by `CE-SPRINT-0045` linguist gate.
+English-native release is authorized by `CE-SPRINT-0046` engineering gate.
 
 ## Previous Closed Sprint
 
