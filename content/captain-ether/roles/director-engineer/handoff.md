@@ -30,12 +30,16 @@ approved task.
 First-read handoff:
 
 ```text
+content/captain-ether/new-director-start-handoff-2026-06-02.md
 content/captain-ether/director-ether-beta-1-handoff-2026-05-27.md
 ```
 
-Use it before making new Captain Ether decisions. It freezes the Beta 1.0
-baseline, role folder map, closed gates, validation commands, deployment
-warnings, and recommended Beta 1.1 architectural direction.
+Use the 2026-06-02 start handoff first. It states the current local/GitHub vs
+production parity status, the M3/M4 boundary, the next required sprint, and the
+anti-confusion rules for Captain Ether vs Watch Officer/platform scope. Then
+use the Beta 1.0 handoff for older baseline, role folder map, closed gates,
+validation commands, deployment warnings, and recommended Beta 1.1
+architectural direction.
 
 ## Activation
 
