@@ -10,6 +10,19 @@ None.
 
 ## Last QA
 
+TASK-CE-0077 Batch 012 Urgency Equipment Status acceptance QA:
+
+- task file:
+  `content/captain-ether/roles/qa/tasks/task-ce-0077-batch-012-urgency-equipment-status-acceptance-qa-2026-06-01.md`
+- report file:
+  `content/captain-ether/roles/qa/reports/batch-012-urgency-equipment-status-acceptance-qa-2026-06-01.md`
+- mode:
+  report-only
+- target:
+  `content/captain-ether/batches/batch-012-urgency-equipment-status-reinforcement.json`
+- result:
+  `PASS`
+
 TASK-CE-0073 Batch 011 post-merge QA:
 
 - task file:

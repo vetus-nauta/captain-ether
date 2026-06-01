@@ -208,13 +208,13 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0076 Batch 012 Engineering Gate` is closed as PASS FOR QA
-ACCEPTANCE and routed to QA acceptance.
+None. `CE-SPRINT-0077 Batch 012 Acceptance QA` is closed as PASS and accepted
+for merge preparation.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0076-batch-012-engineering-gate-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0077-batch-012-acceptance-qa-2026-06-01.md
 ```
 
 Latest local validation:
@@ -241,6 +241,7 @@ Batch 012 Urgency Equipment Status draft created.
 Batch 012 status: draft.
 Batch 012 Sea Speak Linguist review PASS.
 Batch 012 engineering gate PASS FOR QA ACCEPTANCE.
+Batch 012 QA acceptance PASS.
 Batch 012 validator PASS with known starter WARN (9).
 ```
 
@@ -278,16 +279,16 @@ local site/runtime parity check.
 Next active gate:
 
 ```text
-TASK-CE-0077 Batch 012 Urgency Equipment Status QA acceptance.
-Owner: QA.
-Goal: independently verify target_text, should_accept, should_reject,
-dangerous-pair coverage, and scope preservation before merge.
+TASK-CE-0078 Batch 012 Urgency Equipment Status merge preparation.
+Owner: Director-Engineer.
+Goal: merge the accepted Batch 012 into playable starter and regression files,
+then run validator, API smoke, and post-merge readiness checks locally.
 ```
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
 matcher change, API/runtime change, UI change, Atlas change, playable merge, or
-public English-native release is authorized by `CE-SPRINT-0076`.
+public English-native release is authorized by `CE-SPRINT-0077`.
 
 ## Previous Closed Sprint
 
