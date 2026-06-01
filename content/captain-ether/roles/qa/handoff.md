@@ -10,6 +10,23 @@ None.
 
 ## Last QA
 
+TASK-CE-0065 Batch 010 Distress / Mayday acceptance QA:
+
+- task file:
+  `content/captain-ether/roles/qa/tasks/task-ce-0065-batch-010-distress-mayday-acceptance-qa-2026-06-01.md`
+- report file:
+  `content/captain-ether/roles/qa/reports/batch-010-distress-mayday-acceptance-qa-2026-06-01.md`
+- mode:
+  report-only
+- target:
+  `content/captain-ether/batches/batch-010-distress-mayday-basics.json`
+- result:
+  `PASS`
+- confirmed:
+  target text, `should_accept`, `should_reject`, signal boundaries, and
+  dangerous-pair coverage pass for the reviewed batch; no merge or production
+  deploy is implied.
+
 TASK-CE-0061 Batch 009 post-merge QA:
 
 - task file:
