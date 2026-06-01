@@ -125,10 +125,19 @@ None.
 
 ## Next Valid Work
 
-Possible next assignments:
+Latest closed assignment:
 
-- review disputed real player answers from answer logs;
-- review a specific minimal-pair risk.
+```text
+TASK-CE-0045 Batch 007 Traffic / Collision Risk Review
+content/captain-ether/batches/batch-007-traffic-collision-basics.json
+content/captain-ether/roles/sea-speak-linguist/reports/batch-007-traffic-collision-risk-review-2026-06-01.md
+```
+
+Next gate:
+
+```text
+Director-Engineer engineering gate before QA or starter.json merge.
+```
 
 Do not broaden synonyms globally unless Director-Engineer asks for a policy
 proposal.

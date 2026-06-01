@@ -208,21 +208,19 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0044 Batch 007 Traffic / Collision Draft` is closed as
-PASS for draft gate.
+None. `CE-SPRINT-0045 Batch 007 Linguist Review` is closed as PASS.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0044-batch-007-traffic-collision-draft-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0045-batch-007-linguist-review-2026-06-01.md
 ```
 
 Latest local validation:
 
 ```text
-Batch 007 JSON parse PASS.
-Required field and duplicate id checks PASS.
-Starter id overlap check PASS, 0 overlaps.
+JSON parse for starter and batches PASS, files=8.
+Batch 007 status/count PASS, linguist_reviewed and items=50.
 Draft matcher check PASS, batch007 checks=306.
 ```
 
@@ -236,12 +234,12 @@ production config, deploy/FTP state, or secrets changed.
 Next recommended work, only after explicit Director command:
 
 ```text
-Sea Speak Linguist risk review for Batch 007.
+Director-Engineer engineering gate for Batch 007.
 ```
 
 No production deploy, router change, registry change, `starter.json` merge,
 auth/platform edit, matcher change, API/runtime change, or public
-English-native release is authorized by `CE-SPRINT-0044` draft gate.
+English-native release is authorized by `CE-SPRINT-0045` linguist gate.
 
 ## Previous Closed Sprint
 

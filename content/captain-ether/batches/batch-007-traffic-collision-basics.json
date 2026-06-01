@@ -1,7 +1,7 @@
 {
   "version": 1,
   "batch_id": "batch-007-traffic-collision-basics",
-  "status": "draft_content_producer",
+  "status": "linguist_reviewed",
   "date": "2026-06-01",
   "branch": "traffic_collision",
   "scope": "Traffic information and collision-avoidance intentions for M3 corpus growth.",
@@ -1215,16 +1215,27 @@
     "bearing / heading / course"
   ],
   "producer_notes": {
-    "status": "draft only; not merged into starter.json",
+    "status": "linguist reviewed; not merged into starter.json",
     "learner_source_language": "ru",
     "target_language": "en",
-    "next_gate": "Sea Speak Linguist risk review before engineering or QA",
+    "next_gate": "Director-Engineer engineering gate before QA or playable merge",
     "open_questions": [
       "Confirm whether pass ahead wording should be kept, narrowed, or replaced before playable merge.",
       "Confirm CPA/TCPA wording and whether abbreviations should be accepted item-locally only.",
       "Confirm stand-on/give-way role phrasing for yacht training context.",
       "Confirm bearing opening/closing wording before regression expansion.",
       "Confirm whether 'safe pass' is acceptable as a short expression variant."
-    ]
+    ],
+    "linguist_review": {
+      "date": "2026-06-01",
+      "report": "content/captain-ether/roles/sea-speak-linguist/reports/batch-007-traffic-collision-risk-review-2026-06-01.md",
+      "decisions": [
+        "Keep pass ahead/pass astern as trained traffic-intention phrases with strict opposite-side rejects.",
+        "Keep CPA/TCPA abbreviations and long forms item-local only.",
+        "Keep give-way vessel and stand-on vessel as advanced role language.",
+        "Keep bearing opening/closing/constant as advanced traffic-risk language with strict bearing/heading/course rejects.",
+        "Keep safe pass only as an item-local short-expression variant for safe passing."
+      ]
+    }
   }
 }
