@@ -208,19 +208,18 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0080 Local Runtime Parity Check` is closed as PARTIAL PASS
-with a local PHP environment blocker.
+None. `CE-SPRINT-0081 Local PHP Auth Parity Pass` is closed as PASS.
 
 Latest task:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0080-local-runtime-parity-2026-06-01.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0081-local-php-filter-runtime-fix-2026-06-01.md
 ```
 
 Latest sprint closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0080-local-runtime-parity-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0081-local-php-auth-parity-pass-2026-06-01.md
 ```
 
 Latest local validation:
@@ -228,16 +227,17 @@ Latest local validation:
 ```text
 Batch 012 post-merge QA PASS.
 M3 local 500 playable item target reached.
-Local shell route PASS on fallback port 18111.
-Local /games/captain-ether route PASS on fallback port 18111.
-Local app.js and manifest asset checks PASS.
-Local registry and auth/me reads PASS.
-Local unauthenticated start-watch guard PASS with HTTP 401.
+Local PHP filter extension installed and loaded from php.ini.
+filter_var() available in /home/alexey/.local/php-codex/bin/php.
+Local request-code PASS.
+Local verify-code PASS.
+Local auth/me after login PASS.
+Local authenticated start-watch with CSRF PASS.
 PHP lint public/api/**/*.php PASS.
 PHP lint private/bootstrap.php PASS.
 JS syntax public/assets/app.js PASS.
+Validator PASS with known starter WARN (9).
 API smoke PASS captain-ether-api-smoke checks=334.
-Auth request-code local check BLOCKED by PHP build without filter_var().
 ```
 
 Current local playable corpus:
@@ -260,24 +260,23 @@ urgency_panpan_items=55
 Scope preserved:
 
 ```text
-No production deploy, Atlas config/data write, auth/platform implementation
-change, router change, registry implementation change, Watch Officer, Nav Desk,
-matcher/API/UI/runtime code change, production config change, deploy/FTP state
-change, or secrets change.
+No production deploy, Atlas config/data write, Captain Ether code/content
+change, auth/platform implementation change, router change, registry
+implementation change, Watch Officer, Nav Desk, matcher/API/UI/runtime code
+change, production config change, deploy/FTP state change, or secrets change.
 ```
 
 Next recommended work:
 
 ```text
-Fix or replace the local PHP runtime so the standard filter extension is
-available, then rerun the local auth-code parity flow. After that, decide
-whether to run a separate production smoke/parity task or start the next M4
-content/design phase.
+Run a separate production smoke/parity task if production comparison is needed,
+or start the next M4 content/design phase from the now-stable 500-item local
+baseline.
 ```
 
 No production deploy, router change, registry change, auth/platform edit,
 matcher change, API/runtime change, UI change, Atlas change, playable merge, or
-public English-native release is authorized by `CE-SPRINT-0080`.
+public English-native release is authorized by `CE-SPRINT-0081`.
 
 ## Previous Closed Sprint
 
