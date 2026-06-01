@@ -3505,6 +3505,251 @@
         ]
       },
       "reason": "Distress channel protection is not Securite listening watch or normal traffic."
+    },
+    {
+      "pair": "over / out",
+      "items": [
+        "expr_review_over_001"
+      ],
+      "must_accept": {
+        "expr_review_over_001": [
+          "over"
+        ]
+      },
+      "must_reject": {
+        "expr_review_over_001": [
+          "out",
+          "roger",
+          "stand by"
+        ]
+      },
+      "reason": "Over expects a reply; out closes the communication."
+    },
+    {
+      "pair": "roger / affirmative",
+      "items": [
+        "expr_review_roger_001",
+        "expr_review_affirmative_001"
+      ],
+      "must_accept": {
+        "expr_review_roger_001": [
+          "roger"
+        ],
+        "expr_review_affirmative_001": [
+          "affirmative"
+        ]
+      },
+      "must_reject": {
+        "expr_review_roger_001": [
+          "affirmative",
+          "negative",
+          "wilco"
+        ],
+        "expr_review_affirmative_001": [
+          "roger",
+          "negative",
+          "received"
+        ]
+      },
+      "reason": "Received and yes are different radio meanings."
+    },
+    {
+      "pair": "say again / read back",
+      "items": [
+        "expr_review_say_again_001",
+        "expr_review_read_back_001"
+      ],
+      "must_accept": {
+        "expr_review_say_again_001": [
+          "say again"
+        ],
+        "expr_review_read_back_001": [
+          "read back"
+        ]
+      },
+      "must_reject": {
+        "expr_review_say_again_001": [
+          "read back",
+          "repeat after me",
+          "roger"
+        ],
+        "expr_review_read_back_001": [
+          "say again",
+          "repeat",
+          "stand by"
+        ]
+      },
+      "reason": "Say again is a repetition request; read back is confirmation."
+    },
+    {
+      "pair": "port / starboard",
+      "items": [
+        "word_review_port_001",
+        "word_review_starboard_001"
+      ],
+      "must_accept": {
+        "word_review_port_001": [
+          "port"
+        ],
+        "word_review_starboard_001": [
+          "starboard"
+        ]
+      },
+      "must_reject": {
+        "word_review_port_001": [
+          "starboard",
+          "left",
+          "harbour"
+        ],
+        "word_review_starboard_001": [
+          "port",
+          "right",
+          "stern"
+        ]
+      },
+      "reason": "Port and starboard are opposite vessel sides."
+    },
+    {
+      "pair": "ahead / astern",
+      "items": [
+        "word_review_ahead_001",
+        "word_review_astern_001"
+      ],
+      "must_accept": {
+        "word_review_ahead_001": [
+          "ahead"
+        ],
+        "word_review_astern_001": [
+          "astern"
+        ]
+      },
+      "must_reject": {
+        "word_review_ahead_001": [
+          "astern",
+          "abeam",
+          "alongside"
+        ],
+        "word_review_astern_001": [
+          "ahead",
+          "abeam",
+          "astern line"
+        ]
+      },
+      "reason": "Ahead and astern are opposite relative directions."
+    },
+    {
+      "pair": "channel one six / channel one three",
+      "items": [
+        "expr_review_channel_one_six_001"
+      ],
+      "must_accept": {
+        "expr_review_channel_one_six_001": [
+          "channel one six"
+        ]
+      },
+      "must_reject": {
+        "expr_review_channel_one_six_001": [
+          "channel one three",
+          "channel six one",
+          "channel sixteen"
+        ]
+      },
+      "reason": "Channel digits must remain exact."
+    },
+    {
+      "pair": "zero nine zero / nine zero",
+      "items": [
+        "expr_review_zero_nine_zero_001"
+      ],
+      "must_accept": {
+        "expr_review_zero_nine_zero_001": [
+          "zero nine zero"
+        ]
+      },
+      "must_reject": {
+        "expr_review_zero_nine_zero_001": [
+          "nine zero",
+          "one eight zero",
+          "zero nine"
+        ]
+      },
+      "reason": "Three-digit heading and bearing forms must preserve leading zero."
+    },
+    {
+      "pair": "one four zero zero / one five zero zero",
+      "items": [
+        "expr_review_one_four_zero_zero_001"
+      ],
+      "must_accept": {
+        "expr_review_one_four_zero_zero_001": [
+          "one four zero zero"
+        ]
+      },
+      "must_reject": {
+        "expr_review_one_four_zero_zero_001": [
+          "one five zero zero",
+          "fourteen hundred",
+          "one four zero"
+        ]
+      },
+      "reason": "Spoken time digits must preserve exact value."
+    },
+    {
+      "pair": "Pan-Pan / Mayday / Securite",
+      "items": [
+        "phrase_review_pan_pan_not_mayday_001"
+      ],
+      "must_accept": {
+        "phrase_review_pan_pan_not_mayday_001": [
+          "Pan-Pan, not Mayday."
+        ]
+      },
+      "must_reject": {
+        "phrase_review_pan_pan_not_mayday_001": [
+          "Mayday not Pan-Pan",
+          "Securite not Mayday",
+          "Pan-Pan Mayday"
+        ]
+      },
+      "reason": "Radio signal families must not collapse."
+    },
+    {
+      "pair": "alter course to port / alter course to starboard",
+      "items": [
+        "phrase_review_alter_course_to_port_001"
+      ],
+      "must_accept": {
+        "phrase_review_alter_course_to_port_001": [
+          "Alter course to port."
+        ]
+      },
+      "must_reject": {
+        "phrase_review_alter_course_to_port_001": [
+          "alter course to starboard",
+          "maintain course",
+          "alter speed to port"
+        ]
+      },
+      "reason": "Side and action changes alter the command."
+    },
+    {
+      "pair": "give way / stand on",
+      "items": [
+        "phrase_review_give_way_001"
+      ],
+      "must_accept": {
+        "phrase_review_give_way_001": [
+          "Give way."
+        ]
+      },
+      "must_reject": {
+        "phrase_review_give_way_001": [
+          "stand on",
+          "keep course",
+          "maintain speed"
+        ]
+      },
+      "reason": "Give way and stand on are opposite traffic obligations."
     }
   ],
   "items": [
@@ -9655,6 +9900,201 @@
         "All stations keep listening watch for safety",
         "All stations continue routine traffic",
         "All stations switch to marina channel"
+      ]
+    },
+    {
+      "id": "expr_review_over_001",
+      "target_text": "over",
+      "should_accept": [
+        "over",
+        "OVER"
+      ],
+      "should_reject": [
+        "out",
+        "roger",
+        "stand by"
+      ]
+    },
+    {
+      "id": "expr_review_roger_001",
+      "target_text": "roger",
+      "should_accept": [
+        "roger",
+        "ROGER"
+      ],
+      "should_reject": [
+        "affirmative",
+        "negative",
+        "wilco"
+      ]
+    },
+    {
+      "id": "expr_review_affirmative_001",
+      "target_text": "affirmative",
+      "should_accept": [
+        "affirmative",
+        "AFFIRMATIVE"
+      ],
+      "should_reject": [
+        "roger",
+        "negative",
+        "received"
+      ]
+    },
+    {
+      "id": "expr_review_say_again_001",
+      "target_text": "say again",
+      "should_accept": [
+        "say again",
+        "SAY AGAIN"
+      ],
+      "should_reject": [
+        "read back",
+        "repeat after me",
+        "roger"
+      ]
+    },
+    {
+      "id": "expr_review_read_back_001",
+      "target_text": "read back",
+      "should_accept": [
+        "read back",
+        "READ BACK"
+      ],
+      "should_reject": [
+        "say again",
+        "repeat",
+        "stand by"
+      ]
+    },
+    {
+      "id": "word_review_port_001",
+      "target_text": "port",
+      "should_accept": [
+        "port",
+        "PORT"
+      ],
+      "should_reject": [
+        "starboard",
+        "left",
+        "harbour"
+      ]
+    },
+    {
+      "id": "word_review_starboard_001",
+      "target_text": "starboard",
+      "should_accept": [
+        "starboard",
+        "STARBOARD"
+      ],
+      "should_reject": [
+        "port",
+        "right",
+        "stern"
+      ]
+    },
+    {
+      "id": "word_review_ahead_001",
+      "target_text": "ahead",
+      "should_accept": [
+        "ahead",
+        "AHEAD"
+      ],
+      "should_reject": [
+        "astern",
+        "abeam",
+        "alongside"
+      ]
+    },
+    {
+      "id": "word_review_astern_001",
+      "target_text": "astern",
+      "should_accept": [
+        "astern",
+        "ASTERN"
+      ],
+      "should_reject": [
+        "ahead",
+        "abeam",
+        "astern line"
+      ]
+    },
+    {
+      "id": "expr_review_channel_one_six_001",
+      "target_text": "channel one six",
+      "should_accept": [
+        "channel one six",
+        "CHANNEL ONE SIX"
+      ],
+      "should_reject": [
+        "channel one three",
+        "channel six one",
+        "channel sixteen"
+      ]
+    },
+    {
+      "id": "expr_review_zero_nine_zero_001",
+      "target_text": "zero nine zero",
+      "should_accept": [
+        "zero nine zero",
+        "ZERO NINE ZERO"
+      ],
+      "should_reject": [
+        "nine zero",
+        "one eight zero",
+        "zero nine"
+      ]
+    },
+    {
+      "id": "expr_review_one_four_zero_zero_001",
+      "target_text": "one four zero zero",
+      "should_accept": [
+        "one four zero zero",
+        "ONE FOUR ZERO ZERO"
+      ],
+      "should_reject": [
+        "one five zero zero",
+        "fourteen hundred",
+        "one four zero"
+      ]
+    },
+    {
+      "id": "phrase_review_pan_pan_not_mayday_001",
+      "target_text": "Pan-Pan, not Mayday.",
+      "should_accept": [
+        "Pan-Pan, not Mayday.",
+        "Pan Pan not Mayday"
+      ],
+      "should_reject": [
+        "Mayday not Pan-Pan",
+        "Securite not Mayday",
+        "Pan-Pan Mayday"
+      ]
+    },
+    {
+      "id": "phrase_review_alter_course_to_port_001",
+      "target_text": "Alter course to port.",
+      "should_accept": [
+        "Alter course to port.",
+        "Alter course port"
+      ],
+      "should_reject": [
+        "alter course to starboard",
+        "maintain course",
+        "alter speed to port"
+      ]
+    },
+    {
+      "id": "phrase_review_give_way_001",
+      "target_text": "Give way.",
+      "should_accept": [
+        "Give way.",
+        "Give way vessel."
+      ],
+      "should_reject": [
+        "stand on",
+        "keep course",
+        "maintain speed"
       ]
     }
   ],

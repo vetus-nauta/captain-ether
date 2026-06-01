@@ -9439,6 +9439,296 @@
       "hint_beginner": "All stations...",
       "hint_intermediate": "keep clear...",
       "hint_advanced": ""
+    },
+    {
+      "id": "expr_review_over_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "procedure_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "procedure_contrasts",
+      "source_language": "ru",
+      "source_text": "Конец передачи, жду ответа.",
+      "target_language": "en",
+      "target_text": "over",
+      "accepted_answers": [
+        "over"
+      ],
+      "hint_beginner": "o__r",
+      "hint_intermediate": "over...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_review_roger_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "procedure_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "procedure_contrasts",
+      "source_language": "ru",
+      "source_text": "Принято.",
+      "target_language": "en",
+      "target_text": "roger",
+      "accepted_answers": [
+        "roger"
+      ],
+      "hint_beginner": "r____r",
+      "hint_intermediate": "roger...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_review_affirmative_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "procedure_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "procedure_contrasts",
+      "source_language": "ru",
+      "source_text": "Да.",
+      "target_language": "en",
+      "target_text": "affirmative",
+      "accepted_answers": [
+        "affirmative"
+      ],
+      "hint_beginner": "a_________e",
+      "hint_intermediate": "affirmative...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_review_say_again_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "procedure_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "readback_contrasts",
+      "source_language": "ru",
+      "source_text": "Повторите.",
+      "target_language": "en",
+      "target_text": "say again",
+      "accepted_answers": [
+        "say again"
+      ],
+      "hint_beginner": "say...",
+      "hint_intermediate": "say again...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_review_read_back_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 10,
+      "topic": "procedure_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "readback_contrasts",
+      "source_language": "ru",
+      "source_text": "Повторите для подтверждения.",
+      "target_language": "en",
+      "target_text": "read back",
+      "accepted_answers": [
+        "read back"
+      ],
+      "hint_beginner": "read...",
+      "hint_intermediate": "read back...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_review_port_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 7,
+      "topic": "direction_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "direction_contrasts",
+      "source_language": "ru",
+      "source_text": "Левый борт.",
+      "target_language": "en",
+      "target_text": "port",
+      "accepted_answers": [
+        "port"
+      ],
+      "hint_beginner": "p__t",
+      "hint_intermediate": "port...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_review_starboard_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "direction_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "direction_contrasts",
+      "source_language": "ru",
+      "source_text": "Правый борт.",
+      "target_language": "en",
+      "target_text": "starboard",
+      "accepted_answers": [
+        "starboard"
+      ],
+      "hint_beginner": "s_______d",
+      "hint_intermediate": "starboard...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_review_ahead_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "relative_position_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "relative_position_contrasts",
+      "source_language": "ru",
+      "source_text": "Впереди.",
+      "target_language": "en",
+      "target_text": "ahead",
+      "accepted_answers": [
+        "ahead"
+      ],
+      "hint_beginner": "a___d",
+      "hint_intermediate": "ahead...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "word_review_astern_001",
+      "type": "word",
+      "level": "beginner",
+      "difficulty_score": 8,
+      "topic": "relative_position_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "relative_position_contrasts",
+      "source_language": "ru",
+      "source_text": "Позади / за кормой.",
+      "target_language": "en",
+      "target_text": "astern",
+      "accepted_answers": [
+        "astern"
+      ],
+      "hint_beginner": "a____n",
+      "hint_intermediate": "astern...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_review_channel_one_six_001",
+      "type": "short_expression",
+      "level": "beginner",
+      "difficulty_score": 9,
+      "topic": "number_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "number_contrasts",
+      "source_language": "ru",
+      "source_text": "Канал один шесть.",
+      "target_language": "en",
+      "target_text": "channel one six",
+      "accepted_answers": [
+        "channel one six"
+      ],
+      "hint_beginner": "channel...",
+      "hint_intermediate": "one six.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_review_zero_nine_zero_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 11,
+      "topic": "number_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "number_contrasts",
+      "source_language": "ru",
+      "source_text": "Ноль девять ноль.",
+      "target_language": "en",
+      "target_text": "zero nine zero",
+      "accepted_answers": [
+        "zero nine zero"
+      ],
+      "hint_beginner": "zero...",
+      "hint_intermediate": "zero nine zero...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "expr_review_one_four_zero_zero_001",
+      "type": "short_expression",
+      "level": "intermediate",
+      "difficulty_score": 11,
+      "topic": "number_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "number_contrasts",
+      "source_language": "ru",
+      "source_text": "Один четыре ноль ноль.",
+      "target_language": "en",
+      "target_text": "one four zero zero",
+      "accepted_answers": [
+        "one four zero zero"
+      ],
+      "hint_beginner": "one four...",
+      "hint_intermediate": "one four zero zero...",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_review_pan_pan_not_mayday_001",
+      "type": "phrase",
+      "level": "advanced",
+      "difficulty_score": 18,
+      "topic": "signal_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "signal_contrasts",
+      "source_language": "ru",
+      "source_text": "Сигнал срочности: Пан-Пан, не Мэйдэй.",
+      "target_language": "en",
+      "target_text": "Pan-Pan, not Mayday.",
+      "accepted_answers": [
+        "Pan-Pan, not Mayday."
+      ],
+      "grammar_pattern": "review_signal_family_contrast",
+      "hint_beginner": "Pan-Pan...",
+      "hint_intermediate": "not Mayday.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_review_alter_course_to_port_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 14,
+      "topic": "movement_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "movement_contrasts",
+      "source_language": "ru",
+      "source_text": "Измените курс влево на порт.",
+      "target_language": "en",
+      "target_text": "Alter course to port.",
+      "accepted_answers": [
+        "Alter course to port.",
+        "Alter course port"
+      ],
+      "grammar_pattern": "review_movement_side_contrast",
+      "hint_beginner": "Alter course...",
+      "hint_intermediate": "to port.",
+      "hint_advanced": ""
+    },
+    {
+      "id": "phrase_review_give_way_001",
+      "type": "phrase",
+      "level": "intermediate",
+      "difficulty_score": 14,
+      "topic": "traffic_contrast",
+      "branch": "review_minimal_pairs",
+      "module": "movement_contrasts",
+      "source_language": "ru",
+      "source_text": "Уступите дорогу.",
+      "target_language": "en",
+      "target_text": "Give way.",
+      "accepted_answers": [
+        "Give way.",
+        "Give way vessel."
+      ],
+      "grammar_pattern": "review_traffic_obligation_contrast",
+      "hint_beginner": "Give...",
+      "hint_intermediate": "way.",
+      "hint_advanced": ""
     }
   ],
   "grammar_patterns": [
@@ -11082,6 +11372,27 @@
       "pattern": "complete Mayday call with identity position nature and assistance",
       "examples": [
         "Mayday, this is vessel Aurora, position bearing zero nine zero from the lighthouse, fire on board, I require immediate assistance."
+      ]
+    },
+    {
+      "id": "review_signal_family_contrast",
+      "pattern": "explicit contrast between radio signal families",
+      "examples": [
+        "Pan-Pan, not Mayday."
+      ]
+    },
+    {
+      "id": "review_movement_side_contrast",
+      "pattern": "movement command with exact side",
+      "examples": [
+        "Alter course to port."
+      ]
+    },
+    {
+      "id": "review_traffic_obligation_contrast",
+      "pattern": "traffic obligation contrast",
+      "examples": [
+        "Give way."
       ]
     }
   ],
