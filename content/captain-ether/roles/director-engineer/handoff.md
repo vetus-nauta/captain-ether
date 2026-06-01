@@ -208,21 +208,20 @@ MVP hardening completed:
 
 ## Current Role Assignment
 
-None. `CE-SPRINT-0046 Batch 007 Engineering Gate` is closed as PASS FOR QA
-ACCEPTANCE.
+None. `CE-SPRINT-0047 Batch 007 Acceptance QA` is closed as PASS.
 
 Latest task closure:
 
 ```text
-content/captain-ether/roles/director-engineer/reports/sprint-ce-0046-batch-007-engineering-gate-2026-06-01.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0047-batch-007-acceptance-qa-2026-06-01.md
 ```
 
 Latest local validation:
 
 ```text
-Node batch schema/count/overlap gate PASS.
-JSON parse for batch and regression file PASS.
-Draft matcher check PASS, batch007 checks=306.
+QA acceptance PASS.
+Batch007 QA target=50 accept=106 reject=150 total=306.
+No QA failures found in assigned scope.
 ```
 
 Scope preserved:
@@ -235,12 +234,12 @@ production config, deploy/FTP state, or secrets changed.
 Next recommended work, only after explicit Director command:
 
 ```text
-QA acceptance review for Batch 007.
+Batch 007 merge-preparation task.
 ```
 
 No production deploy, router change, registry change, `starter.json` merge,
 auth/platform edit, matcher change, API/runtime change, or public
-English-native release is authorized by `CE-SPRINT-0046` engineering gate.
+English-native release is authorized by `CE-SPRINT-0047` QA gate.
 
 ## Previous Closed Sprint
 

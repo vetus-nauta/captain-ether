@@ -10,6 +10,22 @@ None.
 
 ## Last QA
 
+TASK-CE-0047 Batch 007 Traffic / Collision acceptance QA:
+
+- task file:
+  `content/captain-ether/roles/qa/tasks/task-ce-0047-batch-007-traffic-collision-acceptance-qa-2026-06-01.md`
+- report file:
+  `content/captain-ether/roles/qa/reports/batch-007-traffic-collision-acceptance-qa-2026-06-01.md`
+- mode:
+  report-only
+- target:
+  `content/captain-ether/batches/batch-007-traffic-collision-basics.json`
+- result:
+  `PASS`
+- confirmed:
+  target text, `should_accept`, `should_reject`, and dangerous-pair coverage
+  pass for the draft batch; no merge or production deploy is implied.
+
 TASK-CE-0022 Public Stream Selector Contract QA:
 
 - task file:
