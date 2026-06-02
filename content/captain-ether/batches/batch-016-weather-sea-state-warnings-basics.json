@@ -1,7 +1,7 @@
 {
     "version": 1,
     "batch_id": "batch-016-weather-sea-state-warnings-basics",
-    "status": "drafted",
+    "status": "linguist_reviewed",
     "date": "2026-06-02",
     "branch": "safety_securite",
     "scope": "M4 safety/Securite weather and sea-state warning basics. Keep fog, restricted visibility, gale, squall, swell, navigational warnings, caution, keep-clear, and avoid-area instructions separate from Pan-Pan, routine traffic, depth, position, and cancellation meanings.",
@@ -409,38 +409,36 @@
             }
         },
         {
-            "id": "expr_safety_navigational_warning_001",
+            "id": "expr_safety_floating_debris_001",
             "type": "short_expression",
-            "level": "beginner",
-            "difficulty_score": 9,
+            "level": "intermediate",
+            "difficulty_score": 12,
             "topic": "navigation_warning",
             "branch": "safety_securite",
             "module": "navigation_warning",
             "source_language": "ru",
-            "source_text": "Навигационное предупреждение",
+            "source_text": "Плавающие обломки",
             "target_language": "en",
-            "target_text": "navigational warning",
+            "target_text": "floating debris",
             "accepted_answers": [
-                "navigational warning",
-                "navigation warning"
+                "floating debris"
             ],
-            "hint_beginner": "navigation w...",
-            "hint_intermediate": "navigational warning...",
+            "hint_beginner": "floating d...",
+            "hint_intermediate": "floating debris...",
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "navigational warning",
-                    "navigation warning"
+                    "floating debris"
                 ],
                 "should_reject": [
-                    "weather forecast",
-                    "traffic information",
-                    "berthing instruction"
+                    "debris on deck",
+                    "clear fairway",
+                    "traffic information"
                 ],
                 "dangerous_minimal_pairs": [
-                    "navigational warning / weather forecast / traffic information / berthing instruction"
+                    "floating debris / debris on deck / clear fairway / traffic information"
                 ],
-                "linguist_note": "A navigational warning is a safety warning, not a forecast, traffic update, or berthing order."
+                "linguist_note": "Floating debris is a navigational hazard in the water, not onboard debris, a clear-fairway report, or routine traffic information."
             }
         },
         {
@@ -524,7 +522,8 @@
             "target_language": "en",
             "target_text": "Securite, gale warning in area Alpha.",
             "accepted_answers": [
-                "Securite, gale warning in area Alpha."
+                "Securite, gale warning in area Alpha.",
+                "sécurité gale warning in area Alpha"
             ],
             "grammar_pattern": "securite_gale_warning_area",
             "hint_beginner": "Securite, gale warning...",
@@ -533,17 +532,19 @@
             "qa_notes": {
                 "should_accept": [
                     "Securite, gale warning in area Alpha.",
-                    "Securite gale warning in area Alpha"
+                    "Securite gale warning in area Alpha",
+                    "sécurité gale warning in area Alpha"
                 ],
                 "should_reject": [
                     "Pan Pan gale warning in area Alpha",
+                    "Mayday gale warning in area Alpha",
                     "Securite gale cancelled in area Alpha",
                     "Securite fog warning in area Alpha"
                 ],
                 "dangerous_minimal_pairs": [
                     "Securite / Pan-Pan; gale warning / cancelled / fog warning"
                 ],
-                "linguist_note": "Safety signal and gale-warning meaning must remain exact."
+                "linguist_note": "Safety signal, accent spelling, gale-warning meaning, and active warning status must remain exact."
             }
         },
         {
@@ -947,7 +948,8 @@
                     "gale warning"
                 ],
                 "phrase_safety_securite_gale_area_alpha_001": [
-                    "Securite, gale warning in area Alpha."
+                    "Securite, gale warning in area Alpha.",
+                    "sécurité gale warning in area Alpha"
                 ]
             },
             "must_reject": {
@@ -957,6 +959,7 @@
                 ],
                 "phrase_safety_securite_gale_area_alpha_001": [
                     "Pan Pan gale warning in area Alpha",
+                    "Mayday gale warning in area Alpha",
                     "Securite gale cancelled in area Alpha"
                 ]
             },
@@ -1083,28 +1086,24 @@
             "reason": "Sea-state hazard for small craft must not become traffic, depth, or proceed instruction."
         },
         {
-            "pair": "navigational warning debris / clear fairway / traffic information; thunderstorm avoid / enter",
+            "pair": "floating debris / fairway debris / clear fairway / traffic information; thunderstorm avoid / enter",
             "items": [
-                "expr_safety_navigational_warning_001",
+                "expr_safety_floating_debris_001",
                 "phrase_safety_navigational_warning_debris_001",
                 "phrase_safety_thunderstorm_area_bravo_001"
             ],
             "must_accept": {
-                "expr_safety_navigational_warning_001": [
-                    "navigational warning"
-                ],
                 "phrase_safety_navigational_warning_debris_001": [
                     "Navigational warning, debris in fairway."
                 ],
                 "phrase_safety_thunderstorm_area_bravo_001": [
                     "Thunderstorm in area Bravo, avoid the area."
+                ],
+                "expr_safety_floating_debris_001": [
+                    "floating debris"
                 ]
             },
             "must_reject": {
-                "expr_safety_navigational_warning_001": [
-                    "traffic information",
-                    "weather forecast"
-                ],
                 "phrase_safety_navigational_warning_debris_001": [
                     "Navigational warning clear fairway",
                     "Traffic information debris in fairway"
@@ -1112,9 +1111,14 @@
                 "phrase_safety_thunderstorm_area_bravo_001": [
                     "Thunderstorm in area Bravo enter the area",
                     "Fog in area Bravo avoid the area"
+                ],
+                "expr_safety_floating_debris_001": [
+                    "debris on deck",
+                    "clear fairway",
+                    "traffic information"
                 ]
             },
-            "reason": "Warning class, hazard state, area, and avoid instruction must remain exact."
+            "reason": "Hazard location/state, warning class, area, and avoid instruction must remain exact."
         }
     ],
     "producer_notes": [
