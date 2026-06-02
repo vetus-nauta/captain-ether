@@ -1,0 +1,1547 @@
+{
+    "version": 1,
+    "batch_id": "batch-019-practical-seamanship-vocabulary",
+    "status": "draft",
+    "date": "2026-06-03",
+    "branch": "mixed_vocabulary_expansion",
+    "scope": "M4 practical seamanship vocabulary expansion. Draft-only word, short-expression, and phrase items covering windward/leeward terms, tide/current vocabulary, harbour control areas, mooring/anchor commands, day shapes/lights, and boarding safety. Do not merge into playable starter or deploy to production in this sprint.",
+    "items": [
+        {
+            "id": "word_vocab_lee_shore_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 8,
+            "module": "weather_seamanship_terms",
+            "source_text": "Подветренный берег.",
+            "target_text": "lee shore",
+            "accepted_answers": [
+                "lee shore"
+            ],
+            "grammar_pattern": "seamanship_compound_noun",
+            "hint_beginner": "lee...",
+            "hint_intermediate": "lee shore...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "lee shore",
+                    "Lee shore"
+                ],
+                "should_reject": [
+                    "leeward side",
+                    "windward shore",
+                    "safe shore"
+                ],
+                "dangerous_minimal_pairs": [
+                    "lee shore / leeward side / windward shore"
+                ],
+                "linguist_note": "Lee shore is a hazard term and must not collapse into leeward side."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_vocab_windward_side_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 7,
+            "module": "relative_side_terms",
+            "source_text": "Наветренная сторона.",
+            "target_text": "windward side",
+            "accepted_answers": [
+                "windward side"
+            ],
+            "grammar_pattern": "directional_side_compound",
+            "hint_beginner": "windward...",
+            "hint_intermediate": "windward side...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "windward side",
+                    "Windward side"
+                ],
+                "should_reject": [
+                    "leeward side",
+                    "starboard side",
+                    "windward shore"
+                ],
+                "dangerous_minimal_pairs": [
+                    "windward / leeward; side / shore"
+                ],
+                "linguist_note": "Windward/leeward contrast is safety-relevant."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_vocab_leeward_side_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 7,
+            "module": "relative_side_terms",
+            "source_text": "Подветренная сторона.",
+            "target_text": "leeward side",
+            "accepted_answers": [
+                "leeward side"
+            ],
+            "grammar_pattern": "directional_side_compound",
+            "hint_beginner": "leeward...",
+            "hint_intermediate": "leeward side...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "leeward side",
+                    "Leeward side"
+                ],
+                "should_reject": [
+                    "windward side",
+                    "lee shore",
+                    "port side"
+                ],
+                "dangerous_minimal_pairs": [
+                    "leeward / windward; side / lee shore"
+                ],
+                "linguist_note": "Leeward side is not the same as lee shore."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_vocab_tidal_stream_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "module": "tide_current_terms",
+            "source_text": "Приливное течение.",
+            "target_text": "tidal stream",
+            "accepted_answers": [
+                "tidal stream"
+            ],
+            "grammar_pattern": "tide_current_compound",
+            "hint_beginner": "tidal...",
+            "hint_intermediate": "tidal stream...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "tidal stream",
+                    "Tidal stream"
+                ],
+                "should_reject": [
+                    "weather stream",
+                    "traffic lane",
+                    "tidal height"
+                ],
+                "dangerous_minimal_pairs": [
+                    "tidal stream / tidal height / traffic lane"
+                ],
+                "linguist_note": "Current direction/force vocabulary must not become tide height or traffic lane."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_vocab_ebb_tide_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 7,
+            "module": "tide_current_terms",
+            "source_text": "Отлив.",
+            "target_text": "ebb tide",
+            "accepted_answers": [
+                "ebb tide"
+            ],
+            "grammar_pattern": "tide_state_compound",
+            "hint_beginner": "ebb...",
+            "hint_intermediate": "ebb tide...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "ebb tide",
+                    "Ebb tide"
+                ],
+                "should_reject": [
+                    "flood tide",
+                    "slack water",
+                    "low tide only"
+                ],
+                "dangerous_minimal_pairs": [
+                    "ebb / flood / slack"
+                ],
+                "linguist_note": "Ebb/flood direction must be distinct."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_vocab_flood_tide_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 7,
+            "module": "tide_current_terms",
+            "source_text": "Прилив.",
+            "target_text": "flood tide",
+            "accepted_answers": [
+                "flood tide"
+            ],
+            "grammar_pattern": "tide_state_compound",
+            "hint_beginner": "flood...",
+            "hint_intermediate": "flood tide...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "flood tide",
+                    "Flood tide"
+                ],
+                "should_reject": [
+                    "ebb tide",
+                    "flood warning",
+                    "slack water"
+                ],
+                "dangerous_minimal_pairs": [
+                    "flood tide / ebb tide / flood warning"
+                ],
+                "linguist_note": "Flood tide is a tidal state, not a warning."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_vocab_fairway_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 6,
+            "module": "harbour_navigation_terms",
+            "source_text": "Судовой ход.",
+            "target_text": "fairway",
+            "accepted_answers": [
+                "fairway"
+            ],
+            "grammar_pattern": "single_navigation_noun",
+            "hint_beginner": "fairway...",
+            "hint_intermediate": "",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "fairway",
+                    "Fairway"
+                ],
+                "should_reject": [
+                    "gangway",
+                    "runway",
+                    "fair wind"
+                ],
+                "dangerous_minimal_pairs": [
+                    "fairway / gangway / runway"
+                ],
+                "linguist_note": "Fairway must not be confused with gangway or non-maritime runway."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_vocab_turning_basin_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "module": "harbour_navigation_terms",
+            "source_text": "Место для разворота.",
+            "target_text": "turning basin",
+            "accepted_answers": [
+                "turning basin"
+            ],
+            "grammar_pattern": "harbour_area_compound",
+            "hint_beginner": "turning...",
+            "hint_intermediate": "turning basin...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "turning basin",
+                    "Turning basin"
+                ],
+                "should_reject": [
+                    "waiting basin",
+                    "traffic lane",
+                    "fuel berth"
+                ],
+                "dangerous_minimal_pairs": [
+                    "turning basin / waiting basin / traffic lane"
+                ],
+                "linguist_note": "Harbour manoeuvring area must remain exact."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_vocab_black_ball_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "module": "signals_and_day_shapes",
+            "source_text": "Черный шар.",
+            "target_text": "black ball",
+            "accepted_answers": [
+                "black ball"
+            ],
+            "grammar_pattern": "day_shape_noun_phrase",
+            "hint_beginner": "black...",
+            "hint_intermediate": "black ball...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "black ball",
+                    "Black ball"
+                ],
+                "should_reject": [
+                    "black cone",
+                    "red ball",
+                    "anchor light"
+                ],
+                "dangerous_minimal_pairs": [
+                    "black ball / black cone / anchor light"
+                ],
+                "linguist_note": "Day shape vocabulary must not collapse into light or another shape."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_vocab_anchor_light_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 7,
+            "module": "signals_and_day_shapes",
+            "source_text": "Якорный огонь.",
+            "target_text": "anchor light",
+            "accepted_answers": [
+                "anchor light"
+            ],
+            "grammar_pattern": "navigation_light_compound",
+            "hint_beginner": "anchor...",
+            "hint_intermediate": "anchor light...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "anchor light",
+                    "Anchor light"
+                ],
+                "should_reject": [
+                    "anchor ball",
+                    "deck light",
+                    "black ball"
+                ],
+                "dangerous_minimal_pairs": [
+                    "anchor light / black ball / deck light"
+                ],
+                "linguist_note": "Night light and day shape must stay distinct."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_keep_clear_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "module": "movement_instructions",
+            "source_text": "Держитесь в стороне.",
+            "target_text": "keep clear",
+            "accepted_answers": [
+                "keep clear"
+            ],
+            "grammar_pattern": "imperative_two_word_instruction",
+            "hint_beginner": "keep...",
+            "hint_intermediate": "keep clear...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "keep clear",
+                    "Keep clear"
+                ],
+                "should_reject": [
+                    "come clear",
+                    "keep close",
+                    "make fast"
+                ],
+                "dangerous_minimal_pairs": [
+                    "keep clear / keep close / make fast"
+                ],
+                "linguist_note": "Clearance instruction must not reverse into close approach."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_hold_position_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "module": "movement_instructions",
+            "source_text": "Удерживайте позицию.",
+            "target_text": "hold position",
+            "accepted_answers": [
+                "hold position"
+            ],
+            "grammar_pattern": "imperative_two_word_instruction",
+            "hint_beginner": "hold...",
+            "hint_intermediate": "hold position...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "hold position",
+                    "Hold position"
+                ],
+                "should_reject": [
+                    "alter position",
+                    "report position",
+                    "hold course"
+                ],
+                "dangerous_minimal_pairs": [
+                    "hold / alter / report; position / course"
+                ],
+                "linguist_note": "Holding position is not reporting position or holding course."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_make_fast_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "module": "mooring_commands",
+            "source_text": "Закрепите швартовы.",
+            "target_text": "make fast",
+            "accepted_answers": [
+                "make fast"
+            ],
+            "grammar_pattern": "mooring_two_word_command",
+            "hint_beginner": "make...",
+            "hint_intermediate": "make fast...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "make fast",
+                    "Make fast"
+                ],
+                "should_reject": [
+                    "make way",
+                    "cast off",
+                    "hold fast"
+                ],
+                "dangerous_minimal_pairs": [
+                    "make fast / make way / cast off"
+                ],
+                "linguist_note": "Mooring command must not become movement or departure."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_single_up_lines_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 11,
+            "module": "mooring_commands",
+            "source_text": "Оставьте по одному швартову.",
+            "target_text": "single up lines",
+            "accepted_answers": [
+                "single up lines",
+                "single up mooring lines"
+            ],
+            "grammar_pattern": "mooring_line_preparation_command",
+            "hint_beginner": "single up...",
+            "hint_intermediate": "single up lines...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "single up lines",
+                    "single up mooring lines"
+                ],
+                "should_reject": [
+                    "double up lines",
+                    "let go lines",
+                    "single up anchor"
+                ],
+                "dangerous_minimal_pairs": [
+                    "single up / double up / let go; lines / anchor"
+                ],
+                "linguist_note": "Departure mooring preparation must keep line command exact."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_heave_up_anchor_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "module": "anchoring_commands",
+            "source_text": "Выбирайте якорь.",
+            "target_text": "heave up anchor",
+            "accepted_answers": [
+                "heave up anchor",
+                "heave up the anchor"
+            ],
+            "grammar_pattern": "anchor_handling_command",
+            "hint_beginner": "heave up...",
+            "hint_intermediate": "heave up anchor...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "heave up anchor",
+                    "heave up the anchor"
+                ],
+                "should_reject": [
+                    "drop anchor",
+                    "hold anchor",
+                    "heave line"
+                ],
+                "dangerous_minimal_pairs": [
+                    "heave up / drop / hold; anchor / line"
+                ],
+                "linguist_note": "Anchor recovery must not become anchoring or line handling."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_anchor_dragging_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 12,
+            "module": "anchoring_status",
+            "source_text": "Якорь ползет.",
+            "target_text": "anchor dragging",
+            "accepted_answers": [
+                "anchor dragging",
+                "anchor is dragging"
+            ],
+            "grammar_pattern": "anchor_status_expression",
+            "hint_beginner": "anchor...",
+            "hint_intermediate": "anchor dragging...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "anchor dragging",
+                    "anchor is dragging"
+                ],
+                "should_reject": [
+                    "anchor holding",
+                    "anchor heaving",
+                    "line dragging"
+                ],
+                "dangerous_minimal_pairs": [
+                    "anchor dragging / holding / heaving"
+                ],
+                "linguist_note": "Dragging anchor is an urgent status and must not become holding."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_engine_on_standby_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "module": "engine_readiness",
+            "source_text": "Двигатель в готовности.",
+            "target_text": "engine on standby",
+            "accepted_answers": [
+                "engine on standby"
+            ],
+            "grammar_pattern": "equipment_readiness_expression",
+            "hint_beginner": "engine...",
+            "hint_intermediate": "on standby...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "engine on standby",
+                    "Engine on standby"
+                ],
+                "should_reject": [
+                    "engine stopped",
+                    "engine failed",
+                    "steering on standby"
+                ],
+                "dangerous_minimal_pairs": [
+                    "engine standby / stopped / failed; engine / steering"
+                ],
+                "linguist_note": "Readiness must not collapse into failure or stop."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_steerage_way_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 12,
+            "module": "vessel_handling_terms",
+            "source_text": "Ход для управляемости.",
+            "target_text": "steerage way",
+            "accepted_answers": [
+                "steerage way"
+            ],
+            "grammar_pattern": "vessel_handling_noun_phrase",
+            "hint_beginner": "steerage...",
+            "hint_intermediate": "steerage way...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "steerage way",
+                    "Steerage way"
+                ],
+                "should_reject": [
+                    "steering way",
+                    "give way",
+                    "underway"
+                ],
+                "dangerous_minimal_pairs": [
+                    "steerage way / steering way / give way / underway"
+                ],
+                "linguist_note": "Steerage way is a handling term, not steering command or collision rule."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_safe_to_board_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "module": "boarding_safety",
+            "source_text": "Безопасно подняться на борт.",
+            "target_text": "safe to board",
+            "accepted_answers": [
+                "safe to board"
+            ],
+            "grammar_pattern": "boarding_safety_status",
+            "hint_beginner": "safe...",
+            "hint_intermediate": "safe to board...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "safe to board",
+                    "Safe to board"
+                ],
+                "should_reject": [
+                    "not safe to board",
+                    "safe to depart",
+                    "safe alongside"
+                ],
+                "dangerous_minimal_pairs": [
+                    "safe / not safe; board / depart"
+                ],
+                "linguist_note": "Boarding permission must preserve safety polarity."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_not_safe_to_board_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 9,
+            "module": "boarding_safety",
+            "source_text": "Небезопасно подниматься на борт.",
+            "target_text": "not safe to board",
+            "accepted_answers": [
+                "not safe to board"
+            ],
+            "grammar_pattern": "boarding_safety_negative_status",
+            "hint_beginner": "not safe...",
+            "hint_intermediate": "not safe to board...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "not safe to board",
+                    "Not safe to board"
+                ],
+                "should_reject": [
+                    "safe to board",
+                    "not safe to depart",
+                    "safe to disembark"
+                ],
+                "dangerous_minimal_pairs": [
+                    "not safe / safe; board / depart / disembark"
+                ],
+                "linguist_note": "Negative safety status must not be accepted as permission."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_keep_clear_fairway_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "module": "fairway_control",
+            "source_text": "Держитесь вне судового хода.",
+            "target_text": "Keep clear of the fairway.",
+            "accepted_answers": [
+                "Keep clear of the fairway.",
+                "Keep clear of fairway"
+            ],
+            "grammar_pattern": "keep_clear_of_area",
+            "hint_beginner": "Keep clear...",
+            "hint_intermediate": "of the fairway...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Keep clear of the fairway.",
+                    "Keep clear of fairway"
+                ],
+                "should_reject": [
+                    "Keep close to the fairway",
+                    "Keep clear of the gangway",
+                    "Proceed along the fairway"
+                ],
+                "dangerous_minimal_pairs": [
+                    "keep clear / keep close / proceed; fairway / gangway"
+                ],
+                "linguist_note": "Fairway avoidance must not become approach or wrong area."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_hold_position_turning_basin_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "module": "harbour_control",
+            "source_text": "Удерживайте позицию вне места разворота.",
+            "target_text": "Hold position outside the turning basin.",
+            "accepted_answers": [
+                "Hold position outside the turning basin.",
+                "Hold position outside turning basin"
+            ],
+            "grammar_pattern": "hold_position_outside_area",
+            "hint_beginner": "Hold position...",
+            "hint_intermediate": "outside the turning basin...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Hold position outside the turning basin.",
+                    "Hold position outside turning basin"
+                ],
+                "should_reject": [
+                    "Hold position inside the turning basin",
+                    "Report position outside the turning basin",
+                    "Hold course outside the turning basin"
+                ],
+                "dangerous_minimal_pairs": [
+                    "hold/report; position/course; outside/inside turning basin"
+                ],
+                "linguist_note": "Location and action must remain exact."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_single_up_forward_lines_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "module": "mooring_commands",
+            "source_text": "Оставьте по одному носовому швартову.",
+            "target_text": "Single up forward lines.",
+            "accepted_answers": [
+                "Single up forward lines.",
+                "Single up the forward lines"
+            ],
+            "grammar_pattern": "single_up_specific_lines",
+            "hint_beginner": "Single up...",
+            "hint_intermediate": "forward lines...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Single up forward lines.",
+                    "Single up the forward lines"
+                ],
+                "should_reject": [
+                    "Double up forward lines",
+                    "Single up aft lines",
+                    "Let go forward lines"
+                ],
+                "dangerous_minimal_pairs": [
+                    "single up / double up / let go; forward / aft lines"
+                ],
+                "linguist_note": "Line preparation must keep line group and action exact."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_heave_up_anchor_when_ready_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "module": "anchoring_commands",
+            "source_text": "Выбирайте якорь, когда будете готовы.",
+            "target_text": "Heave up anchor when ready.",
+            "accepted_answers": [
+                "Heave up anchor when ready.",
+                "Heave up the anchor when ready"
+            ],
+            "grammar_pattern": "heave_up_anchor_when_ready",
+            "hint_beginner": "Heave up anchor...",
+            "hint_intermediate": "when ready...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Heave up anchor when ready.",
+                    "Heave up the anchor when ready"
+                ],
+                "should_reject": [
+                    "Drop anchor when ready",
+                    "Hold anchor when ready",
+                    "Heave up line when ready"
+                ],
+                "dangerous_minimal_pairs": [
+                    "heave up / drop / hold; anchor / line"
+                ],
+                "linguist_note": "Anchor recovery command must not become anchoring or line handling."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_anchor_dragging_to_leeward_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "module": "anchoring_status",
+            "source_text": "Якорь ползет под ветер.",
+            "target_text": "Anchor dragging to leeward.",
+            "accepted_answers": [
+                "Anchor dragging to leeward.",
+                "Anchor is dragging to leeward"
+            ],
+            "grammar_pattern": "anchor_dragging_direction",
+            "hint_beginner": "Anchor dragging...",
+            "hint_intermediate": "to leeward...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Anchor dragging to leeward.",
+                    "Anchor is dragging to leeward"
+                ],
+                "should_reject": [
+                    "Anchor holding to leeward",
+                    "Anchor dragging to windward",
+                    "Line dragging to leeward"
+                ],
+                "dangerous_minimal_pairs": [
+                    "anchor/line; dragging/holding; leeward/windward"
+                ],
+                "linguist_note": "Dragging direction and object are safety-critical."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_tidal_stream_setting_east_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "module": "tide_current_reports",
+            "source_text": "Приливное течение направлено на восток.",
+            "target_text": "Tidal stream setting east.",
+            "accepted_answers": [
+                "Tidal stream setting east.",
+                "Tidal stream is setting east"
+            ],
+            "grammar_pattern": "tidal_stream_setting_direction",
+            "hint_beginner": "Tidal stream...",
+            "hint_intermediate": "setting east...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Tidal stream setting east.",
+                    "Tidal stream is setting east"
+                ],
+                "should_reject": [
+                    "Tidal stream setting west",
+                    "Traffic stream setting east",
+                    "Tidal height setting east"
+                ],
+                "dangerous_minimal_pairs": [
+                    "east/west; tidal stream/traffic stream/tidal height"
+                ],
+                "linguist_note": "Current direction and phenomenon must remain exact."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_ebb_tide_decreasing_depth_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "module": "tide_current_reports",
+            "source_text": "На отливе глубина уменьшается.",
+            "target_text": "Ebb tide, decreasing depth.",
+            "accepted_answers": [
+                "Ebb tide, decreasing depth."
+            ],
+            "grammar_pattern": "tide_state_depth_change",
+            "hint_beginner": "Ebb tide...",
+            "hint_intermediate": "decreasing depth...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Ebb tide, decreasing depth.",
+                    "Ebb tide decreasing depth"
+                ],
+                "should_reject": [
+                    "Flood tide decreasing depth",
+                    "Ebb tide increasing depth",
+                    "Low tide decreasing speed"
+                ],
+                "dangerous_minimal_pairs": [
+                    "ebb/flood; decreasing/increasing; depth/speed"
+                ],
+                "linguist_note": "Tide state and consequence must remain exact."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_flood_tide_increasing_current_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "module": "tide_current_reports",
+            "source_text": "На приливе течение усиливается.",
+            "target_text": "Flood tide, increasing current.",
+            "accepted_answers": [
+                "Flood tide, increasing current."
+            ],
+            "grammar_pattern": "tide_state_current_change",
+            "hint_beginner": "Flood tide...",
+            "hint_intermediate": "increasing current...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Flood tide, increasing current.",
+                    "Flood tide increasing current"
+                ],
+                "should_reject": [
+                    "Ebb tide increasing current",
+                    "Flood tide decreasing current",
+                    "Flood warning increasing current"
+                ],
+                "dangerous_minimal_pairs": [
+                    "flood/ebb/flood warning; increasing/decreasing current"
+                ],
+                "linguist_note": "Flood tide must not become flood warning or wrong current trend."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_hoist_black_ball_signal_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "module": "signals_and_day_shapes",
+            "source_text": "Поднимите сигнал черный шар.",
+            "target_text": "Hoist black ball signal.",
+            "accepted_answers": [
+                "Hoist black ball signal.",
+                "Hoist the black ball signal"
+            ],
+            "grammar_pattern": "hoist_day_shape_signal",
+            "hint_beginner": "Hoist...",
+            "hint_intermediate": "black ball signal...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Hoist black ball signal.",
+                    "Hoist the black ball signal"
+                ],
+                "should_reject": [
+                    "Hoist black cone signal",
+                    "Switch on anchor light signal",
+                    "Lower black ball signal"
+                ],
+                "dangerous_minimal_pairs": [
+                    "hoist/lower; black ball/black cone/anchor light"
+                ],
+                "linguist_note": "Day shape command must keep action and shape exact."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_anchor_light_not_visible_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "module": "signals_and_day_shapes",
+            "source_text": "Якорный огонь не виден.",
+            "target_text": "Anchor light not visible.",
+            "accepted_answers": [
+                "Anchor light not visible.",
+                "Anchor light is not visible"
+            ],
+            "grammar_pattern": "navigation_light_visibility_status",
+            "hint_beginner": "Anchor light...",
+            "hint_intermediate": "not visible...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Anchor light not visible.",
+                    "Anchor light is not visible"
+                ],
+                "should_reject": [
+                    "Anchor light visible",
+                    "Black ball not visible",
+                    "Deck light not visible"
+                ],
+                "dangerous_minimal_pairs": [
+                    "anchor light/black ball/deck light; visible/not visible"
+                ],
+                "linguist_note": "Light identity and visibility polarity must stay exact."
+            },
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        }
+    ],
+    "grammar_patterns": [
+        {
+            "id": "seamanship_compound_noun",
+            "pattern": "compound seamanship hazard noun",
+            "examples": [
+                "lee shore"
+            ]
+        },
+        {
+            "id": "directional_side_compound",
+            "pattern": "wind-relative side compound",
+            "examples": [
+                "windward side",
+                "leeward side"
+            ]
+        },
+        {
+            "id": "tide_current_compound",
+            "pattern": "tide/current compound term",
+            "examples": [
+                "tidal stream"
+            ]
+        },
+        {
+            "id": "tide_state_compound",
+            "pattern": "tide state compound term",
+            "examples": [
+                "ebb tide",
+                "flood tide"
+            ]
+        },
+        {
+            "id": "single_navigation_noun",
+            "pattern": "single navigation area noun",
+            "examples": [
+                "fairway"
+            ]
+        },
+        {
+            "id": "harbour_area_compound",
+            "pattern": "harbour manoeuvring area compound",
+            "examples": [
+                "turning basin"
+            ]
+        },
+        {
+            "id": "day_shape_noun_phrase",
+            "pattern": "day shape noun phrase",
+            "examples": [
+                "black ball"
+            ]
+        },
+        {
+            "id": "navigation_light_compound",
+            "pattern": "navigation light compound",
+            "examples": [
+                "anchor light"
+            ]
+        },
+        {
+            "id": "imperative_two_word_instruction",
+            "pattern": "short imperative movement instruction",
+            "examples": [
+                "keep clear",
+                "hold position"
+            ]
+        },
+        {
+            "id": "mooring_two_word_command",
+            "pattern": "short mooring command",
+            "examples": [
+                "make fast"
+            ]
+        },
+        {
+            "id": "mooring_line_preparation_command",
+            "pattern": "prepare mooring lines command",
+            "examples": [
+                "single up lines"
+            ]
+        },
+        {
+            "id": "anchor_handling_command",
+            "pattern": "anchor handling command",
+            "examples": [
+                "heave up anchor"
+            ]
+        },
+        {
+            "id": "anchor_status_expression",
+            "pattern": "anchor status expression",
+            "examples": [
+                "anchor dragging"
+            ]
+        },
+        {
+            "id": "boarding_safety_status",
+            "pattern": "positive boarding safety status",
+            "examples": [
+                "safe to board"
+            ]
+        },
+        {
+            "id": "boarding_safety_negative_status",
+            "pattern": "negative boarding safety status",
+            "examples": [
+                "not safe to board"
+            ]
+        },
+        {
+            "id": "keep_clear_of_area",
+            "pattern": "keep clear of named area",
+            "examples": [
+                "Keep clear of the fairway."
+            ]
+        },
+        {
+            "id": "hold_position_outside_area",
+            "pattern": "hold position outside named area",
+            "examples": [
+                "Hold position outside the turning basin."
+            ]
+        },
+        {
+            "id": "single_up_specific_lines",
+            "pattern": "single up specified mooring lines",
+            "examples": [
+                "Single up forward lines."
+            ]
+        },
+        {
+            "id": "heave_up_anchor_when_ready",
+            "pattern": "heave up anchor with readiness condition",
+            "examples": [
+                "Heave up anchor when ready."
+            ]
+        },
+        {
+            "id": "anchor_dragging_direction",
+            "pattern": "anchor dragging with direction",
+            "examples": [
+                "Anchor dragging to leeward."
+            ]
+        },
+        {
+            "id": "tidal_stream_setting_direction",
+            "pattern": "tidal stream setting direction",
+            "examples": [
+                "Tidal stream setting east."
+            ]
+        },
+        {
+            "id": "tide_state_depth_change",
+            "pattern": "tide state with depth trend",
+            "examples": [
+                "Ebb tide, decreasing depth."
+            ]
+        },
+        {
+            "id": "tide_state_current_change",
+            "pattern": "tide state with current trend",
+            "examples": [
+                "Flood tide, increasing current."
+            ]
+        },
+        {
+            "id": "hoist_day_shape_signal",
+            "pattern": "hoist named day shape signal",
+            "examples": [
+                "Hoist black ball signal."
+            ]
+        },
+        {
+            "id": "navigation_light_visibility_status",
+            "pattern": "navigation light visibility status",
+            "examples": [
+                "Anchor light not visible."
+            ]
+        }
+    ],
+    "dangerous_minimal_pairs": [
+        {
+            "pair": "lee shore / windward side / leeward side",
+            "items": [
+                "word_vocab_lee_shore_001",
+                "word_vocab_windward_side_001",
+                "word_vocab_leeward_side_001"
+            ],
+            "must_accept": {
+                "word_vocab_lee_shore_001": [
+                    "lee shore"
+                ],
+                "word_vocab_windward_side_001": [
+                    "windward side"
+                ],
+                "word_vocab_leeward_side_001": [
+                    "leeward side"
+                ]
+            },
+            "must_reject": {
+                "word_vocab_lee_shore_001": [
+                    "leeward side",
+                    "windward shore"
+                ],
+                "word_vocab_windward_side_001": [
+                    "leeward side",
+                    "windward shore"
+                ],
+                "word_vocab_leeward_side_001": [
+                    "windward side",
+                    "lee shore"
+                ]
+            },
+            "reason": "Wind-relative side and lee-shore hazard terms must remain distinct."
+        },
+        {
+            "pair": "ebb tide / flood tide / tidal stream",
+            "items": [
+                "word_vocab_tidal_stream_001",
+                "word_vocab_ebb_tide_001",
+                "word_vocab_flood_tide_001"
+            ],
+            "must_accept": {
+                "word_vocab_tidal_stream_001": [
+                    "tidal stream"
+                ],
+                "word_vocab_ebb_tide_001": [
+                    "ebb tide"
+                ],
+                "word_vocab_flood_tide_001": [
+                    "flood tide"
+                ]
+            },
+            "must_reject": {
+                "word_vocab_tidal_stream_001": [
+                    "tidal height",
+                    "traffic lane"
+                ],
+                "word_vocab_ebb_tide_001": [
+                    "flood tide",
+                    "slack water"
+                ],
+                "word_vocab_flood_tide_001": [
+                    "ebb tide",
+                    "flood warning"
+                ]
+            },
+            "reason": "Tide state, current, and warning terms must not collapse."
+        },
+        {
+            "pair": "fairway / turning basin / gangway; keep clear / hold position / proceed",
+            "items": [
+                "word_vocab_fairway_001",
+                "word_vocab_turning_basin_001",
+                "phrase_vocab_keep_clear_fairway_001",
+                "phrase_vocab_hold_position_turning_basin_001"
+            ],
+            "must_accept": {
+                "word_vocab_fairway_001": [
+                    "fairway"
+                ],
+                "word_vocab_turning_basin_001": [
+                    "turning basin"
+                ],
+                "phrase_vocab_keep_clear_fairway_001": [
+                    "Keep clear of the fairway."
+                ],
+                "phrase_vocab_hold_position_turning_basin_001": [
+                    "Hold position outside the turning basin."
+                ]
+            },
+            "must_reject": {
+                "word_vocab_fairway_001": [
+                    "gangway",
+                    "runway"
+                ],
+                "word_vocab_turning_basin_001": [
+                    "waiting basin",
+                    "traffic lane"
+                ],
+                "phrase_vocab_keep_clear_fairway_001": [
+                    "Keep close to the fairway",
+                    "Proceed along the fairway"
+                ],
+                "phrase_vocab_hold_position_turning_basin_001": [
+                    "Hold position inside the turning basin",
+                    "Report position outside the turning basin"
+                ]
+            },
+            "reason": "Harbour area identity and movement instruction must stay exact."
+        },
+        {
+            "pair": "black ball / anchor light / black cone; hoist / lower / visible",
+            "items": [
+                "word_vocab_black_ball_001",
+                "word_vocab_anchor_light_001",
+                "phrase_vocab_hoist_black_ball_signal_001",
+                "phrase_vocab_anchor_light_not_visible_001"
+            ],
+            "must_accept": {
+                "word_vocab_black_ball_001": [
+                    "black ball"
+                ],
+                "word_vocab_anchor_light_001": [
+                    "anchor light"
+                ],
+                "phrase_vocab_hoist_black_ball_signal_001": [
+                    "Hoist black ball signal."
+                ],
+                "phrase_vocab_anchor_light_not_visible_001": [
+                    "Anchor light not visible."
+                ]
+            },
+            "must_reject": {
+                "word_vocab_black_ball_001": [
+                    "black cone",
+                    "anchor light"
+                ],
+                "word_vocab_anchor_light_001": [
+                    "anchor ball",
+                    "black ball"
+                ],
+                "phrase_vocab_hoist_black_ball_signal_001": [
+                    "Hoist black cone signal",
+                    "Lower black ball signal"
+                ],
+                "phrase_vocab_anchor_light_not_visible_001": [
+                    "Anchor light visible",
+                    "Black ball not visible"
+                ]
+            },
+            "reason": "Day shapes and navigation lights have different action/status boundaries."
+        },
+        {
+            "pair": "make fast / single up / heave up / cast off",
+            "items": [
+                "expr_vocab_make_fast_001",
+                "expr_vocab_single_up_lines_001",
+                "expr_vocab_heave_up_anchor_001",
+                "phrase_vocab_single_up_forward_lines_001",
+                "phrase_vocab_heave_up_anchor_when_ready_001"
+            ],
+            "must_accept": {
+                "expr_vocab_make_fast_001": [
+                    "make fast"
+                ],
+                "expr_vocab_single_up_lines_001": [
+                    "single up lines"
+                ],
+                "expr_vocab_heave_up_anchor_001": [
+                    "heave up anchor"
+                ],
+                "phrase_vocab_single_up_forward_lines_001": [
+                    "Single up forward lines."
+                ],
+                "phrase_vocab_heave_up_anchor_when_ready_001": [
+                    "Heave up anchor when ready."
+                ]
+            },
+            "must_reject": {
+                "expr_vocab_make_fast_001": [
+                    "make way",
+                    "cast off"
+                ],
+                "expr_vocab_single_up_lines_001": [
+                    "double up lines",
+                    "let go lines"
+                ],
+                "expr_vocab_heave_up_anchor_001": [
+                    "drop anchor",
+                    "heave line"
+                ],
+                "phrase_vocab_single_up_forward_lines_001": [
+                    "Double up forward lines",
+                    "Single up aft lines"
+                ],
+                "phrase_vocab_heave_up_anchor_when_ready_001": [
+                    "Drop anchor when ready",
+                    "Heave up line when ready"
+                ]
+            },
+            "reason": "Mooring and anchor commands are operationally different."
+        },
+        {
+            "pair": "anchor dragging / anchor holding / leeward / windward",
+            "items": [
+                "expr_vocab_anchor_dragging_001",
+                "phrase_vocab_anchor_dragging_to_leeward_001"
+            ],
+            "must_accept": {
+                "expr_vocab_anchor_dragging_001": [
+                    "anchor dragging"
+                ],
+                "phrase_vocab_anchor_dragging_to_leeward_001": [
+                    "Anchor dragging to leeward."
+                ]
+            },
+            "must_reject": {
+                "expr_vocab_anchor_dragging_001": [
+                    "anchor holding",
+                    "anchor heaving"
+                ],
+                "phrase_vocab_anchor_dragging_to_leeward_001": [
+                    "Anchor holding to leeward",
+                    "Anchor dragging to windward"
+                ]
+            },
+            "reason": "Dragging/holding and leeward/windward status are safety-critical."
+        },
+        {
+            "pair": "safe to board / not safe to board / safe to depart",
+            "items": [
+                "expr_vocab_safe_to_board_001",
+                "expr_vocab_not_safe_to_board_001"
+            ],
+            "must_accept": {
+                "expr_vocab_safe_to_board_001": [
+                    "safe to board"
+                ],
+                "expr_vocab_not_safe_to_board_001": [
+                    "not safe to board"
+                ]
+            },
+            "must_reject": {
+                "expr_vocab_safe_to_board_001": [
+                    "not safe to board",
+                    "safe to depart"
+                ],
+                "expr_vocab_not_safe_to_board_001": [
+                    "safe to board",
+                    "not safe to depart"
+                ]
+            },
+            "reason": "Boarding safety polarity must not be reversed."
+        },
+        {
+            "pair": "tidal stream east / west; ebb/flood trends",
+            "items": [
+                "phrase_vocab_tidal_stream_setting_east_001",
+                "phrase_vocab_ebb_tide_decreasing_depth_001",
+                "phrase_vocab_flood_tide_increasing_current_001"
+            ],
+            "must_accept": {
+                "phrase_vocab_tidal_stream_setting_east_001": [
+                    "Tidal stream setting east."
+                ],
+                "phrase_vocab_ebb_tide_decreasing_depth_001": [
+                    "Ebb tide, decreasing depth."
+                ],
+                "phrase_vocab_flood_tide_increasing_current_001": [
+                    "Flood tide, increasing current."
+                ]
+            },
+            "must_reject": {
+                "phrase_vocab_tidal_stream_setting_east_001": [
+                    "Tidal stream setting west",
+                    "Tidal height setting east"
+                ],
+                "phrase_vocab_ebb_tide_decreasing_depth_001": [
+                    "Flood tide decreasing depth",
+                    "Ebb tide increasing depth"
+                ],
+                "phrase_vocab_flood_tide_increasing_current_001": [
+                    "Ebb tide increasing current",
+                    "Flood tide decreasing current"
+                ]
+            },
+            "reason": "Tide/current direction and trends must remain exact."
+        }
+    ],
+    "producer_notes": {
+        "target_increment": "30 draft vocabulary units toward M4 1000+ items",
+        "type_mix": "10 word, 10 short_expression, 10 phrase",
+        "production_scope": "none",
+        "next_gate": "Sea Speak Linguist Review before engineering gate or merge"
+    }
+}
