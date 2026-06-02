@@ -1,5 +1,29 @@
 # Director-Engineer Handoff
 
+## Canonical Start Package
+
+For a new chat, read this file first:
+
+```text
+content/captain-ether/new-chat-start-package-2026-06-02-batch-018-production-synced.md
+```
+
+Current canonical status:
+
+```text
+Batch 018 production synced.
+Local/GitHub/production aligned for Captain Ether narrow scope.
+starter_items=650
+grammar_patterns=237
+qa_items=650
+dangerous_pairs=152
+Latest product baseline commit: 3d7740e captain-ether: sync batch 018 to production
+```
+
+Older sections below preserve historical context and may mention earlier
+baselines such as `255` or `500` items. Treat those older counts as superseded
+unless they are explicitly referenced as history.
+
 ## Beta 1.0 Transfer
 
 The next director chat is named Director Ether.
@@ -30,16 +54,18 @@ approved task.
 First-read handoff:
 
 ```text
+content/captain-ether/new-chat-start-package-2026-06-02-batch-018-production-synced.md
 content/captain-ether/new-director-start-handoff-2026-06-02.md
 content/captain-ether/director-ether-beta-1-handoff-2026-05-27.md
 ```
 
-Use the 2026-06-02 start handoff first. It states the current local/GitHub vs
-production parity status, the M3/M4 boundary, the next required sprint, and the
-anti-confusion rules for Captain Ether vs Watch Officer/platform scope. Then
-use the Beta 1.0 handoff for older baseline, role folder map, closed gates,
-validation commands, deployment warnings, and recommended Beta 1.1
-architectural direction.
+Use the Batch 018 production-synced start package first. It states the current
+local/GitHub/production parity status, WebStorm workspace context, local server
+checks, production checks, next sprint recommendation, and anti-confusion rules
+for Captain Ether vs Watch Officer/platform scope. The older 2026-06-02 and
+Beta 1.0 handoffs are historical context for baseline, role folder map, closed
+gates, validation commands, deployment warnings, and earlier architectural
+direction.
 
 ## Activation
 
