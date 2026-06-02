@@ -1,7 +1,7 @@
 {
     "version": 1,
     "batch_id": "batch-019-practical-seamanship-vocabulary",
-    "status": "draft",
+    "status": "linguist_reviewed",
     "date": "2026-06-03",
     "branch": "mixed_vocabulary_expansion",
     "scope": "M4 practical seamanship vocabulary expansion. Draft-only word, short-expression, and phrase items covering windward/leeward terms, tide/current vocabulary, harbour control areas, mooring/anchor commands, day shapes/lights, and boarding safety. Do not merge into playable starter or deploy to production in this sprint.",
@@ -1245,6 +1245,20 @@
             "pattern": "navigation light visibility status",
             "examples": [
                 "Anchor light not visible."
+            ]
+        },
+        {
+            "id": "equipment_readiness_expression",
+            "pattern": "equipment readiness expression",
+            "examples": [
+                "engine on standby"
+            ]
+        },
+        {
+            "id": "vessel_handling_noun_phrase",
+            "pattern": "vessel handling noun phrase",
+            "examples": [
+                "steerage way"
             ]
         }
     ],

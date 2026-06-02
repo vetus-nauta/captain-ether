@@ -1,7 +1,7 @@
 {
     "version": 1,
     "batch_id": "batch-021-vhf-procedure-message-markers-vocabulary",
-    "status": "draft",
+    "status": "linguist_reviewed",
     "date": "2026-06-03",
     "branch": "vhf_procedure_message_markers",
     "scope": "M4 VHF procedure and message-marker vocabulary draft. Adds call-sign, readback, correction, relay, channel and communication-control terms. Draft only: no starter merge and no production deploy.",

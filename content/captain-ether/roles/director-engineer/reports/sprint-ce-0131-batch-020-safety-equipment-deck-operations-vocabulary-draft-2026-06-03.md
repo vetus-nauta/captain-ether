@@ -54,7 +54,7 @@ If Batch 019 and Batch 020 both later merge, expected playable corpus increase:
 
 ```text
 starter_items: 650 -> 730
-grammar_patterns: 237 -> 309
+grammar_patterns: 237 -> 311
 qa_items: 650 -> 730
 dangerous_pairs: 152 -> 173
 ```

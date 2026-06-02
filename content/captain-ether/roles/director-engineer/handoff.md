@@ -5,18 +5,21 @@
 For a new chat, read this file first:
 
 ```text
-content/captain-ether/new-chat-start-package-2026-06-02-batch-018-production-synced.md
+content/captain-ether/new-chat-start-package-2026-06-03-batch-019-023-engineering-gated.md
 ```
 
 Current canonical status:
 
 ```text
 Batch 018 production synced.
-Local/GitHub/production aligned for Captain Ether narrow scope.
+Batch 019-023 linguist-reviewed and engineering-gated for QA acceptance.
+Playable local/GitHub/production remains aligned for Captain Ether narrow scope.
 starter_items=650
 grammar_patterns=237
 qa_items=650
 dangerous_pairs=152
+draft_backlog_items=180
+draft_backlog_grammar_patterns=174
 Latest product baseline commit: 3d7740e captain-ether: sync batch 018 to production
 ```
 
@@ -54,12 +57,13 @@ approved task.
 First-read handoff:
 
 ```text
+content/captain-ether/new-chat-start-package-2026-06-03-batch-019-023-engineering-gated.md
 content/captain-ether/new-chat-start-package-2026-06-02-batch-018-production-synced.md
 content/captain-ether/new-director-start-handoff-2026-06-02.md
 content/captain-ether/director-ether-beta-1-handoff-2026-05-27.md
 ```
 
-Use the Batch 018 production-synced start package first. It states the current
+Use the Batch 019-023 engineering-gated start package first. It states the current
 local/GitHub/production parity status, WebStorm workspace context, local server
 checks, production checks, next sprint recommendation, and anti-confusion rules
 for Captain Ether vs Watch Officer/platform scope. The older 2026-06-02 and

@@ -13,6 +13,7 @@ playable_grammar_patterns=237
 playable_qa_items=650
 playable_dangerous_pairs=152
 existing_draft_backlog_items=80
+existing_draft_backlog_grammar_patterns=74
 existing_draft_batches=batch-019,batch-020
 ```
 
@@ -38,7 +39,7 @@ Combined draft backlog after Batch 019-023:
 
 ```text
 draft_backlog_items=180
-draft_backlog_grammar_patterns=172
+draft_backlog_grammar_patterns=174
 draft_backlog_dangerous_minimal_pairs=41
 ```
 
@@ -46,7 +47,7 @@ If Batch 019-023 later pass review/gate/merge, expected playable baseline:
 
 ```text
 starter_items: 650 -> 830
-grammar_patterns: 237 -> 409
+grammar_patterns: 237 -> 411
 qa_items: 650 -> 830
 dangerous_pairs: 152 -> 193
 ```

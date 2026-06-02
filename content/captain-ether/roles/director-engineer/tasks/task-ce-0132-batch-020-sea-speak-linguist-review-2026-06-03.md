@@ -4,7 +4,7 @@ Date: 2026-06-03
 Owner: Sea Speak Linguist
 Assigned by: Director-Engineer
 Scope: Captain Ether Batch 020 draft review only
-Status: OPEN
+Status: DONE / APPROVED_FOR_ENGINEERING_GATE
 
 ## Input
 
@@ -38,3 +38,15 @@ REVISION_REQUIRED
 ```
 
 No merge and no production deploy are authorized by this review task.
+
+## Result
+
+```text
+APPROVED_FOR_ENGINEERING_GATE
+```
+
+Report:
+
+```text
+content/captain-ether/roles/sea-speak-linguist/reports/batch-020-safety-equipment-deck-operations-vocabulary-risk-review-2026-06-03.md
+```

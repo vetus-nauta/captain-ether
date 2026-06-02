@@ -1,7 +1,7 @@
 {
     "version": 1,
     "batch_id": "batch-022-navigation-hazards-buoyage-visibility-vocabulary",
-    "status": "draft",
+    "status": "linguist_reviewed",
     "date": "2026-06-03",
     "branch": "navigation_hazards_buoyage_visibility",
     "scope": "M4 navigation hazards, buoyage, lights and restricted visibility vocabulary draft. Draft only: no starter merge and no production deploy.",
