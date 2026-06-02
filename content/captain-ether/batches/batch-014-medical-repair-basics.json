@@ -1,0 +1,1195 @@
+{
+    "version": 1,
+    "batch_id": "batch-014-medical-repair-basics",
+    "status": "draft",
+    "date": "2026-06-02",
+    "branch": "urgency_panpan",
+    "scope": "M4 medical-detail and temporary-repair status basics. Keep medical advice, medical assistance, evacuation, rescue, Mayday distress, equipment status, and routine onboard repair reports separate.",
+    "items": [
+        {
+            "id": "word_medical_injury_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "medical_assistance",
+            "branch": "urgency_panpan",
+            "module": "medical_condition",
+            "source_language": "ru",
+            "source_text": "Травма",
+            "target_language": "en",
+            "target_text": "injury",
+            "accepted_answers": [
+                "injury"
+            ],
+            "hint_beginner": "i____y",
+            "hint_intermediate": "injury...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "injury",
+                    "INJURY"
+                ],
+                "should_reject": [
+                    "illness",
+                    "damage",
+                    "emergency"
+                ],
+                "dangerous_minimal_pairs": [
+                    "injury / illness / damage / emergency"
+                ],
+                "linguist_note": "Injury is harm to a person, not illness, vessel damage, or generic emergency."
+            }
+        },
+        {
+            "id": "word_medical_illness_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "medical_assistance",
+            "branch": "urgency_panpan",
+            "module": "medical_condition",
+            "source_language": "ru",
+            "source_text": "Болезнь",
+            "target_language": "en",
+            "target_text": "illness",
+            "accepted_answers": [
+                "illness"
+            ],
+            "hint_beginner": "i_____s",
+            "hint_intermediate": "illness...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "illness",
+                    "ILLNESS"
+                ],
+                "should_reject": [
+                    "injury",
+                    "seasickness",
+                    "damage"
+                ],
+                "dangerous_minimal_pairs": [
+                    "illness / injury / seasickness / damage"
+                ],
+                "linguist_note": "Illness is a medical condition; seasickness is a specific condition and damage is to the vessel."
+            }
+        },
+        {
+            "id": "word_medical_bleeding_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 9,
+            "topic": "medical_assistance",
+            "branch": "urgency_panpan",
+            "module": "medical_condition",
+            "source_language": "ru",
+            "source_text": "Кровотечение",
+            "target_language": "en",
+            "target_text": "bleeding",
+            "accepted_answers": [
+                "bleeding"
+            ],
+            "hint_beginner": "b_______g",
+            "hint_intermediate": "bleeding...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "bleeding",
+                    "BLEEDING"
+                ],
+                "should_reject": [
+                    "breathing",
+                    "burn",
+                    "fracture"
+                ],
+                "dangerous_minimal_pairs": [
+                    "bleeding / breathing / burn / fracture"
+                ],
+                "linguist_note": "Bleeding is loss of blood, not breathing status, burn, or fracture."
+            }
+        },
+        {
+            "id": "word_medical_fracture_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "medical_assistance",
+            "branch": "urgency_panpan",
+            "module": "medical_condition",
+            "source_language": "ru",
+            "source_text": "Перелом",
+            "target_language": "en",
+            "target_text": "fracture",
+            "accepted_answers": [
+                "fracture",
+                "broken bone"
+            ],
+            "hint_beginner": "f______e",
+            "hint_intermediate": "fracture...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "fracture",
+                    "broken bone"
+                ],
+                "should_reject": [
+                    "bleeding",
+                    "burn",
+                    "sprain"
+                ],
+                "dangerous_minimal_pairs": [
+                    "fracture / bleeding / burn / sprain"
+                ],
+                "linguist_note": "Fracture is a broken bone; do not accept unrelated injury categories."
+            }
+        },
+        {
+            "id": "word_medical_hypothermia_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 12,
+            "topic": "medical_assistance",
+            "branch": "urgency_panpan",
+            "module": "medical_condition",
+            "source_language": "ru",
+            "source_text": "Переохлаждение",
+            "target_language": "en",
+            "target_text": "hypothermia",
+            "accepted_answers": [
+                "hypothermia"
+            ],
+            "hint_beginner": "h_________a",
+            "hint_intermediate": "hypothermia...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "hypothermia",
+                    "HYPOTHERMIA"
+                ],
+                "should_reject": [
+                    "hyperthermia",
+                    "seasickness",
+                    "shock"
+                ],
+                "dangerous_minimal_pairs": [
+                    "hypothermia / hyperthermia / seasickness / shock"
+                ],
+                "linguist_note": "Hypothermia is cold exposure; hyperthermia and seasickness are different conditions."
+            }
+        },
+        {
+            "id": "expr_medical_first_aid_required_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 10,
+            "topic": "medical_assistance",
+            "branch": "urgency_panpan",
+            "module": "medical_response",
+            "source_language": "ru",
+            "source_text": "Требуется первая помощь",
+            "target_language": "en",
+            "target_text": "first aid required",
+            "accepted_answers": [
+                "first aid required",
+                "first aid needed"
+            ],
+            "hint_beginner": "first aid...",
+            "hint_intermediate": "first aid required...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "first aid required",
+                    "first aid needed"
+                ],
+                "should_reject": [
+                    "medical evacuation required",
+                    "rescue required",
+                    "fire aid required"
+                ],
+                "dangerous_minimal_pairs": [
+                    "first aid / medical evacuation / rescue"
+                ],
+                "linguist_note": "First aid is onboard immediate care, not evacuation or rescue."
+            }
+        },
+        {
+            "id": "expr_medical_person_unconscious_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "medical_assistance",
+            "branch": "urgency_panpan",
+            "module": "medical_condition",
+            "source_language": "ru",
+            "source_text": "Человек без сознания",
+            "target_language": "en",
+            "target_text": "person unconscious",
+            "accepted_answers": [
+                "person unconscious",
+                "person is unconscious"
+            ],
+            "hint_beginner": "person...",
+            "hint_intermediate": "person unconscious...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "person unconscious",
+                    "person is unconscious"
+                ],
+                "should_reject": [
+                    "person conscious",
+                    "person injured",
+                    "person overboard"
+                ],
+                "dangerous_minimal_pairs": [
+                    "unconscious / conscious / injured / overboard"
+                ],
+                "linguist_note": "Consciousness state must remain exact and must not collapse into man-overboard or generic injury."
+            }
+        },
+        {
+            "id": "expr_medical_person_conscious_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 10,
+            "topic": "medical_assistance",
+            "branch": "urgency_panpan",
+            "module": "medical_condition",
+            "source_language": "ru",
+            "source_text": "Человек в сознании",
+            "target_language": "en",
+            "target_text": "person conscious",
+            "accepted_answers": [
+                "person conscious",
+                "person is conscious"
+            ],
+            "hint_beginner": "person...",
+            "hint_intermediate": "person conscious...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "person conscious",
+                    "person is conscious"
+                ],
+                "should_reject": [
+                    "person unconscious",
+                    "person overboard",
+                    "person missing"
+                ],
+                "dangerous_minimal_pairs": [
+                    "conscious / unconscious / overboard / missing"
+                ],
+                "linguist_note": "Conscious and unconscious are opposite medical states."
+            }
+        },
+        {
+            "id": "expr_repair_temporary_repair_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "equipment_status",
+            "branch": "urgency_panpan",
+            "module": "temporary_repair",
+            "source_language": "ru",
+            "source_text": "Временный ремонт",
+            "target_language": "en",
+            "target_text": "temporary repair",
+            "accepted_answers": [
+                "temporary repair",
+                "temporary repairs"
+            ],
+            "hint_beginner": "temporary...",
+            "hint_intermediate": "temporary repair...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "temporary repair",
+                    "temporary repairs"
+                ],
+                "should_reject": [
+                    "permanent repair",
+                    "repair failed",
+                    "assistance required"
+                ],
+                "dangerous_minimal_pairs": [
+                    "temporary repair / permanent repair / repair failed"
+                ],
+                "linguist_note": "Temporary repair is a status report, not a permanent fix or assistance request."
+            }
+        },
+        {
+            "id": "expr_repair_leak_controlled_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "flooding_control",
+            "branch": "urgency_panpan",
+            "module": "temporary_repair",
+            "source_language": "ru",
+            "source_text": "Течь взята под контроль",
+            "target_language": "en",
+            "target_text": "leak controlled",
+            "accepted_answers": [
+                "leak controlled",
+                "leak is controlled"
+            ],
+            "hint_beginner": "leak...",
+            "hint_intermediate": "leak controlled...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "leak controlled",
+                    "leak is controlled"
+                ],
+                "should_reject": [
+                    "leak increasing",
+                    "flooding uncontrolled",
+                    "fire controlled"
+                ],
+                "dangerous_minimal_pairs": [
+                    "leak controlled / leak increasing / flooding uncontrolled"
+                ],
+                "linguist_note": "Controlled leak is reduced risk; do not accept worsening flooding or fire status."
+            }
+        },
+        {
+            "id": "expr_repair_pump_running_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 10,
+            "topic": "flooding_control",
+            "branch": "urgency_panpan",
+            "module": "temporary_repair",
+            "source_language": "ru",
+            "source_text": "Насос работает",
+            "target_language": "en",
+            "target_text": "pump running",
+            "accepted_answers": [
+                "pump running",
+                "pump is running"
+            ],
+            "hint_beginner": "pump...",
+            "hint_intermediate": "pump running...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "pump running",
+                    "pump is running"
+                ],
+                "should_reject": [
+                    "pump failed",
+                    "pump stopped",
+                    "fire pump running"
+                ],
+                "dangerous_minimal_pairs": [
+                    "pump running / pump failed / fire pump running"
+                ],
+                "linguist_note": "Pump running is generic status here; fire pump remains a different onboard-operation item."
+            }
+        },
+        {
+            "id": "expr_repair_engine_restarted_002",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 10,
+            "topic": "equipment_status",
+            "branch": "urgency_panpan",
+            "module": "temporary_repair",
+            "source_language": "ru",
+            "source_text": "Двигатель снова запущен",
+            "target_language": "en",
+            "target_text": "engine restarted",
+            "accepted_answers": [
+                "engine restarted",
+                "engine is restarted"
+            ],
+            "hint_beginner": "engine...",
+            "hint_intermediate": "engine restarted...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "engine restarted",
+                    "engine is restarted"
+                ],
+                "should_reject": [
+                    "engine failed",
+                    "engine stopped",
+                    "steering restored"
+                ],
+                "dangerous_minimal_pairs": [
+                    "engine restarted / engine failed / steering restored"
+                ],
+                "linguist_note": "Engine restarted is recovery status, not failure or steering status."
+            }
+        },
+        {
+            "id": "expr_repair_steering_restored_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "equipment_status",
+            "branch": "urgency_panpan",
+            "module": "temporary_repair",
+            "source_language": "ru",
+            "source_text": "Рулевое управление восстановлено",
+            "target_language": "en",
+            "target_text": "steering restored",
+            "accepted_answers": [
+                "steering restored",
+                "steering is restored"
+            ],
+            "hint_beginner": "steering...",
+            "hint_intermediate": "steering restored...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "steering restored",
+                    "steering is restored"
+                ],
+                "should_reject": [
+                    "steering failed",
+                    "engine restarted",
+                    "rudder lost"
+                ],
+                "dangerous_minimal_pairs": [
+                    "steering restored / steering failed / engine restarted"
+                ],
+                "linguist_note": "Steering restored is recovery status, not engine recovery or rudder-loss status."
+            }
+        },
+        {
+            "id": "expr_repair_water_ingress_reduced_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 14,
+            "topic": "flooding_control",
+            "branch": "urgency_panpan",
+            "module": "temporary_repair",
+            "source_language": "ru",
+            "source_text": "Поступление воды уменьшилось",
+            "target_language": "en",
+            "target_text": "water ingress reduced",
+            "accepted_answers": [
+                "water ingress reduced",
+                "water ingress is reduced"
+            ],
+            "hint_beginner": "water ingress...",
+            "hint_intermediate": "water ingress reduced...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "water ingress reduced",
+                    "water ingress is reduced"
+                ],
+                "should_reject": [
+                    "water ingress increasing",
+                    "flooding uncontrolled",
+                    "water tank reduced"
+                ],
+                "dangerous_minimal_pairs": [
+                    "water ingress reduced / increasing / water tank"
+                ],
+                "linguist_note": "Water ingress is seawater entering the vessel, not water tank level."
+            }
+        },
+        {
+            "id": "phrase_medical_injury_one_person_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "medical_assistance",
+            "branch": "urgency_panpan",
+            "module": "medical_condition",
+            "source_language": "ru",
+            "source_text": "Один человек травмирован, требуется медицинская помощь.",
+            "target_language": "en",
+            "target_text": "One person injured, medical assistance required.",
+            "accepted_answers": [
+                "One person injured, medical assistance required."
+            ],
+            "grammar_pattern": "medical_injury_assistance_required",
+            "hint_beginner": "One person injured...",
+            "hint_intermediate": "medical assistance required...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "One person injured, medical assistance required.",
+                    "One person injured medical assistance required"
+                ],
+                "should_reject": [
+                    "Two persons injured medical assistance required",
+                    "One person ill medical assistance required",
+                    "One person injured medical advice required"
+                ],
+                "dangerous_minimal_pairs": [
+                    "one / two persons; injured / ill; assistance / advice"
+                ],
+                "linguist_note": "Person count, condition, and assistance/advice boundary must remain exact."
+            }
+        },
+        {
+            "id": "phrase_medical_advice_for_illness_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "medical_assistance",
+            "branch": "urgency_panpan",
+            "module": "medical_advice",
+            "source_language": "ru",
+            "source_text": "Требуется медицинская консультация по болезни.",
+            "target_language": "en",
+            "target_text": "Medical advice required for illness.",
+            "accepted_answers": [
+                "Medical advice required for illness."
+            ],
+            "grammar_pattern": "medical_advice_condition",
+            "hint_beginner": "Medical advice...",
+            "hint_intermediate": "for illness...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Medical advice required for illness."
+                ],
+                "should_reject": [
+                    "Medical assistance required for illness",
+                    "Medical evacuation required for illness",
+                    "Medical advice required for injury"
+                ],
+                "dangerous_minimal_pairs": [
+                    "medical advice / assistance / evacuation; illness / injury"
+                ],
+                "linguist_note": "Medical advice is guidance; do not accept assistance or evacuation wording."
+            }
+        },
+        {
+            "id": "phrase_medical_unconscious_need_assistance_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "medical_assistance",
+            "branch": "urgency_panpan",
+            "module": "medical_condition",
+            "source_language": "ru",
+            "source_text": "Человек без сознания, требуется немедленная медицинская помощь.",
+            "target_language": "en",
+            "target_text": "Person unconscious, immediate medical assistance required.",
+            "accepted_answers": [
+                "Person unconscious, immediate medical assistance required."
+            ],
+            "grammar_pattern": "medical_unconscious_immediate_assistance",
+            "hint_beginner": "Person unconscious...",
+            "hint_intermediate": "immediate medical assistance...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Person unconscious, immediate medical assistance required.",
+                    "Person unconscious immediate medical assistance required"
+                ],
+                "should_reject": [
+                    "Person conscious immediate medical assistance required",
+                    "Person unconscious medical advice required",
+                    "Person overboard immediate medical assistance required"
+                ],
+                "dangerous_minimal_pairs": [
+                    "unconscious / conscious / overboard; assistance / advice"
+                ],
+                "linguist_note": "Unconscious condition and immediate assistance wording are high-risk and must remain exact."
+            }
+        },
+        {
+            "id": "phrase_medical_hypothermia_first_aid_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "medical_assistance",
+            "branch": "urgency_panpan",
+            "module": "medical_condition",
+            "source_language": "ru",
+            "source_text": "Подозрение на переохлаждение, первая помощь оказывается.",
+            "target_language": "en",
+            "target_text": "Suspected hypothermia, first aid being given.",
+            "accepted_answers": [
+                "Suspected hypothermia, first aid being given."
+            ],
+            "grammar_pattern": "medical_hypothermia_first_aid_status",
+            "hint_beginner": "Suspected hypothermia...",
+            "hint_intermediate": "first aid being given...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Suspected hypothermia, first aid being given."
+                ],
+                "should_reject": [
+                    "Suspected hyperthermia first aid being given",
+                    "Suspected seasickness first aid being given",
+                    "Hypothermia evacuation required"
+                ],
+                "dangerous_minimal_pairs": [
+                    "hypothermia / hyperthermia / seasickness; first aid / evacuation"
+                ],
+                "linguist_note": "Hypothermia suspicion and first-aid status must not become evacuation or other conditions."
+            }
+        },
+        {
+            "id": "phrase_repair_engine_restarted_no_assistance_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "equipment_status",
+            "branch": "urgency_panpan",
+            "module": "temporary_repair",
+            "source_language": "ru",
+            "source_text": "Двигатель снова запущен, помощь больше не требуется.",
+            "target_language": "en",
+            "target_text": "Engine restarted, assistance no longer required.",
+            "accepted_answers": [
+                "Engine restarted, assistance no longer required."
+            ],
+            "grammar_pattern": "repair_engine_restarted_cancel_assistance",
+            "hint_beginner": "Engine restarted...",
+            "hint_intermediate": "assistance no longer required...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Engine restarted, assistance no longer required."
+                ],
+                "should_reject": [
+                    "Engine failed assistance required",
+                    "Steering restored assistance no longer required",
+                    "Engine restarted rescue required"
+                ],
+                "dangerous_minimal_pairs": [
+                    "engine restarted / engine failed / assistance required / rescue required"
+                ],
+                "linguist_note": "Recovery and cancellation of assistance must not accept active failure or rescue request."
+            }
+        },
+        {
+            "id": "phrase_repair_steering_restored_reduced_speed_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "equipment_status",
+            "branch": "urgency_panpan",
+            "module": "temporary_repair",
+            "source_language": "ru",
+            "source_text": "Рулевое управление восстановлено, следуем малым ходом.",
+            "target_language": "en",
+            "target_text": "Steering restored, proceeding at reduced speed.",
+            "accepted_answers": [
+                "Steering restored, proceeding at reduced speed."
+            ],
+            "grammar_pattern": "repair_steering_restored_reduced_speed",
+            "hint_beginner": "Steering restored...",
+            "hint_intermediate": "reduced speed...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Steering restored, proceeding at reduced speed."
+                ],
+                "should_reject": [
+                    "Steering failed proceeding at reduced speed",
+                    "Engine restarted proceeding at reduced speed",
+                    "Steering restored proceeding at full speed"
+                ],
+                "dangerous_minimal_pairs": [
+                    "steering restored / failed; reduced speed / full speed"
+                ],
+                "linguist_note": "Recovery status and speed limitation must remain exact."
+            }
+        },
+        {
+            "id": "phrase_repair_leak_controlled_pump_running_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "flooding_control",
+            "branch": "urgency_panpan",
+            "module": "temporary_repair",
+            "source_language": "ru",
+            "source_text": "Течь под контролем, насос работает.",
+            "target_language": "en",
+            "target_text": "Leak controlled, pump running.",
+            "accepted_answers": [
+                "Leak controlled, pump running."
+            ],
+            "grammar_pattern": "repair_leak_controlled_pump_running",
+            "hint_beginner": "Leak controlled...",
+            "hint_intermediate": "pump running...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Leak controlled, pump running."
+                ],
+                "should_reject": [
+                    "Leak increasing pump running",
+                    "Leak controlled pump failed",
+                    "Flooding uncontrolled pump running"
+                ],
+                "dangerous_minimal_pairs": [
+                    "leak controlled / increasing / flooding uncontrolled; pump running / failed"
+                ],
+                "linguist_note": "Both leak status and pump status are required; opposite states must stay wrong."
+            }
+        },
+        {
+            "id": "phrase_repair_water_ingress_reduced_monitoring_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 18,
+            "topic": "flooding_control",
+            "branch": "urgency_panpan",
+            "module": "temporary_repair",
+            "source_language": "ru",
+            "source_text": "Поступление воды уменьшилось, продолжаем наблюдение.",
+            "target_language": "en",
+            "target_text": "Water ingress reduced, continuing to monitor.",
+            "accepted_answers": [
+                "Water ingress reduced, continuing to monitor."
+            ],
+            "grammar_pattern": "repair_water_ingress_monitoring",
+            "hint_beginner": "Water ingress reduced...",
+            "hint_intermediate": "continuing to monitor...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Water ingress reduced, continuing to monitor."
+                ],
+                "should_reject": [
+                    "Water ingress increasing continuing to monitor",
+                    "Water tank reduced continuing to monitor",
+                    "Flooding uncontrolled continuing to monitor"
+                ],
+                "dangerous_minimal_pairs": [
+                    "water ingress reduced / increasing / water tank / flooding uncontrolled"
+                ],
+                "linguist_note": "Water ingress report must stay separate from tank level and uncontrolled flooding."
+            }
+        },
+        {
+            "id": "phrase_medical_evacuation_not_required_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "medical_assistance",
+            "branch": "urgency_panpan",
+            "module": "medical_response",
+            "source_language": "ru",
+            "source_text": "Медицинская эвакуация не требуется, нужна консультация.",
+            "target_language": "en",
+            "target_text": "Medical evacuation not required, advice needed.",
+            "accepted_answers": [
+                "Medical evacuation not required, advice needed."
+            ],
+            "grammar_pattern": "medical_evacuation_not_required_advice",
+            "hint_beginner": "Medical evacuation not required...",
+            "hint_intermediate": "advice needed...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Medical evacuation not required, advice needed."
+                ],
+                "should_reject": [
+                    "Medical evacuation required advice needed",
+                    "Medical evacuation not required assistance needed",
+                    "Rescue required advice needed"
+                ],
+                "dangerous_minimal_pairs": [
+                    "evacuation required / not required; advice / assistance / rescue"
+                ],
+                "linguist_note": "Negation around evacuation must remain strict."
+            }
+        },
+        {
+            "id": "phrase_medical_no_immediate_danger_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "medical_assistance",
+            "branch": "urgency_panpan",
+            "module": "medical_response",
+            "source_language": "ru",
+            "source_text": "Медицинская ситуация, непосредственной опасности нет.",
+            "target_language": "en",
+            "target_text": "Medical situation, no immediate danger.",
+            "accepted_answers": [
+                "Medical situation, no immediate danger."
+            ],
+            "grammar_pattern": "medical_no_immediate_danger",
+            "hint_beginner": "Medical situation...",
+            "hint_intermediate": "no immediate danger...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Medical situation, no immediate danger."
+                ],
+                "should_reject": [
+                    "Medical situation immediate danger",
+                    "Mayday medical situation",
+                    "Medical situation rescue required"
+                ],
+                "dangerous_minimal_pairs": [
+                    "no immediate danger / immediate danger / Mayday / rescue"
+                ],
+                "linguist_note": "No-immediate-danger wording must not accept distress or rescue escalation."
+            }
+        },
+        {
+            "id": "phrase_repair_temporary_repair_underway_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "equipment_status",
+            "branch": "urgency_panpan",
+            "module": "temporary_repair",
+            "source_language": "ru",
+            "source_text": "Временный ремонт выполняется, помощь пока не требуется.",
+            "target_language": "en",
+            "target_text": "Temporary repair underway, assistance not required at present.",
+            "accepted_answers": [
+                "Temporary repair underway, assistance not required at present."
+            ],
+            "grammar_pattern": "repair_underway_no_assistance_present",
+            "hint_beginner": "Temporary repair...",
+            "hint_intermediate": "assistance not required at present...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Temporary repair underway, assistance not required at present."
+                ],
+                "should_reject": [
+                    "Temporary repair failed assistance required",
+                    "Permanent repair underway assistance not required",
+                    "Temporary repair underway rescue required"
+                ],
+                "dangerous_minimal_pairs": [
+                    "temporary repair underway / failed / permanent repair; assistance / rescue"
+                ],
+                "linguist_note": "Temporary repair and present assistance status must remain exact."
+            }
+        }
+    ],
+    "grammar_patterns": [
+        {
+            "id": "medical_injury_assistance_required",
+            "pattern": "injury with medical assistance request",
+            "examples": [
+                "One person injured, medical assistance required."
+            ]
+        },
+        {
+            "id": "medical_advice_condition",
+            "pattern": "medical advice for non-evacuation illness",
+            "examples": [
+                "Medical advice required for illness."
+            ]
+        },
+        {
+            "id": "medical_unconscious_immediate_assistance",
+            "pattern": "unconscious person immediate assistance",
+            "examples": [
+                "Person unconscious, immediate medical assistance required."
+            ]
+        },
+        {
+            "id": "medical_hypothermia_first_aid_status",
+            "pattern": "hypothermia first-aid status",
+            "examples": [
+                "Suspected hypothermia, first aid being given."
+            ]
+        },
+        {
+            "id": "repair_engine_restarted_cancel_assistance",
+            "pattern": "engine recovery and no assistance required",
+            "examples": [
+                "Engine restarted, assistance no longer required."
+            ]
+        },
+        {
+            "id": "repair_steering_restored_reduced_speed",
+            "pattern": "steering restored with reduced speed",
+            "examples": [
+                "Steering restored, proceeding at reduced speed."
+            ]
+        },
+        {
+            "id": "repair_leak_controlled_pump_running",
+            "pattern": "leak controlled and pump status",
+            "examples": [
+                "Leak controlled, pump running."
+            ]
+        },
+        {
+            "id": "repair_water_ingress_monitoring",
+            "pattern": "water ingress reduced with monitoring",
+            "examples": [
+                "Water ingress reduced, continuing to monitor."
+            ]
+        },
+        {
+            "id": "medical_evacuation_not_required_advice",
+            "pattern": "evacuation negation with advice request",
+            "examples": [
+                "Medical evacuation not required, advice needed."
+            ]
+        },
+        {
+            "id": "medical_no_immediate_danger",
+            "pattern": "medical situation with no immediate danger",
+            "examples": [
+                "Medical situation, no immediate danger."
+            ]
+        },
+        {
+            "id": "repair_underway_no_assistance_present",
+            "pattern": "temporary repair underway without current assistance request",
+            "examples": [
+                "Temporary repair underway, assistance not required at present."
+            ]
+        }
+    ],
+    "dangerous_minimal_pairs": [
+        {
+            "pair": "injury / illness / medical advice / medical assistance",
+            "items": [
+                "word_medical_injury_001",
+                "word_medical_illness_001",
+                "phrase_medical_injury_one_person_001",
+                "phrase_medical_advice_for_illness_001"
+            ],
+            "must_accept": {
+                "word_medical_injury_001": [
+                    "injury"
+                ],
+                "word_medical_illness_001": [
+                    "illness"
+                ],
+                "phrase_medical_injury_one_person_001": [
+                    "One person injured, medical assistance required."
+                ],
+                "phrase_medical_advice_for_illness_001": [
+                    "Medical advice required for illness."
+                ]
+            },
+            "must_reject": {
+                "word_medical_injury_001": [
+                    "illness",
+                    "damage"
+                ],
+                "word_medical_illness_001": [
+                    "injury",
+                    "damage"
+                ],
+                "phrase_medical_injury_one_person_001": [
+                    "One person ill medical assistance required",
+                    "One person injured medical advice required"
+                ],
+                "phrase_medical_advice_for_illness_001": [
+                    "Medical assistance required for illness",
+                    "Medical advice required for injury"
+                ]
+            },
+            "reason": "Condition type and advice/assistance boundary must remain exact."
+        },
+        {
+            "pair": "conscious / unconscious / overboard / missing",
+            "items": [
+                "expr_medical_person_unconscious_001",
+                "expr_medical_person_conscious_001",
+                "phrase_medical_unconscious_need_assistance_001"
+            ],
+            "must_accept": {
+                "expr_medical_person_unconscious_001": [
+                    "person unconscious"
+                ],
+                "expr_medical_person_conscious_001": [
+                    "person conscious"
+                ],
+                "phrase_medical_unconscious_need_assistance_001": [
+                    "Person unconscious, immediate medical assistance required."
+                ]
+            },
+            "must_reject": {
+                "expr_medical_person_unconscious_001": [
+                    "person conscious",
+                    "person overboard"
+                ],
+                "expr_medical_person_conscious_001": [
+                    "person unconscious",
+                    "person missing"
+                ],
+                "phrase_medical_unconscious_need_assistance_001": [
+                    "Person conscious immediate medical assistance required",
+                    "Person overboard immediate medical assistance required"
+                ]
+            },
+            "reason": "Medical state must not collapse into the opposite state or man-overboard status."
+        },
+        {
+            "pair": "hypothermia / hyperthermia / seasickness / evacuation",
+            "items": [
+                "word_medical_hypothermia_001",
+                "phrase_medical_hypothermia_first_aid_001"
+            ],
+            "must_accept": {
+                "word_medical_hypothermia_001": [
+                    "hypothermia"
+                ],
+                "phrase_medical_hypothermia_first_aid_001": [
+                    "Suspected hypothermia, first aid being given."
+                ]
+            },
+            "must_reject": {
+                "word_medical_hypothermia_001": [
+                    "hyperthermia",
+                    "seasickness"
+                ],
+                "phrase_medical_hypothermia_first_aid_001": [
+                    "Suspected hyperthermia first aid being given",
+                    "Hypothermia evacuation required"
+                ]
+            },
+            "reason": "Cold exposure, other conditions, and evacuation requests are distinct."
+        },
+        {
+            "pair": "engine restarted / steering restored / failure / rescue",
+            "items": [
+                "expr_repair_engine_restarted_002",
+                "expr_repair_steering_restored_001",
+                "phrase_repair_engine_restarted_no_assistance_001",
+                "phrase_repair_steering_restored_reduced_speed_001"
+            ],
+            "must_accept": {
+                "expr_repair_engine_restarted_002": [
+                    "engine restarted"
+                ],
+                "expr_repair_steering_restored_001": [
+                    "steering restored"
+                ],
+                "phrase_repair_engine_restarted_no_assistance_001": [
+                    "Engine restarted, assistance no longer required."
+                ],
+                "phrase_repair_steering_restored_reduced_speed_001": [
+                    "Steering restored, proceeding at reduced speed."
+                ]
+            },
+            "must_reject": {
+                "expr_repair_engine_restarted_002": [
+                    "engine failed",
+                    "steering restored"
+                ],
+                "expr_repair_steering_restored_001": [
+                    "steering failed",
+                    "engine restarted"
+                ],
+                "phrase_repair_engine_restarted_no_assistance_001": [
+                    "Engine failed assistance required",
+                    "Engine restarted rescue required"
+                ],
+                "phrase_repair_steering_restored_reduced_speed_001": [
+                    "Steering failed proceeding at reduced speed",
+                    "Steering restored proceeding at full speed"
+                ]
+            },
+            "reason": "Recovery status, failure status, and rescue/assistance request are separate."
+        },
+        {
+            "pair": "leak controlled / water ingress reduced / flooding uncontrolled / pump failed",
+            "items": [
+                "expr_repair_leak_controlled_001",
+                "expr_repair_pump_running_001",
+                "expr_repair_water_ingress_reduced_001",
+                "phrase_repair_leak_controlled_pump_running_001",
+                "phrase_repair_water_ingress_reduced_monitoring_001"
+            ],
+            "must_accept": {
+                "expr_repair_leak_controlled_001": [
+                    "leak controlled"
+                ],
+                "expr_repair_pump_running_001": [
+                    "pump running"
+                ],
+                "expr_repair_water_ingress_reduced_001": [
+                    "water ingress reduced"
+                ],
+                "phrase_repair_leak_controlled_pump_running_001": [
+                    "Leak controlled, pump running."
+                ],
+                "phrase_repair_water_ingress_reduced_monitoring_001": [
+                    "Water ingress reduced, continuing to monitor."
+                ]
+            },
+            "must_reject": {
+                "expr_repair_leak_controlled_001": [
+                    "leak increasing",
+                    "flooding uncontrolled"
+                ],
+                "expr_repair_pump_running_001": [
+                    "pump failed",
+                    "pump stopped"
+                ],
+                "expr_repair_water_ingress_reduced_001": [
+                    "water ingress increasing",
+                    "water tank reduced"
+                ],
+                "phrase_repair_leak_controlled_pump_running_001": [
+                    "Leak increasing pump running",
+                    "Leak controlled pump failed"
+                ],
+                "phrase_repair_water_ingress_reduced_monitoring_001": [
+                    "Water ingress increasing continuing to monitor",
+                    "Water tank reduced continuing to monitor"
+                ]
+            },
+            "reason": "Reduced/controlled status must not accept worsening flooding, pump failure, or tank-level wording."
+        },
+        {
+            "pair": "evacuation not required / evacuation required / advice / assistance / rescue",
+            "items": [
+                "phrase_medical_evacuation_not_required_001",
+                "phrase_medical_no_immediate_danger_001",
+                "phrase_repair_temporary_repair_underway_001"
+            ],
+            "must_accept": {
+                "phrase_medical_evacuation_not_required_001": [
+                    "Medical evacuation not required, advice needed."
+                ],
+                "phrase_medical_no_immediate_danger_001": [
+                    "Medical situation, no immediate danger."
+                ],
+                "phrase_repair_temporary_repair_underway_001": [
+                    "Temporary repair underway, assistance not required at present."
+                ]
+            },
+            "must_reject": {
+                "phrase_medical_evacuation_not_required_001": [
+                    "Medical evacuation required advice needed",
+                    "Rescue required advice needed"
+                ],
+                "phrase_medical_no_immediate_danger_001": [
+                    "Medical situation immediate danger",
+                    "Mayday medical situation"
+                ],
+                "phrase_repair_temporary_repair_underway_001": [
+                    "Temporary repair failed assistance required",
+                    "Temporary repair underway rescue required"
+                ]
+            },
+            "reason": "Negation and escalation boundaries must remain strict."
+        }
+    ],
+    "producer_notes": {
+        "status": "draft for M4 after Batch 013 production sync",
+        "learner_source_language": "ru",
+        "target_language": "en",
+        "next_gate": "Sea Speak Linguist risk review before engineering gate, QA acceptance, merge, or production deploy",
+        "risk_focus": [
+            "injury / illness / medical advice / medical assistance",
+            "conscious / unconscious / overboard / missing",
+            "hypothermia / hyperthermia / seasickness / evacuation",
+            "engine restarted / steering restored / failure / rescue",
+            "leak controlled / water ingress reduced / flooding uncontrolled / pump failed",
+            "evacuation not required / evacuation required / advice / assistance / rescue"
+        ]
+    }
+}
