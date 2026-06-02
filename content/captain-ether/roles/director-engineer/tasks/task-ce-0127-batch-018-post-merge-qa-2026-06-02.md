@@ -4,7 +4,7 @@ Date: 2026-06-02
 Owner: QA
 Assigned by: Director-Engineer
 Scope: Captain Ether local merged M4 baseline only
-Status: OPEN
+Status: DONE / QA PASS
 
 ## Input
 
@@ -49,3 +49,41 @@ content/captain-ether/roles/qa/reports/sprint-ce-0127-batch-018-post-merge-qa-20
 ```
 
 No production deploy is authorized by this QA task.
+
+## Result
+
+```text
+ACCEPTED FOR NEXT GATE / PASS
+```
+
+Report:
+
+```text
+content/captain-ether/roles/qa/reports/sprint-ce-0127-batch-018-post-merge-qa-2026-06-02.md
+```
+
+Final local counts:
+
+```text
+starter_items=650
+grammar_patterns=237
+qa_items=650
+dangerous_pairs=152
+batch_018_status=merged
+```
+
+Checks:
+
+```text
+validator PASS
+batch validator PASS
+API smoke PASS captain-ether-api-smoke checks=334
+JS syntax guard PASS
+PHP syntax guard PASS
+qa_notes_in_starter=0
+Batch 018 items present in starter=25/25
+Batch 018 QA entries present=25/25
+Batch 018 dangerous pairs present=6/6
+Batch 018 grammar patterns present=23/23
+post-merge targeted matcher PASS cases=125
+```
