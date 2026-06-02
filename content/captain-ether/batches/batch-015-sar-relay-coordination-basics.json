@@ -1,0 +1,1195 @@
+{
+    "version": 1,
+    "batch_id": "batch-015-sar-relay-coordination-basics",
+    "status": "draft",
+    "date": "2026-06-02",
+    "branch": "distress_mayday",
+    "scope": "M4 SAR relay and rescue-coordination basics. Keep Mayday relay, own Mayday, Pan-Pan relay, coastguard/VTS/port-control identity, survivor/debris reports, visual/radio/radar contact, rescue helicopter/boat, liferaft, evacuation, and routine towing/pilotage separate.",
+    "items": [
+        {
+            "id": "word_sar_coastguard_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "sar_authority",
+            "source_language": "ru",
+            "source_text": "Береговая охрана",
+            "target_language": "en",
+            "target_text": "coastguard",
+            "accepted_answers": [
+                "coastguard",
+                "coast guard"
+            ],
+            "hint_beginner": "c________d",
+            "hint_intermediate": "coastguard...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "coastguard",
+                    "coast guard",
+                    "COASTGUARD"
+                ],
+                "should_reject": [
+                    "port control",
+                    "VTS",
+                    "marina control"
+                ],
+                "dangerous_minimal_pairs": [
+                    "coastguard / port control / VTS / marina control"
+                ],
+                "linguist_note": "Coastguard is the SAR authority context here, not routine port/VTS/marina traffic."
+            }
+        },
+        {
+            "id": "word_sar_survivor_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "survivor_status",
+            "source_language": "ru",
+            "source_text": "Выживший",
+            "target_language": "en",
+            "target_text": "survivor",
+            "accepted_answers": [
+                "survivor"
+            ],
+            "hint_beginner": "s_______r",
+            "hint_intermediate": "survivor...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "survivor",
+                    "SURVIVOR"
+                ],
+                "should_reject": [
+                    "casualty",
+                    "missing person",
+                    "passenger"
+                ],
+                "dangerous_minimal_pairs": [
+                    "survivor / casualty / missing person / passenger"
+                ],
+                "linguist_note": "Survivor means a person found alive, not an unlocated missing person or generic passenger."
+            }
+        },
+        {
+            "id": "word_sar_distress_flare_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "distress_signals",
+            "source_language": "ru",
+            "source_text": "Сигнальная ракета бедствия",
+            "target_language": "en",
+            "target_text": "distress flare",
+            "accepted_answers": [
+                "distress flare",
+                "red flare"
+            ],
+            "hint_beginner": "distress...",
+            "hint_intermediate": "distress flare...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "distress flare",
+                    "red flare"
+                ],
+                "should_reject": [
+                    "fire",
+                    "flashlight",
+                    "torch"
+                ],
+                "dangerous_minimal_pairs": [
+                    "distress flare / fire / flashlight / torch"
+                ],
+                "linguist_note": "A distress flare is a distress signal, not a fire or ordinary light."
+            }
+        },
+        {
+            "id": "word_sar_rescue_boat_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "rescue_units",
+            "source_language": "ru",
+            "source_text": "Спасательная лодка",
+            "target_language": "en",
+            "target_text": "rescue boat",
+            "accepted_answers": [
+                "rescue boat"
+            ],
+            "hint_beginner": "rescue...",
+            "hint_intermediate": "rescue boat...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "rescue boat",
+                    "RESCUE BOAT"
+                ],
+                "should_reject": [
+                    "liferaft",
+                    "tug boat",
+                    "pilot boat"
+                ],
+                "dangerous_minimal_pairs": [
+                    "rescue boat / liferaft / tug boat / pilot boat"
+                ],
+                "linguist_note": "Rescue boat is a responding craft, not a liferaft, tug, or pilot boat."
+            }
+        },
+        {
+            "id": "word_sar_rescue_helicopter_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 11,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "rescue_units",
+            "source_language": "ru",
+            "source_text": "Спасательный вертолет",
+            "target_language": "en",
+            "target_text": "rescue helicopter",
+            "accepted_answers": [
+                "rescue helicopter",
+                "SAR helicopter"
+            ],
+            "hint_beginner": "rescue...",
+            "hint_intermediate": "rescue helicopter...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "rescue helicopter",
+                    "SAR helicopter"
+                ],
+                "should_reject": [
+                    "rescue boat",
+                    "pilot boat",
+                    "drone"
+                ],
+                "dangerous_minimal_pairs": [
+                    "rescue helicopter / rescue boat / pilot boat"
+                ],
+                "linguist_note": "Rescue helicopter is an aircraft rescue unit and must not collapse into boats or pilotage."
+            }
+        },
+        {
+            "id": "expr_sar_mayday_relay_received_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "distress_relay",
+            "branch": "distress_mayday",
+            "module": "distress_relay",
+            "source_language": "ru",
+            "source_text": "Ретрансляция Мэйдэй принята",
+            "target_language": "en",
+            "target_text": "Mayday relay received",
+            "accepted_answers": [
+                "Mayday relay received"
+            ],
+            "hint_beginner": "Mayday...",
+            "hint_intermediate": "Mayday relay received...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Mayday relay received"
+                ],
+                "should_reject": [
+                    "Mayday received",
+                    "Pan-Pan relay received",
+                    "Read back Mayday relay"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Mayday relay / own Mayday / Pan-Pan relay / readback"
+                ],
+                "linguist_note": "Received relay acknowledgement must stay separate from own Mayday, Pan-Pan relay, and readback."
+            }
+        },
+        {
+            "id": "expr_sar_last_known_position_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "search_position",
+            "source_language": "ru",
+            "source_text": "Последнее известное местоположение",
+            "target_language": "en",
+            "target_text": "last known position",
+            "accepted_answers": [
+                "last known position",
+                "last reported position"
+            ],
+            "hint_beginner": "last...",
+            "hint_intermediate": "last known position...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "last known position",
+                    "last reported position"
+                ],
+                "should_reject": [
+                    "current position",
+                    "destination",
+                    "course"
+                ],
+                "dangerous_minimal_pairs": [
+                    "last known position / current position / destination / course"
+                ],
+                "linguist_note": "Last known position is SAR search reference, not current position, destination, or course."
+            }
+        },
+        {
+            "id": "expr_sar_search_area_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 11,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "search_area",
+            "source_language": "ru",
+            "source_text": "Район поиска",
+            "target_language": "en",
+            "target_text": "search area",
+            "accepted_answers": [
+                "search area",
+                "search zone"
+            ],
+            "hint_beginner": "search...",
+            "hint_intermediate": "search area...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "search area",
+                    "search zone"
+                ],
+                "should_reject": [
+                    "traffic lane",
+                    "anchorage",
+                    "reporting point"
+                ],
+                "dangerous_minimal_pairs": [
+                    "search area / traffic lane / anchorage / reporting point"
+                ],
+                "linguist_note": "Search area is a SAR area, not routine navigation area terminology."
+            }
+        },
+        {
+            "id": "expr_sar_visual_contact_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 11,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "contact_status",
+            "source_language": "ru",
+            "source_text": "Визуальный контакт",
+            "target_language": "en",
+            "target_text": "visual contact",
+            "accepted_answers": [
+                "visual contact"
+            ],
+            "hint_beginner": "visual...",
+            "hint_intermediate": "visual contact...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "visual contact"
+                ],
+                "should_reject": [
+                    "radio contact",
+                    "radar contact",
+                    "visual contact lost"
+                ],
+                "dangerous_minimal_pairs": [
+                    "visual contact / radio contact / radar contact / contact lost"
+                ],
+                "linguist_note": "Visual contact means seen by eye and must not accept radio/radar contact or loss of contact."
+            }
+        },
+        {
+            "id": "expr_sar_visual_contact_lost_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 13,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "contact_status",
+            "source_language": "ru",
+            "source_text": "Визуальный контакт потерян",
+            "target_language": "en",
+            "target_text": "visual contact lost",
+            "accepted_answers": [
+                "visual contact lost"
+            ],
+            "hint_beginner": "visual...",
+            "hint_intermediate": "visual contact lost...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "visual contact lost"
+                ],
+                "should_reject": [
+                    "visual contact established",
+                    "radio contact lost",
+                    "radar contact lost"
+                ],
+                "dangerous_minimal_pairs": [
+                    "visual contact lost / established / radio contact lost / radar contact lost"
+                ],
+                "linguist_note": "Losing visual contact is different from establishing contact or losing radio/radar contact."
+            }
+        },
+        {
+            "id": "expr_sar_survivors_in_sight_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "survivor_status",
+            "source_language": "ru",
+            "source_text": "Выжившие в поле зрения",
+            "target_language": "en",
+            "target_text": "survivors in sight",
+            "accepted_answers": [
+                "survivors in sight",
+                "survivors are in sight"
+            ],
+            "hint_beginner": "survivors...",
+            "hint_intermediate": "survivors in sight...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "survivors in sight",
+                    "survivors are in sight"
+                ],
+                "should_reject": [
+                    "no survivors in sight",
+                    "person overboard",
+                    "casualties on board"
+                ],
+                "dangerous_minimal_pairs": [
+                    "survivors in sight / no survivors / person overboard / casualties"
+                ],
+                "linguist_note": "Survivors in sight is a positive SAR sighting, not absence of survivors or a generic casualty report."
+            }
+        },
+        {
+            "id": "expr_sar_rescue_boat_approaching_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "rescue_units",
+            "source_language": "ru",
+            "source_text": "Спасательная лодка подходит",
+            "target_language": "en",
+            "target_text": "rescue boat approaching",
+            "accepted_answers": [
+                "rescue boat approaching",
+                "rescue boat is approaching"
+            ],
+            "hint_beginner": "rescue...",
+            "hint_intermediate": "rescue boat approaching...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "rescue boat approaching",
+                    "rescue boat is approaching"
+                ],
+                "should_reject": [
+                    "rescue boat leaving",
+                    "pilot boat approaching",
+                    "tug approaching"
+                ],
+                "dangerous_minimal_pairs": [
+                    "rescue boat approaching / leaving / pilot boat / tug"
+                ],
+                "linguist_note": "Rescue boat approach must stay separate from pilot/tug operations and departure."
+            }
+        },
+        {
+            "id": "expr_sar_helicopter_overhead_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 13,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "rescue_units",
+            "source_language": "ru",
+            "source_text": "Спасательный вертолет над нами",
+            "target_language": "en",
+            "target_text": "rescue helicopter overhead",
+            "accepted_answers": [
+                "rescue helicopter overhead",
+                "SAR helicopter overhead"
+            ],
+            "hint_beginner": "rescue...",
+            "hint_intermediate": "rescue helicopter overhead...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "rescue helicopter overhead",
+                    "SAR helicopter overhead"
+                ],
+                "should_reject": [
+                    "rescue boat overhead",
+                    "helicopter departed",
+                    "aircraft not in sight"
+                ],
+                "dangerous_minimal_pairs": [
+                    "rescue helicopter overhead / departed / not in sight"
+                ],
+                "linguist_note": "Helicopter overhead is an aircraft position report, not boat status or absence."
+            }
+        },
+        {
+            "id": "expr_sar_prepare_for_evacuation_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 14,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "evacuation_preparation",
+            "source_language": "ru",
+            "source_text": "Подготовиться к эвакуации",
+            "target_language": "en",
+            "target_text": "prepare for evacuation",
+            "accepted_answers": [
+                "prepare for evacuation",
+                "prepare to evacuate"
+            ],
+            "hint_beginner": "prepare...",
+            "hint_intermediate": "prepare for evacuation...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "prepare for evacuation",
+                    "prepare to evacuate"
+                ],
+                "should_reject": [
+                    "evacuation not required",
+                    "prepare for towage",
+                    "prepare for berthing"
+                ],
+                "dangerous_minimal_pairs": [
+                    "evacuation / not required / towage / berthing"
+                ],
+                "linguist_note": "Evacuation preparation is SAR/distress context, not towage or berthing."
+            }
+        },
+        {
+            "id": "expr_sar_search_in_progress_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "search_area",
+            "source_language": "ru",
+            "source_text": "Поиск продолжается",
+            "target_language": "en",
+            "target_text": "search in progress",
+            "accepted_answers": [
+                "search in progress",
+                "search is in progress"
+            ],
+            "hint_beginner": "search...",
+            "hint_intermediate": "search in progress...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "search in progress",
+                    "search is in progress"
+                ],
+                "should_reject": [
+                    "search completed",
+                    "navigation in progress",
+                    "boarding in progress"
+                ],
+                "dangerous_minimal_pairs": [
+                    "search in progress / completed / navigation / boarding"
+                ],
+                "linguist_note": "Search in progress must not accept completed search or unrelated operations."
+            }
+        },
+        {
+            "id": "phrase_sar_relay_received_unable_assist_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "distress_relay",
+            "branch": "distress_mayday",
+            "module": "distress_relay",
+            "source_language": "ru",
+            "source_text": "Ретрансляция Мэйдэй принята, оказать помощь не можем.",
+            "target_language": "en",
+            "target_text": "Mayday relay received, unable to assist.",
+            "accepted_answers": [
+                "Mayday relay received, unable to assist."
+            ],
+            "grammar_pattern": "sar_relay_received_unable_assist",
+            "hint_beginner": "Mayday...",
+            "hint_intermediate": "Mayday relay received, unable to assist...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Mayday relay received, unable to assist.",
+                    "Mayday relay received unable to assist"
+                ],
+                "should_reject": [
+                    "Mayday received unable to assist",
+                    "Pan-Pan relay received unable to assist",
+                    "Mayday relay received able to assist"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Mayday relay / own Mayday / Pan-Pan relay; unable / able to assist"
+                ],
+                "linguist_note": "Relay acknowledgement and assistance capability must remain exact."
+            }
+        },
+        {
+            "id": "phrase_sar_report_last_known_position_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "search_position",
+            "source_language": "ru",
+            "source_text": "Сообщите последнее известное местоположение судна в бедствии.",
+            "target_language": "en",
+            "target_text": "Report last known position of vessel in distress.",
+            "accepted_answers": [
+                "Report last known position of vessel in distress.",
+                "Report last reported position of vessel in distress"
+            ],
+            "grammar_pattern": "sar_report_last_known_position",
+            "hint_beginner": "Report...",
+            "hint_intermediate": "Report last known position of vessel in distress...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Report last known position of vessel in distress.",
+                    "Report last reported position of vessel in distress"
+                ],
+                "should_reject": [
+                    "Report current position of vessel in distress",
+                    "Report destination of vessel in distress",
+                    "Report last known course of vessel in distress"
+                ],
+                "dangerous_minimal_pairs": [
+                    "last known position / current position / destination / course"
+                ],
+                "linguist_note": "SAR search reference must remain last known/reported position, not destination or course."
+            }
+        },
+        {
+            "id": "phrase_sar_search_area_north_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "search_area",
+            "source_language": "ru",
+            "source_text": "Район поиска севернее последнего известного местоположения.",
+            "target_language": "en",
+            "target_text": "Search area north of last known position.",
+            "accepted_answers": [
+                "Search area north of last known position.",
+                "Search area north of last reported position"
+            ],
+            "grammar_pattern": "sar_search_area_reference",
+            "hint_beginner": "Search...",
+            "hint_intermediate": "Search area north of last known position...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Search area north of last known position.",
+                    "Search area north of last reported position"
+                ],
+                "should_reject": [
+                    "Search area south of last known position",
+                    "Traffic lane north of last known position",
+                    "Search area north of current position"
+                ],
+                "dangerous_minimal_pairs": [
+                    "search area / traffic lane; north / south; last known / current position"
+                ],
+                "linguist_note": "Search area direction and position reference must remain exact."
+            }
+        },
+        {
+            "id": "phrase_sar_survivors_in_sight_recovery_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "survivor_status",
+            "source_language": "ru",
+            "source_text": "Выжившие в поле зрения, готовимся к подъему.",
+            "target_language": "en",
+            "target_text": "Survivors in sight, preparing recovery.",
+            "accepted_answers": [
+                "Survivors in sight, preparing recovery.",
+                "Survivors are in sight, preparing recovery"
+            ],
+            "grammar_pattern": "sar_survivors_recovery",
+            "hint_beginner": "Survivors...",
+            "hint_intermediate": "Survivors in sight, preparing recovery...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Survivors in sight, preparing recovery.",
+                    "Survivors are in sight, preparing recovery"
+                ],
+                "should_reject": [
+                    "No survivors in sight preparing recovery",
+                    "Person overboard preparing recovery",
+                    "Survivors in sight evacuation not required"
+                ],
+                "dangerous_minimal_pairs": [
+                    "survivors in sight / no survivors / person overboard; recovery / evacuation not required"
+                ],
+                "linguist_note": "Positive survivor sighting and recovery preparation must remain exact."
+            }
+        },
+        {
+            "id": "phrase_sar_visual_contact_lost_continue_search_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 18,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "contact_status",
+            "source_language": "ru",
+            "source_text": "Визуальный контакт потерян, продолжаем поиск.",
+            "target_language": "en",
+            "target_text": "Visual contact lost, continuing search.",
+            "accepted_answers": [
+                "Visual contact lost, continuing search."
+            ],
+            "grammar_pattern": "sar_visual_contact_lost_search",
+            "hint_beginner": "Visual...",
+            "hint_intermediate": "Visual contact lost, continuing search...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Visual contact lost, continuing search.",
+                    "Visual contact lost continuing search"
+                ],
+                "should_reject": [
+                    "Visual contact established continuing search",
+                    "Radio contact lost continuing search",
+                    "Visual contact lost search completed"
+                ],
+                "dangerous_minimal_pairs": [
+                    "visual contact lost / established / radio contact lost; continuing / completed search"
+                ],
+                "linguist_note": "Contact loss type and search status must remain exact."
+            }
+        },
+        {
+            "id": "phrase_sar_helicopter_overhead_prepare_evac_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 18,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "evacuation_preparation",
+            "source_language": "ru",
+            "source_text": "Спасательный вертолет над нами, готовьтесь к эвакуации.",
+            "target_language": "en",
+            "target_text": "Rescue helicopter overhead, prepare for evacuation.",
+            "accepted_answers": [
+                "Rescue helicopter overhead, prepare for evacuation.",
+                "SAR helicopter overhead, prepare for evacuation."
+            ],
+            "grammar_pattern": "sar_helicopter_evacuation",
+            "hint_beginner": "Rescue...",
+            "hint_intermediate": "Rescue helicopter overhead, prepare for evacuation...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Rescue helicopter overhead, prepare for evacuation.",
+                    "SAR helicopter overhead, prepare for evacuation"
+                ],
+                "should_reject": [
+                    "Rescue boat overhead prepare for evacuation",
+                    "Rescue helicopter departed prepare for evacuation",
+                    "Rescue helicopter overhead evacuation not required"
+                ],
+                "dangerous_minimal_pairs": [
+                    "rescue helicopter / rescue boat; overhead / departed; evacuation required / not required"
+                ],
+                "linguist_note": "Aircraft status and evacuation preparation must stay exact."
+            }
+        },
+        {
+            "id": "phrase_sar_rescue_boat_starboard_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "rescue_units",
+            "source_language": "ru",
+            "source_text": "Спасательная лодка подходит с правого борта.",
+            "target_language": "en",
+            "target_text": "Rescue boat approaching from starboard side.",
+            "accepted_answers": [
+                "Rescue boat approaching from starboard side.",
+                "Rescue boat approaching starboard side"
+            ],
+            "grammar_pattern": "sar_rescue_boat_approach_side",
+            "hint_beginner": "Rescue...",
+            "hint_intermediate": "Rescue boat approaching from starboard side...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Rescue boat approaching from starboard side.",
+                    "Rescue boat approaching starboard side"
+                ],
+                "should_reject": [
+                    "Rescue boat approaching from port side",
+                    "Pilot boat approaching from starboard side",
+                    "Tug approaching from starboard side"
+                ],
+                "dangerous_minimal_pairs": [
+                    "rescue boat / pilot boat / tug; starboard / port side"
+                ],
+                "linguist_note": "Responding craft and side must remain exact."
+            }
+        },
+        {
+            "id": "phrase_sar_listening_watch_channel16_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "sar_watch",
+            "source_language": "ru",
+            "source_text": "Сохраняйте прослушивание SAR-обмена на канале один шесть.",
+            "target_language": "en",
+            "target_text": "Keep listening watch for SAR traffic on channel one six.",
+            "accepted_answers": [
+                "Keep listening watch for SAR traffic on channel one six.",
+                "Keep listening watch for search and rescue traffic on channel one six"
+            ],
+            "grammar_pattern": "sar_listening_watch_channel16",
+            "hint_beginner": "Keep...",
+            "hint_intermediate": "Keep listening watch for SAR traffic on channel one six...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Keep listening watch for SAR traffic on channel one six.",
+                    "Keep listening watch for search and rescue traffic on channel one six"
+                ],
+                "should_reject": [
+                    "Keep listening watch for VTS traffic on channel one six",
+                    "Keep listening watch for SAR traffic on channel seven two",
+                    "Stop listening watch for SAR traffic on channel one six"
+                ],
+                "dangerous_minimal_pairs": [
+                    "SAR traffic / VTS traffic; channel one six / seven two; keep / stop watch"
+                ],
+                "linguist_note": "SAR listening watch and channel must remain exact."
+            }
+        },
+        {
+            "id": "phrase_sar_coastguard_coordinating_search_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "sar_authority",
+            "source_language": "ru",
+            "source_text": "Береговая охрана координирует поиск и спасение.",
+            "target_language": "en",
+            "target_text": "Coastguard coordinating search and rescue.",
+            "accepted_answers": [
+                "Coastguard coordinating search and rescue.",
+                "Coast guard coordinating search and rescue."
+            ],
+            "grammar_pattern": "sar_coastguard_coordination",
+            "hint_beginner": "Coastguard...",
+            "hint_intermediate": "Coastguard coordinating search and rescue...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Coastguard coordinating search and rescue.",
+                    "Coast guard coordinating search and rescue"
+                ],
+                "should_reject": [
+                    "Port control coordinating search and rescue",
+                    "Coastguard coordinating berthing",
+                    "VTS coordinating search and rescue"
+                ],
+                "dangerous_minimal_pairs": [
+                    "coastguard / port control / VTS; search and rescue / berthing"
+                ],
+                "linguist_note": "SAR authority and operation type must remain exact."
+            }
+        },
+        {
+            "id": "phrase_sar_debris_near_last_position_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "search_position",
+            "source_language": "ru",
+            "source_text": "Обломки замечены рядом с последним известным местоположением.",
+            "target_language": "en",
+            "target_text": "Debris sighted near last known position.",
+            "accepted_answers": [
+                "Debris sighted near last known position.",
+                "Debris sighted near last reported position"
+            ],
+            "grammar_pattern": "sar_debris_last_position",
+            "hint_beginner": "Debris...",
+            "hint_intermediate": "Debris sighted near last known position...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Debris sighted near last known position.",
+                    "Debris sighted near last reported position"
+                ],
+                "should_reject": [
+                    "Survivors sighted near last known position",
+                    "Debris sighted near destination",
+                    "Debris sighted near current position"
+                ],
+                "dangerous_minimal_pairs": [
+                    "debris / survivors; last known position / destination / current position"
+                ],
+                "linguist_note": "Debris sighting is not survivor sighting and must keep the SAR position reference exact."
+            }
+        }
+    ],
+    "grammar_patterns": [
+        {
+            "id": "sar_relay_received_unable_assist",
+            "pattern": "Mayday relay acknowledgement with assistance capability",
+            "examples": [
+                "Mayday relay received, unable to assist."
+            ]
+        },
+        {
+            "id": "sar_report_last_known_position",
+            "pattern": "SAR request for last known position",
+            "examples": [
+                "Report last known position of vessel in distress."
+            ]
+        },
+        {
+            "id": "sar_search_area_reference",
+            "pattern": "SAR search area with direction and reference position",
+            "examples": [
+                "Search area north of last known position."
+            ]
+        },
+        {
+            "id": "sar_survivors_recovery",
+            "pattern": "survivor sighting with recovery preparation",
+            "examples": [
+                "Survivors in sight, preparing recovery."
+            ]
+        },
+        {
+            "id": "sar_visual_contact_lost_search",
+            "pattern": "visual-contact loss with continuing search",
+            "examples": [
+                "Visual contact lost, continuing search."
+            ]
+        },
+        {
+            "id": "sar_helicopter_evacuation",
+            "pattern": "rescue helicopter evacuation preparation",
+            "examples": [
+                "Rescue helicopter overhead, prepare for evacuation."
+            ]
+        },
+        {
+            "id": "sar_rescue_boat_approach_side",
+            "pattern": "rescue boat approach side report",
+            "examples": [
+                "Rescue boat approaching from starboard side."
+            ]
+        },
+        {
+            "id": "sar_listening_watch_channel16",
+            "pattern": "SAR listening watch on channel one six",
+            "examples": [
+                "Keep listening watch for SAR traffic on channel one six."
+            ]
+        },
+        {
+            "id": "sar_coastguard_coordination",
+            "pattern": "coastguard search-and-rescue coordination",
+            "examples": [
+                "Coastguard coordinating search and rescue."
+            ]
+        },
+        {
+            "id": "sar_debris_last_position",
+            "pattern": "debris sighting near last known position",
+            "examples": [
+                "Debris sighted near last known position."
+            ]
+        }
+    ],
+    "dangerous_minimal_pairs": [
+        {
+            "pair": "coastguard / VTS / port control / marina control",
+            "items": [
+                "word_sar_coastguard_001",
+                "phrase_sar_coastguard_coordinating_search_001"
+            ],
+            "must_accept": {
+                "word_sar_coastguard_001": [
+                    "coastguard"
+                ],
+                "phrase_sar_coastguard_coordinating_search_001": [
+                    "Coastguard coordinating search and rescue."
+                ]
+            },
+            "must_reject": {
+                "word_sar_coastguard_001": [
+                    "port control",
+                    "VTS"
+                ],
+                "phrase_sar_coastguard_coordinating_search_001": [
+                    "Port control coordinating search and rescue",
+                    "Coastguard coordinating berthing"
+                ]
+            },
+            "reason": "SAR authority must not collapse into routine traffic, port, or marina stations."
+        },
+        {
+            "pair": "Mayday relay / own Mayday / Pan-Pan relay / readback",
+            "items": [
+                "expr_sar_mayday_relay_received_001",
+                "phrase_sar_relay_received_unable_assist_001"
+            ],
+            "must_accept": {
+                "expr_sar_mayday_relay_received_001": [
+                    "Mayday relay received"
+                ],
+                "phrase_sar_relay_received_unable_assist_001": [
+                    "Mayday relay received, unable to assist."
+                ]
+            },
+            "must_reject": {
+                "expr_sar_mayday_relay_received_001": [
+                    "Mayday received",
+                    "Pan-Pan relay received"
+                ],
+                "phrase_sar_relay_received_unable_assist_001": [
+                    "Mayday received unable to assist",
+                    "Mayday relay received able to assist"
+                ]
+            },
+            "reason": "Forwarding a distress relay is distinct from own distress, urgency relay, readback, and assistance capability."
+        },
+        {
+            "pair": "last known position / current position / destination / course",
+            "items": [
+                "expr_sar_last_known_position_001",
+                "phrase_sar_report_last_known_position_001",
+                "phrase_sar_debris_near_last_position_001"
+            ],
+            "must_accept": {
+                "expr_sar_last_known_position_001": [
+                    "last known position"
+                ],
+                "phrase_sar_report_last_known_position_001": [
+                    "Report last known position of vessel in distress."
+                ],
+                "phrase_sar_debris_near_last_position_001": [
+                    "Debris sighted near last known position."
+                ]
+            },
+            "must_reject": {
+                "expr_sar_last_known_position_001": [
+                    "current position",
+                    "destination"
+                ],
+                "phrase_sar_report_last_known_position_001": [
+                    "Report current position of vessel in distress",
+                    "Report destination of vessel in distress"
+                ],
+                "phrase_sar_debris_near_last_position_001": [
+                    "Debris sighted near destination",
+                    "Debris sighted near current position"
+                ]
+            },
+            "reason": "SAR search references must not accept routine navigation destinations or current-position substitutions."
+        },
+        {
+            "pair": "visual contact / visual contact lost / radio contact / radar contact",
+            "items": [
+                "expr_sar_visual_contact_001",
+                "expr_sar_visual_contact_lost_001",
+                "phrase_sar_visual_contact_lost_continue_search_001"
+            ],
+            "must_accept": {
+                "expr_sar_visual_contact_001": [
+                    "visual contact"
+                ],
+                "expr_sar_visual_contact_lost_001": [
+                    "visual contact lost"
+                ],
+                "phrase_sar_visual_contact_lost_continue_search_001": [
+                    "Visual contact lost, continuing search."
+                ]
+            },
+            "must_reject": {
+                "expr_sar_visual_contact_001": [
+                    "radio contact",
+                    "visual contact lost"
+                ],
+                "expr_sar_visual_contact_lost_001": [
+                    "visual contact established",
+                    "radio contact lost"
+                ],
+                "phrase_sar_visual_contact_lost_continue_search_001": [
+                    "Visual contact established continuing search",
+                    "Visual contact lost search completed"
+                ]
+            },
+            "reason": "Contact type and contact status must remain exact in SAR coordination."
+        },
+        {
+            "pair": "survivors / no survivors / person overboard / debris",
+            "items": [
+                "word_sar_survivor_001",
+                "expr_sar_survivors_in_sight_001",
+                "phrase_sar_survivors_in_sight_recovery_001",
+                "phrase_sar_debris_near_last_position_001"
+            ],
+            "must_accept": {
+                "word_sar_survivor_001": [
+                    "survivor"
+                ],
+                "expr_sar_survivors_in_sight_001": [
+                    "survivors in sight"
+                ],
+                "phrase_sar_survivors_in_sight_recovery_001": [
+                    "Survivors in sight, preparing recovery."
+                ],
+                "phrase_sar_debris_near_last_position_001": [
+                    "Debris sighted near last known position."
+                ]
+            },
+            "must_reject": {
+                "word_sar_survivor_001": [
+                    "missing person",
+                    "passenger"
+                ],
+                "expr_sar_survivors_in_sight_001": [
+                    "no survivors in sight",
+                    "person overboard"
+                ],
+                "phrase_sar_survivors_in_sight_recovery_001": [
+                    "No survivors in sight preparing recovery",
+                    "Person overboard preparing recovery"
+                ],
+                "phrase_sar_debris_near_last_position_001": [
+                    "Survivors sighted near last known position"
+                ]
+            },
+            "reason": "Sighting survivors, not sighting survivors, person-overboard, and debris reports have different operational meaning."
+        },
+        {
+            "pair": "rescue boat / rescue helicopter / liferaft / pilot boat / tug",
+            "items": [
+                "word_sar_rescue_boat_001",
+                "word_sar_rescue_helicopter_001",
+                "expr_sar_rescue_boat_approaching_001",
+                "expr_sar_helicopter_overhead_001",
+                "phrase_sar_helicopter_overhead_prepare_evac_001",
+                "phrase_sar_rescue_boat_starboard_001"
+            ],
+            "must_accept": {
+                "word_sar_rescue_boat_001": [
+                    "rescue boat"
+                ],
+                "word_sar_rescue_helicopter_001": [
+                    "rescue helicopter"
+                ],
+                "expr_sar_rescue_boat_approaching_001": [
+                    "rescue boat approaching"
+                ],
+                "expr_sar_helicopter_overhead_001": [
+                    "rescue helicopter overhead"
+                ],
+                "phrase_sar_helicopter_overhead_prepare_evac_001": [
+                    "Rescue helicopter overhead, prepare for evacuation."
+                ],
+                "phrase_sar_rescue_boat_starboard_001": [
+                    "Rescue boat approaching from starboard side."
+                ]
+            },
+            "must_reject": {
+                "word_sar_rescue_boat_001": [
+                    "liferaft",
+                    "pilot boat"
+                ],
+                "word_sar_rescue_helicopter_001": [
+                    "rescue boat",
+                    "pilot boat"
+                ],
+                "expr_sar_rescue_boat_approaching_001": [
+                    "pilot boat approaching",
+                    "tug approaching"
+                ],
+                "expr_sar_helicopter_overhead_001": [
+                    "rescue boat overhead",
+                    "helicopter departed"
+                ],
+                "phrase_sar_helicopter_overhead_prepare_evac_001": [
+                    "Rescue boat overhead prepare for evacuation",
+                    "Rescue helicopter overhead evacuation not required"
+                ],
+                "phrase_sar_rescue_boat_starboard_001": [
+                    "Rescue boat approaching from port side",
+                    "Pilot boat approaching from starboard side"
+                ]
+            },
+            "reason": "SAR units, survival craft, pilotage, towing, aircraft status, and side reports must remain separate."
+        }
+    ],
+    "producer_notes": {
+        "status": "draft for M4 after Batch 014 production sync",
+        "learner_source_language": "ru",
+        "target_language": "en",
+        "next_gate": "Sea Speak Linguist risk review before engineering gate, QA acceptance, merge, or production deploy",
+        "risk_focus": [
+            "Mayday relay / own Mayday / Pan-Pan relay / readback",
+            "coastguard / VTS / port control / marina control",
+            "last known position / current position / destination / course",
+            "visual contact / visual contact lost / radio contact / radar contact",
+            "survivors / no survivors / person overboard / debris",
+            "rescue boat / rescue helicopter / liferaft / pilot boat / tug",
+            "evacuation / evacuation not required / towage / berthing",
+            "SAR traffic channel one six / VTS traffic / channel seven two"
+        ]
+    }
+}
