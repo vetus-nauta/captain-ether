@@ -1,7 +1,7 @@
 {
     "version": 1,
     "batch_id": "batch-016-weather-sea-state-warnings-basics",
-    "status": "linguist_reviewed",
+    "status": "merged",
     "date": "2026-06-02",
     "branch": "safety_securite",
     "scope": "M4 safety/Securite weather and sea-state warning basics. Keep fog, restricted visibility, gale, squall, swell, navigational warnings, caution, keep-clear, and avoid-area instructions separate from Pan-Pan, routine traffic, depth, position, and cancellation meanings.",

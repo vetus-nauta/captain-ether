@@ -11836,6 +11836,500 @@
             "hint_beginner": "Debris...",
             "hint_intermediate": "Debris sighted near last known position...",
             "hint_advanced": ""
+        },
+        {
+            "id": "word_safety_fog_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Туман",
+            "target_language": "en",
+            "target_text": "fog",
+            "accepted_answers": [
+                "fog"
+            ],
+            "hint_beginner": "f__",
+            "hint_intermediate": "fog...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_safety_squall_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Шквал",
+            "target_language": "en",
+            "target_text": "squall",
+            "accepted_answers": [
+                "squall"
+            ],
+            "hint_beginner": "s____l",
+            "hint_intermediate": "squall...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_safety_gale_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Штормовой ветер",
+            "target_language": "en",
+            "target_text": "gale",
+            "accepted_answers": [
+                "gale"
+            ],
+            "hint_beginner": "g___",
+            "hint_intermediate": "gale...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_safety_swell_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Зыбь",
+            "target_language": "en",
+            "target_text": "swell",
+            "accepted_answers": [
+                "swell"
+            ],
+            "hint_beginner": "s____",
+            "hint_intermediate": "swell...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_safety_thunderstorm_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Гроза",
+            "target_language": "en",
+            "target_text": "thunderstorm",
+            "accepted_answers": [
+                "thunderstorm"
+            ],
+            "hint_beginner": "t___________m",
+            "hint_intermediate": "thunderstorm...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_safety_poor_visibility_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 9,
+            "topic": "restricted_visibility",
+            "branch": "safety_securite",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Плохая видимость",
+            "target_language": "en",
+            "target_text": "poor visibility",
+            "accepted_answers": [
+                "poor visibility"
+            ],
+            "hint_beginner": "poor v...",
+            "hint_intermediate": "poor visibility...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_safety_visibility_less_one_mile_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "restricted_visibility",
+            "branch": "safety_securite",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Видимость менее одной мили",
+            "target_language": "en",
+            "target_text": "visibility less than one mile",
+            "accepted_answers": [
+                "visibility less than one mile",
+                "visibility less than 1 mile"
+            ],
+            "hint_beginner": "visibility less...",
+            "hint_intermediate": "less than one mile...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_safety_dense_fog_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 11,
+            "topic": "restricted_visibility",
+            "branch": "safety_securite",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Плотный туман",
+            "target_language": "en",
+            "target_text": "dense fog",
+            "accepted_answers": [
+                "dense fog"
+            ],
+            "hint_beginner": "dense f...",
+            "hint_intermediate": "dense fog...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_safety_gale_warning_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Предупреждение о штормовом ветре",
+            "target_language": "en",
+            "target_text": "gale warning",
+            "accepted_answers": [
+                "gale warning"
+            ],
+            "hint_beginner": "gale w...",
+            "hint_intermediate": "gale warning...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_safety_squall_warning_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Предупреждение о шквале",
+            "target_language": "en",
+            "target_text": "squall warning",
+            "accepted_answers": [
+                "squall warning"
+            ],
+            "hint_beginner": "squall w...",
+            "hint_intermediate": "squall warning...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_safety_heavy_swell_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Сильная зыбь",
+            "target_language": "en",
+            "target_text": "heavy swell",
+            "accepted_answers": [
+                "heavy swell"
+            ],
+            "hint_beginner": "heavy s...",
+            "hint_intermediate": "heavy swell...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_safety_sea_state_rough_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Состояние моря: неспокойное",
+            "target_language": "en",
+            "target_text": "sea state rough",
+            "accepted_answers": [
+                "sea state rough",
+                "rough sea state"
+            ],
+            "hint_beginner": "sea state...",
+            "hint_intermediate": "sea state rough...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_safety_floating_debris_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "navigation_warning",
+            "branch": "safety_securite",
+            "module": "navigation_warning",
+            "source_language": "ru",
+            "source_text": "Плавающие обломки",
+            "target_language": "en",
+            "target_text": "floating debris",
+            "accepted_answers": [
+                "floating debris"
+            ],
+            "hint_beginner": "floating d...",
+            "hint_intermediate": "floating debris...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_safety_report_restricted_visibility_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 14,
+            "topic": "restricted_visibility",
+            "branch": "safety_securite",
+            "module": "safety_readback",
+            "source_language": "ru",
+            "source_text": "Доложите ограниченную видимость",
+            "target_language": "en",
+            "target_text": "report restricted visibility",
+            "accepted_answers": [
+                "report restricted visibility"
+            ],
+            "hint_beginner": "report...",
+            "hint_intermediate": "restricted visibility...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_safety_keep_clear_hazard_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 14,
+            "topic": "hazard_reporting",
+            "branch": "safety_securite",
+            "module": "hazard_reporting",
+            "source_language": "ru",
+            "source_text": "Держитесь в стороне от опасности",
+            "target_language": "en",
+            "target_text": "keep clear of hazard",
+            "accepted_answers": [
+                "keep clear of hazard",
+                "keep clear from hazard"
+            ],
+            "hint_beginner": "keep clear...",
+            "hint_intermediate": "of hazard...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_safety_securite_gale_area_alpha_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Секьюрите, предупреждение о штормовом ветре в районе Альфа.",
+            "target_language": "en",
+            "target_text": "Securite, gale warning in area Alpha.",
+            "accepted_answers": [
+                "Securite, gale warning in area Alpha.",
+                "sécurité gale warning in area Alpha"
+            ],
+            "grammar_pattern": "securite_gale_warning_area",
+            "hint_beginner": "Securite, gale warning...",
+            "hint_intermediate": "in area Alpha...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_safety_visibility_less_one_mile_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "restricted_visibility",
+            "branch": "safety_securite",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Видимость менее одной мили, следуйте с осторожностью.",
+            "target_language": "en",
+            "target_text": "Visibility less than one mile, navigate with caution.",
+            "accepted_answers": [
+                "Visibility less than one mile, navigate with caution.",
+                "Visibility less than 1 mile, navigate with caution"
+            ],
+            "grammar_pattern": "restricted_visibility_less_than_one_mile",
+            "hint_beginner": "Visibility less...",
+            "hint_intermediate": "navigate with caution...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_safety_dense_fog_sound_signal_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "restricted_visibility",
+            "branch": "safety_securite",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Плотный туман, подавайте звуковой сигнал.",
+            "target_language": "en",
+            "target_text": "Dense fog, sound signal required.",
+            "accepted_answers": [
+                "Dense fog, sound signal required."
+            ],
+            "grammar_pattern": "dense_fog_sound_signal_required",
+            "hint_beginner": "Dense fog...",
+            "hint_intermediate": "sound signal required...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_safety_squall_warning_reduce_speed_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Предупреждение о шквале, уменьшите скорость.",
+            "target_language": "en",
+            "target_text": "Squall warning, reduce speed.",
+            "accepted_answers": [
+                "Squall warning, reduce speed."
+            ],
+            "grammar_pattern": "squall_warning_reduce_speed",
+            "hint_beginner": "Squall warning...",
+            "hint_intermediate": "reduce speed...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_safety_heavy_swell_small_craft_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Сильная зыбь, малым судам держаться подальше.",
+            "target_language": "en",
+            "target_text": "Heavy swell, small craft keep clear.",
+            "accepted_answers": [
+                "Heavy swell, small craft keep clear."
+            ],
+            "grammar_pattern": "heavy_swell_small_craft_keep_clear",
+            "hint_beginner": "Heavy swell...",
+            "hint_intermediate": "small craft keep clear...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_safety_navigational_warning_debris_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "navigation_warning",
+            "branch": "safety_securite",
+            "module": "navigation_warning",
+            "source_language": "ru",
+            "source_text": "Навигационное предупреждение, обломки в фарватере.",
+            "target_language": "en",
+            "target_text": "Navigational warning, debris in fairway.",
+            "accepted_answers": [
+                "Navigational warning, debris in fairway.",
+                "Navigation warning, debris in fairway"
+            ],
+            "grammar_pattern": "navigational_warning_debris_fairway",
+            "hint_beginner": "Navigational warning...",
+            "hint_intermediate": "debris in fairway...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_safety_report_weather_update_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "safety_readback",
+            "source_language": "ru",
+            "source_text": "Доложите обновление погоды каждые тридцать минут.",
+            "target_language": "en",
+            "target_text": "Report weather update every thirty minutes.",
+            "accepted_answers": [
+                "Report weather update every thirty minutes.",
+                "Report weather update every 30 minutes"
+            ],
+            "grammar_pattern": "report_weather_update_interval",
+            "hint_beginner": "Report weather update...",
+            "hint_intermediate": "every thirty minutes...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_safety_sea_state_rough_caution_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Состояние моря неспокойное, следуйте с осторожностью.",
+            "target_language": "en",
+            "target_text": "Sea state rough, proceed with caution.",
+            "accepted_answers": [
+                "Sea state rough, proceed with caution.",
+                "Rough sea state, proceed with caution"
+            ],
+            "grammar_pattern": "rough_sea_state_proceed_caution",
+            "hint_beginner": "Sea state rough...",
+            "hint_intermediate": "proceed with caution...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_safety_fog_bank_ahead_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "restricted_visibility",
+            "branch": "safety_securite",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Полоса тумана впереди, держите наблюдение.",
+            "target_language": "en",
+            "target_text": "Fog bank ahead, keep lookout.",
+            "accepted_answers": [
+                "Fog bank ahead, keep lookout."
+            ],
+            "grammar_pattern": "fog_bank_ahead_keep_lookout",
+            "hint_beginner": "Fog bank ahead...",
+            "hint_intermediate": "keep lookout...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_safety_thunderstorm_area_bravo_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Гроза в районе Браво, избегайте района.",
+            "target_language": "en",
+            "target_text": "Thunderstorm in area Bravo, avoid the area.",
+            "accepted_answers": [
+                "Thunderstorm in area Bravo, avoid the area.",
+                "Thunderstorm area Bravo, avoid area"
+            ],
+            "grammar_pattern": "thunderstorm_area_avoid",
+            "hint_beginner": "Thunderstorm...",
+            "hint_intermediate": "avoid the area...",
+            "hint_advanced": ""
         }
     ],
     "grammar_patterns": [
@@ -13801,6 +14295,76 @@
             "pattern": "debris sighting near last known position",
             "examples": [
                 "Debris sighted near last known position."
+            ]
+        },
+        {
+            "id": "securite_gale_warning_area",
+            "pattern": "Securite weather warning with named area",
+            "examples": [
+                "Securite, gale warning in area Alpha."
+            ]
+        },
+        {
+            "id": "restricted_visibility_less_than_one_mile",
+            "pattern": "restricted visibility limit with caution instruction",
+            "examples": [
+                "Visibility less than one mile, navigate with caution."
+            ]
+        },
+        {
+            "id": "dense_fog_sound_signal_required",
+            "pattern": "dense fog with required sound signal",
+            "examples": [
+                "Dense fog, sound signal required."
+            ]
+        },
+        {
+            "id": "squall_warning_reduce_speed",
+            "pattern": "squall warning with speed reduction",
+            "examples": [
+                "Squall warning, reduce speed."
+            ]
+        },
+        {
+            "id": "heavy_swell_small_craft_keep_clear",
+            "pattern": "heavy swell warning for small craft",
+            "examples": [
+                "Heavy swell, small craft keep clear."
+            ]
+        },
+        {
+            "id": "navigational_warning_debris_fairway",
+            "pattern": "navigational warning with fairway obstruction",
+            "examples": [
+                "Navigational warning, debris in fairway."
+            ]
+        },
+        {
+            "id": "report_weather_update_interval",
+            "pattern": "weather update report with interval",
+            "examples": [
+                "Report weather update every thirty minutes."
+            ]
+        },
+        {
+            "id": "rough_sea_state_proceed_caution",
+            "pattern": "rough sea state with caution instruction",
+            "examples": [
+                "Sea state rough, proceed with caution."
+            ]
+        },
+        {
+            "id": "fog_bank_ahead_keep_lookout",
+            "pattern": "fog bank position with lookout instruction",
+            "examples": [
+                "Fog bank ahead, keep lookout."
+            ]
+        },
+        {
+            "id": "thunderstorm_area_avoid",
+            "pattern": "thunderstorm area avoidance warning",
+            "examples": [
+                "Thunderstorm in area Bravo, avoid the area."
             ]
         }
     ],

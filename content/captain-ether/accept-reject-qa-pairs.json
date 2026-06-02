@@ -4711,6 +4711,189 @@
                 ]
             },
             "reason": "SAR units, survival craft, pilotage, towing, aircraft status, and side reports must remain separate."
+        },
+        {
+            "pair": "Securite / Pan-Pan; gale warning / cancellation / fog warning",
+            "items": [
+                "expr_safety_gale_warning_001",
+                "phrase_safety_securite_gale_area_alpha_001"
+            ],
+            "must_accept": {
+                "expr_safety_gale_warning_001": [
+                    "gale warning"
+                ],
+                "phrase_safety_securite_gale_area_alpha_001": [
+                    "Securite, gale warning in area Alpha.",
+                    "sécurité gale warning in area Alpha"
+                ]
+            },
+            "must_reject": {
+                "expr_safety_gale_warning_001": [
+                    "gale cancelled",
+                    "fog warning"
+                ],
+                "phrase_safety_securite_gale_area_alpha_001": [
+                    "Pan Pan gale warning in area Alpha",
+                    "Mayday gale warning in area Alpha",
+                    "Securite gale cancelled in area Alpha"
+                ]
+            },
+            "reason": "Safety broadcast, weather type, and active warning status must remain exact."
+        },
+        {
+            "pair": "visibility less / more; visibility / distance / depth",
+            "items": [
+                "expr_safety_visibility_less_one_mile_001",
+                "phrase_safety_visibility_less_one_mile_001"
+            ],
+            "must_accept": {
+                "expr_safety_visibility_less_one_mile_001": [
+                    "visibility less than one mile"
+                ],
+                "phrase_safety_visibility_less_one_mile_001": [
+                    "Visibility less than one mile, navigate with caution."
+                ]
+            },
+            "must_reject": {
+                "expr_safety_visibility_less_one_mile_001": [
+                    "visibility more than one mile",
+                    "distance less than one mile"
+                ],
+                "phrase_safety_visibility_less_one_mile_001": [
+                    "Visibility more than one mile navigate with caution",
+                    "Visibility less than one mile proceed at full speed"
+                ]
+            },
+            "reason": "Restricted visibility limits must not become distance/depth reports or full-speed instructions."
+        },
+        {
+            "pair": "dense fog / light fog / dense traffic; signal required / not required",
+            "items": [
+                "expr_safety_dense_fog_001",
+                "phrase_safety_dense_fog_sound_signal_001"
+            ],
+            "must_accept": {
+                "expr_safety_dense_fog_001": [
+                    "dense fog"
+                ],
+                "phrase_safety_dense_fog_sound_signal_001": [
+                    "Dense fog, sound signal required."
+                ]
+            },
+            "must_reject": {
+                "expr_safety_dense_fog_001": [
+                    "light fog",
+                    "dense traffic"
+                ],
+                "phrase_safety_dense_fog_sound_signal_001": [
+                    "Dense fog sound signal not required",
+                    "Dense traffic sound signal required"
+                ]
+            },
+            "reason": "Fog density and sound-signal requirement are safety-critical."
+        },
+        {
+            "pair": "squall / gale / swell; reduce speed / increase speed / passed",
+            "items": [
+                "word_safety_squall_001",
+                "expr_safety_squall_warning_001",
+                "phrase_safety_squall_warning_reduce_speed_001"
+            ],
+            "must_accept": {
+                "word_safety_squall_001": [
+                    "squall"
+                ],
+                "expr_safety_squall_warning_001": [
+                    "squall warning"
+                ],
+                "phrase_safety_squall_warning_reduce_speed_001": [
+                    "Squall warning, reduce speed."
+                ]
+            },
+            "must_reject": {
+                "word_safety_squall_001": [
+                    "gale",
+                    "swell"
+                ],
+                "expr_safety_squall_warning_001": [
+                    "gale warning",
+                    "squall passed"
+                ],
+                "phrase_safety_squall_warning_reduce_speed_001": [
+                    "Squall warning increase speed",
+                    "Squall passed reduce speed"
+                ]
+            },
+            "reason": "Sudden squall warning and speed reduction must not collapse into other weather or opposite speed action."
+        },
+        {
+            "pair": "heavy swell / traffic / shallow water; keep clear / proceed",
+            "items": [
+                "word_safety_swell_001",
+                "expr_safety_heavy_swell_001",
+                "phrase_safety_heavy_swell_small_craft_001"
+            ],
+            "must_accept": {
+                "word_safety_swell_001": [
+                    "swell"
+                ],
+                "expr_safety_heavy_swell_001": [
+                    "heavy swell"
+                ],
+                "phrase_safety_heavy_swell_small_craft_001": [
+                    "Heavy swell, small craft keep clear."
+                ]
+            },
+            "must_reject": {
+                "word_safety_swell_001": [
+                    "shallow water",
+                    "squall"
+                ],
+                "expr_safety_heavy_swell_001": [
+                    "heavy traffic",
+                    "shallow water"
+                ],
+                "phrase_safety_heavy_swell_small_craft_001": [
+                    "Heavy traffic small craft keep clear",
+                    "Heavy swell small craft proceed"
+                ]
+            },
+            "reason": "Sea-state hazard for small craft must not become traffic, depth, or proceed instruction."
+        },
+        {
+            "pair": "floating debris / fairway debris / clear fairway / traffic information; thunderstorm avoid / enter",
+            "items": [
+                "expr_safety_floating_debris_001",
+                "phrase_safety_navigational_warning_debris_001",
+                "phrase_safety_thunderstorm_area_bravo_001"
+            ],
+            "must_accept": {
+                "phrase_safety_navigational_warning_debris_001": [
+                    "Navigational warning, debris in fairway."
+                ],
+                "phrase_safety_thunderstorm_area_bravo_001": [
+                    "Thunderstorm in area Bravo, avoid the area."
+                ],
+                "expr_safety_floating_debris_001": [
+                    "floating debris"
+                ]
+            },
+            "must_reject": {
+                "phrase_safety_navigational_warning_debris_001": [
+                    "Navigational warning clear fairway",
+                    "Traffic information debris in fairway"
+                ],
+                "phrase_safety_thunderstorm_area_bravo_001": [
+                    "Thunderstorm in area Bravo enter the area",
+                    "Fog in area Bravo avoid the area"
+                ],
+                "expr_safety_floating_debris_001": [
+                    "debris on deck",
+                    "clear fairway",
+                    "traffic information"
+                ]
+            },
+            "reason": "Hazard location/state, warning class, area, and avoid instruction must remain exact."
         }
     ],
     "items": [
@@ -12493,6 +12676,344 @@
                 "Debris sighted near last reported position"
             ],
             "reason": "Debris sighting is not survivor sighting and must keep the last-known-position reference exact; last reported position is not accepted here."
+        },
+        {
+            "id": "word_safety_fog_001",
+            "target_text": "fog",
+            "should_accept": [
+                "fog",
+                "FOG"
+            ],
+            "should_reject": [
+                "rain",
+                "smoke",
+                "clear weather"
+            ],
+            "reason": "Fog is restricted visibility from weather, not rain, smoke, or clear conditions."
+        },
+        {
+            "id": "word_safety_squall_001",
+            "target_text": "squall",
+            "should_accept": [
+                "squall"
+            ],
+            "should_reject": [
+                "gale",
+                "swell",
+                "shallow water"
+            ],
+            "reason": "Squall is a sudden wind/weather event, not a sustained gale, sea swell, or depth condition."
+        },
+        {
+            "id": "word_safety_gale_001",
+            "target_text": "gale",
+            "should_accept": [
+                "gale"
+            ],
+            "should_reject": [
+                "calm",
+                "squall",
+                "fog"
+            ],
+            "reason": "Gale indicates strong wind warning context, not calm weather, squall, or fog."
+        },
+        {
+            "id": "word_safety_swell_001",
+            "target_text": "swell",
+            "should_accept": [
+                "swell"
+            ],
+            "should_reject": [
+                "shallow water",
+                "squall",
+                "wake"
+            ],
+            "reason": "Swell is sea state, not depth, wind squall, or vessel wake."
+        },
+        {
+            "id": "word_safety_thunderstorm_001",
+            "target_text": "thunderstorm",
+            "should_accept": [
+                "thunderstorm"
+            ],
+            "should_reject": [
+                "fog",
+                "gale",
+                "traffic information"
+            ],
+            "reason": "Thunderstorm is a weather hazard, not fog, gale, or traffic information."
+        },
+        {
+            "id": "expr_safety_poor_visibility_001",
+            "target_text": "poor visibility",
+            "should_accept": [
+                "poor visibility",
+                "POOR VISIBILITY"
+            ],
+            "should_reject": [
+                "good visibility",
+                "poor position",
+                "restricted area"
+            ],
+            "reason": "Poor visibility must remain a visibility condition, not position or area restriction."
+        },
+        {
+            "id": "expr_safety_visibility_less_one_mile_001",
+            "target_text": "visibility less than one mile",
+            "should_accept": [
+                "visibility less than one mile",
+                "visibility less than 1 mile"
+            ],
+            "should_reject": [
+                "visibility more than one mile",
+                "distance less than one mile",
+                "depth less than one metre"
+            ],
+            "reason": "The limit is visibility, not distance or depth, and less-than must not become more-than."
+        },
+        {
+            "id": "expr_safety_dense_fog_001",
+            "target_text": "dense fog",
+            "should_accept": [
+                "dense fog"
+            ],
+            "should_reject": [
+                "light fog",
+                "dense traffic",
+                "heavy rain"
+            ],
+            "reason": "Dense fog is a severe visibility condition, not traffic density or rain."
+        },
+        {
+            "id": "expr_safety_gale_warning_001",
+            "target_text": "gale warning",
+            "should_accept": [
+                "gale warning"
+            ],
+            "should_reject": [
+                "gale cancelled",
+                "fog warning",
+                "traffic warning"
+            ],
+            "reason": "Gale warning must not collapse into cancellation, fog, or traffic warning."
+        },
+        {
+            "id": "expr_safety_squall_warning_001",
+            "target_text": "squall warning",
+            "should_accept": [
+                "squall warning"
+            ],
+            "should_reject": [
+                "gale warning",
+                "swell warning",
+                "squall passed"
+            ],
+            "reason": "Squall warning is not gale warning, swell warning, or a passed squall."
+        },
+        {
+            "id": "expr_safety_heavy_swell_001",
+            "target_text": "heavy swell",
+            "should_accept": [
+                "heavy swell"
+            ],
+            "should_reject": [
+                "heavy traffic",
+                "shallow water",
+                "heavy rain"
+            ],
+            "reason": "Heavy swell is sea state, not traffic, shallow water, or rain."
+        },
+        {
+            "id": "expr_safety_sea_state_rough_001",
+            "target_text": "sea state rough",
+            "should_accept": [
+                "sea state rough",
+                "rough sea state"
+            ],
+            "should_reject": [
+                "sea state calm",
+                "visibility rough",
+                "course rough"
+            ],
+            "reason": "Sea state rough must remain sea-state information, not visibility or course."
+        },
+        {
+            "id": "expr_safety_floating_debris_001",
+            "target_text": "floating debris",
+            "should_accept": [
+                "floating debris"
+            ],
+            "should_reject": [
+                "debris on deck",
+                "clear fairway",
+                "traffic information"
+            ],
+            "reason": "Floating debris is a navigational hazard in the water, not onboard debris, a clear-fairway report, or routine traffic information."
+        },
+        {
+            "id": "expr_safety_report_restricted_visibility_001",
+            "target_text": "report restricted visibility",
+            "should_accept": [
+                "report restricted visibility"
+            ],
+            "should_reject": [
+                "report restricted area",
+                "report clear visibility",
+                "report vessel position"
+            ],
+            "reason": "The report request is about restricted visibility, not restricted area, clear visibility, or position."
+        },
+        {
+            "id": "expr_safety_keep_clear_hazard_001",
+            "target_text": "keep clear of hazard",
+            "should_accept": [
+                "keep clear of hazard",
+                "keep clear from hazard"
+            ],
+            "should_reject": [
+                "keep clear of traffic",
+                "proceed to hazard",
+                "keep close to hazard"
+            ],
+            "reason": "Hazard avoidance must not become traffic spacing or instruction to approach the hazard."
+        },
+        {
+            "id": "phrase_safety_securite_gale_area_alpha_001",
+            "target_text": "Securite, gale warning in area Alpha.",
+            "should_accept": [
+                "Securite, gale warning in area Alpha.",
+                "Securite gale warning in area Alpha",
+                "sécurité gale warning in area Alpha"
+            ],
+            "should_reject": [
+                "Pan Pan gale warning in area Alpha",
+                "Mayday gale warning in area Alpha",
+                "Securite gale cancelled in area Alpha",
+                "Securite fog warning in area Alpha"
+            ],
+            "reason": "Safety signal, accent spelling, gale-warning meaning, and active warning status must remain exact."
+        },
+        {
+            "id": "phrase_safety_visibility_less_one_mile_001",
+            "target_text": "Visibility less than one mile, navigate with caution.",
+            "should_accept": [
+                "Visibility less than one mile, navigate with caution.",
+                "Visibility less than 1 mile, navigate with caution"
+            ],
+            "should_reject": [
+                "Visibility more than one mile navigate with caution",
+                "Distance less than one mile navigate with caution",
+                "Visibility less than one mile proceed at full speed"
+            ],
+            "reason": "Reduced visibility and caution instruction must not become distance or full-speed instruction."
+        },
+        {
+            "id": "phrase_safety_dense_fog_sound_signal_001",
+            "target_text": "Dense fog, sound signal required.",
+            "should_accept": [
+                "Dense fog, sound signal required."
+            ],
+            "should_reject": [
+                "Dense fog sound signal not required",
+                "Light fog sound signal required",
+                "Dense traffic sound signal required"
+            ],
+            "reason": "Dense fog and required sound signal are safety-critical and must not be negated."
+        },
+        {
+            "id": "phrase_safety_squall_warning_reduce_speed_001",
+            "target_text": "Squall warning, reduce speed.",
+            "should_accept": [
+                "Squall warning, reduce speed."
+            ],
+            "should_reject": [
+                "Squall warning increase speed",
+                "Gale warning reduce speed",
+                "Squall passed reduce speed"
+            ],
+            "reason": "Squall warning plus speed reduction must not become another warning or speed increase."
+        },
+        {
+            "id": "phrase_safety_heavy_swell_small_craft_001",
+            "target_text": "Heavy swell, small craft keep clear.",
+            "should_accept": [
+                "Heavy swell, small craft keep clear."
+            ],
+            "should_reject": [
+                "Heavy traffic small craft keep clear",
+                "Heavy swell small craft proceed",
+                "Shallow water small craft keep clear"
+            ],
+            "reason": "The hazard is heavy swell and small craft must keep clear, not proceed."
+        },
+        {
+            "id": "phrase_safety_navigational_warning_debris_001",
+            "target_text": "Navigational warning, debris in fairway.",
+            "should_accept": [
+                "Navigational warning, debris in fairway.",
+                "Navigation warning, debris in fairway"
+            ],
+            "should_reject": [
+                "Navigational warning clear fairway",
+                "Traffic information debris in fairway",
+                "Navigational warning debris on deck"
+            ],
+            "reason": "Fairway obstruction warning must not become clear fairway, onboard debris, or traffic information."
+        },
+        {
+            "id": "phrase_safety_report_weather_update_001",
+            "target_text": "Report weather update every thirty minutes.",
+            "should_accept": [
+                "Report weather update every thirty minutes.",
+                "Report weather update every 30 minutes"
+            ],
+            "should_reject": [
+                "Report position update every thirty minutes",
+                "Report weather update every sixty minutes",
+                "Report weather cancelled every thirty minutes"
+            ],
+            "reason": "Weather update interval must not become position update, cancellation, or wrong interval."
+        },
+        {
+            "id": "phrase_safety_sea_state_rough_caution_001",
+            "target_text": "Sea state rough, proceed with caution.",
+            "should_accept": [
+                "Sea state rough, proceed with caution.",
+                "Rough sea state, proceed with caution"
+            ],
+            "should_reject": [
+                "Sea state calm proceed with caution",
+                "Sea state rough proceed at full speed",
+                "Visibility rough proceed with caution"
+            ],
+            "reason": "Rough sea state and caution must not become calm conditions or full-speed instruction."
+        },
+        {
+            "id": "phrase_safety_fog_bank_ahead_001",
+            "target_text": "Fog bank ahead, keep lookout.",
+            "should_accept": [
+                "Fog bank ahead, keep lookout."
+            ],
+            "should_reject": [
+                "Fog bank astern keep lookout",
+                "Traffic ahead keep lookout",
+                "Fog bank ahead stand down lookout"
+            ],
+            "reason": "Fog location and lookout instruction must remain exact."
+        },
+        {
+            "id": "phrase_safety_thunderstorm_area_bravo_001",
+            "target_text": "Thunderstorm in area Bravo, avoid the area.",
+            "should_accept": [
+                "Thunderstorm in area Bravo, avoid the area.",
+                "Thunderstorm area Bravo, avoid area"
+            ],
+            "should_reject": [
+                "Thunderstorm in area Alpha avoid the area",
+                "Thunderstorm in area Bravo enter the area",
+                "Fog in area Bravo avoid the area"
+            ],
+            "reason": "Weather type, area, and avoid instruction are all safety-critical."
         }
     ],
     "matcher_suggestions": [
