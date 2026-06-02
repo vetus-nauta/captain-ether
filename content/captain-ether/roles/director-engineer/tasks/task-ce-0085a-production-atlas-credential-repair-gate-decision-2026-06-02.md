@@ -3,7 +3,7 @@
 Date: 2026-06-02
 Owner: Director-Engineer / Platform owner as needed
 Scope: Captain Ether production deploy gate
-Status: OPEN
+Status: DONE
 
 ## Objective
 

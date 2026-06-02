@@ -6,6 +6,43 @@
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Боевой домен: `https://game.brkovic.ltd/games/captain-ether`
 
+## 0. Status update after CE-0086
+
+Update later on 2026-06-02:
+
+```text
+CE-SPRINT-0085A Production Atlas Credential Repair: PASS
+CE-SPRINT-0085 Controlled Production Deploy: PASS
+CE-SPRINT-0086 Post-Deploy Closure: PASS WITH AUTHENTICATED WATCH SMOKE NOT RUN
+```
+
+Current production position after CE-0086:
+
+- production Atlas ping is healthy:
+  `mirror_enabled=true`, `live_read_enabled=true`,
+  `primary_write_enabled=true`, `node_probe.ping_ok=true`;
+- production `/games/captain-ether`, `/assets/app.js`, `/assets/app.css`,
+  `/manifest.webmanifest`, and `/service-worker.js` match local/GitHub by
+  HTTP hash/size checks;
+- production `content/captain-ether/starter.json`,
+  `accept-reject-qa-pairs.json`, and hidden Batch 006 dependency match
+  local/GitHub by FTP read-back hash checks;
+- production registry was intentionally not overwritten because it is shared
+  platform scope and includes `watch_officer`;
+- production unauthenticated `start-watch` guard returns HTTP `401 Login
+  required`;
+- authenticated production watch smoke was not run because no production test
+  login code/session was available in this sprint.
+
+The older sections below preserve the original start state and drift evidence
+from before CE-0085/CE-0086. For current deploy status, read:
+
+```text
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0085a-production-atlas-credential-repair-2026-06-02.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0085-controlled-production-deploy-2026-06-02.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0086-post-deploy-closure-2026-06-02.md
+```
+
 ## 1. Первое правило
 
 Ты работаешь в проекте `captain-ether`.
