@@ -1,7 +1,7 @@
 {
     "version": 1,
     "batch_id": "batch-017-marina-service-logistics-basics",
-    "status": "linguist_reviewed",
+    "status": "merged",
     "date": "2026-06-02",
     "branch": "marina_harbour",
     "scope": "M4 marina/harbour service logistics basics. Keep service pontoon, waiting pontoon, fuel berth, pump-out station, payment office, repair berth, shore power, water hose, service completion, wait/proceed/depart, and availability/unavailability separate from routine port control, visitor berth, onboard repair, bilge pump, and power-failure meanings.",

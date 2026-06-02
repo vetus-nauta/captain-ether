@@ -4894,6 +4894,218 @@
                 ]
             },
             "reason": "Hazard location/state, warning class, area, and avoid instruction must remain exact."
+        },
+        {
+            "pair": "fuel berth occupied / available / visitor berth; wait outside / proceed inside",
+            "items": [
+                "expr_marina_fuel_berth_occupied_001",
+                "phrase_marina_fuel_berth_occupied_wait_outside_001"
+            ],
+            "must_accept": {
+                "expr_marina_fuel_berth_occupied_001": [
+                    "fuel berth occupied"
+                ],
+                "phrase_marina_fuel_berth_occupied_wait_outside_001": [
+                    "Fuel berth occupied, wait outside marina."
+                ]
+            },
+            "must_reject": {
+                "expr_marina_fuel_berth_occupied_001": [
+                    "fuel berth available",
+                    "visitor berth occupied"
+                ],
+                "phrase_marina_fuel_berth_occupied_wait_outside_001": [
+                    "Fuel berth available wait outside marina",
+                    "Fuel berth occupied proceed inside marina"
+                ]
+            },
+            "reason": "Fuel berth occupancy and wait/proceed instruction must remain exact."
+        },
+        {
+            "pair": "shore power available / unavailable / water / power failure",
+            "items": [
+                "expr_marina_shore_power_available_001",
+                "expr_marina_no_shore_power_available_001",
+                "phrase_marina_shore_power_bravo_two_001"
+            ],
+            "must_accept": {
+                "expr_marina_shore_power_available_001": [
+                    "shore power available"
+                ],
+                "expr_marina_no_shore_power_available_001": [
+                    "no shore power available"
+                ],
+                "phrase_marina_shore_power_bravo_two_001": [
+                    "Shore power available on berth Bravo two."
+                ]
+            },
+            "must_reject": {
+                "expr_marina_shore_power_available_001": [
+                    "shore power unavailable",
+                    "water available"
+                ],
+                "expr_marina_no_shore_power_available_001": [
+                    "shore power available",
+                    "power failure"
+                ],
+                "phrase_marina_shore_power_bravo_two_001": [
+                    "Shore power unavailable on berth Bravo two",
+                    "Shore power available on berth Alpha two"
+                ]
+            },
+            "reason": "Shore-power service status, service type, and berth identifier must remain strict."
+        },
+        {
+            "pair": "pump-out station / fuel berth / bilge pump; unavailable / available; 1500 / 1600",
+            "items": [
+                "word_marina_pump_out_station_001",
+                "expr_marina_pump_out_unavailable_001",
+                "phrase_marina_pump_out_unavailable_until_1500_001"
+            ],
+            "must_accept": {
+                "word_marina_pump_out_station_001": [
+                    "pump-out station"
+                ],
+                "expr_marina_pump_out_unavailable_001": [
+                    "pump-out station unavailable"
+                ],
+                "phrase_marina_pump_out_unavailable_until_1500_001": [
+                    "Pump-out station unavailable until one five zero zero UTC."
+                ]
+            },
+            "must_reject": {
+                "word_marina_pump_out_station_001": [
+                    "fuel station",
+                    "bilge pump running"
+                ],
+                "expr_marina_pump_out_unavailable_001": [
+                    "pump-out station available",
+                    "fuel berth unavailable"
+                ],
+                "phrase_marina_pump_out_unavailable_until_1500_001": [
+                    "Pump-out station available until one five zero zero UTC",
+                    "Pump-out station unavailable until one six zero zero UTC"
+                ]
+            },
+            "reason": "Pump-out service, availability, and time must not collapse into fuel, bilge, or wrong time."
+        },
+        {
+            "pair": "payment office / port control / customs / fuel berth; channel 12 / 16",
+            "items": [
+                "word_marina_payment_office_001",
+                "expr_marina_proceed_payment_office_001",
+                "phrase_marina_contact_payment_office_001"
+            ],
+            "must_accept": {
+                "word_marina_payment_office_001": [
+                    "payment office"
+                ],
+                "expr_marina_proceed_payment_office_001": [
+                    "proceed to payment office"
+                ],
+                "phrase_marina_contact_payment_office_001": [
+                    "Contact payment office on channel one two."
+                ]
+            },
+            "must_reject": {
+                "word_marina_payment_office_001": [
+                    "port control",
+                    "customs office"
+                ],
+                "expr_marina_proceed_payment_office_001": [
+                    "proceed to port control",
+                    "proceed to fuel berth"
+                ],
+                "phrase_marina_contact_payment_office_001": [
+                    "Contact port control on channel one two",
+                    "Contact payment office on channel one six"
+                ]
+            },
+            "reason": "Administrative payment office must not become traffic authority, customs, fuel berth, or wrong channel."
+        },
+        {
+            "pair": "repair berth / visitor berth / fuel berth; available/requested/cancelled; 1600 / 1500",
+            "items": [
+                "word_marina_repair_berth_001",
+                "expr_marina_repair_berth_requested_001",
+                "phrase_marina_repair_berth_after_1600_001"
+            ],
+            "must_accept": {
+                "word_marina_repair_berth_001": [
+                    "repair berth"
+                ],
+                "expr_marina_repair_berth_requested_001": [
+                    "repair berth requested"
+                ],
+                "phrase_marina_repair_berth_after_1600_001": [
+                    "Repair berth available after one six zero zero UTC."
+                ]
+            },
+            "must_reject": {
+                "word_marina_repair_berth_001": [
+                    "visitor berth",
+                    "repair underway"
+                ],
+                "expr_marina_repair_berth_requested_001": [
+                    "visitor berth requested",
+                    "repair berth cancelled"
+                ],
+                "phrase_marina_repair_berth_after_1600_001": [
+                    "Visitor berth available after one six zero zero UTC",
+                    "Repair berth available after one five zero zero UTC"
+                ]
+            },
+            "reason": "Repair berth location/allocation must stay separate from visitor/fuel berth, onboard repair, cancellation, and wrong time."
+        },
+        {
+            "pair": "service/waiting pontoon; wait/proceed/depart; full/clear; outside/inside",
+            "items": [
+                "word_marina_service_pontoon_001",
+                "word_marina_waiting_pontoon_001",
+                "expr_marina_wait_service_pontoon_001",
+                "phrase_marina_service_pontoon_water_001",
+                "phrase_marina_waiting_pontoon_full_001"
+            ],
+            "must_accept": {
+                "word_marina_service_pontoon_001": [
+                    "service pontoon"
+                ],
+                "word_marina_waiting_pontoon_001": [
+                    "waiting pontoon"
+                ],
+                "expr_marina_wait_service_pontoon_001": [
+                    "wait on service pontoon"
+                ],
+                "phrase_marina_service_pontoon_water_001": [
+                    "Proceed to service pontoon for water."
+                ],
+                "phrase_marina_waiting_pontoon_full_001": [
+                    "Waiting pontoon full, stand by outside harbour."
+                ]
+            },
+            "must_reject": {
+                "word_marina_service_pontoon_001": [
+                    "waiting pontoon",
+                    "fuel berth"
+                ],
+                "word_marina_waiting_pontoon_001": [
+                    "service pontoon",
+                    "visitor berth"
+                ],
+                "expr_marina_wait_service_pontoon_001": [
+                    "proceed to service pontoon",
+                    "wait on waiting pontoon"
+                ],
+                "phrase_marina_service_pontoon_water_001": [
+                    "Proceed to waiting pontoon for water",
+                    "Proceed to service pontoon for fuel"
+                ],
+                "phrase_marina_waiting_pontoon_full_001": [
+                    "Waiting pontoon clear stand by outside harbour",
+                    "Waiting pontoon full proceed inside harbour"
+                ]
+            },
+            "reason": "Service/waiting locations, status, and movement instructions must remain exact."
         }
     ],
     "items": [
@@ -13014,6 +13226,350 @@
                 "Fog in area Bravo avoid the area"
             ],
             "reason": "Weather type, area, and avoid instruction are all safety-critical."
+        },
+        {
+            "id": "word_marina_service_pontoon_001",
+            "target_text": "service pontoon",
+            "should_accept": [
+                "service pontoon"
+            ],
+            "should_reject": [
+                "waiting pontoon",
+                "fuel berth",
+                "visitor berth"
+            ],
+            "reason": "Service pontoon is a marina service location, not a waiting area, fuel berth, or visitor berth."
+        },
+        {
+            "id": "word_marina_pump_out_station_001",
+            "target_text": "pump-out station",
+            "should_accept": [
+                "pump-out station",
+                "pump out station"
+            ],
+            "should_reject": [
+                "fuel station",
+                "bilge pump running",
+                "water station"
+            ],
+            "reason": "Pump-out station is a marina waste service, not fuel, bilge-pump status, or water supply."
+        },
+        {
+            "id": "word_marina_payment_office_001",
+            "target_text": "payment office",
+            "should_accept": [
+                "payment office"
+            ],
+            "should_reject": [
+                "port control",
+                "marina control",
+                "customs office"
+            ],
+            "reason": "Payment office is an administrative marina service, not traffic authority or customs."
+        },
+        {
+            "id": "word_marina_waiting_pontoon_001",
+            "target_text": "waiting pontoon",
+            "should_accept": [
+                "waiting pontoon"
+            ],
+            "should_reject": [
+                "service pontoon",
+                "visitor berth",
+                "fuel berth"
+            ],
+            "reason": "Waiting pontoon is a holding location, not a service pontoon or assigned berth."
+        },
+        {
+            "id": "word_marina_repair_berth_001",
+            "target_text": "repair berth",
+            "should_accept": [
+                "repair berth"
+            ],
+            "should_reject": [
+                "visitor berth",
+                "fuel berth",
+                "repair underway"
+            ],
+            "reason": "Repair berth is a marina location, not a visitor/fuel berth or onboard repair status."
+        },
+        {
+            "id": "expr_marina_confirm_fuel_berth_001",
+            "target_text": "confirm fuel berth",
+            "should_accept": [
+                "confirm fuel berth"
+            ],
+            "should_reject": [
+                "request fuel berth",
+                "confirm visitor berth",
+                "cancel fuel berth"
+            ],
+            "reason": "Confirmation is distinct from request or cancellation and must keep the fuel-berth target."
+        },
+        {
+            "id": "expr_marina_fuel_berth_occupied_001",
+            "target_text": "fuel berth occupied",
+            "should_accept": [
+                "fuel berth occupied",
+                "fuel berth is occupied"
+            ],
+            "should_reject": [
+                "fuel berth available",
+                "visitor berth occupied",
+                "fuel berth clear"
+            ],
+            "reason": "Occupied fuel berth must not become available/clear or a visitor berth."
+        },
+        {
+            "id": "expr_marina_water_hose_ready_001",
+            "target_text": "water hose ready",
+            "should_accept": [
+                "water hose ready",
+                "water hose is ready"
+            ],
+            "should_reject": [
+                "fuel hose ready",
+                "water hose not ready",
+                "shore power ready"
+            ],
+            "reason": "Water hose readiness must not become fuel hose, shore power, or not-ready status."
+        },
+        {
+            "id": "expr_marina_shore_power_available_001",
+            "target_text": "shore power available",
+            "should_accept": [
+                "shore power available",
+                "shore power is available"
+            ],
+            "should_reject": [
+                "shore power unavailable",
+                "water available",
+                "power failure"
+            ],
+            "reason": "Shore power availability must not become unavailable, water service, or power-failure report."
+        },
+        {
+            "id": "expr_marina_pump_out_unavailable_001",
+            "target_text": "pump-out station unavailable",
+            "should_accept": [
+                "pump-out station unavailable",
+                "pump out station unavailable"
+            ],
+            "should_reject": [
+                "pump-out station available",
+                "fuel berth unavailable",
+                "bilge pump unavailable"
+            ],
+            "reason": "Pump-out service unavailability must not become availability, fuel berth, or bilge pump status."
+        },
+        {
+            "id": "expr_marina_wait_service_pontoon_001",
+            "target_text": "wait on service pontoon",
+            "should_accept": [
+                "wait on service pontoon",
+                "wait at service pontoon"
+            ],
+            "should_reject": [
+                "proceed to service pontoon",
+                "wait on waiting pontoon",
+                "depart service pontoon"
+            ],
+            "reason": "Wait instruction must not become proceed/depart instruction or wrong pontoon."
+        },
+        {
+            "id": "expr_marina_proceed_payment_office_001",
+            "target_text": "proceed to payment office",
+            "should_accept": [
+                "proceed to payment office",
+                "proceed to the payment office"
+            ],
+            "should_reject": [
+                "proceed to port control",
+                "stand by payment office",
+                "proceed to fuel berth"
+            ],
+            "reason": "Administrative payment-office instruction must not become traffic authority, fuel berth, or stand-by instruction."
+        },
+        {
+            "id": "expr_marina_repair_berth_requested_001",
+            "target_text": "repair berth requested",
+            "should_accept": [
+                "repair berth requested",
+                "repair berth is requested"
+            ],
+            "should_reject": [
+                "repair completed",
+                "visitor berth requested",
+                "repair berth cancelled"
+            ],
+            "reason": "Repair berth request is a marina allocation request, not completed repair, visitor berth, or cancellation."
+        },
+        {
+            "id": "expr_marina_no_shore_power_available_001",
+            "target_text": "no shore power available",
+            "should_accept": [
+                "no shore power available",
+                "shore power not available"
+            ],
+            "should_reject": [
+                "shore power available",
+                "no water available",
+                "power failure"
+            ],
+            "reason": "Negative shore-power service status must not become available, water status, or onboard power failure."
+        },
+        {
+            "id": "expr_marina_service_complete_001",
+            "target_text": "marina service complete",
+            "should_accept": [
+                "marina service complete",
+                "marina service is complete"
+            ],
+            "should_reject": [
+                "marina service required",
+                "repair complete",
+                "service cancelled",
+                "service complete"
+            ],
+            "reason": "Marina service completion must be explicit and must not collapse into repair completion, generic service completion, new service requirement, or cancellation."
+        },
+        {
+            "id": "phrase_marina_fuel_berth_occupied_wait_outside_001",
+            "target_text": "Fuel berth occupied, wait outside marina.",
+            "should_accept": [
+                "Fuel berth occupied, wait outside marina.",
+                "Fuel berth is occupied, wait outside marina"
+            ],
+            "should_reject": [
+                "Fuel berth available wait outside marina",
+                "Visitor berth occupied wait outside marina",
+                "Fuel berth occupied proceed inside marina"
+            ],
+            "reason": "Occupied fuel berth and wait-outside instruction must remain exact."
+        },
+        {
+            "id": "phrase_marina_service_pontoon_water_001",
+            "target_text": "Proceed to service pontoon for water.",
+            "should_accept": [
+                "Proceed to service pontoon for water.",
+                "Proceed to the service pontoon for water"
+            ],
+            "should_reject": [
+                "Proceed to service pontoon for fuel",
+                "Wait on service pontoon for water",
+                "Proceed to waiting pontoon for water"
+            ],
+            "reason": "Service pontoon, water service, and proceed instruction must remain exact."
+        },
+        {
+            "id": "phrase_marina_shore_power_bravo_two_001",
+            "target_text": "Shore power available on berth Bravo two.",
+            "should_accept": [
+                "Shore power available on berth Bravo two.",
+                "Shore power available on berth Bravo 2"
+            ],
+            "should_reject": [
+                "Shore power unavailable on berth Bravo two",
+                "Water available on berth Bravo two",
+                "Shore power available on berth Alpha two"
+            ],
+            "reason": "Power service, availability, and berth identifier must remain exact."
+        },
+        {
+            "id": "phrase_marina_pump_out_unavailable_until_1500_001",
+            "target_text": "Pump-out station unavailable until one five zero zero UTC.",
+            "should_accept": [
+                "Pump-out station unavailable until one five zero zero UTC.",
+                "Pump-out station unavailable until 1500 UTC"
+            ],
+            "should_reject": [
+                "Pump-out station available until one five zero zero UTC",
+                "Fuel berth unavailable until one five zero zero UTC",
+                "Pump-out station unavailable until one six zero zero UTC"
+            ],
+            "reason": "Pump-out service status and time must not change."
+        },
+        {
+            "id": "phrase_marina_contact_payment_office_001",
+            "target_text": "Contact payment office on channel one two.",
+            "should_accept": [
+                "Contact payment office on channel one two.",
+                "Contact payment office on channel 12"
+            ],
+            "should_reject": [
+                "Contact port control on channel one two",
+                "Contact payment office on channel one six",
+                "Contact customs office on channel one two"
+            ],
+            "reason": "Payment office contact and channel must not become port/customs contact or channel 16."
+        },
+        {
+            "id": "phrase_marina_after_payment_visitor_berth_001",
+            "target_text": "After payment, proceed to visitor berth.",
+            "should_accept": [
+                "After payment, proceed to visitor berth."
+            ],
+            "should_reject": [
+                "Before payment proceed to visitor berth",
+                "After payment proceed to fuel berth",
+                "After payment stand by outside"
+            ],
+            "reason": "Payment sequence and destination berth must remain exact."
+        },
+        {
+            "id": "phrase_marina_repair_berth_after_1600_001",
+            "target_text": "Repair berth available after one six zero zero UTC.",
+            "should_accept": [
+                "Repair berth available after one six zero zero UTC.",
+                "Repair berth available after 1600 UTC"
+            ],
+            "should_reject": [
+                "Repair berth unavailable after one six zero zero UTC",
+                "Visitor berth available after one six zero zero UTC",
+                "Repair berth available after one five zero zero UTC"
+            ],
+            "reason": "Repair berth availability and time must remain exact."
+        },
+        {
+            "id": "phrase_marina_water_hose_starboard_001",
+            "target_text": "Water hose ready on starboard side.",
+            "should_accept": [
+                "Water hose ready on starboard side."
+            ],
+            "should_reject": [
+                "Water hose ready on port side",
+                "Fuel hose ready on starboard side",
+                "Water hose not ready on starboard side"
+            ],
+            "reason": "Water hose, starboard side, and ready status must remain exact."
+        },
+        {
+            "id": "phrase_marina_service_complete_return_berth_001",
+            "target_text": "Marina service complete, return to assigned berth.",
+            "should_accept": [
+                "Marina service complete, return to assigned berth.",
+                "Marina service is complete, return to assigned berth"
+            ],
+            "should_reject": [
+                "Marina service required return to assigned berth",
+                "Marina service complete proceed to fuel berth",
+                "Repair complete return to assigned berth",
+                "Service complete return to assigned berth"
+            ],
+            "reason": "Marina service completion and assigned-berth return must not become repair completion, generic service completion, a new service requirement, or fuel-berth movement."
+        },
+        {
+            "id": "phrase_marina_waiting_pontoon_full_001",
+            "target_text": "Waiting pontoon full, stand by outside harbour.",
+            "should_accept": [
+                "Waiting pontoon full, stand by outside harbour."
+            ],
+            "should_reject": [
+                "Waiting pontoon clear stand by outside harbour",
+                "Service pontoon full stand by outside harbour",
+                "Waiting pontoon full proceed inside harbour"
+            ],
+            "reason": "Waiting pontoon status and stand-by instruction must remain exact."
         }
     ],
     "matcher_suggestions": [

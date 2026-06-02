@@ -12330,6 +12330,509 @@
             "hint_beginner": "Thunderstorm...",
             "hint_intermediate": "avoid the area...",
             "hint_advanced": ""
+        },
+        {
+            "id": "word_marina_service_pontoon_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "service_logistics",
+            "source_language": "ru",
+            "source_text": "Сервисный понтон",
+            "target_language": "en",
+            "target_text": "service pontoon",
+            "accepted_answers": [
+                "service pontoon"
+            ],
+            "hint_beginner": "service p...",
+            "hint_intermediate": "service pontoon...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_marina_pump_out_station_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 11,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "pump_out",
+            "source_language": "ru",
+            "source_text": "Станция откачки",
+            "target_language": "en",
+            "target_text": "pump-out station",
+            "accepted_answers": [
+                "pump-out station"
+            ],
+            "hint_beginner": "pump-out...",
+            "hint_intermediate": "pump-out station...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_marina_payment_office_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "payment_office",
+            "source_language": "ru",
+            "source_text": "Офис оплаты",
+            "target_language": "en",
+            "target_text": "payment office",
+            "accepted_answers": [
+                "payment office"
+            ],
+            "hint_beginner": "payment...",
+            "hint_intermediate": "payment office...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_marina_waiting_pontoon_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "waiting_area",
+            "source_language": "ru",
+            "source_text": "Понтон ожидания",
+            "target_language": "en",
+            "target_text": "waiting pontoon",
+            "accepted_answers": [
+                "waiting pontoon"
+            ],
+            "hint_beginner": "waiting...",
+            "hint_intermediate": "waiting pontoon...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_marina_repair_berth_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "repair_berth",
+            "source_language": "ru",
+            "source_text": "Ремонтное место",
+            "target_language": "en",
+            "target_text": "repair berth",
+            "accepted_answers": [
+                "repair berth"
+            ],
+            "hint_beginner": "repair...",
+            "hint_intermediate": "repair berth...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_marina_confirm_fuel_berth_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 11,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "fuel_water_power",
+            "source_language": "ru",
+            "source_text": "Подтвердите топливный причал",
+            "target_language": "en",
+            "target_text": "confirm fuel berth",
+            "accepted_answers": [
+                "confirm fuel berth"
+            ],
+            "hint_beginner": "confirm...",
+            "hint_intermediate": "fuel berth...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_marina_fuel_berth_occupied_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 11,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "fuel_water_power",
+            "source_language": "ru",
+            "source_text": "Топливный причал занят",
+            "target_language": "en",
+            "target_text": "fuel berth occupied",
+            "accepted_answers": [
+                "fuel berth occupied",
+                "fuel berth is occupied"
+            ],
+            "hint_beginner": "fuel berth...",
+            "hint_intermediate": "occupied...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_marina_water_hose_ready_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 11,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "fuel_water_power",
+            "source_language": "ru",
+            "source_text": "Шланг воды готов",
+            "target_language": "en",
+            "target_text": "water hose ready",
+            "accepted_answers": [
+                "water hose ready",
+                "water hose is ready"
+            ],
+            "hint_beginner": "water hose...",
+            "hint_intermediate": "ready...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_marina_shore_power_available_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 11,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "fuel_water_power",
+            "source_language": "ru",
+            "source_text": "Береговое питание доступно",
+            "target_language": "en",
+            "target_text": "shore power available",
+            "accepted_answers": [
+                "shore power available",
+                "shore power is available"
+            ],
+            "hint_beginner": "shore power...",
+            "hint_intermediate": "available...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_marina_pump_out_unavailable_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "pump_out",
+            "source_language": "ru",
+            "source_text": "Станция откачки недоступна",
+            "target_language": "en",
+            "target_text": "pump-out station unavailable",
+            "accepted_answers": [
+                "pump-out station unavailable"
+            ],
+            "hint_beginner": "pump-out...",
+            "hint_intermediate": "unavailable...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_marina_wait_service_pontoon_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "service_logistics",
+            "source_language": "ru",
+            "source_text": "Ожидайте у сервисного понтона",
+            "target_language": "en",
+            "target_text": "wait on service pontoon",
+            "accepted_answers": [
+                "wait on service pontoon",
+                "wait at service pontoon"
+            ],
+            "hint_beginner": "wait...",
+            "hint_intermediate": "service pontoon...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_marina_proceed_payment_office_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "payment_office",
+            "source_language": "ru",
+            "source_text": "Следуйте в офис оплаты",
+            "target_language": "en",
+            "target_text": "proceed to payment office",
+            "accepted_answers": [
+                "proceed to payment office",
+                "proceed to the payment office"
+            ],
+            "hint_beginner": "proceed...",
+            "hint_intermediate": "payment office...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_marina_repair_berth_requested_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 13,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "repair_berth",
+            "source_language": "ru",
+            "source_text": "Запрошено ремонтное место",
+            "target_language": "en",
+            "target_text": "repair berth requested",
+            "accepted_answers": [
+                "repair berth requested",
+                "repair berth is requested"
+            ],
+            "hint_beginner": "repair berth...",
+            "hint_intermediate": "requested...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_marina_no_shore_power_available_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "fuel_water_power",
+            "source_language": "ru",
+            "source_text": "Береговое питание недоступно",
+            "target_language": "en",
+            "target_text": "no shore power available",
+            "accepted_answers": [
+                "no shore power available",
+                "shore power not available"
+            ],
+            "hint_beginner": "no shore power...",
+            "hint_intermediate": "not available...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_marina_service_complete_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 11,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "service_logistics",
+            "source_language": "ru",
+            "source_text": "Обслуживание в марине завершено",
+            "target_language": "en",
+            "target_text": "marina service complete",
+            "accepted_answers": [
+                "marina service complete",
+                "marina service is complete"
+            ],
+            "hint_beginner": "marina service...",
+            "hint_intermediate": "complete...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_marina_fuel_berth_occupied_wait_outside_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "fuel_water_power",
+            "source_language": "ru",
+            "source_text": "Топливный причал занят, ожидайте вне марины.",
+            "target_language": "en",
+            "target_text": "Fuel berth occupied, wait outside marina.",
+            "accepted_answers": [
+                "Fuel berth occupied, wait outside marina.",
+                "Fuel berth is occupied, wait outside marina"
+            ],
+            "grammar_pattern": "fuel_berth_occupied_wait_outside",
+            "hint_beginner": "Fuel berth occupied...",
+            "hint_intermediate": "wait outside marina...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_marina_service_pontoon_water_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "fuel_water_power",
+            "source_language": "ru",
+            "source_text": "Следуйте к сервисному понтону за водой.",
+            "target_language": "en",
+            "target_text": "Proceed to service pontoon for water.",
+            "accepted_answers": [
+                "Proceed to service pontoon for water.",
+                "Proceed to the service pontoon for water"
+            ],
+            "grammar_pattern": "proceed_service_pontoon_for_water",
+            "hint_beginner": "Proceed to service pontoon...",
+            "hint_intermediate": "for water...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_marina_shore_power_bravo_two_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "fuel_water_power",
+            "source_language": "ru",
+            "source_text": "Береговое питание доступно на месте Браво два.",
+            "target_language": "en",
+            "target_text": "Shore power available on berth Bravo two.",
+            "accepted_answers": [
+                "Shore power available on berth Bravo two.",
+                "Shore power is available on berth Bravo two",
+                "Shore power available on berth Bravo 2"
+            ],
+            "grammar_pattern": "shore_power_available_named_berth",
+            "hint_beginner": "Shore power available...",
+            "hint_intermediate": "berth Bravo two...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_marina_pump_out_unavailable_until_1500_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "pump_out",
+            "source_language": "ru",
+            "source_text": "Станция откачки недоступна до один пять ноль ноль UTC.",
+            "target_language": "en",
+            "target_text": "Pump-out station unavailable until one five zero zero UTC.",
+            "accepted_answers": [
+                "Pump-out station unavailable until one five zero zero UTC.",
+                "Pump-out station unavailable until 1500 UTC"
+            ],
+            "grammar_pattern": "pump_out_unavailable_until_time",
+            "hint_beginner": "Pump-out station unavailable...",
+            "hint_intermediate": "until one five zero zero UTC...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_marina_contact_payment_office_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "payment_office",
+            "source_language": "ru",
+            "source_text": "Свяжитесь с офисом оплаты по каналу один два.",
+            "target_language": "en",
+            "target_text": "Contact payment office on channel one two.",
+            "accepted_answers": [
+                "Contact payment office on channel one two.",
+                "Contact payment office on channel 12"
+            ],
+            "grammar_pattern": "contact_payment_office_channel",
+            "hint_beginner": "Contact payment office...",
+            "hint_intermediate": "channel one two...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_marina_after_payment_visitor_berth_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "payment_office",
+            "source_language": "ru",
+            "source_text": "После оплаты следуйте на гостевое место.",
+            "target_language": "en",
+            "target_text": "After payment, proceed to visitor berth.",
+            "accepted_answers": [
+                "After payment, proceed to visitor berth."
+            ],
+            "grammar_pattern": "after_payment_proceed_visitor_berth",
+            "hint_beginner": "After payment...",
+            "hint_intermediate": "visitor berth...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_marina_repair_berth_after_1600_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "repair_berth",
+            "source_language": "ru",
+            "source_text": "Ремонтное место доступно после один шесть ноль ноль UTC.",
+            "target_language": "en",
+            "target_text": "Repair berth available after one six zero zero UTC.",
+            "accepted_answers": [
+                "Repair berth available after one six zero zero UTC.",
+                "Repair berth available after 1600 UTC"
+            ],
+            "grammar_pattern": "repair_berth_available_after_time",
+            "hint_beginner": "Repair berth available...",
+            "hint_intermediate": "after one six zero zero UTC...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_marina_water_hose_starboard_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "fuel_water_power",
+            "source_language": "ru",
+            "source_text": "Шланг воды готов с правого борта.",
+            "target_language": "en",
+            "target_text": "Water hose ready on starboard side.",
+            "accepted_answers": [
+                "Water hose ready on starboard side.",
+                "Water hose is ready on starboard side"
+            ],
+            "grammar_pattern": "water_hose_ready_starboard",
+            "hint_beginner": "Water hose ready...",
+            "hint_intermediate": "starboard side...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_marina_service_complete_return_berth_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "service_logistics",
+            "source_language": "ru",
+            "source_text": "Обслуживание в марине завершено, возвращайтесь на назначенное место.",
+            "target_language": "en",
+            "target_text": "Marina service complete, return to assigned berth.",
+            "accepted_answers": [
+                "Marina service complete, return to assigned berth.",
+                "Marina service is complete, return to assigned berth"
+            ],
+            "grammar_pattern": "marina_service_complete_return_assigned_berth",
+            "hint_beginner": "Marina service complete...",
+            "hint_intermediate": "assigned berth...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_marina_waiting_pontoon_full_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "marina_services",
+            "branch": "marina_harbour",
+            "module": "waiting_area",
+            "source_language": "ru",
+            "source_text": "Понтон ожидания заполнен, ожидайте вне гавани.",
+            "target_language": "en",
+            "target_text": "Waiting pontoon full, stand by outside harbour.",
+            "accepted_answers": [
+                "Waiting pontoon full, stand by outside harbour.",
+                "Waiting pontoon is full, stand by outside harbour"
+            ],
+            "grammar_pattern": "waiting_pontoon_full_stand_by_outside",
+            "hint_beginner": "Waiting pontoon full...",
+            "hint_intermediate": "stand by outside harbour...",
+            "hint_advanced": ""
         }
     ],
     "grammar_patterns": [
@@ -14365,6 +14868,76 @@
             "pattern": "thunderstorm area avoidance warning",
             "examples": [
                 "Thunderstorm in area Bravo, avoid the area."
+            ]
+        },
+        {
+            "id": "fuel_berth_occupied_wait_outside",
+            "pattern": "fuel berth occupied with wait-outside instruction",
+            "examples": [
+                "Fuel berth occupied, wait outside marina."
+            ]
+        },
+        {
+            "id": "proceed_service_pontoon_for_water",
+            "pattern": "proceed to service pontoon for a specific service",
+            "examples": [
+                "Proceed to service pontoon for water."
+            ]
+        },
+        {
+            "id": "shore_power_available_named_berth",
+            "pattern": "shore power availability on named berth",
+            "examples": [
+                "Shore power available on berth Bravo two."
+            ]
+        },
+        {
+            "id": "pump_out_unavailable_until_time",
+            "pattern": "pump-out station unavailable until time",
+            "examples": [
+                "Pump-out station unavailable until one five zero zero UTC."
+            ]
+        },
+        {
+            "id": "contact_payment_office_channel",
+            "pattern": "contact payment office on working channel",
+            "examples": [
+                "Contact payment office on channel one two."
+            ]
+        },
+        {
+            "id": "after_payment_proceed_visitor_berth",
+            "pattern": "after-payment instruction to visitor berth",
+            "examples": [
+                "After payment, proceed to visitor berth."
+            ]
+        },
+        {
+            "id": "repair_berth_available_after_time",
+            "pattern": "repair berth availability after time",
+            "examples": [
+                "Repair berth available after one six zero zero UTC."
+            ]
+        },
+        {
+            "id": "water_hose_ready_starboard",
+            "pattern": "water hose ready on vessel side",
+            "examples": [
+                "Water hose ready on starboard side."
+            ]
+        },
+        {
+            "id": "marina_service_complete_return_assigned_berth",
+            "pattern": "marina service completion with return to assigned berth",
+            "examples": [
+                "Marina service complete, return to assigned berth."
+            ]
+        },
+        {
+            "id": "waiting_pontoon_full_stand_by_outside",
+            "pattern": "waiting pontoon full with outside stand-by",
+            "examples": [
+                "Waiting pontoon full, stand by outside harbour."
             ]
         }
     ],
