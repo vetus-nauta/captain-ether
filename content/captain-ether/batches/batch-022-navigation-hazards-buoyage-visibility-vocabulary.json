@@ -1,0 +1,1832 @@
+{
+    "version": 1,
+    "batch_id": "batch-022-navigation-hazards-buoyage-visibility-vocabulary",
+    "status": "draft",
+    "date": "2026-06-03",
+    "branch": "navigation_hazards_buoyage_visibility",
+    "scope": "M4 navigation hazards, buoyage, lights and restricted visibility vocabulary draft. Draft only: no starter merge and no production deploy.",
+    "items": [
+        {
+            "id": "word_b022_cardinal_mark_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "buoyage_terms",
+            "source_language": "ru",
+            "source_text": "Кардинальный знак.",
+            "target_language": "en",
+            "target_text": "cardinal mark",
+            "accepted_answers": [
+                "cardinal mark"
+            ],
+            "grammar_pattern": "b022_cardinal_mark_pattern",
+            "hint_beginner": "cardinal mark...",
+            "hint_intermediate": "cardinal mark...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "cardinal mark"
+                ],
+                "should_reject": [
+                    "lateral mark",
+                    "special mark",
+                    "cardinal course"
+                ],
+                "dangerous_minimal_pairs": [
+                    "cardinal/lateral/special mark"
+                ],
+                "linguist_note": "Buoyage mark type must remain exact."
+            }
+        },
+        {
+            "id": "word_b022_lateral_mark_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "buoyage_terms",
+            "source_language": "ru",
+            "source_text": "Латеральный знак.",
+            "target_language": "en",
+            "target_text": "lateral mark",
+            "accepted_answers": [
+                "lateral mark"
+            ],
+            "grammar_pattern": "b022_lateral_mark_pattern",
+            "hint_beginner": "lateral mark...",
+            "hint_intermediate": "lateral mark...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "lateral mark"
+                ],
+                "should_reject": [
+                    "cardinal mark",
+                    "safe water mark",
+                    "lateral course"
+                ],
+                "dangerous_minimal_pairs": [
+                    "lateral/cardinal/safe water mark"
+                ],
+                "linguist_note": "Lateral mark must not become cardinal or safe-water mark."
+            }
+        },
+        {
+            "id": "word_b022_isolated_danger_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "buoyage_terms",
+            "source_language": "ru",
+            "source_text": "Отдельная опасность.",
+            "target_language": "en",
+            "target_text": "isolated danger",
+            "accepted_answers": [
+                "isolated danger"
+            ],
+            "grammar_pattern": "b022_isolated_danger_pattern",
+            "hint_beginner": "isolated danger...",
+            "hint_intermediate": "isolated danger...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "isolated danger"
+                ],
+                "should_reject": [
+                    "safe water",
+                    "special mark",
+                    "dangerous cargo"
+                ],
+                "dangerous_minimal_pairs": [
+                    "isolated danger / safe water / special mark"
+                ],
+                "linguist_note": "Hazard mark must not become safe-water term."
+            }
+        },
+        {
+            "id": "word_b022_safe_water_mark_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "buoyage_terms",
+            "source_language": "ru",
+            "source_text": "Знак чистой воды.",
+            "target_language": "en",
+            "target_text": "safe water mark",
+            "accepted_answers": [
+                "safe water mark"
+            ],
+            "grammar_pattern": "b022_safe_water_mark_pattern",
+            "hint_beginner": "safe water...",
+            "hint_intermediate": "safe water mark...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "safe water mark"
+                ],
+                "should_reject": [
+                    "isolated danger mark",
+                    "special mark",
+                    "safe speed mark"
+                ],
+                "dangerous_minimal_pairs": [
+                    "safe water / isolated danger / special mark"
+                ],
+                "linguist_note": "Safe-water mark has a specific buoyage meaning."
+            }
+        },
+        {
+            "id": "word_b022_special_mark_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "buoyage_terms",
+            "source_language": "ru",
+            "source_text": "Специальный знак.",
+            "target_language": "en",
+            "target_text": "special mark",
+            "accepted_answers": [
+                "special mark"
+            ],
+            "grammar_pattern": "b022_special_mark_pattern",
+            "hint_beginner": "special mark...",
+            "hint_intermediate": "special mark...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "special mark"
+                ],
+                "should_reject": [
+                    "safe water mark",
+                    "cardinal mark",
+                    "special signal"
+                ],
+                "dangerous_minimal_pairs": [
+                    "special/safe/cardinal mark"
+                ],
+                "linguist_note": "Special mark must not become signal or other mark."
+            }
+        },
+        {
+            "id": "word_b022_leading_lights_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "navigation_lights",
+            "source_language": "ru",
+            "source_text": "Створные огни.",
+            "target_language": "en",
+            "target_text": "leading lights",
+            "accepted_answers": [
+                "leading lights"
+            ],
+            "grammar_pattern": "b022_leading_lights_pattern",
+            "hint_beginner": "leading lights...",
+            "hint_intermediate": "leading lights...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "leading lights"
+                ],
+                "should_reject": [
+                    "anchor lights",
+                    "sector light",
+                    "deck lights"
+                ],
+                "dangerous_minimal_pairs": [
+                    "leading lights / sector light / anchor lights"
+                ],
+                "linguist_note": "Leading lights and sector lights are different aids."
+            }
+        },
+        {
+            "id": "word_b022_sector_light_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "navigation_lights",
+            "source_language": "ru",
+            "source_text": "Секторный огонь.",
+            "target_language": "en",
+            "target_text": "sector light",
+            "accepted_answers": [
+                "sector light"
+            ],
+            "grammar_pattern": "b022_sector_light_pattern",
+            "hint_beginner": "sector light...",
+            "hint_intermediate": "sector light...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "sector light"
+                ],
+                "should_reject": [
+                    "leading lights",
+                    "anchor light",
+                    "search light"
+                ],
+                "dangerous_minimal_pairs": [
+                    "sector/leading/anchor light"
+                ],
+                "linguist_note": "Sector light must not become leading or anchor light."
+            }
+        },
+        {
+            "id": "word_b022_fog_signal_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Туманный сигнал.",
+            "target_language": "en",
+            "target_text": "fog signal",
+            "accepted_answers": [
+                "fog signal"
+            ],
+            "grammar_pattern": "b022_fog_signal_pattern",
+            "hint_beginner": "fog signal...",
+            "hint_intermediate": "fog signal...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "fog signal"
+                ],
+                "should_reject": [
+                    "sound signal only",
+                    "distress signal",
+                    "fog bank"
+                ],
+                "dangerous_minimal_pairs": [
+                    "fog signal / distress signal / fog bank"
+                ],
+                "linguist_note": "Fog signal is not distress signal or weather bank."
+            }
+        },
+        {
+            "id": "word_b022_shoal_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "hazard_terms",
+            "source_language": "ru",
+            "source_text": "Мель.",
+            "target_language": "en",
+            "target_text": "shoal",
+            "accepted_answers": [
+                "shoal"
+            ],
+            "grammar_pattern": "b022_shoal_pattern",
+            "hint_beginner": "shoal...",
+            "hint_intermediate": "shoal...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "shoal"
+                ],
+                "should_reject": [
+                    "shore",
+                    "school",
+                    "channel"
+                ],
+                "dangerous_minimal_pairs": [
+                    "shoal / shore / channel"
+                ],
+                "linguist_note": "Shoal is shallow water hazard, not shore/channel."
+            }
+        },
+        {
+            "id": "word_b022_wreck_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "hazard_terms",
+            "source_language": "ru",
+            "source_text": "Затонувшее судно.",
+            "target_language": "en",
+            "target_text": "wreck",
+            "accepted_answers": [
+                "wreck"
+            ],
+            "grammar_pattern": "b022_wreck_pattern",
+            "hint_beginner": "wreck...",
+            "hint_intermediate": "wreck...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "wreck"
+                ],
+                "should_reject": [
+                    "rock",
+                    "wake",
+                    "vessel afloat"
+                ],
+                "dangerous_minimal_pairs": [
+                    "wreck / rock / wake"
+                ],
+                "linguist_note": "Wreck hazard must not become rock or wake."
+            }
+        },
+        {
+            "id": "expr_b022_keep_to_starboard_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "collision_avoidance",
+            "source_language": "ru",
+            "source_text": "Держитесь правой стороны.",
+            "target_language": "en",
+            "target_text": "keep to starboard",
+            "accepted_answers": [
+                "keep to starboard"
+            ],
+            "grammar_pattern": "b022_keep_to_starboard_pattern",
+            "hint_beginner": "keep to...",
+            "hint_intermediate": "keep to starboard...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "keep to starboard"
+                ],
+                "should_reject": [
+                    "keep to port",
+                    "turn to starboard",
+                    "keep clear"
+                ],
+                "dangerous_minimal_pairs": [
+                    "starboard/port; keep/turn"
+                ],
+                "linguist_note": "Side and action must remain exact."
+            }
+        },
+        {
+            "id": "expr_b022_pass_port_to_port_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "collision_avoidance",
+            "source_language": "ru",
+            "source_text": "Разойдитесь левыми бортами.",
+            "target_language": "en",
+            "target_text": "pass port to port",
+            "accepted_answers": [
+                "pass port to port"
+            ],
+            "grammar_pattern": "b022_pass_port_to_port_pattern",
+            "hint_beginner": "pass port...",
+            "hint_intermediate": "pass port to port...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "pass port to port"
+                ],
+                "should_reject": [
+                    "pass starboard to starboard",
+                    "pass port to starboard",
+                    "alter port to port"
+                ],
+                "dangerous_minimal_pairs": [
+                    "port/starboard passing arrangement"
+                ],
+                "linguist_note": "Passing arrangement must preserve both sides."
+            }
+        },
+        {
+            "id": "expr_b022_buoy_missing_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 10,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "buoyage_reports",
+            "source_language": "ru",
+            "source_text": "Буй отсутствует.",
+            "target_language": "en",
+            "target_text": "buoy missing",
+            "accepted_answers": [
+                "buoy missing"
+            ],
+            "grammar_pattern": "b022_buoy_missing_pattern",
+            "hint_beginner": "buoy missing...",
+            "hint_intermediate": "buoy missing...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "buoy missing"
+                ],
+                "should_reject": [
+                    "buoy sighted",
+                    "light missing",
+                    "buoy moved"
+                ],
+                "dangerous_minimal_pairs": [
+                    "missing/sighted/moved; buoy/light"
+                ],
+                "linguist_note": "Buoy status must remain exact."
+            }
+        },
+        {
+            "id": "expr_b022_light_unlit_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 10,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "navigation_lights",
+            "source_language": "ru",
+            "source_text": "Огонь не горит.",
+            "target_language": "en",
+            "target_text": "light unlit",
+            "accepted_answers": [
+                "light unlit"
+            ],
+            "grammar_pattern": "b022_light_unlit_pattern",
+            "hint_beginner": "light unlit...",
+            "hint_intermediate": "light unlit...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "light unlit"
+                ],
+                "should_reject": [
+                    "light lit",
+                    "buoy unlit",
+                    "light obscured"
+                ],
+                "dangerous_minimal_pairs": [
+                    "lit/unlit/obscured; light/buoy"
+                ],
+                "linguist_note": "Light status polarity must not reverse."
+            }
+        },
+        {
+            "id": "expr_b022_fog_signal_heard_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Слышен туманный сигнал.",
+            "target_language": "en",
+            "target_text": "fog signal heard",
+            "accepted_answers": [
+                "fog signal heard"
+            ],
+            "grammar_pattern": "b022_fog_signal_heard_pattern",
+            "hint_beginner": "fog signal...",
+            "hint_intermediate": "fog signal heard...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "fog signal heard"
+                ],
+                "should_reject": [
+                    "distress signal heard",
+                    "fog signal not heard",
+                    "sound signal cancelled"
+                ],
+                "dangerous_minimal_pairs": [
+                    "fog/distress signal; heard/not heard"
+                ],
+                "linguist_note": "Signal class and heard status must remain exact."
+            }
+        },
+        {
+            "id": "expr_b022_visibility_reduced_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Видимость уменьшена.",
+            "target_language": "en",
+            "target_text": "visibility reduced",
+            "accepted_answers": [
+                "visibility reduced"
+            ],
+            "grammar_pattern": "b022_visibility_reduced_pattern",
+            "hint_beginner": "visibility reduced...",
+            "hint_intermediate": "visibility reduced...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "visibility reduced"
+                ],
+                "should_reject": [
+                    "visibility good",
+                    "speed reduced",
+                    "visibility restored"
+                ],
+                "dangerous_minimal_pairs": [
+                    "visibility/speed; reduced/restored/good"
+                ],
+                "linguist_note": "Visibility condition must not become speed or restored status."
+            }
+        },
+        {
+            "id": "expr_b022_wreck_reported_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "hazard_reports",
+            "source_language": "ru",
+            "source_text": "Сообщено о затонувшем судне.",
+            "target_language": "en",
+            "target_text": "wreck reported",
+            "accepted_answers": [
+                "wreck reported"
+            ],
+            "grammar_pattern": "b022_wreck_reported_pattern",
+            "hint_beginner": "wreck reported...",
+            "hint_intermediate": "wreck reported...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "wreck reported"
+                ],
+                "should_reject": [
+                    "rock reported",
+                    "wreck cleared",
+                    "wake reported"
+                ],
+                "dangerous_minimal_pairs": [
+                    "wreck/rock/wake; reported/cleared"
+                ],
+                "linguist_note": "Hazard type and status must remain exact."
+            }
+        },
+        {
+            "id": "expr_b022_shoal_ahead_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "hazard_reports",
+            "source_language": "ru",
+            "source_text": "Мель впереди.",
+            "target_language": "en",
+            "target_text": "shoal ahead",
+            "accepted_answers": [
+                "shoal ahead"
+            ],
+            "grammar_pattern": "b022_shoal_ahead_pattern",
+            "hint_beginner": "shoal ahead...",
+            "hint_intermediate": "shoal ahead...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "shoal ahead"
+                ],
+                "should_reject": [
+                    "shore ahead",
+                    "clear ahead",
+                    "shoal astern"
+                ],
+                "dangerous_minimal_pairs": [
+                    "shoal/shore; ahead/astern/clear"
+                ],
+                "linguist_note": "Hazard and relative direction must remain exact."
+            }
+        },
+        {
+            "id": "expr_b022_alter_to_port_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "course_action",
+            "source_language": "ru",
+            "source_text": "Измените курс влево.",
+            "target_language": "en",
+            "target_text": "alter to port",
+            "accepted_answers": [
+                "alter to port"
+            ],
+            "grammar_pattern": "b022_alter_to_port_pattern",
+            "hint_beginner": "alter to...",
+            "hint_intermediate": "alter to port...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "alter to port"
+                ],
+                "should_reject": [
+                    "alter to starboard",
+                    "keep to port",
+                    "report to port"
+                ],
+                "dangerous_minimal_pairs": [
+                    "alter/keep/report; port/starboard"
+                ],
+                "linguist_note": "Course alteration command must preserve action and side."
+            }
+        },
+        {
+            "id": "expr_b022_alter_to_starboard_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "course_action",
+            "source_language": "ru",
+            "source_text": "Измените курс вправо.",
+            "target_language": "en",
+            "target_text": "alter to starboard",
+            "accepted_answers": [
+                "alter to starboard"
+            ],
+            "grammar_pattern": "b022_alter_to_starboard_pattern",
+            "hint_beginner": "alter to...",
+            "hint_intermediate": "alter to starboard...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "alter to starboard"
+                ],
+                "should_reject": [
+                    "alter to port",
+                    "keep to starboard",
+                    "report starboard"
+                ],
+                "dangerous_minimal_pairs": [
+                    "alter/keep/report; starboard/port"
+                ],
+                "linguist_note": "Course alteration command must preserve action and side."
+            }
+        },
+        {
+            "id": "phrase_b022_cardinal_mark_missing_from_position_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "buoyage_reports",
+            "source_language": "ru",
+            "source_text": "Кардинальный знак отсутствует на позиции.",
+            "target_language": "en",
+            "target_text": "Cardinal mark missing from position.",
+            "accepted_answers": [
+                "Cardinal mark missing from position.",
+                "Cardinal mark is missing from position"
+            ],
+            "grammar_pattern": "b022_cardinal_mark_missing_from_position_pattern",
+            "hint_beginner": "Cardinal mark...",
+            "hint_intermediate": "Cardinal mark missing from...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Cardinal mark missing from position.",
+                    "Cardinal mark is missing from position"
+                ],
+                "should_reject": [
+                    "Lateral mark missing from position",
+                    "Cardinal mark sighted on position",
+                    "Cardinal course missing from position"
+                ],
+                "dangerous_minimal_pairs": [
+                    "cardinal/lateral; missing/sighted; mark/course"
+                ],
+                "linguist_note": "Mark type and status must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b022_pass_starboard_of_lateral_mark_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "buoyage_reports",
+            "source_language": "ru",
+            "source_text": "Проходите справа от латерального знака.",
+            "target_language": "en",
+            "target_text": "Pass starboard of lateral mark.",
+            "accepted_answers": [
+                "Pass starboard of lateral mark.",
+                "Pass to starboard of lateral mark"
+            ],
+            "grammar_pattern": "b022_pass_starboard_of_lateral_mark_pattern",
+            "hint_beginner": "Pass starboard...",
+            "hint_intermediate": "Pass starboard of lateral...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Pass starboard of lateral mark.",
+                    "Pass to starboard of lateral mark"
+                ],
+                "should_reject": [
+                    "Pass port of lateral mark",
+                    "Pass starboard of cardinal mark",
+                    "Hold starboard of lateral mark"
+                ],
+                "dangerous_minimal_pairs": [
+                    "port/starboard; lateral/cardinal; pass/hold"
+                ],
+                "linguist_note": "Side and mark type must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b022_isolated_danger_ahead_on_track_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "hazard_reports",
+            "source_language": "ru",
+            "source_text": "Отдельная опасность впереди по курсу.",
+            "target_language": "en",
+            "target_text": "Isolated danger ahead on track.",
+            "accepted_answers": [
+                "Isolated danger ahead on track.",
+                "Isolated danger is ahead on track"
+            ],
+            "grammar_pattern": "b022_isolated_danger_ahead_on_track_pattern",
+            "hint_beginner": "Isolated danger...",
+            "hint_intermediate": "Isolated danger ahead on...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Isolated danger ahead on track.",
+                    "Isolated danger is ahead on track"
+                ],
+                "should_reject": [
+                    "Safe water ahead on track",
+                    "Isolated danger astern on track",
+                    "Special mark ahead on track"
+                ],
+                "dangerous_minimal_pairs": [
+                    "isolated danger/safe water/special mark; ahead/astern"
+                ],
+                "linguist_note": "Hazard type and relative position must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b022_leading_lights_visible_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "navigation_lights",
+            "source_language": "ru",
+            "source_text": "Створные огни видны.",
+            "target_language": "en",
+            "target_text": "Leading lights visible.",
+            "accepted_answers": [
+                "Leading lights visible.",
+                "Leading lights are visible"
+            ],
+            "grammar_pattern": "b022_leading_lights_visible_pattern",
+            "hint_beginner": "Leading lights...",
+            "hint_intermediate": "Leading lights visible....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Leading lights visible.",
+                    "Leading lights are visible"
+                ],
+                "should_reject": [
+                    "Leading lights not visible",
+                    "Sector light visible",
+                    "Anchor lights visible"
+                ],
+                "dangerous_minimal_pairs": [
+                    "leading/sector/anchor lights; visible/not visible"
+                ],
+                "linguist_note": "Aid type and visibility polarity must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b022_sector_light_showing_red_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 14,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "navigation_lights",
+            "source_language": "ru",
+            "source_text": "Секторный огонь красный.",
+            "target_language": "en",
+            "target_text": "Sector light showing red.",
+            "accepted_answers": [
+                "Sector light showing red.",
+                "Sector light is showing red"
+            ],
+            "grammar_pattern": "b022_sector_light_showing_red_pattern",
+            "hint_beginner": "Sector light...",
+            "hint_intermediate": "Sector light showing red....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Sector light showing red.",
+                    "Sector light is showing red"
+                ],
+                "should_reject": [
+                    "Sector light showing green",
+                    "Leading lights showing red",
+                    "Anchor light showing red"
+                ],
+                "dangerous_minimal_pairs": [
+                    "sector/leading/anchor light; red/green"
+                ],
+                "linguist_note": "Light type and color must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b022_visibility_reduced_to_one_mile_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Видимость уменьшена до одной мили.",
+            "target_language": "en",
+            "target_text": "Visibility reduced to one mile.",
+            "accepted_answers": [
+                "Visibility reduced to one mile.",
+                "Visibility is reduced to one mile"
+            ],
+            "grammar_pattern": "b022_visibility_reduced_to_one_mile_pattern",
+            "hint_beginner": "Visibility reduced...",
+            "hint_intermediate": "Visibility reduced to one...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Visibility reduced to one mile.",
+                    "Visibility is reduced to one mile"
+                ],
+                "should_reject": [
+                    "Visibility reduced to two miles",
+                    "Speed reduced to one mile",
+                    "Visibility restored to one mile"
+                ],
+                "dangerous_minimal_pairs": [
+                    "visibility/speed; one/two miles; reduced/restored"
+                ],
+                "linguist_note": "Visibility range and condition must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b022_sound_fog_signal_every_two_minutes_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Подавайте туманный сигнал каждые две минуты.",
+            "target_language": "en",
+            "target_text": "Sound fog signal every two minutes.",
+            "accepted_answers": [
+                "Sound fog signal every two minutes."
+            ],
+            "grammar_pattern": "b022_sound_fog_signal_every_two_minutes_pattern",
+            "hint_beginner": "Sound fog...",
+            "hint_intermediate": "Sound fog signal every...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Sound fog signal every two minutes.",
+                    "Sound the fog signal every two minutes"
+                ],
+                "should_reject": [
+                    "Sound distress signal every two minutes",
+                    "Sound fog signal every one minute",
+                    "Cancel fog signal every two minutes"
+                ],
+                "dangerous_minimal_pairs": [
+                    "fog/distress signal; two/one minutes; sound/cancel"
+                ],
+                "linguist_note": "Signal type, interval, and action must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b022_wreck_marked_by_buoy_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "hazard_reports",
+            "source_language": "ru",
+            "source_text": "Затонувшее судно отмечено буем.",
+            "target_language": "en",
+            "target_text": "Wreck marked by buoy.",
+            "accepted_answers": [
+                "Wreck marked by buoy.",
+                "Wreck is marked by buoy"
+            ],
+            "grammar_pattern": "b022_wreck_marked_by_buoy_pattern",
+            "hint_beginner": "Wreck marked...",
+            "hint_intermediate": "Wreck marked by buoy....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Wreck marked by buoy.",
+                    "Wreck is marked by buoy"
+                ],
+                "should_reject": [
+                    "Rock marked by buoy",
+                    "Wreck not marked by buoy",
+                    "Wake marked by buoy"
+                ],
+                "dangerous_minimal_pairs": [
+                    "wreck/rock/wake; marked/not marked"
+                ],
+                "linguist_note": "Hazard identity and marked status must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b022_shoal_extends_to_east_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "hazard_reports",
+            "source_language": "ru",
+            "source_text": "Мель простирается к востоку.",
+            "target_language": "en",
+            "target_text": "Shoal extends to east.",
+            "accepted_answers": [
+                "Shoal extends to east.",
+                "Shoal is extending to east"
+            ],
+            "grammar_pattern": "b022_shoal_extends_to_east_pattern",
+            "hint_beginner": "Shoal extends...",
+            "hint_intermediate": "Shoal extends to east....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Shoal extends to east.",
+                    "Shoal is extending to east"
+                ],
+                "should_reject": [
+                    "Shoal extends to west",
+                    "Shore extends to east",
+                    "Channel extends to east"
+                ],
+                "dangerous_minimal_pairs": [
+                    "shoal/shore/channel; east/west"
+                ],
+                "linguist_note": "Hazard type and direction must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b022_pass_port_to_port_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "collision_avoidance",
+            "source_language": "ru",
+            "source_text": "Разойдитесь левыми бортами.",
+            "target_language": "en",
+            "target_text": "Pass port to port.",
+            "accepted_answers": [
+                "Pass port to port."
+            ],
+            "grammar_pattern": "b022_pass_port_to_port_pattern_phrase",
+            "hint_beginner": "Pass port...",
+            "hint_intermediate": "Pass port to port....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Pass port to port."
+                ],
+                "should_reject": [
+                    "Pass starboard to starboard",
+                    "Pass port to starboard",
+                    "Alter port to port"
+                ],
+                "dangerous_minimal_pairs": [
+                    "port/starboard passing arrangement"
+                ],
+                "linguist_note": "Passing side arrangement must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b022_altering_to_port_to_avoid_shoal_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "course_action",
+            "source_language": "ru",
+            "source_text": "Изменяю курс влево, чтобы избежать мели.",
+            "target_language": "en",
+            "target_text": "Altering to port to avoid shoal.",
+            "accepted_answers": [
+                "Altering to port to avoid shoal.",
+                "Alter to port to avoid shoal"
+            ],
+            "grammar_pattern": "b022_altering_to_port_to_avoid_shoal_pattern",
+            "hint_beginner": "Altering to...",
+            "hint_intermediate": "Altering to port to...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Altering to port to avoid shoal.",
+                    "Alter to port to avoid shoal"
+                ],
+                "should_reject": [
+                    "Altering to starboard to avoid shoal",
+                    "Altering to port to approach shoal",
+                    "Altering to port to avoid shore"
+                ],
+                "dangerous_minimal_pairs": [
+                    "port/starboard; avoid/approach; shoal/shore"
+                ],
+                "linguist_note": "Avoidance action, side, and hazard must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b022_altering_to_starboard_due_to_wreck_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "course_action",
+            "source_language": "ru",
+            "source_text": "Изменяю курс вправо из-за затонувшего судна.",
+            "target_language": "en",
+            "target_text": "Altering to starboard due to wreck.",
+            "accepted_answers": [
+                "Altering to starboard due to wreck.",
+                "Alter to starboard due to wreck"
+            ],
+            "grammar_pattern": "b022_altering_to_starboard_due_to_wreck_pattern",
+            "hint_beginner": "Altering to...",
+            "hint_intermediate": "Altering to starboard due...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Altering to starboard due to wreck.",
+                    "Alter to starboard due to wreck"
+                ],
+                "should_reject": [
+                    "Altering to port due to wreck",
+                    "Altering to starboard due to wake",
+                    "Altering to starboard clear of wreck"
+                ],
+                "dangerous_minimal_pairs": [
+                    "starboard/port; wreck/wake; due to/clear of"
+                ],
+                "linguist_note": "Course action and reason must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b022_special_mark_north_of_fairway_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "buoyage_reports",
+            "source_language": "ru",
+            "source_text": "Специальный знак к северу от фарватера.",
+            "target_language": "en",
+            "target_text": "Special mark north of fairway.",
+            "accepted_answers": [
+                "Special mark north of fairway.",
+                "Special mark is north of fairway"
+            ],
+            "grammar_pattern": "b022_special_mark_north_of_fairway_pattern",
+            "hint_beginner": "Special mark...",
+            "hint_intermediate": "Special mark north of...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Special mark north of fairway.",
+                    "Special mark is north of fairway"
+                ],
+                "should_reject": [
+                    "Cardinal mark north of fairway",
+                    "Special mark south of fairway",
+                    "Special signal north of fairway"
+                ],
+                "dangerous_minimal_pairs": [
+                    "special/cardinal mark; north/south; mark/signal"
+                ],
+                "linguist_note": "Mark type and relative position must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b022_buoy_light_unlit_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "navigation_lights",
+            "source_language": "ru",
+            "source_text": "Огонь буя не горит.",
+            "target_language": "en",
+            "target_text": "Buoy light unlit.",
+            "accepted_answers": [
+                "Buoy light unlit.",
+                "Buoy light is unlit"
+            ],
+            "grammar_pattern": "b022_buoy_light_unlit_pattern",
+            "hint_beginner": "Buoy light...",
+            "hint_intermediate": "Buoy light unlit....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Buoy light unlit.",
+                    "Buoy light is unlit"
+                ],
+                "should_reject": [
+                    "Buoy light lit",
+                    "Anchor light unlit",
+                    "Buoy missing unlit"
+                ],
+                "dangerous_minimal_pairs": [
+                    "buoy/anchor light; lit/unlit; light/missing"
+                ],
+                "linguist_note": "Light identity and status polarity must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b022_safe_speed_in_restricted_visibility_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Безопасная скорость в условиях ограниченной видимости.",
+            "target_language": "en",
+            "target_text": "Safe speed in restricted visibility.",
+            "accepted_answers": [
+                "Safe speed in restricted visibility.",
+                "Safe speed during restricted visibility"
+            ],
+            "grammar_pattern": "b022_safe_speed_in_restricted_visibility_pattern",
+            "hint_beginner": "Safe speed...",
+            "hint_intermediate": "Safe speed in restricted...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Safe speed in restricted visibility.",
+                    "Safe speed during restricted visibility"
+                ],
+                "should_reject": [
+                    "Full speed in restricted visibility",
+                    "Safe speed in clear visibility",
+                    "Safe course in restricted visibility"
+                ],
+                "dangerous_minimal_pairs": [
+                    "safe/full; speed/course; restricted/clear visibility"
+                ],
+                "linguist_note": "Restricted-visibility safety phrase must preserve speed and condition."
+            }
+        }
+    ],
+    "grammar_patterns": [
+        {
+            "id": "b022_cardinal_mark_pattern",
+            "pattern": "buoyage_terms word pattern",
+            "examples": [
+                "cardinal mark"
+            ]
+        },
+        {
+            "id": "b022_lateral_mark_pattern",
+            "pattern": "buoyage_terms word pattern",
+            "examples": [
+                "lateral mark"
+            ]
+        },
+        {
+            "id": "b022_isolated_danger_pattern",
+            "pattern": "buoyage_terms word pattern",
+            "examples": [
+                "isolated danger"
+            ]
+        },
+        {
+            "id": "b022_safe_water_mark_pattern",
+            "pattern": "buoyage_terms word pattern",
+            "examples": [
+                "safe water mark"
+            ]
+        },
+        {
+            "id": "b022_special_mark_pattern",
+            "pattern": "buoyage_terms word pattern",
+            "examples": [
+                "special mark"
+            ]
+        },
+        {
+            "id": "b022_leading_lights_pattern",
+            "pattern": "navigation_lights word pattern",
+            "examples": [
+                "leading lights"
+            ]
+        },
+        {
+            "id": "b022_sector_light_pattern",
+            "pattern": "navigation_lights word pattern",
+            "examples": [
+                "sector light"
+            ]
+        },
+        {
+            "id": "b022_fog_signal_pattern",
+            "pattern": "restricted_visibility word pattern",
+            "examples": [
+                "fog signal"
+            ]
+        },
+        {
+            "id": "b022_shoal_pattern",
+            "pattern": "hazard_terms word pattern",
+            "examples": [
+                "shoal"
+            ]
+        },
+        {
+            "id": "b022_wreck_pattern",
+            "pattern": "hazard_terms word pattern",
+            "examples": [
+                "wreck"
+            ]
+        },
+        {
+            "id": "b022_keep_to_starboard_pattern",
+            "pattern": "collision_avoidance short_expression pattern",
+            "examples": [
+                "keep to starboard"
+            ]
+        },
+        {
+            "id": "b022_pass_port_to_port_pattern",
+            "pattern": "collision_avoidance short_expression pattern",
+            "examples": [
+                "pass port to port"
+            ]
+        },
+        {
+            "id": "b022_buoy_missing_pattern",
+            "pattern": "buoyage_reports short_expression pattern",
+            "examples": [
+                "buoy missing"
+            ]
+        },
+        {
+            "id": "b022_light_unlit_pattern",
+            "pattern": "navigation_lights short_expression pattern",
+            "examples": [
+                "light unlit"
+            ]
+        },
+        {
+            "id": "b022_fog_signal_heard_pattern",
+            "pattern": "restricted_visibility short_expression pattern",
+            "examples": [
+                "fog signal heard"
+            ]
+        },
+        {
+            "id": "b022_visibility_reduced_pattern",
+            "pattern": "restricted_visibility short_expression pattern",
+            "examples": [
+                "visibility reduced"
+            ]
+        },
+        {
+            "id": "b022_wreck_reported_pattern",
+            "pattern": "hazard_reports short_expression pattern",
+            "examples": [
+                "wreck reported"
+            ]
+        },
+        {
+            "id": "b022_shoal_ahead_pattern",
+            "pattern": "hazard_reports short_expression pattern",
+            "examples": [
+                "shoal ahead"
+            ]
+        },
+        {
+            "id": "b022_alter_to_port_pattern",
+            "pattern": "course_action short_expression pattern",
+            "examples": [
+                "alter to port"
+            ]
+        },
+        {
+            "id": "b022_alter_to_starboard_pattern",
+            "pattern": "course_action short_expression pattern",
+            "examples": [
+                "alter to starboard"
+            ]
+        },
+        {
+            "id": "b022_cardinal_mark_missing_from_position_pattern",
+            "pattern": "buoyage_reports phrase pattern",
+            "examples": [
+                "Cardinal mark missing from position."
+            ]
+        },
+        {
+            "id": "b022_pass_starboard_of_lateral_mark_pattern",
+            "pattern": "buoyage_reports phrase pattern",
+            "examples": [
+                "Pass starboard of lateral mark."
+            ]
+        },
+        {
+            "id": "b022_isolated_danger_ahead_on_track_pattern",
+            "pattern": "hazard_reports phrase pattern",
+            "examples": [
+                "Isolated danger ahead on track."
+            ]
+        },
+        {
+            "id": "b022_leading_lights_visible_pattern",
+            "pattern": "navigation_lights phrase pattern",
+            "examples": [
+                "Leading lights visible."
+            ]
+        },
+        {
+            "id": "b022_sector_light_showing_red_pattern",
+            "pattern": "navigation_lights phrase pattern",
+            "examples": [
+                "Sector light showing red."
+            ]
+        },
+        {
+            "id": "b022_visibility_reduced_to_one_mile_pattern",
+            "pattern": "restricted_visibility phrase pattern",
+            "examples": [
+                "Visibility reduced to one mile."
+            ]
+        },
+        {
+            "id": "b022_sound_fog_signal_every_two_minutes_pattern",
+            "pattern": "restricted_visibility phrase pattern",
+            "examples": [
+                "Sound fog signal every two minutes."
+            ]
+        },
+        {
+            "id": "b022_wreck_marked_by_buoy_pattern",
+            "pattern": "hazard_reports phrase pattern",
+            "examples": [
+                "Wreck marked by buoy."
+            ]
+        },
+        {
+            "id": "b022_shoal_extends_to_east_pattern",
+            "pattern": "hazard_reports phrase pattern",
+            "examples": [
+                "Shoal extends to east."
+            ]
+        },
+        {
+            "id": "b022_pass_port_to_port_pattern_phrase",
+            "pattern": "collision_avoidance phrase pattern",
+            "examples": [
+                "Pass port to port."
+            ]
+        },
+        {
+            "id": "b022_altering_to_port_to_avoid_shoal_pattern",
+            "pattern": "course_action phrase pattern",
+            "examples": [
+                "Altering to port to avoid shoal."
+            ]
+        },
+        {
+            "id": "b022_altering_to_starboard_due_to_wreck_pattern",
+            "pattern": "course_action phrase pattern",
+            "examples": [
+                "Altering to starboard due to wreck."
+            ]
+        },
+        {
+            "id": "b022_special_mark_north_of_fairway_pattern",
+            "pattern": "buoyage_reports phrase pattern",
+            "examples": [
+                "Special mark north of fairway."
+            ]
+        },
+        {
+            "id": "b022_buoy_light_unlit_pattern",
+            "pattern": "navigation_lights phrase pattern",
+            "examples": [
+                "Buoy light unlit."
+            ]
+        },
+        {
+            "id": "b022_safe_speed_in_restricted_visibility_pattern",
+            "pattern": "restricted_visibility phrase pattern",
+            "examples": [
+                "Safe speed in restricted visibility."
+            ]
+        }
+    ],
+    "dangerous_minimal_pairs": [
+        {
+            "pair": "b022 safety boundary group 1",
+            "items": [
+                "word_b022_cardinal_mark_001",
+                "word_b022_lateral_mark_001",
+                "word_b022_isolated_danger_001",
+                "word_b022_safe_water_mark_001",
+                "word_b022_special_mark_001"
+            ],
+            "must_accept": {
+                "word_b022_cardinal_mark_001": [
+                    "cardinal mark"
+                ],
+                "word_b022_lateral_mark_001": [
+                    "lateral mark"
+                ],
+                "word_b022_isolated_danger_001": [
+                    "isolated danger"
+                ],
+                "word_b022_safe_water_mark_001": [
+                    "safe water mark"
+                ],
+                "word_b022_special_mark_001": [
+                    "special mark"
+                ]
+            },
+            "must_reject": {
+                "word_b022_cardinal_mark_001": [
+                    "lateral mark",
+                    "special mark"
+                ],
+                "word_b022_lateral_mark_001": [
+                    "cardinal mark",
+                    "safe water mark"
+                ],
+                "word_b022_isolated_danger_001": [
+                    "safe water",
+                    "special mark"
+                ],
+                "word_b022_safe_water_mark_001": [
+                    "isolated danger mark",
+                    "special mark"
+                ],
+                "word_b022_special_mark_001": [
+                    "safe water mark",
+                    "cardinal mark"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b022 safety boundary group 2",
+            "items": [
+                "word_b022_leading_lights_001",
+                "word_b022_sector_light_001",
+                "word_b022_fog_signal_001",
+                "word_b022_shoal_001",
+                "word_b022_wreck_001"
+            ],
+            "must_accept": {
+                "word_b022_leading_lights_001": [
+                    "leading lights"
+                ],
+                "word_b022_sector_light_001": [
+                    "sector light"
+                ],
+                "word_b022_fog_signal_001": [
+                    "fog signal"
+                ],
+                "word_b022_shoal_001": [
+                    "shoal"
+                ],
+                "word_b022_wreck_001": [
+                    "wreck"
+                ]
+            },
+            "must_reject": {
+                "word_b022_leading_lights_001": [
+                    "anchor lights",
+                    "sector light"
+                ],
+                "word_b022_sector_light_001": [
+                    "leading lights",
+                    "anchor light"
+                ],
+                "word_b022_fog_signal_001": [
+                    "sound signal only",
+                    "distress signal"
+                ],
+                "word_b022_shoal_001": [
+                    "shore",
+                    "school"
+                ],
+                "word_b022_wreck_001": [
+                    "rock",
+                    "wake"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b022 safety boundary group 3",
+            "items": [
+                "expr_b022_keep_to_starboard_001",
+                "expr_b022_pass_port_to_port_001",
+                "expr_b022_buoy_missing_001",
+                "expr_b022_light_unlit_001",
+                "expr_b022_fog_signal_heard_001"
+            ],
+            "must_accept": {
+                "expr_b022_keep_to_starboard_001": [
+                    "keep to starboard"
+                ],
+                "expr_b022_pass_port_to_port_001": [
+                    "pass port to port"
+                ],
+                "expr_b022_buoy_missing_001": [
+                    "buoy missing"
+                ],
+                "expr_b022_light_unlit_001": [
+                    "light unlit"
+                ],
+                "expr_b022_fog_signal_heard_001": [
+                    "fog signal heard"
+                ]
+            },
+            "must_reject": {
+                "expr_b022_keep_to_starboard_001": [
+                    "keep to port",
+                    "turn to starboard"
+                ],
+                "expr_b022_pass_port_to_port_001": [
+                    "pass starboard to starboard",
+                    "pass port to starboard"
+                ],
+                "expr_b022_buoy_missing_001": [
+                    "buoy sighted",
+                    "light missing"
+                ],
+                "expr_b022_light_unlit_001": [
+                    "light lit",
+                    "buoy unlit"
+                ],
+                "expr_b022_fog_signal_heard_001": [
+                    "distress signal heard",
+                    "fog signal not heard"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b022 safety boundary group 4",
+            "items": [
+                "expr_b022_visibility_reduced_001",
+                "expr_b022_wreck_reported_001",
+                "expr_b022_shoal_ahead_001",
+                "expr_b022_alter_to_port_001",
+                "expr_b022_alter_to_starboard_001"
+            ],
+            "must_accept": {
+                "expr_b022_visibility_reduced_001": [
+                    "visibility reduced"
+                ],
+                "expr_b022_wreck_reported_001": [
+                    "wreck reported"
+                ],
+                "expr_b022_shoal_ahead_001": [
+                    "shoal ahead"
+                ],
+                "expr_b022_alter_to_port_001": [
+                    "alter to port"
+                ],
+                "expr_b022_alter_to_starboard_001": [
+                    "alter to starboard"
+                ]
+            },
+            "must_reject": {
+                "expr_b022_visibility_reduced_001": [
+                    "visibility good",
+                    "speed reduced"
+                ],
+                "expr_b022_wreck_reported_001": [
+                    "rock reported",
+                    "wreck cleared"
+                ],
+                "expr_b022_shoal_ahead_001": [
+                    "shore ahead",
+                    "clear ahead"
+                ],
+                "expr_b022_alter_to_port_001": [
+                    "alter to starboard",
+                    "keep to port"
+                ],
+                "expr_b022_alter_to_starboard_001": [
+                    "alter to port",
+                    "keep to starboard"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b022 safety boundary group 5",
+            "items": [
+                "phrase_b022_cardinal_mark_missing_from_position_001",
+                "phrase_b022_pass_starboard_of_lateral_mark_001",
+                "phrase_b022_isolated_danger_ahead_on_track_001",
+                "phrase_b022_leading_lights_visible_001",
+                "phrase_b022_sector_light_showing_red_001"
+            ],
+            "must_accept": {
+                "phrase_b022_cardinal_mark_missing_from_position_001": [
+                    "Cardinal mark missing from position."
+                ],
+                "phrase_b022_pass_starboard_of_lateral_mark_001": [
+                    "Pass starboard of lateral mark."
+                ],
+                "phrase_b022_isolated_danger_ahead_on_track_001": [
+                    "Isolated danger ahead on track."
+                ],
+                "phrase_b022_leading_lights_visible_001": [
+                    "Leading lights visible."
+                ],
+                "phrase_b022_sector_light_showing_red_001": [
+                    "Sector light showing red."
+                ]
+            },
+            "must_reject": {
+                "phrase_b022_cardinal_mark_missing_from_position_001": [
+                    "Lateral mark missing from position",
+                    "Cardinal mark sighted on position"
+                ],
+                "phrase_b022_pass_starboard_of_lateral_mark_001": [
+                    "Pass port of lateral mark",
+                    "Pass starboard of cardinal mark"
+                ],
+                "phrase_b022_isolated_danger_ahead_on_track_001": [
+                    "Safe water ahead on track",
+                    "Isolated danger astern on track"
+                ],
+                "phrase_b022_leading_lights_visible_001": [
+                    "Leading lights not visible",
+                    "Sector light visible"
+                ],
+                "phrase_b022_sector_light_showing_red_001": [
+                    "Sector light showing green",
+                    "Leading lights showing red"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b022 safety boundary group 6",
+            "items": [
+                "phrase_b022_visibility_reduced_to_one_mile_001",
+                "phrase_b022_sound_fog_signal_every_two_minutes_001",
+                "phrase_b022_wreck_marked_by_buoy_001",
+                "phrase_b022_shoal_extends_to_east_001",
+                "phrase_b022_pass_port_to_port_001"
+            ],
+            "must_accept": {
+                "phrase_b022_visibility_reduced_to_one_mile_001": [
+                    "Visibility reduced to one mile."
+                ],
+                "phrase_b022_sound_fog_signal_every_two_minutes_001": [
+                    "Sound fog signal every two minutes."
+                ],
+                "phrase_b022_wreck_marked_by_buoy_001": [
+                    "Wreck marked by buoy."
+                ],
+                "phrase_b022_shoal_extends_to_east_001": [
+                    "Shoal extends to east."
+                ],
+                "phrase_b022_pass_port_to_port_001": [
+                    "Pass port to port."
+                ]
+            },
+            "must_reject": {
+                "phrase_b022_visibility_reduced_to_one_mile_001": [
+                    "Visibility reduced to two miles",
+                    "Speed reduced to one mile"
+                ],
+                "phrase_b022_sound_fog_signal_every_two_minutes_001": [
+                    "Sound distress signal every two minutes",
+                    "Sound fog signal every one minute"
+                ],
+                "phrase_b022_wreck_marked_by_buoy_001": [
+                    "Rock marked by buoy",
+                    "Wreck not marked by buoy"
+                ],
+                "phrase_b022_shoal_extends_to_east_001": [
+                    "Shoal extends to west",
+                    "Shore extends to east"
+                ],
+                "phrase_b022_pass_port_to_port_001": [
+                    "Pass starboard to starboard",
+                    "Pass port to starboard"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b022 safety boundary group 7",
+            "items": [
+                "phrase_b022_altering_to_port_to_avoid_shoal_001",
+                "phrase_b022_altering_to_starboard_due_to_wreck_001",
+                "phrase_b022_special_mark_north_of_fairway_001",
+                "phrase_b022_buoy_light_unlit_001",
+                "phrase_b022_safe_speed_in_restricted_visibility_001"
+            ],
+            "must_accept": {
+                "phrase_b022_altering_to_port_to_avoid_shoal_001": [
+                    "Altering to port to avoid shoal."
+                ],
+                "phrase_b022_altering_to_starboard_due_to_wreck_001": [
+                    "Altering to starboard due to wreck."
+                ],
+                "phrase_b022_special_mark_north_of_fairway_001": [
+                    "Special mark north of fairway."
+                ],
+                "phrase_b022_buoy_light_unlit_001": [
+                    "Buoy light unlit."
+                ],
+                "phrase_b022_safe_speed_in_restricted_visibility_001": [
+                    "Safe speed in restricted visibility."
+                ]
+            },
+            "must_reject": {
+                "phrase_b022_altering_to_port_to_avoid_shoal_001": [
+                    "Altering to starboard to avoid shoal",
+                    "Altering to port to approach shoal"
+                ],
+                "phrase_b022_altering_to_starboard_due_to_wreck_001": [
+                    "Altering to port due to wreck",
+                    "Altering to starboard due to wake"
+                ],
+                "phrase_b022_special_mark_north_of_fairway_001": [
+                    "Cardinal mark north of fairway",
+                    "Special mark south of fairway"
+                ],
+                "phrase_b022_buoy_light_unlit_001": [
+                    "Buoy light lit",
+                    "Anchor light unlit"
+                ],
+                "phrase_b022_safe_speed_in_restricted_visibility_001": [
+                    "Full speed in restricted visibility",
+                    "Safe speed in clear visibility"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        }
+    ],
+    "producer_notes": {
+        "target_increment": "35 draft vocabulary units toward M4 1000+ items",
+        "type_mix": "10 word, 10 short_expression, 15 phrase",
+        "production_scope": "none",
+        "next_gate": "Sea Speak Linguist Review before engineering gate or merge"
+    }
+}

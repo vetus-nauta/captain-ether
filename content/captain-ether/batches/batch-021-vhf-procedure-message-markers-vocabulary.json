@@ -1,0 +1,1826 @@
+{
+    "version": 1,
+    "batch_id": "batch-021-vhf-procedure-message-markers-vocabulary",
+    "status": "draft",
+    "date": "2026-06-03",
+    "branch": "vhf_procedure_message_markers",
+    "scope": "M4 VHF procedure and message-marker vocabulary draft. Adds call-sign, readback, correction, relay, channel and communication-control terms. Draft only: no starter merge and no production deploy.",
+    "items": [
+        {
+            "id": "word_b021_call_sign_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 6,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "vhf_terms",
+            "source_language": "ru",
+            "source_text": "Позывной.",
+            "target_language": "en",
+            "target_text": "call sign",
+            "accepted_answers": [
+                "call sign"
+            ],
+            "grammar_pattern": "b021_call_sign_pattern",
+            "hint_beginner": "call sign...",
+            "hint_intermediate": "call sign...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "call sign"
+                ],
+                "should_reject": [
+                    "station name",
+                    "channel number",
+                    "vessel type"
+                ],
+                "dangerous_minimal_pairs": [
+                    "call sign / station name / channel number"
+                ],
+                "linguist_note": "Call sign identifies the station and must not become channel or vessel type."
+            }
+        },
+        {
+            "id": "word_b021_station_name_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 6,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "vhf_terms",
+            "source_language": "ru",
+            "source_text": "Название станции.",
+            "target_language": "en",
+            "target_text": "station name",
+            "accepted_answers": [
+                "station name"
+            ],
+            "grammar_pattern": "b021_station_name_pattern",
+            "hint_beginner": "station name...",
+            "hint_intermediate": "station name...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "station name"
+                ],
+                "should_reject": [
+                    "call sign",
+                    "message marker",
+                    "traffic lane"
+                ],
+                "dangerous_minimal_pairs": [
+                    "station name / call sign / marker"
+                ],
+                "linguist_note": "Station name and call sign are related but not interchangeable."
+            }
+        },
+        {
+            "id": "word_b021_working_channel_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 7,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "vhf_terms",
+            "source_language": "ru",
+            "source_text": "Рабочий канал.",
+            "target_language": "en",
+            "target_text": "working channel",
+            "accepted_answers": [
+                "working channel"
+            ],
+            "grammar_pattern": "b021_working_channel_pattern",
+            "hint_beginner": "working channel...",
+            "hint_intermediate": "working channel...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "working channel"
+                ],
+                "should_reject": [
+                    "distress channel",
+                    "weather channel",
+                    "working party"
+                ],
+                "dangerous_minimal_pairs": [
+                    "working channel / distress channel / weather channel"
+                ],
+                "linguist_note": "Working channel must not become distress or weather channel."
+            }
+        },
+        {
+            "id": "word_b021_distress_channel_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "vhf_terms",
+            "source_language": "ru",
+            "source_text": "Канал бедствия.",
+            "target_language": "en",
+            "target_text": "distress channel",
+            "accepted_answers": [
+                "distress channel"
+            ],
+            "grammar_pattern": "b021_distress_channel_pattern",
+            "hint_beginner": "distress channel...",
+            "hint_intermediate": "distress channel...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "distress channel"
+                ],
+                "should_reject": [
+                    "working channel",
+                    "traffic channel",
+                    "distress signal"
+                ],
+                "dangerous_minimal_pairs": [
+                    "distress channel / working channel / distress signal"
+                ],
+                "linguist_note": "Channel and signal are different concepts."
+            }
+        },
+        {
+            "id": "word_b021_message_marker_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 8,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "message_markers",
+            "source_language": "ru",
+            "source_text": "Маркер сообщения.",
+            "target_language": "en",
+            "target_text": "message marker",
+            "accepted_answers": [
+                "message marker"
+            ],
+            "grammar_pattern": "b021_message_marker_pattern",
+            "hint_beginner": "message marker...",
+            "hint_intermediate": "message marker...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "message marker"
+                ],
+                "should_reject": [
+                    "message received",
+                    "station marker",
+                    "danger marker"
+                ],
+                "dangerous_minimal_pairs": [
+                    "message marker / message received"
+                ],
+                "linguist_note": "Marker announces message type, not receipt."
+            }
+        },
+        {
+            "id": "word_b021_repetition_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 7,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "message_markers",
+            "source_language": "ru",
+            "source_text": "Повторение.",
+            "target_language": "en",
+            "target_text": "repetition",
+            "accepted_answers": [
+                "repetition"
+            ],
+            "grammar_pattern": "b021_repetition_pattern",
+            "hint_beginner": "repetition...",
+            "hint_intermediate": "repetition...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "repetition"
+                ],
+                "should_reject": [
+                    "correction",
+                    "cancellation",
+                    "readback"
+                ],
+                "dangerous_minimal_pairs": [
+                    "repetition / correction / cancellation"
+                ],
+                "linguist_note": "Repetition request must stay distinct from correction."
+            }
+        },
+        {
+            "id": "word_b021_correction_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "message_markers",
+            "source_language": "ru",
+            "source_text": "Исправление.",
+            "target_language": "en",
+            "target_text": "correction",
+            "accepted_answers": [
+                "correction"
+            ],
+            "grammar_pattern": "b021_correction_pattern",
+            "hint_beginner": "correction...",
+            "hint_intermediate": "correction...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "correction"
+                ],
+                "should_reject": [
+                    "repetition",
+                    "confirmation",
+                    "question"
+                ],
+                "dangerous_minimal_pairs": [
+                    "correction / repetition / confirmation"
+                ],
+                "linguist_note": "Correction changes content; confirmation does not."
+            }
+        },
+        {
+            "id": "word_b021_relay_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "relay_procedure",
+            "source_language": "ru",
+            "source_text": "Ретрансляция.",
+            "target_language": "en",
+            "target_text": "relay",
+            "accepted_answers": [
+                "relay"
+            ],
+            "grammar_pattern": "b021_relay_pattern",
+            "hint_beginner": "relay...",
+            "hint_intermediate": "relay...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "relay"
+                ],
+                "should_reject": [
+                    "postpone",
+                    "reply",
+                    "readback"
+                ],
+                "dangerous_minimal_pairs": [
+                    "relay / reply / readback"
+                ],
+                "linguist_note": "Relay is message forwarding, not reply or readback."
+            }
+        },
+        {
+            "id": "word_b021_interference_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "vhf_terms",
+            "source_language": "ru",
+            "source_text": "Помехи.",
+            "target_language": "en",
+            "target_text": "interference",
+            "accepted_answers": [
+                "interference"
+            ],
+            "grammar_pattern": "b021_interference_pattern",
+            "hint_beginner": "interference...",
+            "hint_intermediate": "interference...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "interference"
+                ],
+                "should_reject": [
+                    "silence",
+                    "weak signal",
+                    "clear signal"
+                ],
+                "dangerous_minimal_pairs": [
+                    "interference / silence / weak signal"
+                ],
+                "linguist_note": "Interference is signal problem, not silence instruction."
+            }
+        },
+        {
+            "id": "word_b021_priority_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "vhf_terms",
+            "source_language": "ru",
+            "source_text": "Срочность.",
+            "target_language": "en",
+            "target_text": "priority",
+            "accepted_answers": [
+                "priority"
+            ],
+            "grammar_pattern": "b021_priority_pattern",
+            "hint_beginner": "priority...",
+            "hint_intermediate": "priority...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "priority"
+                ],
+                "should_reject": [
+                    "routine",
+                    "security",
+                    "position"
+                ],
+                "dangerous_minimal_pairs": [
+                    "priority / routine / security"
+                ],
+                "linguist_note": "Priority level must not collapse into routine or security."
+            }
+        },
+        {
+            "id": "expr_b021_say_again_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "communication_control",
+            "source_language": "ru",
+            "source_text": "Повторите.",
+            "target_language": "en",
+            "target_text": "say again",
+            "accepted_answers": [
+                "say again"
+            ],
+            "grammar_pattern": "b021_say_again_pattern",
+            "hint_beginner": "say again...",
+            "hint_intermediate": "say again...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "say again"
+                ],
+                "should_reject": [
+                    "stand by",
+                    "message received",
+                    "read back"
+                ],
+                "dangerous_minimal_pairs": [
+                    "say again / stand by / read back"
+                ],
+                "linguist_note": "Request for repetition must not become acknowledgement."
+            }
+        },
+        {
+            "id": "expr_b021_speak_slowly_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "communication_control",
+            "source_language": "ru",
+            "source_text": "Говорите медленно.",
+            "target_language": "en",
+            "target_text": "speak slowly",
+            "accepted_answers": [
+                "speak slowly"
+            ],
+            "grammar_pattern": "b021_speak_slowly_pattern",
+            "hint_beginner": "speak slowly...",
+            "hint_intermediate": "speak slowly...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "speak slowly"
+                ],
+                "should_reject": [
+                    "speak louder",
+                    "stand by",
+                    "keep listening"
+                ],
+                "dangerous_minimal_pairs": [
+                    "slowly / louder / stand by"
+                ],
+                "linguist_note": "Speech-rate request must remain exact."
+            }
+        },
+        {
+            "id": "expr_b021_wait_one_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "communication_control",
+            "source_language": "ru",
+            "source_text": "Ждите один.",
+            "target_language": "en",
+            "target_text": "wait one",
+            "accepted_answers": [
+                "wait one"
+            ],
+            "grammar_pattern": "b021_wait_one_pattern",
+            "hint_beginner": "wait one...",
+            "hint_intermediate": "wait one...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "wait one"
+                ],
+                "should_reject": [
+                    "wait two",
+                    "proceed one",
+                    "switch one"
+                ],
+                "dangerous_minimal_pairs": [
+                    "wait one / wait two / proceed"
+                ],
+                "linguist_note": "Short wait instruction and number must remain exact."
+            }
+        },
+        {
+            "id": "expr_b021_switch_channel_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "channel_control",
+            "source_language": "ru",
+            "source_text": "Смените канал.",
+            "target_language": "en",
+            "target_text": "switch channel",
+            "accepted_answers": [
+                "switch channel"
+            ],
+            "grammar_pattern": "b021_switch_channel_pattern",
+            "hint_beginner": "switch channel...",
+            "hint_intermediate": "switch channel...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "switch channel"
+                ],
+                "should_reject": [
+                    "hold channel",
+                    "close channel",
+                    "report channel"
+                ],
+                "dangerous_minimal_pairs": [
+                    "switch / hold / close channel"
+                ],
+                "linguist_note": "Channel change command must not become hold/close."
+            }
+        },
+        {
+            "id": "expr_b021_read_back_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "readback_procedure",
+            "source_language": "ru",
+            "source_text": "Повторите принятое.",
+            "target_language": "en",
+            "target_text": "read back",
+            "accepted_answers": [
+                "read back"
+            ],
+            "grammar_pattern": "b021_read_back_pattern",
+            "hint_beginner": "read back...",
+            "hint_intermediate": "read back...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "read back"
+                ],
+                "should_reject": [
+                    "say again",
+                    "stand by",
+                    "report back"
+                ],
+                "dangerous_minimal_pairs": [
+                    "read back / say again / stand by"
+                ],
+                "linguist_note": "Readback is not a repetition request."
+            }
+        },
+        {
+            "id": "expr_b021_correction_follows_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "message_markers",
+            "source_language": "ru",
+            "source_text": "Следует исправление.",
+            "target_language": "en",
+            "target_text": "correction follows",
+            "accepted_answers": [
+                "correction follows"
+            ],
+            "grammar_pattern": "b021_correction_follows_pattern",
+            "hint_beginner": "correction follows...",
+            "hint_intermediate": "correction follows...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "correction follows"
+                ],
+                "should_reject": [
+                    "repetition follows",
+                    "question follows",
+                    "message follows"
+                ],
+                "dangerous_minimal_pairs": [
+                    "correction / repetition / question follows"
+                ],
+                "linguist_note": "Correction marker must remain exact."
+            }
+        },
+        {
+            "id": "expr_b021_message_received_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "acknowledgement",
+            "source_language": "ru",
+            "source_text": "Сообщение принято.",
+            "target_language": "en",
+            "target_text": "message received",
+            "accepted_answers": [
+                "message received"
+            ],
+            "grammar_pattern": "b021_message_received_pattern",
+            "hint_beginner": "message received...",
+            "hint_intermediate": "message received...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "message received"
+                ],
+                "should_reject": [
+                    "message repeated",
+                    "message cancelled",
+                    "message marker"
+                ],
+                "dangerous_minimal_pairs": [
+                    "received / repeated / cancelled"
+                ],
+                "linguist_note": "Acknowledgement must not become cancellation."
+            }
+        },
+        {
+            "id": "expr_b021_standing_by_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "communication_control",
+            "source_language": "ru",
+            "source_text": "Остаюсь на связи.",
+            "target_language": "en",
+            "target_text": "standing by",
+            "accepted_answers": [
+                "standing by"
+            ],
+            "grammar_pattern": "b021_standing_by_pattern",
+            "hint_beginner": "standing by...",
+            "hint_intermediate": "standing by...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "standing by"
+                ],
+                "should_reject": [
+                    "stand clear",
+                    "shutting down",
+                    "going ahead"
+                ],
+                "dangerous_minimal_pairs": [
+                    "standing by / stand clear / shutting down"
+                ],
+                "linguist_note": "Radio standby must not become movement or shutdown."
+            }
+        },
+        {
+            "id": "expr_b021_end_of_message_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "message_markers",
+            "source_language": "ru",
+            "source_text": "Конец сообщения.",
+            "target_language": "en",
+            "target_text": "end of message",
+            "accepted_answers": [
+                "end of message"
+            ],
+            "grammar_pattern": "b021_end_of_message_pattern",
+            "hint_beginner": "end of...",
+            "hint_intermediate": "end of message...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "end of message"
+                ],
+                "should_reject": [
+                    "start of message",
+                    "end of watch",
+                    "message received"
+                ],
+                "dangerous_minimal_pairs": [
+                    "end/start; message/watch"
+                ],
+                "linguist_note": "Message boundary must remain exact."
+            }
+        },
+        {
+            "id": "expr_b021_relay_message_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 10,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "relay_procedure",
+            "source_language": "ru",
+            "source_text": "Передайте сообщение.",
+            "target_language": "en",
+            "target_text": "relay message",
+            "accepted_answers": [
+                "relay message"
+            ],
+            "grammar_pattern": "b021_relay_message_pattern",
+            "hint_beginner": "relay message...",
+            "hint_intermediate": "relay message...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "relay message"
+                ],
+                "should_reject": [
+                    "store message",
+                    "reply message",
+                    "cancel message"
+                ],
+                "dangerous_minimal_pairs": [
+                    "relay / delay / reply / cancel"
+                ],
+                "linguist_note": "Relay action must not become delay/reply/cancel."
+            }
+        },
+        {
+            "id": "phrase_b021_all_stations_this_is_aurora_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 12,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "station_calls",
+            "source_language": "ru",
+            "source_text": "Всем станциям, это Аврора.",
+            "target_language": "en",
+            "target_text": "All stations, this is Aurora.",
+            "accepted_answers": [
+                "All stations, this is Aurora."
+            ],
+            "grammar_pattern": "b021_all_stations_this_is_aurora_pattern",
+            "hint_beginner": "All stations,...",
+            "hint_intermediate": "All stations, this is...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "All stations, this is Aurora.",
+                    "All stations this is Aurora"
+                ],
+                "should_reject": [
+                    "All stations this is Orion",
+                    "Port Control this is Aurora",
+                    "All vessels this is Aurora"
+                ],
+                "dangerous_minimal_pairs": [
+                    "All stations / Port Control; Aurora / Orion"
+                ],
+                "linguist_note": "Broadcast addressee and vessel identity must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b021_switch_to_channel_one_two_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "channel_control",
+            "source_language": "ru",
+            "source_text": "Перейдите на канал один два.",
+            "target_language": "en",
+            "target_text": "Switch to channel one two.",
+            "accepted_answers": [
+                "Switch to channel one two.",
+                "Switch to channel 12"
+            ],
+            "grammar_pattern": "b021_switch_to_channel_one_two_pattern",
+            "hint_beginner": "Switch to...",
+            "hint_intermediate": "Switch to channel one...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Switch to channel one two.",
+                    "Switch to channel 12"
+                ],
+                "should_reject": [
+                    "Switch to channel one six",
+                    "Hold channel one two",
+                    "Close channel one two"
+                ],
+                "dangerous_minimal_pairs": [
+                    "channel 12 / 16; switch / hold"
+                ],
+                "linguist_note": "Channel and action are operationally critical."
+            }
+        },
+        {
+            "id": "phrase_b021_say_again_last_message_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 12,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "communication_control",
+            "source_language": "ru",
+            "source_text": "Повторите последнее сообщение.",
+            "target_language": "en",
+            "target_text": "Say again last message.",
+            "accepted_answers": [
+                "Say again last message."
+            ],
+            "grammar_pattern": "b021_say_again_last_message_pattern",
+            "hint_beginner": "Say again...",
+            "hint_intermediate": "Say again last message....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Say again last message.",
+                    "Say again the last message"
+                ],
+                "should_reject": [
+                    "Read back last message",
+                    "Cancel last message",
+                    "Say again first message"
+                ],
+                "dangerous_minimal_pairs": [
+                    "say again / read back / cancel; last / first"
+                ],
+                "linguist_note": "Repetition request must not become readback or cancellation."
+            }
+        },
+        {
+            "id": "phrase_b021_speak_slowly_signal_weak_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "communication_control",
+            "source_language": "ru",
+            "source_text": "Говорите медленно, сигнал слабый.",
+            "target_language": "en",
+            "target_text": "Speak slowly, signal weak.",
+            "accepted_answers": [
+                "Speak slowly, signal weak."
+            ],
+            "grammar_pattern": "b021_speak_slowly_signal_weak_pattern",
+            "hint_beginner": "Speak slowly,...",
+            "hint_intermediate": "Speak slowly, signal weak....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Speak slowly, signal weak.",
+                    "Speak slowly signal weak"
+                ],
+                "should_reject": [
+                    "Speak louder signal weak",
+                    "Speak slowly signal clear",
+                    "Stand by signal weak"
+                ],
+                "dangerous_minimal_pairs": [
+                    "slowly/louder; weak/clear"
+                ],
+                "linguist_note": "Signal condition and speech request must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b021_read_back_course_two_seven_zero_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 14,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "readback_procedure",
+            "source_language": "ru",
+            "source_text": "Повторите курс два семь ноль.",
+            "target_language": "en",
+            "target_text": "Read back course two seven zero.",
+            "accepted_answers": [
+                "Read back course two seven zero.",
+                "Read back course 270"
+            ],
+            "grammar_pattern": "b021_read_back_course_two_seven_zero_pattern",
+            "hint_beginner": "Read back...",
+            "hint_intermediate": "Read back course two...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Read back course two seven zero.",
+                    "Read back course 270"
+                ],
+                "should_reject": [
+                    "Read back course two eight zero",
+                    "Say again course two seven zero",
+                    "Read back speed two seven zero"
+                ],
+                "dangerous_minimal_pairs": [
+                    "course/speed; 270/280; read back/say again"
+                ],
+                "linguist_note": "Course readback must preserve number and field."
+            }
+        },
+        {
+            "id": "phrase_b021_correction_channel_one_two_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "message_markers",
+            "source_language": "ru",
+            "source_text": "Исправление: канал один два.",
+            "target_language": "en",
+            "target_text": "Correction, channel one two.",
+            "accepted_answers": [
+                "Correction, channel one two.",
+                "Correction channel 12"
+            ],
+            "grammar_pattern": "b021_correction_channel_one_two_pattern",
+            "hint_beginner": "Correction, channel...",
+            "hint_intermediate": "Correction, channel one two....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Correction, channel one two.",
+                    "Correction channel 12"
+                ],
+                "should_reject": [
+                    "Repetition channel one two",
+                    "Correction channel one six",
+                    "Question channel one two"
+                ],
+                "dangerous_minimal_pairs": [
+                    "correction/repetition/question; channel 12/16"
+                ],
+                "linguist_note": "Correction marker and channel must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b021_message_received_standing_by_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "acknowledgement",
+            "source_language": "ru",
+            "source_text": "Сообщение принято, остаюсь на связи.",
+            "target_language": "en",
+            "target_text": "Message received, standing by.",
+            "accepted_answers": [
+                "Message received, standing by."
+            ],
+            "grammar_pattern": "b021_message_received_standing_by_pattern",
+            "hint_beginner": "Message received,...",
+            "hint_intermediate": "Message received, standing by....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Message received, standing by.",
+                    "Message received standing by"
+                ],
+                "should_reject": [
+                    "Message cancelled standing by",
+                    "Message received shutting down",
+                    "Message repeated standing by"
+                ],
+                "dangerous_minimal_pairs": [
+                    "received/cancelled/repeated; standby/shutdown"
+                ],
+                "linguist_note": "Acknowledgement and standby must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b021_relay_message_to_coast_station_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "relay_procedure",
+            "source_language": "ru",
+            "source_text": "Передайте сообщение береговой станции.",
+            "target_language": "en",
+            "target_text": "Relay message to coast station.",
+            "accepted_answers": [
+                "Relay message to coast station."
+            ],
+            "grammar_pattern": "b021_relay_message_to_coast_station_pattern",
+            "hint_beginner": "Relay message...",
+            "hint_intermediate": "Relay message to coast...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Relay message to coast station.",
+                    "Relay the message to coast station"
+                ],
+                "should_reject": [
+                    "Store message at coast station",
+                    "Relay message to pilot station",
+                    "Cancel message to coast station"
+                ],
+                "dangerous_minimal_pairs": [
+                    "relay/delay/cancel; coast/pilot station"
+                ],
+                "linguist_note": "Relay destination and action must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b021_interference_on_working_channel_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "interference_report",
+            "source_language": "ru",
+            "source_text": "Помехи на рабочем канале.",
+            "target_language": "en",
+            "target_text": "Interference on working channel.",
+            "accepted_answers": [
+                "Interference on working channel."
+            ],
+            "grammar_pattern": "b021_interference_on_working_channel_pattern",
+            "hint_beginner": "Interference on...",
+            "hint_intermediate": "Interference on working channel....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Interference on working channel.",
+                    "Interference on the working channel"
+                ],
+                "should_reject": [
+                    "Silence on working channel",
+                    "Interference on distress channel",
+                    "Weak signal on working channel"
+                ],
+                "dangerous_minimal_pairs": [
+                    "interference/silence/weak signal; working/distress channel"
+                ],
+                "linguist_note": "Signal problem and channel type must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b021_wait_one_checking_position_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "communication_control",
+            "source_language": "ru",
+            "source_text": "Ждите один, я проверяю позицию.",
+            "target_language": "en",
+            "target_text": "Wait one, checking position.",
+            "accepted_answers": [
+                "Wait one, checking position."
+            ],
+            "grammar_pattern": "b021_wait_one_checking_position_pattern",
+            "hint_beginner": "Wait one,...",
+            "hint_intermediate": "Wait one, checking position....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Wait one, checking position.",
+                    "Wait one checking position"
+                ],
+                "should_reject": [
+                    "Wait two checking position",
+                    "Wait one reporting position",
+                    "Proceed one checking position"
+                ],
+                "dangerous_minimal_pairs": [
+                    "wait one/two; checking/reporting/proceed"
+                ],
+                "linguist_note": "Delay number and action must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b021_message_marker_question_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "message_markers",
+            "source_language": "ru",
+            "source_text": "Метка сообщения: вопрос.",
+            "target_language": "en",
+            "target_text": "Message marker, question.",
+            "accepted_answers": [
+                "Message marker, question."
+            ],
+            "grammar_pattern": "b021_message_marker_question_pattern",
+            "hint_beginner": "Message marker,...",
+            "hint_intermediate": "Message marker, question....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Message marker, question.",
+                    "Message marker question"
+                ],
+                "should_reject": [
+                    "Message marker answer",
+                    "Message received question",
+                    "Message marker correction"
+                ],
+                "dangerous_minimal_pairs": [
+                    "marker/received; question/answer/correction"
+                ],
+                "linguist_note": "Message marker type must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b021_priority_message_follows_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "priority_messages",
+            "source_language": "ru",
+            "source_text": "Приоритетное сообщение следует.",
+            "target_language": "en",
+            "target_text": "Priority message follows.",
+            "accepted_answers": [
+                "Priority message follows.",
+                "Priority message is following"
+            ],
+            "grammar_pattern": "b021_priority_message_follows_pattern",
+            "hint_beginner": "Priority message...",
+            "hint_intermediate": "Priority message follows....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Priority message follows.",
+                    "Priority message is following"
+                ],
+                "should_reject": [
+                    "Routine message follows",
+                    "Priority message cancelled",
+                    "Security message follows"
+                ],
+                "dangerous_minimal_pairs": [
+                    "priority/routine/security; follows/cancelled"
+                ],
+                "linguist_note": "Priority status must not be downgraded or cancelled."
+            }
+        },
+        {
+            "id": "phrase_b021_readback_incorrect_correcting_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "readback_procedure",
+            "source_language": "ru",
+            "source_text": "Повтор принятого неверен, исправляю.",
+            "target_language": "en",
+            "target_text": "Readback incorrect, correcting.",
+            "accepted_answers": [
+                "Readback incorrect, correcting.",
+                "Read back incorrect correcting"
+            ],
+            "grammar_pattern": "b021_readback_incorrect_correcting_pattern",
+            "hint_beginner": "Readback incorrect,...",
+            "hint_intermediate": "Readback incorrect, correcting....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Readback incorrect, correcting.",
+                    "Read back incorrect correcting"
+                ],
+                "should_reject": [
+                    "Readback correct correcting",
+                    "Readback incorrect cancelling",
+                    "Repetition incorrect correcting"
+                ],
+                "dangerous_minimal_pairs": [
+                    "correct/incorrect; correcting/cancelling; readback/repetition"
+                ],
+                "linguist_note": "Incorrect readback and correction action must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b021_end_of_message_switching_channel_one_two_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "message_closure",
+            "source_language": "ru",
+            "source_text": "Конец сообщения, перехожу на канал один два.",
+            "target_language": "en",
+            "target_text": "End of message, switching channel one two.",
+            "accepted_answers": [
+                "End of message, switching channel one two.",
+                "End of message switching channel 12"
+            ],
+            "grammar_pattern": "b021_end_of_message_switching_channel_one_two_pattern",
+            "hint_beginner": "End of...",
+            "hint_intermediate": "End of message, switching...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "End of message, switching channel one two.",
+                    "End of message switching channel 12"
+                ],
+                "should_reject": [
+                    "Start of message switching channel one two",
+                    "End of message switching channel one six",
+                    "End of watch switching channel one two"
+                ],
+                "dangerous_minimal_pairs": [
+                    "end/start; message/watch; channel 12/16"
+                ],
+                "linguist_note": "Closure and channel must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b021_relay_distress_message_to_all_stations_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "distress_relay",
+            "source_language": "ru",
+            "source_text": "Передайте бедственное сообщение всем станциям.",
+            "target_language": "en",
+            "target_text": "Relay distress message to all stations.",
+            "accepted_answers": [
+                "Relay distress message to all stations."
+            ],
+            "grammar_pattern": "b021_relay_distress_message_to_all_stations_pattern",
+            "hint_beginner": "Relay distress...",
+            "hint_intermediate": "Relay distress message to...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Relay distress message to all stations.",
+                    "Relay the distress message to all stations"
+                ],
+                "should_reject": [
+                    "Store distress message for all stations",
+                    "Relay urgency message to all stations",
+                    "Relay distress message to one station"
+                ],
+                "dangerous_minimal_pairs": [
+                    "relay/delay; distress/urgency; all/one station"
+                ],
+                "linguist_note": "Distress relay must preserve action, signal class, and addressee."
+            }
+        }
+    ],
+    "grammar_patterns": [
+        {
+            "id": "b021_call_sign_pattern",
+            "pattern": "vhf_terms word pattern",
+            "examples": [
+                "call sign"
+            ]
+        },
+        {
+            "id": "b021_station_name_pattern",
+            "pattern": "vhf_terms word pattern",
+            "examples": [
+                "station name"
+            ]
+        },
+        {
+            "id": "b021_working_channel_pattern",
+            "pattern": "vhf_terms word pattern",
+            "examples": [
+                "working channel"
+            ]
+        },
+        {
+            "id": "b021_distress_channel_pattern",
+            "pattern": "vhf_terms word pattern",
+            "examples": [
+                "distress channel"
+            ]
+        },
+        {
+            "id": "b021_message_marker_pattern",
+            "pattern": "message_markers word pattern",
+            "examples": [
+                "message marker"
+            ]
+        },
+        {
+            "id": "b021_repetition_pattern",
+            "pattern": "message_markers word pattern",
+            "examples": [
+                "repetition"
+            ]
+        },
+        {
+            "id": "b021_correction_pattern",
+            "pattern": "message_markers word pattern",
+            "examples": [
+                "correction"
+            ]
+        },
+        {
+            "id": "b021_relay_pattern",
+            "pattern": "relay_procedure word pattern",
+            "examples": [
+                "relay"
+            ]
+        },
+        {
+            "id": "b021_interference_pattern",
+            "pattern": "vhf_terms word pattern",
+            "examples": [
+                "interference"
+            ]
+        },
+        {
+            "id": "b021_priority_pattern",
+            "pattern": "vhf_terms word pattern",
+            "examples": [
+                "priority"
+            ]
+        },
+        {
+            "id": "b021_say_again_pattern",
+            "pattern": "communication_control short_expression pattern",
+            "examples": [
+                "say again"
+            ]
+        },
+        {
+            "id": "b021_speak_slowly_pattern",
+            "pattern": "communication_control short_expression pattern",
+            "examples": [
+                "speak slowly"
+            ]
+        },
+        {
+            "id": "b021_wait_one_pattern",
+            "pattern": "communication_control short_expression pattern",
+            "examples": [
+                "wait one"
+            ]
+        },
+        {
+            "id": "b021_switch_channel_pattern",
+            "pattern": "channel_control short_expression pattern",
+            "examples": [
+                "switch channel"
+            ]
+        },
+        {
+            "id": "b021_read_back_pattern",
+            "pattern": "readback_procedure short_expression pattern",
+            "examples": [
+                "read back"
+            ]
+        },
+        {
+            "id": "b021_correction_follows_pattern",
+            "pattern": "message_markers short_expression pattern",
+            "examples": [
+                "correction follows"
+            ]
+        },
+        {
+            "id": "b021_message_received_pattern",
+            "pattern": "acknowledgement short_expression pattern",
+            "examples": [
+                "message received"
+            ]
+        },
+        {
+            "id": "b021_standing_by_pattern",
+            "pattern": "communication_control short_expression pattern",
+            "examples": [
+                "standing by"
+            ]
+        },
+        {
+            "id": "b021_end_of_message_pattern",
+            "pattern": "message_markers short_expression pattern",
+            "examples": [
+                "end of message"
+            ]
+        },
+        {
+            "id": "b021_relay_message_pattern",
+            "pattern": "relay_procedure short_expression pattern",
+            "examples": [
+                "relay message"
+            ]
+        },
+        {
+            "id": "b021_all_stations_this_is_aurora_pattern",
+            "pattern": "station_calls phrase pattern",
+            "examples": [
+                "All stations, this is Aurora."
+            ]
+        },
+        {
+            "id": "b021_switch_to_channel_one_two_pattern",
+            "pattern": "channel_control phrase pattern",
+            "examples": [
+                "Switch to channel one two."
+            ]
+        },
+        {
+            "id": "b021_say_again_last_message_pattern",
+            "pattern": "communication_control phrase pattern",
+            "examples": [
+                "Say again last message."
+            ]
+        },
+        {
+            "id": "b021_speak_slowly_signal_weak_pattern",
+            "pattern": "communication_control phrase pattern",
+            "examples": [
+                "Speak slowly, signal weak."
+            ]
+        },
+        {
+            "id": "b021_read_back_course_two_seven_zero_pattern",
+            "pattern": "readback_procedure phrase pattern",
+            "examples": [
+                "Read back course two seven zero."
+            ]
+        },
+        {
+            "id": "b021_correction_channel_one_two_pattern",
+            "pattern": "message_markers phrase pattern",
+            "examples": [
+                "Correction, channel one two."
+            ]
+        },
+        {
+            "id": "b021_message_received_standing_by_pattern",
+            "pattern": "acknowledgement phrase pattern",
+            "examples": [
+                "Message received, standing by."
+            ]
+        },
+        {
+            "id": "b021_relay_message_to_coast_station_pattern",
+            "pattern": "relay_procedure phrase pattern",
+            "examples": [
+                "Relay message to coast station."
+            ]
+        },
+        {
+            "id": "b021_interference_on_working_channel_pattern",
+            "pattern": "interference_report phrase pattern",
+            "examples": [
+                "Interference on working channel."
+            ]
+        },
+        {
+            "id": "b021_wait_one_checking_position_pattern",
+            "pattern": "communication_control phrase pattern",
+            "examples": [
+                "Wait one, checking position."
+            ]
+        },
+        {
+            "id": "b021_message_marker_question_pattern",
+            "pattern": "message_markers phrase pattern",
+            "examples": [
+                "Message marker, question."
+            ]
+        },
+        {
+            "id": "b021_priority_message_follows_pattern",
+            "pattern": "priority_messages phrase pattern",
+            "examples": [
+                "Priority message follows."
+            ]
+        },
+        {
+            "id": "b021_readback_incorrect_correcting_pattern",
+            "pattern": "readback_procedure phrase pattern",
+            "examples": [
+                "Readback incorrect, correcting."
+            ]
+        },
+        {
+            "id": "b021_end_of_message_switching_channel_one_two_pattern",
+            "pattern": "message_closure phrase pattern",
+            "examples": [
+                "End of message, switching channel one two."
+            ]
+        },
+        {
+            "id": "b021_relay_distress_message_to_all_stations_pattern",
+            "pattern": "distress_relay phrase pattern",
+            "examples": [
+                "Relay distress message to all stations."
+            ]
+        }
+    ],
+    "dangerous_minimal_pairs": [
+        {
+            "pair": "b021 safety boundary group 1",
+            "items": [
+                "word_b021_call_sign_001",
+                "word_b021_station_name_001",
+                "word_b021_working_channel_001",
+                "word_b021_distress_channel_001",
+                "word_b021_message_marker_001"
+            ],
+            "must_accept": {
+                "word_b021_call_sign_001": [
+                    "call sign"
+                ],
+                "word_b021_station_name_001": [
+                    "station name"
+                ],
+                "word_b021_working_channel_001": [
+                    "working channel"
+                ],
+                "word_b021_distress_channel_001": [
+                    "distress channel"
+                ],
+                "word_b021_message_marker_001": [
+                    "message marker"
+                ]
+            },
+            "must_reject": {
+                "word_b021_call_sign_001": [
+                    "station name",
+                    "channel number"
+                ],
+                "word_b021_station_name_001": [
+                    "call sign",
+                    "message marker"
+                ],
+                "word_b021_working_channel_001": [
+                    "distress channel",
+                    "weather channel"
+                ],
+                "word_b021_distress_channel_001": [
+                    "working channel",
+                    "traffic channel"
+                ],
+                "word_b021_message_marker_001": [
+                    "message received",
+                    "station marker"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b021 safety boundary group 2",
+            "items": [
+                "word_b021_repetition_001",
+                "word_b021_correction_001",
+                "word_b021_relay_001",
+                "word_b021_interference_001",
+                "word_b021_priority_001"
+            ],
+            "must_accept": {
+                "word_b021_repetition_001": [
+                    "repetition"
+                ],
+                "word_b021_correction_001": [
+                    "correction"
+                ],
+                "word_b021_relay_001": [
+                    "relay"
+                ],
+                "word_b021_interference_001": [
+                    "interference"
+                ],
+                "word_b021_priority_001": [
+                    "priority"
+                ]
+            },
+            "must_reject": {
+                "word_b021_repetition_001": [
+                    "correction",
+                    "cancellation"
+                ],
+                "word_b021_correction_001": [
+                    "repetition",
+                    "confirmation"
+                ],
+                "word_b021_relay_001": [
+                    "postpone",
+                    "reply"
+                ],
+                "word_b021_interference_001": [
+                    "silence",
+                    "weak signal"
+                ],
+                "word_b021_priority_001": [
+                    "routine",
+                    "security"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b021 safety boundary group 3",
+            "items": [
+                "expr_b021_say_again_001",
+                "expr_b021_speak_slowly_001",
+                "expr_b021_wait_one_001",
+                "expr_b021_switch_channel_001",
+                "expr_b021_read_back_001"
+            ],
+            "must_accept": {
+                "expr_b021_say_again_001": [
+                    "say again"
+                ],
+                "expr_b021_speak_slowly_001": [
+                    "speak slowly"
+                ],
+                "expr_b021_wait_one_001": [
+                    "wait one"
+                ],
+                "expr_b021_switch_channel_001": [
+                    "switch channel"
+                ],
+                "expr_b021_read_back_001": [
+                    "read back"
+                ]
+            },
+            "must_reject": {
+                "expr_b021_say_again_001": [
+                    "stand by",
+                    "message received"
+                ],
+                "expr_b021_speak_slowly_001": [
+                    "speak louder",
+                    "stand by"
+                ],
+                "expr_b021_wait_one_001": [
+                    "wait two",
+                    "proceed one"
+                ],
+                "expr_b021_switch_channel_001": [
+                    "hold channel",
+                    "close channel"
+                ],
+                "expr_b021_read_back_001": [
+                    "say again",
+                    "stand by"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b021 safety boundary group 4",
+            "items": [
+                "expr_b021_correction_follows_001",
+                "expr_b021_message_received_001",
+                "expr_b021_standing_by_001",
+                "expr_b021_end_of_message_001",
+                "expr_b021_relay_message_001"
+            ],
+            "must_accept": {
+                "expr_b021_correction_follows_001": [
+                    "correction follows"
+                ],
+                "expr_b021_message_received_001": [
+                    "message received"
+                ],
+                "expr_b021_standing_by_001": [
+                    "standing by"
+                ],
+                "expr_b021_end_of_message_001": [
+                    "end of message"
+                ],
+                "expr_b021_relay_message_001": [
+                    "relay message"
+                ]
+            },
+            "must_reject": {
+                "expr_b021_correction_follows_001": [
+                    "repetition follows",
+                    "question follows"
+                ],
+                "expr_b021_message_received_001": [
+                    "message repeated",
+                    "message cancelled"
+                ],
+                "expr_b021_standing_by_001": [
+                    "stand clear",
+                    "shutting down"
+                ],
+                "expr_b021_end_of_message_001": [
+                    "start of message",
+                    "end of watch"
+                ],
+                "expr_b021_relay_message_001": [
+                    "store message",
+                    "reply message"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b021 safety boundary group 5",
+            "items": [
+                "phrase_b021_all_stations_this_is_aurora_001",
+                "phrase_b021_switch_to_channel_one_two_001",
+                "phrase_b021_say_again_last_message_001",
+                "phrase_b021_speak_slowly_signal_weak_001",
+                "phrase_b021_read_back_course_two_seven_zero_001"
+            ],
+            "must_accept": {
+                "phrase_b021_all_stations_this_is_aurora_001": [
+                    "All stations, this is Aurora."
+                ],
+                "phrase_b021_switch_to_channel_one_two_001": [
+                    "Switch to channel one two."
+                ],
+                "phrase_b021_say_again_last_message_001": [
+                    "Say again last message."
+                ],
+                "phrase_b021_speak_slowly_signal_weak_001": [
+                    "Speak slowly, signal weak."
+                ],
+                "phrase_b021_read_back_course_two_seven_zero_001": [
+                    "Read back course two seven zero."
+                ]
+            },
+            "must_reject": {
+                "phrase_b021_all_stations_this_is_aurora_001": [
+                    "All stations this is Orion",
+                    "Port Control this is Aurora"
+                ],
+                "phrase_b021_switch_to_channel_one_two_001": [
+                    "Switch to channel one six",
+                    "Hold channel one two"
+                ],
+                "phrase_b021_say_again_last_message_001": [
+                    "Read back last message",
+                    "Cancel last message"
+                ],
+                "phrase_b021_speak_slowly_signal_weak_001": [
+                    "Speak louder signal weak",
+                    "Speak slowly signal clear"
+                ],
+                "phrase_b021_read_back_course_two_seven_zero_001": [
+                    "Read back course two eight zero",
+                    "Say again course two seven zero"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b021 safety boundary group 6",
+            "items": [
+                "phrase_b021_correction_channel_one_two_001",
+                "phrase_b021_message_received_standing_by_001",
+                "phrase_b021_relay_message_to_coast_station_001",
+                "phrase_b021_interference_on_working_channel_001",
+                "phrase_b021_wait_one_checking_position_001"
+            ],
+            "must_accept": {
+                "phrase_b021_correction_channel_one_two_001": [
+                    "Correction, channel one two."
+                ],
+                "phrase_b021_message_received_standing_by_001": [
+                    "Message received, standing by."
+                ],
+                "phrase_b021_relay_message_to_coast_station_001": [
+                    "Relay message to coast station."
+                ],
+                "phrase_b021_interference_on_working_channel_001": [
+                    "Interference on working channel."
+                ],
+                "phrase_b021_wait_one_checking_position_001": [
+                    "Wait one, checking position."
+                ]
+            },
+            "must_reject": {
+                "phrase_b021_correction_channel_one_two_001": [
+                    "Repetition channel one two",
+                    "Correction channel one six"
+                ],
+                "phrase_b021_message_received_standing_by_001": [
+                    "Message cancelled standing by",
+                    "Message received shutting down"
+                ],
+                "phrase_b021_relay_message_to_coast_station_001": [
+                    "Store message at coast station",
+                    "Relay message to pilot station"
+                ],
+                "phrase_b021_interference_on_working_channel_001": [
+                    "Silence on working channel",
+                    "Interference on distress channel"
+                ],
+                "phrase_b021_wait_one_checking_position_001": [
+                    "Wait two checking position",
+                    "Wait one reporting position"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b021 safety boundary group 7",
+            "items": [
+                "phrase_b021_message_marker_question_001",
+                "phrase_b021_priority_message_follows_001",
+                "phrase_b021_readback_incorrect_correcting_001",
+                "phrase_b021_end_of_message_switching_channel_one_two_001",
+                "phrase_b021_relay_distress_message_to_all_stations_001"
+            ],
+            "must_accept": {
+                "phrase_b021_message_marker_question_001": [
+                    "Message marker, question."
+                ],
+                "phrase_b021_priority_message_follows_001": [
+                    "Priority message follows."
+                ],
+                "phrase_b021_readback_incorrect_correcting_001": [
+                    "Readback incorrect, correcting."
+                ],
+                "phrase_b021_end_of_message_switching_channel_one_two_001": [
+                    "End of message, switching channel one two."
+                ],
+                "phrase_b021_relay_distress_message_to_all_stations_001": [
+                    "Relay distress message to all stations."
+                ]
+            },
+            "must_reject": {
+                "phrase_b021_message_marker_question_001": [
+                    "Message marker answer",
+                    "Message received question"
+                ],
+                "phrase_b021_priority_message_follows_001": [
+                    "Routine message follows",
+                    "Priority message cancelled"
+                ],
+                "phrase_b021_readback_incorrect_correcting_001": [
+                    "Readback correct correcting",
+                    "Readback incorrect cancelling"
+                ],
+                "phrase_b021_end_of_message_switching_channel_one_two_001": [
+                    "Start of message switching channel one two",
+                    "End of message switching channel one six"
+                ],
+                "phrase_b021_relay_distress_message_to_all_stations_001": [
+                    "Store distress message for all stations",
+                    "Relay urgency message to all stations"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        }
+    ],
+    "producer_notes": {
+        "target_increment": "35 draft vocabulary units toward M4 1000+ items",
+        "type_mix": "10 word, 10 short_expression, 15 phrase",
+        "production_scope": "none",
+        "next_gate": "Sea Speak Linguist Review before engineering gate or merge"
+    }
+}
