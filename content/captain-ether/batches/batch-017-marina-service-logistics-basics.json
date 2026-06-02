@@ -1,7 +1,7 @@
 {
     "version": 1,
     "batch_id": "batch-017-marina-service-logistics-basics",
-    "status": "drafted",
+    "status": "linguist_reviewed",
     "date": "2026-06-02",
     "branch": "marina_harbour",
     "scope": "M4 marina/harbour service logistics basics. Keep service pontoon, waiting pontoon, fuel berth, pump-out station, payment office, repair berth, shore power, water hose, service completion, wait/proceed/depart, and availability/unavailability separate from routine port control, visitor berth, onboard repair, bilge pump, and power-failure meanings.",
@@ -493,30 +493,31 @@
             "branch": "marina_harbour",
             "module": "service_logistics",
             "source_language": "ru",
-            "source_text": "Обслуживание завершено",
+            "source_text": "Обслуживание в марине завершено",
             "target_language": "en",
-            "target_text": "service complete",
+            "target_text": "marina service complete",
             "accepted_answers": [
-                "service complete",
-                "service is complete"
+                "marina service complete",
+                "marina service is complete"
             ],
-            "hint_beginner": "service...",
+            "hint_beginner": "marina service...",
             "hint_intermediate": "complete...",
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "service complete",
-                    "service is complete"
+                    "marina service complete",
+                    "marina service is complete"
                 ],
                 "should_reject": [
-                    "service required",
+                    "marina service required",
                     "repair complete",
-                    "service cancelled"
+                    "service cancelled",
+                    "service complete"
                 ],
                 "dangerous_minimal_pairs": [
-                    "service complete / required / cancelled; repair complete"
+                    "marina service complete / marina service required / service cancelled / repair complete / generic service complete"
                 ],
-                "linguist_note": "Service completion is not a new service requirement, repair completion, or cancellation."
+                "linguist_note": "Marina service completion must be explicit and must not collapse into repair completion, generic service completion, new service requirement, or cancellation."
             }
         },
         {
@@ -814,30 +815,32 @@
             "branch": "marina_harbour",
             "module": "service_logistics",
             "source_language": "ru",
-            "source_text": "Обслуживание завершено, возвращайтесь на назначенное место.",
+            "source_text": "Обслуживание в марине завершено, возвращайтесь на назначенное место.",
             "target_language": "en",
-            "target_text": "Service complete, return to assigned berth.",
+            "target_text": "Marina service complete, return to assigned berth.",
             "accepted_answers": [
-                "Service complete, return to assigned berth.",
-                "Service is complete, return to assigned berth"
+                "Marina service complete, return to assigned berth.",
+                "Marina service is complete, return to assigned berth"
             ],
-            "grammar_pattern": "service_complete_return_assigned_berth",
-            "hint_beginner": "Service complete...",
+            "grammar_pattern": "marina_service_complete_return_assigned_berth",
+            "hint_beginner": "Marina service complete...",
             "hint_intermediate": "assigned berth...",
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "Service complete, return to assigned berth."
+                    "Marina service complete, return to assigned berth.",
+                    "Marina service is complete, return to assigned berth"
                 ],
                 "should_reject": [
-                    "Service required return to assigned berth",
-                    "Service complete proceed to fuel berth",
-                    "Repair complete return to assigned berth"
+                    "Marina service required return to assigned berth",
+                    "Marina service complete proceed to fuel berth",
+                    "Repair complete return to assigned berth",
+                    "Service complete return to assigned berth"
                 ],
                 "dangerous_minimal_pairs": [
-                    "service complete / required; assigned berth / fuel berth; service / repair complete"
+                    "marina service complete / marina service required / generic service complete / repair complete; assigned berth / fuel berth"
                 ],
-                "linguist_note": "Service completion and return destination must remain exact."
+                "linguist_note": "Marina service completion and assigned-berth return must not become repair completion, generic service completion, a new service requirement, or fuel-berth movement."
             }
         },
         {
@@ -934,10 +937,10 @@
             ]
         },
         {
-            "id": "service_complete_return_assigned_berth",
-            "pattern": "service completion with return to assigned berth",
+            "id": "marina_service_complete_return_assigned_berth",
+            "pattern": "marina service completion with return to assigned berth",
             "examples": [
-                "Service complete, return to assigned berth."
+                "Marina service complete, return to assigned berth."
             ]
         },
         {
