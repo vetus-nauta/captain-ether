@@ -1,0 +1,2644 @@
+{
+    "version": 1,
+    "batch_id": "batch-020-safety-equipment-deck-operations-vocabulary",
+    "status": "draft",
+    "date": "2026-06-03",
+    "branch": "mixed_safety_equipment_deck_operations",
+    "scope": "Long M4 vocabulary expansion draft. Adds safety equipment, pilot/boarding transfer, deck operations, hull/fuel controls, bilge monitoring, muster/person-count and evacuation vocabulary. Draft only: do not merge into starter or deploy to production in this sprint.",
+    "items": [
+        {
+            "id": "word_b020_lifebuoy_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 6,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "safety_equipment",
+            "source_language": "ru",
+            "source_text": "Спасательный круг.",
+            "target_language": "en",
+            "target_text": "lifebuoy",
+            "accepted_answers": [
+                "lifebuoy"
+            ],
+            "grammar_pattern": "b020_single_safety_equipment_noun",
+            "hint_beginner": "lifebuoy...",
+            "hint_intermediate": "lifebuoy...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "lifebuoy",
+                    "Lifebuoy"
+                ],
+                "should_reject": [
+                    "lifejacket",
+                    "life raft",
+                    "buoy light"
+                ],
+                "dangerous_minimal_pairs": [
+                    "lifebuoy / lifejacket / life raft"
+                ],
+                "linguist_note": "Lifebuoy is throwable equipment, not wearable lifejacket or raft."
+            }
+        },
+        {
+            "id": "word_b020_lifejacket_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 6,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "safety_equipment",
+            "source_language": "ru",
+            "source_text": "Спасательный жилет.",
+            "target_language": "en",
+            "target_text": "lifejacket",
+            "accepted_answers": [
+                "lifejacket"
+            ],
+            "grammar_pattern": "b020_single_safety_equipment_noun",
+            "hint_beginner": "lifejacket...",
+            "hint_intermediate": "lifejacket...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "lifejacket",
+                    "Lifejacket"
+                ],
+                "should_reject": [
+                    "lifebuoy",
+                    "jacket only",
+                    "life raft"
+                ],
+                "dangerous_minimal_pairs": [
+                    "lifejacket / lifebuoy / life raft"
+                ],
+                "linguist_note": "Wearable equipment must stay distinct from throwable equipment."
+            }
+        },
+        {
+            "id": "word_b020_heaving_line_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "line_handling",
+            "source_language": "ru",
+            "source_text": "Бросательный конец.",
+            "target_language": "en",
+            "target_text": "heaving line",
+            "accepted_answers": [
+                "heaving line"
+            ],
+            "grammar_pattern": "b020_line_equipment_compound",
+            "hint_beginner": "heaving line...",
+            "hint_intermediate": "heaving line...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "heaving line",
+                    "Heaving line"
+                ],
+                "should_reject": [
+                    "mooring line",
+                    "fishing line",
+                    "heaving anchor"
+                ],
+                "dangerous_minimal_pairs": [
+                    "heaving line / mooring line / anchor"
+                ],
+                "linguist_note": "Heaving line is a line-transfer tool, not a mooring line or anchor action."
+            }
+        },
+        {
+            "id": "word_b020_boat_hook_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "deck_tools",
+            "source_language": "ru",
+            "source_text": "Отпорный крюк.",
+            "target_language": "en",
+            "target_text": "boat hook",
+            "accepted_answers": [
+                "boat hook"
+            ],
+            "grammar_pattern": "b020_deck_tool_compound",
+            "hint_beginner": "boat hook...",
+            "hint_intermediate": "boat hook...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "boat hook",
+                    "Boat hook"
+                ],
+                "should_reject": [
+                    "deck brush",
+                    "boat rope",
+                    "fire hook"
+                ],
+                "dangerous_minimal_pairs": [
+                    "boat hook / boat rope / fire hook"
+                ],
+                "linguist_note": "Deck tool identity must remain exact."
+            }
+        },
+        {
+            "id": "word_b020_gangway_net_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "boarding_safety",
+            "source_language": "ru",
+            "source_text": "Сетка трапа.",
+            "target_language": "en",
+            "target_text": "gangway net",
+            "accepted_answers": [
+                "gangway net"
+            ],
+            "grammar_pattern": "b020_boarding_safety_compound",
+            "hint_beginner": "gangway net...",
+            "hint_intermediate": "gangway net...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "gangway net",
+                    "Gangway net"
+                ],
+                "should_reject": [
+                    "gangway light",
+                    "safety net only",
+                    "pilot ladder"
+                ],
+                "dangerous_minimal_pairs": [
+                    "gangway net / gangway light / pilot ladder"
+                ],
+                "linguist_note": "Gangway net is boarding safety gear, not lighting or ladder."
+            }
+        },
+        {
+            "id": "word_b020_pilot_ladder_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "pilot_transfer",
+            "source_language": "ru",
+            "source_text": "Лоцманский трап.",
+            "target_language": "en",
+            "target_text": "pilot ladder",
+            "accepted_answers": [
+                "pilot ladder"
+            ],
+            "grammar_pattern": "b020_ladder_type_compound",
+            "hint_beginner": "pilot ladder...",
+            "hint_intermediate": "pilot ladder...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "pilot ladder",
+                    "Pilot ladder"
+                ],
+                "should_reject": [
+                    "boarding ladder",
+                    "gangway ladder",
+                    "pilot boat"
+                ],
+                "dangerous_minimal_pairs": [
+                    "pilot ladder / boarding ladder / pilot boat"
+                ],
+                "linguist_note": "Pilot transfer ladder must not become boarding ladder or vessel."
+            }
+        },
+        {
+            "id": "word_b020_boarding_ladder_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "boarding_safety",
+            "source_language": "ru",
+            "source_text": "Посадочный трап.",
+            "target_language": "en",
+            "target_text": "boarding ladder",
+            "accepted_answers": [
+                "boarding ladder"
+            ],
+            "grammar_pattern": "b020_ladder_type_compound",
+            "hint_beginner": "boarding ladder...",
+            "hint_intermediate": "boarding ladder...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "boarding ladder",
+                    "Boarding ladder"
+                ],
+                "should_reject": [
+                    "pilot ladder",
+                    "boarding pass",
+                    "gangway net"
+                ],
+                "dangerous_minimal_pairs": [
+                    "boarding ladder / pilot ladder / gangway net"
+                ],
+                "linguist_note": "Boarding ladder is not pilot ladder or administrative boarding pass."
+            }
+        },
+        {
+            "id": "word_b020_fire_extinguisher_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "fire_safety",
+            "source_language": "ru",
+            "source_text": "Огнетушитель.",
+            "target_language": "en",
+            "target_text": "fire extinguisher",
+            "accepted_answers": [
+                "fire extinguisher"
+            ],
+            "grammar_pattern": "b020_fire_safety_compound",
+            "hint_beginner": "fire extinguisher...",
+            "hint_intermediate": "fire extinguisher...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "fire extinguisher",
+                    "Fire extinguisher"
+                ],
+                "should_reject": [
+                    "fire alarm",
+                    "fire blanket",
+                    "first aid kit"
+                ],
+                "dangerous_minimal_pairs": [
+                    "fire extinguisher / fire alarm / first aid kit"
+                ],
+                "linguist_note": "Firefighting equipment must remain separate from alarm or medical kit."
+            }
+        },
+        {
+            "id": "word_b020_first_aid_kit_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "medical_safety",
+            "source_language": "ru",
+            "source_text": "Аптечка первой помощи.",
+            "target_language": "en",
+            "target_text": "first aid kit",
+            "accepted_answers": [
+                "first aid kit"
+            ],
+            "grammar_pattern": "b020_medical_safety_compound",
+            "hint_beginner": "first aid...",
+            "hint_intermediate": "first aid kit...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "first aid kit",
+                    "First aid kit"
+                ],
+                "should_reject": [
+                    "fire aid kit",
+                    "repair kit",
+                    "first mate"
+                ],
+                "dangerous_minimal_pairs": [
+                    "first aid kit / repair kit / fire extinguisher"
+                ],
+                "linguist_note": "Medical kit must not collapse into repair/fire equipment."
+            }
+        },
+        {
+            "id": "word_b020_emergency_tiller_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 10,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "steering_failure",
+            "source_language": "ru",
+            "source_text": "Аварийный румпель.",
+            "target_language": "en",
+            "target_text": "emergency tiller",
+            "accepted_answers": [
+                "emergency tiller"
+            ],
+            "grammar_pattern": "b020_emergency_steering_compound",
+            "hint_beginner": "emergency tiller...",
+            "hint_intermediate": "emergency tiller...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "emergency tiller",
+                    "Emergency tiller"
+                ],
+                "should_reject": [
+                    "emergency rudder",
+                    "steering wheel",
+                    "engine tiller"
+                ],
+                "dangerous_minimal_pairs": [
+                    "emergency tiller / rudder / steering wheel"
+                ],
+                "linguist_note": "Emergency steering component must remain exact."
+            }
+        },
+        {
+            "id": "word_b020_bilge_alarm_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "bilge_monitoring",
+            "source_language": "ru",
+            "source_text": "Сигнализация трюма.",
+            "target_language": "en",
+            "target_text": "bilge alarm",
+            "accepted_answers": [
+                "bilge alarm"
+            ],
+            "grammar_pattern": "b020_alarm_system_compound",
+            "hint_beginner": "bilge alarm...",
+            "hint_intermediate": "bilge alarm...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "bilge alarm",
+                    "Bilge alarm"
+                ],
+                "should_reject": [
+                    "fire alarm",
+                    "bilge pump",
+                    "engine alarm"
+                ],
+                "dangerous_minimal_pairs": [
+                    "bilge alarm / bilge pump / fire alarm"
+                ],
+                "linguist_note": "Bilge alarm is monitoring, not pump or fire alarm."
+            }
+        },
+        {
+            "id": "word_b020_fuel_shutoff_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 10,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "fuel_safety",
+            "source_language": "ru",
+            "source_text": "Топливный отсечной кран.",
+            "target_language": "en",
+            "target_text": "fuel shutoff",
+            "accepted_answers": [
+                "fuel shutoff"
+            ],
+            "grammar_pattern": "b020_fuel_safety_compound",
+            "hint_beginner": "fuel shutoff...",
+            "hint_intermediate": "fuel shutoff...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "fuel shutoff",
+                    "Fuel shutoff"
+                ],
+                "should_reject": [
+                    "fuel pump",
+                    "fuel leak",
+                    "water shutoff"
+                ],
+                "dangerous_minimal_pairs": [
+                    "fuel shutoff / fuel pump / water shutoff"
+                ],
+                "linguist_note": "Fuel isolation control must not become fuel pump or leak."
+            }
+        },
+        {
+            "id": "word_b020_seacock_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 10,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "hull_systems",
+            "source_language": "ru",
+            "source_text": "Забортный кран.",
+            "target_language": "en",
+            "target_text": "seacock",
+            "accepted_answers": [
+                "seacock"
+            ],
+            "grammar_pattern": "b020_hull_fitting_single_noun",
+            "hint_beginner": "seacock...",
+            "hint_intermediate": "seacock...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "seacock",
+                    "Seacock"
+                ],
+                "should_reject": [
+                    "sea lock",
+                    "cockpit",
+                    "fuel cock"
+                ],
+                "dangerous_minimal_pairs": [
+                    "seacock / cockpit / fuel cock"
+                ],
+                "linguist_note": "Hull valve term must remain exact."
+            }
+        },
+        {
+            "id": "word_b020_companionway_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "deck_layout",
+            "source_language": "ru",
+            "source_text": "Сходный люк.",
+            "target_language": "en",
+            "target_text": "companionway",
+            "accepted_answers": [
+                "companionway"
+            ],
+            "grammar_pattern": "b020_vessel_access_single_noun",
+            "hint_beginner": "companionway...",
+            "hint_intermediate": "companionway...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "companionway",
+                    "Companionway"
+                ],
+                "should_reject": [
+                    "gangway",
+                    "runway",
+                    "compass way"
+                ],
+                "dangerous_minimal_pairs": [
+                    "companionway / gangway / runway"
+                ],
+                "linguist_note": "Internal access path must not become gangway."
+            }
+        },
+        {
+            "id": "word_b020_foredeck_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "deck_layout",
+            "source_language": "ru",
+            "source_text": "Носовая палуба.",
+            "target_language": "en",
+            "target_text": "foredeck",
+            "accepted_answers": [
+                "foredeck"
+            ],
+            "grammar_pattern": "b020_deck_area_single_noun",
+            "hint_beginner": "foredeck...",
+            "hint_intermediate": "foredeck...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "foredeck",
+                    "Foredeck"
+                ],
+                "should_reject": [
+                    "aft deck",
+                    "forecastle only",
+                    "forward cabin"
+                ],
+                "dangerous_minimal_pairs": [
+                    "foredeck / aft deck / forward cabin"
+                ],
+                "linguist_note": "Deck area must not become cabin or aft area."
+            }
+        },
+        {
+            "id": "expr_b020_rig_pilot_ladder_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 11,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "pilot_transfer",
+            "source_language": "ru",
+            "source_text": "Установите лоцманский трап.",
+            "target_language": "en",
+            "target_text": "rig pilot ladder",
+            "accepted_answers": [
+                "rig pilot ladder"
+            ],
+            "grammar_pattern": "b020_prepare_equipment_command",
+            "hint_beginner": "rig pilot...",
+            "hint_intermediate": "rig pilot ladder...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "rig pilot ladder",
+                    "Rig pilot ladder"
+                ],
+                "should_reject": [
+                    "rig boarding ladder",
+                    "remove pilot ladder",
+                    "rig pilot boat"
+                ],
+                "dangerous_minimal_pairs": [
+                    "rig/remove; pilot ladder/boarding ladder/pilot boat"
+                ],
+                "linguist_note": "Pilot transfer preparation must keep action and ladder type exact."
+            }
+        },
+        {
+            "id": "expr_b020_recover_lifebuoy_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "safety_equipment",
+            "source_language": "ru",
+            "source_text": "Подберите спасательный круг.",
+            "target_language": "en",
+            "target_text": "recover lifebuoy",
+            "accepted_answers": [
+                "recover lifebuoy"
+            ],
+            "grammar_pattern": "b020_recover_equipment_command",
+            "hint_beginner": "recover lifebuoy...",
+            "hint_intermediate": "recover lifebuoy...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "recover lifebuoy",
+                    "Recover lifebuoy"
+                ],
+                "should_reject": [
+                    "deploy lifebuoy",
+                    "recover lifejacket",
+                    "recover buoy light"
+                ],
+                "dangerous_minimal_pairs": [
+                    "recover/deploy; lifebuoy/lifejacket"
+                ],
+                "linguist_note": "Recovery command must not reverse into deployment."
+            }
+        },
+        {
+            "id": "expr_b020_prepare_heaving_line_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "line_handling",
+            "source_language": "ru",
+            "source_text": "Подготовьте бросательный конец.",
+            "target_language": "en",
+            "target_text": "prepare heaving line",
+            "accepted_answers": [
+                "prepare heaving line"
+            ],
+            "grammar_pattern": "b020_prepare_equipment_command",
+            "hint_beginner": "prepare heaving...",
+            "hint_intermediate": "prepare heaving line...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "prepare heaving line",
+                    "Prepare heaving line"
+                ],
+                "should_reject": [
+                    "prepare mooring line",
+                    "throw heaving line",
+                    "prepare anchor line"
+                ],
+                "dangerous_minimal_pairs": [
+                    "prepare/throw; heaving/mooring/anchor line"
+                ],
+                "linguist_note": "Prepare is not throw, and line type must remain exact."
+            }
+        },
+        {
+            "id": "expr_b020_secure_gangway_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "boarding_safety",
+            "source_language": "ru",
+            "source_text": "Закрепите трап.",
+            "target_language": "en",
+            "target_text": "secure gangway",
+            "accepted_answers": [
+                "secure gangway"
+            ],
+            "grammar_pattern": "b020_secure_access_command",
+            "hint_beginner": "secure gangway...",
+            "hint_intermediate": "secure gangway...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "secure gangway",
+                    "Secure gangway"
+                ],
+                "should_reject": [
+                    "remove gangway",
+                    "secure fairway",
+                    "secure gateway"
+                ],
+                "dangerous_minimal_pairs": [
+                    "secure/remove; gangway/fairway"
+                ],
+                "linguist_note": "Boarding access command must not become route/fairway."
+            }
+        },
+        {
+            "id": "expr_b020_clear_foredeck_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "deck_safety",
+            "source_language": "ru",
+            "source_text": "Освободите носовую палубу.",
+            "target_language": "en",
+            "target_text": "clear foredeck",
+            "accepted_answers": [
+                "clear foredeck"
+            ],
+            "grammar_pattern": "b020_clear_area_command",
+            "hint_beginner": "clear foredeck...",
+            "hint_intermediate": "clear foredeck...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "clear foredeck",
+                    "Clear foredeck"
+                ],
+                "should_reject": [
+                    "clear aft deck",
+                    "close foredeck",
+                    "clear forecastle"
+                ],
+                "dangerous_minimal_pairs": [
+                    "clear/close; foredeck/aft deck"
+                ],
+                "linguist_note": "Deck area and action must remain exact."
+            }
+        },
+        {
+            "id": "expr_b020_close_seacock_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 11,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "hull_systems",
+            "source_language": "ru",
+            "source_text": "Закройте забортный кран.",
+            "target_language": "en",
+            "target_text": "close seacock",
+            "accepted_answers": [
+                "close seacock"
+            ],
+            "grammar_pattern": "b020_close_system_command",
+            "hint_beginner": "close seacock...",
+            "hint_intermediate": "close seacock...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "close seacock",
+                    "Close seacock"
+                ],
+                "should_reject": [
+                    "open seacock",
+                    "close cockpit",
+                    "close fuel shutoff"
+                ],
+                "dangerous_minimal_pairs": [
+                    "close/open; seacock/cockpit/fuel shutoff"
+                ],
+                "linguist_note": "Hull valve command must preserve valve identity and action."
+            }
+        },
+        {
+            "id": "expr_b020_check_bilge_alarm_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "bilge_monitoring",
+            "source_language": "ru",
+            "source_text": "Проверьте сигнализацию трюма.",
+            "target_language": "en",
+            "target_text": "check bilge alarm",
+            "accepted_answers": [
+                "check bilge alarm"
+            ],
+            "grammar_pattern": "b020_check_system_command",
+            "hint_beginner": "check bilge...",
+            "hint_intermediate": "check bilge alarm...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "check bilge alarm",
+                    "Check bilge alarm"
+                ],
+                "should_reject": [
+                    "check fire alarm",
+                    "check bilge pump",
+                    "silence bilge alarm"
+                ],
+                "dangerous_minimal_pairs": [
+                    "check/silence; bilge alarm/fire alarm/bilge pump"
+                ],
+                "linguist_note": "Monitoring check must not become pump check or alarm silencing."
+            }
+        },
+        {
+            "id": "expr_b020_isolate_fuel_supply_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 12,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "fuel_safety",
+            "source_language": "ru",
+            "source_text": "Изолируйте подачу топлива.",
+            "target_language": "en",
+            "target_text": "isolate fuel supply",
+            "accepted_answers": [
+                "isolate fuel supply"
+            ],
+            "grammar_pattern": "b020_isolate_system_command",
+            "hint_beginner": "isolate fuel...",
+            "hint_intermediate": "isolate fuel supply...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "isolate fuel supply",
+                    "Isolate fuel supply"
+                ],
+                "should_reject": [
+                    "restore fuel supply",
+                    "isolate water supply",
+                    "report fuel supply"
+                ],
+                "dangerous_minimal_pairs": [
+                    "isolate/restore/report; fuel/water supply"
+                ],
+                "linguist_note": "Fuel isolation polarity is safety-critical."
+            }
+        },
+        {
+            "id": "expr_b020_fit_emergency_tiller_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 12,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "steering_failure",
+            "source_language": "ru",
+            "source_text": "Установите аварийный румпель.",
+            "target_language": "en",
+            "target_text": "fit emergency tiller",
+            "accepted_answers": [
+                "fit emergency tiller"
+            ],
+            "grammar_pattern": "b020_fit_emergency_equipment_command",
+            "hint_beginner": "fit emergency...",
+            "hint_intermediate": "fit emergency tiller...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "fit emergency tiller",
+                    "Fit emergency tiller"
+                ],
+                "should_reject": [
+                    "remove emergency tiller",
+                    "fit steering wheel",
+                    "fit emergency rudder"
+                ],
+                "dangerous_minimal_pairs": [
+                    "fit/remove; tiller/rudder/wheel"
+                ],
+                "linguist_note": "Emergency steering equipment command must remain exact."
+            }
+        },
+        {
+            "id": "expr_b020_muster_on_deck_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "muster_and_evacuation",
+            "source_language": "ru",
+            "source_text": "Соберитесь на палубе.",
+            "target_language": "en",
+            "target_text": "muster on deck",
+            "accepted_answers": [
+                "muster on deck"
+            ],
+            "grammar_pattern": "b020_muster_location_command",
+            "hint_beginner": "muster on...",
+            "hint_intermediate": "muster on deck...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "muster on deck",
+                    "Muster on deck"
+                ],
+                "should_reject": [
+                    "muster below deck",
+                    "scatter on deck",
+                    "muster at quay"
+                ],
+                "dangerous_minimal_pairs": [
+                    "muster/scatter; deck/dock/below deck"
+                ],
+                "linguist_note": "Muster location and action must remain exact."
+            }
+        },
+        {
+            "id": "expr_b020_count_persons_aboard_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "persons_count",
+            "source_language": "ru",
+            "source_text": "Пересчитайте людей на борту.",
+            "target_language": "en",
+            "target_text": "count persons aboard",
+            "accepted_answers": [
+                "count persons aboard"
+            ],
+            "grammar_pattern": "b020_count_people_command",
+            "hint_beginner": "count persons...",
+            "hint_intermediate": "count persons aboard...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "count persons aboard",
+                    "Count persons aboard"
+                ],
+                "should_reject": [
+                    "count persons ashore",
+                    "report persons aboard",
+                    "count vessels aboard"
+                ],
+                "dangerous_minimal_pairs": [
+                    "count/report; persons/vessels; aboard/ashore"
+                ],
+                "linguist_note": "People count must not become report or wrong location."
+            }
+        },
+        {
+            "id": "expr_b020_pass_boat_hook_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "deck_tools",
+            "source_language": "ru",
+            "source_text": "Передайте отпорный крюк.",
+            "target_language": "en",
+            "target_text": "pass boat hook",
+            "accepted_answers": [
+                "pass boat hook"
+            ],
+            "grammar_pattern": "b020_pass_tool_command",
+            "hint_beginner": "pass boat...",
+            "hint_intermediate": "pass boat hook...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "pass boat hook",
+                    "Pass boat hook"
+                ],
+                "should_reject": [
+                    "pass boat rope",
+                    "throw boat hook",
+                    "pass fire hook"
+                ],
+                "dangerous_minimal_pairs": [
+                    "pass/throw; boat hook/boat rope/fire hook"
+                ],
+                "linguist_note": "Tool handoff must not become throwing or wrong tool."
+            }
+        },
+        {
+            "id": "expr_b020_test_fire_extinguisher_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "fire_safety",
+            "source_language": "ru",
+            "source_text": "Проверьте огнетушитель.",
+            "target_language": "en",
+            "target_text": "test fire extinguisher",
+            "accepted_answers": [
+                "test fire extinguisher"
+            ],
+            "grammar_pattern": "b020_test_safety_equipment_command",
+            "hint_beginner": "test fire...",
+            "hint_intermediate": "test fire extinguisher...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "test fire extinguisher",
+                    "Test fire extinguisher"
+                ],
+                "should_reject": [
+                    "test fire alarm",
+                    "use fire extinguisher",
+                    "test first aid kit"
+                ],
+                "dangerous_minimal_pairs": [
+                    "test/use; extinguisher/alarm/first aid kit"
+                ],
+                "linguist_note": "Equipment test must not become use or wrong equipment."
+            }
+        },
+        {
+            "id": "expr_b020_bring_first_aid_kit_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "medical_safety",
+            "source_language": "ru",
+            "source_text": "Принесите аптечку.",
+            "target_language": "en",
+            "target_text": "bring first aid kit",
+            "accepted_answers": [
+                "bring first aid kit"
+            ],
+            "grammar_pattern": "b020_bring_safety_equipment_command",
+            "hint_beginner": "bring first...",
+            "hint_intermediate": "bring first aid kit...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "bring first aid kit",
+                    "Bring first aid kit"
+                ],
+                "should_reject": [
+                    "bring fire kit",
+                    "bring repair kit",
+                    "store first aid kit"
+                ],
+                "dangerous_minimal_pairs": [
+                    "bring/store; first aid/fire/repair kit"
+                ],
+                "linguist_note": "Medical kit command must keep action and kit type exact."
+            }
+        },
+        {
+            "id": "expr_b020_illuminate_pilot_ladder_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 12,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "pilot_transfer",
+            "source_language": "ru",
+            "source_text": "Осветите лоцманский трап.",
+            "target_language": "en",
+            "target_text": "illuminate pilot ladder",
+            "accepted_answers": [
+                "illuminate pilot ladder"
+            ],
+            "grammar_pattern": "b020_illuminate_equipment_command",
+            "hint_beginner": "illuminate pilot...",
+            "hint_intermediate": "illuminate pilot ladder...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "illuminate pilot ladder",
+                    "Illuminate pilot ladder"
+                ],
+                "should_reject": [
+                    "illuminate boarding ladder",
+                    "remove pilot ladder",
+                    "illuminate pilot boat"
+                ],
+                "dangerous_minimal_pairs": [
+                    "illuminate/remove; pilot ladder/boarding ladder/pilot boat"
+                ],
+                "linguist_note": "Pilot ladder lighting must keep ladder type exact."
+            }
+        },
+        {
+            "id": "phrase_b020_rig_pilot_ladder_port_side_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "pilot_transfer",
+            "source_language": "ru",
+            "source_text": "Установите лоцманский трап по левому борту.",
+            "target_language": "en",
+            "target_text": "Rig pilot ladder on port side.",
+            "accepted_answers": [
+                "Rig pilot ladder on port side.",
+                "Rig the pilot ladder on port side"
+            ],
+            "grammar_pattern": "b020_rig_ladder_side_instruction",
+            "hint_beginner": "Rig pilot...",
+            "hint_intermediate": "Rig pilot ladder on...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Rig pilot ladder on port side.",
+                    "Rig the pilot ladder on port side"
+                ],
+                "should_reject": [
+                    "Rig pilot ladder on starboard side",
+                    "Rig boarding ladder on port side",
+                    "Remove pilot ladder on port side"
+                ],
+                "dangerous_minimal_pairs": [
+                    "pilot/boarding ladder; port/starboard; rig/remove"
+                ],
+                "linguist_note": "Pilot transfer side and ladder type are operationally critical."
+            }
+        },
+        {
+            "id": "phrase_b020_pilot_ladder_ready_boarding_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "pilot_transfer",
+            "source_language": "ru",
+            "source_text": "Лоцманский трап готов для посадки.",
+            "target_language": "en",
+            "target_text": "Pilot ladder ready for boarding.",
+            "accepted_answers": [
+                "Pilot ladder ready for boarding.",
+                "Pilot ladder is ready for boarding"
+            ],
+            "grammar_pattern": "b020_equipment_ready_for_action",
+            "hint_beginner": "Pilot ladder...",
+            "hint_intermediate": "Pilot ladder ready for...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Pilot ladder ready for boarding.",
+                    "Pilot ladder is ready for boarding"
+                ],
+                "should_reject": [
+                    "Pilot ladder not ready for boarding",
+                    "Boarding ladder ready for boarding",
+                    "Pilot boat ready for boarding"
+                ],
+                "dangerous_minimal_pairs": [
+                    "ready/not ready; pilot ladder/boarding ladder/pilot boat"
+                ],
+                "linguist_note": "Readiness status and equipment identity must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b020_secure_gangway_safety_net_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "boarding_safety",
+            "source_language": "ru",
+            "source_text": "Закрепите трап страховочной сеткой.",
+            "target_language": "en",
+            "target_text": "Secure gangway with safety net.",
+            "accepted_answers": [
+                "Secure gangway with safety net.",
+                "Secure the gangway with safety net"
+            ],
+            "grammar_pattern": "b020_secure_access_with_equipment",
+            "hint_beginner": "Secure gangway...",
+            "hint_intermediate": "Secure gangway with safety...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Secure gangway with safety net.",
+                    "Secure the gangway with safety net"
+                ],
+                "should_reject": [
+                    "Secure gangway without safety net",
+                    "Secure pilot ladder with safety net",
+                    "Remove gangway with safety net"
+                ],
+                "dangerous_minimal_pairs": [
+                    "with/without net; gangway/pilot ladder; secure/remove"
+                ],
+                "linguist_note": "Boarding safety net requirement must not be removed."
+            }
+        },
+        {
+            "id": "phrase_b020_lifebuoy_deployed_starboard_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "safety_equipment",
+            "source_language": "ru",
+            "source_text": "Спасательный круг сброшен по правому борту.",
+            "target_language": "en",
+            "target_text": "Lifebuoy deployed on starboard side.",
+            "accepted_answers": [
+                "Lifebuoy deployed on starboard side.",
+                "Lifebuoy is deployed on starboard side"
+            ],
+            "grammar_pattern": "b020_equipment_deployed_side",
+            "hint_beginner": "Lifebuoy deployed...",
+            "hint_intermediate": "Lifebuoy deployed on starboard...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Lifebuoy deployed on starboard side.",
+                    "Lifebuoy is deployed on starboard side"
+                ],
+                "should_reject": [
+                    "Lifebuoy deployed on port side",
+                    "Lifejacket deployed on starboard side",
+                    "Lifebuoy recovered on starboard side"
+                ],
+                "dangerous_minimal_pairs": [
+                    "lifebuoy/lifejacket; starboard/port; deployed/recovered"
+                ],
+                "linguist_note": "Side, equipment, and deploy/recover status must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b020_recover_heaving_line_water_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "line_handling",
+            "source_language": "ru",
+            "source_text": "Подберите бросательный конец из воды.",
+            "target_language": "en",
+            "target_text": "Recover heaving line from water.",
+            "accepted_answers": [
+                "Recover heaving line from water.",
+                "Recover the heaving line from water"
+            ],
+            "grammar_pattern": "b020_recover_equipment_from_location",
+            "hint_beginner": "Recover heaving...",
+            "hint_intermediate": "Recover heaving line from...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Recover heaving line from water.",
+                    "Recover the heaving line from water"
+                ],
+                "should_reject": [
+                    "Throw heaving line from water",
+                    "Recover mooring line from water",
+                    "Recover heaving line from deck"
+                ],
+                "dangerous_minimal_pairs": [
+                    "recover/throw; heaving/mooring line; water/deck"
+                ],
+                "linguist_note": "Line type and source location must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b020_fire_extinguisher_ready_cockpit_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "fire_safety",
+            "source_language": "ru",
+            "source_text": "Огнетушитель готов в кокпите.",
+            "target_language": "en",
+            "target_text": "Fire extinguisher ready in cockpit.",
+            "accepted_answers": [
+                "Fire extinguisher ready in cockpit.",
+                "Fire extinguisher is ready in cockpit"
+            ],
+            "grammar_pattern": "b020_safety_equipment_ready_location",
+            "hint_beginner": "Fire extinguisher...",
+            "hint_intermediate": "Fire extinguisher ready in...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Fire extinguisher ready in cockpit.",
+                    "Fire extinguisher is ready in cockpit"
+                ],
+                "should_reject": [
+                    "Fire alarm ready in cockpit",
+                    "Fire extinguisher not ready in cockpit",
+                    "Fire extinguisher ready in cabin"
+                ],
+                "dangerous_minimal_pairs": [
+                    "extinguisher/alarm; ready/not ready; cockpit/cabin"
+                ],
+                "linguist_note": "Equipment, readiness, and location must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b020_first_aid_kit_to_deck_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 12,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "medical_safety",
+            "source_language": "ru",
+            "source_text": "Аптечка принесена на палубу.",
+            "target_language": "en",
+            "target_text": "First aid kit brought to deck.",
+            "accepted_answers": [
+                "First aid kit brought to deck.",
+                "First aid kit is brought to deck"
+            ],
+            "grammar_pattern": "b020_equipment_brought_to_location",
+            "hint_beginner": "First aid...",
+            "hint_intermediate": "First aid kit brought...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "First aid kit brought to deck.",
+                    "First aid kit is brought to deck"
+                ],
+                "should_reject": [
+                    "Fire aid kit brought to deck",
+                    "First aid kit brought below deck",
+                    "Repair kit brought to deck"
+                ],
+                "dangerous_minimal_pairs": [
+                    "first aid/fire/repair kit; deck/below deck"
+                ],
+                "linguist_note": "Medical equipment and location must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b020_emergency_tiller_fitted_tested_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "steering_failure",
+            "source_language": "ru",
+            "source_text": "Аварийный румпель установлен и проверен.",
+            "target_language": "en",
+            "target_text": "Emergency tiller fitted and tested.",
+            "accepted_answers": [
+                "Emergency tiller fitted and tested.",
+                "Emergency tiller is fitted and tested"
+            ],
+            "grammar_pattern": "b020_emergency_equipment_fitted_tested",
+            "hint_beginner": "Emergency tiller...",
+            "hint_intermediate": "Emergency tiller fitted and...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Emergency tiller fitted and tested.",
+                    "Emergency tiller is fitted and tested"
+                ],
+                "should_reject": [
+                    "Emergency tiller removed and tested",
+                    "Emergency rudder fitted and tested",
+                    "Emergency tiller fitted not tested"
+                ],
+                "dangerous_minimal_pairs": [
+                    "tiller/rudder; fitted/removed; tested/not tested"
+                ],
+                "linguist_note": "Emergency steering readiness must preserve component and test status."
+            }
+        },
+        {
+            "id": "phrase_b020_close_engine_seacock_immediately_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "hull_systems",
+            "source_language": "ru",
+            "source_text": "Немедленно закройте забортный кран двигателя.",
+            "target_language": "en",
+            "target_text": "Close engine seacock immediately.",
+            "accepted_answers": [
+                "Close engine seacock immediately.",
+                "Close the engine seacock immediately"
+            ],
+            "grammar_pattern": "b020_close_system_immediately",
+            "hint_beginner": "Close engine...",
+            "hint_intermediate": "Close engine seacock immediately....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Close engine seacock immediately.",
+                    "Close the engine seacock immediately"
+                ],
+                "should_reject": [
+                    "Open engine seacock immediately",
+                    "Close fuel shutoff immediately",
+                    "Close cockpit immediately"
+                ],
+                "dangerous_minimal_pairs": [
+                    "close/open; engine seacock/fuel shutoff/cockpit"
+                ],
+                "linguist_note": "Immediate hull-valve command must not change action or system."
+            }
+        },
+        {
+            "id": "phrase_b020_bilge_alarm_sounding_aft_cabin_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "bilge_monitoring",
+            "source_language": "ru",
+            "source_text": "Сигнализация трюма звучит в кормовой каюте.",
+            "target_language": "en",
+            "target_text": "Bilge alarm sounding in aft cabin.",
+            "accepted_answers": [
+                "Bilge alarm sounding in aft cabin.",
+                "Bilge alarm is sounding in aft cabin"
+            ],
+            "grammar_pattern": "b020_alarm_sounding_location",
+            "hint_beginner": "Bilge alarm...",
+            "hint_intermediate": "Bilge alarm sounding in...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Bilge alarm sounding in aft cabin.",
+                    "Bilge alarm is sounding in aft cabin"
+                ],
+                "should_reject": [
+                    "Fire alarm sounding in aft cabin",
+                    "Bilge pump sounding in aft cabin",
+                    "Bilge alarm sounding in forward cabin"
+                ],
+                "dangerous_minimal_pairs": [
+                    "bilge/fire alarm; alarm/pump; aft/forward cabin"
+                ],
+                "linguist_note": "Alarm identity and location are response-critical."
+            }
+        },
+        {
+            "id": "phrase_b020_fuel_shutoff_valve_closed_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "fuel_safety",
+            "source_language": "ru",
+            "source_text": "Топливный отсечной клапан закрыт.",
+            "target_language": "en",
+            "target_text": "Fuel shutoff valve is closed.",
+            "accepted_answers": [
+                "Fuel shutoff valve is closed.",
+                "Fuel shutoff valve closed"
+            ],
+            "grammar_pattern": "b020_valve_status_statement",
+            "hint_beginner": "Fuel shutoff...",
+            "hint_intermediate": "Fuel shutoff valve is...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Fuel shutoff valve is closed.",
+                    "Fuel shutoff valve closed"
+                ],
+                "should_reject": [
+                    "Fuel shutoff valve is open",
+                    "Water shutoff valve is closed",
+                    "Fuel pump valve is closed"
+                ],
+                "dangerous_minimal_pairs": [
+                    "fuel/water; shutoff/pump; closed/open"
+                ],
+                "linguist_note": "Fuel isolation status must preserve system and polarity."
+            }
+        },
+        {
+            "id": "phrase_b020_keep_foredeck_clear_gear_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "deck_safety",
+            "source_language": "ru",
+            "source_text": "Держите носовую палубу свободной от незакрепленных предметов.",
+            "target_language": "en",
+            "target_text": "Keep foredeck clear of loose gear.",
+            "accepted_answers": [
+                "Keep foredeck clear of loose gear.",
+                "Keep the foredeck clear of loose gear"
+            ],
+            "grammar_pattern": "b020_keep_area_clear_of_hazard",
+            "hint_beginner": "Keep foredeck...",
+            "hint_intermediate": "Keep foredeck clear of...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Keep foredeck clear of loose gear.",
+                    "Keep the foredeck clear of loose gear"
+                ],
+                "should_reject": [
+                    "Keep aft deck clear of loose gear",
+                    "Keep foredeck full of loose gear",
+                    "Keep foredeck clear of crew"
+                ],
+                "dangerous_minimal_pairs": [
+                    "foredeck/aft deck; clear/full; loose gear/crew"
+                ],
+                "linguist_note": "Deck hazard control must preserve area and hazard."
+            }
+        },
+        {
+            "id": "phrase_b020_count_all_persons_aboard_now_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "persons_count",
+            "source_language": "ru",
+            "source_text": "Сейчас пересчитайте всех людей на борту.",
+            "target_language": "en",
+            "target_text": "Count all persons aboard now.",
+            "accepted_answers": [
+                "Count all persons aboard now.",
+                "Count persons aboard now"
+            ],
+            "grammar_pattern": "b020_count_all_people_now",
+            "hint_beginner": "Count all...",
+            "hint_intermediate": "Count all persons aboard...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Count all persons aboard now.",
+                    "Count persons aboard now"
+                ],
+                "should_reject": [
+                    "Count all persons ashore now",
+                    "Report all persons aboard now",
+                    "Count all vessels aboard now"
+                ],
+                "dangerous_minimal_pairs": [
+                    "count/report; persons/vessels; aboard/ashore"
+                ],
+                "linguist_note": "Emergency headcount must preserve action, object, and location."
+            }
+        },
+        {
+            "id": "phrase_b020_muster_passengers_main_deck_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "muster_and_evacuation",
+            "source_language": "ru",
+            "source_text": "Соберите пассажиров на главной палубе.",
+            "target_language": "en",
+            "target_text": "Muster passengers on main deck.",
+            "accepted_answers": [
+                "Muster passengers on main deck.",
+                "Muster the passengers on main deck"
+            ],
+            "grammar_pattern": "b020_muster_people_location",
+            "hint_beginner": "Muster passengers...",
+            "hint_intermediate": "Muster passengers on main...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Muster passengers on main deck.",
+                    "Muster the passengers on main deck"
+                ],
+                "should_reject": [
+                    "Muster crew on main deck",
+                    "Muster passengers below deck",
+                    "Disperse passengers on main deck"
+                ],
+                "dangerous_minimal_pairs": [
+                    "passengers/crew; main/below deck; muster/disperse"
+                ],
+                "linguist_note": "Muster command must preserve people group, location, and action."
+            }
+        },
+        {
+            "id": "phrase_b020_boat_hook_passed_bow_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 12,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "deck_tools",
+            "source_language": "ru",
+            "source_text": "Отпорный крюк передан на нос.",
+            "target_language": "en",
+            "target_text": "Boat hook passed to bow.",
+            "accepted_answers": [
+                "Boat hook passed to bow.",
+                "Boat hook is passed to bow"
+            ],
+            "grammar_pattern": "b020_tool_passed_to_station",
+            "hint_beginner": "Boat hook...",
+            "hint_intermediate": "Boat hook passed to...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Boat hook passed to bow.",
+                    "Boat hook is passed to bow"
+                ],
+                "should_reject": [
+                    "Boat rope passed to bow",
+                    "Boat hook passed to stern",
+                    "Boat hook thrown to bow"
+                ],
+                "dangerous_minimal_pairs": [
+                    "hook/rope; bow/stern; passed/thrown"
+                ],
+                "linguist_note": "Tool and station must remain exact."
+            }
+        },
+        {
+            "id": "phrase_b020_boarding_ladder_not_safe_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "boarding_safety",
+            "source_language": "ru",
+            "source_text": "Посадочный трап небезопасен для использования.",
+            "target_language": "en",
+            "target_text": "Boarding ladder not safe to use.",
+            "accepted_answers": [
+                "Boarding ladder not safe to use.",
+                "Boarding ladder is not safe to use"
+            ],
+            "grammar_pattern": "b020_equipment_not_safe_to_use",
+            "hint_beginner": "Boarding ladder...",
+            "hint_intermediate": "Boarding ladder not safe...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Boarding ladder not safe to use.",
+                    "Boarding ladder is not safe to use"
+                ],
+                "should_reject": [
+                    "Boarding ladder safe to use",
+                    "Pilot ladder not safe to use",
+                    "Boarding ladder not ready to use"
+                ],
+                "dangerous_minimal_pairs": [
+                    "safe/not safe/not ready; boarding/pilot ladder"
+                ],
+                "linguist_note": "Safety polarity and ladder type must not drift."
+            }
+        },
+        {
+            "id": "phrase_b020_companionway_clear_evacuation_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "muster_and_evacuation",
+            "source_language": "ru",
+            "source_text": "Сходный люк свободен для эвакуации.",
+            "target_language": "en",
+            "target_text": "Companionway clear for evacuation.",
+            "accepted_answers": [
+                "Companionway clear for evacuation.",
+                "Companionway is clear for evacuation"
+            ],
+            "grammar_pattern": "b020_access_clear_for_evacuation",
+            "hint_beginner": "Companionway clear...",
+            "hint_intermediate": "Companionway clear for evacuation....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Companionway clear for evacuation.",
+                    "Companionway is clear for evacuation"
+                ],
+                "should_reject": [
+                    "Gangway clear for evacuation",
+                    "Companionway blocked for evacuation",
+                    "Companionway clear for boarding"
+                ],
+                "dangerous_minimal_pairs": [
+                    "companionway/gangway; clear/blocked; evacuation/boarding"
+                ],
+                "linguist_note": "Evacuation access status must preserve access point and purpose."
+            }
+        },
+        {
+            "id": "phrase_b020_illuminate_pilot_ladder_transfer_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "pilot_transfer",
+            "source_language": "ru",
+            "source_text": "Осветите лоцманский трап перед передачей.",
+            "target_language": "en",
+            "target_text": "Illuminate pilot ladder before transfer.",
+            "accepted_answers": [
+                "Illuminate pilot ladder before transfer.",
+                "Illuminate the pilot ladder before transfer"
+            ],
+            "grammar_pattern": "b020_illuminate_equipment_before_action",
+            "hint_beginner": "Illuminate pilot...",
+            "hint_intermediate": "Illuminate pilot ladder before...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Illuminate pilot ladder before transfer.",
+                    "Illuminate the pilot ladder before transfer"
+                ],
+                "should_reject": [
+                    "Illuminate boarding ladder before transfer",
+                    "Remove pilot ladder before transfer",
+                    "Illuminate pilot ladder after transfer"
+                ],
+                "dangerous_minimal_pairs": [
+                    "pilot/boarding ladder; illuminate/remove; before/after transfer"
+                ],
+                "linguist_note": "Pilot transfer safety setup must preserve timing and equipment."
+            }
+        },
+        {
+            "id": "phrase_b020_report_pilot_safely_on_board_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "pilot_transfer",
+            "source_language": "ru",
+            "source_text": "Доложите: лоцман безопасно на борту.",
+            "target_language": "en",
+            "target_text": "Report pilot safely on board.",
+            "accepted_answers": [
+                "Report pilot safely on board.",
+                "Report the pilot safely on board"
+            ],
+            "grammar_pattern": "b020_report_person_status_on_board",
+            "hint_beginner": "Report pilot...",
+            "hint_intermediate": "Report pilot safely on...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Report pilot safely on board.",
+                    "Report the pilot safely on board"
+                ],
+                "should_reject": [
+                    "Report pilot not safely on board",
+                    "Report passenger safely on board",
+                    "Report pilot safely ashore"
+                ],
+                "dangerous_minimal_pairs": [
+                    "pilot/passenger; safely/not safely; on board/ashore"
+                ],
+                "linguist_note": "Pilot transfer status report must preserve person and safety status."
+            }
+        },
+        {
+            "id": "phrase_b020_report_one_person_missing_deck_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "persons_count",
+            "source_language": "ru",
+            "source_text": "Доложите: один человек отсутствует на палубе.",
+            "target_language": "en",
+            "target_text": "Report one person missing from deck.",
+            "accepted_answers": [
+                "Report one person missing from deck.",
+                "Report one person is missing from deck"
+            ],
+            "grammar_pattern": "b020_report_missing_person_location",
+            "hint_beginner": "Report one...",
+            "hint_intermediate": "Report one person missing...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Report one person missing from deck.",
+                    "Report one person is missing from deck"
+                ],
+                "should_reject": [
+                    "Report two persons missing from deck",
+                    "Report one person found on deck",
+                    "Report one person missing from quay"
+                ],
+                "dangerous_minimal_pairs": [
+                    "one/two; missing/found; deck/dock"
+                ],
+                "linguist_note": "Missing-person count and location must remain exact."
+            }
+        }
+    ],
+    "grammar_patterns": [
+        {
+            "id": "b020_single_safety_equipment_noun",
+            "pattern": "single safety equipment noun",
+            "examples": [
+                "lifebuoy",
+                "lifejacket"
+            ]
+        },
+        {
+            "id": "b020_line_equipment_compound",
+            "pattern": "line equipment compound",
+            "examples": [
+                "heaving line"
+            ]
+        },
+        {
+            "id": "b020_deck_tool_compound",
+            "pattern": "deck tool compound",
+            "examples": [
+                "boat hook"
+            ]
+        },
+        {
+            "id": "b020_boarding_safety_compound",
+            "pattern": "boarding safety compound",
+            "examples": [
+                "gangway net"
+            ]
+        },
+        {
+            "id": "b020_ladder_type_compound",
+            "pattern": "ladder type compound",
+            "examples": [
+                "pilot ladder",
+                "boarding ladder"
+            ]
+        },
+        {
+            "id": "b020_fire_safety_compound",
+            "pattern": "fire safety equipment compound",
+            "examples": [
+                "fire extinguisher"
+            ]
+        },
+        {
+            "id": "b020_medical_safety_compound",
+            "pattern": "medical safety equipment compound",
+            "examples": [
+                "first aid kit"
+            ]
+        },
+        {
+            "id": "b020_emergency_steering_compound",
+            "pattern": "emergency steering compound",
+            "examples": [
+                "emergency tiller"
+            ]
+        },
+        {
+            "id": "b020_alarm_system_compound",
+            "pattern": "alarm system compound",
+            "examples": [
+                "bilge alarm"
+            ]
+        },
+        {
+            "id": "b020_fuel_safety_compound",
+            "pattern": "fuel safety control compound",
+            "examples": [
+                "fuel shutoff"
+            ]
+        },
+        {
+            "id": "b020_hull_fitting_single_noun",
+            "pattern": "hull fitting single noun",
+            "examples": [
+                "seacock"
+            ]
+        },
+        {
+            "id": "b020_vessel_access_single_noun",
+            "pattern": "vessel access single noun",
+            "examples": [
+                "companionway"
+            ]
+        },
+        {
+            "id": "b020_deck_area_single_noun",
+            "pattern": "deck area single noun",
+            "examples": [
+                "foredeck"
+            ]
+        },
+        {
+            "id": "b020_prepare_equipment_command",
+            "pattern": "prepare/rig equipment command",
+            "examples": [
+                "rig pilot ladder",
+                "prepare heaving line"
+            ]
+        },
+        {
+            "id": "b020_recover_equipment_command",
+            "pattern": "recover equipment command",
+            "examples": [
+                "recover lifebuoy"
+            ]
+        },
+        {
+            "id": "b020_secure_access_command",
+            "pattern": "secure access command",
+            "examples": [
+                "secure gangway"
+            ]
+        },
+        {
+            "id": "b020_clear_area_command",
+            "pattern": "clear area command",
+            "examples": [
+                "clear foredeck"
+            ]
+        },
+        {
+            "id": "b020_close_system_command",
+            "pattern": "close vessel system command",
+            "examples": [
+                "close seacock"
+            ]
+        },
+        {
+            "id": "b020_check_system_command",
+            "pattern": "check system command",
+            "examples": [
+                "check bilge alarm"
+            ]
+        },
+        {
+            "id": "b020_isolate_system_command",
+            "pattern": "isolate system command",
+            "examples": [
+                "isolate fuel supply"
+            ]
+        },
+        {
+            "id": "b020_fit_emergency_equipment_command",
+            "pattern": "fit emergency equipment command",
+            "examples": [
+                "fit emergency tiller"
+            ]
+        },
+        {
+            "id": "b020_muster_location_command",
+            "pattern": "muster location command",
+            "examples": [
+                "muster on deck"
+            ]
+        },
+        {
+            "id": "b020_count_people_command",
+            "pattern": "count persons command",
+            "examples": [
+                "count persons aboard"
+            ]
+        },
+        {
+            "id": "b020_pass_tool_command",
+            "pattern": "pass tool command",
+            "examples": [
+                "pass boat hook"
+            ]
+        },
+        {
+            "id": "b020_test_safety_equipment_command",
+            "pattern": "test safety equipment command",
+            "examples": [
+                "test fire extinguisher"
+            ]
+        },
+        {
+            "id": "b020_bring_safety_equipment_command",
+            "pattern": "bring safety equipment command",
+            "examples": [
+                "bring first aid kit"
+            ]
+        },
+        {
+            "id": "b020_illuminate_equipment_command",
+            "pattern": "illuminate equipment command",
+            "examples": [
+                "illuminate pilot ladder"
+            ]
+        },
+        {
+            "id": "b020_rig_ladder_side_instruction",
+            "pattern": "rig ladder on named side instruction",
+            "examples": [
+                "Rig pilot ladder on port side."
+            ]
+        },
+        {
+            "id": "b020_equipment_ready_for_action",
+            "pattern": "equipment ready for action statement",
+            "examples": [
+                "Pilot ladder ready for boarding."
+            ]
+        },
+        {
+            "id": "b020_secure_access_with_equipment",
+            "pattern": "secure access with safety equipment",
+            "examples": [
+                "Secure gangway with safety net."
+            ]
+        },
+        {
+            "id": "b020_equipment_deployed_side",
+            "pattern": "equipment deployed on vessel side",
+            "examples": [
+                "Lifebuoy deployed on starboard side."
+            ]
+        },
+        {
+            "id": "b020_recover_equipment_from_location",
+            "pattern": "recover equipment from location",
+            "examples": [
+                "Recover heaving line from water."
+            ]
+        },
+        {
+            "id": "b020_safety_equipment_ready_location",
+            "pattern": "safety equipment ready in location",
+            "examples": [
+                "Fire extinguisher ready in cockpit."
+            ]
+        },
+        {
+            "id": "b020_equipment_brought_to_location",
+            "pattern": "equipment brought to location",
+            "examples": [
+                "First aid kit brought to deck."
+            ]
+        },
+        {
+            "id": "b020_emergency_equipment_fitted_tested",
+            "pattern": "emergency equipment fitted and tested",
+            "examples": [
+                "Emergency tiller fitted and tested."
+            ]
+        },
+        {
+            "id": "b020_close_system_immediately",
+            "pattern": "close system immediately instruction",
+            "examples": [
+                "Close engine seacock immediately."
+            ]
+        },
+        {
+            "id": "b020_alarm_sounding_location",
+            "pattern": "alarm sounding in location",
+            "examples": [
+                "Bilge alarm sounding in aft cabin."
+            ]
+        },
+        {
+            "id": "b020_valve_status_statement",
+            "pattern": "valve status statement",
+            "examples": [
+                "Fuel shutoff valve is closed."
+            ]
+        },
+        {
+            "id": "b020_keep_area_clear_of_hazard",
+            "pattern": "keep area clear of hazard",
+            "examples": [
+                "Keep foredeck clear of loose gear."
+            ]
+        },
+        {
+            "id": "b020_count_all_people_now",
+            "pattern": "count all people now instruction",
+            "examples": [
+                "Count all persons aboard now."
+            ]
+        },
+        {
+            "id": "b020_muster_people_location",
+            "pattern": "muster people at location",
+            "examples": [
+                "Muster passengers on main deck."
+            ]
+        },
+        {
+            "id": "b020_tool_passed_to_station",
+            "pattern": "tool passed to station statement",
+            "examples": [
+                "Boat hook passed to bow."
+            ]
+        },
+        {
+            "id": "b020_equipment_not_safe_to_use",
+            "pattern": "equipment not safe to use status",
+            "examples": [
+                "Boarding ladder not safe to use."
+            ]
+        },
+        {
+            "id": "b020_access_clear_for_evacuation",
+            "pattern": "access clear for evacuation status",
+            "examples": [
+                "Companionway clear for evacuation."
+            ]
+        },
+        {
+            "id": "b020_illuminate_equipment_before_action",
+            "pattern": "illuminate equipment before action",
+            "examples": [
+                "Illuminate pilot ladder before transfer."
+            ]
+        },
+        {
+            "id": "b020_report_person_status_on_board",
+            "pattern": "report person safely on board",
+            "examples": [
+                "Report pilot safely on board."
+            ]
+        },
+        {
+            "id": "b020_report_missing_person_location",
+            "pattern": "report missing person from location",
+            "examples": [
+                "Report one person missing from deck."
+            ]
+        }
+    ],
+    "dangerous_minimal_pairs": [
+        {
+            "pair": "lifebuoy / lifejacket / life raft",
+            "items": [
+                "word_b020_lifebuoy_001",
+                "word_b020_lifejacket_001",
+                "phrase_b020_lifebuoy_deployed_starboard_001"
+            ],
+            "must_accept": {
+                "word_b020_lifebuoy_001": [
+                    "lifebuoy"
+                ],
+                "word_b020_lifejacket_001": [
+                    "lifejacket"
+                ],
+                "phrase_b020_lifebuoy_deployed_starboard_001": [
+                    "Lifebuoy deployed on starboard side."
+                ]
+            },
+            "must_reject": {
+                "word_b020_lifebuoy_001": [
+                    "lifejacket",
+                    "life raft"
+                ],
+                "word_b020_lifejacket_001": [
+                    "lifebuoy",
+                    "jacket only"
+                ],
+                "phrase_b020_lifebuoy_deployed_starboard_001": [
+                    "Lifebuoy deployed on port side",
+                    "Lifejacket deployed on starboard side"
+                ]
+            },
+            "reason": "Throwable and wearable lifesaving equipment must stay distinct."
+        },
+        {
+            "pair": "pilot ladder / boarding ladder / pilot boat",
+            "items": [
+                "word_b020_pilot_ladder_001",
+                "word_b020_boarding_ladder_001",
+                "expr_b020_rig_pilot_ladder_001",
+                "phrase_b020_rig_pilot_ladder_port_side_001",
+                "phrase_b020_pilot_ladder_ready_boarding_001"
+            ],
+            "must_accept": {
+                "word_b020_pilot_ladder_001": [
+                    "pilot ladder"
+                ],
+                "word_b020_boarding_ladder_001": [
+                    "boarding ladder"
+                ],
+                "expr_b020_rig_pilot_ladder_001": [
+                    "rig pilot ladder"
+                ],
+                "phrase_b020_rig_pilot_ladder_port_side_001": [
+                    "Rig pilot ladder on port side."
+                ],
+                "phrase_b020_pilot_ladder_ready_boarding_001": [
+                    "Pilot ladder ready for boarding."
+                ]
+            },
+            "must_reject": {
+                "word_b020_pilot_ladder_001": [
+                    "boarding ladder",
+                    "gangway ladder"
+                ],
+                "word_b020_boarding_ladder_001": [
+                    "pilot ladder",
+                    "boarding pass"
+                ],
+                "expr_b020_rig_pilot_ladder_001": [
+                    "rig boarding ladder",
+                    "remove pilot ladder"
+                ],
+                "phrase_b020_rig_pilot_ladder_port_side_001": [
+                    "Rig pilot ladder on starboard side",
+                    "Rig boarding ladder on port side"
+                ],
+                "phrase_b020_pilot_ladder_ready_boarding_001": [
+                    "Pilot ladder not ready for boarding",
+                    "Boarding ladder ready for boarding"
+                ]
+            },
+            "reason": "Pilot transfer equipment and boarding equipment must not collapse."
+        },
+        {
+            "pair": "gangway / gangway net / fairway",
+            "items": [
+                "word_b020_gangway_net_001",
+                "expr_b020_secure_gangway_001",
+                "phrase_b020_secure_gangway_safety_net_001"
+            ],
+            "must_accept": {
+                "word_b020_gangway_net_001": [
+                    "gangway net"
+                ],
+                "expr_b020_secure_gangway_001": [
+                    "secure gangway"
+                ],
+                "phrase_b020_secure_gangway_safety_net_001": [
+                    "Secure gangway with safety net."
+                ]
+            },
+            "must_reject": {
+                "word_b020_gangway_net_001": [
+                    "gangway light",
+                    "safety net only"
+                ],
+                "expr_b020_secure_gangway_001": [
+                    "remove gangway",
+                    "secure fairway"
+                ],
+                "phrase_b020_secure_gangway_safety_net_001": [
+                    "Secure gangway without safety net",
+                    "Secure pilot ladder with safety net"
+                ]
+            },
+            "reason": "Boarding access and fairway terms must stay separate."
+        },
+        {
+            "pair": "heaving line / mooring line / throw/recover",
+            "items": [
+                "word_b020_heaving_line_001",
+                "expr_b020_prepare_heaving_line_001",
+                "phrase_b020_recover_heaving_line_water_001"
+            ],
+            "must_accept": {
+                "word_b020_heaving_line_001": [
+                    "heaving line"
+                ],
+                "expr_b020_prepare_heaving_line_001": [
+                    "prepare heaving line"
+                ],
+                "phrase_b020_recover_heaving_line_water_001": [
+                    "Recover heaving line from water."
+                ]
+            },
+            "must_reject": {
+                "word_b020_heaving_line_001": [
+                    "mooring line",
+                    "fishing line"
+                ],
+                "expr_b020_prepare_heaving_line_001": [
+                    "prepare mooring line",
+                    "throw heaving line"
+                ],
+                "phrase_b020_recover_heaving_line_water_001": [
+                    "Throw heaving line from water",
+                    "Recover mooring line from water"
+                ]
+            },
+            "reason": "Line type and handling action must remain exact."
+        },
+        {
+            "pair": "fire extinguisher / first aid kit / fire alarm",
+            "items": [
+                "word_b020_fire_extinguisher_001",
+                "word_b020_first_aid_kit_001",
+                "expr_b020_test_fire_extinguisher_001",
+                "expr_b020_bring_first_aid_kit_001",
+                "phrase_b020_fire_extinguisher_ready_cockpit_001",
+                "phrase_b020_first_aid_kit_to_deck_001"
+            ],
+            "must_accept": {
+                "word_b020_fire_extinguisher_001": [
+                    "fire extinguisher"
+                ],
+                "word_b020_first_aid_kit_001": [
+                    "first aid kit"
+                ],
+                "expr_b020_test_fire_extinguisher_001": [
+                    "test fire extinguisher"
+                ],
+                "expr_b020_bring_first_aid_kit_001": [
+                    "bring first aid kit"
+                ],
+                "phrase_b020_fire_extinguisher_ready_cockpit_001": [
+                    "Fire extinguisher ready in cockpit."
+                ],
+                "phrase_b020_first_aid_kit_to_deck_001": [
+                    "First aid kit brought to deck."
+                ]
+            },
+            "must_reject": {
+                "word_b020_fire_extinguisher_001": [
+                    "fire alarm",
+                    "fire blanket"
+                ],
+                "word_b020_first_aid_kit_001": [
+                    "fire aid kit",
+                    "repair kit"
+                ],
+                "expr_b020_test_fire_extinguisher_001": [
+                    "test fire alarm",
+                    "use fire extinguisher"
+                ],
+                "expr_b020_bring_first_aid_kit_001": [
+                    "bring fire kit",
+                    "bring repair kit"
+                ],
+                "phrase_b020_fire_extinguisher_ready_cockpit_001": [
+                    "Fire alarm ready in cockpit",
+                    "Fire extinguisher not ready in cockpit"
+                ],
+                "phrase_b020_first_aid_kit_to_deck_001": [
+                    "Fire aid kit brought to deck",
+                    "First aid kit brought below deck"
+                ]
+            },
+            "reason": "Fire and medical equipment boundaries must remain strict."
+        },
+        {
+            "pair": "seacock / fuel shutoff / open-close polarity",
+            "items": [
+                "word_b020_fuel_shutoff_001",
+                "word_b020_seacock_001",
+                "expr_b020_close_seacock_001",
+                "expr_b020_isolate_fuel_supply_001",
+                "phrase_b020_close_engine_seacock_immediately_001",
+                "phrase_b020_fuel_shutoff_valve_closed_001"
+            ],
+            "must_accept": {
+                "word_b020_fuel_shutoff_001": [
+                    "fuel shutoff"
+                ],
+                "word_b020_seacock_001": [
+                    "seacock"
+                ],
+                "expr_b020_close_seacock_001": [
+                    "close seacock"
+                ],
+                "expr_b020_isolate_fuel_supply_001": [
+                    "isolate fuel supply"
+                ],
+                "phrase_b020_close_engine_seacock_immediately_001": [
+                    "Close engine seacock immediately."
+                ],
+                "phrase_b020_fuel_shutoff_valve_closed_001": [
+                    "Fuel shutoff valve is closed."
+                ]
+            },
+            "must_reject": {
+                "word_b020_fuel_shutoff_001": [
+                    "fuel pump",
+                    "fuel leak"
+                ],
+                "word_b020_seacock_001": [
+                    "sea lock",
+                    "cockpit"
+                ],
+                "expr_b020_close_seacock_001": [
+                    "open seacock",
+                    "close cockpit"
+                ],
+                "expr_b020_isolate_fuel_supply_001": [
+                    "restore fuel supply",
+                    "isolate water supply"
+                ],
+                "phrase_b020_close_engine_seacock_immediately_001": [
+                    "Open engine seacock immediately",
+                    "Close fuel shutoff immediately"
+                ],
+                "phrase_b020_fuel_shutoff_valve_closed_001": [
+                    "Fuel shutoff valve is open",
+                    "Water shutoff valve is closed"
+                ]
+            },
+            "reason": "Hull valve and fuel isolation actions are safety-critical."
+        },
+        {
+            "pair": "bilge alarm / bilge pump / fire alarm",
+            "items": [
+                "word_b020_bilge_alarm_001",
+                "expr_b020_check_bilge_alarm_001",
+                "phrase_b020_bilge_alarm_sounding_aft_cabin_001"
+            ],
+            "must_accept": {
+                "word_b020_bilge_alarm_001": [
+                    "bilge alarm"
+                ],
+                "expr_b020_check_bilge_alarm_001": [
+                    "check bilge alarm"
+                ],
+                "phrase_b020_bilge_alarm_sounding_aft_cabin_001": [
+                    "Bilge alarm sounding in aft cabin."
+                ]
+            },
+            "must_reject": {
+                "word_b020_bilge_alarm_001": [
+                    "fire alarm",
+                    "bilge pump"
+                ],
+                "expr_b020_check_bilge_alarm_001": [
+                    "check fire alarm",
+                    "check bilge pump"
+                ],
+                "phrase_b020_bilge_alarm_sounding_aft_cabin_001": [
+                    "Fire alarm sounding in aft cabin",
+                    "Bilge pump sounding in aft cabin"
+                ]
+            },
+            "reason": "Bilge monitoring must not become pump operation or fire alarm."
+        },
+        {
+            "pair": "emergency tiller / rudder / steering wheel",
+            "items": [
+                "word_b020_emergency_tiller_001",
+                "expr_b020_fit_emergency_tiller_001",
+                "phrase_b020_emergency_tiller_fitted_tested_001"
+            ],
+            "must_accept": {
+                "word_b020_emergency_tiller_001": [
+                    "emergency tiller"
+                ],
+                "expr_b020_fit_emergency_tiller_001": [
+                    "fit emergency tiller"
+                ],
+                "phrase_b020_emergency_tiller_fitted_tested_001": [
+                    "Emergency tiller fitted and tested."
+                ]
+            },
+            "must_reject": {
+                "word_b020_emergency_tiller_001": [
+                    "emergency rudder",
+                    "steering wheel"
+                ],
+                "expr_b020_fit_emergency_tiller_001": [
+                    "remove emergency tiller",
+                    "fit steering wheel"
+                ],
+                "phrase_b020_emergency_tiller_fitted_tested_001": [
+                    "Emergency tiller removed and tested",
+                    "Emergency rudder fitted and tested"
+                ]
+            },
+            "reason": "Emergency steering component and fitted/tested status must remain exact."
+        },
+        {
+            "pair": "foredeck / companionway / evacuation access",
+            "items": [
+                "word_b020_companionway_001",
+                "word_b020_foredeck_001",
+                "expr_b020_clear_foredeck_001",
+                "phrase_b020_keep_foredeck_clear_gear_001",
+                "phrase_b020_companionway_clear_evacuation_001"
+            ],
+            "must_accept": {
+                "word_b020_companionway_001": [
+                    "companionway"
+                ],
+                "word_b020_foredeck_001": [
+                    "foredeck"
+                ],
+                "expr_b020_clear_foredeck_001": [
+                    "clear foredeck"
+                ],
+                "phrase_b020_keep_foredeck_clear_gear_001": [
+                    "Keep foredeck clear of loose gear."
+                ],
+                "phrase_b020_companionway_clear_evacuation_001": [
+                    "Companionway clear for evacuation."
+                ]
+            },
+            "must_reject": {
+                "word_b020_companionway_001": [
+                    "gangway",
+                    "runway"
+                ],
+                "word_b020_foredeck_001": [
+                    "aft deck",
+                    "forecastle only"
+                ],
+                "expr_b020_clear_foredeck_001": [
+                    "clear aft deck",
+                    "close foredeck"
+                ],
+                "phrase_b020_keep_foredeck_clear_gear_001": [
+                    "Keep aft deck clear of loose gear",
+                    "Keep foredeck full of loose gear"
+                ],
+                "phrase_b020_companionway_clear_evacuation_001": [
+                    "Gangway clear for evacuation",
+                    "Companionway blocked for evacuation"
+                ]
+            },
+            "reason": "Deck area and evacuation access terms must stay distinct."
+        },
+        {
+            "pair": "muster / count / report persons",
+            "items": [
+                "expr_b020_muster_on_deck_001",
+                "expr_b020_count_persons_aboard_001",
+                "phrase_b020_count_all_persons_aboard_now_001",
+                "phrase_b020_muster_passengers_main_deck_001",
+                "phrase_b020_report_one_person_missing_deck_001"
+            ],
+            "must_accept": {
+                "expr_b020_muster_on_deck_001": [
+                    "muster on deck"
+                ],
+                "expr_b020_count_persons_aboard_001": [
+                    "count persons aboard"
+                ],
+                "phrase_b020_count_all_persons_aboard_now_001": [
+                    "Count all persons aboard now."
+                ],
+                "phrase_b020_muster_passengers_main_deck_001": [
+                    "Muster passengers on main deck."
+                ],
+                "phrase_b020_report_one_person_missing_deck_001": [
+                    "Report one person missing from deck."
+                ]
+            },
+            "must_reject": {
+                "expr_b020_muster_on_deck_001": [
+                    "muster below deck",
+                    "scatter on deck"
+                ],
+                "expr_b020_count_persons_aboard_001": [
+                    "count persons ashore",
+                    "report persons aboard"
+                ],
+                "phrase_b020_count_all_persons_aboard_now_001": [
+                    "Count all persons ashore now",
+                    "Report all persons aboard now"
+                ],
+                "phrase_b020_muster_passengers_main_deck_001": [
+                    "Muster crew on main deck",
+                    "Muster passengers below deck"
+                ],
+                "phrase_b020_report_one_person_missing_deck_001": [
+                    "Report two persons missing from deck",
+                    "Report one person found on deck"
+                ]
+            },
+            "reason": "People-accounting commands must preserve action, count, and location."
+        },
+        {
+            "pair": "boat hook pass / throw / bow-stern",
+            "items": [
+                "word_b020_boat_hook_001",
+                "expr_b020_pass_boat_hook_001",
+                "phrase_b020_boat_hook_passed_bow_001"
+            ],
+            "must_accept": {
+                "word_b020_boat_hook_001": [
+                    "boat hook"
+                ],
+                "expr_b020_pass_boat_hook_001": [
+                    "pass boat hook"
+                ],
+                "phrase_b020_boat_hook_passed_bow_001": [
+                    "Boat hook passed to bow."
+                ]
+            },
+            "must_reject": {
+                "word_b020_boat_hook_001": [
+                    "deck brush",
+                    "boat rope"
+                ],
+                "expr_b020_pass_boat_hook_001": [
+                    "pass boat rope",
+                    "throw boat hook"
+                ],
+                "phrase_b020_boat_hook_passed_bow_001": [
+                    "Boat rope passed to bow",
+                    "Boat hook passed to stern"
+                ]
+            },
+            "reason": "Boat hook handoff must not become throwing or wrong station."
+        },
+        {
+            "pair": "pilot safely on board / not safely / ashore",
+            "items": [
+                "expr_b020_illuminate_pilot_ladder_001",
+                "phrase_b020_illuminate_pilot_ladder_transfer_001",
+                "phrase_b020_report_pilot_safely_on_board_001"
+            ],
+            "must_accept": {
+                "expr_b020_illuminate_pilot_ladder_001": [
+                    "illuminate pilot ladder"
+                ],
+                "phrase_b020_illuminate_pilot_ladder_transfer_001": [
+                    "Illuminate pilot ladder before transfer."
+                ],
+                "phrase_b020_report_pilot_safely_on_board_001": [
+                    "Report pilot safely on board."
+                ]
+            },
+            "must_reject": {
+                "expr_b020_illuminate_pilot_ladder_001": [
+                    "illuminate boarding ladder",
+                    "remove pilot ladder"
+                ],
+                "phrase_b020_illuminate_pilot_ladder_transfer_001": [
+                    "Illuminate boarding ladder before transfer",
+                    "Remove pilot ladder before transfer"
+                ],
+                "phrase_b020_report_pilot_safely_on_board_001": [
+                    "Report pilot not safely on board",
+                    "Report passenger safely on board"
+                ]
+            },
+            "reason": "Pilot transfer preparation and final status must remain exact."
+        },
+        {
+            "pair": "boarding ladder safe / not safe",
+            "items": [
+                "phrase_b020_boarding_ladder_not_safe_001"
+            ],
+            "must_accept": {
+                "phrase_b020_boarding_ladder_not_safe_001": [
+                    "Boarding ladder not safe to use."
+                ]
+            },
+            "must_reject": {
+                "phrase_b020_boarding_ladder_not_safe_001": [
+                    "Boarding ladder safe to use",
+                    "Pilot ladder not safe to use"
+                ]
+            },
+            "reason": "Boarding safety polarity must not reverse."
+        }
+    ],
+    "producer_notes": {
+        "target_increment": "50 draft vocabulary units toward M4 1000+ items",
+        "type_mix": "15 word, 15 short_expression, 20 phrase",
+        "production_scope": "none",
+        "next_gate": "Sea Speak Linguist Review before engineering gate or merge"
+    }
+}
