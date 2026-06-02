@@ -4489,6 +4489,228 @@
                 ]
             },
             "reason": "Negation and escalation boundaries must remain strict."
+        },
+        {
+            "pair": "coastguard / VTS / port control / marina control",
+            "items": [
+                "word_sar_coastguard_001",
+                "phrase_sar_coastguard_coordinating_search_001"
+            ],
+            "must_accept": {
+                "word_sar_coastguard_001": [
+                    "coastguard"
+                ],
+                "phrase_sar_coastguard_coordinating_search_001": [
+                    "Coastguard coordinating search and rescue."
+                ]
+            },
+            "must_reject": {
+                "word_sar_coastguard_001": [
+                    "port control",
+                    "VTS"
+                ],
+                "phrase_sar_coastguard_coordinating_search_001": [
+                    "Port control coordinating search and rescue",
+                    "Coastguard coordinating berthing"
+                ]
+            },
+            "reason": "SAR authority must not collapse into routine traffic, port, or marina stations."
+        },
+        {
+            "pair": "Mayday relay / own Mayday / Pan-Pan relay / readback",
+            "items": [
+                "expr_sar_mayday_relay_received_001",
+                "phrase_sar_relay_received_unable_assist_001"
+            ],
+            "must_accept": {
+                "expr_sar_mayday_relay_received_001": [
+                    "Mayday relay received"
+                ],
+                "phrase_sar_relay_received_unable_assist_001": [
+                    "Mayday relay received, unable to assist."
+                ]
+            },
+            "must_reject": {
+                "expr_sar_mayday_relay_received_001": [
+                    "Mayday received",
+                    "Pan-Pan relay received"
+                ],
+                "phrase_sar_relay_received_unable_assist_001": [
+                    "Mayday received unable to assist",
+                    "Mayday relay received able to assist"
+                ]
+            },
+            "reason": "Forwarding a distress relay is distinct from own distress, urgency relay, readback, and assistance capability."
+        },
+        {
+            "pair": "last known position / last reported position / current position / destination / course",
+            "items": [
+                "expr_sar_last_known_position_001",
+                "phrase_sar_report_last_known_position_001",
+                "phrase_sar_debris_near_last_position_001"
+            ],
+            "must_accept": {
+                "expr_sar_last_known_position_001": [
+                    "last known position"
+                ],
+                "phrase_sar_report_last_known_position_001": [
+                    "Report last known position of vessel in distress."
+                ],
+                "phrase_sar_debris_near_last_position_001": [
+                    "Debris sighted near last known position."
+                ]
+            },
+            "must_reject": {
+                "expr_sar_last_known_position_001": [
+                    "current position",
+                    "destination",
+                    "last reported position"
+                ],
+                "phrase_sar_report_last_known_position_001": [
+                    "Report current position of vessel in distress",
+                    "Report destination of vessel in distress",
+                    "Report last reported position of vessel in distress"
+                ],
+                "phrase_sar_debris_near_last_position_001": [
+                    "Debris sighted near destination",
+                    "Debris sighted near current position",
+                    "Debris sighted near last reported position"
+                ]
+            },
+            "reason": "SAR search references must not accept last-reported, routine current-position, destination, or course substitutions."
+        },
+        {
+            "pair": "visual contact / visual contact lost / radio contact / radar contact",
+            "items": [
+                "expr_sar_visual_contact_001",
+                "expr_sar_visual_contact_lost_001",
+                "phrase_sar_visual_contact_lost_continue_search_001"
+            ],
+            "must_accept": {
+                "expr_sar_visual_contact_001": [
+                    "visual contact"
+                ],
+                "expr_sar_visual_contact_lost_001": [
+                    "visual contact lost"
+                ],
+                "phrase_sar_visual_contact_lost_continue_search_001": [
+                    "Visual contact lost, continuing search."
+                ]
+            },
+            "must_reject": {
+                "expr_sar_visual_contact_001": [
+                    "radio contact",
+                    "visual contact lost"
+                ],
+                "expr_sar_visual_contact_lost_001": [
+                    "visual contact established",
+                    "radio contact lost"
+                ],
+                "phrase_sar_visual_contact_lost_continue_search_001": [
+                    "Visual contact established continuing search",
+                    "Visual contact lost search completed"
+                ]
+            },
+            "reason": "Contact type and contact status must remain exact in SAR coordination."
+        },
+        {
+            "pair": "survivors / no survivors / person overboard / debris",
+            "items": [
+                "word_sar_survivor_001",
+                "expr_sar_survivors_in_sight_001",
+                "phrase_sar_survivors_in_sight_recovery_001",
+                "phrase_sar_debris_near_last_position_001"
+            ],
+            "must_accept": {
+                "word_sar_survivor_001": [
+                    "survivor"
+                ],
+                "expr_sar_survivors_in_sight_001": [
+                    "survivors in sight"
+                ],
+                "phrase_sar_survivors_in_sight_recovery_001": [
+                    "Survivors in sight, preparing recovery."
+                ],
+                "phrase_sar_debris_near_last_position_001": [
+                    "Debris sighted near last known position."
+                ]
+            },
+            "must_reject": {
+                "word_sar_survivor_001": [
+                    "missing person",
+                    "passenger"
+                ],
+                "expr_sar_survivors_in_sight_001": [
+                    "no survivors in sight",
+                    "person overboard"
+                ],
+                "phrase_sar_survivors_in_sight_recovery_001": [
+                    "No survivors in sight preparing recovery",
+                    "Person overboard preparing recovery"
+                ],
+                "phrase_sar_debris_near_last_position_001": [
+                    "Survivors sighted near last known position"
+                ]
+            },
+            "reason": "Sighting survivors, not sighting survivors, person-overboard, and debris reports have different operational meaning."
+        },
+        {
+            "pair": "rescue boat / rescue helicopter / liferaft / pilot boat / tug",
+            "items": [
+                "word_sar_rescue_boat_001",
+                "word_sar_rescue_helicopter_001",
+                "expr_sar_rescue_boat_approaching_001",
+                "expr_sar_helicopter_overhead_001",
+                "phrase_sar_helicopter_overhead_prepare_evac_001",
+                "phrase_sar_rescue_boat_starboard_001"
+            ],
+            "must_accept": {
+                "word_sar_rescue_boat_001": [
+                    "rescue boat"
+                ],
+                "word_sar_rescue_helicopter_001": [
+                    "rescue helicopter"
+                ],
+                "expr_sar_rescue_boat_approaching_001": [
+                    "rescue boat approaching"
+                ],
+                "expr_sar_helicopter_overhead_001": [
+                    "rescue helicopter overhead"
+                ],
+                "phrase_sar_helicopter_overhead_prepare_evac_001": [
+                    "Rescue helicopter overhead, prepare for evacuation."
+                ],
+                "phrase_sar_rescue_boat_starboard_001": [
+                    "Rescue boat approaching from starboard side."
+                ]
+            },
+            "must_reject": {
+                "word_sar_rescue_boat_001": [
+                    "liferaft",
+                    "pilot boat"
+                ],
+                "word_sar_rescue_helicopter_001": [
+                    "rescue boat",
+                    "pilot boat"
+                ],
+                "expr_sar_rescue_boat_approaching_001": [
+                    "pilot boat approaching",
+                    "tug approaching"
+                ],
+                "expr_sar_helicopter_overhead_001": [
+                    "rescue boat overhead",
+                    "helicopter departed"
+                ],
+                "phrase_sar_helicopter_overhead_prepare_evac_001": [
+                    "Rescue boat overhead prepare for evacuation",
+                    "Rescue helicopter overhead evacuation not required"
+                ],
+                "phrase_sar_rescue_boat_starboard_001": [
+                    "Rescue boat approaching from port side",
+                    "Pilot boat approaching from starboard side"
+                ]
+            },
+            "reason": "SAR units, survival craft, pilotage, towing, aircraft status, and side reports must remain separate."
         }
     ],
     "items": [
@@ -11923,6 +12145,354 @@
                 "Temporary repair underway rescue required"
             ],
             "reason": "Temporary repair and present assistance status must remain exact."
+        },
+        {
+            "id": "word_sar_coastguard_001",
+            "target_text": "coastguard",
+            "should_accept": [
+                "coastguard",
+                "coast guard",
+                "COASTGUARD"
+            ],
+            "should_reject": [
+                "port control",
+                "VTS",
+                "marina control"
+            ],
+            "reason": "Coastguard is the SAR authority context here, not routine port/VTS/marina traffic."
+        },
+        {
+            "id": "word_sar_survivor_001",
+            "target_text": "survivor",
+            "should_accept": [
+                "survivor",
+                "SURVIVOR"
+            ],
+            "should_reject": [
+                "casualty",
+                "missing person",
+                "passenger"
+            ],
+            "reason": "Survivor means a person found alive, not an unlocated missing person or generic passenger."
+        },
+        {
+            "id": "word_sar_distress_flare_001",
+            "target_text": "distress flare",
+            "should_accept": [
+                "distress flare",
+                "red flare"
+            ],
+            "should_reject": [
+                "fire",
+                "flashlight",
+                "torch"
+            ],
+            "reason": "A distress flare is a distress signal, not a fire or ordinary light."
+        },
+        {
+            "id": "word_sar_rescue_boat_001",
+            "target_text": "rescue boat",
+            "should_accept": [
+                "rescue boat",
+                "RESCUE BOAT"
+            ],
+            "should_reject": [
+                "liferaft",
+                "tug boat",
+                "pilot boat"
+            ],
+            "reason": "Rescue boat is a responding craft, not a liferaft, tug, or pilot boat."
+        },
+        {
+            "id": "word_sar_rescue_helicopter_001",
+            "target_text": "rescue helicopter",
+            "should_accept": [
+                "rescue helicopter",
+                "SAR helicopter"
+            ],
+            "should_reject": [
+                "rescue boat",
+                "pilot boat",
+                "drone"
+            ],
+            "reason": "Rescue helicopter is an aircraft rescue unit and must not collapse into boats or pilotage."
+        },
+        {
+            "id": "expr_sar_mayday_relay_received_001",
+            "target_text": "Mayday relay received",
+            "should_accept": [
+                "Mayday relay received"
+            ],
+            "should_reject": [
+                "Mayday received",
+                "Pan-Pan relay received",
+                "Read back Mayday relay"
+            ],
+            "reason": "Received relay acknowledgement must stay separate from own Mayday, Pan-Pan relay, and readback."
+        },
+        {
+            "id": "expr_sar_last_known_position_001",
+            "target_text": "last known position",
+            "should_accept": [
+                "last known position"
+            ],
+            "should_reject": [
+                "current position",
+                "destination",
+                "course",
+                "last reported position"
+            ],
+            "reason": "Last known position is SAR search reference, not current position, destination, or course."
+        },
+        {
+            "id": "expr_sar_search_area_001",
+            "target_text": "search area",
+            "should_accept": [
+                "search area",
+                "search zone"
+            ],
+            "should_reject": [
+                "traffic lane",
+                "anchorage",
+                "reporting point"
+            ],
+            "reason": "Search area is a SAR area, not routine navigation area terminology."
+        },
+        {
+            "id": "expr_sar_visual_contact_001",
+            "target_text": "visual contact",
+            "should_accept": [
+                "visual contact"
+            ],
+            "should_reject": [
+                "radio contact",
+                "radar contact",
+                "visual contact lost"
+            ],
+            "reason": "Visual contact means seen by eye and must not accept radio/radar contact or loss of contact."
+        },
+        {
+            "id": "expr_sar_visual_contact_lost_001",
+            "target_text": "visual contact lost",
+            "should_accept": [
+                "visual contact lost"
+            ],
+            "should_reject": [
+                "visual contact established",
+                "radio contact lost",
+                "radar contact lost"
+            ],
+            "reason": "Losing visual contact is different from establishing contact or losing radio/radar contact."
+        },
+        {
+            "id": "expr_sar_survivors_in_sight_001",
+            "target_text": "survivors in sight",
+            "should_accept": [
+                "survivors in sight",
+                "survivors are in sight"
+            ],
+            "should_reject": [
+                "no survivors in sight",
+                "person overboard",
+                "casualties on board"
+            ],
+            "reason": "Survivors in sight is a positive SAR sighting, not absence of survivors or a generic casualty report."
+        },
+        {
+            "id": "expr_sar_rescue_boat_approaching_001",
+            "target_text": "rescue boat approaching",
+            "should_accept": [
+                "rescue boat approaching",
+                "rescue boat is approaching"
+            ],
+            "should_reject": [
+                "rescue boat leaving",
+                "pilot boat approaching",
+                "tug approaching"
+            ],
+            "reason": "Rescue boat approach must stay separate from pilot/tug operations and departure."
+        },
+        {
+            "id": "expr_sar_helicopter_overhead_001",
+            "target_text": "rescue helicopter overhead",
+            "should_accept": [
+                "rescue helicopter overhead",
+                "SAR helicopter overhead"
+            ],
+            "should_reject": [
+                "rescue boat overhead",
+                "helicopter departed",
+                "aircraft not in sight"
+            ],
+            "reason": "Helicopter overhead is an aircraft position report, not boat status or absence."
+        },
+        {
+            "id": "expr_sar_prepare_for_evacuation_001",
+            "target_text": "prepare for evacuation",
+            "should_accept": [
+                "prepare for evacuation",
+                "prepare to evacuate"
+            ],
+            "should_reject": [
+                "evacuation not required",
+                "prepare for towage",
+                "prepare for berthing"
+            ],
+            "reason": "Evacuation preparation is SAR/distress context, not towage or berthing."
+        },
+        {
+            "id": "expr_sar_search_in_progress_001",
+            "target_text": "search in progress",
+            "should_accept": [
+                "search in progress",
+                "search is in progress"
+            ],
+            "should_reject": [
+                "search completed",
+                "navigation in progress",
+                "boarding in progress"
+            ],
+            "reason": "Search in progress must not accept completed search or unrelated operations."
+        },
+        {
+            "id": "phrase_sar_relay_received_unable_assist_001",
+            "target_text": "Mayday relay received, unable to assist.",
+            "should_accept": [
+                "Mayday relay received, unable to assist.",
+                "Mayday relay received unable to assist"
+            ],
+            "should_reject": [
+                "Mayday received unable to assist",
+                "Pan-Pan relay received unable to assist",
+                "Mayday relay received able to assist"
+            ],
+            "reason": "Relay acknowledgement and assistance capability must remain exact."
+        },
+        {
+            "id": "phrase_sar_report_last_known_position_001",
+            "target_text": "Report last known position of vessel in distress.",
+            "should_accept": [
+                "Report last known position of vessel in distress."
+            ],
+            "should_reject": [
+                "Report current position of vessel in distress",
+                "Report destination of vessel in distress",
+                "Report last known course of vessel in distress",
+                "Report last reported position of vessel in distress"
+            ],
+            "reason": "SAR search reference must remain last known position, not last reported position, destination, or course."
+        },
+        {
+            "id": "phrase_sar_search_area_north_001",
+            "target_text": "Search area north of last known position.",
+            "should_accept": [
+                "Search area north of last known position."
+            ],
+            "should_reject": [
+                "Search area south of last known position",
+                "Traffic lane north of last known position",
+                "Search area north of current position",
+                "Search area north of last reported position"
+            ],
+            "reason": "Search area direction and position reference must remain exact; last reported position is not accepted for this last-known-position drill."
+        },
+        {
+            "id": "phrase_sar_survivors_in_sight_recovery_001",
+            "target_text": "Survivors in sight, preparing recovery.",
+            "should_accept": [
+                "Survivors in sight, preparing recovery.",
+                "Survivors are in sight, preparing recovery"
+            ],
+            "should_reject": [
+                "No survivors in sight preparing recovery",
+                "Person overboard preparing recovery",
+                "Survivors in sight evacuation not required"
+            ],
+            "reason": "Positive survivor sighting and recovery preparation must remain exact."
+        },
+        {
+            "id": "phrase_sar_visual_contact_lost_continue_search_001",
+            "target_text": "Visual contact lost, continuing search.",
+            "should_accept": [
+                "Visual contact lost, continuing search.",
+                "Visual contact lost continuing search"
+            ],
+            "should_reject": [
+                "Visual contact established continuing search",
+                "Radio contact lost continuing search",
+                "Visual contact lost search completed"
+            ],
+            "reason": "Contact loss type and search status must remain exact."
+        },
+        {
+            "id": "phrase_sar_helicopter_overhead_prepare_evac_001",
+            "target_text": "Rescue helicopter overhead, prepare for evacuation.",
+            "should_accept": [
+                "Rescue helicopter overhead, prepare for evacuation.",
+                "SAR helicopter overhead, prepare for evacuation"
+            ],
+            "should_reject": [
+                "Rescue boat overhead prepare for evacuation",
+                "Rescue helicopter departed prepare for evacuation",
+                "Rescue helicopter overhead evacuation not required"
+            ],
+            "reason": "Aircraft status and evacuation preparation must stay exact."
+        },
+        {
+            "id": "phrase_sar_rescue_boat_starboard_001",
+            "target_text": "Rescue boat approaching from starboard side.",
+            "should_accept": [
+                "Rescue boat approaching from starboard side.",
+                "Rescue boat approaching starboard side"
+            ],
+            "should_reject": [
+                "Rescue boat approaching from port side",
+                "Pilot boat approaching from starboard side",
+                "Tug approaching from starboard side"
+            ],
+            "reason": "Responding craft and side must remain exact."
+        },
+        {
+            "id": "phrase_sar_listening_watch_channel16_001",
+            "target_text": "Keep listening watch for SAR traffic on channel one six.",
+            "should_accept": [
+                "Keep listening watch for SAR traffic on channel one six.",
+                "Keep listening watch for search and rescue traffic on channel one six"
+            ],
+            "should_reject": [
+                "Keep listening watch for VTS traffic on channel one six",
+                "Keep listening watch for SAR traffic on channel seven two",
+                "Stop listening watch for SAR traffic on channel one six"
+            ],
+            "reason": "SAR listening watch and channel must remain exact."
+        },
+        {
+            "id": "phrase_sar_coastguard_coordinating_search_001",
+            "target_text": "Coastguard coordinating search and rescue.",
+            "should_accept": [
+                "Coastguard coordinating search and rescue.",
+                "Coast guard coordinating search and rescue"
+            ],
+            "should_reject": [
+                "Port control coordinating search and rescue",
+                "Coastguard coordinating berthing",
+                "VTS coordinating search and rescue"
+            ],
+            "reason": "SAR authority and operation type must remain exact."
+        },
+        {
+            "id": "phrase_sar_debris_near_last_position_001",
+            "target_text": "Debris sighted near last known position.",
+            "should_accept": [
+                "Debris sighted near last known position."
+            ],
+            "should_reject": [
+                "Survivors sighted near last known position",
+                "Debris sighted near destination",
+                "Debris sighted near current position",
+                "Debris sighted near last reported position"
+            ],
+            "reason": "Debris sighting is not survivor sighting and must keep the last-known-position reference exact; last reported position is not accepted here."
         }
     ],
     "matcher_suggestions": [

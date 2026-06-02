@@ -11337,6 +11337,505 @@
             "hint_beginner": "Temporary repair...",
             "hint_intermediate": "assistance not required at present...",
             "hint_advanced": ""
+        },
+        {
+            "id": "word_sar_coastguard_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "sar_authority",
+            "source_language": "ru",
+            "source_text": "Береговая охрана",
+            "target_language": "en",
+            "target_text": "coastguard",
+            "accepted_answers": [
+                "coastguard",
+                "coast guard"
+            ],
+            "hint_beginner": "c________d",
+            "hint_intermediate": "coastguard...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_sar_survivor_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "survivor_status",
+            "source_language": "ru",
+            "source_text": "Выживший",
+            "target_language": "en",
+            "target_text": "survivor",
+            "accepted_answers": [
+                "survivor"
+            ],
+            "hint_beginner": "s_______r",
+            "hint_intermediate": "survivor...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_sar_distress_flare_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "distress_signals",
+            "source_language": "ru",
+            "source_text": "Сигнальная ракета бедствия",
+            "target_language": "en",
+            "target_text": "distress flare",
+            "accepted_answers": [
+                "distress flare",
+                "red flare"
+            ],
+            "hint_beginner": "distress...",
+            "hint_intermediate": "distress flare...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_sar_rescue_boat_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "rescue_units",
+            "source_language": "ru",
+            "source_text": "Спасательная лодка",
+            "target_language": "en",
+            "target_text": "rescue boat",
+            "accepted_answers": [
+                "rescue boat"
+            ],
+            "hint_beginner": "rescue...",
+            "hint_intermediate": "rescue boat...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_sar_rescue_helicopter_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 11,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "rescue_units",
+            "source_language": "ru",
+            "source_text": "Спасательный вертолет",
+            "target_language": "en",
+            "target_text": "rescue helicopter",
+            "accepted_answers": [
+                "rescue helicopter",
+                "SAR helicopter"
+            ],
+            "hint_beginner": "rescue...",
+            "hint_intermediate": "rescue helicopter...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_sar_mayday_relay_received_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "distress_relay",
+            "branch": "distress_mayday",
+            "module": "distress_relay",
+            "source_language": "ru",
+            "source_text": "Ретрансляция Мэйдэй принята",
+            "target_language": "en",
+            "target_text": "Mayday relay received",
+            "accepted_answers": [
+                "Mayday relay received"
+            ],
+            "hint_beginner": "Mayday...",
+            "hint_intermediate": "Mayday relay received...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_sar_last_known_position_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "search_position",
+            "source_language": "ru",
+            "source_text": "Последнее известное местоположение",
+            "target_language": "en",
+            "target_text": "last known position",
+            "accepted_answers": [
+                "last known position"
+            ],
+            "hint_beginner": "last...",
+            "hint_intermediate": "last known position...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_sar_search_area_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 11,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "search_area",
+            "source_language": "ru",
+            "source_text": "Район поиска",
+            "target_language": "en",
+            "target_text": "search area",
+            "accepted_answers": [
+                "search area",
+                "search zone"
+            ],
+            "hint_beginner": "search...",
+            "hint_intermediate": "search area...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_sar_visual_contact_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 11,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "contact_status",
+            "source_language": "ru",
+            "source_text": "Визуальный контакт",
+            "target_language": "en",
+            "target_text": "visual contact",
+            "accepted_answers": [
+                "visual contact"
+            ],
+            "hint_beginner": "visual...",
+            "hint_intermediate": "visual contact...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_sar_visual_contact_lost_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 13,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "contact_status",
+            "source_language": "ru",
+            "source_text": "Визуальный контакт потерян",
+            "target_language": "en",
+            "target_text": "visual contact lost",
+            "accepted_answers": [
+                "visual contact lost"
+            ],
+            "hint_beginner": "visual...",
+            "hint_intermediate": "visual contact lost...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_sar_survivors_in_sight_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "survivor_status",
+            "source_language": "ru",
+            "source_text": "Выжившие в поле зрения",
+            "target_language": "en",
+            "target_text": "survivors in sight",
+            "accepted_answers": [
+                "survivors in sight",
+                "survivors are in sight"
+            ],
+            "hint_beginner": "survivors...",
+            "hint_intermediate": "survivors in sight...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_sar_rescue_boat_approaching_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "rescue_units",
+            "source_language": "ru",
+            "source_text": "Спасательная лодка подходит",
+            "target_language": "en",
+            "target_text": "rescue boat approaching",
+            "accepted_answers": [
+                "rescue boat approaching",
+                "rescue boat is approaching"
+            ],
+            "hint_beginner": "rescue...",
+            "hint_intermediate": "rescue boat approaching...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_sar_helicopter_overhead_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 13,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "rescue_units",
+            "source_language": "ru",
+            "source_text": "Спасательный вертолет над нами",
+            "target_language": "en",
+            "target_text": "rescue helicopter overhead",
+            "accepted_answers": [
+                "rescue helicopter overhead",
+                "SAR helicopter overhead"
+            ],
+            "hint_beginner": "rescue...",
+            "hint_intermediate": "rescue helicopter overhead...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_sar_prepare_for_evacuation_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 14,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "evacuation_preparation",
+            "source_language": "ru",
+            "source_text": "Подготовиться к эвакуации",
+            "target_language": "en",
+            "target_text": "prepare for evacuation",
+            "accepted_answers": [
+                "prepare for evacuation",
+                "prepare to evacuate"
+            ],
+            "hint_beginner": "prepare...",
+            "hint_intermediate": "prepare for evacuation...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_sar_search_in_progress_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "search_area",
+            "source_language": "ru",
+            "source_text": "Поиск продолжается",
+            "target_language": "en",
+            "target_text": "search in progress",
+            "accepted_answers": [
+                "search in progress",
+                "search is in progress"
+            ],
+            "hint_beginner": "search...",
+            "hint_intermediate": "search in progress...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_sar_relay_received_unable_assist_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "distress_relay",
+            "branch": "distress_mayday",
+            "module": "distress_relay",
+            "source_language": "ru",
+            "source_text": "Ретрансляция Мэйдэй принята, оказать помощь не можем.",
+            "target_language": "en",
+            "target_text": "Mayday relay received, unable to assist.",
+            "accepted_answers": [
+                "Mayday relay received, unable to assist."
+            ],
+            "grammar_pattern": "sar_relay_received_unable_assist",
+            "hint_beginner": "Mayday...",
+            "hint_intermediate": "Mayday relay received, unable to assist...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_sar_report_last_known_position_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "search_position",
+            "source_language": "ru",
+            "source_text": "Сообщите последнее известное местоположение судна в бедствии.",
+            "target_language": "en",
+            "target_text": "Report last known position of vessel in distress.",
+            "accepted_answers": [
+                "Report last known position of vessel in distress."
+            ],
+            "grammar_pattern": "sar_report_last_known_position",
+            "hint_beginner": "Report...",
+            "hint_intermediate": "Report last known position of vessel in distress...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_sar_search_area_north_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "search_area",
+            "source_language": "ru",
+            "source_text": "Район поиска севернее последнего известного местоположения.",
+            "target_language": "en",
+            "target_text": "Search area north of last known position.",
+            "accepted_answers": [
+                "Search area north of last known position."
+            ],
+            "grammar_pattern": "sar_search_area_reference",
+            "hint_beginner": "Search...",
+            "hint_intermediate": "Search area north of last known position...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_sar_survivors_in_sight_recovery_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "survivor_status",
+            "source_language": "ru",
+            "source_text": "Выжившие в поле зрения, готовимся к подъему.",
+            "target_language": "en",
+            "target_text": "Survivors in sight, preparing recovery.",
+            "accepted_answers": [
+                "Survivors in sight, preparing recovery.",
+                "Survivors are in sight, preparing recovery"
+            ],
+            "grammar_pattern": "sar_survivors_recovery",
+            "hint_beginner": "Survivors...",
+            "hint_intermediate": "Survivors in sight, preparing recovery...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_sar_visual_contact_lost_continue_search_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 18,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "contact_status",
+            "source_language": "ru",
+            "source_text": "Визуальный контакт потерян, продолжаем поиск.",
+            "target_language": "en",
+            "target_text": "Visual contact lost, continuing search.",
+            "accepted_answers": [
+                "Visual contact lost, continuing search."
+            ],
+            "grammar_pattern": "sar_visual_contact_lost_search",
+            "hint_beginner": "Visual...",
+            "hint_intermediate": "Visual contact lost, continuing search...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_sar_helicopter_overhead_prepare_evac_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 18,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "evacuation_preparation",
+            "source_language": "ru",
+            "source_text": "Спасательный вертолет над нами, готовьтесь к эвакуации.",
+            "target_language": "en",
+            "target_text": "Rescue helicopter overhead, prepare for evacuation.",
+            "accepted_answers": [
+                "Rescue helicopter overhead, prepare for evacuation.",
+                "SAR helicopter overhead, prepare for evacuation."
+            ],
+            "grammar_pattern": "sar_helicopter_evacuation",
+            "hint_beginner": "Rescue...",
+            "hint_intermediate": "Rescue helicopter overhead, prepare for evacuation...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_sar_rescue_boat_starboard_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "rescue_units",
+            "source_language": "ru",
+            "source_text": "Спасательная лодка подходит с правого борта.",
+            "target_language": "en",
+            "target_text": "Rescue boat approaching from starboard side.",
+            "accepted_answers": [
+                "Rescue boat approaching from starboard side.",
+                "Rescue boat approaching starboard side"
+            ],
+            "grammar_pattern": "sar_rescue_boat_approach_side",
+            "hint_beginner": "Rescue...",
+            "hint_intermediate": "Rescue boat approaching from starboard side...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_sar_listening_watch_channel16_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "sar_watch",
+            "source_language": "ru",
+            "source_text": "Сохраняйте прослушивание SAR-обмена на канале один шесть.",
+            "target_language": "en",
+            "target_text": "Keep listening watch for SAR traffic on channel one six.",
+            "accepted_answers": [
+                "Keep listening watch for SAR traffic on channel one six.",
+                "Keep listening watch for search and rescue traffic on channel one six"
+            ],
+            "grammar_pattern": "sar_listening_watch_channel16",
+            "hint_beginner": "Keep...",
+            "hint_intermediate": "Keep listening watch for SAR traffic on channel one six...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_sar_coastguard_coordinating_search_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "sar_authority",
+            "source_language": "ru",
+            "source_text": "Береговая охрана координирует поиск и спасение.",
+            "target_language": "en",
+            "target_text": "Coastguard coordinating search and rescue.",
+            "accepted_answers": [
+                "Coastguard coordinating search and rescue.",
+                "Coast guard coordinating search and rescue."
+            ],
+            "grammar_pattern": "sar_coastguard_coordination",
+            "hint_beginner": "Coastguard...",
+            "hint_intermediate": "Coastguard coordinating search and rescue...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_sar_debris_near_last_position_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "sar_coordination",
+            "branch": "distress_mayday",
+            "module": "search_position",
+            "source_language": "ru",
+            "source_text": "Обломки замечены рядом с последним известным местоположением.",
+            "target_language": "en",
+            "target_text": "Debris sighted near last known position.",
+            "accepted_answers": [
+                "Debris sighted near last known position."
+            ],
+            "grammar_pattern": "sar_debris_last_position",
+            "hint_beginner": "Debris...",
+            "hint_intermediate": "Debris sighted near last known position...",
+            "hint_advanced": ""
         }
     ],
     "grammar_patterns": [
@@ -13232,6 +13731,76 @@
             "pattern": "temporary repair underway without current assistance request",
             "examples": [
                 "Temporary repair underway, assistance not required at present."
+            ]
+        },
+        {
+            "id": "sar_relay_received_unable_assist",
+            "pattern": "Mayday relay acknowledgement with assistance capability",
+            "examples": [
+                "Mayday relay received, unable to assist."
+            ]
+        },
+        {
+            "id": "sar_report_last_known_position",
+            "pattern": "SAR request for last known position",
+            "examples": [
+                "Report last known position of vessel in distress."
+            ]
+        },
+        {
+            "id": "sar_search_area_reference",
+            "pattern": "SAR search area with direction and reference position",
+            "examples": [
+                "Search area north of last known position."
+            ]
+        },
+        {
+            "id": "sar_survivors_recovery",
+            "pattern": "survivor sighting with recovery preparation",
+            "examples": [
+                "Survivors in sight, preparing recovery."
+            ]
+        },
+        {
+            "id": "sar_visual_contact_lost_search",
+            "pattern": "visual-contact loss with continuing search",
+            "examples": [
+                "Visual contact lost, continuing search."
+            ]
+        },
+        {
+            "id": "sar_helicopter_evacuation",
+            "pattern": "rescue helicopter evacuation preparation",
+            "examples": [
+                "Rescue helicopter overhead, prepare for evacuation."
+            ]
+        },
+        {
+            "id": "sar_rescue_boat_approach_side",
+            "pattern": "rescue boat approach side report",
+            "examples": [
+                "Rescue boat approaching from starboard side."
+            ]
+        },
+        {
+            "id": "sar_listening_watch_channel16",
+            "pattern": "SAR listening watch on channel one six",
+            "examples": [
+                "Keep listening watch for SAR traffic on channel one six."
+            ]
+        },
+        {
+            "id": "sar_coastguard_coordination",
+            "pattern": "coastguard search-and-rescue coordination",
+            "examples": [
+                "Coastguard coordinating search and rescue."
+            ]
+        },
+        {
+            "id": "sar_debris_last_position",
+            "pattern": "debris sighting near last known position",
+            "examples": [
+                "Debris sighted near last known position."
             ]
         }
     ],

@@ -1,7 +1,7 @@
 {
     "version": 1,
     "batch_id": "batch-015-sar-relay-coordination-basics",
-    "status": "linguist_reviewed",
+    "status": "merged",
     "date": "2026-06-02",
     "branch": "distress_mayday",
     "scope": "M4 SAR relay and rescue-coordination basics. Keep Mayday relay, own Mayday, Pan-Pan relay, coastguard/VTS/port-control identity, survivor/debris reports, visual/radio/radar contact, rescue helicopter/boat, liferaft, evacuation, and routine towing/pilotage separate.",
