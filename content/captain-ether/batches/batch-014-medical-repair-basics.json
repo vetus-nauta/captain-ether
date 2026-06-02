@@ -635,7 +635,7 @@
             }
         },
         {
-            "id": "phrase_repair_engine_restarted_no_assistance_001",
+            "id": "phrase_repair_engine_restarted_temporary_holding_001",
             "type": "phrase",
             "level": "intermediate",
             "difficulty_score": 15,
@@ -643,29 +643,32 @@
             "branch": "urgency_panpan",
             "module": "temporary_repair",
             "source_language": "ru",
-            "source_text": "Двигатель снова запущен, помощь больше не требуется.",
+            "source_text": "Двигатель снова запущен, временный ремонт держится.",
             "target_language": "en",
-            "target_text": "Engine restarted, assistance no longer required.",
+            "target_text": "Engine restarted, temporary repair holding.",
             "accepted_answers": [
-                "Engine restarted, assistance no longer required."
+                "Engine restarted, temporary repair holding.",
+                "Engine restarted, temporary repair is holding."
             ],
-            "grammar_pattern": "repair_engine_restarted_cancel_assistance",
+            "grammar_pattern": "repair_engine_restarted_temporary_holding",
             "hint_beginner": "Engine restarted...",
-            "hint_intermediate": "assistance no longer required...",
+            "hint_intermediate": "temporary repair holding...",
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "Engine restarted, assistance no longer required."
+                    "Engine restarted, temporary repair holding.",
+                    "Engine restarted, temporary repair is holding."
                 ],
                 "should_reject": [
                     "Engine failed assistance required",
+                    "Engine restarted assistance no longer required",
                     "Steering restored assistance no longer required",
                     "Engine restarted rescue required"
                 ],
                 "dangerous_minimal_pairs": [
-                    "engine restarted / engine failed / assistance required / rescue required"
+                    "engine restarted / engine failed / temporary repair / assistance not required / rescue required"
                 ],
-                "linguist_note": "Recovery and cancellation of assistance must not accept active failure or rescue request."
+                "linguist_note": "Recovery with temporary repair holding must not accept active failure, generic assistance cancellation, or rescue request."
             }
         },
         {
@@ -906,10 +909,10 @@
             ]
         },
         {
-            "id": "repair_engine_restarted_cancel_assistance",
-            "pattern": "engine recovery and no assistance required",
+            "id": "repair_engine_restarted_temporary_holding",
+            "pattern": "engine recovery with temporary repair holding",
             "examples": [
-                "Engine restarted, assistance no longer required."
+                "Engine restarted, temporary repair holding."
             ]
         },
         {
@@ -1063,7 +1066,7 @@
             "items": [
                 "expr_repair_engine_restarted_002",
                 "expr_repair_steering_restored_001",
-                "phrase_repair_engine_restarted_no_assistance_001",
+                "phrase_repair_engine_restarted_temporary_holding_001",
                 "phrase_repair_steering_restored_reduced_speed_001"
             ],
             "must_accept": {
@@ -1073,8 +1076,8 @@
                 "expr_repair_steering_restored_001": [
                     "steering restored"
                 ],
-                "phrase_repair_engine_restarted_no_assistance_001": [
-                    "Engine restarted, assistance no longer required."
+                "phrase_repair_engine_restarted_temporary_holding_001": [
+                    "Engine restarted, temporary repair holding."
                 ],
                 "phrase_repair_steering_restored_reduced_speed_001": [
                     "Steering restored, proceeding at reduced speed."
@@ -1089,8 +1092,9 @@
                     "steering failed",
                     "engine restarted"
                 ],
-                "phrase_repair_engine_restarted_no_assistance_001": [
+                "phrase_repair_engine_restarted_temporary_holding_001": [
                     "Engine failed assistance required",
+                    "Engine restarted assistance no longer required",
                     "Engine restarted rescue required"
                 ],
                 "phrase_repair_steering_restored_reduced_speed_001": [
