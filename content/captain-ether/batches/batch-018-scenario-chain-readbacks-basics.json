@@ -1,7 +1,7 @@
 {
     "version": 1,
     "batch_id": "batch-018-scenario-chain-readbacks-basics",
-    "status": "linguist_reviewed",
+    "status": "merged",
     "date": "2026-06-02",
     "branch": "mixed_scenario_chains",
     "scope": "M4 scenario-chain readback basics. Draft phrase-level scenario turns only, using existing Captain Ether branches. Keep station identity, reporting point, crossing side, time, channel, urgency/distress signal, and readback/correction boundaries exact. Do not introduce a new runtime item type.",

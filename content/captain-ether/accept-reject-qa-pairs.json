@@ -5106,6 +5106,238 @@
                 ]
             },
             "reason": "Service/waiting locations, status, and movement instructions must remain exact."
+        },
+        {
+            "pair": "marina arrival readback: station, berth number, side-to, approach/alongside status",
+            "items": [
+                "phrase_scenario_marina_arrival_from_south_001",
+                "phrase_scenario_mooring_berth_bravo_two_001",
+                "phrase_scenario_readback_berth_bravo_two_001",
+                "phrase_scenario_report_alongside_bravo_two_001"
+            ],
+            "must_accept": {
+                "phrase_scenario_marina_arrival_from_south_001": [
+                    "Marina Alpha, sailing yacht Aurora approaching from south."
+                ],
+                "phrase_scenario_mooring_berth_bravo_two_001": [
+                    "Proceed to berth Bravo two, starboard side to."
+                ],
+                "phrase_scenario_readback_berth_bravo_two_001": [
+                    "Reading back berth Bravo two, starboard side to."
+                ],
+                "phrase_scenario_report_alongside_bravo_two_001": [
+                    "Aurora alongside berth Bravo two."
+                ]
+            },
+            "must_reject": {
+                "phrase_scenario_marina_arrival_from_south_001": [
+                    "Port Control sailing yacht Aurora approaching from south"
+                ],
+                "phrase_scenario_mooring_berth_bravo_two_001": [
+                    "Proceed to berth Bravo two port side to"
+                ],
+                "phrase_scenario_readback_berth_bravo_two_001": [
+                    "Correction berth Bravo two starboard side to",
+                    "Read back berth Bravo two starboard side to"
+                ],
+                "phrase_scenario_report_alongside_bravo_two_001": [
+                    "Aurora approaching berth Bravo two"
+                ]
+            },
+            "reason": "Scenario-linked marina turns must preserve station, berth, side-to, and vessel status."
+        },
+        {
+            "pair": "traffic crossing: crossing/overtaking, starboard/port, alter/maintain, astern/ahead",
+            "items": [
+                "phrase_scenario_crossing_vessel_starboard_bow_001",
+                "phrase_scenario_request_crossing_intentions_001",
+                "phrase_scenario_alter_course_starboard_001",
+                "phrase_scenario_confirm_clear_passing_astern_001"
+            ],
+            "must_accept": {
+                "phrase_scenario_crossing_vessel_starboard_bow_001": [
+                    "Crossing vessel on starboard bow."
+                ],
+                "phrase_scenario_request_crossing_intentions_001": [
+                    "Request crossing vessel intentions."
+                ],
+                "phrase_scenario_alter_course_starboard_001": [
+                    "Altering course to starboard to pass astern."
+                ],
+                "phrase_scenario_confirm_clear_passing_astern_001": [
+                    "Confirm clear, passing astern."
+                ]
+            },
+            "must_reject": {
+                "phrase_scenario_crossing_vessel_starboard_bow_001": [
+                    "Overtaking vessel on starboard bow"
+                ],
+                "phrase_scenario_request_crossing_intentions_001": [
+                    "Report crossing vessel intentions"
+                ],
+                "phrase_scenario_alter_course_starboard_001": [
+                    "Altering course to starboard to pass ahead"
+                ],
+                "phrase_scenario_confirm_clear_passing_astern_001": [
+                    "Confirm not clear passing astern"
+                ]
+            },
+            "reason": "Collision-avoidance turns must preserve traffic type, side, action, and passing relation."
+        },
+        {
+            "pair": "VTS reporting chain: report/request, point Delta/Echo, instruction/advice, channel 12/16",
+            "items": [
+                "phrase_scenario_report_point_delta_001",
+                "phrase_scenario_vts_instruction_channel_one_two_001",
+                "phrase_scenario_readback_channel_one_two_001"
+            ],
+            "must_accept": {
+                "phrase_scenario_report_point_delta_001": [
+                    "Reporting passing point Delta."
+                ],
+                "phrase_scenario_vts_instruction_channel_one_two_001": [
+                    "VTS, switch to channel one two."
+                ],
+                "phrase_scenario_readback_channel_one_two_001": [
+                    "Read back, switch to channel one two."
+                ]
+            },
+            "must_reject": {
+                "phrase_scenario_report_point_delta_001": [
+                    "Request passing point Delta",
+                    "Report passing point Delta"
+                ],
+                "phrase_scenario_vts_instruction_channel_one_two_001": [
+                    "VTS advise switch to channel one two",
+                    "VTS instructs switch to channel one two"
+                ],
+                "phrase_scenario_readback_channel_one_two_001": [
+                    "Read back switch to channel one six"
+                ]
+            },
+            "reason": "Authority and channel-change chains must preserve report/instruction/readback semantics."
+        },
+        {
+            "pair": "restricted visibility: fog/smoke, reduce/increase speed, sound interval, Securite/Pan-Pan",
+            "items": [
+                "phrase_scenario_fog_bank_ahead_reduce_speed_001",
+                "phrase_scenario_sound_signal_every_two_minutes_001",
+                "phrase_scenario_securite_visibility_less_one_mile_001",
+                "expr_scenario_correction_area_charlie_001"
+            ],
+            "must_accept": {
+                "phrase_scenario_fog_bank_ahead_reduce_speed_001": [
+                    "Fog bank ahead, reducing speed."
+                ],
+                "phrase_scenario_sound_signal_every_two_minutes_001": [
+                    "Sound signal every two minutes."
+                ],
+                "phrase_scenario_securite_visibility_less_one_mile_001": [
+                    "Securite, visibility less than one mile in area Charlie."
+                ],
+                "expr_scenario_correction_area_charlie_001": [
+                    "correction area Charlie"
+                ]
+            },
+            "must_reject": {
+                "phrase_scenario_fog_bank_ahead_reduce_speed_001": [
+                    "Fog bank ahead increasing speed"
+                ],
+                "phrase_scenario_sound_signal_every_two_minutes_001": [
+                    "Sound signal every one minute"
+                ],
+                "phrase_scenario_securite_visibility_less_one_mile_001": [
+                    "Pan Pan visibility less than one mile in area Charlie"
+                ],
+                "expr_scenario_correction_area_charlie_001": [
+                    "read back area Charlie"
+                ]
+            },
+            "reason": "Safety-warning scenario turns must preserve signal, threshold, area, and action."
+        },
+        {
+            "pair": "Pan-Pan equipment chain: Pan-Pan/Mayday, engine/steering, tow/pilot, request/cancel",
+            "items": [
+                "phrase_scenario_panpan_engine_failed_position_001",
+                "phrase_scenario_panpan_request_tow_harbour_001",
+                "phrase_scenario_panpan_steering_limited_001",
+                "phrase_scenario_readback_panpan_tow_request_001"
+            ],
+            "must_accept": {
+                "phrase_scenario_panpan_engine_failed_position_001": [
+                    "Pan-Pan, engine failed, position near buoy seven."
+                ],
+                "phrase_scenario_panpan_request_tow_harbour_001": [
+                    "Request tow to harbour."
+                ],
+                "phrase_scenario_panpan_steering_limited_001": [
+                    "Steering limited, keeping starboard side of fairway."
+                ],
+                "phrase_scenario_readback_panpan_tow_request_001": [
+                    "Read back Pan-Pan, request tow to harbour."
+                ]
+            },
+            "must_reject": {
+                "phrase_scenario_panpan_engine_failed_position_001": [
+                    "Mayday engine failed position near buoy seven"
+                ],
+                "phrase_scenario_panpan_request_tow_harbour_001": [
+                    "Cancel tow to harbour"
+                ],
+                "phrase_scenario_panpan_steering_limited_001": [
+                    "Steering limited keeping port side of fairway"
+                ],
+                "phrase_scenario_readback_panpan_tow_request_001": [
+                    "Read back Pan Pan cancel tow to harbour"
+                ]
+            },
+            "reason": "Urgency chains must not drift into distress, wrong equipment, or cancelled assistance."
+        },
+        {
+            "pair": "Mayday position chain: Mayday/Pan-Pan, taking water/fire, east/west, persons count/status",
+            "items": [
+                "phrase_scenario_mayday_taking_water_position_001",
+                "phrase_scenario_mayday_four_persons_on_board_001",
+                "phrase_scenario_mayday_require_pump_001",
+                "phrase_scenario_rescue_unit_readback_position_001",
+                "expr_scenario_confirm_position_received_001"
+            ],
+            "must_accept": {
+                "phrase_scenario_mayday_taking_water_position_001": [
+                    "Mayday, taking water, position five miles east of Alpha."
+                ],
+                "phrase_scenario_mayday_four_persons_on_board_001": [
+                    "Four persons on board."
+                ],
+                "phrase_scenario_mayday_require_pump_001": [
+                    "Require emergency pump."
+                ],
+                "phrase_scenario_rescue_unit_readback_position_001": [
+                    "Rescue unit, reading back five miles east of Alpha."
+                ],
+                "expr_scenario_confirm_position_received_001": [
+                    "position received"
+                ]
+            },
+            "must_reject": {
+                "phrase_scenario_mayday_taking_water_position_001": [
+                    "Pan Pan taking water position five miles east of Alpha"
+                ],
+                "phrase_scenario_mayday_four_persons_on_board_001": [
+                    "Four persons overboard"
+                ],
+                "phrase_scenario_mayday_require_pump_001": [
+                    "Require emergency tow"
+                ],
+                "phrase_scenario_rescue_unit_readback_position_001": [
+                    "Rescue unit reading back five miles west of Alpha",
+                    "Rescue unit reads back five miles east of Alpha"
+                ],
+                "expr_scenario_confirm_position_received_001": [
+                    "position corrected"
+                ]
+            },
+            "reason": "Distress chain must preserve signal, distress nature, position, persons status, and requested equipment."
         }
     ],
     "items": [
@@ -13570,6 +13802,356 @@
                 "Waiting pontoon full proceed inside harbour"
             ],
             "reason": "Waiting pontoon status and stand-by instruction must remain exact."
+        },
+        {
+            "id": "phrase_scenario_marina_arrival_from_south_001",
+            "target_text": "Marina Alpha, sailing yacht Aurora approaching from south.",
+            "should_accept": [
+                "Marina Alpha, sailing yacht Aurora approaching from south.",
+                "Marina Alpha sailing yacht Aurora approaching from the south"
+            ],
+            "should_reject": [
+                "Marina Bravo sailing yacht Aurora approaching from south",
+                "Marina Alpha sailing yacht Aurora departing to south",
+                "Port Control sailing yacht Aurora approaching from south"
+            ],
+            "reason": "Station identity, approach status, and direction must remain exact in the first scenario turn."
+        },
+        {
+            "id": "phrase_scenario_marina_request_visitor_berth_001",
+            "target_text": "Request visitor berth for one night.",
+            "should_accept": [
+                "Request visitor berth for one night.",
+                "Requesting visitor berth for one night"
+            ],
+            "should_reject": [
+                "Request fuel berth for one night",
+                "Request visitor berth for two nights",
+                "Cancel visitor berth for one night"
+            ],
+            "reason": "The requested berth type, duration, and request/cancel status must not drift."
+        },
+        {
+            "id": "phrase_scenario_mooring_berth_bravo_two_001",
+            "target_text": "Proceed to berth Bravo two, starboard side to.",
+            "should_accept": [
+                "Proceed to berth Bravo two, starboard side to.",
+                "Proceed to berth Bravo two starboard side to"
+            ],
+            "should_reject": [
+                "Proceed to berth Bravo three starboard side to",
+                "Proceed to berth Bravo two port side to",
+                "Wait outside berth Bravo two starboard side to"
+            ],
+            "reason": "Berth number, vessel side, and proceed/wait instruction are docking-critical."
+        },
+        {
+            "id": "phrase_scenario_readback_berth_bravo_two_001",
+            "target_text": "Reading back berth Bravo two, starboard side to.",
+            "should_accept": [
+                "Reading back berth Bravo two, starboard side to.",
+                "Reading back berth Bravo two starboard side to"
+            ],
+            "should_reject": [
+                "Reading back berth Bravo two port side to",
+                "Reading back berth Bravo three starboard side to",
+                "Correction berth Bravo two starboard side to",
+                "Read back berth Bravo two starboard side to"
+            ],
+            "reason": "This spoken readback must not become a correction or an instruction to read back, and must preserve side and berth number."
+        },
+        {
+            "id": "phrase_scenario_report_alongside_bravo_two_001",
+            "target_text": "Aurora alongside berth Bravo two.",
+            "should_accept": [
+                "Aurora alongside berth Bravo two.",
+                "Aurora is alongside berth Bravo two"
+            ],
+            "should_reject": [
+                "Aurora approaching berth Bravo two",
+                "Aurora alongside berth Bravo three",
+                "Aurora departed berth Bravo two"
+            ],
+            "reason": "Alongside status is distinct from approach/departure and must keep berth number."
+        },
+        {
+            "id": "phrase_scenario_crossing_vessel_starboard_bow_001",
+            "target_text": "Crossing vessel on starboard bow.",
+            "should_accept": [
+                "Crossing vessel on starboard bow."
+            ],
+            "should_reject": [
+                "Crossing vessel on port bow",
+                "Overtaking vessel on starboard bow",
+                "Crossing vessel on starboard quarter"
+            ],
+            "reason": "Traffic type and relative bearing must remain exact."
+        },
+        {
+            "id": "phrase_scenario_request_crossing_intentions_001",
+            "target_text": "Request crossing vessel intentions.",
+            "should_accept": [
+                "Request crossing vessel intentions.",
+                "Request intentions of crossing vessel"
+            ],
+            "should_reject": [
+                "Report crossing vessel intentions",
+                "Request overtaking vessel intentions",
+                "Request crossing vessel position"
+            ],
+            "reason": "Clarification request must not become a report or a position query."
+        },
+        {
+            "id": "phrase_scenario_alter_course_starboard_001",
+            "target_text": "Altering course to starboard to pass astern.",
+            "should_accept": [
+                "Altering course to starboard to pass astern.",
+                "Alter course to starboard to pass astern"
+            ],
+            "should_reject": [
+                "Altering course to port to pass astern",
+                "Altering course to starboard to pass ahead",
+                "Maintaining course to starboard to pass astern"
+            ],
+            "reason": "Course action, side, and passing relation are collision-risk boundaries."
+        },
+        {
+            "id": "phrase_scenario_confirm_clear_passing_astern_001",
+            "target_text": "Confirm clear, passing astern.",
+            "should_accept": [
+                "Confirm clear, passing astern.",
+                "Confirm clear passing astern"
+            ],
+            "should_reject": [
+                "Confirm clear passing ahead",
+                "Confirm not clear passing astern",
+                "Cancel clear passing astern"
+            ],
+            "reason": "Clear status and passing relation must stay exact."
+        },
+        {
+            "id": "phrase_scenario_report_point_delta_001",
+            "target_text": "Reporting passing point Delta.",
+            "should_accept": [
+                "Reporting passing point Delta."
+            ],
+            "should_reject": [
+                "Reporting passing point Echo",
+                "Request passing point Delta",
+                "Reporting leaving point Delta",
+                "Report passing point Delta"
+            ],
+            "reason": "This is the vessel reporting a passed point, not an instruction to report, a request, or a different waypoint."
+        },
+        {
+            "id": "phrase_scenario_vts_instruction_channel_one_two_001",
+            "target_text": "VTS, switch to channel one two.",
+            "should_accept": [
+                "VTS, switch to channel one two.",
+                "VTS switch to channel one two"
+            ],
+            "should_reject": [
+                "VTS advise switch to channel one two",
+                "VTS switch to channel one six",
+                "Marina switch to channel one two",
+                "VTS instructs switch to channel one two"
+            ],
+            "reason": "This should read as a spoken VTS order, not a third-person description, advice, a marina call, or the wrong channel."
+        },
+        {
+            "id": "phrase_scenario_readback_channel_one_two_001",
+            "target_text": "Read back, switch to channel one two.",
+            "should_accept": [
+                "Read back, switch to channel one two.",
+                "Read back switch to channel one two"
+            ],
+            "should_reject": [
+                "Read back switch to channel one six",
+                "Correction switch to channel one two",
+                "Read back stand by on channel one two"
+            ],
+            "reason": "Readback type and channel action must remain exact."
+        },
+        {
+            "id": "phrase_scenario_fog_bank_ahead_reduce_speed_001",
+            "target_text": "Fog bank ahead, reducing speed.",
+            "should_accept": [
+                "Fog bank ahead, reducing speed.",
+                "Fog bank ahead reducing speed"
+            ],
+            "should_reject": [
+                "Fog bank astern reducing speed",
+                "Fog bank ahead increasing speed",
+                "Smoke bank ahead reducing speed"
+            ],
+            "reason": "Visibility hazard, relative direction, and action must remain exact."
+        },
+        {
+            "id": "phrase_scenario_sound_signal_every_two_minutes_001",
+            "target_text": "Sound signal every two minutes.",
+            "should_accept": [
+                "Sound signal every two minutes."
+            ],
+            "should_reject": [
+                "Sound signal every one minute",
+                "No sound signal every two minutes",
+                "Light signal every two minutes"
+            ],
+            "reason": "Signal type and interval are safety-critical."
+        },
+        {
+            "id": "phrase_scenario_securite_visibility_less_one_mile_001",
+            "target_text": "Securite, visibility less than one mile in area Charlie.",
+            "should_accept": [
+                "Securite, visibility less than one mile in area Charlie.",
+                "Sécurité visibility less than one mile in area Charlie"
+            ],
+            "should_reject": [
+                "Pan Pan visibility less than one mile in area Charlie",
+                "Securite visibility more than one mile in area Charlie",
+                "Securite visibility less than one mile in area Alpha"
+            ],
+            "reason": "Safety signal, visibility threshold, and area must remain exact."
+        },
+        {
+            "id": "phrase_scenario_panpan_engine_failed_position_001",
+            "target_text": "Pan-Pan, engine failed, position near buoy seven.",
+            "should_accept": [
+                "Pan-Pan, engine failed, position near buoy seven.",
+                "Pan Pan engine failed position near buoy seven"
+            ],
+            "should_reject": [
+                "Mayday engine failed position near buoy seven",
+                "Pan Pan steering failed position near buoy seven",
+                "Pan Pan engine failed position near buoy eight"
+            ],
+            "reason": "Urgency signal, failure type, and position reference must remain exact."
+        },
+        {
+            "id": "phrase_scenario_panpan_request_tow_harbour_001",
+            "target_text": "Request tow to harbour.",
+            "should_accept": [
+                "Request tow to harbour.",
+                "Request towing to harbour"
+            ],
+            "should_reject": [
+                "Request pilot to harbour",
+                "Cancel tow to harbour",
+                "Request tow to marina berth"
+            ],
+            "reason": "Assistance type, request/cancel status, and destination must remain exact."
+        },
+        {
+            "id": "phrase_scenario_panpan_steering_limited_001",
+            "target_text": "Steering limited, keeping starboard side of fairway.",
+            "should_accept": [
+                "Steering limited, keeping starboard side of fairway.",
+                "Steering is limited keeping starboard side of fairway"
+            ],
+            "should_reject": [
+                "Steering failed keeping starboard side of fairway",
+                "Steering limited keeping port side of fairway",
+                "Engine limited keeping starboard side of fairway"
+            ],
+            "reason": "Equipment, severity, and fairway side must remain exact."
+        },
+        {
+            "id": "phrase_scenario_readback_panpan_tow_request_001",
+            "target_text": "Read back Pan-Pan, request tow to harbour.",
+            "should_accept": [
+                "Read back Pan-Pan, request tow to harbour.",
+                "Read back Pan Pan request tow to harbour"
+            ],
+            "should_reject": [
+                "Read back Mayday request tow to harbour",
+                "Read back Pan Pan cancel tow to harbour",
+                "Correction Pan Pan request tow to harbour"
+            ],
+            "reason": "Readback, urgency signal, and assistance request status must remain exact."
+        },
+        {
+            "id": "phrase_scenario_mayday_taking_water_position_001",
+            "target_text": "Mayday, taking water, position five miles east of Alpha.",
+            "should_accept": [
+                "Mayday, taking water, position five miles east of Alpha.",
+                "Mayday taking water position five miles east of Alpha"
+            ],
+            "should_reject": [
+                "Pan Pan taking water position five miles east of Alpha",
+                "Mayday fire position five miles east of Alpha",
+                "Mayday taking water position five miles west of Alpha"
+            ],
+            "reason": "Distress signal, nature of distress, distance, and relative direction must remain exact."
+        },
+        {
+            "id": "phrase_scenario_mayday_four_persons_on_board_001",
+            "target_text": "Four persons on board.",
+            "should_accept": [
+                "Four persons on board.",
+                "Four people on board"
+            ],
+            "should_reject": [
+                "Five persons on board",
+                "Four persons overboard",
+                "Four persons abandoning ship"
+            ],
+            "reason": "Person count and status must remain exact."
+        },
+        {
+            "id": "phrase_scenario_mayday_require_pump_001",
+            "target_text": "Require emergency pump.",
+            "should_accept": [
+                "Require emergency pump.",
+                "Need emergency pump"
+            ],
+            "should_reject": [
+                "Require bilge status",
+                "Require emergency tow",
+                "Cancel emergency pump"
+            ],
+            "reason": "Assistance/equipment requested must remain exact."
+        },
+        {
+            "id": "phrase_scenario_rescue_unit_readback_position_001",
+            "target_text": "Rescue unit, reading back five miles east of Alpha.",
+            "should_accept": [
+                "Rescue unit, reading back five miles east of Alpha.",
+                "Rescue unit reading back five miles east of Alpha"
+            ],
+            "should_reject": [
+                "Rescue unit reading back five miles west of Alpha",
+                "Rescue unit correcting five miles east of Alpha",
+                "Marina reading back five miles east of Alpha",
+                "Rescue unit reads back five miles east of Alpha"
+            ],
+            "reason": "This is the rescue unit speaking a readback, not a third-person description, a correction, or a marina readback."
+        },
+        {
+            "id": "expr_scenario_confirm_position_received_001",
+            "target_text": "position received",
+            "should_accept": [
+                "position received",
+                "position is received"
+            ],
+            "should_reject": [
+                "position corrected",
+                "position unknown",
+                "message received"
+            ],
+            "reason": "Acknowledging position is distinct from correcting or not knowing it."
+        },
+        {
+            "id": "expr_scenario_correction_area_charlie_001",
+            "target_text": "correction area Charlie",
+            "should_accept": [
+                "correction area Charlie"
+            ],
+            "should_reject": [
+                "read back area Charlie",
+                "correction area Alpha",
+                "correction channel Charlie"
+            ],
+            "reason": "Correction marker and area name must remain exact."
         }
     ],
     "matcher_suggestions": [
