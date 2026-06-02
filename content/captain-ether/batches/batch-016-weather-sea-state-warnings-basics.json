@@ -1,0 +1,1125 @@
+{
+    "version": 1,
+    "batch_id": "batch-016-weather-sea-state-warnings-basics",
+    "status": "drafted",
+    "date": "2026-06-02",
+    "branch": "safety_securite",
+    "scope": "M4 safety/Securite weather and sea-state warning basics. Keep fog, restricted visibility, gale, squall, swell, navigational warnings, caution, keep-clear, and avoid-area instructions separate from Pan-Pan, routine traffic, depth, position, and cancellation meanings.",
+    "items": [
+        {
+            "id": "word_safety_fog_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Туман",
+            "target_language": "en",
+            "target_text": "fog",
+            "accepted_answers": [
+                "fog"
+            ],
+            "hint_beginner": "f__",
+            "hint_intermediate": "fog...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "fog",
+                    "FOG"
+                ],
+                "should_reject": [
+                    "rain",
+                    "smoke",
+                    "clear weather"
+                ],
+                "dangerous_minimal_pairs": [
+                    "fog / rain / smoke / clear weather"
+                ],
+                "linguist_note": "Fog is restricted visibility from weather, not rain, smoke, or clear conditions."
+            }
+        },
+        {
+            "id": "word_safety_squall_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Шквал",
+            "target_language": "en",
+            "target_text": "squall",
+            "accepted_answers": [
+                "squall"
+            ],
+            "hint_beginner": "s____l",
+            "hint_intermediate": "squall...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "squall"
+                ],
+                "should_reject": [
+                    "gale",
+                    "swell",
+                    "shallow water"
+                ],
+                "dangerous_minimal_pairs": [
+                    "squall / gale / swell / shallow water"
+                ],
+                "linguist_note": "Squall is a sudden wind/weather event, not a sustained gale, sea swell, or depth condition."
+            }
+        },
+        {
+            "id": "word_safety_gale_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Штормовой ветер",
+            "target_language": "en",
+            "target_text": "gale",
+            "accepted_answers": [
+                "gale"
+            ],
+            "hint_beginner": "g___",
+            "hint_intermediate": "gale...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "gale"
+                ],
+                "should_reject": [
+                    "calm",
+                    "squall",
+                    "fog"
+                ],
+                "dangerous_minimal_pairs": [
+                    "gale / calm / squall / fog"
+                ],
+                "linguist_note": "Gale indicates strong wind warning context, not calm weather, squall, or fog."
+            }
+        },
+        {
+            "id": "word_safety_swell_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Зыбь",
+            "target_language": "en",
+            "target_text": "swell",
+            "accepted_answers": [
+                "swell"
+            ],
+            "hint_beginner": "s____",
+            "hint_intermediate": "swell...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "swell"
+                ],
+                "should_reject": [
+                    "shallow water",
+                    "squall",
+                    "wake"
+                ],
+                "dangerous_minimal_pairs": [
+                    "swell / shallow water / squall / wake"
+                ],
+                "linguist_note": "Swell is sea state, not depth, wind squall, or vessel wake."
+            }
+        },
+        {
+            "id": "word_safety_thunderstorm_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Гроза",
+            "target_language": "en",
+            "target_text": "thunderstorm",
+            "accepted_answers": [
+                "thunderstorm"
+            ],
+            "hint_beginner": "t___________m",
+            "hint_intermediate": "thunderstorm...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "thunderstorm"
+                ],
+                "should_reject": [
+                    "fog",
+                    "gale",
+                    "traffic information"
+                ],
+                "dangerous_minimal_pairs": [
+                    "thunderstorm / fog / gale / traffic information"
+                ],
+                "linguist_note": "Thunderstorm is a weather hazard, not fog, gale, or traffic information."
+            }
+        },
+        {
+            "id": "expr_safety_poor_visibility_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 9,
+            "topic": "restricted_visibility",
+            "branch": "safety_securite",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Плохая видимость",
+            "target_language": "en",
+            "target_text": "poor visibility",
+            "accepted_answers": [
+                "poor visibility"
+            ],
+            "hint_beginner": "poor v...",
+            "hint_intermediate": "poor visibility...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "poor visibility",
+                    "POOR VISIBILITY"
+                ],
+                "should_reject": [
+                    "good visibility",
+                    "poor position",
+                    "restricted area"
+                ],
+                "dangerous_minimal_pairs": [
+                    "poor visibility / good visibility / poor position / restricted area"
+                ],
+                "linguist_note": "Poor visibility must remain a visibility condition, not position or area restriction."
+            }
+        },
+        {
+            "id": "expr_safety_visibility_less_one_mile_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "restricted_visibility",
+            "branch": "safety_securite",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Видимость менее одной мили",
+            "target_language": "en",
+            "target_text": "visibility less than one mile",
+            "accepted_answers": [
+                "visibility less than one mile",
+                "visibility less than 1 mile"
+            ],
+            "hint_beginner": "visibility less...",
+            "hint_intermediate": "less than one mile...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "visibility less than one mile",
+                    "visibility less than 1 mile"
+                ],
+                "should_reject": [
+                    "visibility more than one mile",
+                    "distance less than one mile",
+                    "depth less than one metre"
+                ],
+                "dangerous_minimal_pairs": [
+                    "visibility less than one mile / more than one mile / distance / depth"
+                ],
+                "linguist_note": "The limit is visibility, not distance or depth, and less-than must not become more-than."
+            }
+        },
+        {
+            "id": "expr_safety_dense_fog_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 11,
+            "topic": "restricted_visibility",
+            "branch": "safety_securite",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Плотный туман",
+            "target_language": "en",
+            "target_text": "dense fog",
+            "accepted_answers": [
+                "dense fog"
+            ],
+            "hint_beginner": "dense f...",
+            "hint_intermediate": "dense fog...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "dense fog"
+                ],
+                "should_reject": [
+                    "light fog",
+                    "dense traffic",
+                    "heavy rain"
+                ],
+                "dangerous_minimal_pairs": [
+                    "dense fog / light fog / dense traffic / heavy rain"
+                ],
+                "linguist_note": "Dense fog is a severe visibility condition, not traffic density or rain."
+            }
+        },
+        {
+            "id": "expr_safety_gale_warning_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Предупреждение о штормовом ветре",
+            "target_language": "en",
+            "target_text": "gale warning",
+            "accepted_answers": [
+                "gale warning"
+            ],
+            "hint_beginner": "gale w...",
+            "hint_intermediate": "gale warning...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "gale warning"
+                ],
+                "should_reject": [
+                    "gale cancelled",
+                    "fog warning",
+                    "traffic warning"
+                ],
+                "dangerous_minimal_pairs": [
+                    "gale warning / gale cancelled / fog warning / traffic warning"
+                ],
+                "linguist_note": "Gale warning must not collapse into cancellation, fog, or traffic warning."
+            }
+        },
+        {
+            "id": "expr_safety_squall_warning_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Предупреждение о шквале",
+            "target_language": "en",
+            "target_text": "squall warning",
+            "accepted_answers": [
+                "squall warning"
+            ],
+            "hint_beginner": "squall w...",
+            "hint_intermediate": "squall warning...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "squall warning"
+                ],
+                "should_reject": [
+                    "gale warning",
+                    "swell warning",
+                    "squall passed"
+                ],
+                "dangerous_minimal_pairs": [
+                    "squall warning / gale warning / swell warning / squall passed"
+                ],
+                "linguist_note": "Squall warning is not gale warning, swell warning, or a passed squall."
+            }
+        },
+        {
+            "id": "expr_safety_heavy_swell_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Сильная зыбь",
+            "target_language": "en",
+            "target_text": "heavy swell",
+            "accepted_answers": [
+                "heavy swell"
+            ],
+            "hint_beginner": "heavy s...",
+            "hint_intermediate": "heavy swell...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "heavy swell"
+                ],
+                "should_reject": [
+                    "heavy traffic",
+                    "shallow water",
+                    "heavy rain"
+                ],
+                "dangerous_minimal_pairs": [
+                    "heavy swell / heavy traffic / shallow water / heavy rain"
+                ],
+                "linguist_note": "Heavy swell is sea state, not traffic, shallow water, or rain."
+            }
+        },
+        {
+            "id": "expr_safety_sea_state_rough_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Состояние моря: неспокойное",
+            "target_language": "en",
+            "target_text": "sea state rough",
+            "accepted_answers": [
+                "sea state rough",
+                "rough sea state"
+            ],
+            "hint_beginner": "sea state...",
+            "hint_intermediate": "sea state rough...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "sea state rough",
+                    "rough sea state"
+                ],
+                "should_reject": [
+                    "sea state calm",
+                    "visibility rough",
+                    "course rough"
+                ],
+                "dangerous_minimal_pairs": [
+                    "sea state rough / sea state calm / visibility / course"
+                ],
+                "linguist_note": "Sea state rough must remain sea-state information, not visibility or course."
+            }
+        },
+        {
+            "id": "expr_safety_navigational_warning_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 9,
+            "topic": "navigation_warning",
+            "branch": "safety_securite",
+            "module": "navigation_warning",
+            "source_language": "ru",
+            "source_text": "Навигационное предупреждение",
+            "target_language": "en",
+            "target_text": "navigational warning",
+            "accepted_answers": [
+                "navigational warning",
+                "navigation warning"
+            ],
+            "hint_beginner": "navigation w...",
+            "hint_intermediate": "navigational warning...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "navigational warning",
+                    "navigation warning"
+                ],
+                "should_reject": [
+                    "weather forecast",
+                    "traffic information",
+                    "berthing instruction"
+                ],
+                "dangerous_minimal_pairs": [
+                    "navigational warning / weather forecast / traffic information / berthing instruction"
+                ],
+                "linguist_note": "A navigational warning is a safety warning, not a forecast, traffic update, or berthing order."
+            }
+        },
+        {
+            "id": "expr_safety_report_restricted_visibility_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 14,
+            "topic": "restricted_visibility",
+            "branch": "safety_securite",
+            "module": "safety_readback",
+            "source_language": "ru",
+            "source_text": "Доложите ограниченную видимость",
+            "target_language": "en",
+            "target_text": "report restricted visibility",
+            "accepted_answers": [
+                "report restricted visibility"
+            ],
+            "hint_beginner": "report...",
+            "hint_intermediate": "restricted visibility...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "report restricted visibility"
+                ],
+                "should_reject": [
+                    "report restricted area",
+                    "report clear visibility",
+                    "report vessel position"
+                ],
+                "dangerous_minimal_pairs": [
+                    "restricted visibility / restricted area / clear visibility / vessel position"
+                ],
+                "linguist_note": "The report request is about restricted visibility, not restricted area, clear visibility, or position."
+            }
+        },
+        {
+            "id": "expr_safety_keep_clear_hazard_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 14,
+            "topic": "hazard_reporting",
+            "branch": "safety_securite",
+            "module": "hazard_reporting",
+            "source_language": "ru",
+            "source_text": "Держитесь в стороне от опасности",
+            "target_language": "en",
+            "target_text": "keep clear of hazard",
+            "accepted_answers": [
+                "keep clear of hazard",
+                "keep clear from hazard"
+            ],
+            "hint_beginner": "keep clear...",
+            "hint_intermediate": "of hazard...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "keep clear of hazard",
+                    "keep clear from hazard"
+                ],
+                "should_reject": [
+                    "keep clear of traffic",
+                    "proceed to hazard",
+                    "keep close to hazard"
+                ],
+                "dangerous_minimal_pairs": [
+                    "keep clear of hazard / traffic / proceed to hazard / keep close"
+                ],
+                "linguist_note": "Hazard avoidance must not become traffic spacing or instruction to approach the hazard."
+            }
+        },
+        {
+            "id": "phrase_safety_securite_gale_area_alpha_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Секьюрите, предупреждение о штормовом ветре в районе Альфа.",
+            "target_language": "en",
+            "target_text": "Securite, gale warning in area Alpha.",
+            "accepted_answers": [
+                "Securite, gale warning in area Alpha."
+            ],
+            "grammar_pattern": "securite_gale_warning_area",
+            "hint_beginner": "Securite, gale warning...",
+            "hint_intermediate": "in area Alpha...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Securite, gale warning in area Alpha.",
+                    "Securite gale warning in area Alpha"
+                ],
+                "should_reject": [
+                    "Pan Pan gale warning in area Alpha",
+                    "Securite gale cancelled in area Alpha",
+                    "Securite fog warning in area Alpha"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Securite / Pan-Pan; gale warning / cancelled / fog warning"
+                ],
+                "linguist_note": "Safety signal and gale-warning meaning must remain exact."
+            }
+        },
+        {
+            "id": "phrase_safety_visibility_less_one_mile_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "restricted_visibility",
+            "branch": "safety_securite",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Видимость менее одной мили, следуйте с осторожностью.",
+            "target_language": "en",
+            "target_text": "Visibility less than one mile, navigate with caution.",
+            "accepted_answers": [
+                "Visibility less than one mile, navigate with caution.",
+                "Visibility less than 1 mile, navigate with caution"
+            ],
+            "grammar_pattern": "restricted_visibility_less_than_one_mile",
+            "hint_beginner": "Visibility less...",
+            "hint_intermediate": "navigate with caution...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Visibility less than one mile, navigate with caution.",
+                    "Visibility less than 1 mile, navigate with caution"
+                ],
+                "should_reject": [
+                    "Visibility more than one mile navigate with caution",
+                    "Distance less than one mile navigate with caution",
+                    "Visibility less than one mile proceed at full speed"
+                ],
+                "dangerous_minimal_pairs": [
+                    "visibility less / more; visibility / distance; caution / full speed"
+                ],
+                "linguist_note": "Reduced visibility and caution instruction must not become distance or full-speed instruction."
+            }
+        },
+        {
+            "id": "phrase_safety_dense_fog_sound_signal_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "restricted_visibility",
+            "branch": "safety_securite",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Плотный туман, подавайте звуковой сигнал.",
+            "target_language": "en",
+            "target_text": "Dense fog, sound signal required.",
+            "accepted_answers": [
+                "Dense fog, sound signal required."
+            ],
+            "grammar_pattern": "dense_fog_sound_signal_required",
+            "hint_beginner": "Dense fog...",
+            "hint_intermediate": "sound signal required...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Dense fog, sound signal required."
+                ],
+                "should_reject": [
+                    "Dense fog sound signal not required",
+                    "Light fog sound signal required",
+                    "Dense traffic sound signal required"
+                ],
+                "dangerous_minimal_pairs": [
+                    "dense fog / light fog / dense traffic; signal required / not required"
+                ],
+                "linguist_note": "Dense fog and required sound signal are safety-critical and must not be negated."
+            }
+        },
+        {
+            "id": "phrase_safety_squall_warning_reduce_speed_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Предупреждение о шквале, уменьшите скорость.",
+            "target_language": "en",
+            "target_text": "Squall warning, reduce speed.",
+            "accepted_answers": [
+                "Squall warning, reduce speed."
+            ],
+            "grammar_pattern": "squall_warning_reduce_speed",
+            "hint_beginner": "Squall warning...",
+            "hint_intermediate": "reduce speed...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Squall warning, reduce speed."
+                ],
+                "should_reject": [
+                    "Squall warning increase speed",
+                    "Gale warning reduce speed",
+                    "Squall passed reduce speed"
+                ],
+                "dangerous_minimal_pairs": [
+                    "squall warning / gale warning / squall passed; reduce / increase speed"
+                ],
+                "linguist_note": "Squall warning plus speed reduction must not become another warning or speed increase."
+            }
+        },
+        {
+            "id": "phrase_safety_heavy_swell_small_craft_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Сильная зыбь, малым судам держаться подальше.",
+            "target_language": "en",
+            "target_text": "Heavy swell, small craft keep clear.",
+            "accepted_answers": [
+                "Heavy swell, small craft keep clear."
+            ],
+            "grammar_pattern": "heavy_swell_small_craft_keep_clear",
+            "hint_beginner": "Heavy swell...",
+            "hint_intermediate": "small craft keep clear...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Heavy swell, small craft keep clear."
+                ],
+                "should_reject": [
+                    "Heavy traffic small craft keep clear",
+                    "Heavy swell small craft proceed",
+                    "Shallow water small craft keep clear"
+                ],
+                "dangerous_minimal_pairs": [
+                    "heavy swell / heavy traffic / shallow water; keep clear / proceed"
+                ],
+                "linguist_note": "The hazard is heavy swell and small craft must keep clear, not proceed."
+            }
+        },
+        {
+            "id": "phrase_safety_navigational_warning_debris_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "navigation_warning",
+            "branch": "safety_securite",
+            "module": "navigation_warning",
+            "source_language": "ru",
+            "source_text": "Навигационное предупреждение, обломки в фарватере.",
+            "target_language": "en",
+            "target_text": "Navigational warning, debris in fairway.",
+            "accepted_answers": [
+                "Navigational warning, debris in fairway.",
+                "Navigation warning, debris in fairway"
+            ],
+            "grammar_pattern": "navigational_warning_debris_fairway",
+            "hint_beginner": "Navigational warning...",
+            "hint_intermediate": "debris in fairway...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Navigational warning, debris in fairway.",
+                    "Navigation warning, debris in fairway"
+                ],
+                "should_reject": [
+                    "Navigational warning clear fairway",
+                    "Traffic information debris in fairway",
+                    "Navigational warning debris on deck"
+                ],
+                "dangerous_minimal_pairs": [
+                    "debris in fairway / clear fairway / debris on deck; warning / traffic information"
+                ],
+                "linguist_note": "Fairway obstruction warning must not become clear fairway, onboard debris, or traffic information."
+            }
+        },
+        {
+            "id": "phrase_safety_report_weather_update_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "safety_readback",
+            "source_language": "ru",
+            "source_text": "Доложите обновление погоды каждые тридцать минут.",
+            "target_language": "en",
+            "target_text": "Report weather update every thirty minutes.",
+            "accepted_answers": [
+                "Report weather update every thirty minutes.",
+                "Report weather update every 30 minutes"
+            ],
+            "grammar_pattern": "report_weather_update_interval",
+            "hint_beginner": "Report weather update...",
+            "hint_intermediate": "every thirty minutes...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Report weather update every thirty minutes.",
+                    "Report weather update every 30 minutes"
+                ],
+                "should_reject": [
+                    "Report position update every thirty minutes",
+                    "Report weather update every sixty minutes",
+                    "Report weather cancelled every thirty minutes"
+                ],
+                "dangerous_minimal_pairs": [
+                    "weather update / position update / cancellation; thirty / sixty minutes"
+                ],
+                "linguist_note": "Weather update interval must not become position update, cancellation, or wrong interval."
+            }
+        },
+        {
+            "id": "phrase_safety_sea_state_rough_caution_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Состояние моря неспокойное, следуйте с осторожностью.",
+            "target_language": "en",
+            "target_text": "Sea state rough, proceed with caution.",
+            "accepted_answers": [
+                "Sea state rough, proceed with caution.",
+                "Rough sea state, proceed with caution"
+            ],
+            "grammar_pattern": "rough_sea_state_proceed_caution",
+            "hint_beginner": "Sea state rough...",
+            "hint_intermediate": "proceed with caution...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Sea state rough, proceed with caution.",
+                    "Rough sea state, proceed with caution"
+                ],
+                "should_reject": [
+                    "Sea state calm proceed with caution",
+                    "Sea state rough proceed at full speed",
+                    "Visibility rough proceed with caution"
+                ],
+                "dangerous_minimal_pairs": [
+                    "sea state rough / calm; caution / full speed; sea state / visibility"
+                ],
+                "linguist_note": "Rough sea state and caution must not become calm conditions or full-speed instruction."
+            }
+        },
+        {
+            "id": "phrase_safety_fog_bank_ahead_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 15,
+            "topic": "restricted_visibility",
+            "branch": "safety_securite",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Полоса тумана впереди, держите наблюдение.",
+            "target_language": "en",
+            "target_text": "Fog bank ahead, keep lookout.",
+            "accepted_answers": [
+                "Fog bank ahead, keep lookout."
+            ],
+            "grammar_pattern": "fog_bank_ahead_keep_lookout",
+            "hint_beginner": "Fog bank ahead...",
+            "hint_intermediate": "keep lookout...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Fog bank ahead, keep lookout."
+                ],
+                "should_reject": [
+                    "Fog bank astern keep lookout",
+                    "Traffic ahead keep lookout",
+                    "Fog bank ahead stand down lookout"
+                ],
+                "dangerous_minimal_pairs": [
+                    "fog bank ahead / astern / traffic ahead; keep lookout / stand down"
+                ],
+                "linguist_note": "Fog location and lookout instruction must remain exact."
+            }
+        },
+        {
+            "id": "phrase_safety_thunderstorm_area_bravo_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "weather_sea_state",
+            "branch": "safety_securite",
+            "module": "weather_sea_state",
+            "source_language": "ru",
+            "source_text": "Гроза в районе Браво, избегайте района.",
+            "target_language": "en",
+            "target_text": "Thunderstorm in area Bravo, avoid the area.",
+            "accepted_answers": [
+                "Thunderstorm in area Bravo, avoid the area.",
+                "Thunderstorm area Bravo, avoid area"
+            ],
+            "grammar_pattern": "thunderstorm_area_avoid",
+            "hint_beginner": "Thunderstorm...",
+            "hint_intermediate": "avoid the area...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Thunderstorm in area Bravo, avoid the area.",
+                    "Thunderstorm area Bravo, avoid area"
+                ],
+                "should_reject": [
+                    "Thunderstorm in area Alpha avoid the area",
+                    "Thunderstorm in area Bravo enter the area",
+                    "Fog in area Bravo avoid the area"
+                ],
+                "dangerous_minimal_pairs": [
+                    "thunderstorm / fog; area Bravo / area Alpha; avoid / enter"
+                ],
+                "linguist_note": "Weather type, area, and avoid instruction are all safety-critical."
+            }
+        }
+    ],
+    "grammar_patterns": [
+        {
+            "id": "securite_gale_warning_area",
+            "pattern": "Securite weather warning with named area",
+            "examples": [
+                "Securite, gale warning in area Alpha."
+            ]
+        },
+        {
+            "id": "restricted_visibility_less_than_one_mile",
+            "pattern": "restricted visibility limit with caution instruction",
+            "examples": [
+                "Visibility less than one mile, navigate with caution."
+            ]
+        },
+        {
+            "id": "dense_fog_sound_signal_required",
+            "pattern": "dense fog with required sound signal",
+            "examples": [
+                "Dense fog, sound signal required."
+            ]
+        },
+        {
+            "id": "squall_warning_reduce_speed",
+            "pattern": "squall warning with speed reduction",
+            "examples": [
+                "Squall warning, reduce speed."
+            ]
+        },
+        {
+            "id": "heavy_swell_small_craft_keep_clear",
+            "pattern": "heavy swell warning for small craft",
+            "examples": [
+                "Heavy swell, small craft keep clear."
+            ]
+        },
+        {
+            "id": "navigational_warning_debris_fairway",
+            "pattern": "navigational warning with fairway obstruction",
+            "examples": [
+                "Navigational warning, debris in fairway."
+            ]
+        },
+        {
+            "id": "report_weather_update_interval",
+            "pattern": "weather update report with interval",
+            "examples": [
+                "Report weather update every thirty minutes."
+            ]
+        },
+        {
+            "id": "rough_sea_state_proceed_caution",
+            "pattern": "rough sea state with caution instruction",
+            "examples": [
+                "Sea state rough, proceed with caution."
+            ]
+        },
+        {
+            "id": "fog_bank_ahead_keep_lookout",
+            "pattern": "fog bank position with lookout instruction",
+            "examples": [
+                "Fog bank ahead, keep lookout."
+            ]
+        },
+        {
+            "id": "thunderstorm_area_avoid",
+            "pattern": "thunderstorm area avoidance warning",
+            "examples": [
+                "Thunderstorm in area Bravo, avoid the area."
+            ]
+        }
+    ],
+    "dangerous_minimal_pairs": [
+        {
+            "pair": "Securite / Pan-Pan; gale warning / cancellation / fog warning",
+            "items": [
+                "expr_safety_gale_warning_001",
+                "phrase_safety_securite_gale_area_alpha_001"
+            ],
+            "must_accept": {
+                "expr_safety_gale_warning_001": [
+                    "gale warning"
+                ],
+                "phrase_safety_securite_gale_area_alpha_001": [
+                    "Securite, gale warning in area Alpha."
+                ]
+            },
+            "must_reject": {
+                "expr_safety_gale_warning_001": [
+                    "gale cancelled",
+                    "fog warning"
+                ],
+                "phrase_safety_securite_gale_area_alpha_001": [
+                    "Pan Pan gale warning in area Alpha",
+                    "Securite gale cancelled in area Alpha"
+                ]
+            },
+            "reason": "Safety broadcast, weather type, and active warning status must remain exact."
+        },
+        {
+            "pair": "visibility less / more; visibility / distance / depth",
+            "items": [
+                "expr_safety_visibility_less_one_mile_001",
+                "phrase_safety_visibility_less_one_mile_001"
+            ],
+            "must_accept": {
+                "expr_safety_visibility_less_one_mile_001": [
+                    "visibility less than one mile"
+                ],
+                "phrase_safety_visibility_less_one_mile_001": [
+                    "Visibility less than one mile, navigate with caution."
+                ]
+            },
+            "must_reject": {
+                "expr_safety_visibility_less_one_mile_001": [
+                    "visibility more than one mile",
+                    "distance less than one mile"
+                ],
+                "phrase_safety_visibility_less_one_mile_001": [
+                    "Visibility more than one mile navigate with caution",
+                    "Visibility less than one mile proceed at full speed"
+                ]
+            },
+            "reason": "Restricted visibility limits must not become distance/depth reports or full-speed instructions."
+        },
+        {
+            "pair": "dense fog / light fog / dense traffic; signal required / not required",
+            "items": [
+                "expr_safety_dense_fog_001",
+                "phrase_safety_dense_fog_sound_signal_001"
+            ],
+            "must_accept": {
+                "expr_safety_dense_fog_001": [
+                    "dense fog"
+                ],
+                "phrase_safety_dense_fog_sound_signal_001": [
+                    "Dense fog, sound signal required."
+                ]
+            },
+            "must_reject": {
+                "expr_safety_dense_fog_001": [
+                    "light fog",
+                    "dense traffic"
+                ],
+                "phrase_safety_dense_fog_sound_signal_001": [
+                    "Dense fog sound signal not required",
+                    "Dense traffic sound signal required"
+                ]
+            },
+            "reason": "Fog density and sound-signal requirement are safety-critical."
+        },
+        {
+            "pair": "squall / gale / swell; reduce speed / increase speed / passed",
+            "items": [
+                "word_safety_squall_001",
+                "expr_safety_squall_warning_001",
+                "phrase_safety_squall_warning_reduce_speed_001"
+            ],
+            "must_accept": {
+                "word_safety_squall_001": [
+                    "squall"
+                ],
+                "expr_safety_squall_warning_001": [
+                    "squall warning"
+                ],
+                "phrase_safety_squall_warning_reduce_speed_001": [
+                    "Squall warning, reduce speed."
+                ]
+            },
+            "must_reject": {
+                "word_safety_squall_001": [
+                    "gale",
+                    "swell"
+                ],
+                "expr_safety_squall_warning_001": [
+                    "gale warning",
+                    "squall passed"
+                ],
+                "phrase_safety_squall_warning_reduce_speed_001": [
+                    "Squall warning increase speed",
+                    "Squall passed reduce speed"
+                ]
+            },
+            "reason": "Sudden squall warning and speed reduction must not collapse into other weather or opposite speed action."
+        },
+        {
+            "pair": "heavy swell / traffic / shallow water; keep clear / proceed",
+            "items": [
+                "word_safety_swell_001",
+                "expr_safety_heavy_swell_001",
+                "phrase_safety_heavy_swell_small_craft_001"
+            ],
+            "must_accept": {
+                "word_safety_swell_001": [
+                    "swell"
+                ],
+                "expr_safety_heavy_swell_001": [
+                    "heavy swell"
+                ],
+                "phrase_safety_heavy_swell_small_craft_001": [
+                    "Heavy swell, small craft keep clear."
+                ]
+            },
+            "must_reject": {
+                "word_safety_swell_001": [
+                    "shallow water",
+                    "squall"
+                ],
+                "expr_safety_heavy_swell_001": [
+                    "heavy traffic",
+                    "shallow water"
+                ],
+                "phrase_safety_heavy_swell_small_craft_001": [
+                    "Heavy traffic small craft keep clear",
+                    "Heavy swell small craft proceed"
+                ]
+            },
+            "reason": "Sea-state hazard for small craft must not become traffic, depth, or proceed instruction."
+        },
+        {
+            "pair": "navigational warning debris / clear fairway / traffic information; thunderstorm avoid / enter",
+            "items": [
+                "expr_safety_navigational_warning_001",
+                "phrase_safety_navigational_warning_debris_001",
+                "phrase_safety_thunderstorm_area_bravo_001"
+            ],
+            "must_accept": {
+                "expr_safety_navigational_warning_001": [
+                    "navigational warning"
+                ],
+                "phrase_safety_navigational_warning_debris_001": [
+                    "Navigational warning, debris in fairway."
+                ],
+                "phrase_safety_thunderstorm_area_bravo_001": [
+                    "Thunderstorm in area Bravo, avoid the area."
+                ]
+            },
+            "must_reject": {
+                "expr_safety_navigational_warning_001": [
+                    "traffic information",
+                    "weather forecast"
+                ],
+                "phrase_safety_navigational_warning_debris_001": [
+                    "Navigational warning clear fairway",
+                    "Traffic information debris in fairway"
+                ],
+                "phrase_safety_thunderstorm_area_bravo_001": [
+                    "Thunderstorm in area Bravo enter the area",
+                    "Fog in area Bravo avoid the area"
+                ]
+            },
+            "reason": "Warning class, hazard state, area, and avoid instruction must remain exact."
+        }
+    ],
+    "producer_notes": [
+        "Drafted as Batch 016 after Batch 015 production sync.",
+        "Intended next gate: Sea Speak Linguist review before any merge.",
+        "Do not merge into starter.json until QA acceptance passes."
+    ]
+}
