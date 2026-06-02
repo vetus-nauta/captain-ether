@@ -3,7 +3,7 @@
 Date: 2026-06-02
 Owner: QA
 Scope: Captain Ether Batch 018 acceptance only
-Status: OPEN
+Status: DONE
 
 ## Activation Condition
 
@@ -47,3 +47,9 @@ FAIL_RETURN_TO_ENGINEERING
 
 No merge into `starter.json` and no production deploy are authorized by this QA
 task.
+
+## Result
+
+```text
+PASS_FOR_MERGE
+```
