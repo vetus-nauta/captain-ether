@@ -1,10 +1,10 @@
 {
     "version": 1,
     "batch_id": "batch-014-medical-repair-basics",
-    "status": "draft",
+    "status": "linguist_reviewed",
     "date": "2026-06-02",
     "branch": "urgency_panpan",
-    "scope": "M4 medical-detail and temporary-repair status basics. Keep medical advice, medical assistance, evacuation, rescue, Mayday distress, equipment status, and routine onboard repair reports separate.",
+    "scope": "M4 medical-detail and temporary-repair status basics. Keep medical advice, medical assistance, evacuation, rescue, Mayday distress, equipment status, bilge-pump flooding control, and routine onboard repair reports separate.",
     "items": [
         {
             "id": "word_medical_injury_001",
@@ -363,16 +363,20 @@
             "source_language": "ru",
             "source_text": "Насос работает",
             "target_language": "en",
-            "target_text": "pump running",
+            "target_text": "bilge pump running",
             "accepted_answers": [
+                "bilge pump running",
+                "bilge pump is running",
                 "pump running",
                 "pump is running"
             ],
             "hint_beginner": "pump...",
-            "hint_intermediate": "pump running...",
+            "hint_intermediate": "bilge pump running...",
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
+                    "bilge pump running",
+                    "bilge pump is running",
                     "pump running",
                     "pump is running"
                 ],
@@ -382,9 +386,9 @@
                     "fire pump running"
                 ],
                 "dangerous_minimal_pairs": [
-                    "pump running / pump failed / fire pump running"
+                    "bilge pump running / pump failed / fire pump running"
                 ],
-                "linguist_note": "Pump running is generic status here; fire pump remains a different onboard-operation item."
+                "linguist_note": "Bilge pump running is the canonical flooding-control status; short pump running remains item-local, and fire pump remains a different onboard-operation item."
             }
         },
         {
@@ -709,27 +713,30 @@
             "source_language": "ru",
             "source_text": "Течь под контролем, насос работает.",
             "target_language": "en",
-            "target_text": "Leak controlled, pump running.",
+            "target_text": "Leak controlled, bilge pump running.",
             "accepted_answers": [
+                "Leak controlled, bilge pump running.",
                 "Leak controlled, pump running."
             ],
             "grammar_pattern": "repair_leak_controlled_pump_running",
             "hint_beginner": "Leak controlled...",
-            "hint_intermediate": "pump running...",
+            "hint_intermediate": "bilge pump running...",
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
+                    "Leak controlled, bilge pump running.",
                     "Leak controlled, pump running."
                 ],
                 "should_reject": [
-                    "Leak increasing pump running",
-                    "Leak controlled pump failed",
-                    "Flooding uncontrolled pump running"
+                    "Leak increasing bilge pump running",
+                    "Leak controlled bilge pump failed",
+                    "Flooding uncontrolled bilge pump running",
+                    "Leak controlled fire pump running"
                 ],
                 "dangerous_minimal_pairs": [
-                    "leak controlled / increasing / flooding uncontrolled; pump running / failed"
+                    "leak controlled / increasing / flooding uncontrolled; bilge pump running / failed / fire pump"
                 ],
-                "linguist_note": "Both leak status and pump status are required; opposite states must stay wrong."
+                "linguist_note": "Both leak status and bilge-pump status are required; opposite states and fire-pump wording must stay wrong."
             }
         },
         {
@@ -914,9 +921,9 @@
         },
         {
             "id": "repair_leak_controlled_pump_running",
-            "pattern": "leak controlled and pump status",
+            "pattern": "leak controlled and bilge-pump status",
             "examples": [
-                "Leak controlled, pump running."
+                "Leak controlled, bilge pump running."
             ]
         },
         {
@@ -1094,7 +1101,7 @@
             "reason": "Recovery status, failure status, and rescue/assistance request are separate."
         },
         {
-            "pair": "leak controlled / water ingress reduced / flooding uncontrolled / pump failed",
+            "pair": "leak controlled / water ingress reduced / flooding uncontrolled / bilge pump failed",
             "items": [
                 "expr_repair_leak_controlled_001",
                 "expr_repair_pump_running_001",
@@ -1107,13 +1114,14 @@
                     "leak controlled"
                 ],
                 "expr_repair_pump_running_001": [
+                    "bilge pump running",
                     "pump running"
                 ],
                 "expr_repair_water_ingress_reduced_001": [
                     "water ingress reduced"
                 ],
                 "phrase_repair_leak_controlled_pump_running_001": [
-                    "Leak controlled, pump running."
+                    "Leak controlled, bilge pump running."
                 ],
                 "phrase_repair_water_ingress_reduced_monitoring_001": [
                     "Water ingress reduced, continuing to monitor."
@@ -1133,15 +1141,16 @@
                     "water tank reduced"
                 ],
                 "phrase_repair_leak_controlled_pump_running_001": [
-                    "Leak increasing pump running",
-                    "Leak controlled pump failed"
+                    "Leak increasing bilge pump running",
+                    "Leak controlled bilge pump failed",
+                    "Leak controlled fire pump running"
                 ],
                 "phrase_repair_water_ingress_reduced_monitoring_001": [
                     "Water ingress increasing continuing to monitor",
                     "Water tank reduced continuing to monitor"
                 ]
             },
-            "reason": "Reduced/controlled status must not accept worsening flooding, pump failure, or tank-level wording."
+            "reason": "Reduced/controlled status must not accept worsening flooding, bilge-pump failure, fire-pump wording, or tank-level wording."
         },
         {
             "pair": "evacuation not required / evacuation required / advice / assistance / rescue",
@@ -1179,7 +1188,7 @@
         }
     ],
     "producer_notes": {
-        "status": "draft for M4 after Batch 013 production sync",
+        "status": "linguist reviewed for M4 after Batch 013 production sync",
         "learner_source_language": "ru",
         "target_language": "en",
         "next_gate": "Sea Speak Linguist risk review before engineering gate, QA acceptance, merge, or production deploy",
@@ -1188,7 +1197,7 @@
             "conscious / unconscious / overboard / missing",
             "hypothermia / hyperthermia / seasickness / evacuation",
             "engine restarted / steering restored / failure / rescue",
-            "leak controlled / water ingress reduced / flooding uncontrolled / pump failed",
+            "leak controlled / water ingress reduced / flooding uncontrolled / bilge pump failed",
             "evacuation not required / evacuation required / advice / assistance / rescue"
         ]
     }
