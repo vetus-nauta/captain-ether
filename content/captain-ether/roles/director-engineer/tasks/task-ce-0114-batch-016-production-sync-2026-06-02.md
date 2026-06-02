@@ -3,7 +3,7 @@
 Date: 2026-06-02
 Owner: Director-Engineer
 Scope: Captain Ether controlled production sync
-Status: OPEN
+Status: DONE
 
 ## Activation Condition
 
@@ -56,4 +56,18 @@ Return one of:
 ```text
 PASS / PRODUCTION_SYNCED
 FAIL / ROLLBACK_OR_FIX_REQUIRED
+```
+
+## Deploy Command
+
+Executed:
+
+```text
+tools/captain-ether-production-deploy.sh
+```
+
+## Result
+
+```text
+PASS / PRODUCTION_SYNCED
 ```
