@@ -3,7 +3,7 @@
 Date: 2026-06-02
 Owner: Sea Speak Linguist
 Scope: Captain Ether Batch 018 review only
-Status: OPEN
+Status: DONE
 
 ## Activation Condition
 
@@ -51,3 +51,10 @@ REJECTED_FOR_REWRITE
 If accepted with patches, update the batch file and document exact changes.
 
 No merge into `starter.json` and no production deploy are authorized by this task.
+
+## Result
+
+```text
+ACCEPTED_WITH_PATCHES
+Batch status: linguist_reviewed
+```

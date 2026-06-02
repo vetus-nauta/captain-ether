@@ -1,7 +1,7 @@
 {
     "version": 1,
     "batch_id": "batch-018-scenario-chain-readbacks-basics",
-    "status": "drafted",
+    "status": "linguist_reviewed",
     "date": "2026-06-02",
     "branch": "mixed_scenario_chains",
     "scope": "M4 scenario-chain readback basics. Draft phrase-level scenario turns only, using existing Captain Ether branches. Keep station identity, reporting point, crossing side, time, channel, urgency/distress signal, and readback/correction boundaries exact. Do not introduce a new runtime item type.",
@@ -124,28 +124,29 @@
             "source_language": "ru",
             "source_text": "Повторяю: место Браво два, правым бортом к причалу.",
             "target_language": "en",
-            "target_text": "Read back berth Bravo two, starboard side to.",
+            "target_text": "Reading back berth Bravo two, starboard side to.",
             "accepted_answers": [
-                "Read back berth Bravo two, starboard side to."
+                "Reading back berth Bravo two, starboard side to."
             ],
             "grammar_pattern": "readback_berth_side_to",
-            "hint_beginner": "Read back berth...",
+            "hint_beginner": "Reading back berth...",
             "hint_intermediate": "Bravo two...",
             "hint_advanced": "starboard side to...",
             "qa_notes": {
                 "should_accept": [
-                    "Read back berth Bravo two, starboard side to.",
-                    "Read back berth Bravo two starboard side to"
+                    "Reading back berth Bravo two, starboard side to.",
+                    "Reading back berth Bravo two starboard side to"
                 ],
                 "should_reject": [
-                    "Read back berth Bravo two port side to",
-                    "Read back berth Bravo three starboard side to",
-                    "Correction berth Bravo two starboard side to"
+                    "Reading back berth Bravo two port side to",
+                    "Reading back berth Bravo three starboard side to",
+                    "Correction berth Bravo two starboard side to",
+                    "Read back berth Bravo two starboard side to"
                 ],
                 "dangerous_minimal_pairs": [
-                    "read back / correction; Bravo two / Bravo three; starboard / port"
+                    "reading back / correction / command to read back; Bravo two / Bravo three; starboard / port"
                 ],
-                "linguist_note": "This readback must not become a correction and must preserve side and berth number."
+                "linguist_note": "This spoken readback must not become a correction or an instruction to read back, and must preserve side and berth number."
             }
         },
         {
@@ -336,10 +337,9 @@
             "source_language": "ru",
             "source_text": "Сообщаю прохождение точки Дельта.",
             "target_language": "en",
-            "target_text": "Report passing point Delta.",
+            "target_text": "Reporting passing point Delta.",
             "accepted_answers": [
-                "Report passing point Delta.",
-                "Reporting passing point Delta"
+                "Reporting passing point Delta."
             ],
             "grammar_pattern": "report_passing_named_point",
             "hint_beginner": "Report passing...",
@@ -347,18 +347,18 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "Report passing point Delta.",
-                    "Reporting passing point Delta"
+                    "Reporting passing point Delta."
                 ],
                 "should_reject": [
-                    "Report passing point Echo",
+                    "Reporting passing point Echo",
                     "Request passing point Delta",
-                    "Report leaving point Delta"
+                    "Reporting leaving point Delta",
+                    "Report passing point Delta"
                 ],
                 "dangerous_minimal_pairs": [
-                    "report / request; passing / leaving; Delta / Echo"
+                    "reporting / request / command to report; passing / leaving; Delta / Echo"
                 ],
-                "linguist_note": "Reporting verb, waypoint, and movement status must remain exact."
+                "linguist_note": "This is the vessel reporting a passed point, not an instruction to report, a request, or a different waypoint."
             }
         },
         {
@@ -372,28 +372,29 @@
             "source_language": "ru",
             "source_text": "ВТС: перейдите на канал один два.",
             "target_language": "en",
-            "target_text": "VTS instructs, switch to channel one two.",
+            "target_text": "VTS, switch to channel one two.",
             "accepted_answers": [
-                "VTS instructs, switch to channel one two."
+                "VTS, switch to channel one two."
             ],
             "grammar_pattern": "vts_instruction_switch_channel",
-            "hint_beginner": "VTS instructs...",
+            "hint_beginner": "VTS, switch...",
             "hint_intermediate": "channel one two...",
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "VTS instructs, switch to channel one two.",
-                    "VTS instructs switch to channel one two"
+                    "VTS, switch to channel one two.",
+                    "VTS switch to channel one two"
                 ],
                 "should_reject": [
-                    "VTS advises switch to channel one two",
-                    "VTS instructs switch to channel one six",
-                    "Marina instructs switch to channel one two"
+                    "VTS advise switch to channel one two",
+                    "VTS switch to channel one six",
+                    "Marina switch to channel one two",
+                    "VTS instructs switch to channel one two"
                 ],
                 "dangerous_minimal_pairs": [
-                    "VTS / Marina; instructs / advises; channel 12 / 16"
+                    "VTS / Marina; switch / advise; channel 12 / 16; spoken order / description"
                 ],
-                "linguist_note": "Authority, instruction/advice class, and channel must remain exact."
+                "linguist_note": "This should read as a spoken VTS order, not a third-person description, advice, a marina call, or the wrong channel."
             }
         },
         {
@@ -796,29 +797,29 @@
             "source_language": "ru",
             "source_text": "Спасательное судно повторяет: пять миль к востоку от Альфа.",
             "target_language": "en",
-            "target_text": "Rescue unit reads back five miles east of Alpha.",
+            "target_text": "Rescue unit, reading back five miles east of Alpha.",
             "accepted_answers": [
-                "Rescue unit reads back five miles east of Alpha.",
-                "Rescue unit read back five miles east of Alpha"
+                "Rescue unit, reading back five miles east of Alpha."
             ],
             "grammar_pattern": "rescue_unit_readback_position",
-            "hint_beginner": "Rescue unit...",
+            "hint_beginner": "Rescue unit, reading back...",
             "hint_intermediate": "five miles east...",
             "hint_advanced": "of Alpha...",
             "qa_notes": {
                 "should_accept": [
-                    "Rescue unit reads back five miles east of Alpha.",
-                    "Rescue unit read back five miles east of Alpha"
+                    "Rescue unit, reading back five miles east of Alpha.",
+                    "Rescue unit reading back five miles east of Alpha"
                 ],
                 "should_reject": [
-                    "Rescue unit reads back five miles west of Alpha",
-                    "Rescue unit corrects five miles east of Alpha",
-                    "Marina reads back five miles east of Alpha"
+                    "Rescue unit reading back five miles west of Alpha",
+                    "Rescue unit correcting five miles east of Alpha",
+                    "Marina reading back five miles east of Alpha",
+                    "Rescue unit reads back five miles east of Alpha"
                 ],
                 "dangerous_minimal_pairs": [
-                    "rescue unit / marina; read back / correct; east / west"
+                    "rescue unit / marina; reading back / correcting / description; east / west"
                 ],
-                "linguist_note": "Responding station, readback/correction status, and position must remain exact."
+                "linguist_note": "This is the rescue unit speaking a readback, not a third-person description, a correction, or a marina readback."
             }
         },
         {
@@ -914,9 +915,9 @@
         },
         {
             "id": "readback_berth_side_to",
-            "pattern": "read back named berth and side-to instruction",
+            "pattern": "spoken readback of named berth and side-to instruction",
             "examples": [
-                "Read back berth Bravo two, starboard side to."
+                "Reading back berth Bravo two, starboard side to."
             ]
         },
         {
@@ -935,9 +936,9 @@
         },
         {
             "id": "vts_instruction_switch_channel",
-            "pattern": "VTS instruction to switch channel",
+            "pattern": "spoken VTS order to switch channel",
             "examples": [
-                "VTS instructs, switch to channel one two."
+                "VTS, switch to channel one two."
             ]
         },
         {
@@ -963,9 +964,9 @@
         },
         {
             "id": "rescue_unit_readback_position",
-            "pattern": "rescue unit readback of distress position",
+            "pattern": "spoken rescue-unit readback of distress position",
             "examples": [
-                "Rescue unit reads back five miles east of Alpha."
+                "Rescue unit, reading back five miles east of Alpha."
             ]
         },
         {
@@ -998,9 +999,9 @@
         },
         {
             "id": "report_passing_named_point",
-            "pattern": "report passing a named point",
+            "pattern": "spoken report of passing a named point",
             "examples": [
-                "Report passing point Delta."
+                "Reporting passing point Delta."
             ]
         },
         {
@@ -1070,7 +1071,7 @@
                     "Proceed to berth Bravo two, starboard side to."
                 ],
                 "phrase_scenario_readback_berth_bravo_two_001": [
-                    "Read back berth Bravo two, starboard side to."
+                    "Reading back berth Bravo two, starboard side to."
                 ],
                 "phrase_scenario_report_alongside_bravo_two_001": [
                     "Aurora alongside berth Bravo two."
@@ -1084,7 +1085,8 @@
                     "Proceed to berth Bravo two port side to"
                 ],
                 "phrase_scenario_readback_berth_bravo_two_001": [
-                    "Correction berth Bravo two starboard side to"
+                    "Correction berth Bravo two starboard side to",
+                    "Read back berth Bravo two starboard side to"
                 ],
                 "phrase_scenario_report_alongside_bravo_two_001": [
                     "Aurora approaching berth Bravo two"
@@ -1139,10 +1141,10 @@
             ],
             "must_accept": {
                 "phrase_scenario_report_point_delta_001": [
-                    "Report passing point Delta."
+                    "Reporting passing point Delta."
                 ],
                 "phrase_scenario_vts_instruction_channel_one_two_001": [
-                    "VTS instructs, switch to channel one two."
+                    "VTS, switch to channel one two."
                 ],
                 "phrase_scenario_readback_channel_one_two_001": [
                     "Read back, switch to channel one two."
@@ -1150,10 +1152,12 @@
             },
             "must_reject": {
                 "phrase_scenario_report_point_delta_001": [
-                    "Request passing point Delta"
+                    "Request passing point Delta",
+                    "Report passing point Delta"
                 ],
                 "phrase_scenario_vts_instruction_channel_one_two_001": [
-                    "VTS advises switch to channel one two"
+                    "VTS advise switch to channel one two",
+                    "VTS instructs switch to channel one two"
                 ],
                 "phrase_scenario_readback_channel_one_two_001": [
                     "Read back switch to channel one six"
@@ -1257,7 +1261,7 @@
                     "Require emergency pump."
                 ],
                 "phrase_scenario_rescue_unit_readback_position_001": [
-                    "Rescue unit reads back five miles east of Alpha."
+                    "Rescue unit, reading back five miles east of Alpha."
                 ],
                 "expr_scenario_confirm_position_received_001": [
                     "position received"
@@ -1274,7 +1278,8 @@
                     "Require emergency tow"
                 ],
                 "phrase_scenario_rescue_unit_readback_position_001": [
-                    "Rescue unit reads back five miles west of Alpha"
+                    "Rescue unit reading back five miles west of Alpha",
+                    "Rescue unit reads back five miles east of Alpha"
                 ],
                 "expr_scenario_confirm_position_received_001": [
                     "position corrected"
