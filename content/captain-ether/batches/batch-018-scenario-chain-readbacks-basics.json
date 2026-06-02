@@ -1,0 +1,1290 @@
+{
+    "version": 1,
+    "batch_id": "batch-018-scenario-chain-readbacks-basics",
+    "status": "drafted",
+    "date": "2026-06-02",
+    "branch": "mixed_scenario_chains",
+    "scope": "M4 scenario-chain readback basics. Draft phrase-level scenario turns only, using existing Captain Ether branches. Keep station identity, reporting point, crossing side, time, channel, urgency/distress signal, and readback/correction boundaries exact. Do not introduce a new runtime item type.",
+    "items": [
+        {
+            "id": "phrase_scenario_marina_arrival_from_south_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "topic": "scenario_chains",
+            "branch": "marina_harbour",
+            "module": "marina_arrival_readback",
+            "source_language": "ru",
+            "source_text": "Марина Альфа, парусная яхта Аврора подходит с юга.",
+            "target_language": "en",
+            "target_text": "Marina Alpha, sailing yacht Aurora approaching from south.",
+            "accepted_answers": [
+                "Marina Alpha, sailing yacht Aurora approaching from south.",
+                "Marina Alpha sailing yacht Aurora approaching from the south"
+            ],
+            "grammar_pattern": "marina_station_vessel_approach_direction",
+            "hint_beginner": "Marina Alpha...",
+            "hint_intermediate": "approaching from south...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Marina Alpha, sailing yacht Aurora approaching from south.",
+                    "Marina Alpha sailing yacht Aurora approaching from the south"
+                ],
+                "should_reject": [
+                    "Marina Bravo sailing yacht Aurora approaching from south",
+                    "Marina Alpha sailing yacht Aurora departing to south",
+                    "Port Control sailing yacht Aurora approaching from south"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Marina Alpha / Bravo / Port Control; approaching / departing; south / north"
+                ],
+                "linguist_note": "Station identity, approach status, and direction must remain exact in the first scenario turn."
+            }
+        },
+        {
+            "id": "phrase_scenario_marina_request_visitor_berth_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "scenario_chains",
+            "branch": "marina_harbour",
+            "module": "marina_arrival_readback",
+            "source_language": "ru",
+            "source_text": "Запрашиваем гостевое место для одной ночи.",
+            "target_language": "en",
+            "target_text": "Request visitor berth for one night.",
+            "accepted_answers": [
+                "Request visitor berth for one night.",
+                "Requesting visitor berth for one night"
+            ],
+            "grammar_pattern": "request_visitor_berth_duration",
+            "hint_beginner": "Request visitor berth...",
+            "hint_intermediate": "for one night...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Request visitor berth for one night.",
+                    "Requesting visitor berth for one night"
+                ],
+                "should_reject": [
+                    "Request fuel berth for one night",
+                    "Request visitor berth for two nights",
+                    "Cancel visitor berth for one night"
+                ],
+                "dangerous_minimal_pairs": [
+                    "visitor berth / fuel berth; one night / two nights; request / cancel"
+                ],
+                "linguist_note": "The requested berth type, duration, and request/cancel status must not drift."
+            }
+        },
+        {
+            "id": "phrase_scenario_mooring_berth_bravo_two_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "topic": "scenario_chains",
+            "branch": "marina_harbour",
+            "module": "marina_arrival_readback",
+            "source_language": "ru",
+            "source_text": "Следуйте к месту Браво два, правым бортом к причалу.",
+            "target_language": "en",
+            "target_text": "Proceed to berth Bravo two, starboard side to.",
+            "accepted_answers": [
+                "Proceed to berth Bravo two, starboard side to."
+            ],
+            "grammar_pattern": "proceed_berth_side_to",
+            "hint_beginner": "Proceed to berth...",
+            "hint_intermediate": "starboard side to...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Proceed to berth Bravo two, starboard side to.",
+                    "Proceed to berth Bravo two starboard side to"
+                ],
+                "should_reject": [
+                    "Proceed to berth Bravo three starboard side to",
+                    "Proceed to berth Bravo two port side to",
+                    "Wait outside berth Bravo two starboard side to"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Bravo two / Bravo three; starboard / port; proceed / wait"
+                ],
+                "linguist_note": "Berth number, vessel side, and proceed/wait instruction are docking-critical."
+            }
+        },
+        {
+            "id": "phrase_scenario_readback_berth_bravo_two_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "scenario_chains",
+            "branch": "marina_harbour",
+            "module": "marina_arrival_readback",
+            "source_language": "ru",
+            "source_text": "Повторяю: место Браво два, правым бортом к причалу.",
+            "target_language": "en",
+            "target_text": "Read back berth Bravo two, starboard side to.",
+            "accepted_answers": [
+                "Read back berth Bravo two, starboard side to."
+            ],
+            "grammar_pattern": "readback_berth_side_to",
+            "hint_beginner": "Read back berth...",
+            "hint_intermediate": "Bravo two...",
+            "hint_advanced": "starboard side to...",
+            "qa_notes": {
+                "should_accept": [
+                    "Read back berth Bravo two, starboard side to.",
+                    "Read back berth Bravo two starboard side to"
+                ],
+                "should_reject": [
+                    "Read back berth Bravo two port side to",
+                    "Read back berth Bravo three starboard side to",
+                    "Correction berth Bravo two starboard side to"
+                ],
+                "dangerous_minimal_pairs": [
+                    "read back / correction; Bravo two / Bravo three; starboard / port"
+                ],
+                "linguist_note": "This readback must not become a correction and must preserve side and berth number."
+            }
+        },
+        {
+            "id": "phrase_scenario_report_alongside_bravo_two_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "scenario_chains",
+            "branch": "marina_harbour",
+            "module": "marina_arrival_readback",
+            "source_language": "ru",
+            "source_text": "Аврора стоит у места Браво два.",
+            "target_language": "en",
+            "target_text": "Aurora alongside berth Bravo two.",
+            "accepted_answers": [
+                "Aurora alongside berth Bravo two.",
+                "Aurora is alongside berth Bravo two"
+            ],
+            "grammar_pattern": "vessel_alongside_named_berth",
+            "hint_beginner": "Aurora alongside...",
+            "hint_intermediate": "berth Bravo two...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Aurora alongside berth Bravo two.",
+                    "Aurora is alongside berth Bravo two"
+                ],
+                "should_reject": [
+                    "Aurora approaching berth Bravo two",
+                    "Aurora alongside berth Bravo three",
+                    "Aurora departed berth Bravo two"
+                ],
+                "dangerous_minimal_pairs": [
+                    "alongside / approaching / departed; Bravo two / Bravo three"
+                ],
+                "linguist_note": "Alongside status is distinct from approach/departure and must keep berth number."
+            }
+        },
+        {
+            "id": "phrase_scenario_crossing_vessel_starboard_bow_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "scenario_chains",
+            "branch": "traffic_collision",
+            "module": "traffic_crossing_clarification",
+            "source_language": "ru",
+            "source_text": "Судно пересекает по правому носу.",
+            "target_language": "en",
+            "target_text": "Crossing vessel on starboard bow.",
+            "accepted_answers": [
+                "Crossing vessel on starboard bow."
+            ],
+            "grammar_pattern": "traffic_crossing_relative_position",
+            "hint_beginner": "Crossing vessel...",
+            "hint_intermediate": "starboard bow...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Crossing vessel on starboard bow."
+                ],
+                "should_reject": [
+                    "Crossing vessel on port bow",
+                    "Overtaking vessel on starboard bow",
+                    "Crossing vessel on starboard quarter"
+                ],
+                "dangerous_minimal_pairs": [
+                    "crossing / overtaking; starboard / port; bow / quarter"
+                ],
+                "linguist_note": "Traffic type and relative bearing must remain exact."
+            }
+        },
+        {
+            "id": "phrase_scenario_request_crossing_intentions_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "scenario_chains",
+            "branch": "traffic_collision",
+            "module": "traffic_crossing_clarification",
+            "source_language": "ru",
+            "source_text": "Запросите намерения пересекающего судна.",
+            "target_language": "en",
+            "target_text": "Request crossing vessel intentions.",
+            "accepted_answers": [
+                "Request crossing vessel intentions.",
+                "Request intentions of crossing vessel"
+            ],
+            "grammar_pattern": "request_traffic_intentions",
+            "hint_beginner": "Request...",
+            "hint_intermediate": "crossing vessel intentions...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Request crossing vessel intentions.",
+                    "Request intentions of crossing vessel"
+                ],
+                "should_reject": [
+                    "Report crossing vessel intentions",
+                    "Request overtaking vessel intentions",
+                    "Request crossing vessel position"
+                ],
+                "dangerous_minimal_pairs": [
+                    "request / report; crossing / overtaking; intentions / position"
+                ],
+                "linguist_note": "Clarification request must not become a report or a position query."
+            }
+        },
+        {
+            "id": "phrase_scenario_alter_course_starboard_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "scenario_chains",
+            "branch": "traffic_collision",
+            "module": "traffic_crossing_clarification",
+            "source_language": "ru",
+            "source_text": "Изменяю курс вправо, чтобы пройти за кормой.",
+            "target_language": "en",
+            "target_text": "Altering course to starboard to pass astern.",
+            "accepted_answers": [
+                "Altering course to starboard to pass astern.",
+                "Alter course to starboard to pass astern"
+            ],
+            "grammar_pattern": "alter_course_side_pass_relative",
+            "hint_beginner": "Altering course...",
+            "hint_intermediate": "to starboard...",
+            "hint_advanced": "to pass astern...",
+            "qa_notes": {
+                "should_accept": [
+                    "Altering course to starboard to pass astern.",
+                    "Alter course to starboard to pass astern"
+                ],
+                "should_reject": [
+                    "Altering course to port to pass astern",
+                    "Altering course to starboard to pass ahead",
+                    "Maintaining course to starboard to pass astern"
+                ],
+                "dangerous_minimal_pairs": [
+                    "alter / maintain; starboard / port; astern / ahead"
+                ],
+                "linguist_note": "Course action, side, and passing relation are collision-risk boundaries."
+            }
+        },
+        {
+            "id": "phrase_scenario_confirm_clear_passing_astern_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "scenario_chains",
+            "branch": "traffic_collision",
+            "module": "traffic_crossing_clarification",
+            "source_language": "ru",
+            "source_text": "Подтверждаю, свободно проходим за кормой.",
+            "target_language": "en",
+            "target_text": "Confirm clear, passing astern.",
+            "accepted_answers": [
+                "Confirm clear, passing astern."
+            ],
+            "grammar_pattern": "confirm_clear_passing_relative",
+            "hint_beginner": "Confirm clear...",
+            "hint_intermediate": "passing astern...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Confirm clear, passing astern.",
+                    "Confirm clear passing astern"
+                ],
+                "should_reject": [
+                    "Confirm clear passing ahead",
+                    "Confirm not clear passing astern",
+                    "Cancel clear passing astern"
+                ],
+                "dangerous_minimal_pairs": [
+                    "clear / not clear / cancel; astern / ahead"
+                ],
+                "linguist_note": "Clear status and passing relation must stay exact."
+            }
+        },
+        {
+            "id": "phrase_scenario_report_point_delta_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "topic": "scenario_chains",
+            "branch": "vts_port_control",
+            "module": "vts_reporting_point_chain",
+            "source_language": "ru",
+            "source_text": "Сообщаю прохождение точки Дельта.",
+            "target_language": "en",
+            "target_text": "Report passing point Delta.",
+            "accepted_answers": [
+                "Report passing point Delta.",
+                "Reporting passing point Delta"
+            ],
+            "grammar_pattern": "report_passing_named_point",
+            "hint_beginner": "Report passing...",
+            "hint_intermediate": "point Delta...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Report passing point Delta.",
+                    "Reporting passing point Delta"
+                ],
+                "should_reject": [
+                    "Report passing point Echo",
+                    "Request passing point Delta",
+                    "Report leaving point Delta"
+                ],
+                "dangerous_minimal_pairs": [
+                    "report / request; passing / leaving; Delta / Echo"
+                ],
+                "linguist_note": "Reporting verb, waypoint, and movement status must remain exact."
+            }
+        },
+        {
+            "id": "phrase_scenario_vts_instruction_channel_one_two_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "topic": "scenario_chains",
+            "branch": "vts_port_control",
+            "module": "vts_reporting_point_chain",
+            "source_language": "ru",
+            "source_text": "ВТС: перейдите на канал один два.",
+            "target_language": "en",
+            "target_text": "VTS instructs, switch to channel one two.",
+            "accepted_answers": [
+                "VTS instructs, switch to channel one two."
+            ],
+            "grammar_pattern": "vts_instruction_switch_channel",
+            "hint_beginner": "VTS instructs...",
+            "hint_intermediate": "channel one two...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "VTS instructs, switch to channel one two.",
+                    "VTS instructs switch to channel one two"
+                ],
+                "should_reject": [
+                    "VTS advises switch to channel one two",
+                    "VTS instructs switch to channel one six",
+                    "Marina instructs switch to channel one two"
+                ],
+                "dangerous_minimal_pairs": [
+                    "VTS / Marina; instructs / advises; channel 12 / 16"
+                ],
+                "linguist_note": "Authority, instruction/advice class, and channel must remain exact."
+            }
+        },
+        {
+            "id": "phrase_scenario_readback_channel_one_two_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "scenario_chains",
+            "branch": "vts_port_control",
+            "module": "vts_reporting_point_chain",
+            "source_language": "ru",
+            "source_text": "Повторяю: перейти на канал один два.",
+            "target_language": "en",
+            "target_text": "Read back, switch to channel one two.",
+            "accepted_answers": [
+                "Read back, switch to channel one two."
+            ],
+            "grammar_pattern": "readback_switch_channel",
+            "hint_beginner": "Read back...",
+            "hint_intermediate": "channel one two...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Read back, switch to channel one two.",
+                    "Read back switch to channel one two"
+                ],
+                "should_reject": [
+                    "Read back switch to channel one six",
+                    "Correction switch to channel one two",
+                    "Read back stand by on channel one two"
+                ],
+                "dangerous_minimal_pairs": [
+                    "read back / correction; switch / stand by; channel 12 / 16"
+                ],
+                "linguist_note": "Readback type and channel action must remain exact."
+            }
+        },
+        {
+            "id": "phrase_scenario_fog_bank_ahead_reduce_speed_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "scenario_chains",
+            "branch": "safety_securite",
+            "module": "restricted_visibility_scenario",
+            "source_language": "ru",
+            "source_text": "Туманная полоса впереди, уменьшаем скорость.",
+            "target_language": "en",
+            "target_text": "Fog bank ahead, reducing speed.",
+            "accepted_answers": [
+                "Fog bank ahead, reducing speed."
+            ],
+            "grammar_pattern": "restricted_visibility_hazard_action",
+            "hint_beginner": "Fog bank ahead...",
+            "hint_intermediate": "reducing speed...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Fog bank ahead, reducing speed.",
+                    "Fog bank ahead reducing speed"
+                ],
+                "should_reject": [
+                    "Fog bank astern reducing speed",
+                    "Fog bank ahead increasing speed",
+                    "Smoke bank ahead reducing speed"
+                ],
+                "dangerous_minimal_pairs": [
+                    "fog / smoke; ahead / astern; reduce / increase speed"
+                ],
+                "linguist_note": "Visibility hazard, relative direction, and action must remain exact."
+            }
+        },
+        {
+            "id": "phrase_scenario_sound_signal_every_two_minutes_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "scenario_chains",
+            "branch": "safety_securite",
+            "module": "restricted_visibility_scenario",
+            "source_language": "ru",
+            "source_text": "Подавайте звуковой сигнал каждые две минуты.",
+            "target_language": "en",
+            "target_text": "Sound signal every two minutes.",
+            "accepted_answers": [
+                "Sound signal every two minutes."
+            ],
+            "grammar_pattern": "sound_signal_interval",
+            "hint_beginner": "Sound signal...",
+            "hint_intermediate": "every two minutes...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Sound signal every two minutes."
+                ],
+                "should_reject": [
+                    "Sound signal every one minute",
+                    "No sound signal every two minutes",
+                    "Light signal every two minutes"
+                ],
+                "dangerous_minimal_pairs": [
+                    "sound / light; two minutes / one minute; required / no signal"
+                ],
+                "linguist_note": "Signal type and interval are safety-critical."
+            }
+        },
+        {
+            "id": "phrase_scenario_securite_visibility_less_one_mile_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 18,
+            "topic": "scenario_chains",
+            "branch": "safety_securite",
+            "module": "restricted_visibility_scenario",
+            "source_language": "ru",
+            "source_text": "Секьюрите, видимость менее одной мили в районе Чарли.",
+            "target_language": "en",
+            "target_text": "Securite, visibility less than one mile in area Charlie.",
+            "accepted_answers": [
+                "Securite, visibility less than one mile in area Charlie.",
+                "Sécurité visibility less than one mile in area Charlie"
+            ],
+            "grammar_pattern": "securite_visibility_area_warning",
+            "hint_beginner": "Securite, visibility...",
+            "hint_intermediate": "less than one mile...",
+            "hint_advanced": "area Charlie...",
+            "qa_notes": {
+                "should_accept": [
+                    "Securite, visibility less than one mile in area Charlie.",
+                    "Sécurité visibility less than one mile in area Charlie"
+                ],
+                "should_reject": [
+                    "Pan Pan visibility less than one mile in area Charlie",
+                    "Securite visibility more than one mile in area Charlie",
+                    "Securite visibility less than one mile in area Alpha"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Securite / Pan-Pan; less / more than one mile; Charlie / Alpha"
+                ],
+                "linguist_note": "Safety signal, visibility threshold, and area must remain exact."
+            }
+        },
+        {
+            "id": "phrase_scenario_panpan_engine_failed_position_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 18,
+            "topic": "scenario_chains",
+            "branch": "urgency_panpan",
+            "module": "panpan_equipment_failure_scenario",
+            "source_language": "ru",
+            "source_text": "Пан-Пан, двигатель отказал, позиция у буя семь.",
+            "target_language": "en",
+            "target_text": "Pan-Pan, engine failed, position near buoy seven.",
+            "accepted_answers": [
+                "Pan-Pan, engine failed, position near buoy seven."
+            ],
+            "grammar_pattern": "panpan_failure_position",
+            "hint_beginner": "Pan-Pan, engine failed...",
+            "hint_intermediate": "position near buoy seven...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Pan-Pan, engine failed, position near buoy seven.",
+                    "Pan Pan engine failed position near buoy seven"
+                ],
+                "should_reject": [
+                    "Mayday engine failed position near buoy seven",
+                    "Pan Pan steering failed position near buoy seven",
+                    "Pan Pan engine failed position near buoy eight"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Pan-Pan / Mayday; engine / steering; buoy seven / eight"
+                ],
+                "linguist_note": "Urgency signal, failure type, and position reference must remain exact."
+            }
+        },
+        {
+            "id": "phrase_scenario_panpan_request_tow_harbour_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "scenario_chains",
+            "branch": "urgency_panpan",
+            "module": "panpan_equipment_failure_scenario",
+            "source_language": "ru",
+            "source_text": "Запрашиваем буксировку в гавань.",
+            "target_language": "en",
+            "target_text": "Request tow to harbour.",
+            "accepted_answers": [
+                "Request tow to harbour.",
+                "Request towing to harbour"
+            ],
+            "grammar_pattern": "request_tow_destination",
+            "hint_beginner": "Request tow...",
+            "hint_intermediate": "to harbour...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Request tow to harbour.",
+                    "Request towing to harbour"
+                ],
+                "should_reject": [
+                    "Request pilot to harbour",
+                    "Cancel tow to harbour",
+                    "Request tow to marina berth"
+                ],
+                "dangerous_minimal_pairs": [
+                    "tow / pilot; request / cancel; harbour / marina berth"
+                ],
+                "linguist_note": "Assistance type, request/cancel status, and destination must remain exact."
+            }
+        },
+        {
+            "id": "phrase_scenario_panpan_steering_limited_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "scenario_chains",
+            "branch": "urgency_panpan",
+            "module": "panpan_equipment_failure_scenario",
+            "source_language": "ru",
+            "source_text": "Рулевое управление ограничено, держимся правее фарватера.",
+            "target_language": "en",
+            "target_text": "Steering limited, keeping starboard side of fairway.",
+            "accepted_answers": [
+                "Steering limited, keeping starboard side of fairway.",
+                "Steering is limited keeping starboard side of fairway"
+            ],
+            "grammar_pattern": "steering_limited_fairway_side",
+            "hint_beginner": "Steering limited...",
+            "hint_intermediate": "starboard side...",
+            "hint_advanced": "of fairway...",
+            "qa_notes": {
+                "should_accept": [
+                    "Steering limited, keeping starboard side of fairway.",
+                    "Steering is limited keeping starboard side of fairway"
+                ],
+                "should_reject": [
+                    "Steering failed keeping starboard side of fairway",
+                    "Steering limited keeping port side of fairway",
+                    "Engine limited keeping starboard side of fairway"
+                ],
+                "dangerous_minimal_pairs": [
+                    "steering / engine; limited / failed; starboard / port"
+                ],
+                "linguist_note": "Equipment, severity, and fairway side must remain exact."
+            }
+        },
+        {
+            "id": "phrase_scenario_readback_panpan_tow_request_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "scenario_chains",
+            "branch": "urgency_panpan",
+            "module": "panpan_equipment_failure_scenario",
+            "source_language": "ru",
+            "source_text": "Повторяю: Пан-Пан, запрос буксировки в гавань.",
+            "target_language": "en",
+            "target_text": "Read back Pan-Pan, request tow to harbour.",
+            "accepted_answers": [
+                "Read back Pan-Pan, request tow to harbour."
+            ],
+            "grammar_pattern": "readback_signal_assistance_request",
+            "hint_beginner": "Read back Pan-Pan...",
+            "hint_intermediate": "request tow...",
+            "hint_advanced": "to harbour...",
+            "qa_notes": {
+                "should_accept": [
+                    "Read back Pan-Pan, request tow to harbour.",
+                    "Read back Pan Pan request tow to harbour"
+                ],
+                "should_reject": [
+                    "Read back Mayday request tow to harbour",
+                    "Read back Pan Pan cancel tow to harbour",
+                    "Correction Pan Pan request tow to harbour"
+                ],
+                "dangerous_minimal_pairs": [
+                    "read back / correction; Pan-Pan / Mayday; request / cancel tow"
+                ],
+                "linguist_note": "Readback, urgency signal, and assistance request status must remain exact."
+            }
+        },
+        {
+            "id": "phrase_scenario_mayday_taking_water_position_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 19,
+            "topic": "scenario_chains",
+            "branch": "distress_mayday",
+            "module": "mayday_position_readback_scenario",
+            "source_language": "ru",
+            "source_text": "Мэйдэй, принимаем воду, позиция пять миль к востоку от Альфа.",
+            "target_language": "en",
+            "target_text": "Mayday, taking water, position five miles east of Alpha.",
+            "accepted_answers": [
+                "Mayday, taking water, position five miles east of Alpha."
+            ],
+            "grammar_pattern": "mayday_nature_position_relative",
+            "hint_beginner": "Mayday, taking water...",
+            "hint_intermediate": "five miles east...",
+            "hint_advanced": "of Alpha...",
+            "qa_notes": {
+                "should_accept": [
+                    "Mayday, taking water, position five miles east of Alpha.",
+                    "Mayday taking water position five miles east of Alpha"
+                ],
+                "should_reject": [
+                    "Pan Pan taking water position five miles east of Alpha",
+                    "Mayday fire position five miles east of Alpha",
+                    "Mayday taking water position five miles west of Alpha"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Mayday / Pan-Pan; taking water / fire; east / west"
+                ],
+                "linguist_note": "Distress signal, nature of distress, distance, and relative direction must remain exact."
+            }
+        },
+        {
+            "id": "phrase_scenario_mayday_four_persons_on_board_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 17,
+            "topic": "scenario_chains",
+            "branch": "distress_mayday",
+            "module": "mayday_position_readback_scenario",
+            "source_language": "ru",
+            "source_text": "На борту четыре человека.",
+            "target_language": "en",
+            "target_text": "Four persons on board.",
+            "accepted_answers": [
+                "Four persons on board.",
+                "Four people on board"
+            ],
+            "grammar_pattern": "persons_on_board_count",
+            "hint_beginner": "Four persons...",
+            "hint_intermediate": "on board...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Four persons on board.",
+                    "Four people on board"
+                ],
+                "should_reject": [
+                    "Five persons on board",
+                    "Four persons overboard",
+                    "Four persons abandoning ship"
+                ],
+                "dangerous_minimal_pairs": [
+                    "four / five; on board / overboard / abandoning ship"
+                ],
+                "linguist_note": "Person count and status must remain exact."
+            }
+        },
+        {
+            "id": "phrase_scenario_mayday_require_pump_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "scenario_chains",
+            "branch": "distress_mayday",
+            "module": "mayday_position_readback_scenario",
+            "source_language": "ru",
+            "source_text": "Требуется аварийный насос.",
+            "target_language": "en",
+            "target_text": "Require emergency pump.",
+            "accepted_answers": [
+                "Require emergency pump.",
+                "Need emergency pump"
+            ],
+            "grammar_pattern": "require_emergency_equipment",
+            "hint_beginner": "Require...",
+            "hint_intermediate": "emergency pump...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Require emergency pump.",
+                    "Need emergency pump"
+                ],
+                "should_reject": [
+                    "Require bilge status",
+                    "Require emergency tow",
+                    "Cancel emergency pump"
+                ],
+                "dangerous_minimal_pairs": [
+                    "pump / tow / bilge status; require / cancel"
+                ],
+                "linguist_note": "Assistance/equipment requested must remain exact."
+            }
+        },
+        {
+            "id": "phrase_scenario_rescue_unit_readback_position_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 18,
+            "topic": "scenario_chains",
+            "branch": "distress_mayday",
+            "module": "mayday_position_readback_scenario",
+            "source_language": "ru",
+            "source_text": "Спасательное судно повторяет: пять миль к востоку от Альфа.",
+            "target_language": "en",
+            "target_text": "Rescue unit reads back five miles east of Alpha.",
+            "accepted_answers": [
+                "Rescue unit reads back five miles east of Alpha.",
+                "Rescue unit read back five miles east of Alpha"
+            ],
+            "grammar_pattern": "rescue_unit_readback_position",
+            "hint_beginner": "Rescue unit...",
+            "hint_intermediate": "five miles east...",
+            "hint_advanced": "of Alpha...",
+            "qa_notes": {
+                "should_accept": [
+                    "Rescue unit reads back five miles east of Alpha.",
+                    "Rescue unit read back five miles east of Alpha"
+                ],
+                "should_reject": [
+                    "Rescue unit reads back five miles west of Alpha",
+                    "Rescue unit corrects five miles east of Alpha",
+                    "Marina reads back five miles east of Alpha"
+                ],
+                "dangerous_minimal_pairs": [
+                    "rescue unit / marina; read back / correct; east / west"
+                ],
+                "linguist_note": "Responding station, readback/correction status, and position must remain exact."
+            }
+        },
+        {
+            "id": "expr_scenario_confirm_position_received_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "scenario_chains",
+            "branch": "distress_mayday",
+            "module": "mayday_position_readback_scenario",
+            "source_language": "ru",
+            "source_text": "Позиция получена",
+            "target_language": "en",
+            "target_text": "position received",
+            "accepted_answers": [
+                "position received",
+                "position is received"
+            ],
+            "hint_beginner": "position...",
+            "hint_intermediate": "received...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "position received",
+                    "position is received"
+                ],
+                "should_reject": [
+                    "position corrected",
+                    "position unknown",
+                    "message received"
+                ],
+                "dangerous_minimal_pairs": [
+                    "position / message; received / corrected / unknown"
+                ],
+                "linguist_note": "Acknowledging position is distinct from correcting or not knowing it."
+            }
+        },
+        {
+            "id": "expr_scenario_correction_area_charlie_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "scenario_chains",
+            "branch": "safety_securite",
+            "module": "restricted_visibility_scenario",
+            "source_language": "ru",
+            "source_text": "Исправление: район Чарли",
+            "target_language": "en",
+            "target_text": "correction area Charlie",
+            "accepted_answers": [
+                "correction area Charlie"
+            ],
+            "hint_beginner": "correction...",
+            "hint_intermediate": "area Charlie...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "correction area Charlie"
+                ],
+                "should_reject": [
+                    "read back area Charlie",
+                    "correction area Alpha",
+                    "correction channel Charlie"
+                ],
+                "dangerous_minimal_pairs": [
+                    "correction / readback; area Charlie / Alpha; area / channel"
+                ],
+                "linguist_note": "Correction marker and area name must remain exact."
+            }
+        }
+    ],
+    "grammar_patterns": [
+        {
+            "id": "marina_station_vessel_approach_direction",
+            "pattern": "station call with vessel identity and approach direction",
+            "examples": [
+                "Marina Alpha, sailing yacht Aurora approaching from south."
+            ]
+        },
+        {
+            "id": "request_visitor_berth_duration",
+            "pattern": "request a visitor berth for a duration",
+            "examples": [
+                "Request visitor berth for one night."
+            ]
+        },
+        {
+            "id": "proceed_berth_side_to",
+            "pattern": "proceed to named berth with side-to instruction",
+            "examples": [
+                "Proceed to berth Bravo two, starboard side to."
+            ]
+        },
+        {
+            "id": "readback_berth_side_to",
+            "pattern": "read back named berth and side-to instruction",
+            "examples": [
+                "Read back berth Bravo two, starboard side to."
+            ]
+        },
+        {
+            "id": "traffic_crossing_relative_position",
+            "pattern": "traffic crossing description with relative position",
+            "examples": [
+                "Crossing vessel on starboard bow."
+            ]
+        },
+        {
+            "id": "alter_course_side_pass_relative",
+            "pattern": "alter course to side to pass ahead or astern",
+            "examples": [
+                "Altering course to starboard to pass astern."
+            ]
+        },
+        {
+            "id": "vts_instruction_switch_channel",
+            "pattern": "VTS instruction to switch channel",
+            "examples": [
+                "VTS instructs, switch to channel one two."
+            ]
+        },
+        {
+            "id": "securite_visibility_area_warning",
+            "pattern": "Securite visibility warning with area",
+            "examples": [
+                "Securite, visibility less than one mile in area Charlie."
+            ]
+        },
+        {
+            "id": "panpan_failure_position",
+            "pattern": "Pan-Pan equipment failure with position reference",
+            "examples": [
+                "Pan-Pan, engine failed, position near buoy seven."
+            ]
+        },
+        {
+            "id": "mayday_nature_position_relative",
+            "pattern": "Mayday nature of distress with relative position",
+            "examples": [
+                "Mayday, taking water, position five miles east of Alpha."
+            ]
+        },
+        {
+            "id": "rescue_unit_readback_position",
+            "pattern": "rescue unit readback of distress position",
+            "examples": [
+                "Rescue unit reads back five miles east of Alpha."
+            ]
+        },
+        {
+            "id": "sound_signal_interval",
+            "pattern": "sound signal with time interval",
+            "examples": [
+                "Sound signal every two minutes."
+            ]
+        },
+        {
+            "id": "vessel_alongside_named_berth",
+            "pattern": "vessel alongside a named berth",
+            "examples": [
+                "Aurora alongside berth Bravo two."
+            ]
+        },
+        {
+            "id": "request_traffic_intentions",
+            "pattern": "request another vessel intentions",
+            "examples": [
+                "Request crossing vessel intentions."
+            ]
+        },
+        {
+            "id": "confirm_clear_passing_relative",
+            "pattern": "confirm clear status and passing relation",
+            "examples": [
+                "Confirm clear, passing astern."
+            ]
+        },
+        {
+            "id": "report_passing_named_point",
+            "pattern": "report passing a named point",
+            "examples": [
+                "Report passing point Delta."
+            ]
+        },
+        {
+            "id": "readback_switch_channel",
+            "pattern": "read back a switch-channel instruction",
+            "examples": [
+                "Read back, switch to channel one two."
+            ]
+        },
+        {
+            "id": "restricted_visibility_hazard_action",
+            "pattern": "restricted-visibility hazard with action",
+            "examples": [
+                "Fog bank ahead, reducing speed."
+            ]
+        },
+        {
+            "id": "request_tow_destination",
+            "pattern": "request tow to a destination",
+            "examples": [
+                "Request tow to harbour."
+            ]
+        },
+        {
+            "id": "steering_limited_fairway_side",
+            "pattern": "steering limitation with fairway side",
+            "examples": [
+                "Steering limited, keeping starboard side of fairway."
+            ]
+        },
+        {
+            "id": "readback_signal_assistance_request",
+            "pattern": "read back signal and assistance request",
+            "examples": [
+                "Read back Pan-Pan, request tow to harbour."
+            ]
+        },
+        {
+            "id": "persons_on_board_count",
+            "pattern": "persons on board count",
+            "examples": [
+                "Four persons on board."
+            ]
+        },
+        {
+            "id": "require_emergency_equipment",
+            "pattern": "require emergency equipment",
+            "examples": [
+                "Require emergency pump."
+            ]
+        }
+    ],
+    "dangerous_minimal_pairs": [
+        {
+            "pair": "marina arrival readback: station, berth number, side-to, approach/alongside status",
+            "items": [
+                "phrase_scenario_marina_arrival_from_south_001",
+                "phrase_scenario_mooring_berth_bravo_two_001",
+                "phrase_scenario_readback_berth_bravo_two_001",
+                "phrase_scenario_report_alongside_bravo_two_001"
+            ],
+            "must_accept": {
+                "phrase_scenario_marina_arrival_from_south_001": [
+                    "Marina Alpha, sailing yacht Aurora approaching from south."
+                ],
+                "phrase_scenario_mooring_berth_bravo_two_001": [
+                    "Proceed to berth Bravo two, starboard side to."
+                ],
+                "phrase_scenario_readback_berth_bravo_two_001": [
+                    "Read back berth Bravo two, starboard side to."
+                ],
+                "phrase_scenario_report_alongside_bravo_two_001": [
+                    "Aurora alongside berth Bravo two."
+                ]
+            },
+            "must_reject": {
+                "phrase_scenario_marina_arrival_from_south_001": [
+                    "Port Control sailing yacht Aurora approaching from south"
+                ],
+                "phrase_scenario_mooring_berth_bravo_two_001": [
+                    "Proceed to berth Bravo two port side to"
+                ],
+                "phrase_scenario_readback_berth_bravo_two_001": [
+                    "Correction berth Bravo two starboard side to"
+                ],
+                "phrase_scenario_report_alongside_bravo_two_001": [
+                    "Aurora approaching berth Bravo two"
+                ]
+            },
+            "reason": "Scenario-linked marina turns must preserve station, berth, side-to, and vessel status."
+        },
+        {
+            "pair": "traffic crossing: crossing/overtaking, starboard/port, alter/maintain, astern/ahead",
+            "items": [
+                "phrase_scenario_crossing_vessel_starboard_bow_001",
+                "phrase_scenario_request_crossing_intentions_001",
+                "phrase_scenario_alter_course_starboard_001",
+                "phrase_scenario_confirm_clear_passing_astern_001"
+            ],
+            "must_accept": {
+                "phrase_scenario_crossing_vessel_starboard_bow_001": [
+                    "Crossing vessel on starboard bow."
+                ],
+                "phrase_scenario_request_crossing_intentions_001": [
+                    "Request crossing vessel intentions."
+                ],
+                "phrase_scenario_alter_course_starboard_001": [
+                    "Altering course to starboard to pass astern."
+                ],
+                "phrase_scenario_confirm_clear_passing_astern_001": [
+                    "Confirm clear, passing astern."
+                ]
+            },
+            "must_reject": {
+                "phrase_scenario_crossing_vessel_starboard_bow_001": [
+                    "Overtaking vessel on starboard bow"
+                ],
+                "phrase_scenario_request_crossing_intentions_001": [
+                    "Report crossing vessel intentions"
+                ],
+                "phrase_scenario_alter_course_starboard_001": [
+                    "Altering course to starboard to pass ahead"
+                ],
+                "phrase_scenario_confirm_clear_passing_astern_001": [
+                    "Confirm not clear passing astern"
+                ]
+            },
+            "reason": "Collision-avoidance turns must preserve traffic type, side, action, and passing relation."
+        },
+        {
+            "pair": "VTS reporting chain: report/request, point Delta/Echo, instruction/advice, channel 12/16",
+            "items": [
+                "phrase_scenario_report_point_delta_001",
+                "phrase_scenario_vts_instruction_channel_one_two_001",
+                "phrase_scenario_readback_channel_one_two_001"
+            ],
+            "must_accept": {
+                "phrase_scenario_report_point_delta_001": [
+                    "Report passing point Delta."
+                ],
+                "phrase_scenario_vts_instruction_channel_one_two_001": [
+                    "VTS instructs, switch to channel one two."
+                ],
+                "phrase_scenario_readback_channel_one_two_001": [
+                    "Read back, switch to channel one two."
+                ]
+            },
+            "must_reject": {
+                "phrase_scenario_report_point_delta_001": [
+                    "Request passing point Delta"
+                ],
+                "phrase_scenario_vts_instruction_channel_one_two_001": [
+                    "VTS advises switch to channel one two"
+                ],
+                "phrase_scenario_readback_channel_one_two_001": [
+                    "Read back switch to channel one six"
+                ]
+            },
+            "reason": "Authority and channel-change chains must preserve report/instruction/readback semantics."
+        },
+        {
+            "pair": "restricted visibility: fog/smoke, reduce/increase speed, sound interval, Securite/Pan-Pan",
+            "items": [
+                "phrase_scenario_fog_bank_ahead_reduce_speed_001",
+                "phrase_scenario_sound_signal_every_two_minutes_001",
+                "phrase_scenario_securite_visibility_less_one_mile_001",
+                "expr_scenario_correction_area_charlie_001"
+            ],
+            "must_accept": {
+                "phrase_scenario_fog_bank_ahead_reduce_speed_001": [
+                    "Fog bank ahead, reducing speed."
+                ],
+                "phrase_scenario_sound_signal_every_two_minutes_001": [
+                    "Sound signal every two minutes."
+                ],
+                "phrase_scenario_securite_visibility_less_one_mile_001": [
+                    "Securite, visibility less than one mile in area Charlie."
+                ],
+                "expr_scenario_correction_area_charlie_001": [
+                    "correction area Charlie"
+                ]
+            },
+            "must_reject": {
+                "phrase_scenario_fog_bank_ahead_reduce_speed_001": [
+                    "Fog bank ahead increasing speed"
+                ],
+                "phrase_scenario_sound_signal_every_two_minutes_001": [
+                    "Sound signal every one minute"
+                ],
+                "phrase_scenario_securite_visibility_less_one_mile_001": [
+                    "Pan Pan visibility less than one mile in area Charlie"
+                ],
+                "expr_scenario_correction_area_charlie_001": [
+                    "read back area Charlie"
+                ]
+            },
+            "reason": "Safety-warning scenario turns must preserve signal, threshold, area, and action."
+        },
+        {
+            "pair": "Pan-Pan equipment chain: Pan-Pan/Mayday, engine/steering, tow/pilot, request/cancel",
+            "items": [
+                "phrase_scenario_panpan_engine_failed_position_001",
+                "phrase_scenario_panpan_request_tow_harbour_001",
+                "phrase_scenario_panpan_steering_limited_001",
+                "phrase_scenario_readback_panpan_tow_request_001"
+            ],
+            "must_accept": {
+                "phrase_scenario_panpan_engine_failed_position_001": [
+                    "Pan-Pan, engine failed, position near buoy seven."
+                ],
+                "phrase_scenario_panpan_request_tow_harbour_001": [
+                    "Request tow to harbour."
+                ],
+                "phrase_scenario_panpan_steering_limited_001": [
+                    "Steering limited, keeping starboard side of fairway."
+                ],
+                "phrase_scenario_readback_panpan_tow_request_001": [
+                    "Read back Pan-Pan, request tow to harbour."
+                ]
+            },
+            "must_reject": {
+                "phrase_scenario_panpan_engine_failed_position_001": [
+                    "Mayday engine failed position near buoy seven"
+                ],
+                "phrase_scenario_panpan_request_tow_harbour_001": [
+                    "Cancel tow to harbour"
+                ],
+                "phrase_scenario_panpan_steering_limited_001": [
+                    "Steering limited keeping port side of fairway"
+                ],
+                "phrase_scenario_readback_panpan_tow_request_001": [
+                    "Read back Pan Pan cancel tow to harbour"
+                ]
+            },
+            "reason": "Urgency chains must not drift into distress, wrong equipment, or cancelled assistance."
+        },
+        {
+            "pair": "Mayday position chain: Mayday/Pan-Pan, taking water/fire, east/west, persons count/status",
+            "items": [
+                "phrase_scenario_mayday_taking_water_position_001",
+                "phrase_scenario_mayday_four_persons_on_board_001",
+                "phrase_scenario_mayday_require_pump_001",
+                "phrase_scenario_rescue_unit_readback_position_001",
+                "expr_scenario_confirm_position_received_001"
+            ],
+            "must_accept": {
+                "phrase_scenario_mayday_taking_water_position_001": [
+                    "Mayday, taking water, position five miles east of Alpha."
+                ],
+                "phrase_scenario_mayday_four_persons_on_board_001": [
+                    "Four persons on board."
+                ],
+                "phrase_scenario_mayday_require_pump_001": [
+                    "Require emergency pump."
+                ],
+                "phrase_scenario_rescue_unit_readback_position_001": [
+                    "Rescue unit reads back five miles east of Alpha."
+                ],
+                "expr_scenario_confirm_position_received_001": [
+                    "position received"
+                ]
+            },
+            "must_reject": {
+                "phrase_scenario_mayday_taking_water_position_001": [
+                    "Pan Pan taking water position five miles east of Alpha"
+                ],
+                "phrase_scenario_mayday_four_persons_on_board_001": [
+                    "Four persons overboard"
+                ],
+                "phrase_scenario_mayday_require_pump_001": [
+                    "Require emergency tow"
+                ],
+                "phrase_scenario_rescue_unit_readback_position_001": [
+                    "Rescue unit reads back five miles west of Alpha"
+                ],
+                "expr_scenario_confirm_position_received_001": [
+                    "position corrected"
+                ]
+            },
+            "reason": "Distress chain must preserve signal, distress nature, position, persons status, and requested equipment."
+        }
+    ],
+    "producer_notes": {
+        "intent": "Add scenario-chain turns as normal matcher-safe items without changing runtime item types.",
+        "next_gate": "Sea Speak Linguist risk review before engineering gate, merge, QA, or production deploy."
+    }
+}
