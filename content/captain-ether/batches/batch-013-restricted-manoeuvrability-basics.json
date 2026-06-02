@@ -1,0 +1,1196 @@
+{
+    "version": 1,
+    "batch_id": "batch-013-restricted-manoeuvrability-basics",
+    "status": "draft",
+    "date": "2026-06-02",
+    "branch": "traffic_collision",
+    "scope": "M4 traffic/legal-status basics for vessels not under command, restricted in ability to manoeuvre, constrained by draught, towing, fishing, dredging, and diving operations. Keep separate from Mayday distress, Pan-Pan urgency, routine VTS clearance, and ordinary marina traffic.",
+    "items": [
+        {
+            "id": "word_status_draught_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "vessel_status",
+            "branch": "traffic_collision",
+            "module": "restricted_manoeuvrability",
+            "source_language": "ru",
+            "source_text": "Осадка",
+            "target_language": "en",
+            "target_text": "draught",
+            "accepted_answers": [
+                "draught",
+                "draft"
+            ],
+            "hint_beginner": "d_____t",
+            "hint_intermediate": "draught...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "draught",
+                    "draft"
+                ],
+                "should_reject": [
+                    "depth",
+                    "distance",
+                    "drafting"
+                ],
+                "dangerous_minimal_pairs": [
+                    "draught / depth / distance"
+                ],
+                "linguist_note": "Draught/draft is vessel depth below waterline, not water depth or distance."
+            }
+        },
+        {
+            "id": "word_status_tow_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "towing_operations",
+            "branch": "traffic_collision",
+            "module": "towing_status",
+            "source_language": "ru",
+            "source_text": "Буксирный состав / буксир",
+            "target_language": "en",
+            "target_text": "tow",
+            "accepted_answers": [
+                "tow"
+            ],
+            "hint_beginner": "t__",
+            "hint_intermediate": "tow...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "tow",
+                    "TOW"
+                ],
+                "should_reject": [
+                    "tug",
+                    "tower",
+                    "towage"
+                ],
+                "dangerous_minimal_pairs": [
+                    "tow / tug / towage"
+                ],
+                "linguist_note": "Tow is the object or act of towing; tug and towage are related but distinct."
+            }
+        },
+        {
+            "id": "word_status_trawling_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 9,
+            "topic": "fishing_operations",
+            "branch": "traffic_collision",
+            "module": "fishing_status",
+            "source_language": "ru",
+            "source_text": "Траление / лов тралом",
+            "target_language": "en",
+            "target_text": "trawling",
+            "accepted_answers": [
+                "trawling"
+            ],
+            "hint_beginner": "t_______g",
+            "hint_intermediate": "trawling...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "trawling",
+                    "TRAWLING"
+                ],
+                "should_reject": [
+                    "trolling",
+                    "towing",
+                    "drifting"
+                ],
+                "dangerous_minimal_pairs": [
+                    "trawling / trolling / towing"
+                ],
+                "linguist_note": "Trawling is a fishing operation, not towing or trolling."
+            }
+        },
+        {
+            "id": "word_status_dredging_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "dredging_operations",
+            "branch": "traffic_collision",
+            "module": "restricted_manoeuvrability",
+            "source_language": "ru",
+            "source_text": "Дноуглубительные работы",
+            "target_language": "en",
+            "target_text": "dredging",
+            "accepted_answers": [
+                "dredging"
+            ],
+            "hint_beginner": "d_______g",
+            "hint_intermediate": "dredging...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "dredging",
+                    "DREDGING"
+                ],
+                "should_reject": [
+                    "dragging",
+                    "drifting",
+                    "diving"
+                ],
+                "dangerous_minimal_pairs": [
+                    "dredging / dragging / drifting / diving"
+                ],
+                "linguist_note": "Dredging is seabed work and may restrict manoeuvrability."
+            }
+        },
+        {
+            "id": "word_status_diving_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "diving_operations",
+            "branch": "traffic_collision",
+            "module": "restricted_manoeuvrability",
+            "source_language": "ru",
+            "source_text": "Водолазные работы",
+            "target_language": "en",
+            "target_text": "diving",
+            "accepted_answers": [
+                "diving"
+            ],
+            "hint_beginner": "d_____g",
+            "hint_intermediate": "diving...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "diving",
+                    "DIVING"
+                ],
+                "should_reject": [
+                    "driving",
+                    "dredging",
+                    "drifting"
+                ],
+                "dangerous_minimal_pairs": [
+                    "diving / dredging / drifting"
+                ],
+                "linguist_note": "Diving operations require keeping clear; do not confuse with dredging or drifting."
+            }
+        },
+        {
+            "id": "expr_status_not_under_command_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "vessel_status",
+            "branch": "traffic_collision",
+            "module": "not_under_command",
+            "source_language": "ru",
+            "source_text": "Не управляется",
+            "target_language": "en",
+            "target_text": "not under command",
+            "accepted_answers": [
+                "not under command"
+            ],
+            "hint_beginner": "not under...",
+            "hint_intermediate": "not under command...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "not under command",
+                    "NOT UNDER COMMAND"
+                ],
+                "should_reject": [
+                    "under command",
+                    "restricted in ability to manoeuvre",
+                    "constrained by draught"
+                ],
+                "dangerous_minimal_pairs": [
+                    "not under command / restricted in ability / constrained by draught"
+                ],
+                "linguist_note": "Not under command is a specific vessel status, not any restricted-manoeuvre condition."
+            }
+        },
+        {
+            "id": "expr_status_restricted_ability_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "vessel_status",
+            "branch": "traffic_collision",
+            "module": "restricted_manoeuvrability",
+            "source_language": "ru",
+            "source_text": "Ограничена в возможности маневрировать",
+            "target_language": "en",
+            "target_text": "restricted in ability to manoeuvre",
+            "accepted_answers": [
+                "restricted in ability to manoeuvre",
+                "restricted in ability to maneuver",
+                "restricted ability to manoeuvre",
+                "restricted ability to maneuver"
+            ],
+            "hint_beginner": "restricted in ability...",
+            "hint_intermediate": "restricted in ability to manoeuvre...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "restricted in ability to manoeuvre",
+                    "restricted in ability to maneuver"
+                ],
+                "should_reject": [
+                    "not under command",
+                    "constrained by draught",
+                    "unable to steer"
+                ],
+                "dangerous_minimal_pairs": [
+                    "restricted ability / not under command / constrained by draught"
+                ],
+                "linguist_note": "Restricted in ability to manoeuvre is a legal-status phrase, not a generic steering failure."
+            }
+        },
+        {
+            "id": "expr_status_constrained_by_draught_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "vessel_status",
+            "branch": "traffic_collision",
+            "module": "constrained_by_draught",
+            "source_language": "ru",
+            "source_text": "Стеснена своей осадкой",
+            "target_language": "en",
+            "target_text": "constrained by draught",
+            "accepted_answers": [
+                "constrained by draught",
+                "constrained by draft"
+            ],
+            "hint_beginner": "constrained by...",
+            "hint_intermediate": "constrained by draught...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "constrained by draught",
+                    "constrained by draft"
+                ],
+                "should_reject": [
+                    "restricted by weather",
+                    "not under command",
+                    "restricted in ability to manoeuvre"
+                ],
+                "dangerous_minimal_pairs": [
+                    "constrained by draught / restricted ability / not under command"
+                ],
+                "linguist_note": "Constrained by draught is depth-channel limitation, not manoeuvre-equipment limitation."
+            }
+        },
+        {
+            "id": "expr_status_towing_astern_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 10,
+            "topic": "towing_operations",
+            "branch": "traffic_collision",
+            "module": "towing_status",
+            "source_language": "ru",
+            "source_text": "Буксировка за кормой",
+            "target_language": "en",
+            "target_text": "towing astern",
+            "accepted_answers": [
+                "towing astern"
+            ],
+            "hint_beginner": "towing...",
+            "hint_intermediate": "towing astern...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "towing astern",
+                    "TOWING ASTERN"
+                ],
+                "should_reject": [
+                    "being towed",
+                    "towing ahead",
+                    "tug assistance"
+                ],
+                "dangerous_minimal_pairs": [
+                    "towing astern / being towed / tug assistance"
+                ],
+                "linguist_note": "Towing astern describes the tow position, not a request for tug assistance."
+            }
+        },
+        {
+            "id": "expr_status_fishing_gear_deployed_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "fishing_operations",
+            "branch": "traffic_collision",
+            "module": "fishing_status",
+            "source_language": "ru",
+            "source_text": "Орудия лова выставлены",
+            "target_language": "en",
+            "target_text": "fishing gear deployed",
+            "accepted_answers": [
+                "fishing gear deployed"
+            ],
+            "hint_beginner": "fishing gear...",
+            "hint_intermediate": "fishing gear deployed...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "fishing gear deployed"
+                ],
+                "should_reject": [
+                    "anchor deployed",
+                    "towing gear deployed",
+                    "fenders deployed"
+                ],
+                "dangerous_minimal_pairs": [
+                    "fishing gear / anchor / towing gear"
+                ],
+                "linguist_note": "Fishing gear creates traffic risk; it is not anchoring, towing, or marina fender use."
+            }
+        },
+        {
+            "id": "expr_status_diving_operations_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "diving_operations",
+            "branch": "traffic_collision",
+            "module": "restricted_manoeuvrability",
+            "source_language": "ru",
+            "source_text": "Водолазные работы",
+            "target_language": "en",
+            "target_text": "diving operations",
+            "accepted_answers": [
+                "diving operations"
+            ],
+            "hint_beginner": "diving...",
+            "hint_intermediate": "diving operations...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "diving operations"
+                ],
+                "should_reject": [
+                    "dredging operations",
+                    "drifting operations",
+                    "routine operations"
+                ],
+                "dangerous_minimal_pairs": [
+                    "diving / dredging / drifting operations"
+                ],
+                "linguist_note": "Diving operations require a keep-clear boundary."
+            }
+        },
+        {
+            "id": "expr_status_dredging_operations_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "dredging_operations",
+            "branch": "traffic_collision",
+            "module": "restricted_manoeuvrability",
+            "source_language": "ru",
+            "source_text": "Дноуглубительные работы",
+            "target_language": "en",
+            "target_text": "dredging operations",
+            "accepted_answers": [
+                "dredging operations"
+            ],
+            "hint_beginner": "dredging...",
+            "hint_intermediate": "dredging operations...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "dredging operations"
+                ],
+                "should_reject": [
+                    "diving operations",
+                    "drifting operations",
+                    "fishing operations"
+                ],
+                "dangerous_minimal_pairs": [
+                    "dredging / diving / drifting / fishing operations"
+                ],
+                "linguist_note": "Dredging operations are seabed works, not diving or fishing."
+            }
+        },
+        {
+            "id": "expr_status_keep_clear_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 9,
+            "topic": "traffic_information",
+            "branch": "traffic_collision",
+            "module": "passing_arrangements",
+            "source_language": "ru",
+            "source_text": "Держитесь в стороне",
+            "target_language": "en",
+            "target_text": "keep clear",
+            "accepted_answers": [
+                "keep clear",
+                "keep well clear"
+            ],
+            "hint_beginner": "keep...",
+            "hint_intermediate": "keep clear...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "keep clear",
+                    "keep well clear"
+                ],
+                "should_reject": [
+                    "come closer",
+                    "pass close",
+                    "stand by"
+                ],
+                "dangerous_minimal_pairs": [
+                    "keep clear / come closer / stand by"
+                ],
+                "linguist_note": "Keep clear is a safety distance instruction, not a standby order."
+            }
+        },
+        {
+            "id": "expr_status_safe_passing_distance_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 12,
+            "topic": "passing_arrangements",
+            "branch": "traffic_collision",
+            "module": "passing_arrangements",
+            "source_language": "ru",
+            "source_text": "Безопасная дистанция расхождения",
+            "target_language": "en",
+            "target_text": "safe passing distance",
+            "accepted_answers": [
+                "safe passing distance"
+            ],
+            "hint_beginner": "safe passing...",
+            "hint_intermediate": "safe passing distance...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "safe passing distance"
+                ],
+                "should_reject": [
+                    "passing arrangement",
+                    "close passing distance",
+                    "safe berth distance"
+                ],
+                "dangerous_minimal_pairs": [
+                    "safe passing distance / close passing / berth distance"
+                ],
+                "linguist_note": "Passing distance is traffic separation, not a berth or generic arrangement."
+            }
+        },
+        {
+            "id": "expr_status_unable_to_manoeuvre_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "vessel_status",
+            "branch": "traffic_collision",
+            "module": "not_under_command",
+            "source_language": "ru",
+            "source_text": "Не может маневрировать",
+            "target_language": "en",
+            "target_text": "unable to manoeuvre",
+            "accepted_answers": [
+                "unable to manoeuvre",
+                "unable to maneuver"
+            ],
+            "hint_beginner": "unable to...",
+            "hint_intermediate": "unable to manoeuvre...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "unable to manoeuvre",
+                    "unable to maneuver"
+                ],
+                "should_reject": [
+                    "able to manoeuvre",
+                    "restricted in ability to manoeuvre",
+                    "altering course"
+                ],
+                "dangerous_minimal_pairs": [
+                    "unable / restricted / able to manoeuvre"
+                ],
+                "linguist_note": "Unable to manoeuvre may support not-under-command context but is not the same phrase as restricted in ability."
+            }
+        },
+        {
+            "id": "phrase_status_nuc_keep_clear_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 16,
+            "topic": "vessel_status",
+            "branch": "traffic_collision",
+            "module": "not_under_command",
+            "source_language": "ru",
+            "source_text": "Судно не управляется, держитесь в стороне.",
+            "target_language": "en",
+            "target_text": "Vessel not under command, keep clear.",
+            "accepted_answers": [
+                "Vessel not under command, keep clear.",
+                "Not under command vessel, keep clear."
+            ],
+            "grammar_pattern": "status_nuc_keep_clear",
+            "hint_beginner": "Vessel not under command...",
+            "hint_intermediate": "keep clear...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Vessel not under command, keep clear.",
+                    "Vessel not under command keep clear"
+                ],
+                "should_reject": [
+                    "Vessel under command keep clear",
+                    "Vessel restricted in ability keep clear",
+                    "Vessel constrained by draught keep clear"
+                ],
+                "dangerous_minimal_pairs": [
+                    "not under command / restricted ability / constrained by draught"
+                ],
+                "linguist_note": "The vessel status must remain not under command; do not accept other legal-status categories."
+            }
+        },
+        {
+            "id": "phrase_status_ram_dredging_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 18,
+            "topic": "dredging_operations",
+            "branch": "traffic_collision",
+            "module": "restricted_manoeuvrability",
+            "source_language": "ru",
+            "source_text": "Судно ограничено в возможности маневрировать, ведет дноуглубительные работы.",
+            "target_language": "en",
+            "target_text": "Vessel restricted in ability to manoeuvre, dredging operations.",
+            "accepted_answers": [
+                "Vessel restricted in ability to manoeuvre, dredging operations.",
+                "Vessel restricted in ability to maneuver, dredging operations."
+            ],
+            "grammar_pattern": "status_restricted_operation_report",
+            "hint_beginner": "Vessel restricted...",
+            "hint_intermediate": "dredging operations...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Vessel restricted in ability to manoeuvre, dredging operations.",
+                    "Vessel restricted in ability to maneuver dredging operations"
+                ],
+                "should_reject": [
+                    "Vessel not under command dredging operations",
+                    "Vessel constrained by draught dredging operations",
+                    "Vessel drifting dredging operations"
+                ],
+                "dangerous_minimal_pairs": [
+                    "restricted ability / not under command / constrained by draught"
+                ],
+                "linguist_note": "Dredging is a restricted-manoeuvrability operation, not not-under-command or draught status."
+            }
+        },
+        {
+            "id": "phrase_status_cbd_deep_channel_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 18,
+            "topic": "vessel_status",
+            "branch": "traffic_collision",
+            "module": "constrained_by_draught",
+            "source_language": "ru",
+            "source_text": "Судно стеснено своей осадкой, следует глубоководным каналом.",
+            "target_language": "en",
+            "target_text": "Vessel constrained by draught, keeping to deep-water channel.",
+            "accepted_answers": [
+                "Vessel constrained by draught, keeping to deep-water channel.",
+                "Vessel constrained by draft keeping to deep water channel"
+            ],
+            "grammar_pattern": "status_constrained_by_draught_channel",
+            "hint_beginner": "Vessel constrained...",
+            "hint_intermediate": "deep-water channel...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Vessel constrained by draught, keeping to deep-water channel.",
+                    "Vessel constrained by draft keeping to deep water channel"
+                ],
+                "should_reject": [
+                    "Vessel not under command keeping to deep-water channel",
+                    "Vessel restricted in ability to manoeuvre keeping to deep-water channel",
+                    "Vessel aground keeping to deep-water channel"
+                ],
+                "dangerous_minimal_pairs": [
+                    "constrained by draught / not under command / restricted ability"
+                ],
+                "linguist_note": "Constrained-by-draught reports must not become NUC/RAM or grounding reports."
+            }
+        },
+        {
+            "id": "phrase_status_towing_length_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 16,
+            "topic": "towing_operations",
+            "branch": "traffic_collision",
+            "module": "towing_status",
+            "source_language": "ru",
+            "source_text": "Судно буксирует, длина буксира двести метров.",
+            "target_language": "en",
+            "target_text": "Vessel towing, tow length two hundred metres.",
+            "accepted_answers": [
+                "Vessel towing, tow length two hundred metres.",
+                "Vessel towing tow length two hundred meters"
+            ],
+            "grammar_pattern": "status_towing_tow_length",
+            "hint_beginner": "Vessel towing...",
+            "hint_intermediate": "tow length two hundred...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Vessel towing, tow length two hundred metres.",
+                    "Vessel towing tow length two hundred meters"
+                ],
+                "should_reject": [
+                    "Vessel being towed tow length two hundred metres",
+                    "Vessel towing tow length one hundred metres",
+                    "Tug assistance required two hundred metres"
+                ],
+                "dangerous_minimal_pairs": [
+                    "towing / being towed / tug assistance; 200 / 100 metres"
+                ],
+                "linguist_note": "Tow status and tow length must remain exact; do not accept assistance request or wrong length."
+            }
+        },
+        {
+            "id": "phrase_status_fishing_keep_clear_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 16,
+            "topic": "fishing_operations",
+            "branch": "traffic_collision",
+            "module": "fishing_status",
+            "source_language": "ru",
+            "source_text": "Рыболовное судно, орудия лова выставлены, держитесь в стороне.",
+            "target_language": "en",
+            "target_text": "Fishing vessel, fishing gear deployed, keep clear.",
+            "accepted_answers": [
+                "Fishing vessel, fishing gear deployed, keep clear."
+            ],
+            "grammar_pattern": "status_fishing_gear_keep_clear",
+            "hint_beginner": "Fishing vessel...",
+            "hint_intermediate": "fishing gear deployed...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Fishing vessel, fishing gear deployed, keep clear.",
+                    "Fishing vessel fishing gear deployed keep clear"
+                ],
+                "should_reject": [
+                    "Fishing vessel anchor deployed keep clear",
+                    "Fishing vessel towing gear deployed keep clear",
+                    "Fishing vessel gear recovered keep clear"
+                ],
+                "dangerous_minimal_pairs": [
+                    "fishing gear deployed / anchor deployed / gear recovered"
+                ],
+                "linguist_note": "Fishing gear status must remain active deployment, not anchoring or recovered gear."
+            }
+        },
+        {
+            "id": "phrase_status_diving_keep_clear_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 18,
+            "topic": "diving_operations",
+            "branch": "traffic_collision",
+            "module": "restricted_manoeuvrability",
+            "source_language": "ru",
+            "source_text": "Ведутся водолазные работы, держитесь на безопасном расстоянии.",
+            "target_language": "en",
+            "target_text": "Diving operations in progress, keep safe passing distance.",
+            "accepted_answers": [
+                "Diving operations in progress, keep safe passing distance."
+            ],
+            "grammar_pattern": "status_diving_keep_distance",
+            "hint_beginner": "Diving operations...",
+            "hint_intermediate": "safe passing distance...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Diving operations in progress, keep safe passing distance.",
+                    "Diving operations in progress keep safe passing distance"
+                ],
+                "should_reject": [
+                    "Dredging operations in progress keep safe passing distance",
+                    "Diving operations completed keep safe passing distance",
+                    "Diving operations in progress pass close"
+                ],
+                "dangerous_minimal_pairs": [
+                    "diving / dredging / completed; safe distance / pass close"
+                ],
+                "linguist_note": "Diving operation status and safe-distance instruction must both remain present."
+            }
+        },
+        {
+            "id": "phrase_status_dredging_starboard_side_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 19,
+            "topic": "dredging_operations",
+            "branch": "traffic_collision",
+            "module": "restricted_manoeuvrability",
+            "source_language": "ru",
+            "source_text": "Дноуглубительные работы, безопасный проход по правому борту.",
+            "target_language": "en",
+            "target_text": "Dredging operations, safe passage on starboard side.",
+            "accepted_answers": [
+                "Dredging operations, safe passage on starboard side."
+            ],
+            "grammar_pattern": "status_dredging_safe_side",
+            "hint_beginner": "Dredging operations...",
+            "hint_intermediate": "starboard side...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Dredging operations, safe passage on starboard side.",
+                    "Dredging operations safe passage on starboard side"
+                ],
+                "should_reject": [
+                    "Dredging operations safe passage on port side",
+                    "Diving operations safe passage on starboard side",
+                    "Dredging operations no safe passage"
+                ],
+                "dangerous_minimal_pairs": [
+                    "starboard / port; dredging / diving; safe passage / no safe passage"
+                ],
+                "linguist_note": "Side and operation type must remain exact because wrong-side passing is dangerous."
+            }
+        },
+        {
+            "id": "phrase_status_crossing_nuc_warning_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 19,
+            "topic": "risk_of_collision",
+            "branch": "traffic_collision",
+            "module": "not_under_command",
+            "source_language": "ru",
+            "source_text": "Судно не управляется, не пересекайте перед носом.",
+            "target_language": "en",
+            "target_text": "Vessel not under command, do not cross ahead.",
+            "accepted_answers": [
+                "Vessel not under command, do not cross ahead."
+            ],
+            "grammar_pattern": "status_nuc_crossing_warning",
+            "hint_beginner": "Vessel not under command...",
+            "hint_intermediate": "do not cross ahead...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Vessel not under command, do not cross ahead.",
+                    "Vessel not under command do not cross ahead"
+                ],
+                "should_reject": [
+                    "Vessel under command do not cross ahead",
+                    "Vessel not under command cross ahead",
+                    "Vessel not under command pass astern"
+                ],
+                "dangerous_minimal_pairs": [
+                    "do not cross ahead / cross ahead / pass astern"
+                ],
+                "linguist_note": "Negative crossing instruction must stay strict; accepting the opposite is unsafe."
+            }
+        },
+        {
+            "id": "phrase_status_cbd_do_not_impede_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 19,
+            "topic": "traffic_information",
+            "branch": "traffic_collision",
+            "module": "constrained_by_draught",
+            "source_language": "ru",
+            "source_text": "Судно стеснено осадкой, не затрудняйте проход.",
+            "target_language": "en",
+            "target_text": "Vessel constrained by draught, do not impede passage.",
+            "accepted_answers": [
+                "Vessel constrained by draught, do not impede passage.",
+                "Vessel constrained by draft do not impede passage"
+            ],
+            "grammar_pattern": "status_constrained_do_not_impede",
+            "hint_beginner": "Vessel constrained...",
+            "hint_intermediate": "do not impede passage...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Vessel constrained by draught, do not impede passage.",
+                    "Vessel constrained by draft do not impede passage"
+                ],
+                "should_reject": [
+                    "Vessel constrained by draught impede passage",
+                    "Vessel not under command do not impede passage",
+                    "Vessel constrained by draught proceed to berth"
+                ],
+                "dangerous_minimal_pairs": [
+                    "do not impede / impede; constrained by draught / not under command"
+                ],
+                "linguist_note": "Do-not-impede warning must retain the negative and draught status."
+            }
+        },
+        {
+            "id": "phrase_status_long_tow_keep_clear_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 18,
+            "topic": "towing_operations",
+            "branch": "traffic_collision",
+            "module": "towing_status",
+            "source_language": "ru",
+            "source_text": "Длинный буксир, держитесь в стороне от кормы.",
+            "target_language": "en",
+            "target_text": "Long tow, keep clear astern.",
+            "accepted_answers": [
+                "Long tow, keep clear astern."
+            ],
+            "grammar_pattern": "status_long_tow_keep_clear",
+            "hint_beginner": "Long tow...",
+            "hint_intermediate": "keep clear astern...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Long tow, keep clear astern.",
+                    "Long tow keep clear astern"
+                ],
+                "should_reject": [
+                    "Long tow keep clear ahead",
+                    "Short tow keep clear astern",
+                    "Long tug keep clear astern"
+                ],
+                "dangerous_minimal_pairs": [
+                    "astern / ahead; long tow / short tow / tug"
+                ],
+                "linguist_note": "Tow length class and direction astern must remain exact."
+            }
+        }
+    ],
+    "grammar_patterns": [
+        {
+            "id": "status_nuc_keep_clear",
+            "pattern": "not-under-command keep-clear warning",
+            "examples": [
+                "Vessel not under command, keep clear."
+            ]
+        },
+        {
+            "id": "status_restricted_operation_report",
+            "pattern": "restricted-ability operation report",
+            "examples": [
+                "Vessel restricted in ability to manoeuvre, dredging operations."
+            ]
+        },
+        {
+            "id": "status_constrained_by_draught_channel",
+            "pattern": "constrained-by-draught channel report",
+            "examples": [
+                "Vessel constrained by draught, keeping to deep-water channel."
+            ]
+        },
+        {
+            "id": "status_towing_tow_length",
+            "pattern": "towing status with tow length",
+            "examples": [
+                "Vessel towing, tow length two hundred metres."
+            ]
+        },
+        {
+            "id": "status_fishing_gear_keep_clear",
+            "pattern": "fishing gear deployed keep-clear warning",
+            "examples": [
+                "Fishing vessel, fishing gear deployed, keep clear."
+            ]
+        },
+        {
+            "id": "status_diving_keep_distance",
+            "pattern": "diving operations safe-distance warning",
+            "examples": [
+                "Diving operations in progress, keep safe passing distance."
+            ]
+        },
+        {
+            "id": "status_dredging_safe_side",
+            "pattern": "dredging operation safe-passage side",
+            "examples": [
+                "Dredging operations, safe passage on starboard side."
+            ]
+        },
+        {
+            "id": "status_nuc_crossing_warning",
+            "pattern": "not-under-command crossing prohibition",
+            "examples": [
+                "Vessel not under command, do not cross ahead."
+            ]
+        },
+        {
+            "id": "status_constrained_do_not_impede",
+            "pattern": "constrained-by-draught do-not-impede warning",
+            "examples": [
+                "Vessel constrained by draught, do not impede passage."
+            ]
+        },
+        {
+            "id": "status_long_tow_keep_clear",
+            "pattern": "long tow keep-clear astern warning",
+            "examples": [
+                "Long tow, keep clear astern."
+            ]
+        }
+    ],
+    "dangerous_minimal_pairs": [
+        {
+            "pair": "not under command / restricted in ability / constrained by draught",
+            "items": [
+                "expr_status_not_under_command_001",
+                "expr_status_restricted_ability_001",
+                "expr_status_constrained_by_draught_001",
+                "phrase_status_nuc_keep_clear_001",
+                "phrase_status_ram_dredging_001",
+                "phrase_status_cbd_deep_channel_001"
+            ],
+            "must_accept": {
+                "expr_status_not_under_command_001": [
+                    "not under command"
+                ],
+                "expr_status_restricted_ability_001": [
+                    "restricted in ability to manoeuvre"
+                ],
+                "expr_status_constrained_by_draught_001": [
+                    "constrained by draught"
+                ],
+                "phrase_status_nuc_keep_clear_001": [
+                    "Vessel not under command, keep clear."
+                ],
+                "phrase_status_ram_dredging_001": [
+                    "Vessel restricted in ability to manoeuvre, dredging operations."
+                ],
+                "phrase_status_cbd_deep_channel_001": [
+                    "Vessel constrained by draught, keeping to deep-water channel."
+                ]
+            },
+            "must_reject": {
+                "expr_status_not_under_command_001": [
+                    "restricted in ability to manoeuvre",
+                    "constrained by draught"
+                ],
+                "expr_status_restricted_ability_001": [
+                    "not under command",
+                    "constrained by draught"
+                ],
+                "expr_status_constrained_by_draught_001": [
+                    "not under command",
+                    "restricted in ability to manoeuvre"
+                ],
+                "phrase_status_nuc_keep_clear_001": [
+                    "Vessel restricted in ability keep clear",
+                    "Vessel constrained by draught keep clear"
+                ],
+                "phrase_status_ram_dredging_001": [
+                    "Vessel not under command dredging operations",
+                    "Vessel constrained by draught dredging operations"
+                ],
+                "phrase_status_cbd_deep_channel_001": [
+                    "Vessel not under command keeping to deep-water channel",
+                    "Vessel restricted in ability to manoeuvre keeping to deep-water channel"
+                ]
+            },
+            "reason": "Legal-status categories are not interchangeable in traffic warnings."
+        },
+        {
+            "pair": "dredging / diving / drifting / fishing operations",
+            "items": [
+                "word_status_dredging_001",
+                "word_status_diving_001",
+                "expr_status_diving_operations_001",
+                "expr_status_dredging_operations_001",
+                "phrase_status_diving_keep_clear_001",
+                "phrase_status_dredging_starboard_side_001"
+            ],
+            "must_accept": {
+                "word_status_dredging_001": [
+                    "dredging"
+                ],
+                "word_status_diving_001": [
+                    "diving"
+                ],
+                "expr_status_diving_operations_001": [
+                    "diving operations"
+                ],
+                "expr_status_dredging_operations_001": [
+                    "dredging operations"
+                ],
+                "phrase_status_diving_keep_clear_001": [
+                    "Diving operations in progress, keep safe passing distance."
+                ],
+                "phrase_status_dredging_starboard_side_001": [
+                    "Dredging operations, safe passage on starboard side."
+                ]
+            },
+            "must_reject": {
+                "word_status_dredging_001": [
+                    "diving",
+                    "drifting"
+                ],
+                "word_status_diving_001": [
+                    "dredging",
+                    "drifting"
+                ],
+                "expr_status_diving_operations_001": [
+                    "dredging operations",
+                    "drifting operations"
+                ],
+                "expr_status_dredging_operations_001": [
+                    "diving operations",
+                    "fishing operations"
+                ],
+                "phrase_status_diving_keep_clear_001": [
+                    "Dredging operations in progress keep safe passing distance",
+                    "Diving operations completed keep safe passing distance"
+                ],
+                "phrase_status_dredging_starboard_side_001": [
+                    "Diving operations safe passage on starboard side",
+                    "Dredging operations safe passage on port side"
+                ]
+            },
+            "reason": "Operation type and safe side/distance must stay exact."
+        },
+        {
+            "pair": "towing / being towed / tug assistance / towage",
+            "items": [
+                "word_status_tow_001",
+                "expr_status_towing_astern_001",
+                "phrase_status_towing_length_001",
+                "phrase_status_long_tow_keep_clear_001"
+            ],
+            "must_accept": {
+                "word_status_tow_001": [
+                    "tow"
+                ],
+                "expr_status_towing_astern_001": [
+                    "towing astern"
+                ],
+                "phrase_status_towing_length_001": [
+                    "Vessel towing, tow length two hundred metres."
+                ],
+                "phrase_status_long_tow_keep_clear_001": [
+                    "Long tow, keep clear astern."
+                ]
+            },
+            "must_reject": {
+                "word_status_tow_001": [
+                    "tug",
+                    "towage"
+                ],
+                "expr_status_towing_astern_001": [
+                    "being towed",
+                    "tug assistance"
+                ],
+                "phrase_status_towing_length_001": [
+                    "Vessel being towed tow length two hundred metres",
+                    "Tug assistance required two hundred metres"
+                ],
+                "phrase_status_long_tow_keep_clear_001": [
+                    "Long tow keep clear ahead",
+                    "Short tow keep clear astern"
+                ]
+            },
+            "reason": "Tow status, assistance request, and direction astern/ahead are separate safety meanings."
+        },
+        {
+            "pair": "fishing gear / anchor / towing gear / recovered gear",
+            "items": [
+                "word_status_trawling_001",
+                "expr_status_fishing_gear_deployed_001",
+                "phrase_status_fishing_keep_clear_001"
+            ],
+            "must_accept": {
+                "word_status_trawling_001": [
+                    "trawling"
+                ],
+                "expr_status_fishing_gear_deployed_001": [
+                    "fishing gear deployed"
+                ],
+                "phrase_status_fishing_keep_clear_001": [
+                    "Fishing vessel, fishing gear deployed, keep clear."
+                ]
+            },
+            "must_reject": {
+                "word_status_trawling_001": [
+                    "towing",
+                    "trolling"
+                ],
+                "expr_status_fishing_gear_deployed_001": [
+                    "anchor deployed",
+                    "towing gear deployed"
+                ],
+                "phrase_status_fishing_keep_clear_001": [
+                    "Fishing vessel anchor deployed keep clear",
+                    "Fishing vessel gear recovered keep clear"
+                ]
+            },
+            "reason": "Fishing gear deployment is an active traffic hazard, not anchoring or recovered gear."
+        },
+        {
+            "pair": "do not cross ahead / cross ahead / pass astern",
+            "items": [
+                "phrase_status_crossing_nuc_warning_001"
+            ],
+            "must_accept": {
+                "phrase_status_crossing_nuc_warning_001": [
+                    "Vessel not under command, do not cross ahead."
+                ]
+            },
+            "must_reject": {
+                "phrase_status_crossing_nuc_warning_001": [
+                    "Vessel not under command cross ahead",
+                    "Vessel not under command pass astern",
+                    "Vessel under command do not cross ahead"
+                ]
+            },
+            "reason": "The negative crossing instruction must not accept the opposite movement."
+        },
+        {
+            "pair": "do not impede / impede / proceed to berth",
+            "items": [
+                "phrase_status_cbd_do_not_impede_001"
+            ],
+            "must_accept": {
+                "phrase_status_cbd_do_not_impede_001": [
+                    "Vessel constrained by draught, do not impede passage."
+                ]
+            },
+            "must_reject": {
+                "phrase_status_cbd_do_not_impede_001": [
+                    "Vessel constrained by draught impede passage",
+                    "Vessel constrained by draught proceed to berth",
+                    "Vessel not under command do not impede passage"
+                ]
+            },
+            "reason": "Do-not-impede wording is a traffic warning, not a berth instruction or opposite command."
+        }
+    ],
+    "producer_notes": {
+        "status": "draft for M4 start after production parity closure",
+        "learner_source_language": "ru",
+        "target_language": "en",
+        "next_gate": "Sea Speak Linguist risk review before engineering gate, QA acceptance, merge, or production deploy",
+        "risk_focus": [
+            "not under command / restricted in ability to manoeuvre / constrained by draught",
+            "dredging / diving / drifting / fishing operations",
+            "towing / being towed / tug assistance / towage",
+            "fishing gear deployed / anchor deployed / gear recovered",
+            "do not cross ahead / cross ahead / pass astern",
+            "do not impede / impede / proceed to berth"
+        ]
+    }
+}
