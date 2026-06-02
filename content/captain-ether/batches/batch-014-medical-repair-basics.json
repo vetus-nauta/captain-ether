@@ -1,7 +1,7 @@
 {
     "version": 1,
     "batch_id": "batch-014-medical-repair-basics",
-    "status": "linguist_reviewed",
+    "status": "merged",
     "date": "2026-06-02",
     "branch": "urgency_panpan",
     "scope": "M4 medical-detail and temporary-repair status basics. Keep medical advice, medical assistance, evacuation, rescue, Mayday distress, equipment status, bilge-pump flooding control, and routine onboard repair reports separate.",
@@ -1192,10 +1192,10 @@
         }
     ],
     "producer_notes": {
-        "status": "linguist reviewed for M4 after Batch 013 production sync",
+        "status": "merged into starter.json after QA acceptance",
         "learner_source_language": "ru",
         "target_language": "en",
-        "next_gate": "Sea Speak Linguist risk review before engineering gate, QA acceptance, merge, or production deploy",
+        "next_gate": "Post-merge QA before production deploy",
         "risk_focus": [
             "injury / illness / medical advice / medical assistance",
             "conscious / unconscious / overboard / missing",
