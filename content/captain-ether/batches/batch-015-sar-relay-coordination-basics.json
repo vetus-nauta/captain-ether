@@ -1,7 +1,7 @@
 {
     "version": 1,
     "batch_id": "batch-015-sar-relay-coordination-basics",
-    "status": "draft",
+    "status": "linguist_reviewed",
     "date": "2026-06-02",
     "branch": "distress_mayday",
     "scope": "M4 SAR relay and rescue-coordination basics. Keep Mayday relay, own Mayday, Pan-Pan relay, coastguard/VTS/port-control identity, survivor/debris reports, visual/radio/radar contact, rescue helicopter/boat, liferaft, evacuation, and routine towing/pilotage separate.",
@@ -226,24 +226,23 @@
             "target_language": "en",
             "target_text": "last known position",
             "accepted_answers": [
-                "last known position",
-                "last reported position"
+                "last known position"
             ],
             "hint_beginner": "last...",
             "hint_intermediate": "last known position...",
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "last known position",
-                    "last reported position"
+                    "last known position"
                 ],
                 "should_reject": [
                     "current position",
                     "destination",
-                    "course"
+                    "course",
+                    "last reported position"
                 ],
                 "dangerous_minimal_pairs": [
-                    "last known position / current position / destination / course"
+                    "last known position / last reported position / current position / destination / course"
                 ],
                 "linguist_note": "Last known position is SAR search reference, not current position, destination, or course."
             }
@@ -572,8 +571,7 @@
             "target_language": "en",
             "target_text": "Report last known position of vessel in distress.",
             "accepted_answers": [
-                "Report last known position of vessel in distress.",
-                "Report last reported position of vessel in distress"
+                "Report last known position of vessel in distress."
             ],
             "grammar_pattern": "sar_report_last_known_position",
             "hint_beginner": "Report...",
@@ -581,18 +579,18 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "Report last known position of vessel in distress.",
-                    "Report last reported position of vessel in distress"
+                    "Report last known position of vessel in distress."
                 ],
                 "should_reject": [
                     "Report current position of vessel in distress",
                     "Report destination of vessel in distress",
-                    "Report last known course of vessel in distress"
+                    "Report last known course of vessel in distress",
+                    "Report last reported position of vessel in distress"
                 ],
                 "dangerous_minimal_pairs": [
-                    "last known position / current position / destination / course"
+                    "last known position / last reported position / current position / destination / course"
                 ],
-                "linguist_note": "SAR search reference must remain last known/reported position, not destination or course."
+                "linguist_note": "SAR search reference must remain last known position, not last reported position, destination, or course."
             }
         },
         {
@@ -608,8 +606,7 @@
             "target_language": "en",
             "target_text": "Search area north of last known position.",
             "accepted_answers": [
-                "Search area north of last known position.",
-                "Search area north of last reported position"
+                "Search area north of last known position."
             ],
             "grammar_pattern": "sar_search_area_reference",
             "hint_beginner": "Search...",
@@ -617,18 +614,18 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "Search area north of last known position.",
-                    "Search area north of last reported position"
+                    "Search area north of last known position."
                 ],
                 "should_reject": [
                     "Search area south of last known position",
                     "Traffic lane north of last known position",
-                    "Search area north of current position"
+                    "Search area north of current position",
+                    "Search area north of last reported position"
                 ],
                 "dangerous_minimal_pairs": [
-                    "search area / traffic lane; north / south; last known / current position"
+                    "search area / traffic lane; north / south; last known / last reported / current position"
                 ],
-                "linguist_note": "Search area direction and position reference must remain exact."
+                "linguist_note": "Search area direction and position reference must remain exact; last reported position is not accepted for this last-known-position drill."
             }
         },
         {
@@ -859,8 +856,7 @@
             "target_language": "en",
             "target_text": "Debris sighted near last known position.",
             "accepted_answers": [
-                "Debris sighted near last known position.",
-                "Debris sighted near last reported position"
+                "Debris sighted near last known position."
             ],
             "grammar_pattern": "sar_debris_last_position",
             "hint_beginner": "Debris...",
@@ -868,18 +864,18 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "Debris sighted near last known position.",
-                    "Debris sighted near last reported position"
+                    "Debris sighted near last known position."
                 ],
                 "should_reject": [
                     "Survivors sighted near last known position",
                     "Debris sighted near destination",
-                    "Debris sighted near current position"
+                    "Debris sighted near current position",
+                    "Debris sighted near last reported position"
                 ],
                 "dangerous_minimal_pairs": [
-                    "debris / survivors; last known position / destination / current position"
+                    "debris / survivors; last known position / last reported position / destination / current position"
                 ],
-                "linguist_note": "Debris sighting is not survivor sighting and must keep the SAR position reference exact."
+                "linguist_note": "Debris sighting is not survivor sighting and must keep the last-known-position reference exact; last reported position is not accepted here."
             }
         }
     ],
@@ -1009,7 +1005,7 @@
             "reason": "Forwarding a distress relay is distinct from own distress, urgency relay, readback, and assistance capability."
         },
         {
-            "pair": "last known position / current position / destination / course",
+            "pair": "last known position / last reported position / current position / destination / course",
             "items": [
                 "expr_sar_last_known_position_001",
                 "phrase_sar_report_last_known_position_001",
@@ -1029,18 +1025,21 @@
             "must_reject": {
                 "expr_sar_last_known_position_001": [
                     "current position",
-                    "destination"
+                    "destination",
+                    "last reported position"
                 ],
                 "phrase_sar_report_last_known_position_001": [
                     "Report current position of vessel in distress",
-                    "Report destination of vessel in distress"
+                    "Report destination of vessel in distress",
+                    "Report last reported position of vessel in distress"
                 ],
                 "phrase_sar_debris_near_last_position_001": [
                     "Debris sighted near destination",
-                    "Debris sighted near current position"
+                    "Debris sighted near current position",
+                    "Debris sighted near last reported position"
                 ]
             },
-            "reason": "SAR search references must not accept routine navigation destinations or current-position substitutions."
+            "reason": "SAR search references must not accept last-reported, routine current-position, destination, or course substitutions."
         },
         {
             "pair": "visual contact / visual contact lost / radio contact / radar contact",
@@ -1177,14 +1176,14 @@
         }
     ],
     "producer_notes": {
-        "status": "draft for M4 after Batch 014 production sync",
+        "status": "linguist reviewed for M4 after Batch 014 production sync",
         "learner_source_language": "ru",
         "target_language": "en",
-        "next_gate": "Sea Speak Linguist risk review before engineering gate, QA acceptance, merge, or production deploy",
+        "next_gate": "Director-Engineer engineering gate before QA acceptance, merge, or production deploy",
         "risk_focus": [
             "Mayday relay / own Mayday / Pan-Pan relay / readback",
             "coastguard / VTS / port control / marina control",
-            "last known position / current position / destination / course",
+            "last known position / last reported position / current position / destination / course",
             "visual contact / visual contact lost / radio contact / radar contact",
             "survivors / no survivors / person overboard / debris",
             "rescue boat / rescue helicopter / liferaft / pilot boat / tug",
