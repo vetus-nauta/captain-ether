@@ -1,7 +1,7 @@
 {
     "version": 1,
     "batch_id": "batch-013-restricted-manoeuvrability-basics",
-    "status": "draft",
+    "status": "merged",
     "date": "2026-06-02",
     "branch": "traffic_collision",
     "scope": "M4 traffic/legal-status basics for vessels not under command, restricted in ability to manoeuvre, constrained by draught, towing, fishing, dredging, and diving operations. Keep separate from Mayday distress, Pan-Pan urgency, routine VTS clearance, and ordinary marina traffic.",
@@ -222,8 +222,10 @@
             "source_language": "ru",
             "source_text": "Ограничена в возможности маневрировать",
             "target_language": "en",
-            "target_text": "restricted in ability to manoeuvre",
+            "target_text": "restricted in her ability to manoeuvre",
             "accepted_answers": [
+                "restricted in her ability to manoeuvre",
+                "restricted in her ability to maneuver",
                 "restricted in ability to manoeuvre",
                 "restricted in ability to maneuver",
                 "restricted ability to manoeuvre",
@@ -234,18 +236,19 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "restricted in ability to manoeuvre",
-                    "restricted in ability to maneuver"
+                    "restricted in her ability to manoeuvre",
+                    "restricted in her ability to maneuver",
+                    "restricted in ability to manoeuvre"
                 ],
                 "should_reject": [
                     "not under command",
-                    "constrained by draught",
+                    "constrained by her draught",
                     "unable to steer"
                 ],
                 "dangerous_minimal_pairs": [
                     "restricted ability / not under command / constrained by draught"
                 ],
-                "linguist_note": "Restricted in ability to manoeuvre is a legal-status phrase, not a generic steering failure."
+                "linguist_note": "Use the COLREG-style canonical wording with \"her\"; shorter training variants remain accepted item-locally."
             }
         },
         {
@@ -259,8 +262,10 @@
             "source_language": "ru",
             "source_text": "Стеснена своей осадкой",
             "target_language": "en",
-            "target_text": "constrained by draught",
+            "target_text": "constrained by her draught",
             "accepted_answers": [
+                "constrained by her draught",
+                "constrained by her draft",
                 "constrained by draught",
                 "constrained by draft"
             ],
@@ -269,18 +274,19 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "constrained by draught",
-                    "constrained by draft"
+                    "constrained by her draught",
+                    "constrained by her draft",
+                    "constrained by draught"
                 ],
                 "should_reject": [
                     "restricted by weather",
                     "not under command",
-                    "restricted in ability to manoeuvre"
+                    "restricted in her ability to manoeuvre"
                 ],
                 "dangerous_minimal_pairs": [
                     "constrained by draught / restricted ability / not under command"
                 ],
-                "linguist_note": "Constrained by draught is depth-channel limitation, not manoeuvre-equipment limitation."
+                "linguist_note": "Use the COLREG-style canonical wording with \"her\"; draft spelling and shorter training forms remain item-local variants."
             }
         },
         {
@@ -566,8 +572,9 @@
             "source_language": "ru",
             "source_text": "Судно ограничено в возможности маневрировать, ведет дноуглубительные работы.",
             "target_language": "en",
-            "target_text": "Vessel restricted in ability to manoeuvre, dredging operations.",
+            "target_text": "Vessel restricted in her ability to manoeuvre, dredging operations.",
             "accepted_answers": [
+                "Vessel restricted in her ability to manoeuvre, dredging operations.",
                 "Vessel restricted in ability to manoeuvre, dredging operations.",
                 "Vessel restricted in ability to maneuver, dredging operations."
             ],
@@ -577,6 +584,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
+                    "Vessel restricted in her ability to manoeuvre, dredging operations.",
                     "Vessel restricted in ability to manoeuvre, dredging operations.",
                     "Vessel restricted in ability to maneuver dredging operations"
                 ],
@@ -602,8 +610,9 @@
             "source_language": "ru",
             "source_text": "Судно стеснено своей осадкой, следует глубоководным каналом.",
             "target_language": "en",
-            "target_text": "Vessel constrained by draught, keeping to deep-water channel.",
+            "target_text": "Vessel constrained by her draught, keeping to deep-water channel.",
             "accepted_answers": [
+                "Vessel constrained by her draught, keeping to deep-water channel.",
                 "Vessel constrained by draught, keeping to deep-water channel.",
                 "Vessel constrained by draft keeping to deep water channel"
             ],
@@ -613,6 +622,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
+                    "Vessel constrained by her draught, keeping to deep-water channel.",
                     "Vessel constrained by draught, keeping to deep-water channel.",
                     "Vessel constrained by draft keeping to deep water channel"
                 ],
@@ -814,8 +824,9 @@
             "source_language": "ru",
             "source_text": "Судно стеснено осадкой, не затрудняйте проход.",
             "target_language": "en",
-            "target_text": "Vessel constrained by draught, do not impede passage.",
+            "target_text": "Vessel constrained by her draught, do not impede passage.",
             "accepted_answers": [
+                "Vessel constrained by her draught, do not impede passage.",
                 "Vessel constrained by draught, do not impede passage.",
                 "Vessel constrained by draft do not impede passage"
             ],
@@ -825,6 +836,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
+                    "Vessel constrained by her draught, do not impede passage.",
                     "Vessel constrained by draught, do not impede passage.",
                     "Vessel constrained by draft do not impede passage"
                 ],
@@ -887,14 +899,14 @@
             "id": "status_restricted_operation_report",
             "pattern": "restricted-ability operation report",
             "examples": [
-                "Vessel restricted in ability to manoeuvre, dredging operations."
+                "Vessel restricted in her ability to manoeuvre, dredging operations."
             ]
         },
         {
             "id": "status_constrained_by_draught_channel",
             "pattern": "constrained-by-draught channel report",
             "examples": [
-                "Vessel constrained by draught, keeping to deep-water channel."
+                "Vessel constrained by her draught, keeping to deep-water channel."
             ]
         },
         {
@@ -936,7 +948,7 @@
             "id": "status_constrained_do_not_impede",
             "pattern": "constrained-by-draught do-not-impede warning",
             "examples": [
-                "Vessel constrained by draught, do not impede passage."
+                "Vessel constrained by her draught, do not impede passage."
             ]
         },
         {
@@ -1191,6 +1203,28 @@
             "fishing gear deployed / anchor deployed / gear recovered",
             "do not cross ahead / cross ahead / pass astern",
             "do not impede / impede / proceed to berth"
-        ]
-    }
+        ],
+        "linguist_review": {
+            "date": "2026-06-02",
+            "report": "content/captain-ether/roles/sea-speak-linguist/reports/batch-013-restricted-manoeuvrability-risk-review-2026-06-02.md",
+            "status": "ACCEPTED_WITH_PATCHES",
+            "content_patches": [
+                "Canonicalized restricted-in-ability wording to \"restricted in her ability to manoeuvre\" while keeping shorter training variants item-locally accepted.",
+                "Canonicalized constrained-by-draught wording to \"constrained by her draught\" while keeping shorter training variants item-locally accepted.",
+                "Added exact patched target_text values to accepted_answers and should_accept for affected phrase items."
+            ]
+        },
+        "merge_notes": {
+            "date": "2026-06-02",
+            "task": "TASK-CE-0091",
+            "playable_items_added": 25,
+            "qa_items_added": 25,
+            "dangerous_pair_groups_added": 6,
+            "grammar_patterns_added": 10,
+            "report": "content/captain-ether/roles/director-engineer/reports/sprint-ce-0091-batch-013-merge-preparation-2026-06-02.md"
+        }
+    },
+    "merged_into": "content/captain-ether/starter.json",
+    "merged_date": "2026-06-02",
+    "merge_gate": "content/captain-ether/roles/director-engineer/reports/sprint-ce-0091-batch-013-merge-preparation-2026-06-02.md"
 }
