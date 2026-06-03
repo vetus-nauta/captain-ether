@@ -3,7 +3,7 @@
 Date: 2026-06-03
 Owner: QA / Director-Engineer
 Scope: Captain Ether Batch 027 post-merge QA, local/GitHub only
-Status: PLANNED
+Status: DONE / PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 
 ## Activation Condition
 
@@ -41,4 +41,23 @@ Expected output:
 ```text
 content/captain-ether/roles/qa/reports/sprint-ce-0180-batch-027-post-merge-qa-2026-06-03.md
 next task for Batch 027 production sync decision if QA passes
+```
+
+## Result
+
+```text
+PASS / READY_FOR_PRODUCTION_SYNC_DECISION
+full_validator=PASS
+full_validator_runs=140
+batch_027_validator_after_merged=PASS
+batch_validator_runs=100
+api_smoke=PASS captain-ether-api-smoke checks=334
+batch27_items_present_in_starter=35/35
+batch27_items_present_in_qa=35/35
+batch27_patterns_present_in_starter=35/35
+batch27_dangerous_pairs_present_in_qa=11/11
+qa_notes_in_starter=0
+production_delta_items=-35
+production_deploy=false
+next_task=CE-0181 Batch 027 Production Sync Decision
 ```
