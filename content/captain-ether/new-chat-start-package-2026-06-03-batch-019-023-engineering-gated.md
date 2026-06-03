@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 025 production-synced and release-ready at the 900-item baseline; Batch 026 linguist/engineering gate passed and is ready for acceptance QA
+Canonical status: Batch 025 production-synced and release-ready at the 900-item baseline; Batch 026 acceptance QA passed and is ready for staged merge
 
 ## 1. Read This First
 
@@ -96,6 +96,7 @@ CE-0167 Batch 025 Production Sync Decision: CLOSED / PASS / PRODUCTION_SYNCED
 CE-0168 Batch 025 Production Release Readiness QA: PASS / RELEASE_READY_FOR_CURRENT_SCOPE
 CE-0169 Batch 026 Weather-Routing / Navigation-Warning Draft Gate: DONE / DRAFT_READY_FOR_LINGUIST_ENGINEERING_GATE
 CE-0170 Batch 026 Linguist / Engineering Gate: PASS / READY_FOR_ACCEPTANCE_QA
+CE-0171 Batch 026 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
 ```
 
 Important reports:
@@ -134,6 +135,7 @@ content/captain-ether/roles/qa/reports/sprint-ce-0168-batch-025-production-relea
 content/captain-ether/roles/content-producer/reports/batch-026-weather-routing-navigation-warning-reinforcement-card-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0169-batch-026-weather-routing-navigation-warning-draft-2026-06-03.md
 content/captain-ether/roles/sea-speak-linguist/reports/batch-026-weather-routing-navigation-warning-reinforcement-risk-review-2026-06-03.md
+content/captain-ether/roles/qa/reports/sprint-ce-0171-batch-026-acceptance-qa-merge-decision-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -141,13 +143,13 @@ content/captain-ether/roles/sea-speak-linguist/reports/batch-026-weather-routing
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0171-batch-026-acceptance-qa-merge-decision-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0172-batch-026-staged-merge-preparation-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run Batch 026 acceptance QA and merge decision. No starter merge and no production deploy in this task.
+Run Batch 026 staged merge into local/GitHub only. No production deploy in this task.
 ```
 
 Expected Set B local/GitHub baseline:
@@ -167,7 +169,7 @@ draft_backlog_grammar_patterns=35
 draft_backlog_dangerous_pairs=8
 ```
 
-Production is synced and release-ready at 900. Batch 026 remains isolated draft only; no merge/deploy until later gates pass.
+Production is synced and release-ready at 900. Batch 026 remains isolated draft until CE-0172 merges it locally/GitHub; no production deploy in CE-0172.
 
 ## 6. Recommended Merge Plan After QA
 
@@ -177,8 +179,8 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. CE-0171 Batch 026 Acceptance QA / Merge Decision.
-2. Then run Batch 026 staged merge, post-merge QA, production sync, release-readiness QA if QA passes.
+1. CE-0172 Batch 026 Staged Merge Preparation.
+2. Then run Batch 026 post-merge QA, production sync, release-readiness QA if merge gates pass.
 ```
 
 This keeps production parity checkpoints small enough to debug.
