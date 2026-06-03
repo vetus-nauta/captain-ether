@@ -5338,6 +5338,816 @@
                 ]
             },
             "reason": "Distress chain must preserve signal, distress nature, position, persons status, and requested equipment."
+        },
+        {
+            "pair": "lee shore / windward side / leeward side",
+            "items": [
+                "word_vocab_lee_shore_001",
+                "word_vocab_windward_side_001",
+                "word_vocab_leeward_side_001"
+            ],
+            "must_accept": {
+                "word_vocab_lee_shore_001": [
+                    "lee shore"
+                ],
+                "word_vocab_windward_side_001": [
+                    "windward side"
+                ],
+                "word_vocab_leeward_side_001": [
+                    "leeward side"
+                ]
+            },
+            "must_reject": {
+                "word_vocab_lee_shore_001": [
+                    "leeward side",
+                    "windward shore"
+                ],
+                "word_vocab_windward_side_001": [
+                    "leeward side",
+                    "windward shore"
+                ],
+                "word_vocab_leeward_side_001": [
+                    "windward side",
+                    "lee shore"
+                ]
+            },
+            "reason": "Wind-relative side and lee-shore hazard terms must remain distinct."
+        },
+        {
+            "pair": "ebb tide / flood tide / tidal stream",
+            "items": [
+                "word_vocab_tidal_stream_001",
+                "word_vocab_ebb_tide_001",
+                "word_vocab_flood_tide_001"
+            ],
+            "must_accept": {
+                "word_vocab_tidal_stream_001": [
+                    "tidal stream"
+                ],
+                "word_vocab_ebb_tide_001": [
+                    "ebb tide"
+                ],
+                "word_vocab_flood_tide_001": [
+                    "flood tide"
+                ]
+            },
+            "must_reject": {
+                "word_vocab_tidal_stream_001": [
+                    "tidal height",
+                    "traffic lane"
+                ],
+                "word_vocab_ebb_tide_001": [
+                    "flood tide",
+                    "slack water"
+                ],
+                "word_vocab_flood_tide_001": [
+                    "ebb tide",
+                    "flood warning"
+                ]
+            },
+            "reason": "Tide state, current, and warning terms must not collapse."
+        },
+        {
+            "pair": "fairway / turning basin / gangway; keep clear / hold position / proceed",
+            "items": [
+                "word_vocab_fairway_001",
+                "word_vocab_turning_basin_001",
+                "phrase_vocab_keep_clear_fairway_001",
+                "phrase_vocab_hold_position_turning_basin_001"
+            ],
+            "must_accept": {
+                "word_vocab_fairway_001": [
+                    "narrow fairway"
+                ],
+                "word_vocab_turning_basin_001": [
+                    "turning basin"
+                ],
+                "phrase_vocab_keep_clear_fairway_001": [
+                    "Keep well clear of the fairway."
+                ],
+                "phrase_vocab_hold_position_turning_basin_001": [
+                    "Hold position outside the turning basin."
+                ]
+            },
+            "must_reject": {
+                "word_vocab_fairway_001": [
+                    "gangway",
+                    "runway"
+                ],
+                "word_vocab_turning_basin_001": [
+                    "waiting basin",
+                    "traffic lane"
+                ],
+                "phrase_vocab_keep_clear_fairway_001": [
+                    "Keep close to the fairway",
+                    "Proceed along the fairway"
+                ],
+                "phrase_vocab_hold_position_turning_basin_001": [
+                    "Hold position inside the turning basin",
+                    "Report position outside the turning basin"
+                ]
+            },
+            "reason": "Harbour area identity and movement instruction must stay exact."
+        },
+        {
+            "pair": "black ball / anchor light / black cone; hoist / lower / visible",
+            "items": [
+                "word_vocab_black_ball_001",
+                "word_vocab_anchor_light_001",
+                "phrase_vocab_hoist_black_ball_signal_001",
+                "phrase_vocab_anchor_light_not_visible_001"
+            ],
+            "must_accept": {
+                "word_vocab_black_ball_001": [
+                    "black ball"
+                ],
+                "word_vocab_anchor_light_001": [
+                    "anchor light"
+                ],
+                "phrase_vocab_hoist_black_ball_signal_001": [
+                    "Hoist black ball signal."
+                ],
+                "phrase_vocab_anchor_light_not_visible_001": [
+                    "Anchor light not visible."
+                ]
+            },
+            "must_reject": {
+                "word_vocab_black_ball_001": [
+                    "black cone",
+                    "anchor light"
+                ],
+                "word_vocab_anchor_light_001": [
+                    "anchor ball",
+                    "black ball"
+                ],
+                "phrase_vocab_hoist_black_ball_signal_001": [
+                    "Hoist black cone signal",
+                    "Lower black ball signal"
+                ],
+                "phrase_vocab_anchor_light_not_visible_001": [
+                    "Anchor light visible",
+                    "Black ball not visible"
+                ]
+            },
+            "reason": "Day shapes and navigation lights have different action/status boundaries."
+        },
+        {
+            "pair": "make fast / single up / heave up / cast off",
+            "items": [
+                "expr_vocab_make_fast_001",
+                "expr_vocab_single_up_lines_001",
+                "expr_vocab_heave_up_anchor_001",
+                "phrase_vocab_single_up_forward_lines_001",
+                "phrase_vocab_heave_up_anchor_when_ready_001"
+            ],
+            "must_accept": {
+                "expr_vocab_make_fast_001": [
+                    "make fast forward"
+                ],
+                "expr_vocab_single_up_lines_001": [
+                    "single up lines"
+                ],
+                "expr_vocab_heave_up_anchor_001": [
+                    "heave up port anchor"
+                ],
+                "phrase_vocab_single_up_forward_lines_001": [
+                    "Single up forward lines."
+                ],
+                "phrase_vocab_heave_up_anchor_when_ready_001": [
+                    "Heave up anchor when ready."
+                ]
+            },
+            "must_reject": {
+                "expr_vocab_make_fast_001": [
+                    "make way",
+                    "cast off"
+                ],
+                "expr_vocab_single_up_lines_001": [
+                    "double up lines",
+                    "let go lines"
+                ],
+                "expr_vocab_heave_up_anchor_001": [
+                    "drop anchor",
+                    "heave line"
+                ],
+                "phrase_vocab_single_up_forward_lines_001": [
+                    "Double up forward lines",
+                    "Single up aft lines"
+                ],
+                "phrase_vocab_heave_up_anchor_when_ready_001": [
+                    "Drop anchor when ready",
+                    "Heave up line when ready"
+                ]
+            },
+            "reason": "Mooring and anchor commands are operationally different."
+        },
+        {
+            "pair": "anchor dragging / anchor holding / leeward / windward",
+            "items": [
+                "expr_vocab_anchor_dragging_001",
+                "phrase_vocab_anchor_dragging_to_leeward_001"
+            ],
+            "must_accept": {
+                "expr_vocab_anchor_dragging_001": [
+                    "anchor dragging"
+                ],
+                "phrase_vocab_anchor_dragging_to_leeward_001": [
+                    "Anchor dragging to leeward."
+                ]
+            },
+            "must_reject": {
+                "expr_vocab_anchor_dragging_001": [
+                    "anchor holding",
+                    "anchor heaving"
+                ],
+                "phrase_vocab_anchor_dragging_to_leeward_001": [
+                    "Anchor holding to leeward",
+                    "Anchor dragging to windward"
+                ]
+            },
+            "reason": "Dragging/holding and leeward/windward status are safety-critical."
+        },
+        {
+            "pair": "safe to board / not safe to board / safe to depart",
+            "items": [
+                "expr_vocab_safe_to_board_001",
+                "expr_vocab_not_safe_to_board_001"
+            ],
+            "must_accept": {
+                "expr_vocab_safe_to_board_001": [
+                    "safe to board"
+                ],
+                "expr_vocab_not_safe_to_board_001": [
+                    "not safe to board"
+                ]
+            },
+            "must_reject": {
+                "expr_vocab_safe_to_board_001": [
+                    "not safe to board",
+                    "safe to depart"
+                ],
+                "expr_vocab_not_safe_to_board_001": [
+                    "safe to board",
+                    "not safe to depart"
+                ]
+            },
+            "reason": "Boarding safety polarity must not be reversed."
+        },
+        {
+            "pair": "tidal stream east / west; ebb/flood trends",
+            "items": [
+                "phrase_vocab_tidal_stream_setting_east_001",
+                "phrase_vocab_ebb_tide_decreasing_depth_001",
+                "phrase_vocab_flood_tide_increasing_current_001"
+            ],
+            "must_accept": {
+                "phrase_vocab_tidal_stream_setting_east_001": [
+                    "Tidal stream setting east."
+                ],
+                "phrase_vocab_ebb_tide_decreasing_depth_001": [
+                    "Ebb tide, decreasing depth."
+                ],
+                "phrase_vocab_flood_tide_increasing_current_001": [
+                    "Flood tide, increasing current."
+                ]
+            },
+            "must_reject": {
+                "phrase_vocab_tidal_stream_setting_east_001": [
+                    "Tidal stream setting west",
+                    "Tidal height setting east"
+                ],
+                "phrase_vocab_ebb_tide_decreasing_depth_001": [
+                    "Flood tide decreasing depth",
+                    "Ebb tide increasing depth"
+                ],
+                "phrase_vocab_flood_tide_increasing_current_001": [
+                    "Ebb tide increasing current",
+                    "Flood tide decreasing current"
+                ]
+            },
+            "reason": "Tide/current direction and trends must remain exact."
+        },
+        {
+            "pair": "lifebuoy / lifejacket / life raft",
+            "items": [
+                "word_b020_lifebuoy_001",
+                "word_b020_lifejacket_001",
+                "phrase_b020_lifebuoy_deployed_starboard_001"
+            ],
+            "must_accept": {
+                "word_b020_lifebuoy_001": [
+                    "lifebuoy ring"
+                ],
+                "word_b020_lifejacket_001": [
+                    "lifejacket"
+                ],
+                "phrase_b020_lifebuoy_deployed_starboard_001": [
+                    "Lifebuoy deployed on starboard side."
+                ]
+            },
+            "must_reject": {
+                "word_b020_lifebuoy_001": [
+                    "lifejacket",
+                    "life raft"
+                ],
+                "word_b020_lifejacket_001": [
+                    "lifebuoy ring",
+                    "jacket only"
+                ],
+                "phrase_b020_lifebuoy_deployed_starboard_001": [
+                    "Lifebuoy deployed on port side",
+                    "Lifejacket deployed on starboard side"
+                ]
+            },
+            "reason": "Throwable and wearable lifesaving equipment must stay distinct."
+        },
+        {
+            "pair": "pilot ladder / boarding ladder / pilot boat",
+            "items": [
+                "word_b020_pilot_ladder_001",
+                "word_b020_boarding_ladder_001",
+                "expr_b020_rig_pilot_ladder_001",
+                "phrase_b020_rig_pilot_ladder_port_side_001",
+                "phrase_b020_pilot_ladder_ready_boarding_001"
+            ],
+            "must_accept": {
+                "word_b020_pilot_ladder_001": [
+                    "pilot ladder"
+                ],
+                "word_b020_boarding_ladder_001": [
+                    "boarding ladder"
+                ],
+                "expr_b020_rig_pilot_ladder_001": [
+                    "rig pilot ladder"
+                ],
+                "phrase_b020_rig_pilot_ladder_port_side_001": [
+                    "Rig pilot ladder on port side."
+                ],
+                "phrase_b020_pilot_ladder_ready_boarding_001": [
+                    "Pilot ladder ready for boarding."
+                ]
+            },
+            "must_reject": {
+                "word_b020_pilot_ladder_001": [
+                    "boarding ladder",
+                    "gangway ladder"
+                ],
+                "word_b020_boarding_ladder_001": [
+                    "pilot ladder",
+                    "boarding pass"
+                ],
+                "expr_b020_rig_pilot_ladder_001": [
+                    "rig boarding ladder",
+                    "remove pilot ladder"
+                ],
+                "phrase_b020_rig_pilot_ladder_port_side_001": [
+                    "Rig pilot ladder on starboard side",
+                    "Rig boarding ladder on port side"
+                ],
+                "phrase_b020_pilot_ladder_ready_boarding_001": [
+                    "Pilot ladder not ready for boarding",
+                    "Boarding ladder ready for boarding"
+                ]
+            },
+            "reason": "Pilot transfer equipment and boarding equipment must not collapse."
+        },
+        {
+            "pair": "gangway / gangway net / fairway",
+            "items": [
+                "word_b020_gangway_net_001",
+                "expr_b020_secure_gangway_001",
+                "phrase_b020_secure_gangway_safety_net_001"
+            ],
+            "must_accept": {
+                "word_b020_gangway_net_001": [
+                    "gangway net"
+                ],
+                "expr_b020_secure_gangway_001": [
+                    "secure gangway"
+                ],
+                "phrase_b020_secure_gangway_safety_net_001": [
+                    "Secure gangway with safety net."
+                ]
+            },
+            "must_reject": {
+                "word_b020_gangway_net_001": [
+                    "gangway light",
+                    "safety net only"
+                ],
+                "expr_b020_secure_gangway_001": [
+                    "remove gangway",
+                    "secure fairway"
+                ],
+                "phrase_b020_secure_gangway_safety_net_001": [
+                    "Secure gangway without safety net",
+                    "Secure pilot ladder with safety net"
+                ]
+            },
+            "reason": "Boarding access and fairway terms must stay separate."
+        },
+        {
+            "pair": "heaving line / mooring line / throw/recover",
+            "items": [
+                "word_b020_heaving_line_001",
+                "expr_b020_prepare_heaving_line_001",
+                "phrase_b020_recover_heaving_line_water_001"
+            ],
+            "must_accept": {
+                "word_b020_heaving_line_001": [
+                    "heaving line"
+                ],
+                "expr_b020_prepare_heaving_line_001": [
+                    "prepare heaving line"
+                ],
+                "phrase_b020_recover_heaving_line_water_001": [
+                    "Recover heaving line from water."
+                ]
+            },
+            "must_reject": {
+                "word_b020_heaving_line_001": [
+                    "mooring line",
+                    "fishing line"
+                ],
+                "expr_b020_prepare_heaving_line_001": [
+                    "prepare mooring line",
+                    "throw heaving line"
+                ],
+                "phrase_b020_recover_heaving_line_water_001": [
+                    "Throw heaving line from water",
+                    "Recover mooring line from water"
+                ]
+            },
+            "reason": "Line type and handling action must remain exact."
+        },
+        {
+            "pair": "fire extinguisher / first aid kit / fire alarm",
+            "items": [
+                "word_b020_fire_extinguisher_001",
+                "word_b020_first_aid_kit_001",
+                "expr_b020_test_fire_extinguisher_001",
+                "expr_b020_bring_first_aid_kit_001",
+                "phrase_b020_fire_extinguisher_ready_cockpit_001",
+                "phrase_b020_first_aid_kit_to_deck_001"
+            ],
+            "must_accept": {
+                "word_b020_fire_extinguisher_001": [
+                    "portable fire extinguisher"
+                ],
+                "word_b020_first_aid_kit_001": [
+                    "first aid kit"
+                ],
+                "expr_b020_test_fire_extinguisher_001": [
+                    "test fire extinguisher"
+                ],
+                "expr_b020_bring_first_aid_kit_001": [
+                    "bring first aid kit"
+                ],
+                "phrase_b020_fire_extinguisher_ready_cockpit_001": [
+                    "Fire extinguisher ready in cockpit."
+                ],
+                "phrase_b020_first_aid_kit_to_deck_001": [
+                    "First aid kit brought to deck."
+                ]
+            },
+            "must_reject": {
+                "word_b020_fire_extinguisher_001": [
+                    "fire alarm",
+                    "fire blanket"
+                ],
+                "word_b020_first_aid_kit_001": [
+                    "fire aid kit",
+                    "repair kit"
+                ],
+                "expr_b020_test_fire_extinguisher_001": [
+                    "test fire alarm",
+                    "use fire extinguisher"
+                ],
+                "expr_b020_bring_first_aid_kit_001": [
+                    "bring fire kit",
+                    "bring repair kit"
+                ],
+                "phrase_b020_fire_extinguisher_ready_cockpit_001": [
+                    "Fire alarm ready in cockpit",
+                    "Fire extinguisher not ready in cockpit"
+                ],
+                "phrase_b020_first_aid_kit_to_deck_001": [
+                    "Fire aid kit brought to deck",
+                    "First aid kit brought below deck"
+                ]
+            },
+            "reason": "Fire and medical equipment boundaries must remain strict."
+        },
+        {
+            "pair": "seacock / fuel shutoff / open-close polarity",
+            "items": [
+                "word_b020_fuel_shutoff_001",
+                "word_b020_seacock_001",
+                "expr_b020_close_seacock_001",
+                "expr_b020_isolate_fuel_supply_001",
+                "phrase_b020_close_engine_seacock_immediately_001",
+                "phrase_b020_fuel_shutoff_valve_closed_001"
+            ],
+            "must_accept": {
+                "word_b020_fuel_shutoff_001": [
+                    "fuel shutoff"
+                ],
+                "word_b020_seacock_001": [
+                    "seacock"
+                ],
+                "expr_b020_close_seacock_001": [
+                    "close seacock"
+                ],
+                "expr_b020_isolate_fuel_supply_001": [
+                    "isolate fuel supply"
+                ],
+                "phrase_b020_close_engine_seacock_immediately_001": [
+                    "Close engine seacock immediately."
+                ],
+                "phrase_b020_fuel_shutoff_valve_closed_001": [
+                    "Fuel shutoff valve is closed."
+                ]
+            },
+            "must_reject": {
+                "word_b020_fuel_shutoff_001": [
+                    "fuel pump",
+                    "fuel leak"
+                ],
+                "word_b020_seacock_001": [
+                    "sea lock",
+                    "cockpit"
+                ],
+                "expr_b020_close_seacock_001": [
+                    "open seacock",
+                    "close cockpit"
+                ],
+                "expr_b020_isolate_fuel_supply_001": [
+                    "restore fuel supply",
+                    "isolate water supply"
+                ],
+                "phrase_b020_close_engine_seacock_immediately_001": [
+                    "Open engine seacock immediately",
+                    "Close fuel shutoff immediately"
+                ],
+                "phrase_b020_fuel_shutoff_valve_closed_001": [
+                    "Fuel shutoff valve is open",
+                    "Water shutoff valve is closed"
+                ]
+            },
+            "reason": "Hull valve and fuel isolation actions are safety-critical."
+        },
+        {
+            "pair": "bilge alarm / bilge pump / fire alarm",
+            "items": [
+                "word_b020_bilge_alarm_001",
+                "expr_b020_check_bilge_alarm_001",
+                "phrase_b020_bilge_alarm_sounding_aft_cabin_001"
+            ],
+            "must_accept": {
+                "word_b020_bilge_alarm_001": [
+                    "bilge alarm"
+                ],
+                "expr_b020_check_bilge_alarm_001": [
+                    "check bilge alarm"
+                ],
+                "phrase_b020_bilge_alarm_sounding_aft_cabin_001": [
+                    "Bilge alarm sounding in aft cabin."
+                ]
+            },
+            "must_reject": {
+                "word_b020_bilge_alarm_001": [
+                    "fire alarm",
+                    "bilge pump"
+                ],
+                "expr_b020_check_bilge_alarm_001": [
+                    "check fire alarm",
+                    "check bilge pump"
+                ],
+                "phrase_b020_bilge_alarm_sounding_aft_cabin_001": [
+                    "Fire alarm sounding in aft cabin",
+                    "Bilge pump sounding in aft cabin"
+                ]
+            },
+            "reason": "Bilge monitoring must not become pump operation or fire alarm."
+        },
+        {
+            "pair": "emergency tiller / rudder / steering wheel",
+            "items": [
+                "word_b020_emergency_tiller_001",
+                "expr_b020_fit_emergency_tiller_001",
+                "phrase_b020_emergency_tiller_fitted_tested_001"
+            ],
+            "must_accept": {
+                "word_b020_emergency_tiller_001": [
+                    "emergency tiller"
+                ],
+                "expr_b020_fit_emergency_tiller_001": [
+                    "fit emergency tiller"
+                ],
+                "phrase_b020_emergency_tiller_fitted_tested_001": [
+                    "Emergency tiller fitted and tested."
+                ]
+            },
+            "must_reject": {
+                "word_b020_emergency_tiller_001": [
+                    "emergency rudder",
+                    "steering wheel"
+                ],
+                "expr_b020_fit_emergency_tiller_001": [
+                    "remove emergency tiller",
+                    "fit steering wheel"
+                ],
+                "phrase_b020_emergency_tiller_fitted_tested_001": [
+                    "Emergency tiller removed and tested",
+                    "Emergency rudder fitted and tested"
+                ]
+            },
+            "reason": "Emergency steering component and fitted/tested status must remain exact."
+        },
+        {
+            "pair": "foredeck / companionway / evacuation access",
+            "items": [
+                "word_b020_companionway_001",
+                "word_b020_foredeck_001",
+                "expr_b020_clear_foredeck_001",
+                "phrase_b020_keep_foredeck_clear_gear_001",
+                "phrase_b020_companionway_clear_evacuation_001"
+            ],
+            "must_accept": {
+                "word_b020_companionway_001": [
+                    "companionway"
+                ],
+                "word_b020_foredeck_001": [
+                    "foredeck"
+                ],
+                "expr_b020_clear_foredeck_001": [
+                    "clear foredeck"
+                ],
+                "phrase_b020_keep_foredeck_clear_gear_001": [
+                    "Keep foredeck clear of loose gear."
+                ],
+                "phrase_b020_companionway_clear_evacuation_001": [
+                    "Companionway clear for evacuation."
+                ]
+            },
+            "must_reject": {
+                "word_b020_companionway_001": [
+                    "gangway",
+                    "runway"
+                ],
+                "word_b020_foredeck_001": [
+                    "aft deck",
+                    "forecastle only"
+                ],
+                "expr_b020_clear_foredeck_001": [
+                    "clear aft deck",
+                    "close foredeck"
+                ],
+                "phrase_b020_keep_foredeck_clear_gear_001": [
+                    "Keep aft deck clear of loose gear",
+                    "Keep foredeck full of loose gear"
+                ],
+                "phrase_b020_companionway_clear_evacuation_001": [
+                    "Gangway clear for evacuation",
+                    "Companionway blocked for evacuation"
+                ]
+            },
+            "reason": "Deck area and evacuation access terms must stay distinct."
+        },
+        {
+            "pair": "muster / count / report persons",
+            "items": [
+                "expr_b020_muster_on_deck_001",
+                "expr_b020_count_persons_aboard_001",
+                "phrase_b020_count_all_persons_aboard_now_001",
+                "phrase_b020_muster_passengers_main_deck_001",
+                "phrase_b020_report_one_person_missing_deck_001"
+            ],
+            "must_accept": {
+                "expr_b020_muster_on_deck_001": [
+                    "muster on deck"
+                ],
+                "expr_b020_count_persons_aboard_001": [
+                    "count persons aboard"
+                ],
+                "phrase_b020_count_all_persons_aboard_now_001": [
+                    "Count all persons aboard now."
+                ],
+                "phrase_b020_muster_passengers_main_deck_001": [
+                    "Muster passengers on main deck."
+                ],
+                "phrase_b020_report_one_person_missing_deck_001": [
+                    "Report one person missing from deck."
+                ]
+            },
+            "must_reject": {
+                "expr_b020_muster_on_deck_001": [
+                    "muster below deck",
+                    "scatter on deck"
+                ],
+                "expr_b020_count_persons_aboard_001": [
+                    "count persons ashore",
+                    "report persons aboard"
+                ],
+                "phrase_b020_count_all_persons_aboard_now_001": [
+                    "Count all persons ashore now",
+                    "Report all persons aboard now"
+                ],
+                "phrase_b020_muster_passengers_main_deck_001": [
+                    "Muster crew on main deck",
+                    "Muster passengers below deck"
+                ],
+                "phrase_b020_report_one_person_missing_deck_001": [
+                    "Report two persons missing from deck",
+                    "Report one person found on deck"
+                ]
+            },
+            "reason": "People-accounting commands must preserve action, count, and location."
+        },
+        {
+            "pair": "boat hook pass / throw / bow-stern",
+            "items": [
+                "word_b020_boat_hook_001",
+                "expr_b020_pass_boat_hook_001",
+                "phrase_b020_boat_hook_passed_bow_001"
+            ],
+            "must_accept": {
+                "word_b020_boat_hook_001": [
+                    "boat hook"
+                ],
+                "expr_b020_pass_boat_hook_001": [
+                    "pass boat hook"
+                ],
+                "phrase_b020_boat_hook_passed_bow_001": [
+                    "Boat hook passed to bow."
+                ]
+            },
+            "must_reject": {
+                "word_b020_boat_hook_001": [
+                    "deck brush",
+                    "boat rope"
+                ],
+                "expr_b020_pass_boat_hook_001": [
+                    "pass boat rope",
+                    "throw boat hook"
+                ],
+                "phrase_b020_boat_hook_passed_bow_001": [
+                    "Boat rope passed to bow",
+                    "Boat hook passed to stern"
+                ]
+            },
+            "reason": "Boat hook handoff must not become throwing or wrong station."
+        },
+        {
+            "pair": "pilot safely on board / not safely / ashore",
+            "items": [
+                "expr_b020_illuminate_pilot_ladder_001",
+                "phrase_b020_illuminate_pilot_ladder_transfer_001",
+                "phrase_b020_report_pilot_safely_on_board_001"
+            ],
+            "must_accept": {
+                "expr_b020_illuminate_pilot_ladder_001": [
+                    "illuminate pilot ladder"
+                ],
+                "phrase_b020_illuminate_pilot_ladder_transfer_001": [
+                    "Illuminate pilot ladder before transfer."
+                ],
+                "phrase_b020_report_pilot_safely_on_board_001": [
+                    "Report pilot safely on board."
+                ]
+            },
+            "must_reject": {
+                "expr_b020_illuminate_pilot_ladder_001": [
+                    "illuminate boarding ladder",
+                    "remove pilot ladder"
+                ],
+                "phrase_b020_illuminate_pilot_ladder_transfer_001": [
+                    "Illuminate boarding ladder before transfer",
+                    "Remove pilot ladder before transfer"
+                ],
+                "phrase_b020_report_pilot_safely_on_board_001": [
+                    "Report pilot not safely on board",
+                    "Report passenger safely on board"
+                ]
+            },
+            "reason": "Pilot transfer preparation and final status must remain exact."
+        },
+        {
+            "pair": "boarding ladder safe / not safe",
+            "items": [
+                "phrase_b020_boarding_ladder_not_safe_001"
+            ],
+            "must_accept": {
+                "phrase_b020_boarding_ladder_not_safe_001": [
+                    "Boarding ladder not safe to use."
+                ]
+            },
+            "must_reject": {
+                "phrase_b020_boarding_ladder_not_safe_001": [
+                    "Boarding ladder safe to use",
+                    "Pilot ladder not safe to use"
+                ]
+            },
+            "reason": "Boarding safety polarity must not reverse."
         }
     ],
     "items": [
@@ -14152,6 +14962,1119 @@
                 "correction channel Charlie"
             ],
             "reason": "Correction marker and area name must remain exact."
+        },
+        {
+            "id": "word_vocab_lee_shore_001",
+            "target_text": "lee shore",
+            "should_accept": [
+                "lee shore",
+                "Lee shore"
+            ],
+            "should_reject": [
+                "leeward side",
+                "windward shore",
+                "safe shore"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_vocab_windward_side_001",
+            "target_text": "windward side",
+            "should_accept": [
+                "windward side",
+                "Windward side"
+            ],
+            "should_reject": [
+                "leeward side",
+                "starboard side",
+                "windward shore"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_vocab_leeward_side_001",
+            "target_text": "leeward side",
+            "should_accept": [
+                "leeward side",
+                "Leeward side"
+            ],
+            "should_reject": [
+                "windward side",
+                "lee shore",
+                "port side"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_vocab_tidal_stream_001",
+            "target_text": "tidal stream",
+            "should_accept": [
+                "tidal stream",
+                "Tidal stream"
+            ],
+            "should_reject": [
+                "weather stream",
+                "traffic lane",
+                "tidal height"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_vocab_ebb_tide_001",
+            "target_text": "ebb tide",
+            "should_accept": [
+                "ebb tide",
+                "Ebb tide"
+            ],
+            "should_reject": [
+                "flood tide",
+                "slack water",
+                "low tide only"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_vocab_flood_tide_001",
+            "target_text": "flood tide",
+            "should_accept": [
+                "flood tide",
+                "Flood tide"
+            ],
+            "should_reject": [
+                "ebb tide",
+                "flood warning",
+                "slack water"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_vocab_fairway_001",
+            "target_text": "narrow fairway",
+            "should_accept": [
+                "narrow fairway"
+            ],
+            "should_reject": [
+                "gangway",
+                "runway",
+                "fair wind"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_vocab_turning_basin_001",
+            "target_text": "turning basin",
+            "should_accept": [
+                "turning basin",
+                "Turning basin"
+            ],
+            "should_reject": [
+                "waiting basin",
+                "traffic lane",
+                "fuel berth"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_vocab_black_ball_001",
+            "target_text": "black ball",
+            "should_accept": [
+                "black ball",
+                "Black ball"
+            ],
+            "should_reject": [
+                "black cone",
+                "red ball",
+                "anchor light"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_vocab_anchor_light_001",
+            "target_text": "anchor light",
+            "should_accept": [
+                "anchor light",
+                "Anchor light"
+            ],
+            "should_reject": [
+                "anchor ball",
+                "deck light",
+                "black ball"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_vocab_keep_clear_001",
+            "target_text": "keep well clear",
+            "should_accept": [
+                "keep well clear"
+            ],
+            "should_reject": [
+                "come clear",
+                "keep close",
+                "make fast"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_vocab_hold_position_001",
+            "target_text": "hold present position",
+            "should_accept": [
+                "hold present position"
+            ],
+            "should_reject": [
+                "alter position",
+                "report position",
+                "hold course"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_vocab_make_fast_001",
+            "target_text": "make fast forward",
+            "should_accept": [
+                "make fast forward"
+            ],
+            "should_reject": [
+                "make way",
+                "cast off",
+                "hold fast"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_vocab_single_up_lines_001",
+            "target_text": "single up lines",
+            "should_accept": [
+                "single up lines",
+                "single up mooring lines"
+            ],
+            "should_reject": [
+                "double up lines",
+                "let go lines",
+                "single up anchor"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_vocab_heave_up_anchor_001",
+            "target_text": "heave up port anchor",
+            "should_accept": [
+                "heave up port anchor"
+            ],
+            "should_reject": [
+                "drop anchor",
+                "hold anchor",
+                "heave line"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_vocab_anchor_dragging_001",
+            "target_text": "anchor dragging",
+            "should_accept": [
+                "anchor dragging",
+                "anchor is dragging"
+            ],
+            "should_reject": [
+                "anchor holding",
+                "anchor heaving",
+                "line dragging"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_vocab_engine_on_standby_001",
+            "target_text": "engine on standby",
+            "should_accept": [
+                "engine on standby",
+                "Engine on standby"
+            ],
+            "should_reject": [
+                "engine stopped",
+                "engine failed",
+                "steering on standby"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_vocab_steerage_way_001",
+            "target_text": "steerage way",
+            "should_accept": [
+                "steerage way",
+                "Steerage way"
+            ],
+            "should_reject": [
+                "steering way",
+                "give way",
+                "underway"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_vocab_safe_to_board_001",
+            "target_text": "safe to board",
+            "should_accept": [
+                "safe to board",
+                "Safe to board"
+            ],
+            "should_reject": [
+                "not safe to board",
+                "safe to depart",
+                "safe alongside"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_vocab_not_safe_to_board_001",
+            "target_text": "not safe to board",
+            "should_accept": [
+                "not safe to board",
+                "Not safe to board"
+            ],
+            "should_reject": [
+                "safe to board",
+                "not safe to depart",
+                "safe to disembark"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_vocab_keep_clear_fairway_001",
+            "target_text": "Keep well clear of the fairway.",
+            "should_accept": [
+                "Keep well clear of the fairway.",
+                "Keep well clear of the fairway"
+            ],
+            "should_reject": [
+                "Keep close to the fairway",
+                "Keep clear of the gangway",
+                "Proceed along the fairway"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_vocab_hold_position_turning_basin_001",
+            "target_text": "Hold position outside the turning basin.",
+            "should_accept": [
+                "Hold position outside the turning basin.",
+                "Hold position outside turning basin"
+            ],
+            "should_reject": [
+                "Hold position inside the turning basin",
+                "Report position outside the turning basin",
+                "Hold course outside the turning basin"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_vocab_single_up_forward_lines_001",
+            "target_text": "Single up forward lines.",
+            "should_accept": [
+                "Single up forward lines.",
+                "Single up the forward lines"
+            ],
+            "should_reject": [
+                "Double up forward lines",
+                "Single up aft lines",
+                "Let go forward lines"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_vocab_heave_up_anchor_when_ready_001",
+            "target_text": "Heave up anchor when ready.",
+            "should_accept": [
+                "Heave up anchor when ready.",
+                "Heave up the anchor when ready"
+            ],
+            "should_reject": [
+                "Drop anchor when ready",
+                "Hold anchor when ready",
+                "Heave up line when ready"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_vocab_anchor_dragging_to_leeward_001",
+            "target_text": "Anchor dragging to leeward.",
+            "should_accept": [
+                "Anchor dragging to leeward.",
+                "Anchor is dragging to leeward"
+            ],
+            "should_reject": [
+                "Anchor holding to leeward",
+                "Anchor dragging to windward",
+                "Line dragging to leeward"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_vocab_tidal_stream_setting_east_001",
+            "target_text": "Tidal stream setting east.",
+            "should_accept": [
+                "Tidal stream setting east.",
+                "Tidal stream is setting east"
+            ],
+            "should_reject": [
+                "Tidal stream setting west",
+                "Traffic stream setting east",
+                "Tidal height setting east"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_vocab_ebb_tide_decreasing_depth_001",
+            "target_text": "Ebb tide, decreasing depth.",
+            "should_accept": [
+                "Ebb tide, decreasing depth.",
+                "Ebb tide decreasing depth"
+            ],
+            "should_reject": [
+                "Flood tide decreasing depth",
+                "Ebb tide increasing depth",
+                "Low tide decreasing speed"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_vocab_flood_tide_increasing_current_001",
+            "target_text": "Flood tide, increasing current.",
+            "should_accept": [
+                "Flood tide, increasing current.",
+                "Flood tide increasing current"
+            ],
+            "should_reject": [
+                "Ebb tide increasing current",
+                "Flood tide decreasing current",
+                "Flood warning increasing current"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_vocab_hoist_black_ball_signal_001",
+            "target_text": "Hoist black ball signal.",
+            "should_accept": [
+                "Hoist black ball signal.",
+                "Hoist the black ball signal"
+            ],
+            "should_reject": [
+                "Hoist black cone signal",
+                "Switch on anchor light signal",
+                "Lower black ball signal"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_vocab_anchor_light_not_visible_001",
+            "target_text": "Anchor light not visible.",
+            "should_accept": [
+                "Anchor light not visible.",
+                "Anchor light is not visible"
+            ],
+            "should_reject": [
+                "Anchor light visible",
+                "Black ball not visible",
+                "Deck light not visible"
+            ],
+            "reason": "Batch batch-019-practical-seamanship-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b020_lifebuoy_001",
+            "target_text": "lifebuoy ring",
+            "should_accept": [
+                "lifebuoy ring"
+            ],
+            "should_reject": [
+                "lifejacket",
+                "life raft",
+                "buoy light"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b020_lifejacket_001",
+            "target_text": "lifejacket",
+            "should_accept": [
+                "lifejacket",
+                "Lifejacket"
+            ],
+            "should_reject": [
+                "lifebuoy",
+                "jacket only",
+                "life raft"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b020_heaving_line_001",
+            "target_text": "heaving line",
+            "should_accept": [
+                "heaving line",
+                "Heaving line"
+            ],
+            "should_reject": [
+                "mooring line",
+                "fishing line",
+                "heaving anchor"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b020_boat_hook_001",
+            "target_text": "boat hook",
+            "should_accept": [
+                "boat hook",
+                "Boat hook"
+            ],
+            "should_reject": [
+                "deck brush",
+                "boat rope",
+                "fire hook"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b020_gangway_net_001",
+            "target_text": "gangway net",
+            "should_accept": [
+                "gangway net",
+                "Gangway net"
+            ],
+            "should_reject": [
+                "gangway light",
+                "safety net only",
+                "pilot ladder"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b020_pilot_ladder_001",
+            "target_text": "pilot ladder",
+            "should_accept": [
+                "pilot ladder",
+                "Pilot ladder"
+            ],
+            "should_reject": [
+                "boarding ladder",
+                "gangway ladder",
+                "pilot boat"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b020_boarding_ladder_001",
+            "target_text": "boarding ladder",
+            "should_accept": [
+                "boarding ladder",
+                "Boarding ladder"
+            ],
+            "should_reject": [
+                "pilot ladder",
+                "boarding pass",
+                "gangway net"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b020_fire_extinguisher_001",
+            "target_text": "portable fire extinguisher",
+            "should_accept": [
+                "portable fire extinguisher"
+            ],
+            "should_reject": [
+                "fire alarm",
+                "fire blanket",
+                "first aid kit"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b020_first_aid_kit_001",
+            "target_text": "first aid kit",
+            "should_accept": [
+                "first aid kit",
+                "First aid kit"
+            ],
+            "should_reject": [
+                "fire aid kit",
+                "repair kit",
+                "first mate"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b020_emergency_tiller_001",
+            "target_text": "emergency tiller",
+            "should_accept": [
+                "emergency tiller",
+                "Emergency tiller"
+            ],
+            "should_reject": [
+                "emergency rudder",
+                "steering wheel",
+                "engine tiller"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b020_bilge_alarm_001",
+            "target_text": "bilge alarm",
+            "should_accept": [
+                "bilge alarm",
+                "Bilge alarm"
+            ],
+            "should_reject": [
+                "fire alarm",
+                "bilge pump",
+                "engine alarm"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b020_fuel_shutoff_001",
+            "target_text": "fuel shutoff",
+            "should_accept": [
+                "fuel shutoff",
+                "Fuel shutoff"
+            ],
+            "should_reject": [
+                "fuel pump",
+                "fuel leak",
+                "water shutoff"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b020_seacock_001",
+            "target_text": "seacock",
+            "should_accept": [
+                "seacock",
+                "Seacock"
+            ],
+            "should_reject": [
+                "sea lock",
+                "cockpit",
+                "fuel cock"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b020_companionway_001",
+            "target_text": "companionway",
+            "should_accept": [
+                "companionway",
+                "Companionway"
+            ],
+            "should_reject": [
+                "gangway",
+                "runway",
+                "compass way"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b020_foredeck_001",
+            "target_text": "foredeck",
+            "should_accept": [
+                "foredeck",
+                "Foredeck"
+            ],
+            "should_reject": [
+                "aft deck",
+                "forecastle only",
+                "forward cabin"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b020_rig_pilot_ladder_001",
+            "target_text": "rig pilot ladder",
+            "should_accept": [
+                "rig pilot ladder",
+                "Rig pilot ladder"
+            ],
+            "should_reject": [
+                "rig boarding ladder",
+                "remove pilot ladder",
+                "rig pilot boat"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b020_recover_lifebuoy_001",
+            "target_text": "recover lifebuoy",
+            "should_accept": [
+                "recover lifebuoy",
+                "Recover lifebuoy"
+            ],
+            "should_reject": [
+                "deploy lifebuoy",
+                "recover lifejacket",
+                "recover buoy light"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b020_prepare_heaving_line_001",
+            "target_text": "prepare heaving line",
+            "should_accept": [
+                "prepare heaving line",
+                "Prepare heaving line"
+            ],
+            "should_reject": [
+                "prepare mooring line",
+                "throw heaving line",
+                "prepare anchor line"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b020_secure_gangway_001",
+            "target_text": "secure gangway",
+            "should_accept": [
+                "secure gangway",
+                "Secure gangway"
+            ],
+            "should_reject": [
+                "remove gangway",
+                "secure fairway",
+                "secure gateway"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b020_clear_foredeck_001",
+            "target_text": "clear foredeck",
+            "should_accept": [
+                "clear foredeck",
+                "Clear foredeck"
+            ],
+            "should_reject": [
+                "clear aft deck",
+                "close foredeck",
+                "clear forecastle"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b020_close_seacock_001",
+            "target_text": "close seacock",
+            "should_accept": [
+                "close seacock",
+                "Close seacock"
+            ],
+            "should_reject": [
+                "open seacock",
+                "close cockpit",
+                "close fuel shutoff"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b020_check_bilge_alarm_001",
+            "target_text": "check bilge alarm",
+            "should_accept": [
+                "check bilge alarm",
+                "Check bilge alarm"
+            ],
+            "should_reject": [
+                "check fire alarm",
+                "check bilge pump",
+                "silence bilge alarm"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b020_isolate_fuel_supply_001",
+            "target_text": "isolate fuel supply",
+            "should_accept": [
+                "isolate fuel supply",
+                "Isolate fuel supply"
+            ],
+            "should_reject": [
+                "restore fuel supply",
+                "isolate water supply",
+                "report fuel supply"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b020_fit_emergency_tiller_001",
+            "target_text": "fit emergency tiller",
+            "should_accept": [
+                "fit emergency tiller",
+                "Fit emergency tiller"
+            ],
+            "should_reject": [
+                "remove emergency tiller",
+                "fit steering wheel",
+                "fit emergency rudder"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b020_muster_on_deck_001",
+            "target_text": "muster on deck",
+            "should_accept": [
+                "muster on deck",
+                "Muster on deck"
+            ],
+            "should_reject": [
+                "muster below deck",
+                "scatter on deck",
+                "muster at quay"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b020_count_persons_aboard_001",
+            "target_text": "count persons aboard",
+            "should_accept": [
+                "count persons aboard",
+                "Count persons aboard"
+            ],
+            "should_reject": [
+                "count persons ashore",
+                "report persons aboard",
+                "count vessels aboard"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b020_pass_boat_hook_001",
+            "target_text": "pass boat hook",
+            "should_accept": [
+                "pass boat hook",
+                "Pass boat hook"
+            ],
+            "should_reject": [
+                "pass boat rope",
+                "throw boat hook",
+                "pass fire hook"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b020_test_fire_extinguisher_001",
+            "target_text": "test fire extinguisher",
+            "should_accept": [
+                "test fire extinguisher",
+                "Test fire extinguisher"
+            ],
+            "should_reject": [
+                "test fire alarm",
+                "use fire extinguisher",
+                "test first aid kit"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b020_bring_first_aid_kit_001",
+            "target_text": "bring first aid kit",
+            "should_accept": [
+                "bring first aid kit",
+                "Bring first aid kit"
+            ],
+            "should_reject": [
+                "bring fire kit",
+                "bring repair kit",
+                "store first aid kit"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b020_illuminate_pilot_ladder_001",
+            "target_text": "illuminate pilot ladder",
+            "should_accept": [
+                "illuminate pilot ladder",
+                "Illuminate pilot ladder"
+            ],
+            "should_reject": [
+                "illuminate boarding ladder",
+                "remove pilot ladder",
+                "illuminate pilot boat"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_rig_pilot_ladder_port_side_001",
+            "target_text": "Rig pilot ladder on port side.",
+            "should_accept": [
+                "Rig pilot ladder on port side.",
+                "Rig the pilot ladder on port side"
+            ],
+            "should_reject": [
+                "Rig pilot ladder on starboard side",
+                "Rig boarding ladder on port side",
+                "Remove pilot ladder on port side"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_pilot_ladder_ready_boarding_001",
+            "target_text": "Pilot ladder ready for boarding.",
+            "should_accept": [
+                "Pilot ladder ready for boarding.",
+                "Pilot ladder is ready for boarding"
+            ],
+            "should_reject": [
+                "Pilot ladder not ready for boarding",
+                "Boarding ladder ready for boarding",
+                "Pilot boat ready for boarding"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_secure_gangway_safety_net_001",
+            "target_text": "Secure gangway with safety net.",
+            "should_accept": [
+                "Secure gangway with safety net.",
+                "Secure the gangway with safety net"
+            ],
+            "should_reject": [
+                "Secure gangway without safety net",
+                "Secure pilot ladder with safety net",
+                "Remove gangway with safety net"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_lifebuoy_deployed_starboard_001",
+            "target_text": "Lifebuoy deployed on starboard side.",
+            "should_accept": [
+                "Lifebuoy deployed on starboard side.",
+                "Lifebuoy is deployed on starboard side"
+            ],
+            "should_reject": [
+                "Lifebuoy deployed on port side",
+                "Lifejacket deployed on starboard side",
+                "Lifebuoy recovered on starboard side"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_recover_heaving_line_water_001",
+            "target_text": "Recover heaving line from water.",
+            "should_accept": [
+                "Recover heaving line from water.",
+                "Recover the heaving line from water"
+            ],
+            "should_reject": [
+                "Throw heaving line from water",
+                "Recover mooring line from water",
+                "Recover heaving line from deck"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_fire_extinguisher_ready_cockpit_001",
+            "target_text": "Fire extinguisher ready in cockpit.",
+            "should_accept": [
+                "Fire extinguisher ready in cockpit.",
+                "Fire extinguisher is ready in cockpit"
+            ],
+            "should_reject": [
+                "Fire alarm ready in cockpit",
+                "Fire extinguisher not ready in cockpit",
+                "Fire extinguisher ready in cabin"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_first_aid_kit_to_deck_001",
+            "target_text": "First aid kit brought to deck.",
+            "should_accept": [
+                "First aid kit brought to deck.",
+                "First aid kit is brought to deck"
+            ],
+            "should_reject": [
+                "Fire aid kit brought to deck",
+                "First aid kit brought below deck",
+                "Repair kit brought to deck"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_emergency_tiller_fitted_tested_001",
+            "target_text": "Emergency tiller fitted and tested.",
+            "should_accept": [
+                "Emergency tiller fitted and tested.",
+                "Emergency tiller is fitted and tested"
+            ],
+            "should_reject": [
+                "Emergency tiller removed and tested",
+                "Emergency rudder fitted and tested",
+                "Emergency tiller fitted not tested"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_close_engine_seacock_immediately_001",
+            "target_text": "Close engine seacock immediately.",
+            "should_accept": [
+                "Close engine seacock immediately.",
+                "Close the engine seacock immediately"
+            ],
+            "should_reject": [
+                "Open engine seacock immediately",
+                "Close fuel shutoff immediately",
+                "Close cockpit immediately"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_bilge_alarm_sounding_aft_cabin_001",
+            "target_text": "Bilge alarm sounding in aft cabin.",
+            "should_accept": [
+                "Bilge alarm sounding in aft cabin.",
+                "Bilge alarm is sounding in aft cabin"
+            ],
+            "should_reject": [
+                "Fire alarm sounding in aft cabin",
+                "Bilge pump sounding in aft cabin",
+                "Bilge alarm sounding in forward cabin"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_fuel_shutoff_valve_closed_001",
+            "target_text": "Fuel shutoff valve is closed.",
+            "should_accept": [
+                "Fuel shutoff valve is closed.",
+                "Fuel shutoff valve closed"
+            ],
+            "should_reject": [
+                "Fuel shutoff valve is open",
+                "Water shutoff valve is closed",
+                "Fuel pump valve is closed"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_keep_foredeck_clear_gear_001",
+            "target_text": "Keep foredeck clear of loose gear.",
+            "should_accept": [
+                "Keep foredeck clear of loose gear.",
+                "Keep the foredeck clear of loose gear"
+            ],
+            "should_reject": [
+                "Keep aft deck clear of loose gear",
+                "Keep foredeck full of loose gear",
+                "Keep foredeck clear of crew"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_count_all_persons_aboard_now_001",
+            "target_text": "Count all persons aboard now.",
+            "should_accept": [
+                "Count all persons aboard now.",
+                "Count persons aboard now"
+            ],
+            "should_reject": [
+                "Count all persons ashore now",
+                "Report all persons aboard now",
+                "Count all vessels aboard now"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_muster_passengers_main_deck_001",
+            "target_text": "Muster passengers on main deck.",
+            "should_accept": [
+                "Muster passengers on main deck.",
+                "Muster the passengers on main deck"
+            ],
+            "should_reject": [
+                "Muster crew on main deck",
+                "Muster passengers below deck",
+                "Disperse passengers on main deck"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_boat_hook_passed_bow_001",
+            "target_text": "Boat hook passed to bow.",
+            "should_accept": [
+                "Boat hook passed to bow.",
+                "Boat hook is passed to bow"
+            ],
+            "should_reject": [
+                "Boat rope passed to bow",
+                "Boat hook passed to stern",
+                "Boat hook thrown to bow"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_boarding_ladder_not_safe_001",
+            "target_text": "Boarding ladder not safe to use.",
+            "should_accept": [
+                "Boarding ladder not safe to use.",
+                "Boarding ladder is not safe to use"
+            ],
+            "should_reject": [
+                "Boarding ladder safe to use",
+                "Pilot ladder not safe to use",
+                "Boarding ladder not ready to use"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_companionway_clear_evacuation_001",
+            "target_text": "Companionway clear for evacuation.",
+            "should_accept": [
+                "Companionway clear for evacuation.",
+                "Companionway is clear for evacuation"
+            ],
+            "should_reject": [
+                "Gangway clear for evacuation",
+                "Companionway blocked for evacuation",
+                "Companionway clear for boarding"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_illuminate_pilot_ladder_transfer_001",
+            "target_text": "Illuminate pilot ladder before transfer.",
+            "should_accept": [
+                "Illuminate pilot ladder before transfer.",
+                "Illuminate the pilot ladder before transfer"
+            ],
+            "should_reject": [
+                "Illuminate boarding ladder before transfer",
+                "Remove pilot ladder before transfer",
+                "Illuminate pilot ladder after transfer"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_report_pilot_safely_on_board_001",
+            "target_text": "Report pilot safely on board.",
+            "should_accept": [
+                "Report pilot safely on board.",
+                "Report the pilot safely on board"
+            ],
+            "should_reject": [
+                "Report pilot not safely on board",
+                "Report passenger safely on board",
+                "Report pilot safely ashore"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b020_report_one_person_missing_deck_001",
+            "target_text": "Report one person missing from deck.",
+            "should_accept": [
+                "Report one person missing from deck.",
+                "Report one person is missing from deck"
+            ],
+            "should_reject": [
+                "Report two persons missing from deck",
+                "Report one person found on deck",
+                "Report one person missing from quay"
+            ],
+            "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
         }
     ],
     "matcher_suggestions": [

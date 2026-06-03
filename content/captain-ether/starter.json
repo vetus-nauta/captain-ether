@@ -13342,6 +13342,1631 @@
             "hint_beginner": "correction...",
             "hint_intermediate": "area Charlie...",
             "hint_advanced": ""
+        },
+        {
+            "id": "word_vocab_lee_shore_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 8,
+            "module": "weather_seamanship_terms",
+            "source_text": "Подветренный берег.",
+            "target_text": "lee shore",
+            "accepted_answers": [
+                "lee shore"
+            ],
+            "grammar_pattern": "seamanship_compound_noun",
+            "hint_beginner": "lee...",
+            "hint_intermediate": "lee shore...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_vocab_windward_side_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 7,
+            "module": "relative_side_terms",
+            "source_text": "Наветренная сторона.",
+            "target_text": "windward side",
+            "accepted_answers": [
+                "windward side"
+            ],
+            "grammar_pattern": "directional_side_compound",
+            "hint_beginner": "windward...",
+            "hint_intermediate": "windward side...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_vocab_leeward_side_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 7,
+            "module": "relative_side_terms",
+            "source_text": "Подветренная сторона.",
+            "target_text": "leeward side",
+            "accepted_answers": [
+                "leeward side"
+            ],
+            "grammar_pattern": "directional_side_compound",
+            "hint_beginner": "leeward...",
+            "hint_intermediate": "leeward side...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_vocab_tidal_stream_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "module": "tide_current_terms",
+            "source_text": "Приливное течение.",
+            "target_text": "tidal stream",
+            "accepted_answers": [
+                "tidal stream"
+            ],
+            "grammar_pattern": "tide_current_compound",
+            "hint_beginner": "tidal...",
+            "hint_intermediate": "tidal stream...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_vocab_ebb_tide_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 7,
+            "module": "tide_current_terms",
+            "source_text": "Отлив.",
+            "target_text": "ebb tide",
+            "accepted_answers": [
+                "ebb tide"
+            ],
+            "grammar_pattern": "tide_state_compound",
+            "hint_beginner": "ebb...",
+            "hint_intermediate": "ebb tide...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_vocab_flood_tide_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 7,
+            "module": "tide_current_terms",
+            "source_text": "Прилив.",
+            "target_text": "flood tide",
+            "accepted_answers": [
+                "flood tide"
+            ],
+            "grammar_pattern": "tide_state_compound",
+            "hint_beginner": "flood...",
+            "hint_intermediate": "flood tide...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_vocab_fairway_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 6,
+            "module": "harbour_navigation_terms",
+            "source_text": "Судовой ход.",
+            "target_text": "narrow fairway",
+            "accepted_answers": [
+                "narrow fairway"
+            ],
+            "grammar_pattern": "single_navigation_noun",
+            "hint_beginner": "fairway...",
+            "hint_intermediate": "",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_vocab_turning_basin_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "module": "harbour_navigation_terms",
+            "source_text": "Место для разворота.",
+            "target_text": "turning basin",
+            "accepted_answers": [
+                "turning basin"
+            ],
+            "grammar_pattern": "harbour_area_compound",
+            "hint_beginner": "turning...",
+            "hint_intermediate": "turning basin...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_vocab_black_ball_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "module": "signals_and_day_shapes",
+            "source_text": "Черный шар.",
+            "target_text": "black ball",
+            "accepted_answers": [
+                "black ball"
+            ],
+            "grammar_pattern": "day_shape_noun_phrase",
+            "hint_beginner": "black...",
+            "hint_intermediate": "black ball...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_vocab_anchor_light_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 7,
+            "module": "signals_and_day_shapes",
+            "source_text": "Якорный огонь.",
+            "target_text": "anchor light",
+            "accepted_answers": [
+                "anchor light"
+            ],
+            "grammar_pattern": "navigation_light_compound",
+            "hint_beginner": "anchor...",
+            "hint_intermediate": "anchor light...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_keep_clear_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "module": "movement_instructions",
+            "source_text": "Держитесь в стороне.",
+            "target_text": "keep well clear",
+            "accepted_answers": [
+                "keep well clear"
+            ],
+            "grammar_pattern": "imperative_two_word_instruction",
+            "hint_beginner": "keep...",
+            "hint_intermediate": "keep clear...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_hold_position_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "module": "movement_instructions",
+            "source_text": "Удерживайте позицию.",
+            "target_text": "hold present position",
+            "accepted_answers": [
+                "hold present position"
+            ],
+            "grammar_pattern": "imperative_two_word_instruction",
+            "hint_beginner": "hold...",
+            "hint_intermediate": "hold position...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_make_fast_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "module": "mooring_commands",
+            "source_text": "Закрепите швартовы.",
+            "target_text": "make fast forward",
+            "accepted_answers": [
+                "make fast forward"
+            ],
+            "grammar_pattern": "mooring_two_word_command",
+            "hint_beginner": "make...",
+            "hint_intermediate": "make fast...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_single_up_lines_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 11,
+            "module": "mooring_commands",
+            "source_text": "Оставьте по одному швартову.",
+            "target_text": "single up lines",
+            "accepted_answers": [
+                "single up lines",
+                "single up mooring lines"
+            ],
+            "grammar_pattern": "mooring_line_preparation_command",
+            "hint_beginner": "single up...",
+            "hint_intermediate": "single up lines...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_heave_up_anchor_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "module": "anchoring_commands",
+            "source_text": "Выбирайте якорь.",
+            "target_text": "heave up port anchor",
+            "accepted_answers": [
+                "heave up port anchor"
+            ],
+            "grammar_pattern": "anchor_handling_command",
+            "hint_beginner": "heave up...",
+            "hint_intermediate": "heave up anchor...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_anchor_dragging_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 12,
+            "module": "anchoring_status",
+            "source_text": "Якорь ползет.",
+            "target_text": "anchor dragging",
+            "accepted_answers": [
+                "anchor dragging",
+                "anchor is dragging"
+            ],
+            "grammar_pattern": "anchor_status_expression",
+            "hint_beginner": "anchor...",
+            "hint_intermediate": "anchor dragging...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_engine_on_standby_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "module": "engine_readiness",
+            "source_text": "Двигатель в готовности.",
+            "target_text": "engine on standby",
+            "accepted_answers": [
+                "engine on standby"
+            ],
+            "grammar_pattern": "equipment_readiness_expression",
+            "hint_beginner": "engine...",
+            "hint_intermediate": "on standby...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_steerage_way_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 12,
+            "module": "vessel_handling_terms",
+            "source_text": "Ход для управляемости.",
+            "target_text": "steerage way",
+            "accepted_answers": [
+                "steerage way"
+            ],
+            "grammar_pattern": "vessel_handling_noun_phrase",
+            "hint_beginner": "steerage...",
+            "hint_intermediate": "steerage way...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_safe_to_board_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "module": "boarding_safety",
+            "source_text": "Безопасно подняться на борт.",
+            "target_text": "safe to board",
+            "accepted_answers": [
+                "safe to board"
+            ],
+            "grammar_pattern": "boarding_safety_status",
+            "hint_beginner": "safe...",
+            "hint_intermediate": "safe to board...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "expr_vocab_not_safe_to_board_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 9,
+            "module": "boarding_safety",
+            "source_text": "Небезопасно подниматься на борт.",
+            "target_text": "not safe to board",
+            "accepted_answers": [
+                "not safe to board"
+            ],
+            "grammar_pattern": "boarding_safety_negative_status",
+            "hint_beginner": "not safe...",
+            "hint_intermediate": "not safe to board...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_keep_clear_fairway_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "module": "fairway_control",
+            "source_text": "Держитесь вне судового хода.",
+            "target_text": "Keep well clear of the fairway.",
+            "accepted_answers": [
+                "Keep well clear of the fairway."
+            ],
+            "grammar_pattern": "keep_clear_of_area",
+            "hint_beginner": "Keep clear...",
+            "hint_intermediate": "of the fairway...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_hold_position_turning_basin_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "module": "harbour_control",
+            "source_text": "Удерживайте позицию вне места разворота.",
+            "target_text": "Hold position outside the turning basin.",
+            "accepted_answers": [
+                "Hold position outside the turning basin."
+            ],
+            "grammar_pattern": "hold_position_outside_area",
+            "hint_beginner": "Hold position...",
+            "hint_intermediate": "outside the turning basin...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_single_up_forward_lines_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "module": "mooring_commands",
+            "source_text": "Оставьте по одному носовому швартову.",
+            "target_text": "Single up forward lines.",
+            "accepted_answers": [
+                "Single up forward lines."
+            ],
+            "grammar_pattern": "single_up_specific_lines",
+            "hint_beginner": "Single up...",
+            "hint_intermediate": "forward lines...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_heave_up_anchor_when_ready_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "module": "anchoring_commands",
+            "source_text": "Выбирайте якорь, когда будете готовы.",
+            "target_text": "Heave up anchor when ready.",
+            "accepted_answers": [
+                "Heave up anchor when ready."
+            ],
+            "grammar_pattern": "heave_up_anchor_when_ready",
+            "hint_beginner": "Heave up anchor...",
+            "hint_intermediate": "when ready...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_anchor_dragging_to_leeward_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "module": "anchoring_status",
+            "source_text": "Якорь ползет под ветер.",
+            "target_text": "Anchor dragging to leeward.",
+            "accepted_answers": [
+                "Anchor dragging to leeward.",
+                "Anchor is dragging to leeward"
+            ],
+            "grammar_pattern": "anchor_dragging_direction",
+            "hint_beginner": "Anchor dragging...",
+            "hint_intermediate": "to leeward...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_tidal_stream_setting_east_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "module": "tide_current_reports",
+            "source_text": "Приливное течение направлено на восток.",
+            "target_text": "Tidal stream setting east.",
+            "accepted_answers": [
+                "Tidal stream setting east.",
+                "Tidal stream is setting east"
+            ],
+            "grammar_pattern": "tidal_stream_setting_direction",
+            "hint_beginner": "Tidal stream...",
+            "hint_intermediate": "setting east...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_ebb_tide_decreasing_depth_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "module": "tide_current_reports",
+            "source_text": "На отливе глубина уменьшается.",
+            "target_text": "Ebb tide, decreasing depth.",
+            "accepted_answers": [
+                "Ebb tide, decreasing depth."
+            ],
+            "grammar_pattern": "tide_state_depth_change",
+            "hint_beginner": "Ebb tide...",
+            "hint_intermediate": "decreasing depth...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_flood_tide_increasing_current_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "module": "tide_current_reports",
+            "source_text": "На приливе течение усиливается.",
+            "target_text": "Flood tide, increasing current.",
+            "accepted_answers": [
+                "Flood tide, increasing current."
+            ],
+            "grammar_pattern": "tide_state_current_change",
+            "hint_beginner": "Flood tide...",
+            "hint_intermediate": "increasing current...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_hoist_black_ball_signal_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "module": "signals_and_day_shapes",
+            "source_text": "Поднимите сигнал черный шар.",
+            "target_text": "Hoist black ball signal.",
+            "accepted_answers": [
+                "Hoist black ball signal."
+            ],
+            "grammar_pattern": "hoist_day_shape_signal",
+            "hint_beginner": "Hoist...",
+            "hint_intermediate": "black ball signal...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "phrase_vocab_anchor_light_not_visible_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "module": "signals_and_day_shapes",
+            "source_text": "Якорный огонь не виден.",
+            "target_text": "Anchor light not visible.",
+            "accepted_answers": [
+                "Anchor light not visible.",
+                "Anchor light is not visible"
+            ],
+            "grammar_pattern": "navigation_light_visibility_status",
+            "hint_beginner": "Anchor light...",
+            "hint_intermediate": "not visible...",
+            "hint_advanced": "",
+            "topic": "practical_seamanship_vocabulary",
+            "branch": "mixed_vocabulary_expansion",
+            "source_language": "ru",
+            "target_language": "en"
+        },
+        {
+            "id": "word_b020_lifebuoy_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 6,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "safety_equipment",
+            "source_language": "ru",
+            "source_text": "Спасательный круг.",
+            "target_language": "en",
+            "target_text": "lifebuoy ring",
+            "accepted_answers": [
+                "lifebuoy ring"
+            ],
+            "grammar_pattern": "b020_single_safety_equipment_noun",
+            "hint_beginner": "lifebuoy...",
+            "hint_intermediate": "lifebuoy...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b020_lifejacket_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 6,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "safety_equipment",
+            "source_language": "ru",
+            "source_text": "Спасательный жилет.",
+            "target_language": "en",
+            "target_text": "lifejacket",
+            "accepted_answers": [
+                "lifejacket"
+            ],
+            "grammar_pattern": "b020_single_safety_equipment_noun",
+            "hint_beginner": "lifejacket...",
+            "hint_intermediate": "lifejacket...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b020_heaving_line_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "line_handling",
+            "source_language": "ru",
+            "source_text": "Бросательный конец.",
+            "target_language": "en",
+            "target_text": "heaving line",
+            "accepted_answers": [
+                "heaving line"
+            ],
+            "grammar_pattern": "b020_line_equipment_compound",
+            "hint_beginner": "heaving line...",
+            "hint_intermediate": "heaving line...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b020_boat_hook_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "deck_tools",
+            "source_language": "ru",
+            "source_text": "Отпорный крюк.",
+            "target_language": "en",
+            "target_text": "boat hook",
+            "accepted_answers": [
+                "boat hook"
+            ],
+            "grammar_pattern": "b020_deck_tool_compound",
+            "hint_beginner": "boat hook...",
+            "hint_intermediate": "boat hook...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b020_gangway_net_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "boarding_safety",
+            "source_language": "ru",
+            "source_text": "Сетка трапа.",
+            "target_language": "en",
+            "target_text": "gangway net",
+            "accepted_answers": [
+                "gangway net"
+            ],
+            "grammar_pattern": "b020_boarding_safety_compound",
+            "hint_beginner": "gangway net...",
+            "hint_intermediate": "gangway net...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b020_pilot_ladder_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "pilot_transfer",
+            "source_language": "ru",
+            "source_text": "Лоцманский трап.",
+            "target_language": "en",
+            "target_text": "pilot ladder",
+            "accepted_answers": [
+                "pilot ladder"
+            ],
+            "grammar_pattern": "b020_ladder_type_compound",
+            "hint_beginner": "pilot ladder...",
+            "hint_intermediate": "pilot ladder...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b020_boarding_ladder_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "boarding_safety",
+            "source_language": "ru",
+            "source_text": "Посадочный трап.",
+            "target_language": "en",
+            "target_text": "boarding ladder",
+            "accepted_answers": [
+                "boarding ladder"
+            ],
+            "grammar_pattern": "b020_ladder_type_compound",
+            "hint_beginner": "boarding ladder...",
+            "hint_intermediate": "boarding ladder...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b020_fire_extinguisher_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "fire_safety",
+            "source_language": "ru",
+            "source_text": "Огнетушитель.",
+            "target_language": "en",
+            "target_text": "portable fire extinguisher",
+            "accepted_answers": [
+                "portable fire extinguisher"
+            ],
+            "grammar_pattern": "b020_fire_safety_compound",
+            "hint_beginner": "fire extinguisher...",
+            "hint_intermediate": "fire extinguisher...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b020_first_aid_kit_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "medical_safety",
+            "source_language": "ru",
+            "source_text": "Аптечка первой помощи.",
+            "target_language": "en",
+            "target_text": "first aid kit",
+            "accepted_answers": [
+                "first aid kit"
+            ],
+            "grammar_pattern": "b020_medical_safety_compound",
+            "hint_beginner": "first aid...",
+            "hint_intermediate": "first aid kit...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b020_emergency_tiller_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 10,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "steering_failure",
+            "source_language": "ru",
+            "source_text": "Аварийный румпель.",
+            "target_language": "en",
+            "target_text": "emergency tiller",
+            "accepted_answers": [
+                "emergency tiller"
+            ],
+            "grammar_pattern": "b020_emergency_steering_compound",
+            "hint_beginner": "emergency tiller...",
+            "hint_intermediate": "emergency tiller...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b020_bilge_alarm_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "bilge_monitoring",
+            "source_language": "ru",
+            "source_text": "Сигнализация трюма.",
+            "target_language": "en",
+            "target_text": "bilge alarm",
+            "accepted_answers": [
+                "bilge alarm"
+            ],
+            "grammar_pattern": "b020_alarm_system_compound",
+            "hint_beginner": "bilge alarm...",
+            "hint_intermediate": "bilge alarm...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b020_fuel_shutoff_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 10,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "fuel_safety",
+            "source_language": "ru",
+            "source_text": "Топливный отсечной кран.",
+            "target_language": "en",
+            "target_text": "fuel shutoff",
+            "accepted_answers": [
+                "fuel shutoff"
+            ],
+            "grammar_pattern": "b020_fuel_safety_compound",
+            "hint_beginner": "fuel shutoff...",
+            "hint_intermediate": "fuel shutoff...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b020_seacock_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 10,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "hull_systems",
+            "source_language": "ru",
+            "source_text": "Забортный кран.",
+            "target_language": "en",
+            "target_text": "seacock",
+            "accepted_answers": [
+                "seacock"
+            ],
+            "grammar_pattern": "b020_hull_fitting_single_noun",
+            "hint_beginner": "seacock...",
+            "hint_intermediate": "seacock...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b020_companionway_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "deck_layout",
+            "source_language": "ru",
+            "source_text": "Сходный люк.",
+            "target_language": "en",
+            "target_text": "companionway",
+            "accepted_answers": [
+                "companionway"
+            ],
+            "grammar_pattern": "b020_vessel_access_single_noun",
+            "hint_beginner": "companionway...",
+            "hint_intermediate": "companionway...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b020_foredeck_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "deck_layout",
+            "source_language": "ru",
+            "source_text": "Носовая палуба.",
+            "target_language": "en",
+            "target_text": "foredeck",
+            "accepted_answers": [
+                "foredeck"
+            ],
+            "grammar_pattern": "b020_deck_area_single_noun",
+            "hint_beginner": "foredeck...",
+            "hint_intermediate": "foredeck...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b020_rig_pilot_ladder_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 11,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "pilot_transfer",
+            "source_language": "ru",
+            "source_text": "Установите лоцманский трап.",
+            "target_language": "en",
+            "target_text": "rig pilot ladder",
+            "accepted_answers": [
+                "rig pilot ladder"
+            ],
+            "grammar_pattern": "b020_prepare_equipment_command",
+            "hint_beginner": "rig pilot...",
+            "hint_intermediate": "rig pilot ladder...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b020_recover_lifebuoy_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "safety_equipment",
+            "source_language": "ru",
+            "source_text": "Подберите спасательный круг.",
+            "target_language": "en",
+            "target_text": "recover lifebuoy",
+            "accepted_answers": [
+                "recover lifebuoy"
+            ],
+            "grammar_pattern": "b020_recover_equipment_command",
+            "hint_beginner": "recover lifebuoy...",
+            "hint_intermediate": "recover lifebuoy...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b020_prepare_heaving_line_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "line_handling",
+            "source_language": "ru",
+            "source_text": "Подготовьте бросательный конец.",
+            "target_language": "en",
+            "target_text": "prepare heaving line",
+            "accepted_answers": [
+                "prepare heaving line"
+            ],
+            "grammar_pattern": "b020_prepare_equipment_command",
+            "hint_beginner": "prepare heaving...",
+            "hint_intermediate": "prepare heaving line...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b020_secure_gangway_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "boarding_safety",
+            "source_language": "ru",
+            "source_text": "Закрепите трап.",
+            "target_language": "en",
+            "target_text": "secure gangway",
+            "accepted_answers": [
+                "secure gangway"
+            ],
+            "grammar_pattern": "b020_secure_access_command",
+            "hint_beginner": "secure gangway...",
+            "hint_intermediate": "secure gangway...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b020_clear_foredeck_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "deck_safety",
+            "source_language": "ru",
+            "source_text": "Освободите носовую палубу.",
+            "target_language": "en",
+            "target_text": "clear foredeck",
+            "accepted_answers": [
+                "clear foredeck"
+            ],
+            "grammar_pattern": "b020_clear_area_command",
+            "hint_beginner": "clear foredeck...",
+            "hint_intermediate": "clear foredeck...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b020_close_seacock_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 11,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "hull_systems",
+            "source_language": "ru",
+            "source_text": "Закройте забортный кран.",
+            "target_language": "en",
+            "target_text": "close seacock",
+            "accepted_answers": [
+                "close seacock"
+            ],
+            "grammar_pattern": "b020_close_system_command",
+            "hint_beginner": "close seacock...",
+            "hint_intermediate": "close seacock...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b020_check_bilge_alarm_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "bilge_monitoring",
+            "source_language": "ru",
+            "source_text": "Проверьте сигнализацию трюма.",
+            "target_language": "en",
+            "target_text": "check bilge alarm",
+            "accepted_answers": [
+                "check bilge alarm"
+            ],
+            "grammar_pattern": "b020_check_system_command",
+            "hint_beginner": "check bilge...",
+            "hint_intermediate": "check bilge alarm...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b020_isolate_fuel_supply_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 12,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "fuel_safety",
+            "source_language": "ru",
+            "source_text": "Изолируйте подачу топлива.",
+            "target_language": "en",
+            "target_text": "isolate fuel supply",
+            "accepted_answers": [
+                "isolate fuel supply"
+            ],
+            "grammar_pattern": "b020_isolate_system_command",
+            "hint_beginner": "isolate fuel...",
+            "hint_intermediate": "isolate fuel supply...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b020_fit_emergency_tiller_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 12,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "steering_failure",
+            "source_language": "ru",
+            "source_text": "Установите аварийный румпель.",
+            "target_language": "en",
+            "target_text": "fit emergency tiller",
+            "accepted_answers": [
+                "fit emergency tiller"
+            ],
+            "grammar_pattern": "b020_fit_emergency_equipment_command",
+            "hint_beginner": "fit emergency...",
+            "hint_intermediate": "fit emergency tiller...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b020_muster_on_deck_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "muster_and_evacuation",
+            "source_language": "ru",
+            "source_text": "Соберитесь на палубе.",
+            "target_language": "en",
+            "target_text": "muster on deck",
+            "accepted_answers": [
+                "muster on deck"
+            ],
+            "grammar_pattern": "b020_muster_location_command",
+            "hint_beginner": "muster on...",
+            "hint_intermediate": "muster on deck...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b020_count_persons_aboard_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "persons_count",
+            "source_language": "ru",
+            "source_text": "Пересчитайте людей на борту.",
+            "target_language": "en",
+            "target_text": "count persons aboard",
+            "accepted_answers": [
+                "count persons aboard"
+            ],
+            "grammar_pattern": "b020_count_people_command",
+            "hint_beginner": "count persons...",
+            "hint_intermediate": "count persons aboard...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b020_pass_boat_hook_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "deck_tools",
+            "source_language": "ru",
+            "source_text": "Передайте отпорный крюк.",
+            "target_language": "en",
+            "target_text": "pass boat hook",
+            "accepted_answers": [
+                "pass boat hook"
+            ],
+            "grammar_pattern": "b020_pass_tool_command",
+            "hint_beginner": "pass boat...",
+            "hint_intermediate": "pass boat hook...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b020_test_fire_extinguisher_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 10,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "fire_safety",
+            "source_language": "ru",
+            "source_text": "Проверьте огнетушитель.",
+            "target_language": "en",
+            "target_text": "test fire extinguisher",
+            "accepted_answers": [
+                "test fire extinguisher"
+            ],
+            "grammar_pattern": "b020_test_safety_equipment_command",
+            "hint_beginner": "test fire...",
+            "hint_intermediate": "test fire extinguisher...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b020_bring_first_aid_kit_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "medical_safety",
+            "source_language": "ru",
+            "source_text": "Принесите аптечку.",
+            "target_language": "en",
+            "target_text": "bring first aid kit",
+            "accepted_answers": [
+                "bring first aid kit"
+            ],
+            "grammar_pattern": "b020_bring_safety_equipment_command",
+            "hint_beginner": "bring first...",
+            "hint_intermediate": "bring first aid kit...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b020_illuminate_pilot_ladder_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 12,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "pilot_transfer",
+            "source_language": "ru",
+            "source_text": "Осветите лоцманский трап.",
+            "target_language": "en",
+            "target_text": "illuminate pilot ladder",
+            "accepted_answers": [
+                "illuminate pilot ladder"
+            ],
+            "grammar_pattern": "b020_illuminate_equipment_command",
+            "hint_beginner": "illuminate pilot...",
+            "hint_intermediate": "illuminate pilot ladder...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_rig_pilot_ladder_port_side_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "pilot_transfer",
+            "source_language": "ru",
+            "source_text": "Установите лоцманский трап по левому борту.",
+            "target_language": "en",
+            "target_text": "Rig pilot ladder on port side.",
+            "accepted_answers": [
+                "Rig pilot ladder on port side.",
+                "Rig the pilot ladder on port side"
+            ],
+            "grammar_pattern": "b020_rig_ladder_side_instruction",
+            "hint_beginner": "Rig pilot...",
+            "hint_intermediate": "Rig pilot ladder on...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_pilot_ladder_ready_boarding_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "pilot_transfer",
+            "source_language": "ru",
+            "source_text": "Лоцманский трап готов для посадки.",
+            "target_language": "en",
+            "target_text": "Pilot ladder ready for boarding.",
+            "accepted_answers": [
+                "Pilot ladder ready for boarding.",
+                "Pilot ladder is ready for boarding"
+            ],
+            "grammar_pattern": "b020_equipment_ready_for_action",
+            "hint_beginner": "Pilot ladder...",
+            "hint_intermediate": "Pilot ladder ready for...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_secure_gangway_safety_net_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "boarding_safety",
+            "source_language": "ru",
+            "source_text": "Закрепите трап страховочной сеткой.",
+            "target_language": "en",
+            "target_text": "Secure gangway with safety net.",
+            "accepted_answers": [
+                "Secure gangway with safety net.",
+                "Secure the gangway with safety net"
+            ],
+            "grammar_pattern": "b020_secure_access_with_equipment",
+            "hint_beginner": "Secure gangway...",
+            "hint_intermediate": "Secure gangway with safety...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_lifebuoy_deployed_starboard_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "safety_equipment",
+            "source_language": "ru",
+            "source_text": "Спасательный круг сброшен по правому борту.",
+            "target_language": "en",
+            "target_text": "Lifebuoy deployed on starboard side.",
+            "accepted_answers": [
+                "Lifebuoy deployed on starboard side.",
+                "Lifebuoy is deployed on starboard side"
+            ],
+            "grammar_pattern": "b020_equipment_deployed_side",
+            "hint_beginner": "Lifebuoy deployed...",
+            "hint_intermediate": "Lifebuoy deployed on starboard...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_recover_heaving_line_water_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "line_handling",
+            "source_language": "ru",
+            "source_text": "Подберите бросательный конец из воды.",
+            "target_language": "en",
+            "target_text": "Recover heaving line from water.",
+            "accepted_answers": [
+                "Recover heaving line from water.",
+                "Recover the heaving line from water"
+            ],
+            "grammar_pattern": "b020_recover_equipment_from_location",
+            "hint_beginner": "Recover heaving...",
+            "hint_intermediate": "Recover heaving line from...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_fire_extinguisher_ready_cockpit_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "fire_safety",
+            "source_language": "ru",
+            "source_text": "Огнетушитель готов в кокпите.",
+            "target_language": "en",
+            "target_text": "Fire extinguisher ready in cockpit.",
+            "accepted_answers": [
+                "Fire extinguisher ready in cockpit.",
+                "Fire extinguisher is ready in cockpit"
+            ],
+            "grammar_pattern": "b020_safety_equipment_ready_location",
+            "hint_beginner": "Fire extinguisher...",
+            "hint_intermediate": "Fire extinguisher ready in...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_first_aid_kit_to_deck_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 12,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "medical_safety",
+            "source_language": "ru",
+            "source_text": "Аптечка принесена на палубу.",
+            "target_language": "en",
+            "target_text": "First aid kit brought to deck.",
+            "accepted_answers": [
+                "First aid kit brought to deck.",
+                "First aid kit is brought to deck"
+            ],
+            "grammar_pattern": "b020_equipment_brought_to_location",
+            "hint_beginner": "First aid...",
+            "hint_intermediate": "First aid kit brought...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_emergency_tiller_fitted_tested_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "steering_failure",
+            "source_language": "ru",
+            "source_text": "Аварийный румпель установлен и проверен.",
+            "target_language": "en",
+            "target_text": "Emergency tiller fitted and tested.",
+            "accepted_answers": [
+                "Emergency tiller fitted and tested.",
+                "Emergency tiller is fitted and tested"
+            ],
+            "grammar_pattern": "b020_emergency_equipment_fitted_tested",
+            "hint_beginner": "Emergency tiller...",
+            "hint_intermediate": "Emergency tiller fitted and...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_close_engine_seacock_immediately_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "hull_systems",
+            "source_language": "ru",
+            "source_text": "Немедленно закройте забортный кран двигателя.",
+            "target_language": "en",
+            "target_text": "Close engine seacock immediately.",
+            "accepted_answers": [
+                "Close engine seacock immediately.",
+                "Close the engine seacock immediately"
+            ],
+            "grammar_pattern": "b020_close_system_immediately",
+            "hint_beginner": "Close engine...",
+            "hint_intermediate": "Close engine seacock immediately....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_bilge_alarm_sounding_aft_cabin_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "bilge_monitoring",
+            "source_language": "ru",
+            "source_text": "Сигнализация трюма звучит в кормовой каюте.",
+            "target_language": "en",
+            "target_text": "Bilge alarm sounding in aft cabin.",
+            "accepted_answers": [
+                "Bilge alarm sounding in aft cabin.",
+                "Bilge alarm is sounding in aft cabin"
+            ],
+            "grammar_pattern": "b020_alarm_sounding_location",
+            "hint_beginner": "Bilge alarm...",
+            "hint_intermediate": "Bilge alarm sounding in...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_fuel_shutoff_valve_closed_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "fuel_safety",
+            "source_language": "ru",
+            "source_text": "Топливный отсечной клапан закрыт.",
+            "target_language": "en",
+            "target_text": "Fuel shutoff valve is closed.",
+            "accepted_answers": [
+                "Fuel shutoff valve is closed.",
+                "Fuel shutoff valve closed"
+            ],
+            "grammar_pattern": "b020_valve_status_statement",
+            "hint_beginner": "Fuel shutoff...",
+            "hint_intermediate": "Fuel shutoff valve is...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_keep_foredeck_clear_gear_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "deck_safety",
+            "source_language": "ru",
+            "source_text": "Держите носовую палубу свободной от незакрепленных предметов.",
+            "target_language": "en",
+            "target_text": "Keep foredeck clear of loose gear.",
+            "accepted_answers": [
+                "Keep foredeck clear of loose gear.",
+                "Keep the foredeck clear of loose gear"
+            ],
+            "grammar_pattern": "b020_keep_area_clear_of_hazard",
+            "hint_beginner": "Keep foredeck...",
+            "hint_intermediate": "Keep foredeck clear of...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_count_all_persons_aboard_now_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "persons_count",
+            "source_language": "ru",
+            "source_text": "Сейчас пересчитайте всех людей на борту.",
+            "target_language": "en",
+            "target_text": "Count all persons aboard now.",
+            "accepted_answers": [
+                "Count all persons aboard now.",
+                "Count persons aboard now"
+            ],
+            "grammar_pattern": "b020_count_all_people_now",
+            "hint_beginner": "Count all...",
+            "hint_intermediate": "Count all persons aboard...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_muster_passengers_main_deck_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "muster_and_evacuation",
+            "source_language": "ru",
+            "source_text": "Соберите пассажиров на главной палубе.",
+            "target_language": "en",
+            "target_text": "Muster passengers on main deck.",
+            "accepted_answers": [
+                "Muster passengers on main deck.",
+                "Muster the passengers on main deck"
+            ],
+            "grammar_pattern": "b020_muster_people_location",
+            "hint_beginner": "Muster passengers...",
+            "hint_intermediate": "Muster passengers on main...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_boat_hook_passed_bow_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 12,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "deck_tools",
+            "source_language": "ru",
+            "source_text": "Отпорный крюк передан на нос.",
+            "target_language": "en",
+            "target_text": "Boat hook passed to bow.",
+            "accepted_answers": [
+                "Boat hook passed to bow.",
+                "Boat hook is passed to bow"
+            ],
+            "grammar_pattern": "b020_tool_passed_to_station",
+            "hint_beginner": "Boat hook...",
+            "hint_intermediate": "Boat hook passed to...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_boarding_ladder_not_safe_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "boarding_safety",
+            "source_language": "ru",
+            "source_text": "Посадочный трап небезопасен для использования.",
+            "target_language": "en",
+            "target_text": "Boarding ladder not safe to use.",
+            "accepted_answers": [
+                "Boarding ladder not safe to use.",
+                "Boarding ladder is not safe to use"
+            ],
+            "grammar_pattern": "b020_equipment_not_safe_to_use",
+            "hint_beginner": "Boarding ladder...",
+            "hint_intermediate": "Boarding ladder not safe...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_companionway_clear_evacuation_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "muster_and_evacuation",
+            "source_language": "ru",
+            "source_text": "Сходный люк свободен для эвакуации.",
+            "target_language": "en",
+            "target_text": "Companionway clear for evacuation.",
+            "accepted_answers": [
+                "Companionway clear for evacuation.",
+                "Companionway is clear for evacuation"
+            ],
+            "grammar_pattern": "b020_access_clear_for_evacuation",
+            "hint_beginner": "Companionway clear...",
+            "hint_intermediate": "Companionway clear for evacuation....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_illuminate_pilot_ladder_transfer_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "pilot_transfer",
+            "source_language": "ru",
+            "source_text": "Осветите лоцманский трап перед передачей.",
+            "target_language": "en",
+            "target_text": "Illuminate pilot ladder before transfer.",
+            "accepted_answers": [
+                "Illuminate pilot ladder before transfer.",
+                "Illuminate the pilot ladder before transfer"
+            ],
+            "grammar_pattern": "b020_illuminate_equipment_before_action",
+            "hint_beginner": "Illuminate pilot...",
+            "hint_intermediate": "Illuminate pilot ladder before...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_report_pilot_safely_on_board_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 14,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "pilot_transfer",
+            "source_language": "ru",
+            "source_text": "Доложите: лоцман безопасно на борту.",
+            "target_language": "en",
+            "target_text": "Report pilot safely on board.",
+            "accepted_answers": [
+                "Report pilot safely on board.",
+                "Report the pilot safely on board"
+            ],
+            "grammar_pattern": "b020_report_person_status_on_board",
+            "hint_beginner": "Report pilot...",
+            "hint_intermediate": "Report pilot safely on...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b020_report_one_person_missing_deck_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "safety_equipment_deck_operations_vocabulary",
+            "branch": "mixed_safety_equipment_deck_operations",
+            "module": "persons_count",
+            "source_language": "ru",
+            "source_text": "Доложите: один человек отсутствует на палубе.",
+            "target_language": "en",
+            "target_text": "Report one person missing from deck.",
+            "accepted_answers": [
+                "Report one person missing from deck.",
+                "Report one person is missing from deck"
+            ],
+            "grammar_pattern": "b020_report_missing_person_location",
+            "hint_beginner": "Report one...",
+            "hint_intermediate": "Report one person missing...",
+            "hint_advanced": ""
         }
     ],
     "grammar_patterns": [
@@ -15608,6 +17233,528 @@
             "pattern": "require emergency equipment",
             "examples": [
                 "Require emergency pump."
+            ]
+        },
+        {
+            "id": "seamanship_compound_noun",
+            "pattern": "compound seamanship hazard noun",
+            "examples": [
+                "lee shore"
+            ]
+        },
+        {
+            "id": "directional_side_compound",
+            "pattern": "wind-relative side compound",
+            "examples": [
+                "windward side",
+                "leeward side"
+            ]
+        },
+        {
+            "id": "tide_current_compound",
+            "pattern": "tide/current compound term",
+            "examples": [
+                "tidal stream"
+            ]
+        },
+        {
+            "id": "tide_state_compound",
+            "pattern": "tide state compound term",
+            "examples": [
+                "ebb tide",
+                "flood tide"
+            ]
+        },
+        {
+            "id": "single_navigation_noun",
+            "pattern": "single navigation area noun",
+            "examples": [
+                "narrow fairway"
+            ]
+        },
+        {
+            "id": "harbour_area_compound",
+            "pattern": "harbour manoeuvring area compound",
+            "examples": [
+                "turning basin"
+            ]
+        },
+        {
+            "id": "day_shape_noun_phrase",
+            "pattern": "day shape noun phrase",
+            "examples": [
+                "black ball"
+            ]
+        },
+        {
+            "id": "navigation_light_compound",
+            "pattern": "navigation light compound",
+            "examples": [
+                "anchor light"
+            ]
+        },
+        {
+            "id": "imperative_two_word_instruction",
+            "pattern": "short imperative movement instruction",
+            "examples": [
+                "hold present position"
+            ]
+        },
+        {
+            "id": "mooring_two_word_command",
+            "pattern": "short mooring command",
+            "examples": [
+                "make fast forward"
+            ]
+        },
+        {
+            "id": "mooring_line_preparation_command",
+            "pattern": "prepare mooring lines command",
+            "examples": [
+                "single up lines"
+            ]
+        },
+        {
+            "id": "anchor_handling_command",
+            "pattern": "anchor handling command",
+            "examples": [
+                "heave up port anchor"
+            ]
+        },
+        {
+            "id": "anchor_status_expression",
+            "pattern": "anchor status expression",
+            "examples": [
+                "anchor dragging"
+            ]
+        },
+        {
+            "id": "boarding_safety_status",
+            "pattern": "positive boarding safety status",
+            "examples": [
+                "safe to board"
+            ]
+        },
+        {
+            "id": "boarding_safety_negative_status",
+            "pattern": "negative boarding safety status",
+            "examples": [
+                "not safe to board"
+            ]
+        },
+        {
+            "id": "keep_clear_of_area",
+            "pattern": "keep clear of named area",
+            "examples": [
+                "Keep well clear of the fairway."
+            ]
+        },
+        {
+            "id": "hold_position_outside_area",
+            "pattern": "hold position outside named area",
+            "examples": [
+                "Hold position outside the turning basin."
+            ]
+        },
+        {
+            "id": "single_up_specific_lines",
+            "pattern": "single up specified mooring lines",
+            "examples": [
+                "Single up forward lines."
+            ]
+        },
+        {
+            "id": "heave_up_anchor_when_ready",
+            "pattern": "heave up anchor with readiness condition",
+            "examples": [
+                "Heave up anchor when ready."
+            ]
+        },
+        {
+            "id": "anchor_dragging_direction",
+            "pattern": "anchor dragging with direction",
+            "examples": [
+                "Anchor dragging to leeward."
+            ]
+        },
+        {
+            "id": "tidal_stream_setting_direction",
+            "pattern": "tidal stream setting direction",
+            "examples": [
+                "Tidal stream setting east."
+            ]
+        },
+        {
+            "id": "tide_state_depth_change",
+            "pattern": "tide state with depth trend",
+            "examples": [
+                "Ebb tide, decreasing depth."
+            ]
+        },
+        {
+            "id": "tide_state_current_change",
+            "pattern": "tide state with current trend",
+            "examples": [
+                "Flood tide, increasing current."
+            ]
+        },
+        {
+            "id": "hoist_day_shape_signal",
+            "pattern": "hoist named day shape signal",
+            "examples": [
+                "Hoist black ball signal."
+            ]
+        },
+        {
+            "id": "navigation_light_visibility_status",
+            "pattern": "navigation light visibility status",
+            "examples": [
+                "Anchor light not visible."
+            ]
+        },
+        {
+            "id": "equipment_readiness_expression",
+            "pattern": "equipment readiness expression",
+            "examples": [
+                "engine on standby"
+            ]
+        },
+        {
+            "id": "vessel_handling_noun_phrase",
+            "pattern": "vessel handling noun phrase",
+            "examples": [
+                "steerage way"
+            ]
+        },
+        {
+            "id": "b020_single_safety_equipment_noun",
+            "pattern": "single safety equipment noun",
+            "examples": [
+                "lifebuoy ring"
+            ]
+        },
+        {
+            "id": "b020_line_equipment_compound",
+            "pattern": "line equipment compound",
+            "examples": [
+                "heaving line"
+            ]
+        },
+        {
+            "id": "b020_deck_tool_compound",
+            "pattern": "deck tool compound",
+            "examples": [
+                "boat hook"
+            ]
+        },
+        {
+            "id": "b020_boarding_safety_compound",
+            "pattern": "boarding safety compound",
+            "examples": [
+                "gangway net"
+            ]
+        },
+        {
+            "id": "b020_ladder_type_compound",
+            "pattern": "ladder type compound",
+            "examples": [
+                "pilot ladder",
+                "boarding ladder"
+            ]
+        },
+        {
+            "id": "b020_fire_safety_compound",
+            "pattern": "fire safety equipment compound",
+            "examples": [
+                "portable fire extinguisher"
+            ]
+        },
+        {
+            "id": "b020_medical_safety_compound",
+            "pattern": "medical safety equipment compound",
+            "examples": [
+                "first aid kit"
+            ]
+        },
+        {
+            "id": "b020_emergency_steering_compound",
+            "pattern": "emergency steering compound",
+            "examples": [
+                "emergency tiller"
+            ]
+        },
+        {
+            "id": "b020_alarm_system_compound",
+            "pattern": "alarm system compound",
+            "examples": [
+                "bilge alarm"
+            ]
+        },
+        {
+            "id": "b020_fuel_safety_compound",
+            "pattern": "fuel safety control compound",
+            "examples": [
+                "fuel shutoff"
+            ]
+        },
+        {
+            "id": "b020_hull_fitting_single_noun",
+            "pattern": "hull fitting single noun",
+            "examples": [
+                "seacock"
+            ]
+        },
+        {
+            "id": "b020_vessel_access_single_noun",
+            "pattern": "vessel access single noun",
+            "examples": [
+                "companionway"
+            ]
+        },
+        {
+            "id": "b020_deck_area_single_noun",
+            "pattern": "deck area single noun",
+            "examples": [
+                "foredeck"
+            ]
+        },
+        {
+            "id": "b020_prepare_equipment_command",
+            "pattern": "prepare/rig equipment command",
+            "examples": [
+                "rig pilot ladder",
+                "prepare heaving line"
+            ]
+        },
+        {
+            "id": "b020_recover_equipment_command",
+            "pattern": "recover equipment command",
+            "examples": [
+                "recover lifebuoy"
+            ]
+        },
+        {
+            "id": "b020_secure_access_command",
+            "pattern": "secure access command",
+            "examples": [
+                "secure gangway"
+            ]
+        },
+        {
+            "id": "b020_clear_area_command",
+            "pattern": "clear area command",
+            "examples": [
+                "clear foredeck"
+            ]
+        },
+        {
+            "id": "b020_close_system_command",
+            "pattern": "close vessel system command",
+            "examples": [
+                "close seacock"
+            ]
+        },
+        {
+            "id": "b020_check_system_command",
+            "pattern": "check system command",
+            "examples": [
+                "check bilge alarm"
+            ]
+        },
+        {
+            "id": "b020_isolate_system_command",
+            "pattern": "isolate system command",
+            "examples": [
+                "isolate fuel supply"
+            ]
+        },
+        {
+            "id": "b020_fit_emergency_equipment_command",
+            "pattern": "fit emergency equipment command",
+            "examples": [
+                "fit emergency tiller"
+            ]
+        },
+        {
+            "id": "b020_muster_location_command",
+            "pattern": "muster location command",
+            "examples": [
+                "muster on deck"
+            ]
+        },
+        {
+            "id": "b020_count_people_command",
+            "pattern": "count persons command",
+            "examples": [
+                "count persons aboard"
+            ]
+        },
+        {
+            "id": "b020_pass_tool_command",
+            "pattern": "pass tool command",
+            "examples": [
+                "pass boat hook"
+            ]
+        },
+        {
+            "id": "b020_test_safety_equipment_command",
+            "pattern": "test safety equipment command",
+            "examples": [
+                "test fire extinguisher"
+            ]
+        },
+        {
+            "id": "b020_bring_safety_equipment_command",
+            "pattern": "bring safety equipment command",
+            "examples": [
+                "bring first aid kit"
+            ]
+        },
+        {
+            "id": "b020_illuminate_equipment_command",
+            "pattern": "illuminate equipment command",
+            "examples": [
+                "illuminate pilot ladder"
+            ]
+        },
+        {
+            "id": "b020_rig_ladder_side_instruction",
+            "pattern": "rig ladder on named side instruction",
+            "examples": [
+                "Rig pilot ladder on port side."
+            ]
+        },
+        {
+            "id": "b020_equipment_ready_for_action",
+            "pattern": "equipment ready for action statement",
+            "examples": [
+                "Pilot ladder ready for boarding."
+            ]
+        },
+        {
+            "id": "b020_secure_access_with_equipment",
+            "pattern": "secure access with safety equipment",
+            "examples": [
+                "Secure gangway with safety net."
+            ]
+        },
+        {
+            "id": "b020_equipment_deployed_side",
+            "pattern": "equipment deployed on vessel side",
+            "examples": [
+                "Lifebuoy deployed on starboard side."
+            ]
+        },
+        {
+            "id": "b020_recover_equipment_from_location",
+            "pattern": "recover equipment from location",
+            "examples": [
+                "Recover heaving line from water."
+            ]
+        },
+        {
+            "id": "b020_safety_equipment_ready_location",
+            "pattern": "safety equipment ready in location",
+            "examples": [
+                "Fire extinguisher ready in cockpit."
+            ]
+        },
+        {
+            "id": "b020_equipment_brought_to_location",
+            "pattern": "equipment brought to location",
+            "examples": [
+                "First aid kit brought to deck."
+            ]
+        },
+        {
+            "id": "b020_emergency_equipment_fitted_tested",
+            "pattern": "emergency equipment fitted and tested",
+            "examples": [
+                "Emergency tiller fitted and tested."
+            ]
+        },
+        {
+            "id": "b020_close_system_immediately",
+            "pattern": "close system immediately instruction",
+            "examples": [
+                "Close engine seacock immediately."
+            ]
+        },
+        {
+            "id": "b020_alarm_sounding_location",
+            "pattern": "alarm sounding in location",
+            "examples": [
+                "Bilge alarm sounding in aft cabin."
+            ]
+        },
+        {
+            "id": "b020_valve_status_statement",
+            "pattern": "valve status statement",
+            "examples": [
+                "Fuel shutoff valve is closed."
+            ]
+        },
+        {
+            "id": "b020_keep_area_clear_of_hazard",
+            "pattern": "keep area clear of hazard",
+            "examples": [
+                "Keep foredeck clear of loose gear."
+            ]
+        },
+        {
+            "id": "b020_count_all_people_now",
+            "pattern": "count all people now instruction",
+            "examples": [
+                "Count all persons aboard now."
+            ]
+        },
+        {
+            "id": "b020_muster_people_location",
+            "pattern": "muster people at location",
+            "examples": [
+                "Muster passengers on main deck."
+            ]
+        },
+        {
+            "id": "b020_tool_passed_to_station",
+            "pattern": "tool passed to station statement",
+            "examples": [
+                "Boat hook passed to bow."
+            ]
+        },
+        {
+            "id": "b020_equipment_not_safe_to_use",
+            "pattern": "equipment not safe to use status",
+            "examples": [
+                "Boarding ladder not safe to use."
+            ]
+        },
+        {
+            "id": "b020_access_clear_for_evacuation",
+            "pattern": "access clear for evacuation status",
+            "examples": [
+                "Companionway clear for evacuation."
+            ]
+        },
+        {
+            "id": "b020_illuminate_equipment_before_action",
+            "pattern": "illuminate equipment before action",
+            "examples": [
+                "Illuminate pilot ladder before transfer."
+            ]
+        },
+        {
+            "id": "b020_report_person_status_on_board",
+            "pattern": "report person safely on board",
+            "examples": [
+                "Report pilot safely on board."
+            ]
+        },
+        {
+            "id": "b020_report_missing_person_location",
+            "pattern": "report missing person from location",
+            "examples": [
+                "Report one person missing from deck."
             ]
         }
     ],

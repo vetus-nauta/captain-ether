@@ -1,7 +1,7 @@
 {
     "version": 1,
     "batch_id": "batch-020-safety-equipment-deck-operations-vocabulary",
-    "status": "linguist_reviewed",
+    "status": "merged",
     "date": "2026-06-03",
     "branch": "mixed_safety_equipment_deck_operations",
     "scope": "Long M4 vocabulary expansion draft. Adds safety equipment, pilot/boarding transfer, deck operations, hull/fuel controls, bilge monitoring, muster/person-count and evacuation vocabulary. Draft only: do not merge into starter or deploy to production in this sprint.",
