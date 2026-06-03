@@ -1,0 +1,1934 @@
+{
+    "version": 1,
+    "batch_id": "batch-027-sar-casualty-transfer-reinforcement",
+    "status": "draft",
+    "date": "2026-06-03",
+    "branch": "distress_mayday",
+    "scope": "M5 Batch 027 draft. Adds SAR coordination and casualty-transfer reinforcement: casualty counts, medical transfer, helicopter winching, on-scene coordinator role, and relay updates. Draft only; not merged into starter and not deployed.",
+    "items": [
+        {
+            "id": "word_b027_on_scene_coordinator_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "distress_mayday",
+            "module": "on-scene_coordinator",
+            "source_language": "ru",
+            "source_text": "Координатор на месте.",
+            "target_language": "en",
+            "target_text": "on-scene coordinator",
+            "accepted_answers": [
+                "on-scene coordinator"
+            ],
+            "grammar_pattern": "b027_on_scene_coordinator_pattern",
+            "hint_beginner": "on-scene coordinator...",
+            "hint_intermediate": "on-scene coordinator...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "on-scene coordinator"
+                ],
+                "should_reject": [
+                    "coast station coordinator",
+                    "medical coordinator",
+                    "rescue helicopter"
+                ],
+                "dangerous_minimal_pairs": [
+                    "On-scene coordinator is a SAR role, not coast station, medical coordinator, or helicopter."
+                ],
+                "linguist_note": "On-scene coordinator is a SAR role, not coast station, medical coordinator, or helicopter."
+            }
+        },
+        {
+            "id": "expr_b027_casualty_transfer_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "emergency_medical_response",
+            "module": "casualty_transfer",
+            "source_language": "ru",
+            "source_text": "Передача пострадавшего.",
+            "target_language": "en",
+            "target_text": "casualty transfer",
+            "accepted_answers": [
+                "casualty transfer"
+            ],
+            "grammar_pattern": "b027_casualty_transfer_pattern",
+            "hint_beginner": "casualty transfer...",
+            "hint_intermediate": "casualty transfer...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "casualty transfer"
+                ],
+                "should_reject": [
+                    "casualty count",
+                    "cargo transfer",
+                    "crew transfer"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Casualty transfer must not become count, cargo, or crew transfer."
+                ],
+                "linguist_note": "Casualty transfer must not become count, cargo, or crew transfer."
+            }
+        },
+        {
+            "id": "expr_b027_prepare_stretcher_transfer_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "emergency_medical_response",
+            "module": "casualty_transfer",
+            "source_language": "ru",
+            "source_text": "Подготовить передачу на носилках.",
+            "target_language": "en",
+            "target_text": "prepare stretcher transfer",
+            "accepted_answers": [
+                "prepare stretcher transfer"
+            ],
+            "grammar_pattern": "b027_prepare_stretcher_transfer_pattern",
+            "hint_beginner": "prepare stretcher...",
+            "hint_intermediate": "prepare stretcher transfer...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "prepare stretcher transfer"
+                ],
+                "should_reject": [
+                    "prepare basket transfer",
+                    "prepare body transfer",
+                    "cancel stretcher transfer"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Stretcher transfer must not become basket/body transfer or cancellation."
+                ],
+                "linguist_note": "Stretcher transfer must not become basket/body transfer or cancellation."
+            }
+        },
+        {
+            "id": "expr_b027_request_medical_evacuaton_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "emergency_medical_response",
+            "module": "casualty_transfer",
+            "source_language": "ru",
+            "source_text": "Запросить медицинскую эвакуацию.",
+            "target_language": "en",
+            "target_text": "request medical evacuation",
+            "accepted_answers": [
+                "request medical evacuation"
+            ],
+            "grammar_pattern": "b027_request_medical_evacuaton_pattern",
+            "hint_beginner": "request medical...",
+            "hint_intermediate": "request medical evacuation...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "request medical evacuation"
+                ],
+                "should_reject": [
+                    "request medical advice",
+                    "cancel medical evacuation",
+                    "request crew evacuation"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Medical evacuation must not become advice, cancellation, or crew evacuation."
+                ],
+                "linguist_note": "Medical evacuation must not become advice, cancellation, or crew evacuation."
+            }
+        },
+        {
+            "id": "expr_b027_helicopter_winching_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "distress_mayday",
+            "module": "helicopter_winching",
+            "source_language": "ru",
+            "source_text": "Подъем вертолетной лебедкой.",
+            "target_language": "en",
+            "target_text": "helicopter winching",
+            "accepted_answers": [
+                "helicopter winching"
+            ],
+            "grammar_pattern": "b027_helicopter_winching_pattern",
+            "hint_beginner": "helicopter winching...",
+            "hint_intermediate": "helicopter winching...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "helicopter winching"
+                ],
+                "should_reject": [
+                    "helicopter landing",
+                    "boat winching",
+                    "helicopter search"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Helicopter winching must not become landing, boat winching, or search."
+                ],
+                "linguist_note": "Helicopter winching must not become landing, boat winching, or search."
+            }
+        },
+        {
+            "id": "expr_b027_winchman_ready_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "distress_mayday",
+            "module": "helicopter_winching",
+            "source_language": "ru",
+            "source_text": "Лебедчик готов.",
+            "target_language": "en",
+            "target_text": "winchman ready",
+            "accepted_answers": [
+                "winchman ready"
+            ],
+            "grammar_pattern": "b027_winchman_ready_pattern",
+            "hint_beginner": "winchman ready...",
+            "hint_intermediate": "winchman ready...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "winchman ready"
+                ],
+                "should_reject": [
+                    "winchman not ready",
+                    "stretcher ready",
+                    "pilot ready"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Winchman readiness must not become not ready, stretcher, or pilot readiness."
+                ],
+                "linguist_note": "Winchman readiness must not become not ready, stretcher, or pilot readiness."
+            }
+        },
+        {
+            "id": "expr_b027_on_scene_coordinator_assigned_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "distress_mayday",
+            "module": "on-scene_coordinator",
+            "source_language": "ru",
+            "source_text": "Координатор на месте назначен.",
+            "target_language": "en",
+            "target_text": "on-scene coordinator assigned",
+            "accepted_answers": [
+                "on-scene coordinator assigned"
+            ],
+            "grammar_pattern": "b027_on_scene_coordinator_assigned_pattern",
+            "hint_beginner": "on-scene coordinator...",
+            "hint_intermediate": "on-scene coordinator assigned...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "on-scene coordinator assigned"
+                ],
+                "should_reject": [
+                    "on-scene coordinator relieved",
+                    "medical coordinator assigned",
+                    "rescue unit assigned"
+                ],
+                "dangerous_minimal_pairs": [
+                    "OSC assigned must not become relieved, medical coordinator, or generic rescue unit."
+                ],
+                "linguist_note": "OSC assigned must not become relieved, medical coordinator, or generic rescue unit."
+            }
+        },
+        {
+            "id": "expr_b027_relay_casualty_update_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "urgency_panpan",
+            "module": "relay_update",
+            "source_language": "ru",
+            "source_text": "Передать обновление о пострадавшем.",
+            "target_language": "en",
+            "target_text": "relay casualty update",
+            "accepted_answers": [
+                "relay casualty update"
+            ],
+            "grammar_pattern": "b027_relay_casualty_update_pattern",
+            "hint_beginner": "relay casualty...",
+            "hint_intermediate": "relay casualty update...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "relay casualty update"
+                ],
+                "should_reject": [
+                    "relay weather update",
+                    "relay casualty count cancelled",
+                    "send final report"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Casualty update must not become weather update, cancellation, or final report."
+                ],
+                "linguist_note": "Casualty update must not become weather update, cancellation, or final report."
+            }
+        },
+        {
+            "id": "expr_b027_casualty_count_three_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "emergency_medical_response",
+            "module": "casualty_transfer",
+            "source_language": "ru",
+            "source_text": "Три пострадавших.",
+            "target_language": "en",
+            "target_text": "casualty count three",
+            "accepted_answers": [
+                "casualty count three"
+            ],
+            "grammar_pattern": "b027_casualty_count_three_pattern",
+            "hint_beginner": "casualty count...",
+            "hint_intermediate": "casualty count three...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "casualty count three"
+                ],
+                "should_reject": [
+                    "casualty count two",
+                    "crew count three",
+                    "casualty count unknown"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Casualty count three must not become two, crew count, or unknown."
+                ],
+                "linguist_note": "Casualty count three must not become two, crew count, or unknown."
+            }
+        },
+        {
+            "id": "phrase_b027_survivor_in_water_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "distress_mayday",
+            "module": "casualty_transfer",
+            "source_language": "ru",
+            "source_text": "Пострадавший в воде.",
+            "target_language": "en",
+            "target_text": "Survivor in water.",
+            "accepted_answers": [
+                "Survivor in water."
+            ],
+            "grammar_pattern": "b027_survivor_in_water_pattern",
+            "hint_beginner": "Survivor in...",
+            "hint_intermediate": "Survivor in water....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Survivor in water."
+                ],
+                "should_reject": [
+                    "Survivor on deck",
+                    "Body in water",
+                    "Crew in water"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Survivor/person status and in-water location must stay exact."
+                ],
+                "linguist_note": "Survivor/person status and in-water location must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_two_casualties_on_board_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "emergency_medical_response",
+            "module": "casualty_transfer",
+            "source_language": "ru",
+            "source_text": "Два пострадавших на борту.",
+            "target_language": "en",
+            "target_text": "Two casualties on board.",
+            "accepted_answers": [
+                "Two casualties on board."
+            ],
+            "grammar_pattern": "b027_two_casualties_on_board_pattern",
+            "hint_beginner": "Two casualties...",
+            "hint_intermediate": "Two casualties on board....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Two casualties on board."
+                ],
+                "should_reject": [
+                    "Three casualties on board",
+                    "Two crew on board",
+                    "Two casualties overboard"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Casualty count and onboard/overboard location must stay exact."
+                ],
+                "linguist_note": "Casualty count and onboard/overboard location must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_three_casualties_need_transfer_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "emergency_medical_response",
+            "module": "casualty_transfer",
+            "source_language": "ru",
+            "source_text": "Трем пострадавшим требуется передача.",
+            "target_language": "en",
+            "target_text": "Three casualties require transfer.",
+            "accepted_answers": [
+                "Three casualties require transfer."
+            ],
+            "grammar_pattern": "b027_three_casualties_need_transfer_pattern",
+            "hint_beginner": "Three casualties...",
+            "hint_intermediate": "Three casualties require transfer....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Three casualties require transfer."
+                ],
+                "should_reject": [
+                    "Two casualties require transfer",
+                    "Three casualties require treatment only",
+                    "Three crew require transfer"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Casualty count and transfer/treatment distinction must stay exact."
+                ],
+                "linguist_note": "Casualty count and transfer/treatment distinction must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_casualty_one_unconscious_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "emergency_medical_response",
+            "module": "casualty_transfer",
+            "source_language": "ru",
+            "source_text": "Пострадавший номер один без сознания.",
+            "target_language": "en",
+            "target_text": "Casualty one is unconscious.",
+            "accepted_answers": [
+                "Casualty one is unconscious."
+            ],
+            "grammar_pattern": "b027_casualty_one_unconscious_pattern",
+            "hint_beginner": "Casualty one...",
+            "hint_intermediate": "Casualty one is unconscious....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Casualty one is unconscious."
+                ],
+                "should_reject": [
+                    "Casualty two is unconscious",
+                    "Casualty one is conscious",
+                    "Crew one is unconscious"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Casualty number and conscious/unconscious status must stay exact."
+                ],
+                "linguist_note": "Casualty number and conscious/unconscious status must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_casualty_two_conscious_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "emergency_medical_response",
+            "module": "casualty_transfer",
+            "source_language": "ru",
+            "source_text": "Пострадавший номер два в сознании.",
+            "target_language": "en",
+            "target_text": "Casualty two is conscious.",
+            "accepted_answers": [
+                "Casualty two is conscious."
+            ],
+            "grammar_pattern": "b027_casualty_two_conscious_pattern",
+            "hint_beginner": "Casualty two...",
+            "hint_intermediate": "Casualty two is conscious....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Casualty two is conscious."
+                ],
+                "should_reject": [
+                    "Casualty two is unconscious",
+                    "Casualty one is conscious",
+                    "Crew two is conscious"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Casualty number and conscious/unconscious status must stay exact."
+                ],
+                "linguist_note": "Casualty number and conscious/unconscious status must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_prepare_winch_transfer_stretcher_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "distress_mayday",
+            "module": "helicopter_winching",
+            "source_language": "ru",
+            "source_text": "Подготовить передачу носилок лебедкой.",
+            "target_language": "en",
+            "target_text": "Prepare winch transfer of stretcher.",
+            "accepted_answers": [
+                "Prepare winch transfer of stretcher."
+            ],
+            "grammar_pattern": "b027_prepare_winch_transfer_stretcher_pattern",
+            "hint_beginner": "Prepare winch...",
+            "hint_intermediate": "Prepare winch transfer of...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Prepare winch transfer of stretcher."
+                ],
+                "should_reject": [
+                    "Prepare boat transfer of stretcher",
+                    "Prepare winch transfer of basket",
+                    "Cancel winch transfer of stretcher"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Winch/boat, stretcher/basket, and prepare/cancel boundaries must stay exact."
+                ],
+                "linguist_note": "Winch/boat, stretcher/basket, and prepare/cancel boundaries must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_helicopter_overhead_in_five_minutes_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "distress_mayday",
+            "module": "helicopter_winching",
+            "source_language": "ru",
+            "source_text": "Вертолет над вами через пять минут.",
+            "target_language": "en",
+            "target_text": "Helicopter overhead in five minutes.",
+            "accepted_answers": [
+                "Helicopter overhead in five minutes."
+            ],
+            "grammar_pattern": "b027_helicopter_overhead_in_five_minutes_pattern",
+            "hint_beginner": "Helicopter overhead...",
+            "hint_intermediate": "Helicopter overhead in five...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Helicopter overhead in five minutes."
+                ],
+                "should_reject": [
+                    "Helicopter overhead in ten minutes",
+                    "Rescue boat overhead in five minutes",
+                    "Helicopter landing in five minutes"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Unit type, overhead/landing, and timing must stay exact."
+                ],
+                "linguist_note": "Unit type, overhead/landing, and timing must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_keep_deck_clear_for_winching_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "distress_mayday",
+            "module": "helicopter_winching",
+            "source_language": "ru",
+            "source_text": "Держать палубу свободной для подъема лебедкой.",
+            "target_language": "en",
+            "target_text": "Keep deck clear for winching.",
+            "accepted_answers": [
+                "Keep deck clear for winching."
+            ],
+            "grammar_pattern": "b027_keep_deck_clear_for_winching_pattern",
+            "hint_beginner": "Keep deck...",
+            "hint_intermediate": "Keep deck clear for...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Keep deck clear for winching."
+                ],
+                "should_reject": [
+                    "Keep deck clear for landing",
+                    "Keep bridge clear for winching",
+                    "Clear deck after winching"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Deck location and winching/landing purpose must stay exact."
+                ],
+                "linguist_note": "Deck location and winching/landing purpose must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_do_not_fire_flare_during_winching_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "distress_mayday",
+            "module": "helicopter_winching",
+            "source_language": "ru",
+            "source_text": "Не запускать ракету во время подъема лебедкой.",
+            "target_language": "en",
+            "target_text": "Do not fire flare during winching.",
+            "accepted_answers": [
+                "Do not fire flare during winching."
+            ],
+            "grammar_pattern": "b027_do_not_fire_flare_during_winching_pattern",
+            "hint_beginner": "Do not...",
+            "hint_intermediate": "Do not fire flare...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Do not fire flare during winching."
+                ],
+                "should_reject": [
+                    "Fire flare during winching",
+                    "Do not fire flare after winching",
+                    "Do not switch on light during winching"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Do-not-fire polarity and during/after winching timing must stay exact."
+                ],
+                "linguist_note": "Do-not-fire polarity and during/after winching timing must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_osc_assumes_coordination_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "distress_mayday",
+            "module": "on-scene_coordinator",
+            "source_language": "ru",
+            "source_text": "Координатор на месте принимает координацию.",
+            "target_language": "en",
+            "target_text": "On-scene coordinator assumes coordination.",
+            "accepted_answers": [
+                "On-scene coordinator assumes coordination."
+            ],
+            "grammar_pattern": "b027_osc_assumes_coordination_pattern",
+            "hint_beginner": "On-scene coordinator...",
+            "hint_intermediate": "On-scene coordinator assumes coordination....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "On-scene coordinator assumes coordination."
+                ],
+                "should_reject": [
+                    "On-scene coordinator transfers coordination",
+                    "Coast station assumes coordination",
+                    "Medical officer assumes coordination"
+                ],
+                "dangerous_minimal_pairs": [
+                    "OSC role and assumes/transfers coordination must stay exact."
+                ],
+                "linguist_note": "OSC role and assumes/transfers coordination must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_osc_relieved_by_rescue_unit_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "distress_mayday",
+            "module": "on-scene_coordinator",
+            "source_language": "ru",
+            "source_text": "Координатор на месте сменен спасательной единицей.",
+            "target_language": "en",
+            "target_text": "On-scene coordinator relieved by rescue unit.",
+            "accepted_answers": [
+                "On-scene coordinator relieved by rescue unit."
+            ],
+            "grammar_pattern": "b027_osc_relieved_by_rescue_unit_pattern",
+            "hint_beginner": "On-scene coordinator...",
+            "hint_intermediate": "On-scene coordinator relieved by...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "On-scene coordinator relieved by rescue unit."
+                ],
+                "should_reject": [
+                    "On-scene coordinator assigned by rescue unit",
+                    "Medical coordinator relieved by rescue unit",
+                    "On-scene coordinator relieved by helicopter"
+                ],
+                "dangerous_minimal_pairs": [
+                    "OSC relieved/assigned and relieving unit must stay exact."
+                ],
+                "linguist_note": "OSC relieved/assigned and relieving unit must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_report_to_osc_every_ten_minutes_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "distress_mayday",
+            "module": "on-scene_coordinator",
+            "source_language": "ru",
+            "source_text": "Докладывать координатору каждые десять минут.",
+            "target_language": "en",
+            "target_text": "Report to on-scene coordinator every ten minutes.",
+            "accepted_answers": [
+                "Report to on-scene coordinator every ten minutes."
+            ],
+            "grammar_pattern": "b027_report_to_osc_every_ten_minutes_pattern",
+            "hint_beginner": "Report to...",
+            "hint_intermediate": "Report to on-scene coordinator...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Report to on-scene coordinator every ten minutes."
+                ],
+                "should_reject": [
+                    "Report to on-scene coordinator every five minutes",
+                    "Report to coast station every ten minutes",
+                    "Report from on-scene coordinator every ten minutes"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Recipient and report interval must stay exact."
+                ],
+                "linguist_note": "Recipient and report interval must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_relay_update_casualty_count_three_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "urgency_panpan",
+            "module": "relay_update",
+            "source_language": "ru",
+            "source_text": "Передать обновление: три пострадавших.",
+            "target_language": "en",
+            "target_text": "Relay update: casualty count three.",
+            "accepted_answers": [
+                "Relay update: casualty count three."
+            ],
+            "grammar_pattern": "b027_relay_update_casualty_count_three_pattern",
+            "hint_beginner": "Relay update:...",
+            "hint_intermediate": "Relay update: casualty count...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Relay update: casualty count three."
+                ],
+                "should_reject": [
+                    "Relay update casualty count two",
+                    "Relay weather update casualty count three",
+                    "Relay update crew count three"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Relay content and casualty count must stay exact."
+                ],
+                "linguist_note": "Relay content and casualty count must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_relay_update_helicopter_eta_15_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "urgency_panpan",
+            "module": "relay_update",
+            "source_language": "ru",
+            "source_text": "Передать обновление: прибытие вертолета через один пять минут.",
+            "target_language": "en",
+            "target_text": "Relay update: helicopter ETA one five minutes.",
+            "accepted_answers": [
+                "Relay update: helicopter ETA one five minutes."
+            ],
+            "grammar_pattern": "b027_relay_update_helicopter_eta_15_pattern",
+            "hint_beginner": "Relay update:...",
+            "hint_intermediate": "Relay update: helicopter ETA...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Relay update: helicopter ETA one five minutes."
+                ],
+                "should_reject": [
+                    "Relay update helicopter ETA five minutes",
+                    "Relay update rescue boat ETA one five minutes",
+                    "Relay update helicopter cancelled"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Unit type, ETA number, and cancellation boundary must stay exact."
+                ],
+                "linguist_note": "Unit type, ETA number, and cancellation boundary must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_relay_update_transfer_completed_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "urgency_panpan",
+            "module": "relay_update",
+            "source_language": "ru",
+            "source_text": "Передать обновление: передача завершена.",
+            "target_language": "en",
+            "target_text": "Relay update: transfer completed.",
+            "accepted_answers": [
+                "Relay update: transfer completed."
+            ],
+            "grammar_pattern": "b027_relay_update_transfer_completed_pattern",
+            "hint_beginner": "Relay update:...",
+            "hint_intermediate": "Relay update: transfer completed....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Relay update: transfer completed."
+                ],
+                "should_reject": [
+                    "Relay update transfer pending",
+                    "Relay update transfer cancelled",
+                    "Relay update treatment completed"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Transfer completed/pending/cancelled and treatment/transfer distinction must stay exact."
+                ],
+                "linguist_note": "Transfer completed/pending/cancelled and treatment/transfer distinction must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_medical_team_ready_for_transfer_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "emergency_medical_response",
+            "module": "casualty_transfer",
+            "source_language": "ru",
+            "source_text": "Медицинская группа готова к передаче.",
+            "target_language": "en",
+            "target_text": "Medical team ready for transfer.",
+            "accepted_answers": [
+                "Medical team ready for transfer."
+            ],
+            "grammar_pattern": "b027_medical_team_ready_for_transfer_pattern",
+            "hint_beginner": "Medical team...",
+            "hint_intermediate": "Medical team ready for...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Medical team ready for transfer."
+                ],
+                "should_reject": [
+                    "Medical team not ready for transfer",
+                    "Deck team ready for transfer",
+                    "Medical team ready for treatment only"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Medical team readiness and transfer purpose must stay exact."
+                ],
+                "linguist_note": "Medical team readiness and transfer purpose must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_transfer_casualty_to_rescue_boat_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "emergency_medical_response",
+            "module": "casualty_transfer",
+            "source_language": "ru",
+            "source_text": "Передать пострадавшего на спасательную шлюпку.",
+            "target_language": "en",
+            "target_text": "Transfer casualty to rescue boat.",
+            "accepted_answers": [
+                "Transfer casualty to rescue boat."
+            ],
+            "grammar_pattern": "b027_transfer_casualty_to_rescue_boat_pattern",
+            "hint_beginner": "Transfer casualty...",
+            "hint_intermediate": "Transfer casualty to rescue...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Transfer casualty to rescue boat."
+                ],
+                "should_reject": [
+                    "Transfer casualty to helicopter",
+                    "Transfer crew to rescue boat",
+                    "Recover casualty from rescue boat"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Casualty/crew and rescue boat/helicopter direction must stay exact."
+                ],
+                "linguist_note": "Casualty/crew and rescue boat/helicopter direction must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_transfer_casualty_to_helicopter_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "distress_mayday",
+            "module": "helicopter_winching",
+            "source_language": "ru",
+            "source_text": "Передать пострадавшего на вертолет.",
+            "target_language": "en",
+            "target_text": "Transfer casualty to helicopter.",
+            "accepted_answers": [
+                "Transfer casualty to helicopter."
+            ],
+            "grammar_pattern": "b027_transfer_casualty_to_helicopter_pattern",
+            "hint_beginner": "Transfer casualty...",
+            "hint_intermediate": "Transfer casualty to helicopter....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Transfer casualty to helicopter."
+                ],
+                "should_reject": [
+                    "Transfer casualty to rescue boat",
+                    "Transfer crew to helicopter",
+                    "Recover casualty from helicopter"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Casualty/crew and helicopter/rescue boat direction must stay exact."
+                ],
+                "linguist_note": "Casualty/crew and helicopter/rescue boat direction must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_stretcher_lowered_to_deck_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "distress_mayday",
+            "module": "helicopter_winching",
+            "source_language": "ru",
+            "source_text": "Носилки спущены на палубу.",
+            "target_language": "en",
+            "target_text": "Stretcher lowered to deck.",
+            "accepted_answers": [
+                "Stretcher lowered to deck."
+            ],
+            "grammar_pattern": "b027_stretcher_lowered_to_deck_pattern",
+            "hint_beginner": "Stretcher lowered...",
+            "hint_intermediate": "Stretcher lowered to deck....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Stretcher lowered to deck."
+                ],
+                "should_reject": [
+                    "Stretcher lifted from deck",
+                    "Basket lowered to deck",
+                    "Stretcher lowered to water"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Stretcher/basket and lowered/lifted location must stay exact."
+                ],
+                "linguist_note": "Stretcher/basket and lowered/lifted location must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_basket_lift_started_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "distress_mayday",
+            "module": "helicopter_winching",
+            "source_language": "ru",
+            "source_text": "Подъем корзины начат.",
+            "target_language": "en",
+            "target_text": "Basket lift started.",
+            "accepted_answers": [
+                "Basket lift started."
+            ],
+            "grammar_pattern": "b027_basket_lift_started_pattern",
+            "hint_beginner": "Basket lift...",
+            "hint_intermediate": "Basket lift started....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Basket lift started."
+                ],
+                "should_reject": [
+                    "Basket lift completed",
+                    "Stretcher lift started",
+                    "Basket lowering started"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Basket/stretcher and started/completed/lowering status must stay exact."
+                ],
+                "linguist_note": "Basket/stretcher and started/completed/lowering status must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_casualty_packaged_for_hoist_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "emergency_medical_response",
+            "module": "casualty_transfer",
+            "source_language": "ru",
+            "source_text": "Пострадавший подготовлен к подъему.",
+            "target_language": "en",
+            "target_text": "Casualty packaged for hoist.",
+            "accepted_answers": [
+                "Casualty packaged for hoist."
+            ],
+            "grammar_pattern": "b027_casualty_packaged_for_hoist_pattern",
+            "hint_beginner": "Casualty packaged...",
+            "hint_intermediate": "Casualty packaged for hoist....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Casualty packaged for hoist."
+                ],
+                "should_reject": [
+                    "Casualty packaged for treatment",
+                    "Crew packaged for hoist",
+                    "Casualty not packaged for hoist"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Casualty/crew and hoist/treatment readiness must stay exact."
+                ],
+                "linguist_note": "Casualty/crew and hoist/treatment readiness must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_do_not_move_casualty_before_medic_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "emergency_medical_response",
+            "module": "casualty_transfer",
+            "source_language": "ru",
+            "source_text": "Не перемещать пострадавшего до медика.",
+            "target_language": "en",
+            "target_text": "Do not move casualty before medic arrives.",
+            "accepted_answers": [
+                "Do not move casualty before medic arrives."
+            ],
+            "grammar_pattern": "b027_do_not_move_casualty_before_medic_pattern",
+            "hint_beginner": "Do not...",
+            "hint_intermediate": "Do not move casualty...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Do not move casualty before medic arrives."
+                ],
+                "should_reject": [
+                    "Move casualty before medic arrives",
+                    "Do not move casualty after medic arrives",
+                    "Do not move crew before medic arrives"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Do-not-move polarity and before/after medic timing must stay exact."
+                ],
+                "linguist_note": "Do-not-move polarity and before/after medic timing must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_casualty_has_head_injury_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "emergency_medical_response",
+            "module": "casualty_transfer",
+            "source_language": "ru",
+            "source_text": "У пострадавшего травма головы.",
+            "target_language": "en",
+            "target_text": "Casualty has head injury.",
+            "accepted_answers": [
+                "Casualty has head injury."
+            ],
+            "grammar_pattern": "b027_casualty_has_head_injury_pattern",
+            "hint_beginner": "Casualty has...",
+            "hint_intermediate": "Casualty has head injury....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Casualty has head injury."
+                ],
+                "should_reject": [
+                    "Casualty has leg injury",
+                    "Crew has head injury",
+                    "Casualty has no injury"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Injury location and casualty/crew status must stay exact."
+                ],
+                "linguist_note": "Injury location and casualty/crew status must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_casualty_bleeding_controlled_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "emergency_medical_response",
+            "module": "casualty_transfer",
+            "source_language": "ru",
+            "source_text": "Кровотечение у пострадавшего остановлено.",
+            "target_language": "en",
+            "target_text": "Casualty bleeding controlled.",
+            "accepted_answers": [
+                "Casualty bleeding controlled."
+            ],
+            "grammar_pattern": "b027_casualty_bleeding_controlled_pattern",
+            "hint_beginner": "Casualty bleeding...",
+            "hint_intermediate": "Casualty bleeding controlled....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Casualty bleeding controlled."
+                ],
+                "should_reject": [
+                    "Casualty bleeding not controlled",
+                    "Casualty breathing controlled",
+                    "Crew bleeding controlled"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Bleeding controlled/not controlled and bleeding/breathing terms must stay exact."
+                ],
+                "linguist_note": "Bleeding controlled/not controlled and bleeding/breathing terms must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_rescue_unit_takes_over_search_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "distress_mayday",
+            "module": "on-scene_coordinator",
+            "source_language": "ru",
+            "source_text": "Спасательная единица принимает поиск.",
+            "target_language": "en",
+            "target_text": "Rescue unit takes over search.",
+            "accepted_answers": [
+                "Rescue unit takes over search."
+            ],
+            "grammar_pattern": "b027_rescue_unit_takes_over_search_pattern",
+            "hint_beginner": "Rescue unit...",
+            "hint_intermediate": "Rescue unit takes over...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Rescue unit takes over search."
+                ],
+                "should_reject": [
+                    "Rescue unit takes over medical transfer",
+                    "On-scene coordinator takes over search",
+                    "Rescue unit cancels search"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Rescue unit role and search/transfer/cancel boundaries must stay exact."
+                ],
+                "linguist_note": "Rescue unit role and search/transfer/cancel boundaries must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b027_final_relay_casualty_ashore_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "branch": "urgency_panpan",
+            "module": "relay_update",
+            "source_language": "ru",
+            "source_text": "Финальная передача: пострадавший на берегу.",
+            "target_language": "en",
+            "target_text": "Final relay: casualty ashore.",
+            "accepted_answers": [
+                "Final relay: casualty ashore."
+            ],
+            "grammar_pattern": "b027_final_relay_casualty_ashore_pattern",
+            "hint_beginner": "Final relay:...",
+            "hint_intermediate": "Final relay: casualty ashore....",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Final relay: casualty ashore."
+                ],
+                "should_reject": [
+                    "Final relay casualty still aboard",
+                    "Final relay crew ashore",
+                    "Initial relay casualty ashore"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Final/initial relay, casualty/crew, and ashore/aboard status must stay exact."
+                ],
+                "linguist_note": "Final/initial relay, casualty/crew, and ashore/aboard status must stay exact."
+            }
+        }
+    ],
+    "grammar_patterns": [
+        {
+            "id": "b027_on_scene_coordinator_pattern",
+            "pattern": "on-scene_coordinator word pattern",
+            "examples": [
+                "on-scene coordinator"
+            ]
+        },
+        {
+            "id": "b027_casualty_transfer_pattern",
+            "pattern": "casualty_transfer short_expression pattern",
+            "examples": [
+                "casualty transfer"
+            ]
+        },
+        {
+            "id": "b027_prepare_stretcher_transfer_pattern",
+            "pattern": "casualty_transfer short_expression pattern",
+            "examples": [
+                "prepare stretcher transfer"
+            ]
+        },
+        {
+            "id": "b027_request_medical_evacuaton_pattern",
+            "pattern": "casualty_transfer short_expression pattern",
+            "examples": [
+                "request medical evacuation"
+            ]
+        },
+        {
+            "id": "b027_helicopter_winching_pattern",
+            "pattern": "helicopter_winching short_expression pattern",
+            "examples": [
+                "helicopter winching"
+            ]
+        },
+        {
+            "id": "b027_winchman_ready_pattern",
+            "pattern": "helicopter_winching short_expression pattern",
+            "examples": [
+                "winchman ready"
+            ]
+        },
+        {
+            "id": "b027_on_scene_coordinator_assigned_pattern",
+            "pattern": "on-scene_coordinator short_expression pattern",
+            "examples": [
+                "on-scene coordinator assigned"
+            ]
+        },
+        {
+            "id": "b027_relay_casualty_update_pattern",
+            "pattern": "relay_update short_expression pattern",
+            "examples": [
+                "relay casualty update"
+            ]
+        },
+        {
+            "id": "b027_casualty_count_three_pattern",
+            "pattern": "casualty_transfer short_expression pattern",
+            "examples": [
+                "casualty count three"
+            ]
+        },
+        {
+            "id": "b027_survivor_in_water_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Survivor in water."
+            ]
+        },
+        {
+            "id": "b027_two_casualties_on_board_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Two casualties on board."
+            ]
+        },
+        {
+            "id": "b027_three_casualties_need_transfer_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Three casualties require transfer."
+            ]
+        },
+        {
+            "id": "b027_casualty_one_unconscious_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Casualty one is unconscious."
+            ]
+        },
+        {
+            "id": "b027_casualty_two_conscious_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Casualty two is conscious."
+            ]
+        },
+        {
+            "id": "b027_prepare_winch_transfer_stretcher_pattern",
+            "pattern": "helicopter_winching phrase pattern",
+            "examples": [
+                "Prepare winch transfer of stretcher."
+            ]
+        },
+        {
+            "id": "b027_helicopter_overhead_in_five_minutes_pattern",
+            "pattern": "helicopter_winching phrase pattern",
+            "examples": [
+                "Helicopter overhead in five minutes."
+            ]
+        },
+        {
+            "id": "b027_keep_deck_clear_for_winching_pattern",
+            "pattern": "helicopter_winching phrase pattern",
+            "examples": [
+                "Keep deck clear for winching."
+            ]
+        },
+        {
+            "id": "b027_do_not_fire_flare_during_winching_pattern",
+            "pattern": "helicopter_winching phrase pattern",
+            "examples": [
+                "Do not fire flare during winching."
+            ]
+        },
+        {
+            "id": "b027_osc_assumes_coordination_pattern",
+            "pattern": "on-scene_coordinator phrase pattern",
+            "examples": [
+                "On-scene coordinator assumes coordination."
+            ]
+        },
+        {
+            "id": "b027_osc_relieved_by_rescue_unit_pattern",
+            "pattern": "on-scene_coordinator phrase pattern",
+            "examples": [
+                "On-scene coordinator relieved by rescue unit."
+            ]
+        },
+        {
+            "id": "b027_report_to_osc_every_ten_minutes_pattern",
+            "pattern": "on-scene_coordinator phrase pattern",
+            "examples": [
+                "Report to on-scene coordinator every ten minutes."
+            ]
+        },
+        {
+            "id": "b027_relay_update_casualty_count_three_pattern",
+            "pattern": "relay_update phrase pattern",
+            "examples": [
+                "Relay update: casualty count three."
+            ]
+        },
+        {
+            "id": "b027_relay_update_helicopter_eta_15_pattern",
+            "pattern": "relay_update phrase pattern",
+            "examples": [
+                "Relay update: helicopter ETA one five minutes."
+            ]
+        },
+        {
+            "id": "b027_relay_update_transfer_completed_pattern",
+            "pattern": "relay_update phrase pattern",
+            "examples": [
+                "Relay update: transfer completed."
+            ]
+        },
+        {
+            "id": "b027_medical_team_ready_for_transfer_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Medical team ready for transfer."
+            ]
+        },
+        {
+            "id": "b027_transfer_casualty_to_rescue_boat_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Transfer casualty to rescue boat."
+            ]
+        },
+        {
+            "id": "b027_transfer_casualty_to_helicopter_pattern",
+            "pattern": "helicopter_winching phrase pattern",
+            "examples": [
+                "Transfer casualty to helicopter."
+            ]
+        },
+        {
+            "id": "b027_stretcher_lowered_to_deck_pattern",
+            "pattern": "helicopter_winching phrase pattern",
+            "examples": [
+                "Stretcher lowered to deck."
+            ]
+        },
+        {
+            "id": "b027_basket_lift_started_pattern",
+            "pattern": "helicopter_winching phrase pattern",
+            "examples": [
+                "Basket lift started."
+            ]
+        },
+        {
+            "id": "b027_casualty_packaged_for_hoist_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Casualty packaged for hoist."
+            ]
+        },
+        {
+            "id": "b027_do_not_move_casualty_before_medic_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Do not move casualty before medic arrives."
+            ]
+        },
+        {
+            "id": "b027_casualty_has_head_injury_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Casualty has head injury."
+            ]
+        },
+        {
+            "id": "b027_casualty_bleeding_controlled_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Casualty bleeding controlled."
+            ]
+        },
+        {
+            "id": "b027_rescue_unit_takes_over_search_pattern",
+            "pattern": "on-scene_coordinator phrase pattern",
+            "examples": [
+                "Rescue unit takes over search."
+            ]
+        },
+        {
+            "id": "b027_final_relay_casualty_ashore_pattern",
+            "pattern": "relay_update phrase pattern",
+            "examples": [
+                "Final relay: casualty ashore."
+            ]
+        }
+    ],
+    "dangerous_minimal_pairs": [
+        {
+            "pair": "b027 casualty count and identity group",
+            "items": [
+                "expr_b027_casualty_count_three_001",
+                "phrase_b027_two_casualties_on_board_001",
+                "phrase_b027_three_casualties_need_transfer_001",
+                "phrase_b027_casualty_one_unconscious_001",
+                "phrase_b027_casualty_two_conscious_001"
+            ],
+            "must_accept": {
+                "expr_b027_casualty_count_three_001": [
+                    "casualty count three"
+                ],
+                "phrase_b027_two_casualties_on_board_001": [
+                    "Two casualties on board."
+                ],
+                "phrase_b027_three_casualties_need_transfer_001": [
+                    "Three casualties require transfer."
+                ],
+                "phrase_b027_casualty_one_unconscious_001": [
+                    "Casualty one is unconscious."
+                ],
+                "phrase_b027_casualty_two_conscious_001": [
+                    "Casualty two is conscious."
+                ]
+            },
+            "must_reject": {
+                "expr_b027_casualty_count_three_001": [
+                    "casualty count two",
+                    "crew count three"
+                ],
+                "phrase_b027_two_casualties_on_board_001": [
+                    "Three casualties on board",
+                    "Two crew on board"
+                ],
+                "phrase_b027_three_casualties_need_transfer_001": [
+                    "Two casualties require transfer",
+                    "Three casualties require treatment only"
+                ],
+                "phrase_b027_casualty_one_unconscious_001": [
+                    "Casualty two is unconscious",
+                    "Casualty one is conscious"
+                ],
+                "phrase_b027_casualty_two_conscious_001": [
+                    "Casualty two is unconscious",
+                    "Casualty one is conscious"
+                ]
+            },
+            "reason": "Casualty count, casualty number, casualty/crew identity, and conscious status must stay exact."
+        },
+        {
+            "pair": "b027 casualty transfer route group",
+            "items": [
+                "expr_b027_casualty_transfer_001",
+                "expr_b027_prepare_stretcher_transfer_001",
+                "expr_b027_request_medical_evacuaton_001",
+                "phrase_b027_transfer_casualty_to_rescue_boat_001",
+                "phrase_b027_transfer_casualty_to_helicopter_001"
+            ],
+            "must_accept": {
+                "expr_b027_casualty_transfer_001": [
+                    "casualty transfer"
+                ],
+                "expr_b027_prepare_stretcher_transfer_001": [
+                    "prepare stretcher transfer"
+                ],
+                "expr_b027_request_medical_evacuaton_001": [
+                    "request medical evacuation"
+                ],
+                "phrase_b027_transfer_casualty_to_rescue_boat_001": [
+                    "Transfer casualty to rescue boat."
+                ],
+                "phrase_b027_transfer_casualty_to_helicopter_001": [
+                    "Transfer casualty to helicopter."
+                ]
+            },
+            "must_reject": {
+                "expr_b027_casualty_transfer_001": [
+                    "casualty count",
+                    "cargo transfer"
+                ],
+                "expr_b027_prepare_stretcher_transfer_001": [
+                    "prepare basket transfer",
+                    "prepare body transfer"
+                ],
+                "expr_b027_request_medical_evacuaton_001": [
+                    "request medical advice",
+                    "cancel medical evacuation"
+                ],
+                "phrase_b027_transfer_casualty_to_rescue_boat_001": [
+                    "Transfer casualty to helicopter",
+                    "Transfer crew to rescue boat"
+                ],
+                "phrase_b027_transfer_casualty_to_helicopter_001": [
+                    "Transfer casualty to rescue boat",
+                    "Transfer crew to helicopter"
+                ]
+            },
+            "reason": "Casualty transfer type, destination unit, and request/cancel boundaries must stay exact."
+        },
+        {
+            "pair": "b027 helicopter winching equipment group",
+            "items": [
+                "expr_b027_helicopter_winching_001",
+                "expr_b027_winchman_ready_001",
+                "phrase_b027_prepare_winch_transfer_stretcher_001",
+                "phrase_b027_stretcher_lowered_to_deck_001",
+                "phrase_b027_basket_lift_started_001"
+            ],
+            "must_accept": {
+                "expr_b027_helicopter_winching_001": [
+                    "helicopter winching"
+                ],
+                "expr_b027_winchman_ready_001": [
+                    "winchman ready"
+                ],
+                "phrase_b027_prepare_winch_transfer_stretcher_001": [
+                    "Prepare winch transfer of stretcher."
+                ],
+                "phrase_b027_stretcher_lowered_to_deck_001": [
+                    "Stretcher lowered to deck."
+                ],
+                "phrase_b027_basket_lift_started_001": [
+                    "Basket lift started."
+                ]
+            },
+            "must_reject": {
+                "expr_b027_helicopter_winching_001": [
+                    "helicopter landing",
+                    "boat winching"
+                ],
+                "expr_b027_winchman_ready_001": [
+                    "winchman not ready",
+                    "stretcher ready"
+                ],
+                "phrase_b027_prepare_winch_transfer_stretcher_001": [
+                    "Prepare boat transfer of stretcher",
+                    "Prepare winch transfer of basket"
+                ],
+                "phrase_b027_stretcher_lowered_to_deck_001": [
+                    "Stretcher lifted from deck",
+                    "Basket lowered to deck"
+                ],
+                "phrase_b027_basket_lift_started_001": [
+                    "Basket lift completed",
+                    "Stretcher lift started"
+                ]
+            },
+            "reason": "Winching/landing, winchman readiness, stretcher/basket, and lift/lower status must stay exact."
+        },
+        {
+            "pair": "b027 helicopter timing and deck safety group",
+            "items": [
+                "phrase_b027_helicopter_overhead_in_five_minutes_001",
+                "phrase_b027_keep_deck_clear_for_winching_001",
+                "phrase_b027_do_not_fire_flare_during_winching_001",
+                "phrase_b027_casualty_packaged_for_hoist_001"
+            ],
+            "must_accept": {
+                "phrase_b027_helicopter_overhead_in_five_minutes_001": [
+                    "Helicopter overhead in five minutes."
+                ],
+                "phrase_b027_keep_deck_clear_for_winching_001": [
+                    "Keep deck clear for winching."
+                ],
+                "phrase_b027_do_not_fire_flare_during_winching_001": [
+                    "Do not fire flare during winching."
+                ],
+                "phrase_b027_casualty_packaged_for_hoist_001": [
+                    "Casualty packaged for hoist."
+                ]
+            },
+            "must_reject": {
+                "phrase_b027_helicopter_overhead_in_five_minutes_001": [
+                    "Helicopter overhead in ten minutes",
+                    "Rescue boat overhead in five minutes"
+                ],
+                "phrase_b027_keep_deck_clear_for_winching_001": [
+                    "Keep deck clear for landing",
+                    "Keep bridge clear for winching"
+                ],
+                "phrase_b027_do_not_fire_flare_during_winching_001": [
+                    "Fire flare during winching",
+                    "Do not fire flare after winching"
+                ],
+                "phrase_b027_casualty_packaged_for_hoist_001": [
+                    "Casualty packaged for treatment",
+                    "Crew packaged for hoist"
+                ]
+            },
+            "reason": "Helicopter ETA, deck/winching safety, flare prohibition, and hoist readiness must stay exact."
+        },
+        {
+            "pair": "b027 on-scene coordinator role group",
+            "items": [
+                "word_b027_on_scene_coordinator_001",
+                "expr_b027_on_scene_coordinator_assigned_001",
+                "phrase_b027_osc_assumes_coordination_001",
+                "phrase_b027_osc_relieved_by_rescue_unit_001",
+                "phrase_b027_report_to_osc_every_ten_minutes_001"
+            ],
+            "must_accept": {
+                "word_b027_on_scene_coordinator_001": [
+                    "on-scene coordinator"
+                ],
+                "expr_b027_on_scene_coordinator_assigned_001": [
+                    "on-scene coordinator assigned"
+                ],
+                "phrase_b027_osc_assumes_coordination_001": [
+                    "On-scene coordinator assumes coordination."
+                ],
+                "phrase_b027_osc_relieved_by_rescue_unit_001": [
+                    "On-scene coordinator relieved by rescue unit."
+                ],
+                "phrase_b027_report_to_osc_every_ten_minutes_001": [
+                    "Report to on-scene coordinator every ten minutes."
+                ]
+            },
+            "must_reject": {
+                "word_b027_on_scene_coordinator_001": [
+                    "coast station coordinator",
+                    "medical coordinator"
+                ],
+                "expr_b027_on_scene_coordinator_assigned_001": [
+                    "on-scene coordinator relieved",
+                    "medical coordinator assigned"
+                ],
+                "phrase_b027_osc_assumes_coordination_001": [
+                    "On-scene coordinator transfers coordination",
+                    "Coast station assumes coordination"
+                ],
+                "phrase_b027_osc_relieved_by_rescue_unit_001": [
+                    "On-scene coordinator assigned by rescue unit",
+                    "Medical coordinator relieved by rescue unit"
+                ],
+                "phrase_b027_report_to_osc_every_ten_minutes_001": [
+                    "Report to on-scene coordinator every five minutes",
+                    "Report to coast station every ten minutes"
+                ]
+            },
+            "reason": "OSC role, assigned/relieved/assumes coordination, recipient, and report interval must stay exact."
+        },
+        {
+            "pair": "b027 relay update content group",
+            "items": [
+                "expr_b027_relay_casualty_update_001",
+                "phrase_b027_relay_update_casualty_count_three_001",
+                "phrase_b027_relay_update_helicopter_eta_15_001",
+                "phrase_b027_relay_update_transfer_completed_001",
+                "phrase_b027_final_relay_casualty_ashore_001"
+            ],
+            "must_accept": {
+                "expr_b027_relay_casualty_update_001": [
+                    "relay casualty update"
+                ],
+                "phrase_b027_relay_update_casualty_count_three_001": [
+                    "Relay update: casualty count three."
+                ],
+                "phrase_b027_relay_update_helicopter_eta_15_001": [
+                    "Relay update: helicopter ETA one five minutes."
+                ],
+                "phrase_b027_relay_update_transfer_completed_001": [
+                    "Relay update: transfer completed."
+                ],
+                "phrase_b027_final_relay_casualty_ashore_001": [
+                    "Final relay: casualty ashore."
+                ]
+            },
+            "must_reject": {
+                "expr_b027_relay_casualty_update_001": [
+                    "relay weather update",
+                    "relay casualty count cancelled"
+                ],
+                "phrase_b027_relay_update_casualty_count_three_001": [
+                    "Relay update casualty count two",
+                    "Relay weather update casualty count three"
+                ],
+                "phrase_b027_relay_update_helicopter_eta_15_001": [
+                    "Relay update helicopter ETA five minutes",
+                    "Relay update rescue boat ETA one five minutes"
+                ],
+                "phrase_b027_relay_update_transfer_completed_001": [
+                    "Relay update transfer pending",
+                    "Relay update transfer cancelled"
+                ],
+                "phrase_b027_final_relay_casualty_ashore_001": [
+                    "Final relay casualty still aboard",
+                    "Final relay crew ashore"
+                ]
+            },
+            "reason": "Relay update content, ETA, final/initial status, and casualty state must stay exact."
+        },
+        {
+            "pair": "b027 medical handling caution group",
+            "items": [
+                "phrase_b027_medical_team_ready_for_transfer_001",
+                "phrase_b027_do_not_move_casualty_before_medic_001",
+                "phrase_b027_casualty_has_head_injury_001",
+                "phrase_b027_casualty_bleeding_controlled_001"
+            ],
+            "must_accept": {
+                "phrase_b027_medical_team_ready_for_transfer_001": [
+                    "Medical team ready for transfer."
+                ],
+                "phrase_b027_do_not_move_casualty_before_medic_001": [
+                    "Do not move casualty before medic arrives."
+                ],
+                "phrase_b027_casualty_has_head_injury_001": [
+                    "Casualty has head injury."
+                ],
+                "phrase_b027_casualty_bleeding_controlled_001": [
+                    "Casualty bleeding controlled."
+                ]
+            },
+            "must_reject": {
+                "phrase_b027_medical_team_ready_for_transfer_001": [
+                    "Medical team not ready for transfer",
+                    "Deck team ready for transfer"
+                ],
+                "phrase_b027_do_not_move_casualty_before_medic_001": [
+                    "Move casualty before medic arrives",
+                    "Do not move casualty after medic arrives"
+                ],
+                "phrase_b027_casualty_has_head_injury_001": [
+                    "Casualty has leg injury",
+                    "Crew has head injury"
+                ],
+                "phrase_b027_casualty_bleeding_controlled_001": [
+                    "Casualty bleeding not controlled",
+                    "Casualty breathing controlled"
+                ]
+            },
+            "reason": "Medical readiness, do-not-move timing, injury type, and bleeding control must stay exact."
+        },
+        {
+            "pair": "b027 survivor water and search handover group",
+            "items": [
+                "phrase_b027_survivor_in_water_001",
+                "phrase_b027_rescue_unit_takes_over_search_001"
+            ],
+            "must_accept": {
+                "phrase_b027_survivor_in_water_001": [
+                    "Survivor in water."
+                ],
+                "phrase_b027_rescue_unit_takes_over_search_001": [
+                    "Rescue unit takes over search."
+                ]
+            },
+            "must_reject": {
+                "phrase_b027_survivor_in_water_001": [
+                    "Survivor on deck",
+                    "Body in water"
+                ],
+                "phrase_b027_rescue_unit_takes_over_search_001": [
+                    "Rescue unit takes over medical transfer",
+                    "On-scene coordinator takes over search"
+                ]
+            },
+            "reason": "Survivor/body status, in-water location, and rescue unit search handover must stay exact."
+        },
+        {
+            "pair": "b027 rescue platform distinction group",
+            "items": [
+                "phrase_b027_transfer_casualty_to_rescue_boat_001",
+                "phrase_b027_transfer_casualty_to_helicopter_001",
+                "phrase_b027_relay_update_helicopter_eta_15_001"
+            ],
+            "must_accept": {
+                "phrase_b027_transfer_casualty_to_rescue_boat_001": [
+                    "Transfer casualty to rescue boat."
+                ],
+                "phrase_b027_transfer_casualty_to_helicopter_001": [
+                    "Transfer casualty to helicopter."
+                ],
+                "phrase_b027_relay_update_helicopter_eta_15_001": [
+                    "Relay update: helicopter ETA one five minutes."
+                ]
+            },
+            "must_reject": {
+                "phrase_b027_transfer_casualty_to_rescue_boat_001": [
+                    "Transfer casualty to helicopter",
+                    "Transfer crew to rescue boat"
+                ],
+                "phrase_b027_transfer_casualty_to_helicopter_001": [
+                    "Transfer casualty to rescue boat",
+                    "Transfer crew to helicopter"
+                ],
+                "phrase_b027_relay_update_helicopter_eta_15_001": [
+                    "Relay update helicopter ETA five minutes",
+                    "Relay update rescue boat ETA one five minutes"
+                ]
+            },
+            "reason": "Rescue boat/helicopter destination and ETA platform must stay exact."
+        },
+        {
+            "pair": "b027 completion and cancellation group",
+            "items": [
+                "phrase_b027_relay_update_transfer_completed_001",
+                "phrase_b027_basket_lift_started_001",
+                "expr_b027_request_medical_evacuaton_001",
+                "phrase_b027_final_relay_casualty_ashore_001"
+            ],
+            "must_accept": {
+                "phrase_b027_relay_update_transfer_completed_001": [
+                    "Relay update: transfer completed."
+                ],
+                "phrase_b027_basket_lift_started_001": [
+                    "Basket lift started."
+                ],
+                "expr_b027_request_medical_evacuaton_001": [
+                    "request medical evacuation"
+                ],
+                "phrase_b027_final_relay_casualty_ashore_001": [
+                    "Final relay: casualty ashore."
+                ]
+            },
+            "must_reject": {
+                "phrase_b027_relay_update_transfer_completed_001": [
+                    "Relay update transfer pending",
+                    "Relay update transfer cancelled"
+                ],
+                "phrase_b027_basket_lift_started_001": [
+                    "Basket lift completed",
+                    "Stretcher lift started"
+                ],
+                "expr_b027_request_medical_evacuaton_001": [
+                    "request medical advice",
+                    "cancel medical evacuation"
+                ],
+                "phrase_b027_final_relay_casualty_ashore_001": [
+                    "Final relay casualty still aboard",
+                    "Final relay crew ashore"
+                ]
+            },
+            "reason": "Started/completed/cancelled/final statuses must stay exact."
+        },
+        {
+            "pair": "b027 injury and transfer priority group",
+            "items": [
+                "phrase_b027_casualty_has_head_injury_001",
+                "phrase_b027_casualty_bleeding_controlled_001",
+                "phrase_b027_casualty_packaged_for_hoist_001",
+                "phrase_b027_three_casualties_need_transfer_001"
+            ],
+            "must_accept": {
+                "phrase_b027_casualty_has_head_injury_001": [
+                    "Casualty has head injury."
+                ],
+                "phrase_b027_casualty_bleeding_controlled_001": [
+                    "Casualty bleeding controlled."
+                ],
+                "phrase_b027_casualty_packaged_for_hoist_001": [
+                    "Casualty packaged for hoist."
+                ],
+                "phrase_b027_three_casualties_need_transfer_001": [
+                    "Three casualties require transfer."
+                ]
+            },
+            "must_reject": {
+                "phrase_b027_casualty_has_head_injury_001": [
+                    "Casualty has leg injury",
+                    "Crew has head injury"
+                ],
+                "phrase_b027_casualty_bleeding_controlled_001": [
+                    "Casualty bleeding not controlled",
+                    "Casualty breathing controlled"
+                ],
+                "phrase_b027_casualty_packaged_for_hoist_001": [
+                    "Casualty packaged for treatment",
+                    "Crew packaged for hoist"
+                ],
+                "phrase_b027_three_casualties_need_transfer_001": [
+                    "Two casualties require transfer",
+                    "Three casualties require treatment only"
+                ]
+            },
+            "reason": "Injury, bleeding, hoist readiness, and casualty count transfer priority must stay exact."
+        }
+    ],
+    "producer_notes": {
+        "target_increment": "35 draft units toward M5 1000-item corpus",
+        "type_mix": "1 word, 8 short_expression, 26 phrase",
+        "level_mix": "3 beginner, 13 intermediate, 19 advanced",
+        "production_scope": "none",
+        "next_gate": "Linguist/engineering gate before acceptance QA"
+    }
+}
