@@ -56,6 +56,7 @@ CE-0183 Batch 028 draft gate done: created isolated draft batch with 30 exam-sty
 CE-0184 Batch 028 linguist/engineering gate passed; review boundaries approved, collision/id/pattern checks all 0, validator PASS with 0 warnings.
 CE-0185 Batch 028 acceptance QA passed; decision PASS_FOR_STAGED_MERGE. Next planned task is CE-0186 staged merge preparation, no production deploy.
 CE-0186 Batch 028 staged merge passed locally/GitHub; production not deployed. Local/GitHub now intentionally ahead of production until post-merge QA and production sync decision.
+CE-0187 Batch 028 post-merge QA passed; local/GitHub 1000 baseline is ready for production sync decision.
 local_github_starter_items=1000
 local_github_grammar_patterns=581
 local_github_qa_items=1000
@@ -69,7 +70,7 @@ validator_warn_count=0
 draft_backlog_items=0
 draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
-Next task: CE-0187 Batch 028 Post-Merge QA
+Next task: CE-0188 Batch 028 Production Sync Decision
 ```
 
 Older sections below preserve historical context and may mention earlier

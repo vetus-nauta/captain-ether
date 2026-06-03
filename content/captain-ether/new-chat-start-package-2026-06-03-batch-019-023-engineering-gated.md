@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 028 staged merge passed locally/GitHub toward the 1000-item M5 baseline; production remains at the Batch 027 970-item baseline until Batch 028 post-merge QA and a separate production sync decision pass
+Canonical status: Batch 028 post-merge QA passed locally/GitHub at the 1000-item M5 baseline; production remains at the Batch 027 970-item baseline until a separate Batch 028 production sync decision passes
 
 ## 1. Read This First
 
@@ -51,7 +51,7 @@ production_delta_items=-30
 post_merge_qa=PASS
 production_sync=PASS
 production_release_readiness_qa=PASS
-ready_for_batch_028_post_merge_qa=true
+ready_for_batch_028_production_sync_decision=true
 production_route=HTTP 200
 anonymous_start_watch=HTTP 401 Login required
 ```
@@ -125,6 +125,7 @@ CE-0183 Batch 028 Draft Gate: DONE / DRAFT_READY_FOR_LINGUIST_ENGINEERING_GATE
 CE-0184 Batch 028 Linguist / Engineering Gate: PASS / READY_FOR_ACCEPTANCE_QA
 CE-0185 Batch 028 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
 CE-0186 Batch 028 Staged Merge Preparation: MERGED_LOCALLY / PASS
+CE-0187 Batch 028 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 ```
 
 Important reports:
@@ -181,6 +182,7 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0183-batch-028-d
 content/captain-ether/roles/sea-speak-linguist/reports/batch-028-exam-style-minimal-pair-reinforcement-risk-review-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0185-batch-028-acceptance-qa-merge-decision-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0186-batch-028-staged-merge-preparation-2026-06-03.md
+content/captain-ether/roles/qa/reports/sprint-ce-0187-batch-028-post-merge-qa-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -188,13 +190,13 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0186-batch-028-s
 Next task to run:
 
 ```text
-content/captain-ether/roles/qa/tasks/task-ce-0187-batch-028-post-merge-qa-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0188-batch-028-production-sync-decision-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run Batch 028 post-merge QA against the 1000-item local/GitHub baseline; no production deploy.
+Run controlled Batch 028 production sync decision after pre-deploy gates; production deploy is allowed only inside that explicit task.
 ```
 
 Expected current local/GitHub/production baseline:
@@ -214,17 +216,17 @@ draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
 ```
 
-Local/GitHub is intentionally ahead of production at 1000 after CE-0186. Batch 028 post-merge QA is required before any production sync decision; no production deploy is authorized by this start package.
+Local/GitHub is intentionally ahead of production at 1000 after CE-0186 and CE-0187. Batch 028 is ready for a separate production sync decision task.
 
 ## 6. Recommended Merge Plan After QA
 
-Run Batch 028 post-merge QA, then decide whether to open a separate production sync task.
+Run Batch 028 production sync decision, then production release-readiness QA if sync passes.
 
 Recommended sequence:
 
 ```text
-1. CE-0187 Batch 028 Post-Merge QA.
-2. Then decide whether to assign Batch 028 production sync.
+1. CE-0188 Batch 028 Production Sync Decision.
+2. Then run Batch 028 Production Release-Readiness QA if sync passes.
 ```
 
 This keeps production parity checkpoints small enough to debug.
