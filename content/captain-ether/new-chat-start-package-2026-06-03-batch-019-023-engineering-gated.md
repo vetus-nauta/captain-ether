@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 027 post-merge QA passed at the 970-item local/GitHub baseline; production remains Batch 026 at 935 and is ready for a controlled production sync decision
+Canonical status: Batch 027 production-synced at the 970-item baseline; next gate is production release-readiness QA
 
 ## 1. Read This First
 
@@ -26,7 +26,7 @@ state.
 
 ## 2. Current Playable State
 
-Local/GitHub playable baseline is now Batch 027 after CE-0179 staged merge. Production remains Batch 026 after CE-0174 production sync until a separate production sync task.
+Local/GitHub/production playable baseline is now Batch 027 after CE-0181 production sync.
 
 ```text
 local_github_starter_items=970
@@ -36,13 +36,14 @@ local_github_dangerous_pairs=227
 batch_024_status=merged
 batch_025_status=merged
 batch_026_status=merged
-production_starter_items=935
-production_grammar_patterns=516
-production_qa_items=935
-production_dangerous_pairs=216
-production_delta_items=-35
+production_starter_items=970
+production_grammar_patterns=551
+production_qa_items=970
+production_dangerous_pairs=227
+production_delta_items=0
 post_merge_qa=PASS
-ready_for_production_sync_decision=true
+production_sync=PASS
+ready_for_production_release_readiness_qa=true
 production_route=HTTP 200
 anonymous_start_watch=HTTP 401 Login required
 ```
@@ -109,6 +110,7 @@ CE-0177 Batch 027 Linguist / Engineering Gate: PASS / READY_FOR_ACCEPTANCE_QA
 CE-0178 Batch 027 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
 CE-0179 Batch 027 Staged Merge Preparation: MERGED_LOCALLY / PASS
 CE-0180 Batch 027 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
+CE-0181 Batch 027 Production Sync Decision: CLOSED / PASS / PRODUCTION_SYNCED
 ```
 
 Important reports:
@@ -158,6 +160,7 @@ content/captain-ether/roles/sea-speak-linguist/reports/batch-027-sar-casualty-tr
 content/captain-ether/roles/qa/reports/sprint-ce-0178-batch-027-acceptance-qa-merge-decision-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0179-batch-027-staged-merge-preparation-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0180-batch-027-post-merge-qa-2026-06-03.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0181-batch-027-production-sync-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -165,13 +168,13 @@ content/captain-ether/roles/qa/reports/sprint-ce-0180-batch-027-post-merge-qa-20
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0181-batch-027-production-sync-decision-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0182-batch-027-production-release-readiness-qa-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run Batch 027 production sync decision. Pre-check local/GitHub 970, sync production from 935 to 970 only if gates pass, then verify production parity.
+Run Batch 027 production release-readiness QA. Revalidate production parity at 970 and public/anonymous runtime safety; no deploy.
 ```
 
 Expected current local/GitHub/production baseline:
@@ -181,27 +184,27 @@ local_github_starter_items=970
 local_github_grammar_patterns=551
 local_github_qa_items=970
 local_github_dangerous_pairs=227
-production_starter_items=935
-production_grammar_patterns=516
-production_qa_items=935
-production_dangerous_pairs=216
-production_delta_items=-35
+production_starter_items=970
+production_grammar_patterns=551
+production_qa_items=970
+production_dangerous_pairs=227
+production_delta_items=0
 draft_backlog_items=0
 draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
 ```
 
-Local/GitHub is now 970 after Batch 027 staged merge and post-merge QA passed. Production is still 935 and untouched; next gate is controlled production sync decision.
+Local/GitHub/production now match at 970 after Batch 027 production sync. Next gate is release-readiness QA; no deploy in that task.
 
 ## 6. Recommended Merge Plan After QA
 
-Run Batch 027 production sync decision, then release-readiness QA only if sync passes.
+Run Batch 027 production release-readiness QA, then start Batch 028 draft gate if QA passes.
 
 Recommended sequence:
 
 ```text
-1. CE-0181 Batch 027 Production Sync Decision.
-2. Then run Batch 027 production release-readiness QA.
+1. CE-0182 Batch 027 Production Release-Readiness QA.
+2. Then open Batch 028 draft gate.
 ```
 
 This keeps production parity checkpoints small enough to debug.

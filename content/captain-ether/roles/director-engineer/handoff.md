@@ -50,20 +50,21 @@ CE-0177 Batch 027 linguist/engineering gate passed; fixed medical evacuation slu
 CE-0178 Batch 027 acceptance QA passed; decision PASS_FOR_STAGED_MERGE. Next planned task is CE-0179 staged merge preparation, no production deploy.
 CE-0179 Batch 027 staged merge passed locally/GitHub; production not deployed. Local/GitHub now intentionally ahead of production until post-merge QA and production sync decision.
 CE-0180 Batch 027 post-merge QA passed; local/GitHub 970 baseline is ready for production sync decision.
+CE-0181 Batch 027 production sync passed; production now equals local/GitHub at the 970-item baseline.
 local_github_starter_items=970
 local_github_grammar_patterns=551
 local_github_qa_items=970
 local_github_dangerous_pairs=227
-production_starter_items=935
-production_grammar_patterns=516
-production_qa_items=935
-production_dangerous_pairs=216
-production_delta_items=-35
+production_starter_items=970
+production_grammar_patterns=551
+production_qa_items=970
+production_dangerous_pairs=227
+production_delta_items=0
 validator_warn_count=0
 draft_backlog_items=0
 draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
-Next task: CE-0181 Batch 027 Production Sync Decision
+Next task: CE-0182 Batch 027 Production Release-Readiness QA
 ```
 
 Older sections below preserve historical context and may mention earlier

@@ -3,7 +3,7 @@
 Date: 2026-06-03
 Owner: Director-Engineer / QA
 Scope: Captain Ether Batch 027 controlled production sync decision
-Status: PLANNED
+Status: DONE / CLOSED / PASS / PRODUCTION_SYNCED
 
 ## Activation Condition
 
@@ -63,4 +63,21 @@ Expected output:
 ```text
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0181-batch-027-production-sync-2026-06-03.md
 next task for Batch 027 production release-readiness QA if sync passes
+```
+
+## Result
+
+```text
+CLOSED / PASS / PRODUCTION_SYNCED
+full_validator=PASS
+validator_runs=160
+api_smoke=PASS captain-ether-api-smoke checks=334
+atlas_ping=PASS
+secret_scan=PASS
+deploy_backup_root=/game.brkovic.ltd/_deploy-backups/captain-ether/20260603T124156Z
+post_deploy_counts=970/551/970/227
+starter_hash_match=PASS
+qa_hash_match=PASS
+production_delta_items=0
+next_task=CE-0182 Batch 027 Production Release-Readiness QA
 ```
