@@ -1,0 +1,1792 @@
+{
+    "version": 1,
+    "batch_id": "batch-025-port-services-clearance-communications",
+    "status": "draft",
+    "date": "2026-06-03",
+    "branch": "vts_port_control",
+    "scope": "M5 Batch 025 draft. Adds port-services and clearance communications: inward/outward clearance, customs and immigration, pilot boarding station/time, and services after clearance. Draft only: no starter merge and no production deploy.",
+    "items": [
+        {
+            "id": "word_b025_crew_list_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 6,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "customs_immigration",
+            "source_language": "ru",
+            "source_text": "Судовая роль экипажа.",
+            "target_language": "en",
+            "target_text": "crew list",
+            "accepted_answers": [
+                "crew list"
+            ],
+            "grammar_pattern": "b025_b025_crew_list_pattern",
+            "hint_beginner": "crew list...",
+            "hint_intermediate": "crew list...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "crew list"
+                ],
+                "should_reject": [
+                    "passenger list",
+                    "cargo list",
+                    "watch list"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Crew list"
+                ],
+                "linguist_note": "Crew list must not become passenger, cargo, or watch list."
+            }
+        },
+        {
+            "id": "word_b025_free_pratique_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "clearance_request",
+            "source_language": "ru",
+            "source_text": "Свободная практика.",
+            "target_language": "en",
+            "target_text": "free pratique",
+            "accepted_answers": [
+                "free pratique"
+            ],
+            "grammar_pattern": "b025_b025_free_pratique_pattern",
+            "hint_beginner": "free pratique...",
+            "hint_intermediate": "free pratique...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "free pratique"
+                ],
+                "should_reject": [
+                    "free traffic",
+                    "free passage",
+                    "port clearance"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Free pratique is a health/port formality, not traffic, passage, or port clearance"
+                ],
+                "linguist_note": "Free pratique is a health/port formality, not traffic, passage, or port clearance."
+            }
+        },
+        {
+            "id": "expr_b025_request_port_clearance_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "clearance_request",
+            "source_language": "ru",
+            "source_text": "Запросить портовое оформление.",
+            "target_language": "en",
+            "target_text": "request port clearance",
+            "accepted_answers": [
+                "request port clearance"
+            ],
+            "grammar_pattern": "b025_b025_request_port_clearance_pattern",
+            "hint_beginner": "request port...",
+            "hint_intermediate": "request port clearance...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "request port clearance"
+                ],
+                "should_reject": [
+                    "request pilot clearance",
+                    "request berth clearance",
+                    "cancel port clearance"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Port clearance request"
+                ],
+                "linguist_note": "Port clearance request must not become pilot, berth, or cancellation."
+            }
+        },
+        {
+            "id": "expr_b025_submit_crew_list_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 7,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "customs_immigration",
+            "source_language": "ru",
+            "source_text": "Передать судовую роль экипажа.",
+            "target_language": "en",
+            "target_text": "submit crew list",
+            "accepted_answers": [
+                "submit crew list"
+            ],
+            "grammar_pattern": "b025_b025_submit_crew_list_pattern",
+            "hint_beginner": "submit crew...",
+            "hint_intermediate": "submit crew list...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "submit crew list"
+                ],
+                "should_reject": [
+                    "submit passenger list",
+                    "submit cargo list",
+                    "cancel crew list"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Crew-list submission"
+                ],
+                "linguist_note": "Crew-list submission must not become passenger/cargo list or cancellation."
+            }
+        },
+        {
+            "id": "expr_b025_customs_clearance_required_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "customs_immigration",
+            "source_language": "ru",
+            "source_text": "Требуется таможенное оформление.",
+            "target_language": "en",
+            "target_text": "customs clearance required",
+            "accepted_answers": [
+                "customs clearance required"
+            ],
+            "grammar_pattern": "b025_b025_customs_clearance_required_pattern",
+            "hint_beginner": "customs clearance...",
+            "hint_intermediate": "customs clearance required...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "customs clearance required"
+                ],
+                "should_reject": [
+                    "immigration clearance required",
+                    "customs clearance complete",
+                    "customs clearance not required"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Customs requirement"
+                ],
+                "linguist_note": "Customs requirement must not become immigration, complete, or not required."
+            }
+        },
+        {
+            "id": "expr_b025_immigration_inspection_required_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "customs_immigration",
+            "source_language": "ru",
+            "source_text": "Требуется иммиграционная проверка.",
+            "target_language": "en",
+            "target_text": "immigration inspection required",
+            "accepted_answers": [
+                "immigration inspection required"
+            ],
+            "grammar_pattern": "b025_b025_immigration_inspection_required_pattern",
+            "hint_beginner": "immigration inspection...",
+            "hint_intermediate": "immigration inspection required...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "immigration inspection required"
+                ],
+                "should_reject": [
+                    "customs inspection required",
+                    "immigration inspection complete",
+                    "safety inspection required"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Immigration inspection"
+                ],
+                "linguist_note": "Immigration inspection must not become customs, complete, or safety inspection."
+            }
+        },
+        {
+            "id": "expr_b025_pilot_boarding_station_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "pilot_boarding",
+            "source_language": "ru",
+            "source_text": "Станция посадки лоцмана.",
+            "target_language": "en",
+            "target_text": "pilot boarding station",
+            "accepted_answers": [
+                "pilot boarding station"
+            ],
+            "grammar_pattern": "b025_b025_pilot_boarding_station_pattern",
+            "hint_beginner": "pilot boarding...",
+            "hint_intermediate": "pilot boarding station...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "pilot boarding station"
+                ],
+                "should_reject": [
+                    "pilot ladder station",
+                    "tug boarding station",
+                    "pilot disembarkation station"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Pilot boarding station"
+                ],
+                "linguist_note": "Pilot boarding station must not become ladder, tug, or disembarkation station."
+            }
+        },
+        {
+            "id": "expr_b025_pilot_boarding_time_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "pilot_boarding",
+            "source_language": "ru",
+            "source_text": "Время посадки лоцмана.",
+            "target_language": "en",
+            "target_text": "pilot boarding time",
+            "accepted_answers": [
+                "pilot boarding time"
+            ],
+            "grammar_pattern": "b025_b025_pilot_boarding_time_pattern",
+            "hint_beginner": "pilot boarding...",
+            "hint_intermediate": "pilot boarding time...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "pilot boarding time"
+                ],
+                "should_reject": [
+                    "pilot departure time",
+                    "tug boarding time",
+                    "berth assignment time"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Pilot boarding time"
+                ],
+                "linguist_note": "Pilot boarding time must not become departure, tug, or berth time."
+            }
+        },
+        {
+            "id": "expr_b025_wait_for_customs_launch_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "marina_harbour",
+            "module": "customs_immigration",
+            "source_language": "ru",
+            "source_text": "Ожидать таможенный катер.",
+            "target_language": "en",
+            "target_text": "wait for customs launch",
+            "accepted_answers": [
+                "wait for customs launch"
+            ],
+            "grammar_pattern": "b025_b025_wait_for_customs_launch_pattern",
+            "hint_beginner": "wait for...",
+            "hint_intermediate": "wait for customs...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "wait for customs launch"
+                ],
+                "should_reject": [
+                    "wait for pilot launch",
+                    "wait for tug",
+                    "wait for fuel launch"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Customs launch"
+                ],
+                "linguist_note": "Customs launch must not become pilot, tug, or fuel launch."
+            }
+        },
+        {
+            "id": "expr_b025_clearance_granted_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "clearance_request",
+            "source_language": "ru",
+            "source_text": "Оформление разрешено.",
+            "target_language": "en",
+            "target_text": "clearance granted",
+            "accepted_answers": [
+                "clearance granted",
+                "port clearance granted"
+            ],
+            "grammar_pattern": "b025_b025_clearance_granted_pattern",
+            "hint_beginner": "clearance granted...",
+            "hint_intermediate": "clearance granted...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "clearance granted"
+                ],
+                "should_reject": [
+                    "clearance not granted",
+                    "clearance pending",
+                    "pilot granted"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Clearance granted"
+                ],
+                "linguist_note": "Clearance granted must not become not granted, pending, or pilot permission."
+            }
+        },
+        {
+            "id": "expr_b025_clearance_not_granted_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "clearance_request",
+            "source_language": "ru",
+            "source_text": "Оформление не разрешено.",
+            "target_language": "en",
+            "target_text": "clearance not granted",
+            "accepted_answers": [
+                "clearance not granted",
+                "port clearance not granted"
+            ],
+            "grammar_pattern": "b025_b025_clearance_not_granted_pattern",
+            "hint_beginner": "clearance not...",
+            "hint_intermediate": "clearance not granted...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "clearance not granted"
+                ],
+                "should_reject": [
+                    "clearance granted",
+                    "clearance complete",
+                    "berth granted"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Negative clearance"
+                ],
+                "linguist_note": "Negative clearance must not become granted, complete, or berth permission."
+            }
+        },
+        {
+            "id": "expr_b025_proceed_quarantine_berth_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "port_entry_limits",
+            "source_language": "ru",
+            "source_text": "Следовать к карантинному причалу.",
+            "target_language": "en",
+            "target_text": "proceed to quarantine berth",
+            "accepted_answers": [
+                "proceed to quarantine berth"
+            ],
+            "grammar_pattern": "b025_b025_proceed_quarantine_berth_pattern",
+            "hint_beginner": "proceed to...",
+            "hint_intermediate": "proceed to quarantine...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "proceed to quarantine berth"
+                ],
+                "should_reject": [
+                    "proceed to visitor berth",
+                    "proceed to fuel berth",
+                    "leave quarantine berth"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Quarantine berth"
+                ],
+                "linguist_note": "Quarantine berth must not become visitor/fuel berth or departure."
+            }
+        },
+        {
+            "id": "phrase_b025_request_inward_clearance_on_arrival_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "clearance_request",
+            "source_language": "ru",
+            "source_text": "Запрашиваем входное оформление по прибытии.",
+            "target_language": "en",
+            "target_text": "Request inward clearance on arrival.",
+            "accepted_answers": [
+                "Request inward clearance on arrival."
+            ],
+            "grammar_pattern": "b025_b025_request_inward_clearance_on_arrival_pattern",
+            "hint_beginner": "Request inward...",
+            "hint_intermediate": "Request inward clearance...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Request inward clearance on arrival."
+                ],
+                "should_reject": [
+                    "Request outward clearance on arrival",
+                    "Request berth on arrival",
+                    "Cancel inward clearance on arrival"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Inward clearance request"
+                ],
+                "linguist_note": "Inward clearance request must not become outward clearance, berth, or cancellation."
+            }
+        },
+        {
+            "id": "phrase_b025_submit_crew_list_to_port_control_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "customs_immigration",
+            "source_language": "ru",
+            "source_text": "Передайте судовую роль экипажа в порт-контроль.",
+            "target_language": "en",
+            "target_text": "Submit crew list to Port Control.",
+            "accepted_answers": [
+                "Submit crew list to Port Control."
+            ],
+            "grammar_pattern": "b025_b025_submit_crew_list_to_port_control_pattern",
+            "hint_beginner": "Submit crew...",
+            "hint_intermediate": "Submit crew list...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Submit crew list to Port Control."
+                ],
+                "should_reject": [
+                    "Submit passenger list to Port Control",
+                    "Submit crew list to Marina Office",
+                    "Cancel crew list to Port Control"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Document type and authority"
+                ],
+                "linguist_note": "Document type and authority must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_customs_launch_alongside_0900_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "marina_harbour",
+            "module": "customs_immigration",
+            "source_language": "ru",
+            "source_text": "Таможенный катер подойдет к борту в 0900.",
+            "target_language": "en",
+            "target_text": "Customs launch alongside at zero nine zero zero.",
+            "accepted_answers": [
+                "Customs launch alongside at zero nine zero zero."
+            ],
+            "grammar_pattern": "b025_b025_customs_launch_alongside_0900_pattern",
+            "hint_beginner": "Customs launch...",
+            "hint_intermediate": "Customs launch alongside...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Customs launch alongside at zero nine zero zero."
+                ],
+                "should_reject": [
+                    "Pilot launch alongside at zero nine zero zero",
+                    "Customs launch alongside at one zero zero zero",
+                    "Customs launch departing at zero nine zero zero"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Launch type, time, and alongside/departing state"
+                ],
+                "linguist_note": "Launch type, time, and alongside/departing state must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_immigration_officer_boarding_service_pontoon_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "marina_harbour",
+            "module": "customs_immigration",
+            "source_language": "ru",
+            "source_text": "Иммиграционный офицер поднимается на борт у сервисного понтона.",
+            "target_language": "en",
+            "target_text": "Immigration officer boarding at service pontoon.",
+            "accepted_answers": [
+                "Immigration officer boarding at service pontoon."
+            ],
+            "grammar_pattern": "b025_b025_immigration_officer_boarding_service_pontoon_pattern",
+            "hint_beginner": "Immigration officer...",
+            "hint_intermediate": "Immigration officer boarding...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Immigration officer boarding at service pontoon."
+                ],
+                "should_reject": [
+                    "Customs officer boarding at service pontoon",
+                    "Immigration officer boarding at fuel berth",
+                    "Immigration officer leaving at service pontoon"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Officer type, action, and location"
+                ],
+                "linguist_note": "Officer type, action, and location must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_clearance_granted_proceed_visitor_berth_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "port_services_clearance_communications",
+            "branch": "marina_harbour",
+            "module": "clearance_request",
+            "source_language": "ru",
+            "source_text": "Оформление разрешено, следуйте к гостевому причалу.",
+            "target_language": "en",
+            "target_text": "Clearance granted, proceed to visitor berth.",
+            "accepted_answers": [
+                "Clearance granted, proceed to visitor berth."
+            ],
+            "grammar_pattern": "b025_b025_clearance_granted_proceed_visitor_berth_pattern",
+            "hint_beginner": "Clearance granted,...",
+            "hint_intermediate": "Clearance granted, proceed...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Clearance granted, proceed to visitor berth."
+                ],
+                "should_reject": [
+                    "Clearance not granted proceed to visitor berth",
+                    "Clearance granted proceed to fuel berth",
+                    "Pilot granted proceed to visitor berth"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Clearance polarity and berth type"
+                ],
+                "linguist_note": "Clearance polarity and berth type must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_clearance_not_granted_wait_outside_limits_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "port_entry_limits",
+            "source_language": "ru",
+            "source_text": "Оформление не разрешено, ожидайте за пределами порта.",
+            "target_language": "en",
+            "target_text": "Clearance not granted, wait outside port limits.",
+            "accepted_answers": [
+                "Clearance not granted, wait outside port limits."
+            ],
+            "grammar_pattern": "b025_b025_clearance_not_granted_wait_outside_limits_pattern",
+            "hint_beginner": "Clearance not...",
+            "hint_intermediate": "Clearance not granted,...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Clearance not granted, wait outside port limits."
+                ],
+                "should_reject": [
+                    "Clearance granted wait outside port limits",
+                    "Clearance not granted enter port limits",
+                    "Clearance not granted wait inside port limits"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Clearance polarity and inside/outside port-limits boundary"
+                ],
+                "linguist_note": "Clearance polarity and inside/outside port-limits boundary must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_all_crew_remain_on_board_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "customs_immigration",
+            "source_language": "ru",
+            "source_text": "Весь экипаж остается на борту.",
+            "target_language": "en",
+            "target_text": "All crew remain on board.",
+            "accepted_answers": [
+                "All crew remain on board."
+            ],
+            "grammar_pattern": "b025_b025_all_crew_remain_on_board_pattern",
+            "hint_beginner": "All crew...",
+            "hint_intermediate": "All crew remain...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "All crew remain on board."
+                ],
+                "should_reject": [
+                    "All passengers remain on board",
+                    "All crew go ashore",
+                    "One crew remains on board"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Crew/passenger and remain/go-ashore boundaries"
+                ],
+                "linguist_note": "Crew/passenger and remain/go-ashore boundaries must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_no_persons_ashore_before_clearance_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "customs_immigration",
+            "source_language": "ru",
+            "source_text": "Никому не сходить на берег до оформления.",
+            "target_language": "en",
+            "target_text": "No persons go ashore before clearance.",
+            "accepted_answers": [
+                "No persons go ashore before clearance."
+            ],
+            "grammar_pattern": "b025_b025_no_persons_ashore_before_clearance_pattern",
+            "hint_beginner": "No persons...",
+            "hint_intermediate": "No persons go...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "No persons go ashore before clearance."
+                ],
+                "should_reject": [
+                    "Persons may go ashore before clearance",
+                    "No crew go ashore after clearance",
+                    "No persons come aboard before clearance"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Shore-leave prohibition and before/after clearance boundary"
+                ],
+                "linguist_note": "Shore-leave prohibition and before/after clearance boundary must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_request_outward_clearance_before_departure_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "clearance_request",
+            "source_language": "ru",
+            "source_text": "Запрашиваем выходное оформление перед отходом.",
+            "target_language": "en",
+            "target_text": "Request outward clearance before departure.",
+            "accepted_answers": [
+                "Request outward clearance before departure."
+            ],
+            "grammar_pattern": "b025_b025_request_outward_clearance_before_departure_pattern",
+            "hint_beginner": "Request outward...",
+            "hint_intermediate": "Request outward clearance...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Request outward clearance before departure."
+                ],
+                "should_reject": [
+                    "Request inward clearance before departure",
+                    "Request departure before clearance",
+                    "Cancel outward clearance before departure"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Outward clearance"
+                ],
+                "linguist_note": "Outward clearance must not become inward clearance, departure-only, or cancellation."
+            }
+        },
+        {
+            "id": "phrase_b025_port_clearance_documents_ready_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "clearance_request",
+            "source_language": "ru",
+            "source_text": "Документы портового оформления готовы.",
+            "target_language": "en",
+            "target_text": "Port clearance documents ready.",
+            "accepted_answers": [
+                "Port clearance documents ready."
+            ],
+            "grammar_pattern": "b025_b025_port_clearance_documents_ready_pattern",
+            "hint_beginner": "Port clearance...",
+            "hint_intermediate": "Port clearance documents...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Port clearance documents ready."
+                ],
+                "should_reject": [
+                    "Port clearance documents missing",
+                    "Pilot documents ready",
+                    "Cargo documents ready"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Clearance documents readiness and document type"
+                ],
+                "linguist_note": "Clearance documents readiness and document type must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_pilot_boarding_station_alpha_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "pilot_boarding",
+            "source_language": "ru",
+            "source_text": "Станция посадки лоцмана Альфа.",
+            "target_language": "en",
+            "target_text": "Pilot boarding station Alpha.",
+            "accepted_answers": [
+                "Pilot boarding station Alpha."
+            ],
+            "grammar_pattern": "b025_b025_pilot_boarding_station_alpha_pattern",
+            "hint_beginner": "Pilot boarding...",
+            "hint_intermediate": "Pilot boarding station...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Pilot boarding station Alpha."
+                ],
+                "should_reject": [
+                    "Pilot boarding station Bravo",
+                    "Tug boarding station Alpha",
+                    "Pilot disembarkation station Alpha"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Station name and boarding/tug/disembarkation boundaries"
+                ],
+                "linguist_note": "Station name and boarding/tug/disembarkation boundaries must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_boarding_pilot_at_0930_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "pilot_boarding",
+            "source_language": "ru",
+            "source_text": "Лоцман садится на борт в 0930.",
+            "target_language": "en",
+            "target_text": "Pilot boarding at zero nine three zero.",
+            "accepted_answers": [
+                "Pilot boarding at zero nine three zero."
+            ],
+            "grammar_pattern": "b025_b025_boarding_pilot_at_0930_pattern",
+            "hint_beginner": "Pilot boarding...",
+            "hint_intermediate": "Pilot boarding at...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Pilot boarding at zero nine three zero."
+                ],
+                "should_reject": [
+                    "Pilot boarding at one zero three zero",
+                    "Pilot leaving at zero nine three zero",
+                    "Tug boarding at zero nine three zero"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Time, action, and pilot/tug boundary"
+                ],
+                "linguist_note": "Time, action, and pilot/tug boundary must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_pilot_boarding_delayed_1000_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "pilot_boarding",
+            "source_language": "ru",
+            "source_text": "Посадка лоцмана задержана до 1000.",
+            "target_language": "en",
+            "target_text": "Pilot boarding delayed until one zero zero zero.",
+            "accepted_answers": [
+                "Pilot boarding delayed until one zero zero zero."
+            ],
+            "grammar_pattern": "b025_b025_pilot_boarding_delayed_1000_pattern",
+            "hint_beginner": "Pilot boarding...",
+            "hint_intermediate": "Pilot boarding delayed...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Pilot boarding delayed until one zero zero zero."
+                ],
+                "should_reject": [
+                    "Pilot boarding cancelled until one zero zero zero",
+                    "Pilot boarding delayed until zero nine zero zero",
+                    "Tug boarding delayed until one zero zero zero"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Delay/cancel, time, and pilot/tug boundaries"
+                ],
+                "linguist_note": "Delay/cancel, time, and pilot/tug boundaries must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_confirm_tug_not_required_for_entry_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "pilot_boarding",
+            "source_language": "ru",
+            "source_text": "Подтвердите: буксир для входа не требуется.",
+            "target_language": "en",
+            "target_text": "Confirm tug not required for port entry.",
+            "accepted_answers": [
+                "Confirm tug not required for port entry."
+            ],
+            "grammar_pattern": "b025_b025_confirm_tug_not_required_for_entry_pattern",
+            "hint_beginner": "Confirm tug...",
+            "hint_intermediate": "Confirm tug not...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Confirm tug not required for port entry."
+                ],
+                "should_reject": [
+                    "Confirm tug required for port entry",
+                    "Confirm pilot not required for port entry",
+                    "Confirm tug not required for departure"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Tug requirement, pilot boundary, and entry/departure boundary"
+                ],
+                "linguist_note": "Tug requirement, pilot boundary, and entry/departure boundary must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_request_garbage_collection_after_clearance_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "port_services_clearance_communications",
+            "branch": "marina_harbour",
+            "module": "port_services_after_clearance",
+            "source_language": "ru",
+            "source_text": "Запросить сбор мусора после оформления.",
+            "target_language": "en",
+            "target_text": "Request garbage collection after clearance.",
+            "accepted_answers": [
+                "Request garbage collection after clearance."
+            ],
+            "grammar_pattern": "b025_b025_request_garbage_collection_after_clearance_pattern",
+            "hint_beginner": "Request garbage...",
+            "hint_intermediate": "Request garbage collection...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Request garbage collection after clearance."
+                ],
+                "should_reject": [
+                    "Request fuel collection after clearance",
+                    "Request garbage collection before clearance",
+                    "Cancel garbage collection after clearance"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Service type and after/before clearance boundary"
+                ],
+                "linguist_note": "Service type and after/before clearance boundary must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_request_bunkering_after_customs_clearance_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "port_services_clearance_communications",
+            "branch": "marina_harbour",
+            "module": "port_services_after_clearance",
+            "source_language": "ru",
+            "source_text": "Запрашиваем бункеровку после таможенного оформления.",
+            "target_language": "en",
+            "target_text": "Request bunkering after customs clearance.",
+            "accepted_answers": [
+                "Request bunkering after customs clearance."
+            ],
+            "grammar_pattern": "b025_b025_request_bunkering_after_customs_clearance_pattern",
+            "hint_beginner": "Request bunkering...",
+            "hint_intermediate": "Request bunkering after...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Request bunkering after customs clearance."
+                ],
+                "should_reject": [
+                    "Request bunkering before customs clearance",
+                    "Request water after customs clearance",
+                    "Request bunkering after immigration clearance"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Bunkering, customs/immigration, and before/after boundary"
+                ],
+                "linguist_note": "Bunkering, customs/immigration, and before/after boundary must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_fresh_water_after_customs_clearance_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "port_services_clearance_communications",
+            "branch": "marina_harbour",
+            "module": "port_services_after_clearance",
+            "source_language": "ru",
+            "source_text": "Пресная вода после таможенного оформления.",
+            "target_language": "en",
+            "target_text": "Fresh water after customs clearance.",
+            "accepted_answers": [
+                "Fresh water after customs clearance."
+            ],
+            "grammar_pattern": "b025_b025_fresh_water_after_customs_clearance_pattern",
+            "hint_beginner": "Fresh water...",
+            "hint_intermediate": "Fresh water after...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Fresh water after customs clearance."
+                ],
+                "should_reject": [
+                    "Fuel after customs clearance",
+                    "Fresh water before customs clearance",
+                    "Fresh water after immigration clearance"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Water/fuel and customs/immigration before/after boundaries"
+                ],
+                "linguist_note": "Water/fuel and customs/immigration before/after boundaries must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_shore_power_after_immigration_clearance_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "marina_harbour",
+            "module": "port_services_after_clearance",
+            "source_language": "ru",
+            "source_text": "Береговое питание после иммиграционного оформления.",
+            "target_language": "en",
+            "target_text": "Shore power after immigration clearance.",
+            "accepted_answers": [
+                "Shore power after immigration clearance."
+            ],
+            "grammar_pattern": "b025_b025_shore_power_after_immigration_clearance_pattern",
+            "hint_beginner": "Shore power...",
+            "hint_intermediate": "Shore power after...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Shore power after immigration clearance."
+                ],
+                "should_reject": [
+                    "Shore power before immigration clearance",
+                    "Water after immigration clearance",
+                    "Shore power after customs clearance"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Service type and immigration/customs before/after boundary"
+                ],
+                "linguist_note": "Service type and immigration/customs before/after boundary must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_hold_waiting_area_until_clearance_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "port_entry_limits",
+            "source_language": "ru",
+            "source_text": "Ожидайте в зоне ожидания до оформления.",
+            "target_language": "en",
+            "target_text": "Hold in waiting area until clearance.",
+            "accepted_answers": [
+                "Hold in waiting area until clearance."
+            ],
+            "grammar_pattern": "b025_b025_hold_waiting_area_until_clearance_pattern",
+            "hint_beginner": "Hold in...",
+            "hint_intermediate": "Hold in waiting...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Hold in waiting area until clearance."
+                ],
+                "should_reject": [
+                    "Enter fairway until clearance",
+                    "Hold in waiting area after clearance",
+                    "Hold in berth until clearance"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Holding location and until/after clearance boundary"
+                ],
+                "linguist_note": "Holding location and until/after clearance boundary must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_enter_port_after_clearance_granted_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "port_entry_limits",
+            "source_language": "ru",
+            "source_text": "Войти в порт после разрешения оформления.",
+            "target_language": "en",
+            "target_text": "Enter port after clearance granted.",
+            "accepted_answers": [
+                "Enter port after clearance granted."
+            ],
+            "grammar_pattern": "b025_b025_enter_port_after_clearance_granted_pattern",
+            "hint_beginner": "Enter port...",
+            "hint_intermediate": "Enter port after...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Enter port after clearance granted."
+                ],
+                "should_reject": [
+                    "Enter port before clearance granted",
+                    "Leave port after clearance granted",
+                    "Enter marina after berth granted"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Entry/departure and clearance timing"
+                ],
+                "linguist_note": "Entry/departure and clearance timing must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_do_not_enter_before_clearance_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "port_entry_limits",
+            "source_language": "ru",
+            "source_text": "Не входите в порт до оформления.",
+            "target_language": "en",
+            "target_text": "Do not enter port before clearance.",
+            "accepted_answers": [
+                "Do not enter port before clearance."
+            ],
+            "grammar_pattern": "b025_b025_do_not_enter_before_clearance_pattern",
+            "hint_beginner": "Do not...",
+            "hint_intermediate": "Do not enter...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Do not enter port before clearance."
+                ],
+                "should_reject": [
+                    "Enter port before clearance",
+                    "Do not leave port before clearance",
+                    "Do not enter berth before clearance"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Prohibition, entry/departure, and port/berth boundary"
+                ],
+                "linguist_note": "Prohibition, entry/departure, and port/berth boundary must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_customs_clearance_complete_departure_pending_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "customs_immigration",
+            "source_language": "ru",
+            "source_text": "Таможенное оформление завершено, выходное разрешение ожидается.",
+            "target_language": "en",
+            "target_text": "Customs clearance complete, departure clearance pending.",
+            "accepted_answers": [
+                "Customs clearance complete, departure clearance pending."
+            ],
+            "grammar_pattern": "b025_b025_customs_clearance_complete_departure_pending_pattern",
+            "hint_beginner": "Customs clearance...",
+            "hint_intermediate": "Customs clearance complete,...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Customs clearance complete, departure clearance pending."
+                ],
+                "should_reject": [
+                    "Customs clearance pending departure clearance complete",
+                    "Immigration clearance complete departure clearance pending",
+                    "Customs clearance complete departure clearance granted"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Customs/immigration and complete/pending/granted boundaries"
+                ],
+                "linguist_note": "Customs/immigration and complete/pending/granted boundaries must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b025_readback_wait_customs_launch_channel_12_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "port_services_clearance_communications",
+            "branch": "vts_port_control",
+            "module": "customs_immigration",
+            "source_language": "ru",
+            "source_text": "Повторяю: ожидать таможенный катер на канале 12.",
+            "target_language": "en",
+            "target_text": "Read back, wait for customs launch on channel one two.",
+            "accepted_answers": [
+                "Read back, wait for customs launch on channel one two."
+            ],
+            "grammar_pattern": "b025_b025_readback_wait_customs_launch_channel_12_pattern",
+            "hint_beginner": "Read back,...",
+            "hint_intermediate": "Read back, wait...",
+            "hint_advanced": "",
+            "qa_notes": {
+                "should_accept": [
+                    "Read back, wait for customs launch on channel one two."
+                ],
+                "should_reject": [
+                    "Read back wait for pilot launch on channel one two",
+                    "Read back wait for customs launch on channel one three",
+                    "Read back proceed for customs launch on channel one two"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Readback launch type, channel, and wait/proceed boundary"
+                ],
+                "linguist_note": "Readback launch type, channel, and wait/proceed boundary must stay exact."
+            }
+        }
+    ],
+    "grammar_patterns": [
+        {
+            "id": "b025_b025_crew_list_pattern",
+            "pattern": "customs_immigration word pattern",
+            "examples": [
+                "crew list"
+            ]
+        },
+        {
+            "id": "b025_b025_free_pratique_pattern",
+            "pattern": "clearance_request word pattern",
+            "examples": [
+                "free pratique"
+            ]
+        },
+        {
+            "id": "b025_b025_request_port_clearance_pattern",
+            "pattern": "clearance_request short_expression pattern",
+            "examples": [
+                "request port clearance"
+            ]
+        },
+        {
+            "id": "b025_b025_submit_crew_list_pattern",
+            "pattern": "customs_immigration short_expression pattern",
+            "examples": [
+                "submit crew list"
+            ]
+        },
+        {
+            "id": "b025_b025_customs_clearance_required_pattern",
+            "pattern": "customs_immigration short_expression pattern",
+            "examples": [
+                "customs clearance required"
+            ]
+        },
+        {
+            "id": "b025_b025_immigration_inspection_required_pattern",
+            "pattern": "customs_immigration short_expression pattern",
+            "examples": [
+                "immigration inspection required"
+            ]
+        },
+        {
+            "id": "b025_b025_pilot_boarding_station_pattern",
+            "pattern": "pilot_boarding short_expression pattern",
+            "examples": [
+                "pilot boarding station"
+            ]
+        },
+        {
+            "id": "b025_b025_pilot_boarding_time_pattern",
+            "pattern": "pilot_boarding short_expression pattern",
+            "examples": [
+                "pilot boarding time"
+            ]
+        },
+        {
+            "id": "b025_b025_wait_for_customs_launch_pattern",
+            "pattern": "customs_immigration short_expression pattern",
+            "examples": [
+                "wait for customs launch"
+            ]
+        },
+        {
+            "id": "b025_b025_clearance_granted_pattern",
+            "pattern": "clearance_request short_expression pattern",
+            "examples": [
+                "clearance granted"
+            ]
+        },
+        {
+            "id": "b025_b025_clearance_not_granted_pattern",
+            "pattern": "clearance_request short_expression pattern",
+            "examples": [
+                "clearance not granted"
+            ]
+        },
+        {
+            "id": "b025_b025_proceed_quarantine_berth_pattern",
+            "pattern": "port_entry_limits short_expression pattern",
+            "examples": [
+                "proceed to quarantine berth"
+            ]
+        },
+        {
+            "id": "b025_b025_request_inward_clearance_on_arrival_pattern",
+            "pattern": "clearance_request phrase pattern",
+            "examples": [
+                "Request inward clearance on arrival."
+            ]
+        },
+        {
+            "id": "b025_b025_submit_crew_list_to_port_control_pattern",
+            "pattern": "customs_immigration phrase pattern",
+            "examples": [
+                "Submit crew list to Port Control."
+            ]
+        },
+        {
+            "id": "b025_b025_customs_launch_alongside_0900_pattern",
+            "pattern": "customs_immigration phrase pattern",
+            "examples": [
+                "Customs launch alongside at zero nine zero zero."
+            ]
+        },
+        {
+            "id": "b025_b025_immigration_officer_boarding_service_pontoon_pattern",
+            "pattern": "customs_immigration phrase pattern",
+            "examples": [
+                "Immigration officer boarding at service pontoon."
+            ]
+        },
+        {
+            "id": "b025_b025_clearance_granted_proceed_visitor_berth_pattern",
+            "pattern": "clearance_request phrase pattern",
+            "examples": [
+                "Clearance granted, proceed to visitor berth."
+            ]
+        },
+        {
+            "id": "b025_b025_clearance_not_granted_wait_outside_limits_pattern",
+            "pattern": "port_entry_limits phrase pattern",
+            "examples": [
+                "Clearance not granted, wait outside port limits."
+            ]
+        },
+        {
+            "id": "b025_b025_all_crew_remain_on_board_pattern",
+            "pattern": "customs_immigration phrase pattern",
+            "examples": [
+                "All crew remain on board."
+            ]
+        },
+        {
+            "id": "b025_b025_no_persons_ashore_before_clearance_pattern",
+            "pattern": "customs_immigration phrase pattern",
+            "examples": [
+                "No persons go ashore before clearance."
+            ]
+        },
+        {
+            "id": "b025_b025_request_outward_clearance_before_departure_pattern",
+            "pattern": "clearance_request phrase pattern",
+            "examples": [
+                "Request outward clearance before departure."
+            ]
+        },
+        {
+            "id": "b025_b025_port_clearance_documents_ready_pattern",
+            "pattern": "clearance_request phrase pattern",
+            "examples": [
+                "Port clearance documents ready."
+            ]
+        },
+        {
+            "id": "b025_b025_pilot_boarding_station_alpha_pattern",
+            "pattern": "pilot_boarding phrase pattern",
+            "examples": [
+                "Pilot boarding station Alpha."
+            ]
+        },
+        {
+            "id": "b025_b025_boarding_pilot_at_0930_pattern",
+            "pattern": "pilot_boarding phrase pattern",
+            "examples": [
+                "Pilot boarding at zero nine three zero."
+            ]
+        },
+        {
+            "id": "b025_b025_pilot_boarding_delayed_1000_pattern",
+            "pattern": "pilot_boarding phrase pattern",
+            "examples": [
+                "Pilot boarding delayed until one zero zero zero."
+            ]
+        },
+        {
+            "id": "b025_b025_confirm_tug_not_required_for_entry_pattern",
+            "pattern": "pilot_boarding phrase pattern",
+            "examples": [
+                "Confirm tug not required for port entry."
+            ]
+        },
+        {
+            "id": "b025_b025_request_garbage_collection_after_clearance_pattern",
+            "pattern": "port_services_after_clearance phrase pattern",
+            "examples": [
+                "Request garbage collection after clearance."
+            ]
+        },
+        {
+            "id": "b025_b025_request_bunkering_after_customs_clearance_pattern",
+            "pattern": "port_services_after_clearance phrase pattern",
+            "examples": [
+                "Request bunkering after customs clearance."
+            ]
+        },
+        {
+            "id": "b025_b025_fresh_water_after_customs_clearance_pattern",
+            "pattern": "port_services_after_clearance phrase pattern",
+            "examples": [
+                "Fresh water after customs clearance."
+            ]
+        },
+        {
+            "id": "b025_b025_shore_power_after_immigration_clearance_pattern",
+            "pattern": "port_services_after_clearance phrase pattern",
+            "examples": [
+                "Shore power after immigration clearance."
+            ]
+        },
+        {
+            "id": "b025_b025_hold_waiting_area_until_clearance_pattern",
+            "pattern": "port_entry_limits phrase pattern",
+            "examples": [
+                "Hold in waiting area until clearance."
+            ]
+        },
+        {
+            "id": "b025_b025_enter_port_after_clearance_granted_pattern",
+            "pattern": "port_entry_limits phrase pattern",
+            "examples": [
+                "Enter port after clearance granted."
+            ]
+        },
+        {
+            "id": "b025_b025_do_not_enter_before_clearance_pattern",
+            "pattern": "port_entry_limits phrase pattern",
+            "examples": [
+                "Do not enter port before clearance."
+            ]
+        },
+        {
+            "id": "b025_b025_customs_clearance_complete_departure_pending_pattern",
+            "pattern": "customs_immigration phrase pattern",
+            "examples": [
+                "Customs clearance complete, departure clearance pending."
+            ]
+        },
+        {
+            "id": "b025_b025_readback_wait_customs_launch_channel_12_pattern",
+            "pattern": "customs_immigration phrase pattern",
+            "examples": [
+                "Read back, wait for customs launch on channel one two."
+            ]
+        }
+    ],
+    "dangerous_minimal_pairs": [
+        {
+            "pair": "b025 clearance polarity and timing group",
+            "items": [
+                "expr_b025_request_port_clearance_001",
+                "expr_b025_clearance_granted_001",
+                "expr_b025_clearance_not_granted_001",
+                "phrase_b025_clearance_granted_proceed_visitor_berth_001",
+                "phrase_b025_clearance_not_granted_wait_outside_limits_001"
+            ],
+            "must_accept": {
+                "expr_b025_request_port_clearance_001": [
+                    "request port clearance"
+                ],
+                "expr_b025_clearance_granted_001": [
+                    "clearance granted"
+                ],
+                "expr_b025_clearance_not_granted_001": [
+                    "clearance not granted"
+                ],
+                "phrase_b025_clearance_granted_proceed_visitor_berth_001": [
+                    "Clearance granted, proceed to visitor berth."
+                ],
+                "phrase_b025_clearance_not_granted_wait_outside_limits_001": [
+                    "Clearance not granted, wait outside port limits."
+                ]
+            },
+            "must_reject": {
+                "expr_b025_request_port_clearance_001": [
+                    "request pilot clearance",
+                    "request berth clearance"
+                ],
+                "expr_b025_clearance_granted_001": [
+                    "clearance not granted",
+                    "clearance pending"
+                ],
+                "expr_b025_clearance_not_granted_001": [
+                    "clearance granted",
+                    "clearance complete"
+                ],
+                "phrase_b025_clearance_granted_proceed_visitor_berth_001": [
+                    "Clearance not granted proceed to visitor berth",
+                    "Clearance granted proceed to fuel berth"
+                ],
+                "phrase_b025_clearance_not_granted_wait_outside_limits_001": [
+                    "Clearance granted wait outside port limits",
+                    "Clearance not granted enter port limits"
+                ]
+            },
+            "reason": "Clearance request/granted/not-granted and timing boundaries must stay exact."
+        },
+        {
+            "pair": "b025 customs immigration document group",
+            "items": [
+                "word_b025_crew_list_001",
+                "expr_b025_submit_crew_list_001",
+                "expr_b025_customs_clearance_required_001",
+                "expr_b025_immigration_inspection_required_001",
+                "phrase_b025_submit_crew_list_to_port_control_001"
+            ],
+            "must_accept": {
+                "word_b025_crew_list_001": [
+                    "crew list"
+                ],
+                "expr_b025_submit_crew_list_001": [
+                    "submit crew list"
+                ],
+                "expr_b025_customs_clearance_required_001": [
+                    "customs clearance required"
+                ],
+                "expr_b025_immigration_inspection_required_001": [
+                    "immigration inspection required"
+                ],
+                "phrase_b025_submit_crew_list_to_port_control_001": [
+                    "Submit crew list to Port Control."
+                ]
+            },
+            "must_reject": {
+                "word_b025_crew_list_001": [
+                    "passenger list",
+                    "cargo list"
+                ],
+                "expr_b025_submit_crew_list_001": [
+                    "submit passenger list",
+                    "submit cargo list"
+                ],
+                "expr_b025_customs_clearance_required_001": [
+                    "immigration clearance required",
+                    "customs clearance complete"
+                ],
+                "expr_b025_immigration_inspection_required_001": [
+                    "customs inspection required",
+                    "immigration inspection complete"
+                ],
+                "phrase_b025_submit_crew_list_to_port_control_001": [
+                    "Submit passenger list to Port Control",
+                    "Submit crew list to Marina Office"
+                ]
+            },
+            "reason": "Crew-list, customs, immigration, and authority boundaries must stay exact."
+        },
+        {
+            "pair": "b025 pilot boarding station time group",
+            "items": [
+                "expr_b025_pilot_boarding_station_001",
+                "expr_b025_pilot_boarding_time_001",
+                "phrase_b025_pilot_boarding_station_alpha_001",
+                "phrase_b025_boarding_pilot_at_0930_001",
+                "phrase_b025_pilot_boarding_delayed_1000_001"
+            ],
+            "must_accept": {
+                "expr_b025_pilot_boarding_station_001": [
+                    "pilot boarding station"
+                ],
+                "expr_b025_pilot_boarding_time_001": [
+                    "pilot boarding time"
+                ],
+                "phrase_b025_pilot_boarding_station_alpha_001": [
+                    "Pilot boarding station Alpha."
+                ],
+                "phrase_b025_boarding_pilot_at_0930_001": [
+                    "Pilot boarding at zero nine three zero."
+                ],
+                "phrase_b025_pilot_boarding_delayed_1000_001": [
+                    "Pilot boarding delayed until one zero zero zero."
+                ]
+            },
+            "must_reject": {
+                "expr_b025_pilot_boarding_station_001": [
+                    "pilot ladder station",
+                    "tug boarding station"
+                ],
+                "expr_b025_pilot_boarding_time_001": [
+                    "pilot departure time",
+                    "tug boarding time"
+                ],
+                "phrase_b025_pilot_boarding_station_alpha_001": [
+                    "Pilot boarding station Bravo",
+                    "Tug boarding station Alpha"
+                ],
+                "phrase_b025_boarding_pilot_at_0930_001": [
+                    "Pilot boarding at one zero three zero",
+                    "Pilot leaving at zero nine three zero"
+                ],
+                "phrase_b025_pilot_boarding_delayed_1000_001": [
+                    "Pilot boarding cancelled until one zero zero zero",
+                    "Pilot boarding delayed until zero nine zero zero"
+                ]
+            },
+            "reason": "Pilot boarding station/time and tug/disembarkation boundaries must stay exact."
+        },
+        {
+            "pair": "b025 port entry limit group",
+            "items": [
+                "expr_b025_proceed_quarantine_berth_001",
+                "phrase_b025_hold_waiting_area_until_clearance_001",
+                "phrase_b025_enter_port_after_clearance_granted_001",
+                "phrase_b025_do_not_enter_before_clearance_001"
+            ],
+            "must_accept": {
+                "expr_b025_proceed_quarantine_berth_001": [
+                    "proceed to quarantine berth"
+                ],
+                "phrase_b025_hold_waiting_area_until_clearance_001": [
+                    "Hold in waiting area until clearance."
+                ],
+                "phrase_b025_enter_port_after_clearance_granted_001": [
+                    "Enter port after clearance granted."
+                ],
+                "phrase_b025_do_not_enter_before_clearance_001": [
+                    "Do not enter port before clearance."
+                ]
+            },
+            "must_reject": {
+                "expr_b025_proceed_quarantine_berth_001": [
+                    "proceed to visitor berth",
+                    "proceed to fuel berth"
+                ],
+                "phrase_b025_hold_waiting_area_until_clearance_001": [
+                    "Enter fairway until clearance",
+                    "Hold in waiting area after clearance"
+                ],
+                "phrase_b025_enter_port_after_clearance_granted_001": [
+                    "Enter port before clearance granted",
+                    "Leave port after clearance granted"
+                ],
+                "phrase_b025_do_not_enter_before_clearance_001": [
+                    "Enter port before clearance",
+                    "Do not leave port before clearance"
+                ]
+            },
+            "reason": "Port entry, quarantine berth, waiting area, and before/after clearance boundaries must stay exact."
+        },
+        {
+            "pair": "b025 port service after clearance group",
+            "items": [
+                "phrase_b025_request_garbage_collection_after_clearance_001",
+                "phrase_b025_request_bunkering_after_customs_clearance_001",
+                "phrase_b025_fresh_water_after_customs_clearance_001",
+                "phrase_b025_shore_power_after_immigration_clearance_001"
+            ],
+            "must_accept": {
+                "phrase_b025_request_garbage_collection_after_clearance_001": [
+                    "Request garbage collection after clearance."
+                ],
+                "phrase_b025_request_bunkering_after_customs_clearance_001": [
+                    "Request bunkering after customs clearance."
+                ],
+                "phrase_b025_fresh_water_after_customs_clearance_001": [
+                    "Fresh water after customs clearance."
+                ],
+                "phrase_b025_shore_power_after_immigration_clearance_001": [
+                    "Shore power after immigration clearance."
+                ]
+            },
+            "must_reject": {
+                "phrase_b025_request_garbage_collection_after_clearance_001": [
+                    "Request fuel collection after clearance",
+                    "Request garbage collection before clearance"
+                ],
+                "phrase_b025_request_bunkering_after_customs_clearance_001": [
+                    "Request bunkering before customs clearance",
+                    "Request water after customs clearance"
+                ],
+                "phrase_b025_fresh_water_after_customs_clearance_001": [
+                    "Fuel after customs clearance",
+                    "Fresh water before customs clearance"
+                ],
+                "phrase_b025_shore_power_after_immigration_clearance_001": [
+                    "Shore power before immigration clearance",
+                    "Water after immigration clearance"
+                ]
+            },
+            "reason": "Port-service type and customs/immigration clearance boundaries must stay exact."
+        },
+        {
+            "pair": "b025 customs launch and shore leave group",
+            "items": [
+                "expr_b025_wait_for_customs_launch_001",
+                "phrase_b025_customs_launch_alongside_0900_001",
+                "phrase_b025_all_crew_remain_on_board_001",
+                "phrase_b025_no_persons_ashore_before_clearance_001",
+                "phrase_b025_readback_wait_customs_launch_channel_12_001"
+            ],
+            "must_accept": {
+                "expr_b025_wait_for_customs_launch_001": [
+                    "wait for customs launch"
+                ],
+                "phrase_b025_customs_launch_alongside_0900_001": [
+                    "Customs launch alongside at zero nine zero zero."
+                ],
+                "phrase_b025_all_crew_remain_on_board_001": [
+                    "All crew remain on board."
+                ],
+                "phrase_b025_no_persons_ashore_before_clearance_001": [
+                    "No persons go ashore before clearance."
+                ],
+                "phrase_b025_readback_wait_customs_launch_channel_12_001": [
+                    "Read back, wait for customs launch on channel one two."
+                ]
+            },
+            "must_reject": {
+                "expr_b025_wait_for_customs_launch_001": [
+                    "wait for pilot launch",
+                    "wait for tug"
+                ],
+                "phrase_b025_customs_launch_alongside_0900_001": [
+                    "Pilot launch alongside at zero nine zero zero",
+                    "Customs launch alongside at one zero zero zero"
+                ],
+                "phrase_b025_all_crew_remain_on_board_001": [
+                    "All passengers remain on board",
+                    "All crew go ashore"
+                ],
+                "phrase_b025_no_persons_ashore_before_clearance_001": [
+                    "Persons may go ashore before clearance",
+                    "No crew go ashore after clearance"
+                ],
+                "phrase_b025_readback_wait_customs_launch_channel_12_001": [
+                    "Read back wait for pilot launch on channel one two",
+                    "Read back wait for customs launch on channel one three"
+                ]
+            },
+            "reason": "Customs launch, crew/person shore-leave, readback, and channel boundaries must stay exact."
+        },
+        {
+            "pair": "b025 departure clearance group",
+            "items": [
+                "word_b025_free_pratique_001",
+                "phrase_b025_request_inward_clearance_on_arrival_001",
+                "phrase_b025_request_outward_clearance_before_departure_001",
+                "phrase_b025_customs_clearance_complete_departure_pending_001",
+                "phrase_b025_confirm_tug_not_required_for_entry_001"
+            ],
+            "must_accept": {
+                "word_b025_free_pratique_001": [
+                    "free pratique"
+                ],
+                "phrase_b025_request_inward_clearance_on_arrival_001": [
+                    "Request inward clearance on arrival."
+                ],
+                "phrase_b025_request_outward_clearance_before_departure_001": [
+                    "Request outward clearance before departure."
+                ],
+                "phrase_b025_customs_clearance_complete_departure_pending_001": [
+                    "Customs clearance complete, departure clearance pending."
+                ],
+                "phrase_b025_confirm_tug_not_required_for_entry_001": [
+                    "Confirm tug not required for port entry."
+                ]
+            },
+            "must_reject": {
+                "word_b025_free_pratique_001": [
+                    "free traffic",
+                    "free passage"
+                ],
+                "phrase_b025_request_inward_clearance_on_arrival_001": [
+                    "Request outward clearance on arrival",
+                    "Request berth on arrival"
+                ],
+                "phrase_b025_request_outward_clearance_before_departure_001": [
+                    "Request inward clearance before departure",
+                    "Request departure before clearance"
+                ],
+                "phrase_b025_customs_clearance_complete_departure_pending_001": [
+                    "Customs clearance pending departure clearance complete",
+                    "Immigration clearance complete departure clearance pending"
+                ],
+                "phrase_b025_confirm_tug_not_required_for_entry_001": [
+                    "Confirm tug required for port entry",
+                    "Confirm pilot not required for port entry"
+                ]
+            },
+            "reason": "Inward/outward clearance, free pratique, pending/granted departure, and tug requirement boundaries must stay exact."
+        }
+    ],
+    "producer_notes": {
+        "target_increment": "35 draft units toward M5 1000-item corpus",
+        "type_mix": "2 word, 10 short_expression, 23 phrase",
+        "level_mix": "8 beginner, 22 intermediate, 5 advanced",
+        "production_scope": "none",
+        "next_gate": "Sea Speak Linguist / Engineering Gate before acceptance QA or merge"
+    }
+}

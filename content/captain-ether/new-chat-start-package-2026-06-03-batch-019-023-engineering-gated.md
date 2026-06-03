@@ -85,6 +85,7 @@ CE-0158 Batch 024 Staged Merge Preparation: MERGED_LOCALLY / PASS
 CE-0159 Batch 024 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 CE-0160 Batch 024 Production Sync Decision: CLOSED / PASS / PRODUCTION_SYNCED
 CE-0161 Batch 024 Production Release Readiness QA: PASS / RELEASE_READY_FOR_CURRENT_SCOPE
+CE-0162 Batch 025 Draft Gate: DONE / DRAFT_READY_FOR_LINGUIST_ENGINEERING_GATE
 ```
 
 Important reports:
@@ -113,6 +114,7 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0158-batch-024-s
 content/captain-ether/roles/qa/reports/sprint-ce-0159-batch-024-post-merge-qa-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0160-batch-024-production-sync-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0161-batch-024-production-release-readiness-qa-2026-06-03.md
+content/captain-ether/roles/content-producer/reports/batch-025-port-services-clearance-communications-card-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -120,13 +122,13 @@ content/captain-ether/roles/qa/reports/sprint-ce-0161-batch-024-production-relea
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0162-batch-025-draft-gate-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0163-batch-025-linguist-engineering-gate-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Draft Batch 025 port-services and clearance communications in isolation.
+Review Batch 025 for linguist, matcher, schema, and engineering safety before acceptance QA.
 ```
 
 Expected Set B local/GitHub baseline:
@@ -137,9 +139,9 @@ local_github_production_grammar_patterns=446
 local_github_production_qa_items=865
 local_github_production_dangerous_pairs=201
 production_delta_items=0
-draft_backlog_items=0
-draft_backlog_grammar_patterns=0
-draft_backlog_dangerous_pairs=0
+draft_backlog_items=35
+draft_backlog_grammar_patterns=35
+draft_backlog_dangerous_pairs=7
 ```
 
 Do not deploy again unless a new explicit production-sync task is opened.
@@ -152,7 +154,7 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. CE-0162 Batch 025 Draft Gate.
+1. CE-0163 Batch 025 Linguist / Engineering Gate.
 ```
 
 This keeps production parity checkpoints small enough to debug.
