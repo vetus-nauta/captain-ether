@@ -1,7 +1,7 @@
 {
     "version": "1.0",
     "batch_id": "batch-028-exam-style-minimal-pair-reinforcement",
-    "status": "draft",
+    "status": "merged",
     "date": "2026-06-03",
     "branch": "review_minimal_pairs",
     "scope": "M5 Batch 028 draft. Final bridge to 1000-item baseline with exam-style mixed review and minimal-pair reinforcement. Draft only; not merged into starter and not deployed.",

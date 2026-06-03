@@ -8705,6 +8705,409 @@
                 ]
             },
             "reason": "Injury, bleeding, hoist readiness, and casualty count transfer priority must stay exact."
+        },
+        {
+            "pair": "b028 channel one six strictness",
+            "items": [
+                "expr_b028_channel_one_six_001"
+            ],
+            "must_accept": {
+                "expr_b028_channel_one_six_001": [
+                    "working channel one six"
+                ]
+            },
+            "must_reject": {
+                "expr_b028_channel_one_six_001": [
+                    "channel one five",
+                    "channel six one",
+                    "channel one six zero"
+                ]
+            },
+            "reason": "Channel one six numeric order stays strict."
+        },
+        {
+            "pair": "b028 channel one three strictness",
+            "items": [
+                "expr_b028_channel_one_three_001"
+            ],
+            "must_accept": {
+                "expr_b028_channel_one_three_001": [
+                    "channel one three"
+                ]
+            },
+            "must_reject": {
+                "expr_b028_channel_one_three_001": [
+                    "channel three one",
+                    "channel one two",
+                    "channel one three zero"
+                ]
+            },
+            "reason": "Channel one three numeric order stays strict."
+        },
+        {
+            "pair": "b028 heading zero nine zero strictness",
+            "items": [
+                "expr_b028_heading_zero_nine_zero_001",
+                "phrase_b028_alter_course_to_zero_nine_zero_001"
+            ],
+            "must_accept": {
+                "expr_b028_heading_zero_nine_zero_001": [
+                    "heading zero nine zero"
+                ],
+                "phrase_b028_alter_course_to_zero_nine_zero_001": [
+                    "Alter course to zero nine zero."
+                ]
+            },
+            "must_reject": {
+                "expr_b028_heading_zero_nine_zero_001": [
+                    "heading zero eight zero",
+                    "Alter speed to zero nine zero.",
+                    "Alter course to one eight zero."
+                ],
+                "phrase_b028_alter_course_to_zero_nine_zero_001": [
+                    "heading zero eight zero",
+                    "Alter speed to zero nine zero.",
+                    "Alter course to one eight zero."
+                ]
+            },
+            "reason": "Heading/course zero nine zero must not become speed or other headings."
+        },
+        {
+            "pair": "b028 heading two seven zero strictness",
+            "items": [
+                "expr_b028_heading_two_seven_zero_001"
+            ],
+            "must_accept": {
+                "expr_b028_heading_two_seven_zero_001": [
+                    "heading two seven zero"
+                ]
+            },
+            "must_reject": {
+                "expr_b028_heading_two_seven_zero_001": [
+                    "heading two six zero",
+                    "heading zero seven two",
+                    "bearing two seven zero"
+                ]
+            },
+            "reason": "Heading two seven zero must not become other numbers or bearing."
+        },
+        {
+            "pair": "b028 port starboard side strictness",
+            "items": [
+                "expr_b028_port_side_001",
+                "expr_b028_starboard_side_001"
+            ],
+            "must_accept": {
+                "expr_b028_port_side_001": [
+                    "port side"
+                ],
+                "expr_b028_starboard_side_001": [
+                    "starboard side"
+                ]
+            },
+            "must_reject": {
+                "expr_b028_port_side_001": [
+                    "starboard side",
+                    "port bow",
+                    "port quarter"
+                ],
+                "expr_b028_starboard_side_001": [
+                    "port side",
+                    "starboard bow",
+                    "starboard quarter"
+                ]
+            },
+            "reason": "Port and starboard side stay separate."
+        },
+        {
+            "pair": "b028 bow quarter strictness",
+            "items": [
+                "phrase_b028_vessel_on_port_bow_001",
+                "phrase_b028_vessel_on_starboard_quarter_001"
+            ],
+            "must_accept": {
+                "phrase_b028_vessel_on_port_bow_001": [
+                    "Vessel on port bow."
+                ],
+                "phrase_b028_vessel_on_starboard_quarter_001": [
+                    "Vessel on starboard quarter."
+                ]
+            },
+            "must_reject": {
+                "phrase_b028_vessel_on_port_bow_001": [
+                    "Vessel on starboard bow.",
+                    "Vessel on port quarter.",
+                    "Vessel on starboard side."
+                ],
+                "phrase_b028_vessel_on_starboard_quarter_001": [
+                    "Vessel on starboard bow.",
+                    "Vessel on port quarter.",
+                    "Vessel on starboard side."
+                ]
+            },
+            "reason": "Bow/quarter and port/starboard stay strict."
+        },
+        {
+            "pair": "b028 collision side strictness",
+            "items": [
+                "phrase_b028_risk_of_collision_port_side_001",
+                "phrase_b028_risk_of_collision_starboard_side_001"
+            ],
+            "must_accept": {
+                "phrase_b028_risk_of_collision_port_side_001": [
+                    "Risk of collision on port side."
+                ],
+                "phrase_b028_risk_of_collision_starboard_side_001": [
+                    "Risk of collision on starboard side."
+                ]
+            },
+            "must_reject": {
+                "phrase_b028_risk_of_collision_port_side_001": [
+                    "Risk of collision on starboard side.",
+                    "No risk of collision on port side.",
+                    "Risk of grounding on port side."
+                ],
+                "phrase_b028_risk_of_collision_starboard_side_001": [
+                    "Risk of collision on port side.",
+                    "No risk of collision on starboard side.",
+                    "Risk of grounding on starboard side."
+                ]
+            },
+            "reason": "Collision side and risk status stay strict."
+        },
+        {
+            "pair": "b028 roger affirmative strictness",
+            "items": [
+                "expr_b028_roger_001",
+                "expr_b028_affirmative_001"
+            ],
+            "must_accept": {
+                "expr_b028_roger_001": [
+                    "roger received"
+                ],
+                "expr_b028_affirmative_001": [
+                    "affirmative confirmed"
+                ]
+            },
+            "must_reject": {
+                "expr_b028_roger_001": [
+                    "affirmative confirmed",
+                    "negative",
+                    "over to you"
+                ],
+                "expr_b028_affirmative_001": [
+                    "roger received",
+                    "negative",
+                    "message complete out"
+                ]
+            },
+            "reason": "Roger and affirmative must not collapse."
+        },
+        {
+            "pair": "b028 roger stand by channel strictness",
+            "items": [
+                "phrase_b028_roger_stand_by_on_one_six_001"
+            ],
+            "must_accept": {
+                "phrase_b028_roger_stand_by_on_one_six_001": [
+                    "Roger, stand by on channel one six."
+                ]
+            },
+            "must_reject": {
+                "phrase_b028_roger_stand_by_on_one_six_001": [
+                    "Affirmative, stand by on channel one six.",
+                    "Roger, change to channel one six.",
+                    "Roger, stand by on channel six one."
+                ]
+            },
+            "reason": "Roger, stand by, and channel one six stay exact."
+        },
+        {
+            "pair": "b028 affirmative alter course strictness",
+            "items": [
+                "phrase_b028_affirmative_i_will_alter_course_001"
+            ],
+            "must_accept": {
+                "phrase_b028_affirmative_i_will_alter_course_001": [
+                    "Affirmative, I will alter course."
+                ]
+            },
+            "must_reject": {
+                "phrase_b028_affirmative_i_will_alter_course_001": [
+                    "Roger, I will alter course.",
+                    "Negative, I will alter course.",
+                    "Affirmative, I will maintain course."
+                ]
+            },
+            "reason": "Affirmative and alter course stay strict."
+        },
+        {
+            "pair": "b028 say again repeat strictness",
+            "items": [
+                "expr_b028_say_again_001",
+                "phrase_b028_say_again_your_position_001"
+            ],
+            "must_accept": {
+                "expr_b028_say_again_001": [
+                    "say again very slowly"
+                ],
+                "phrase_b028_say_again_your_position_001": [
+                    "Say again your last position."
+                ]
+            },
+            "must_reject": {
+                "expr_b028_say_again_001": [
+                    "repeat",
+                    "read back now",
+                    "stand by"
+                ],
+                "phrase_b028_say_again_your_position_001": [
+                    "Repeat your last position.",
+                    "Read back your last position.",
+                    "Say again your course."
+                ]
+            },
+            "reason": "Say again must not become repeat or read back."
+        },
+        {
+            "pair": "b028 read back strictness",
+            "items": [
+                "expr_b028_read_back_001",
+                "phrase_b028_read_back_my_course_001"
+            ],
+            "must_accept": {
+                "expr_b028_read_back_001": [
+                    "read back now"
+                ],
+                "phrase_b028_read_back_my_course_001": [
+                    "Read back my course."
+                ]
+            },
+            "must_reject": {
+                "expr_b028_read_back_001": [
+                    "say again very slowly",
+                    "repeat",
+                    "report back"
+                ],
+                "phrase_b028_read_back_my_course_001": [
+                    "say again",
+                    "Repeat my course.",
+                    "Read back my speed."
+                ]
+            },
+            "reason": "Read back must not become say again/repeat or wrong field."
+        },
+        {
+            "pair": "b028 do not repeat distress strictness",
+            "items": [
+                "phrase_b028_do_not_repeat_distress_call_001"
+            ],
+            "must_accept": {
+                "phrase_b028_do_not_repeat_distress_call_001": [
+                    "Do not repeat the distress call."
+                ]
+            },
+            "must_reject": {
+                "phrase_b028_do_not_repeat_distress_call_001": [
+                    "Repeat the distress call.",
+                    "Say again the distress call.",
+                    "Do not relay the distress call."
+                ]
+            },
+            "reason": "Do not repeat distress call stays strict."
+        },
+        {
+            "pair": "b028 over out strictness",
+            "items": [
+                "expr_b028_over_001",
+                "expr_b028_out_001"
+            ],
+            "must_accept": {
+                "expr_b028_over_001": [
+                    "over to you"
+                ],
+                "expr_b028_out_001": [
+                    "message complete out"
+                ]
+            },
+            "must_reject": {
+                "expr_b028_over_001": [
+                    "message complete out",
+                    "roger received",
+                    "stand by"
+                ],
+                "expr_b028_out_001": [
+                    "over to you",
+                    "roger received",
+                    "standing by"
+                ]
+            },
+            "reason": "Over and out stay separate."
+        },
+        {
+            "pair": "b028 message ending strictness",
+            "items": [
+                "phrase_b028_message_received_over_001",
+                "phrase_b028_message_complete_out_001"
+            ],
+            "must_accept": {
+                "phrase_b028_message_received_over_001": [
+                    "Message received, over."
+                ],
+                "phrase_b028_message_complete_out_001": [
+                    "Message complete, out."
+                ]
+            },
+            "must_reject": {
+                "phrase_b028_message_received_over_001": [
+                    "Message received, out.",
+                    "Message complete, over.",
+                    "Message incomplete, out."
+                ],
+                "phrase_b028_message_complete_out_001": [
+                    "Message received, out.",
+                    "Message complete, over.",
+                    "Message incomplete, out."
+                ]
+            },
+            "reason": "Message ending and status stay strict."
+        },
+        {
+            "pair": "b028 traffic crossing strictness",
+            "items": [
+                "phrase_b028_do_not_cross_ahead_001",
+                "phrase_b028_pass_astern_of_my_vessel_001",
+                "phrase_b028_report_when_clear_of_traffic_001"
+            ],
+            "must_accept": {
+                "phrase_b028_do_not_cross_ahead_001": [
+                    "Do not cross ahead."
+                ],
+                "phrase_b028_pass_astern_of_my_vessel_001": [
+                    "Pass astern of my vessel."
+                ],
+                "phrase_b028_report_when_clear_of_traffic_001": [
+                    "Report when clear of traffic."
+                ]
+            },
+            "must_reject": {
+                "phrase_b028_do_not_cross_ahead_001": [
+                    "Cross ahead.",
+                    "Pass ahead of my vessel.",
+                    "Report when in traffic."
+                ],
+                "phrase_b028_pass_astern_of_my_vessel_001": [
+                    "Cross ahead.",
+                    "Pass ahead of my vessel.",
+                    "Report when in traffic."
+                ],
+                "phrase_b028_report_when_clear_of_traffic_001": [
+                    "Cross ahead.",
+                    "Pass ahead of my vessel.",
+                    "Report when in traffic."
+                ]
+            },
+            "reason": "Traffic action/direction/status stay strict."
         }
     ],
     "items": [
@@ -21651,6 +22054,366 @@
                 "Final relay casualty still aboard",
                 "Final relay crew ashore",
                 "Initial relay casualty ashore"
+            ]
+        },
+        {
+            "id": "expr_b028_channel_one_six_001",
+            "target_text": "working channel one six",
+            "should_accept": [
+                "working channel one six"
+            ],
+            "should_reject": [
+                "channel one five",
+                "channel six one",
+                "channel one six zero"
+            ]
+        },
+        {
+            "id": "expr_b028_channel_one_three_001",
+            "target_text": "channel one three",
+            "should_accept": [
+                "channel one three"
+            ],
+            "should_reject": [
+                "channel three one",
+                "channel one two",
+                "channel one three zero"
+            ]
+        },
+        {
+            "id": "expr_b028_heading_zero_nine_zero_001",
+            "target_text": "heading zero nine zero",
+            "should_accept": [
+                "heading zero nine zero"
+            ],
+            "should_reject": [
+                "heading zero eight zero",
+                "heading one eight zero",
+                "speed zero nine zero"
+            ]
+        },
+        {
+            "id": "expr_b028_heading_two_seven_zero_001",
+            "target_text": "heading two seven zero",
+            "should_accept": [
+                "heading two seven zero"
+            ],
+            "should_reject": [
+                "heading two six zero",
+                "heading zero seven two",
+                "bearing two seven zero"
+            ]
+        },
+        {
+            "id": "expr_b028_port_side_001",
+            "target_text": "port side",
+            "should_accept": [
+                "port side"
+            ],
+            "should_reject": [
+                "starboard side",
+                "port bow",
+                "port quarter"
+            ]
+        },
+        {
+            "id": "expr_b028_starboard_side_001",
+            "target_text": "starboard side",
+            "should_accept": [
+                "starboard side"
+            ],
+            "should_reject": [
+                "port side",
+                "starboard bow",
+                "starboard quarter"
+            ]
+        },
+        {
+            "id": "expr_b028_roger_001",
+            "target_text": "roger received",
+            "should_accept": [
+                "roger received"
+            ],
+            "should_reject": [
+                "affirmative",
+                "negative",
+                "over"
+            ]
+        },
+        {
+            "id": "expr_b028_affirmative_001",
+            "target_text": "affirmative confirmed",
+            "should_accept": [
+                "affirmative confirmed"
+            ],
+            "should_reject": [
+                "roger",
+                "negative",
+                "out"
+            ]
+        },
+        {
+            "id": "expr_b028_say_again_001",
+            "target_text": "say again very slowly",
+            "should_accept": [
+                "say again very slowly"
+            ],
+            "should_reject": [
+                "repeat",
+                "read back",
+                "stand by"
+            ]
+        },
+        {
+            "id": "expr_b028_read_back_001",
+            "target_text": "read back now",
+            "should_accept": [
+                "read back now"
+            ],
+            "should_reject": [
+                "say again",
+                "repeat",
+                "report back"
+            ]
+        },
+        {
+            "id": "expr_b028_over_001",
+            "target_text": "over to you",
+            "should_accept": [
+                "over to you"
+            ],
+            "should_reject": [
+                "out",
+                "roger",
+                "stand by"
+            ]
+        },
+        {
+            "id": "expr_b028_out_001",
+            "target_text": "message complete out",
+            "should_accept": [
+                "message complete out"
+            ],
+            "should_reject": [
+                "over",
+                "roger",
+                "standing by"
+            ]
+        },
+        {
+            "id": "phrase_b028_change_to_channel_one_two_001",
+            "target_text": "Change to channel one two.",
+            "should_accept": [
+                "Change to channel one two."
+            ],
+            "should_reject": [
+                "Change to channel two one.",
+                "Change to channel one six.",
+                "Stand by on channel one two."
+            ]
+        },
+        {
+            "id": "phrase_b028_call_on_channel_one_four_001",
+            "target_text": "Call on channel one four.",
+            "should_accept": [
+                "Call on channel one four."
+            ],
+            "should_reject": [
+                "Call on channel four one.",
+                "Call on channel one five.",
+                "Listen on channel one four."
+            ]
+        },
+        {
+            "id": "phrase_b028_alter_course_to_zero_nine_zero_001",
+            "target_text": "Alter course to zero nine zero.",
+            "should_accept": [
+                "Alter course to zero nine zero."
+            ],
+            "should_reject": [
+                "Alter course to zero eight zero.",
+                "Alter speed to zero nine zero.",
+                "Alter course to one eight zero."
+            ]
+        },
+        {
+            "id": "phrase_b028_alter_course_to_one_eight_zero_001",
+            "target_text": "Alter course to one eight zero.",
+            "should_accept": [
+                "Alter course to one eight zero."
+            ],
+            "should_reject": [
+                "Alter course to zero nine zero.",
+                "Alter bearing to one eight zero.",
+                "Alter speed to one eight zero."
+            ]
+        },
+        {
+            "id": "phrase_b028_vessel_on_port_bow_001",
+            "target_text": "Vessel on port bow.",
+            "should_accept": [
+                "Vessel on port bow."
+            ],
+            "should_reject": [
+                "Vessel on starboard bow.",
+                "Vessel on port quarter.",
+                "Vessel on port side."
+            ]
+        },
+        {
+            "id": "phrase_b028_vessel_on_starboard_quarter_001",
+            "target_text": "Vessel on starboard quarter.",
+            "should_accept": [
+                "Vessel on starboard quarter."
+            ],
+            "should_reject": [
+                "Vessel on port quarter.",
+                "Vessel on starboard bow.",
+                "Vessel on starboard side."
+            ]
+        },
+        {
+            "id": "phrase_b028_risk_of_collision_port_side_001",
+            "target_text": "Risk of collision on port side.",
+            "should_accept": [
+                "Risk of collision on port side."
+            ],
+            "should_reject": [
+                "Risk of collision on starboard side.",
+                "No risk of collision on port side.",
+                "Risk of grounding on port side."
+            ]
+        },
+        {
+            "id": "phrase_b028_risk_of_collision_starboard_side_001",
+            "target_text": "Risk of collision on starboard side.",
+            "should_accept": [
+                "Risk of collision on starboard side."
+            ],
+            "should_reject": [
+                "Risk of collision on port side.",
+                "No risk of collision on starboard side.",
+                "Risk of grounding on starboard side."
+            ]
+        },
+        {
+            "id": "phrase_b028_roger_stand_by_on_one_six_001",
+            "target_text": "Roger, stand by on channel one six.",
+            "should_accept": [
+                "Roger, stand by on channel one six."
+            ],
+            "should_reject": [
+                "Affirmative, stand by on channel one six.",
+                "Roger, change to channel one six.",
+                "Roger, stand by on channel six one."
+            ]
+        },
+        {
+            "id": "phrase_b028_affirmative_i_will_alter_course_001",
+            "target_text": "Affirmative, I will alter course.",
+            "should_accept": [
+                "Affirmative, I will alter course."
+            ],
+            "should_reject": [
+                "Roger, I will alter course.",
+                "Negative, I will alter course.",
+                "Affirmative, I will maintain course."
+            ]
+        },
+        {
+            "id": "phrase_b028_say_again_your_position_001",
+            "target_text": "Say again your last position.",
+            "should_accept": [
+                "Say again your last position."
+            ],
+            "should_reject": [
+                "Repeat your position.",
+                "Read back your position.",
+                "Say again your course."
+            ]
+        },
+        {
+            "id": "phrase_b028_read_back_my_course_001",
+            "target_text": "Read back my course.",
+            "should_accept": [
+                "Read back my course."
+            ],
+            "should_reject": [
+                "Say again my course.",
+                "Repeat my course.",
+                "Read back my speed."
+            ]
+        },
+        {
+            "id": "phrase_b028_do_not_repeat_distress_call_001",
+            "target_text": "Do not repeat the distress call.",
+            "should_accept": [
+                "Do not repeat the distress call."
+            ],
+            "should_reject": [
+                "Repeat the distress call.",
+                "Say again the distress call.",
+                "Do not relay the distress call."
+            ]
+        },
+        {
+            "id": "phrase_b028_message_received_over_001",
+            "target_text": "Message received, over.",
+            "should_accept": [
+                "Message received, over."
+            ],
+            "should_reject": [
+                "Message received, out.",
+                "Message not received, over.",
+                "Message received, roger."
+            ]
+        },
+        {
+            "id": "phrase_b028_message_complete_out_001",
+            "target_text": "Message complete, out.",
+            "should_accept": [
+                "Message complete, out."
+            ],
+            "should_reject": [
+                "Message complete, over.",
+                "Message incomplete, out.",
+                "Message complete, stand by."
+            ]
+        },
+        {
+            "id": "phrase_b028_do_not_cross_ahead_001",
+            "target_text": "Do not cross ahead.",
+            "should_accept": [
+                "Do not cross ahead."
+            ],
+            "should_reject": [
+                "Cross ahead.",
+                "Do not cross astern.",
+                "Do not overtake ahead."
+            ]
+        },
+        {
+            "id": "phrase_b028_pass_astern_of_my_vessel_001",
+            "target_text": "Pass astern of my vessel.",
+            "should_accept": [
+                "Pass astern of my vessel."
+            ],
+            "should_reject": [
+                "Pass ahead of my vessel.",
+                "Pass abeam of my vessel.",
+                "Do not pass astern of my vessel."
+            ]
+        },
+        {
+            "id": "phrase_b028_report_when_clear_of_traffic_001",
+            "target_text": "Report when clear of traffic.",
+            "should_accept": [
+                "Report when clear of traffic."
+            ],
+            "should_reject": [
+                "Report when in traffic.",
+                "Report when clear of channel.",
+                "Do not report when clear of traffic."
             ]
         }
     ],
