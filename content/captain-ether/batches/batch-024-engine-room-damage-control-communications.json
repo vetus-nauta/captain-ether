@@ -1,10 +1,10 @@
 {
     "version": 1,
     "batch_id": "batch-024-engine-room-damage-control-communications",
-    "status": "draft",
+    "status": "merged",
     "date": "2026-06-03",
     "branch": "onboard_operations",
-    "scope": "M5 Batch 024 draft. Adds engine-room, machinery-status, flooding, fire, steering, emergency power, and damage-control radio communication. Draft only: no starter merge and no production deploy.",
+    "scope": "M5 Batch 024 draft. Adds engine-room, machinery-status, flooding, fire, steering, emergency power, and damage-control radio communication. Merged into local/GitHub starter by CE-0158. No production deploy.",
     "items": [
         {
             "id": "word_b024_engine_room_001",
@@ -1863,6 +1863,6 @@
         "type_mix": "5 word, 8 short_expression, 22 phrase",
         "level_mix": "5 beginner, 15 intermediate, 15 advanced",
         "production_scope": "none",
-        "next_gate": "Sea Speak Linguist / Engineering Gate before acceptance QA or merge"
+        "next_gate": "Post-merge QA before any production sync"
     }
 }

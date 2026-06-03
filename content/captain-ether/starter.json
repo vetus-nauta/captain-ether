@@ -16983,6 +16983,734 @@
             "hint_beginner": "Report one...",
             "hint_intermediate": "Report one patient with...",
             "hint_advanced": ""
+        },
+        {
+            "id": "word_b024_engine_room_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 6,
+            "topic": "engine_room_damage_control",
+            "branch": "onboard_operations",
+            "module": "machinery_status",
+            "source_language": "ru",
+            "source_text": "Машинное отделение.",
+            "target_language": "en",
+            "target_text": "engine room",
+            "accepted_answers": [
+                "engine room",
+                "the engine room"
+            ],
+            "grammar_pattern": "b024_b024_engine_room_pattern",
+            "hint_beginner": "engine room...",
+            "hint_intermediate": "engine room...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b024_bilge_pump_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "engine_room_damage_control",
+            "branch": "onboard_operations",
+            "module": "flooding_control",
+            "source_language": "ru",
+            "source_text": "Осушительный насос.",
+            "target_language": "en",
+            "target_text": "bilge pump",
+            "accepted_answers": [
+                "bilge pump"
+            ],
+            "grammar_pattern": "b024_b024_bilge_pump_pattern",
+            "hint_beginner": "bilge pump...",
+            "hint_intermediate": "bilge pump...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b024_steering_gear_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "engine_room_damage_control",
+            "branch": "onboard_operations",
+            "module": "steering_failure",
+            "source_language": "ru",
+            "source_text": "Рулевое устройство.",
+            "target_language": "en",
+            "target_text": "steering gear",
+            "accepted_answers": [
+                "steering gear"
+            ],
+            "grammar_pattern": "b024_b024_steering_gear_pattern",
+            "hint_beginner": "steering gear...",
+            "hint_intermediate": "steering gear...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b024_fire_pump_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "engine_room_damage_control",
+            "branch": "urgency_panpan",
+            "module": "fire_response",
+            "source_language": "ru",
+            "source_text": "Пожарный насос.",
+            "target_language": "en",
+            "target_text": "fire pump",
+            "accepted_answers": [
+                "fire pump"
+            ],
+            "grammar_pattern": "b024_b024_fire_pump_pattern",
+            "hint_beginner": "fire pump...",
+            "hint_intermediate": "fire pump...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b024_watertight_door_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "engine_room_damage_control",
+            "branch": "onboard_operations",
+            "module": "damage_control",
+            "source_language": "ru",
+            "source_text": "Водонепроницаемая дверь.",
+            "target_language": "en",
+            "target_text": "watertight door",
+            "accepted_answers": [
+                "watertight door"
+            ],
+            "grammar_pattern": "b024_b024_watertight_door_pattern",
+            "hint_beginner": "watertight door...",
+            "hint_intermediate": "watertight door...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b024_engine_overheating_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "engine_room_damage_control",
+            "branch": "urgency_panpan",
+            "module": "machinery_status",
+            "source_language": "ru",
+            "source_text": "Перегрев двигателя.",
+            "target_language": "en",
+            "target_text": "engine overheating",
+            "accepted_answers": [
+                "engine overheating",
+                "main engine overheating"
+            ],
+            "grammar_pattern": "b024_b024_engine_overheating_pattern",
+            "hint_beginner": "engine overheating...",
+            "hint_intermediate": "engine overheating...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b024_steering_failure_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "engine_room_damage_control",
+            "branch": "urgency_panpan",
+            "module": "steering_failure",
+            "source_language": "ru",
+            "source_text": "Доложен отказ рулевого устройства.",
+            "target_language": "en",
+            "target_text": "steering gear failure reported",
+            "accepted_answers": [
+                "steering gear failure reported",
+                "steering gear failure is reported"
+            ],
+            "grammar_pattern": "b024_b024_steering_failure_pattern",
+            "hint_beginner": "steering gear...",
+            "hint_intermediate": "steering gear failure...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b024_bilge_pump_running_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "engine_room_damage_control",
+            "branch": "onboard_operations",
+            "module": "flooding_control",
+            "source_language": "ru",
+            "source_text": "Осушительный насос машинного отделения работает.",
+            "target_language": "en",
+            "target_text": "engine-room bilge pump running",
+            "accepted_answers": [
+                "engine-room bilge pump running",
+                "engine room bilge pump is running"
+            ],
+            "grammar_pattern": "b024_b024_bilge_pump_running_pattern",
+            "hint_beginner": "engine-room bilge...",
+            "hint_intermediate": "engine-room bilge pump...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b024_fire_pump_ready_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "engine_room_damage_control",
+            "branch": "urgency_panpan",
+            "module": "fire_response",
+            "source_language": "ru",
+            "source_text": "Пожарный насос готов.",
+            "target_language": "en",
+            "target_text": "fire pump ready",
+            "accepted_answers": [
+                "fire pump ready",
+                "fire pump is ready"
+            ],
+            "grammar_pattern": "b024_b024_fire_pump_ready_pattern",
+            "hint_beginner": "fire pump...",
+            "hint_intermediate": "fire pump ready...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b024_close_watertight_door_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "engine_room_damage_control",
+            "branch": "onboard_operations",
+            "module": "damage_control",
+            "source_language": "ru",
+            "source_text": "Закрыть водонепроницаемую дверь.",
+            "target_language": "en",
+            "target_text": "close watertight door",
+            "accepted_answers": [
+                "close watertight door",
+                "close the watertight door"
+            ],
+            "grammar_pattern": "b024_b024_close_watertight_door_pattern",
+            "hint_beginner": "close watertight...",
+            "hint_intermediate": "close watertight door...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b024_isolate_fuel_supply_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "engine_room_damage_control",
+            "branch": "urgency_panpan",
+            "module": "fire_response",
+            "source_language": "ru",
+            "source_text": "Изолировать подачу топлива в машинном отделении.",
+            "target_language": "en",
+            "target_text": "isolate engine-room fuel supply",
+            "accepted_answers": [
+                "isolate engine-room fuel supply",
+                "shut off engine-room fuel supply"
+            ],
+            "grammar_pattern": "b024_b024_isolate_fuel_supply_pattern",
+            "hint_beginner": "isolate engine-room...",
+            "hint_intermediate": "isolate engine-room fuel...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b024_start_emergency_generator_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "engine_room_damage_control",
+            "branch": "onboard_operations",
+            "module": "power_failure",
+            "source_language": "ru",
+            "source_text": "Запустить аварийный генератор.",
+            "target_language": "en",
+            "target_text": "start emergency generator",
+            "accepted_answers": [
+                "start emergency generator",
+                "start the emergency generator"
+            ],
+            "grammar_pattern": "b024_b024_start_emergency_generator_pattern",
+            "hint_beginner": "start emergency...",
+            "hint_intermediate": "start emergency generator...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b024_report_damage_status_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 8,
+            "topic": "engine_room_damage_control",
+            "branch": "onboard_operations",
+            "module": "damage_report_readback",
+            "source_language": "ru",
+            "source_text": "Доложить состояние повреждений.",
+            "target_language": "en",
+            "target_text": "report damage status",
+            "accepted_answers": [
+                "report damage status",
+                "report the damage status"
+            ],
+            "grammar_pattern": "b024_b024_report_damage_status_pattern",
+            "hint_beginner": "report damage...",
+            "hint_intermediate": "report damage status...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_engine_room_reports_overheating_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "engine_room_damage_control",
+            "branch": "urgency_panpan",
+            "module": "machinery_status",
+            "source_language": "ru",
+            "source_text": "Машинное отделение докладывает перегрев.",
+            "target_language": "en",
+            "target_text": "Engine room reports overheating.",
+            "accepted_answers": [
+                "Engine room reports overheating.",
+                "Engine room reporting overheating."
+            ],
+            "grammar_pattern": "b024_b024_engine_room_reports_overheating_pattern",
+            "hint_beginner": "Engine room...",
+            "hint_intermediate": "Engine room reports...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_stop_main_engine_immediately_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "engine_room_damage_control",
+            "branch": "onboard_operations",
+            "module": "machinery_status",
+            "source_language": "ru",
+            "source_text": "Немедленно остановите главный двигатель.",
+            "target_language": "en",
+            "target_text": "Stop main engine immediately.",
+            "accepted_answers": [
+                "Stop main engine immediately.",
+                "Stop the main engine immediately."
+            ],
+            "grammar_pattern": "b024_b024_stop_main_engine_immediately_pattern",
+            "hint_beginner": "Stop main...",
+            "hint_intermediate": "Stop main engine...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_steering_gear_failure_nuc_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "engine_room_damage_control",
+            "branch": "distress_mayday",
+            "module": "steering_failure",
+            "source_language": "ru",
+            "source_text": "Отказ рулевого устройства, судно не управляется.",
+            "target_language": "en",
+            "target_text": "Steering gear failure, vessel not under command.",
+            "accepted_answers": [
+                "Steering gear failure, vessel not under command.",
+                "Steering failure, vessel not under command."
+            ],
+            "grammar_pattern": "b024_b024_steering_gear_failure_nuc_pattern",
+            "hint_beginner": "Steering gear...",
+            "hint_intermediate": "Steering gear failure,...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_bilge_pump_running_water_rising_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "engine_room_damage_control",
+            "branch": "urgency_panpan",
+            "module": "flooding_control",
+            "source_language": "ru",
+            "source_text": "Осушительный насос работает, уровень воды повышается.",
+            "target_language": "en",
+            "target_text": "Bilge pump running, water level rising.",
+            "accepted_answers": [
+                "Bilge pump running, water level rising.",
+                "Bilge pump is running, water level is rising."
+            ],
+            "grammar_pattern": "b024_b024_bilge_pump_running_water_rising_pattern",
+            "hint_beginner": "Bilge pump...",
+            "hint_intermediate": "Bilge pump running,...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_fire_engine_room_smoke_visible_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "engine_room_damage_control",
+            "branch": "distress_mayday",
+            "module": "fire_response",
+            "source_language": "ru",
+            "source_text": "Пожар в машинном отделении, виден дым.",
+            "target_language": "en",
+            "target_text": "Fire in engine room, smoke visible.",
+            "accepted_answers": [
+                "Fire in engine room, smoke visible.",
+                "Fire in the engine room, smoke visible."
+            ],
+            "grammar_pattern": "b024_b024_fire_engine_room_smoke_visible_pattern",
+            "hint_beginner": "Fire in...",
+            "hint_intermediate": "Fire in engine...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_close_watertight_door_compartment_two_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "engine_room_damage_control",
+            "branch": "onboard_operations",
+            "module": "damage_control",
+            "source_language": "ru",
+            "source_text": "Закройте водонепроницаемую дверь во втором отсеке.",
+            "target_language": "en",
+            "target_text": "Close watertight door in compartment two.",
+            "accepted_answers": [
+                "Close watertight door in compartment two.",
+                "Close the watertight door in compartment two."
+            ],
+            "grammar_pattern": "b024_b024_close_watertight_door_compartment_two_pattern",
+            "hint_beginner": "Close watertight...",
+            "hint_intermediate": "Close watertight door...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_isolate_fuel_supply_main_engine_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "engine_room_damage_control",
+            "branch": "urgency_panpan",
+            "module": "fire_response",
+            "source_language": "ru",
+            "source_text": "Изолируйте подачу топлива к главному двигателю.",
+            "target_language": "en",
+            "target_text": "Isolate fuel supply to main engine.",
+            "accepted_answers": [
+                "Isolate fuel supply to main engine.",
+                "Shut off fuel supply to main engine."
+            ],
+            "grammar_pattern": "b024_b024_isolate_fuel_supply_main_engine_pattern",
+            "hint_beginner": "Isolate fuel...",
+            "hint_intermediate": "Isolate fuel supply...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_start_emergency_generator_report_voltage_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "engine_room_damage_control",
+            "branch": "onboard_operations",
+            "module": "power_failure",
+            "source_language": "ru",
+            "source_text": "Запустите аварийный генератор и доложите напряжение.",
+            "target_language": "en",
+            "target_text": "Start emergency generator and report voltage.",
+            "accepted_answers": [
+                "Start emergency generator and report voltage.",
+                "Start the emergency generator and report voltage."
+            ],
+            "grammar_pattern": "b024_b024_start_emergency_generator_report_voltage_pattern",
+            "hint_beginner": "Start emergency...",
+            "hint_intermediate": "Start emergency generator...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_damage_control_team_engine_room_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "engine_room_damage_control",
+            "branch": "onboard_operations",
+            "module": "damage_control",
+            "source_language": "ru",
+            "source_text": "Аварийная партия идет в машинное отделение.",
+            "target_language": "en",
+            "target_text": "Damage control team proceeding to engine room.",
+            "accepted_answers": [
+                "Damage control team proceeding to engine room."
+            ],
+            "grammar_pattern": "b024_b024_damage_control_team_engine_room_pattern",
+            "hint_beginner": "Damage control...",
+            "hint_intermediate": "Damage control team...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_flooding_contained_aft_compartment_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "engine_room_damage_control",
+            "branch": "urgency_panpan",
+            "module": "flooding_control",
+            "source_language": "ru",
+            "source_text": "Затопление локализовано в кормовом отсеке.",
+            "target_language": "en",
+            "target_text": "Flooding contained in aft compartment.",
+            "accepted_answers": [
+                "Flooding contained in aft compartment.",
+                "Flooding is contained in the aft compartment."
+            ],
+            "grammar_pattern": "b024_b024_flooding_contained_aft_compartment_pattern",
+            "hint_beginner": "Flooding contained...",
+            "hint_intermediate": "Flooding contained in...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_require_assistance_engine_room_fire_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "engine_room_damage_control",
+            "branch": "distress_mayday",
+            "module": "fire_response",
+            "source_language": "ru",
+            "source_text": "Требуется помощь при пожаре в машинном отделении.",
+            "target_language": "en",
+            "target_text": "We require assistance for engine-room fire.",
+            "accepted_answers": [
+                "We require assistance for engine-room fire.",
+                "Require assistance for engine room fire."
+            ],
+            "grammar_pattern": "b024_b024_require_assistance_engine_room_fire_pattern",
+            "hint_beginner": "We require...",
+            "hint_intermediate": "We require assistance...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_prepare_extinguisher_engine_room_entrance_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "engine_room_damage_control",
+            "branch": "onboard_operations",
+            "module": "fire_response",
+            "source_language": "ru",
+            "source_text": "Подготовьте переносной огнетушитель у входа в машинное отделение.",
+            "target_language": "en",
+            "target_text": "Prepare portable fire extinguisher at engine-room entrance.",
+            "accepted_answers": [
+                "Prepare portable fire extinguisher at engine-room entrance.",
+                "Prepare a portable fire extinguisher at the engine-room entrance."
+            ],
+            "grammar_pattern": "b024_b024_prepare_extinguisher_engine_room_entrance_pattern",
+            "hint_beginner": "Prepare portable...",
+            "hint_intermediate": "Prepare portable fire...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_boundary_cooling_port_side_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "engine_room_damage_control",
+            "branch": "distress_mayday",
+            "module": "fire_response",
+            "source_language": "ru",
+            "source_text": "Охлаждение границы ведется по левому борту.",
+            "target_language": "en",
+            "target_text": "Boundary cooling in progress on port side.",
+            "accepted_answers": [
+                "Boundary cooling in progress on port side.",
+                "Boundary cooling is in progress on port side."
+            ],
+            "grammar_pattern": "b024_b024_boundary_cooling_port_side_pattern",
+            "hint_beginner": "Boundary cooling...",
+            "hint_intermediate": "Boundary cooling in...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_ventilation_stopped_access_restricted_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "engine_room_damage_control",
+            "branch": "onboard_operations",
+            "module": "fire_response",
+            "source_language": "ru",
+            "source_text": "Вентиляция остановлена, доступ в машинное отделение ограничен.",
+            "target_language": "en",
+            "target_text": "Ventilation stopped, engine-room access restricted.",
+            "accepted_answers": [
+                "Ventilation stopped, engine-room access restricted.",
+                "Ventilation is stopped, engine-room access is restricted."
+            ],
+            "grammar_pattern": "b024_b024_ventilation_stopped_access_restricted_pattern",
+            "hint_beginner": "Ventilation stopped,...",
+            "hint_intermediate": "Ventilation stopped, engine-room...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_main_engine_restarted_slow_speed_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "engine_room_damage_control",
+            "branch": "onboard_operations",
+            "module": "machinery_status",
+            "source_language": "ru",
+            "source_text": "Главный двигатель перезапущен на малом ходу.",
+            "target_language": "en",
+            "target_text": "Main engine restarted at slow speed.",
+            "accepted_answers": [
+                "Main engine restarted at slow speed.",
+                "Main engine is restarted at slow speed."
+            ],
+            "grammar_pattern": "b024_b024_main_engine_restarted_slow_speed_pattern",
+            "hint_beginner": "Main engine...",
+            "hint_intermediate": "Main engine restarted...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_emergency_steering_tested_ready_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "engine_room_damage_control",
+            "branch": "onboard_operations",
+            "module": "steering_failure",
+            "source_language": "ru",
+            "source_text": "Аварийное рулевое управление проверено и готово.",
+            "target_language": "en",
+            "target_text": "Emergency steering tested and ready.",
+            "accepted_answers": [
+                "Emergency steering tested and ready.",
+                "Emergency steering is tested and ready."
+            ],
+            "grammar_pattern": "b024_b024_emergency_steering_tested_ready_pattern",
+            "hint_beginner": "Emergency steering...",
+            "hint_intermediate": "Emergency steering tested...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_report_damage_status_every_five_minutes_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "engine_room_damage_control",
+            "branch": "onboard_operations",
+            "module": "damage_report_readback",
+            "source_language": "ru",
+            "source_text": "Докладывайте состояние повреждений каждые пять минут.",
+            "target_language": "en",
+            "target_text": "Report damage status every five minutes.",
+            "accepted_answers": [
+                "Report damage status every five minutes.",
+                "Report the damage status every five minutes."
+            ],
+            "grammar_pattern": "b024_b024_report_damage_status_every_five_minutes_pattern",
+            "hint_beginner": "Report damage...",
+            "hint_intermediate": "Report damage status...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_fuel_leak_stopped_absorbent_pads_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "engine_room_damage_control",
+            "branch": "urgency_panpan",
+            "module": "fire_response",
+            "source_language": "ru",
+            "source_text": "Утечка топлива остановлена, впитывающие маты уложены.",
+            "target_language": "en",
+            "target_text": "Fuel leak stopped, absorbent pads deployed.",
+            "accepted_answers": [
+                "Fuel leak stopped, absorbent pads deployed.",
+                "Fuel leak is stopped, absorbent pads deployed."
+            ],
+            "grammar_pattern": "b024_b024_fuel_leak_stopped_absorbent_pads_pattern",
+            "hint_beginner": "Fuel leak...",
+            "hint_intermediate": "Fuel leak stopped,...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_bilge_alarm_active_engine_room_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "engine_room_damage_control",
+            "branch": "onboard_operations",
+            "module": "flooding_control",
+            "source_language": "ru",
+            "source_text": "Сигнализация льял активна в машинном отделении.",
+            "target_language": "en",
+            "target_text": "Bilge alarm active in engine room.",
+            "accepted_answers": [
+                "Bilge alarm active in engine room.",
+                "Bilge alarm is active in engine room."
+            ],
+            "grammar_pattern": "b024_b024_bilge_alarm_active_engine_room_pattern",
+            "hint_beginner": "Bilge alarm...",
+            "hint_intermediate": "Bilge alarm active...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_request_tug_assistance_propulsion_failure_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "engine_room_damage_control",
+            "branch": "urgency_panpan",
+            "module": "machinery_status",
+            "source_language": "ru",
+            "source_text": "Запрашиваем буксир из-за отказа движителя.",
+            "target_language": "en",
+            "target_text": "Request tug assistance due to propulsion failure.",
+            "accepted_answers": [
+                "Request tug assistance due to propulsion failure.",
+                "We request tug assistance due to propulsion failure."
+            ],
+            "grammar_pattern": "b024_b024_request_tug_assistance_propulsion_failure_pattern",
+            "hint_beginner": "Request tug...",
+            "hint_intermediate": "Request tug assistance...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_panpan_disabled_steering_failure_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 10,
+            "topic": "engine_room_damage_control",
+            "branch": "urgency_panpan",
+            "module": "steering_failure",
+            "source_language": "ru",
+            "source_text": "Пан-Пан, судно потеряло ход из-за отказа рулевого управления.",
+            "target_language": "en",
+            "target_text": "Pan-Pan, disabled vessel with steering failure.",
+            "accepted_answers": [
+                "Pan-Pan, disabled vessel with steering failure."
+            ],
+            "grammar_pattern": "b024_b024_panpan_disabled_steering_failure_pattern",
+            "hint_beginner": "Pan-Pan, disabled...",
+            "hint_intermediate": "Pan-Pan, disabled vessel...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b024_mayday_engine_room_fire_not_under_control_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 10,
+            "topic": "engine_room_damage_control",
+            "branch": "distress_mayday",
+            "module": "fire_response",
+            "source_language": "ru",
+            "source_text": "Мэйдэй, пожар в машинном отделении не под контролем.",
+            "target_language": "en",
+            "target_text": "Mayday, engine-room fire not under control.",
+            "accepted_answers": [
+                "Mayday, engine-room fire not under control."
+            ],
+            "grammar_pattern": "b024_b024_mayday_engine_room_fire_not_under_control_pattern",
+            "hint_beginner": "Mayday, engine-room...",
+            "hint_intermediate": "Mayday, engine-room fire...",
+            "hint_advanced": ""
         }
     ],
     "grammar_patterns": [
@@ -20471,6 +21199,251 @@
             "pattern": "medical_reports phrase pattern",
             "examples": [
                 "Report one patient with hypothermia."
+            ]
+        },
+        {
+            "id": "b024_b024_engine_room_pattern",
+            "pattern": "machinery_status word pattern",
+            "examples": [
+                "engine room"
+            ]
+        },
+        {
+            "id": "b024_b024_bilge_pump_pattern",
+            "pattern": "flooding_control word pattern",
+            "examples": [
+                "bilge pump"
+            ]
+        },
+        {
+            "id": "b024_b024_steering_gear_pattern",
+            "pattern": "steering_failure word pattern",
+            "examples": [
+                "steering gear"
+            ]
+        },
+        {
+            "id": "b024_b024_fire_pump_pattern",
+            "pattern": "fire_response word pattern",
+            "examples": [
+                "fire pump"
+            ]
+        },
+        {
+            "id": "b024_b024_watertight_door_pattern",
+            "pattern": "damage_control word pattern",
+            "examples": [
+                "watertight door"
+            ]
+        },
+        {
+            "id": "b024_b024_engine_overheating_pattern",
+            "pattern": "machinery_status short_expression pattern",
+            "examples": [
+                "engine overheating"
+            ]
+        },
+        {
+            "id": "b024_b024_steering_failure_pattern",
+            "pattern": "steering_failure short_expression pattern",
+            "examples": [
+                "steering gear failure reported"
+            ]
+        },
+        {
+            "id": "b024_b024_bilge_pump_running_pattern",
+            "pattern": "flooding_control short_expression pattern",
+            "examples": [
+                "engine-room bilge pump running"
+            ]
+        },
+        {
+            "id": "b024_b024_fire_pump_ready_pattern",
+            "pattern": "fire_response short_expression pattern",
+            "examples": [
+                "fire pump ready"
+            ]
+        },
+        {
+            "id": "b024_b024_close_watertight_door_pattern",
+            "pattern": "damage_control short_expression pattern",
+            "examples": [
+                "close watertight door"
+            ]
+        },
+        {
+            "id": "b024_b024_isolate_fuel_supply_pattern",
+            "pattern": "fire_response short_expression pattern",
+            "examples": [
+                "isolate engine-room fuel supply"
+            ]
+        },
+        {
+            "id": "b024_b024_start_emergency_generator_pattern",
+            "pattern": "power_failure short_expression pattern",
+            "examples": [
+                "start emergency generator"
+            ]
+        },
+        {
+            "id": "b024_b024_report_damage_status_pattern",
+            "pattern": "damage_report_readback short_expression pattern",
+            "examples": [
+                "report damage status"
+            ]
+        },
+        {
+            "id": "b024_b024_engine_room_reports_overheating_pattern",
+            "pattern": "machinery_status phrase pattern",
+            "examples": [
+                "Engine room reports overheating."
+            ]
+        },
+        {
+            "id": "b024_b024_stop_main_engine_immediately_pattern",
+            "pattern": "machinery_status phrase pattern",
+            "examples": [
+                "Stop main engine immediately."
+            ]
+        },
+        {
+            "id": "b024_b024_steering_gear_failure_nuc_pattern",
+            "pattern": "steering_failure phrase pattern",
+            "examples": [
+                "Steering gear failure, vessel not under command."
+            ]
+        },
+        {
+            "id": "b024_b024_bilge_pump_running_water_rising_pattern",
+            "pattern": "flooding_control phrase pattern",
+            "examples": [
+                "Bilge pump running, water level rising."
+            ]
+        },
+        {
+            "id": "b024_b024_fire_engine_room_smoke_visible_pattern",
+            "pattern": "fire_response phrase pattern",
+            "examples": [
+                "Fire in engine room, smoke visible."
+            ]
+        },
+        {
+            "id": "b024_b024_close_watertight_door_compartment_two_pattern",
+            "pattern": "damage_control phrase pattern",
+            "examples": [
+                "Close watertight door in compartment two."
+            ]
+        },
+        {
+            "id": "b024_b024_isolate_fuel_supply_main_engine_pattern",
+            "pattern": "fire_response phrase pattern",
+            "examples": [
+                "Isolate fuel supply to main engine."
+            ]
+        },
+        {
+            "id": "b024_b024_start_emergency_generator_report_voltage_pattern",
+            "pattern": "power_failure phrase pattern",
+            "examples": [
+                "Start emergency generator and report voltage."
+            ]
+        },
+        {
+            "id": "b024_b024_damage_control_team_engine_room_pattern",
+            "pattern": "damage_control phrase pattern",
+            "examples": [
+                "Damage control team proceeding to engine room."
+            ]
+        },
+        {
+            "id": "b024_b024_flooding_contained_aft_compartment_pattern",
+            "pattern": "flooding_control phrase pattern",
+            "examples": [
+                "Flooding contained in aft compartment."
+            ]
+        },
+        {
+            "id": "b024_b024_require_assistance_engine_room_fire_pattern",
+            "pattern": "fire_response phrase pattern",
+            "examples": [
+                "We require assistance for engine-room fire."
+            ]
+        },
+        {
+            "id": "b024_b024_prepare_extinguisher_engine_room_entrance_pattern",
+            "pattern": "fire_response phrase pattern",
+            "examples": [
+                "Prepare portable fire extinguisher at engine-room entrance."
+            ]
+        },
+        {
+            "id": "b024_b024_boundary_cooling_port_side_pattern",
+            "pattern": "fire_response phrase pattern",
+            "examples": [
+                "Boundary cooling in progress on port side."
+            ]
+        },
+        {
+            "id": "b024_b024_ventilation_stopped_access_restricted_pattern",
+            "pattern": "fire_response phrase pattern",
+            "examples": [
+                "Ventilation stopped, engine-room access restricted."
+            ]
+        },
+        {
+            "id": "b024_b024_main_engine_restarted_slow_speed_pattern",
+            "pattern": "machinery_status phrase pattern",
+            "examples": [
+                "Main engine restarted at slow speed."
+            ]
+        },
+        {
+            "id": "b024_b024_emergency_steering_tested_ready_pattern",
+            "pattern": "steering_failure phrase pattern",
+            "examples": [
+                "Emergency steering tested and ready."
+            ]
+        },
+        {
+            "id": "b024_b024_report_damage_status_every_five_minutes_pattern",
+            "pattern": "damage_report_readback phrase pattern",
+            "examples": [
+                "Report damage status every five minutes."
+            ]
+        },
+        {
+            "id": "b024_b024_fuel_leak_stopped_absorbent_pads_pattern",
+            "pattern": "fire_response phrase pattern",
+            "examples": [
+                "Fuel leak stopped, absorbent pads deployed."
+            ]
+        },
+        {
+            "id": "b024_b024_bilge_alarm_active_engine_room_pattern",
+            "pattern": "flooding_control phrase pattern",
+            "examples": [
+                "Bilge alarm active in engine room."
+            ]
+        },
+        {
+            "id": "b024_b024_request_tug_assistance_propulsion_failure_pattern",
+            "pattern": "machinery_status phrase pattern",
+            "examples": [
+                "Request tug assistance due to propulsion failure."
+            ]
+        },
+        {
+            "id": "b024_b024_panpan_disabled_steering_failure_pattern",
+            "pattern": "steering_failure phrase pattern",
+            "examples": [
+                "Pan-Pan, disabled vessel with steering failure."
+            ]
+        },
+        {
+            "id": "b024_b024_mayday_engine_room_fire_not_under_control_pattern",
+            "pattern": "fire_response phrase pattern",
+            "examples": [
+                "Mayday, engine-room fire not under control."
             ]
         }
     ],

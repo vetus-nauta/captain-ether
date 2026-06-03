@@ -7149,6 +7149,390 @@
                 ]
             },
             "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b024 machinery location and engine status group",
+            "items": [
+                "word_b024_engine_room_001",
+                "expr_b024_engine_overheating_001",
+                "phrase_b024_engine_room_reports_overheating_001",
+                "phrase_b024_stop_main_engine_immediately_001",
+                "phrase_b024_main_engine_restarted_slow_speed_001"
+            ],
+            "must_accept": {
+                "word_b024_engine_room_001": [
+                    "engine room"
+                ],
+                "expr_b024_engine_overheating_001": [
+                    "engine overheating"
+                ],
+                "phrase_b024_engine_room_reports_overheating_001": [
+                    "Engine room reports overheating."
+                ],
+                "phrase_b024_stop_main_engine_immediately_001": [
+                    "Stop main engine immediately."
+                ],
+                "phrase_b024_main_engine_restarted_slow_speed_001": [
+                    "Main engine restarted at slow speed."
+                ]
+            },
+            "must_reject": {
+                "word_b024_engine_room_001": [
+                    "bridge",
+                    "deck store"
+                ],
+                "expr_b024_engine_overheating_001": [
+                    "engine cooling",
+                    "engine stopped"
+                ],
+                "phrase_b024_engine_room_reports_overheating_001": [
+                    "Bridge reports overheating",
+                    "Engine room reports cooling"
+                ],
+                "phrase_b024_stop_main_engine_immediately_001": [
+                    "Start main engine immediately",
+                    "Stop emergency generator immediately"
+                ],
+                "phrase_b024_main_engine_restarted_slow_speed_001": [
+                    "Main engine stopped at slow speed",
+                    "Emergency generator restarted at slow speed"
+                ]
+            },
+            "reason": "Engine-room location, engine state, and stop/start polarity must stay exact."
+        },
+        {
+            "pair": "b024 bilge and flooding control group",
+            "items": [
+                "word_b024_bilge_pump_001",
+                "expr_b024_bilge_pump_running_001",
+                "phrase_b024_bilge_pump_running_water_rising_001",
+                "phrase_b024_flooding_contained_aft_compartment_001",
+                "phrase_b024_bilge_alarm_active_engine_room_001"
+            ],
+            "must_accept": {
+                "word_b024_bilge_pump_001": [
+                    "bilge pump"
+                ],
+                "expr_b024_bilge_pump_running_001": [
+                    "engine-room bilge pump running"
+                ],
+                "phrase_b024_bilge_pump_running_water_rising_001": [
+                    "Bilge pump running, water level rising."
+                ],
+                "phrase_b024_flooding_contained_aft_compartment_001": [
+                    "Flooding contained in aft compartment."
+                ],
+                "phrase_b024_bilge_alarm_active_engine_room_001": [
+                    "Bilge alarm active in engine room."
+                ]
+            },
+            "must_reject": {
+                "word_b024_bilge_pump_001": [
+                    "fuel pump",
+                    "fire pump"
+                ],
+                "expr_b024_bilge_pump_running_001": [
+                    "fuel pump running",
+                    "bilge pump stopped"
+                ],
+                "phrase_b024_bilge_pump_running_water_rising_001": [
+                    "Bilge pump stopped water level falling",
+                    "Fuel pump running water level rising"
+                ],
+                "phrase_b024_flooding_contained_aft_compartment_001": [
+                    "Flooding spreading in aft compartment",
+                    "Fire contained in aft compartment"
+                ],
+                "phrase_b024_bilge_alarm_active_engine_room_001": [
+                    "Fire alarm active in engine room",
+                    "Bilge alarm cancelled in engine room"
+                ]
+            },
+            "reason": "Bilge/flooding terms must not collapse into fuel, fire, or wrong water-level trend."
+        },
+        {
+            "pair": "b024 steering and command-status group",
+            "items": [
+                "word_b024_steering_gear_001",
+                "expr_b024_steering_failure_001",
+                "phrase_b024_steering_gear_failure_nuc_001",
+                "phrase_b024_emergency_steering_tested_ready_001",
+                "phrase_b024_panpan_disabled_steering_failure_001"
+            ],
+            "must_accept": {
+                "word_b024_steering_gear_001": [
+                    "steering gear"
+                ],
+                "expr_b024_steering_failure_001": [
+                    "steering gear failure reported"
+                ],
+                "phrase_b024_steering_gear_failure_nuc_001": [
+                    "Steering gear failure, vessel not under command."
+                ],
+                "phrase_b024_emergency_steering_tested_ready_001": [
+                    "Emergency steering tested and ready."
+                ],
+                "phrase_b024_panpan_disabled_steering_failure_001": [
+                    "Pan-Pan, disabled vessel with steering failure."
+                ]
+            },
+            "must_reject": {
+                "word_b024_steering_gear_001": [
+                    "landing gear",
+                    "engine gear"
+                ],
+                "expr_b024_steering_failure_001": [
+                    "engine failure reported",
+                    "radio failure reported"
+                ],
+                "phrase_b024_steering_gear_failure_nuc_001": [
+                    "Engine failure vessel not under command",
+                    "Steering gear ready vessel under command"
+                ],
+                "phrase_b024_emergency_steering_tested_ready_001": [
+                    "Emergency steering failed and ready",
+                    "Main steering tested and ready"
+                ],
+                "phrase_b024_panpan_disabled_steering_failure_001": [
+                    "Mayday disabled vessel with steering failure",
+                    "Securite disabled vessel with steering failure"
+                ]
+            },
+            "reason": "Steering failure, readiness, disabled status, and radio marker must stay exact."
+        },
+        {
+            "pair": "b024 fire pump and fuel isolation group",
+            "items": [
+                "word_b024_fire_pump_001",
+                "expr_b024_fire_pump_ready_001",
+                "expr_b024_isolate_fuel_supply_001",
+                "phrase_b024_isolate_fuel_supply_main_engine_001",
+                "phrase_b024_fuel_leak_stopped_absorbent_pads_001"
+            ],
+            "must_accept": {
+                "word_b024_fire_pump_001": [
+                    "fire pump"
+                ],
+                "expr_b024_fire_pump_ready_001": [
+                    "fire pump ready"
+                ],
+                "expr_b024_isolate_fuel_supply_001": [
+                    "isolate engine-room fuel supply"
+                ],
+                "phrase_b024_isolate_fuel_supply_main_engine_001": [
+                    "Isolate fuel supply to main engine."
+                ],
+                "phrase_b024_fuel_leak_stopped_absorbent_pads_001": [
+                    "Fuel leak stopped, absorbent pads deployed."
+                ]
+            },
+            "must_reject": {
+                "word_b024_fire_pump_001": [
+                    "fuel pump",
+                    "bilge pump"
+                ],
+                "expr_b024_fire_pump_ready_001": [
+                    "fire pump failed",
+                    "fuel pump ready"
+                ],
+                "expr_b024_isolate_fuel_supply_001": [
+                    "increase engine-room fuel supply",
+                    "isolate water supply"
+                ],
+                "phrase_b024_isolate_fuel_supply_main_engine_001": [
+                    "Open fuel supply to main engine",
+                    "Isolate water supply to main engine"
+                ],
+                "phrase_b024_fuel_leak_stopped_absorbent_pads_001": [
+                    "Fuel leak continues absorbent pads deployed",
+                    "Water leak stopped absorbent pads deployed"
+                ]
+            },
+            "reason": "Fire/fuel terms, isolation action, and leak status must stay exact."
+        },
+        {
+            "pair": "b024 watertight boundary and compartment group",
+            "items": [
+                "word_b024_watertight_door_001",
+                "expr_b024_close_watertight_door_001",
+                "phrase_b024_close_watertight_door_compartment_two_001",
+                "phrase_b024_boundary_cooling_port_side_001",
+                "phrase_b024_ventilation_stopped_access_restricted_001"
+            ],
+            "must_accept": {
+                "word_b024_watertight_door_001": [
+                    "watertight door"
+                ],
+                "expr_b024_close_watertight_door_001": [
+                    "close watertight door"
+                ],
+                "phrase_b024_close_watertight_door_compartment_two_001": [
+                    "Close watertight door in compartment two."
+                ],
+                "phrase_b024_boundary_cooling_port_side_001": [
+                    "Boundary cooling in progress on port side."
+                ],
+                "phrase_b024_ventilation_stopped_access_restricted_001": [
+                    "Ventilation stopped, engine-room access restricted."
+                ]
+            },
+            "must_reject": {
+                "word_b024_watertight_door_001": [
+                    "weather door",
+                    "open door"
+                ],
+                "expr_b024_close_watertight_door_001": [
+                    "open watertight door",
+                    "close cabin door"
+                ],
+                "phrase_b024_close_watertight_door_compartment_two_001": [
+                    "Open watertight door in compartment two",
+                    "Close watertight door in compartment three"
+                ],
+                "phrase_b024_boundary_cooling_port_side_001": [
+                    "Boundary cooling in progress on starboard side",
+                    "Fire spreading on port side"
+                ],
+                "phrase_b024_ventilation_stopped_access_restricted_001": [
+                    "Ventilation started engine-room access restricted",
+                    "Ventilation stopped engine-room access open"
+                ]
+            },
+            "reason": "Boundary actions, door type, side, and access state must stay exact."
+        },
+        {
+            "pair": "b024 emergency power and damage report group",
+            "items": [
+                "expr_b024_start_emergency_generator_001",
+                "expr_b024_report_damage_status_001",
+                "phrase_b024_start_emergency_generator_report_voltage_001",
+                "phrase_b024_damage_control_team_engine_room_001",
+                "phrase_b024_report_damage_status_every_five_minutes_001"
+            ],
+            "must_accept": {
+                "expr_b024_start_emergency_generator_001": [
+                    "start emergency generator"
+                ],
+                "expr_b024_report_damage_status_001": [
+                    "report damage status"
+                ],
+                "phrase_b024_start_emergency_generator_report_voltage_001": [
+                    "Start emergency generator and report voltage."
+                ],
+                "phrase_b024_damage_control_team_engine_room_001": [
+                    "Damage control team proceeding to engine room."
+                ],
+                "phrase_b024_report_damage_status_every_five_minutes_001": [
+                    "Report damage status every five minutes."
+                ]
+            },
+            "must_reject": {
+                "expr_b024_start_emergency_generator_001": [
+                    "stop emergency generator",
+                    "start main engine"
+                ],
+                "expr_b024_report_damage_status_001": [
+                    "report weather status",
+                    "cancel damage report"
+                ],
+                "phrase_b024_start_emergency_generator_report_voltage_001": [
+                    "Stop emergency generator and report voltage",
+                    "Start main engine and report voltage"
+                ],
+                "phrase_b024_damage_control_team_engine_room_001": [
+                    "Medical team proceeding to engine room",
+                    "Damage control team proceeding to bridge"
+                ],
+                "phrase_b024_report_damage_status_every_five_minutes_001": [
+                    "Report damage status every ten minutes",
+                    "Report weather status every five minutes"
+                ]
+            },
+            "reason": "Emergency power, report subject, team role, and reporting interval must stay exact."
+        },
+        {
+            "pair": "b024 fire response escalation group",
+            "items": [
+                "phrase_b024_fire_engine_room_smoke_visible_001",
+                "phrase_b024_require_assistance_engine_room_fire_001",
+                "phrase_b024_prepare_extinguisher_engine_room_entrance_001",
+                "phrase_b024_mayday_engine_room_fire_not_under_control_001"
+            ],
+            "must_accept": {
+                "phrase_b024_fire_engine_room_smoke_visible_001": [
+                    "Fire in engine room, smoke visible."
+                ],
+                "phrase_b024_require_assistance_engine_room_fire_001": [
+                    "We require assistance for engine-room fire."
+                ],
+                "phrase_b024_prepare_extinguisher_engine_room_entrance_001": [
+                    "Prepare portable fire extinguisher at engine-room entrance."
+                ],
+                "phrase_b024_mayday_engine_room_fire_not_under_control_001": [
+                    "Mayday, engine-room fire not under control."
+                ]
+            },
+            "must_reject": {
+                "phrase_b024_fire_engine_room_smoke_visible_001": [
+                    "Fire drill in engine room",
+                    "Smoke cleared in engine room"
+                ],
+                "phrase_b024_require_assistance_engine_room_fire_001": [
+                    "We require assistance for engine-room drill",
+                    "We require fuel for engine-room fire"
+                ],
+                "phrase_b024_prepare_extinguisher_engine_room_entrance_001": [
+                    "Prepare lifejacket at engine-room entrance",
+                    "Prepare portable fire extinguisher at galley entrance"
+                ],
+                "phrase_b024_mayday_engine_room_fire_not_under_control_001": [
+                    "Pan-Pan engine-room fire not under control",
+                    "Mayday engine-room fire under control"
+                ]
+            },
+            "reason": "Fire location, assistance request, extinguisher location, and distress marker must stay exact."
+        },
+        {
+            "pair": "b024 assistance and propulsion group",
+            "items": [
+                "phrase_b024_request_tug_assistance_propulsion_failure_001",
+                "phrase_b024_panpan_disabled_steering_failure_001",
+                "phrase_b024_mayday_engine_room_fire_not_under_control_001",
+                "phrase_b024_steering_gear_failure_nuc_001"
+            ],
+            "must_accept": {
+                "phrase_b024_request_tug_assistance_propulsion_failure_001": [
+                    "Request tug assistance due to propulsion failure."
+                ],
+                "phrase_b024_panpan_disabled_steering_failure_001": [
+                    "Pan-Pan, disabled vessel with steering failure."
+                ],
+                "phrase_b024_mayday_engine_room_fire_not_under_control_001": [
+                    "Mayday, engine-room fire not under control."
+                ],
+                "phrase_b024_steering_gear_failure_nuc_001": [
+                    "Steering gear failure, vessel not under command."
+                ]
+            },
+            "must_reject": {
+                "phrase_b024_request_tug_assistance_propulsion_failure_001": [
+                    "Request pilot assistance due to propulsion failure",
+                    "Request tug assistance due to radio failure"
+                ],
+                "phrase_b024_panpan_disabled_steering_failure_001": [
+                    "Mayday disabled vessel with steering failure",
+                    "Securite disabled vessel with steering failure"
+                ],
+                "phrase_b024_mayday_engine_room_fire_not_under_control_001": [
+                    "Pan-Pan engine-room fire not under control",
+                    "Mayday engine-room fire under control"
+                ],
+                "phrase_b024_steering_gear_failure_nuc_001": [
+                    "Engine failure vessel not under command",
+                    "Steering gear ready vessel under command"
+                ]
+            },
+            "reason": "Tug/pilot assistance, propulsion/steering/fire failures, and Pan-Pan/Mayday boundaries must stay exact."
         }
     ],
     "items": [
@@ -18416,6 +18800,426 @@
                 "Report one passenger with hypothermia"
             ],
             "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b024_engine_room_001",
+            "target_text": "engine room",
+            "should_accept": [
+                "engine room"
+            ],
+            "should_reject": [
+                "bridge",
+                "deck store",
+                "radio room"
+            ]
+        },
+        {
+            "id": "word_b024_bilge_pump_001",
+            "target_text": "bilge pump",
+            "should_accept": [
+                "bilge pump"
+            ],
+            "should_reject": [
+                "fuel pump",
+                "fire pump",
+                "water tank"
+            ]
+        },
+        {
+            "id": "word_b024_steering_gear_001",
+            "target_text": "steering gear",
+            "should_accept": [
+                "steering gear"
+            ],
+            "should_reject": [
+                "landing gear",
+                "engine gear",
+                "mooring gear"
+            ]
+        },
+        {
+            "id": "word_b024_fire_pump_001",
+            "target_text": "fire pump",
+            "should_accept": [
+                "fire pump"
+            ],
+            "should_reject": [
+                "fuel pump",
+                "bilge pump",
+                "hand pump"
+            ]
+        },
+        {
+            "id": "word_b024_watertight_door_001",
+            "target_text": "watertight door",
+            "should_accept": [
+                "watertight door"
+            ],
+            "should_reject": [
+                "weather door",
+                "open door",
+                "gangway door"
+            ]
+        },
+        {
+            "id": "expr_b024_engine_overheating_001",
+            "target_text": "engine overheating",
+            "should_accept": [
+                "engine overheating"
+            ],
+            "should_reject": [
+                "engine cooling",
+                "engine stopped",
+                "engine normal"
+            ]
+        },
+        {
+            "id": "expr_b024_steering_failure_001",
+            "target_text": "steering gear failure reported",
+            "should_accept": [
+                "steering gear failure reported"
+            ],
+            "should_reject": [
+                "engine failure reported",
+                "radio failure reported",
+                "steering gear normal"
+            ]
+        },
+        {
+            "id": "expr_b024_bilge_pump_running_001",
+            "target_text": "engine-room bilge pump running",
+            "should_accept": [
+                "engine-room bilge pump running"
+            ],
+            "should_reject": [
+                "fuel pump running",
+                "bilge pump stopped",
+                "fire pump running"
+            ]
+        },
+        {
+            "id": "expr_b024_fire_pump_ready_001",
+            "target_text": "fire pump ready",
+            "should_accept": [
+                "fire pump ready"
+            ],
+            "should_reject": [
+                "fire pump failed",
+                "fuel pump ready",
+                "bilge pump ready"
+            ]
+        },
+        {
+            "id": "expr_b024_close_watertight_door_001",
+            "target_text": "close watertight door",
+            "should_accept": [
+                "close watertight door"
+            ],
+            "should_reject": [
+                "open watertight door",
+                "close cabin door",
+                "close weather door"
+            ]
+        },
+        {
+            "id": "expr_b024_isolate_fuel_supply_001",
+            "target_text": "isolate engine-room fuel supply",
+            "should_accept": [
+                "isolate engine-room fuel supply"
+            ],
+            "should_reject": [
+                "increase engine-room fuel supply",
+                "isolate water supply",
+                "open engine-room fuel supply"
+            ]
+        },
+        {
+            "id": "expr_b024_start_emergency_generator_001",
+            "target_text": "start emergency generator",
+            "should_accept": [
+                "start emergency generator"
+            ],
+            "should_reject": [
+                "stop emergency generator",
+                "start main engine",
+                "start bilge pump"
+            ]
+        },
+        {
+            "id": "expr_b024_report_damage_status_001",
+            "target_text": "report damage status",
+            "should_accept": [
+                "report damage status"
+            ],
+            "should_reject": [
+                "report weather status",
+                "cancel damage report",
+                "report passenger status"
+            ]
+        },
+        {
+            "id": "phrase_b024_engine_room_reports_overheating_001",
+            "target_text": "Engine room reports overheating.",
+            "should_accept": [
+                "Engine room reports overheating."
+            ],
+            "should_reject": [
+                "Bridge reports overheating",
+                "Engine room reports cooling",
+                "Engine room reports normal operation"
+            ]
+        },
+        {
+            "id": "phrase_b024_stop_main_engine_immediately_001",
+            "target_text": "Stop main engine immediately.",
+            "should_accept": [
+                "Stop main engine immediately."
+            ],
+            "should_reject": [
+                "Start main engine immediately",
+                "Stop emergency generator immediately",
+                "Reduce radio power immediately"
+            ]
+        },
+        {
+            "id": "phrase_b024_steering_gear_failure_nuc_001",
+            "target_text": "Steering gear failure, vessel not under command.",
+            "should_accept": [
+                "Steering gear failure, vessel not under command."
+            ],
+            "should_reject": [
+                "Engine failure vessel not under command",
+                "Steering gear ready vessel under command",
+                "Vessel restricted in ability to manoeuvre"
+            ]
+        },
+        {
+            "id": "phrase_b024_bilge_pump_running_water_rising_001",
+            "target_text": "Bilge pump running, water level rising.",
+            "should_accept": [
+                "Bilge pump running, water level rising."
+            ],
+            "should_reject": [
+                "Bilge pump stopped water level falling",
+                "Fuel pump running water level rising",
+                "Bilge pump running fuel level rising"
+            ]
+        },
+        {
+            "id": "phrase_b024_fire_engine_room_smoke_visible_001",
+            "target_text": "Fire in engine room, smoke visible.",
+            "should_accept": [
+                "Fire in engine room, smoke visible."
+            ],
+            "should_reject": [
+                "Fire drill in engine room",
+                "Smoke cleared in engine room",
+                "Fire on deck smoke visible"
+            ]
+        },
+        {
+            "id": "phrase_b024_close_watertight_door_compartment_two_001",
+            "target_text": "Close watertight door in compartment two.",
+            "should_accept": [
+                "Close watertight door in compartment two."
+            ],
+            "should_reject": [
+                "Open watertight door in compartment two",
+                "Close watertight door in compartment three",
+                "Close cabin door in compartment two"
+            ]
+        },
+        {
+            "id": "phrase_b024_isolate_fuel_supply_main_engine_001",
+            "target_text": "Isolate fuel supply to main engine.",
+            "should_accept": [
+                "Isolate fuel supply to main engine."
+            ],
+            "should_reject": [
+                "Open fuel supply to main engine",
+                "Isolate water supply to main engine",
+                "Isolate fuel supply to generator"
+            ]
+        },
+        {
+            "id": "phrase_b024_start_emergency_generator_report_voltage_001",
+            "target_text": "Start emergency generator and report voltage.",
+            "should_accept": [
+                "Start emergency generator and report voltage."
+            ],
+            "should_reject": [
+                "Stop emergency generator and report voltage",
+                "Start main engine and report voltage",
+                "Start emergency generator and report water level"
+            ]
+        },
+        {
+            "id": "phrase_b024_damage_control_team_engine_room_001",
+            "target_text": "Damage control team proceeding to engine room.",
+            "should_accept": [
+                "Damage control team proceeding to engine room."
+            ],
+            "should_reject": [
+                "Medical team proceeding to engine room",
+                "Damage control team proceeding to bridge",
+                "Damage control team standing down"
+            ]
+        },
+        {
+            "id": "phrase_b024_flooding_contained_aft_compartment_001",
+            "target_text": "Flooding contained in aft compartment.",
+            "should_accept": [
+                "Flooding contained in aft compartment."
+            ],
+            "should_reject": [
+                "Flooding spreading in aft compartment",
+                "Fire contained in aft compartment",
+                "Flooding contained in forward compartment"
+            ]
+        },
+        {
+            "id": "phrase_b024_require_assistance_engine_room_fire_001",
+            "target_text": "We require assistance for engine-room fire.",
+            "should_accept": [
+                "We require assistance for engine-room fire."
+            ],
+            "should_reject": [
+                "We require assistance for engine-room drill",
+                "We require fuel for engine-room fire",
+                "We do not require assistance for engine-room fire"
+            ]
+        },
+        {
+            "id": "phrase_b024_prepare_extinguisher_engine_room_entrance_001",
+            "target_text": "Prepare portable fire extinguisher at engine-room entrance.",
+            "should_accept": [
+                "Prepare portable fire extinguisher at engine-room entrance."
+            ],
+            "should_reject": [
+                "Prepare lifejacket at engine-room entrance",
+                "Prepare portable fire extinguisher at galley entrance",
+                "Stow portable fire extinguisher at engine-room entrance"
+            ]
+        },
+        {
+            "id": "phrase_b024_boundary_cooling_port_side_001",
+            "target_text": "Boundary cooling in progress on port side.",
+            "should_accept": [
+                "Boundary cooling in progress on port side."
+            ],
+            "should_reject": [
+                "Boundary cooling in progress on starboard side",
+                "Fire spreading on port side",
+                "Boundary cooling completed on port side"
+            ]
+        },
+        {
+            "id": "phrase_b024_ventilation_stopped_access_restricted_001",
+            "target_text": "Ventilation stopped, engine-room access restricted.",
+            "should_accept": [
+                "Ventilation stopped, engine-room access restricted."
+            ],
+            "should_reject": [
+                "Ventilation started engine-room access restricted",
+                "Ventilation stopped engine-room access open",
+                "Radio stopped engine-room access restricted"
+            ]
+        },
+        {
+            "id": "phrase_b024_main_engine_restarted_slow_speed_001",
+            "target_text": "Main engine restarted at slow speed.",
+            "should_accept": [
+                "Main engine restarted at slow speed."
+            ],
+            "should_reject": [
+                "Main engine stopped at slow speed",
+                "Emergency generator restarted at slow speed",
+                "Main engine restarted at full speed"
+            ]
+        },
+        {
+            "id": "phrase_b024_emergency_steering_tested_ready_001",
+            "target_text": "Emergency steering tested and ready.",
+            "should_accept": [
+                "Emergency steering tested and ready."
+            ],
+            "should_reject": [
+                "Emergency steering failed and ready",
+                "Main steering tested and ready",
+                "Emergency generator tested and ready"
+            ]
+        },
+        {
+            "id": "phrase_b024_report_damage_status_every_five_minutes_001",
+            "target_text": "Report damage status every five minutes.",
+            "should_accept": [
+                "Report damage status every five minutes."
+            ],
+            "should_reject": [
+                "Report damage status every ten minutes",
+                "Report weather status every five minutes",
+                "Cancel damage status every five minutes"
+            ]
+        },
+        {
+            "id": "phrase_b024_fuel_leak_stopped_absorbent_pads_001",
+            "target_text": "Fuel leak stopped, absorbent pads deployed.",
+            "should_accept": [
+                "Fuel leak stopped, absorbent pads deployed."
+            ],
+            "should_reject": [
+                "Fuel leak continues absorbent pads deployed",
+                "Water leak stopped absorbent pads deployed",
+                "Fuel leak stopped fenders deployed"
+            ]
+        },
+        {
+            "id": "phrase_b024_bilge_alarm_active_engine_room_001",
+            "target_text": "Bilge alarm active in engine room.",
+            "should_accept": [
+                "Bilge alarm active in engine room."
+            ],
+            "should_reject": [
+                "Fire alarm active in engine room",
+                "Bilge alarm cancelled in engine room",
+                "Bilge alarm active on bridge"
+            ]
+        },
+        {
+            "id": "phrase_b024_request_tug_assistance_propulsion_failure_001",
+            "target_text": "Request tug assistance due to propulsion failure.",
+            "should_accept": [
+                "Request tug assistance due to propulsion failure."
+            ],
+            "should_reject": [
+                "Request pilot assistance due to propulsion failure",
+                "Request tug assistance due to radio failure",
+                "Cancel tug assistance due to propulsion failure"
+            ]
+        },
+        {
+            "id": "phrase_b024_panpan_disabled_steering_failure_001",
+            "target_text": "Pan-Pan, disabled vessel with steering failure.",
+            "should_accept": [
+                "Pan-Pan, disabled vessel with steering failure."
+            ],
+            "should_reject": [
+                "Mayday disabled vessel with steering failure",
+                "Securite disabled vessel with steering failure",
+                "Pan-Pan disabled vessel with engine normal"
+            ]
+        },
+        {
+            "id": "phrase_b024_mayday_engine_room_fire_not_under_control_001",
+            "target_text": "Mayday, engine-room fire not under control.",
+            "should_accept": [
+                "Mayday, engine-room fire not under control."
+            ],
+            "should_reject": [
+                "Pan-Pan engine-room fire not under control",
+                "Mayday engine-room fire under control",
+                "Mayday galley fire not under control"
+            ]
         }
     ],
     "matcher_suggestions": [
