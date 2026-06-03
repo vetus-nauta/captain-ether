@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 026 production-synced and release-ready at the 935-item baseline; Batch 027 isolated draft is ready for linguist/engineering gate
+Canonical status: Batch 026 production-synced and release-ready at the 935-item baseline; Batch 027 isolated draft passed linguist/engineering gate and is ready for acceptance QA
 
 ## 1. Read This First
 
@@ -54,7 +54,7 @@ draft_backlog_items=35
 draft_backlog_grammar_patterns=35
 draft_backlog_qa_items=35
 draft_backlog_dangerous_pairs=11
-batch_027_status=draft
+batch_027_status=draft_linguist_engineering_passed
 ```
 
 ## 4. Latest Closed Gates
@@ -103,6 +103,7 @@ CE-0173 Batch 026 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 CE-0174 Batch 026 Production Sync Decision: CLOSED / PASS / PRODUCTION_SYNCED
 CE-0175 Batch 026 Production Release Readiness QA: PASS / RELEASE_READY_FOR_CURRENT_SCOPE
 CE-0176 Batch 027 SAR / Casualty-Transfer Draft Gate: DONE / DRAFT_READY_FOR_LINGUIST_ENGINEERING_GATE
+CE-0177 Batch 027 Linguist / Engineering Gate: PASS / READY_FOR_ACCEPTANCE_QA
 ```
 
 Important reports:
@@ -148,6 +149,7 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0174-batch-026-p
 content/captain-ether/roles/qa/reports/sprint-ce-0175-batch-026-production-release-readiness-qa-2026-06-03.md
 content/captain-ether/roles/content-producer/reports/batch-027-sar-casualty-transfer-reinforcement-card-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0176-batch-027-sar-casualty-transfer-draft-2026-06-03.md
+content/captain-ether/roles/sea-speak-linguist/reports/batch-027-sar-casualty-transfer-reinforcement-risk-review-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -155,13 +157,13 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0176-batch-027-s
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0177-batch-027-linguist-engineering-gate-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0178-batch-027-acceptance-qa-merge-decision-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run Batch 027 linguist/engineering gate. Review SAR/casualty-transfer safety boundaries; no merge, no deploy.
+Run Batch 027 acceptance QA and merge decision. Revalidate SAR/casualty-transfer safety boundaries; no merge, no deploy unless a separate staged merge task is opened.
 ```
 
 Expected Set B local/GitHub baseline:
@@ -181,7 +183,7 @@ draft_backlog_grammar_patterns=35
 draft_backlog_dangerous_pairs=11
 ```
 
-Production is synced and release-ready at 935. Batch 027 is isolated draft only; no merge/deploy until later gates pass.
+Production is synced and release-ready at 935. Batch 027 is isolated draft only and has passed linguist/engineering gate; no merge/deploy until acceptance QA and later gates pass.
 
 ## 6. Recommended Merge Plan After QA
 
@@ -191,7 +193,7 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. CE-0177 Batch 027 Linguist / Engineering Gate.
+1. CE-0178 Batch 027 Acceptance QA / Merge Decision.
 2. Then run Batch 027 acceptance QA, staged merge, post-merge QA, production sync, release-readiness QA.
 ```
 

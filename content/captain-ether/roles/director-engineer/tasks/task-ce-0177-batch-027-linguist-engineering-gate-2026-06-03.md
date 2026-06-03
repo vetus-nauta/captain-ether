@@ -3,7 +3,7 @@
 Date: 2026-06-03
 Owner: Sea Speak Linguist / Director-Engineer
 Scope: Captain Ether Batch 027 draft review
-Status: PLANNED
+Status: DONE / PASS / READY_FOR_ACCEPTANCE_QA
 
 ## Activation Condition
 
@@ -48,4 +48,24 @@ Expected output:
 ```text
 content/captain-ether/roles/sea-speak-linguist/reports/batch-027-sar-casualty-transfer-reinforcement-risk-review-2026-06-03.md
 next task for acceptance QA if gate passes
+```
+
+## Result
+
+```text
+PASS / READY_FOR_ACCEPTANCE_QA
+correction_applied=request_medical_evacuation_slug_fix
+validator=PASS
+validator_warnings=0
+id_collisions_with_starter=0
+id_collisions_with_qa=0
+target_collisions_with_starter=0
+pattern_id_collisions_with_starter=0
+pattern_text_collisions_with_starter=0
+duplicate_batch_ids=0
+duplicate_batch_targets=0
+duplicate_batch_pattern_ids=0
+starter_merge=false
+production_deploy=false
+next_task=CE-0178 Batch 027 Acceptance QA / Merge Decision
 ```
