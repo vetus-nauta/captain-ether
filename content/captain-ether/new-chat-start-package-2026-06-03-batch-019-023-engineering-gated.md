@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 026 production-synced at the 935-item baseline; next is CE-0175 release-readiness QA
+Canonical status: Batch 026 production-synced and release-ready at the 935-item baseline; next is M5 Batch 027 draft gate
 
 ## 1. Read This First
 
@@ -101,6 +101,7 @@ CE-0171 Batch 026 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
 CE-0172 Batch 026 Staged Merge Preparation: MERGED_LOCALLY / PASS
 CE-0173 Batch 026 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 CE-0174 Batch 026 Production Sync Decision: CLOSED / PASS / PRODUCTION_SYNCED
+CE-0175 Batch 026 Production Release Readiness QA: PASS / RELEASE_READY_FOR_CURRENT_SCOPE
 ```
 
 Important reports:
@@ -143,6 +144,7 @@ content/captain-ether/roles/qa/reports/sprint-ce-0171-batch-026-acceptance-qa-me
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0172-batch-026-staged-merge-preparation-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0173-batch-026-post-merge-qa-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0174-batch-026-production-sync-2026-06-03.md
+content/captain-ether/roles/qa/reports/sprint-ce-0175-batch-026-production-release-readiness-qa-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -150,13 +152,13 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0174-batch-026-p
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0175-batch-026-production-release-readiness-qa-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0176-batch-027-sar-casualty-transfer-draft-gate-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run release-readiness QA for the current 935-item production baseline. No deploy.
+Create isolated Batch 027 draft: SAR coordination and casualty-transfer reinforcement, 35 items. No merge, no deploy.
 ```
 
 Expected Set B local/GitHub baseline:
@@ -176,7 +178,7 @@ draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
 ```
 
-Production is synced at 935. Do not deploy in CE-0175; run release-readiness QA only.
+Production is synced and release-ready at 935. Batch 027 work starts as isolated draft only; no merge/deploy until later gates pass.
 
 ## 6. Recommended Merge Plan After QA
 
@@ -186,8 +188,8 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. CE-0175 Batch 026 Production Release Readiness QA.
-2. If release-readiness passes, continue M5 expansion with Batch 027 draft gate.
+1. CE-0176 Batch 027 SAR / Casualty-Transfer Draft Gate.
+2. Then run Batch 027 linguist/engineering gate, acceptance QA, staged merge, post-merge QA, production sync, release-readiness QA.
 ```
 
 This keeps production parity checkpoints small enough to debug.
@@ -198,7 +200,7 @@ Local validation:
 
 ```sh
 $HOME/.local/php-codex/bin/php content/captain-ether/tools/validate-captain-ether.php
-for b in 024 025 026; do
+for b in 025 026; do
   f=$(ls content/captain-ether/batches/batch-${b}-*.json)
   $HOME/.local/php-codex/bin/php content/captain-ether/tools/validate-captain-ether.php --batch="$f"
 done
