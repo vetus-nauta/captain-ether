@@ -1,7 +1,7 @@
 {
     "version": 1,
     "batch_id": "batch-027-sar-casualty-transfer-reinforcement",
-    "status": "draft",
+    "status": "merged",
     "date": "2026-06-03",
     "branch": "distress_mayday",
     "scope": "M5 Batch 027 draft. Adds SAR coordination and casualty-transfer reinforcement: casualty counts, medical transfer, helicopter winching, on-scene coordinator role, and relay updates. Draft only; not merged into starter and not deployed.",

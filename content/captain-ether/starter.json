@@ -19113,6 +19113,601 @@
             "hint_beginner": "Use alternate...",
             "hint_intermediate": "Use alternate route north...",
             "hint_advanced": ""
+        },
+        {
+            "id": "word_b027_on_scene_coordinator_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Координатор на месте.",
+            "target_language": "en",
+            "target_text": "on-scene coordinator",
+            "accepted_answers": [
+                "on-scene coordinator"
+            ],
+            "hint_beginner": "on-scene coordinator...",
+            "hint_intermediate": "on-scene coordinator...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b027_casualty_transfer_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Передача пострадавшего.",
+            "target_language": "en",
+            "target_text": "casualty transfer",
+            "accepted_answers": [
+                "casualty transfer"
+            ],
+            "hint_beginner": "casualty transfer...",
+            "hint_intermediate": "casualty transfer...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b027_prepare_stretcher_transfer_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Подготовить передачу на носилках.",
+            "target_language": "en",
+            "target_text": "prepare stretcher transfer",
+            "accepted_answers": [
+                "prepare stretcher transfer"
+            ],
+            "hint_beginner": "prepare stretcher...",
+            "hint_intermediate": "prepare stretcher transfer...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b027_request_medical_evacuation_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Запросить медицинскую эвакуацию.",
+            "target_language": "en",
+            "target_text": "request medical evacuation",
+            "accepted_answers": [
+                "request medical evacuation"
+            ],
+            "hint_beginner": "request medical...",
+            "hint_intermediate": "request medical evacuation...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b027_helicopter_winching_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Подъем вертолетной лебедкой.",
+            "target_language": "en",
+            "target_text": "helicopter winching",
+            "accepted_answers": [
+                "helicopter winching"
+            ],
+            "hint_beginner": "helicopter winching...",
+            "hint_intermediate": "helicopter winching...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b027_winchman_ready_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Лебедчик готов.",
+            "target_language": "en",
+            "target_text": "winchman ready",
+            "accepted_answers": [
+                "winchman ready"
+            ],
+            "hint_beginner": "winchman ready...",
+            "hint_intermediate": "winchman ready...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b027_on_scene_coordinator_assigned_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Координатор на месте назначен.",
+            "target_language": "en",
+            "target_text": "on-scene coordinator assigned",
+            "accepted_answers": [
+                "on-scene coordinator assigned"
+            ],
+            "hint_beginner": "on-scene coordinator...",
+            "hint_intermediate": "on-scene coordinator assigned...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b027_relay_casualty_update_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Передать обновление о пострадавшем.",
+            "target_language": "en",
+            "target_text": "relay casualty update",
+            "accepted_answers": [
+                "relay casualty update"
+            ],
+            "hint_beginner": "relay casualty...",
+            "hint_intermediate": "relay casualty update...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b027_casualty_count_three_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Три пострадавших.",
+            "target_language": "en",
+            "target_text": "casualty count three",
+            "accepted_answers": [
+                "casualty count three"
+            ],
+            "hint_beginner": "casualty count...",
+            "hint_intermediate": "casualty count three...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_survivor_in_water_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Пострадавший в воде.",
+            "target_language": "en",
+            "target_text": "Survivor in water.",
+            "accepted_answers": [
+                "Survivor in water."
+            ],
+            "hint_beginner": "Survivor in...",
+            "hint_intermediate": "Survivor in water....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_two_casualties_on_board_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Два пострадавших на борту.",
+            "target_language": "en",
+            "target_text": "Two casualties on board.",
+            "accepted_answers": [
+                "Two casualties on board."
+            ],
+            "hint_beginner": "Two casualties...",
+            "hint_intermediate": "Two casualties on board....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_three_casualties_need_transfer_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Трем пострадавшим требуется передача.",
+            "target_language": "en",
+            "target_text": "Three casualties require transfer.",
+            "accepted_answers": [
+                "Three casualties require transfer."
+            ],
+            "hint_beginner": "Three casualties...",
+            "hint_intermediate": "Three casualties require transfer....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_casualty_one_unconscious_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Пострадавший номер один без сознания.",
+            "target_language": "en",
+            "target_text": "Casualty one is unconscious.",
+            "accepted_answers": [
+                "Casualty one is unconscious."
+            ],
+            "hint_beginner": "Casualty one...",
+            "hint_intermediate": "Casualty one is unconscious....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_casualty_two_conscious_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Пострадавший номер два в сознании.",
+            "target_language": "en",
+            "target_text": "Casualty two is conscious.",
+            "accepted_answers": [
+                "Casualty two is conscious."
+            ],
+            "hint_beginner": "Casualty two...",
+            "hint_intermediate": "Casualty two is conscious....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_prepare_winch_transfer_stretcher_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Подготовить передачу носилок лебедкой.",
+            "target_language": "en",
+            "target_text": "Prepare winch transfer of stretcher.",
+            "accepted_answers": [
+                "Prepare winch transfer of stretcher."
+            ],
+            "hint_beginner": "Prepare winch...",
+            "hint_intermediate": "Prepare winch transfer of...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_helicopter_overhead_in_five_minutes_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Вертолет над вами через пять минут.",
+            "target_language": "en",
+            "target_text": "Helicopter overhead in five minutes.",
+            "accepted_answers": [
+                "Helicopter overhead in five minutes."
+            ],
+            "hint_beginner": "Helicopter overhead...",
+            "hint_intermediate": "Helicopter overhead in five...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_keep_deck_clear_for_winching_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Держать палубу свободной для подъема лебедкой.",
+            "target_language": "en",
+            "target_text": "Keep deck clear for winching.",
+            "accepted_answers": [
+                "Keep deck clear for winching."
+            ],
+            "hint_beginner": "Keep deck...",
+            "hint_intermediate": "Keep deck clear for...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_do_not_fire_flare_during_winching_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Не запускать ракету во время подъема лебедкой.",
+            "target_language": "en",
+            "target_text": "Do not fire flare during winching.",
+            "accepted_answers": [
+                "Do not fire flare during winching."
+            ],
+            "hint_beginner": "Do not...",
+            "hint_intermediate": "Do not fire flare...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_osc_assumes_coordination_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Координатор на месте принимает координацию.",
+            "target_language": "en",
+            "target_text": "On-scene coordinator assumes coordination.",
+            "accepted_answers": [
+                "On-scene coordinator assumes coordination."
+            ],
+            "hint_beginner": "On-scene coordinator...",
+            "hint_intermediate": "On-scene coordinator assumes coordination....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_osc_relieved_by_rescue_unit_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Координатор на месте сменен спасательной единицей.",
+            "target_language": "en",
+            "target_text": "On-scene coordinator relieved by rescue unit.",
+            "accepted_answers": [
+                "On-scene coordinator relieved by rescue unit."
+            ],
+            "hint_beginner": "On-scene coordinator...",
+            "hint_intermediate": "On-scene coordinator relieved by...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_report_to_osc_every_ten_minutes_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Докладывать координатору каждые десять минут.",
+            "target_language": "en",
+            "target_text": "Report to on-scene coordinator every ten minutes.",
+            "accepted_answers": [
+                "Report to on-scene coordinator every ten minutes."
+            ],
+            "hint_beginner": "Report to...",
+            "hint_intermediate": "Report to on-scene coordinator...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_relay_update_casualty_count_three_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Передать обновление: три пострадавших.",
+            "target_language": "en",
+            "target_text": "Relay update: casualty count three.",
+            "accepted_answers": [
+                "Relay update: casualty count three."
+            ],
+            "hint_beginner": "Relay update:...",
+            "hint_intermediate": "Relay update: casualty count...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_relay_update_helicopter_eta_15_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Передать обновление: прибытие вертолета через один пять минут.",
+            "target_language": "en",
+            "target_text": "Relay update: helicopter ETA one five minutes.",
+            "accepted_answers": [
+                "Relay update: helicopter ETA one five minutes."
+            ],
+            "hint_beginner": "Relay update:...",
+            "hint_intermediate": "Relay update: helicopter ETA...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_relay_update_transfer_completed_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Передать обновление: передача завершена.",
+            "target_language": "en",
+            "target_text": "Relay update: transfer completed.",
+            "accepted_answers": [
+                "Relay update: transfer completed."
+            ],
+            "hint_beginner": "Relay update:...",
+            "hint_intermediate": "Relay update: transfer completed....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_medical_team_ready_for_transfer_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Медицинская группа готова к передаче.",
+            "target_language": "en",
+            "target_text": "Medical team ready for transfer.",
+            "accepted_answers": [
+                "Medical team ready for transfer."
+            ],
+            "hint_beginner": "Medical team...",
+            "hint_intermediate": "Medical team ready for...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_transfer_casualty_to_rescue_boat_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Передать пострадавшего на спасательную шлюпку.",
+            "target_language": "en",
+            "target_text": "Transfer casualty to rescue boat.",
+            "accepted_answers": [
+                "Transfer casualty to rescue boat."
+            ],
+            "hint_beginner": "Transfer casualty...",
+            "hint_intermediate": "Transfer casualty to rescue...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_transfer_casualty_to_helicopter_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Передать пострадавшего на вертолет.",
+            "target_language": "en",
+            "target_text": "Transfer casualty to helicopter.",
+            "accepted_answers": [
+                "Transfer casualty to helicopter."
+            ],
+            "hint_beginner": "Transfer casualty...",
+            "hint_intermediate": "Transfer casualty to helicopter....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_stretcher_lowered_to_deck_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Носилки спущены на палубу.",
+            "target_language": "en",
+            "target_text": "Stretcher lowered to deck.",
+            "accepted_answers": [
+                "Stretcher lowered to deck."
+            ],
+            "hint_beginner": "Stretcher lowered...",
+            "hint_intermediate": "Stretcher lowered to deck....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_basket_lift_started_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Подъем корзины начат.",
+            "target_language": "en",
+            "target_text": "Basket lift started.",
+            "accepted_answers": [
+                "Basket lift started."
+            ],
+            "hint_beginner": "Basket lift...",
+            "hint_intermediate": "Basket lift started....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_casualty_packaged_for_hoist_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Пострадавший подготовлен к подъему.",
+            "target_language": "en",
+            "target_text": "Casualty packaged for hoist.",
+            "accepted_answers": [
+                "Casualty packaged for hoist."
+            ],
+            "hint_beginner": "Casualty packaged...",
+            "hint_intermediate": "Casualty packaged for hoist....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_do_not_move_casualty_before_medic_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Не перемещать пострадавшего до медика.",
+            "target_language": "en",
+            "target_text": "Do not move casualty before medic arrives.",
+            "accepted_answers": [
+                "Do not move casualty before medic arrives."
+            ],
+            "hint_beginner": "Do not...",
+            "hint_intermediate": "Do not move casualty...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_casualty_has_head_injury_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "У пострадавшего травма головы.",
+            "target_language": "en",
+            "target_text": "Casualty has head injury.",
+            "accepted_answers": [
+                "Casualty has head injury."
+            ],
+            "hint_beginner": "Casualty has...",
+            "hint_intermediate": "Casualty has head injury....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_casualty_bleeding_controlled_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Кровотечение у пострадавшего остановлено.",
+            "target_language": "en",
+            "target_text": "Casualty bleeding controlled.",
+            "accepted_answers": [
+                "Casualty bleeding controlled."
+            ],
+            "hint_beginner": "Casualty bleeding...",
+            "hint_intermediate": "Casualty bleeding controlled....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_rescue_unit_takes_over_search_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Спасательная единица принимает поиск.",
+            "target_language": "en",
+            "target_text": "Rescue unit takes over search.",
+            "accepted_answers": [
+                "Rescue unit takes over search."
+            ],
+            "hint_beginner": "Rescue unit...",
+            "hint_intermediate": "Rescue unit takes over...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b027_final_relay_casualty_ashore_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "sar_casualty_transfer_reinforcement",
+            "source_language": "ru",
+            "source_text": "Финальная передача: пострадавший на берегу.",
+            "target_language": "en",
+            "target_text": "Final relay: casualty ashore.",
+            "accepted_answers": [
+                "Final relay: casualty ashore."
+            ],
+            "hint_beginner": "Final relay:...",
+            "hint_intermediate": "Final relay: casualty ashore....",
+            "hint_advanced": ""
         }
     ],
     "grammar_patterns": [
@@ -23336,6 +23931,251 @@
             "pattern": "waypoint_avoidance phrase pattern",
             "examples": [
                 "Use alternate route north of area Delta."
+            ]
+        },
+        {
+            "id": "b027_on_scene_coordinator_pattern",
+            "pattern": "on-scene_coordinator word pattern",
+            "examples": [
+                "on-scene coordinator"
+            ]
+        },
+        {
+            "id": "b027_casualty_transfer_pattern",
+            "pattern": "casualty_transfer short_expression pattern",
+            "examples": [
+                "casualty transfer"
+            ]
+        },
+        {
+            "id": "b027_prepare_stretcher_transfer_pattern",
+            "pattern": "casualty_transfer short_expression pattern",
+            "examples": [
+                "prepare stretcher transfer"
+            ]
+        },
+        {
+            "id": "b027_request_medical_evacuation_pattern",
+            "pattern": "casualty_transfer short_expression pattern",
+            "examples": [
+                "request medical evacuation"
+            ]
+        },
+        {
+            "id": "b027_helicopter_winching_pattern",
+            "pattern": "helicopter_winching short_expression pattern",
+            "examples": [
+                "helicopter winching"
+            ]
+        },
+        {
+            "id": "b027_winchman_ready_pattern",
+            "pattern": "helicopter_winching short_expression pattern",
+            "examples": [
+                "winchman ready"
+            ]
+        },
+        {
+            "id": "b027_on_scene_coordinator_assigned_pattern",
+            "pattern": "on-scene_coordinator short_expression pattern",
+            "examples": [
+                "on-scene coordinator assigned"
+            ]
+        },
+        {
+            "id": "b027_relay_casualty_update_pattern",
+            "pattern": "relay_update short_expression pattern",
+            "examples": [
+                "relay casualty update"
+            ]
+        },
+        {
+            "id": "b027_casualty_count_three_pattern",
+            "pattern": "casualty_transfer short_expression pattern",
+            "examples": [
+                "casualty count three"
+            ]
+        },
+        {
+            "id": "b027_survivor_in_water_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Survivor in water."
+            ]
+        },
+        {
+            "id": "b027_two_casualties_on_board_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Two casualties on board."
+            ]
+        },
+        {
+            "id": "b027_three_casualties_need_transfer_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Three casualties require transfer."
+            ]
+        },
+        {
+            "id": "b027_casualty_one_unconscious_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Casualty one is unconscious."
+            ]
+        },
+        {
+            "id": "b027_casualty_two_conscious_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Casualty two is conscious."
+            ]
+        },
+        {
+            "id": "b027_prepare_winch_transfer_stretcher_pattern",
+            "pattern": "helicopter_winching phrase pattern",
+            "examples": [
+                "Prepare winch transfer of stretcher."
+            ]
+        },
+        {
+            "id": "b027_helicopter_overhead_in_five_minutes_pattern",
+            "pattern": "helicopter_winching phrase pattern",
+            "examples": [
+                "Helicopter overhead in five minutes."
+            ]
+        },
+        {
+            "id": "b027_keep_deck_clear_for_winching_pattern",
+            "pattern": "helicopter_winching phrase pattern",
+            "examples": [
+                "Keep deck clear for winching."
+            ]
+        },
+        {
+            "id": "b027_do_not_fire_flare_during_winching_pattern",
+            "pattern": "helicopter_winching phrase pattern",
+            "examples": [
+                "Do not fire flare during winching."
+            ]
+        },
+        {
+            "id": "b027_osc_assumes_coordination_pattern",
+            "pattern": "on-scene_coordinator phrase pattern",
+            "examples": [
+                "On-scene coordinator assumes coordination."
+            ]
+        },
+        {
+            "id": "b027_osc_relieved_by_rescue_unit_pattern",
+            "pattern": "on-scene_coordinator phrase pattern",
+            "examples": [
+                "On-scene coordinator relieved by rescue unit."
+            ]
+        },
+        {
+            "id": "b027_report_to_osc_every_ten_minutes_pattern",
+            "pattern": "on-scene_coordinator phrase pattern",
+            "examples": [
+                "Report to on-scene coordinator every ten minutes."
+            ]
+        },
+        {
+            "id": "b027_relay_update_casualty_count_three_pattern",
+            "pattern": "relay_update phrase pattern",
+            "examples": [
+                "Relay update: casualty count three."
+            ]
+        },
+        {
+            "id": "b027_relay_update_helicopter_eta_15_pattern",
+            "pattern": "relay_update phrase pattern",
+            "examples": [
+                "Relay update: helicopter ETA one five minutes."
+            ]
+        },
+        {
+            "id": "b027_relay_update_transfer_completed_pattern",
+            "pattern": "relay_update phrase pattern",
+            "examples": [
+                "Relay update: transfer completed."
+            ]
+        },
+        {
+            "id": "b027_medical_team_ready_for_transfer_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Medical team ready for transfer."
+            ]
+        },
+        {
+            "id": "b027_transfer_casualty_to_rescue_boat_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Transfer casualty to rescue boat."
+            ]
+        },
+        {
+            "id": "b027_transfer_casualty_to_helicopter_pattern",
+            "pattern": "helicopter_winching phrase pattern",
+            "examples": [
+                "Transfer casualty to helicopter."
+            ]
+        },
+        {
+            "id": "b027_stretcher_lowered_to_deck_pattern",
+            "pattern": "helicopter_winching phrase pattern",
+            "examples": [
+                "Stretcher lowered to deck."
+            ]
+        },
+        {
+            "id": "b027_basket_lift_started_pattern",
+            "pattern": "helicopter_winching phrase pattern",
+            "examples": [
+                "Basket lift started."
+            ]
+        },
+        {
+            "id": "b027_casualty_packaged_for_hoist_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Casualty packaged for hoist."
+            ]
+        },
+        {
+            "id": "b027_do_not_move_casualty_before_medic_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Do not move casualty before medic arrives."
+            ]
+        },
+        {
+            "id": "b027_casualty_has_head_injury_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Casualty has head injury."
+            ]
+        },
+        {
+            "id": "b027_casualty_bleeding_controlled_pattern",
+            "pattern": "casualty_transfer phrase pattern",
+            "examples": [
+                "Casualty bleeding controlled."
+            ]
+        },
+        {
+            "id": "b027_rescue_unit_takes_over_search_pattern",
+            "pattern": "on-scene_coordinator phrase pattern",
+            "examples": [
+                "Rescue unit takes over search."
+            ]
+        },
+        {
+            "id": "b027_final_relay_casualty_ashore_pattern",
+            "pattern": "relay_update phrase pattern",
+            "examples": [
+                "Final relay: casualty ashore."
             ]
         }
     ],

@@ -8227,6 +8227,484 @@
                 ]
             },
             "reason": "Route availability, temporary status, time, bearing number, side, and waypoint/area must stay exact."
+        },
+        {
+            "pair": "b027 casualty count and identity group",
+            "items": [
+                "expr_b027_casualty_count_three_001",
+                "phrase_b027_two_casualties_on_board_001",
+                "phrase_b027_three_casualties_need_transfer_001",
+                "phrase_b027_casualty_one_unconscious_001",
+                "phrase_b027_casualty_two_conscious_001"
+            ],
+            "must_accept": {
+                "expr_b027_casualty_count_three_001": [
+                    "casualty count three"
+                ],
+                "phrase_b027_two_casualties_on_board_001": [
+                    "Two casualties on board."
+                ],
+                "phrase_b027_three_casualties_need_transfer_001": [
+                    "Three casualties require transfer."
+                ],
+                "phrase_b027_casualty_one_unconscious_001": [
+                    "Casualty one is unconscious."
+                ],
+                "phrase_b027_casualty_two_conscious_001": [
+                    "Casualty two is conscious."
+                ]
+            },
+            "must_reject": {
+                "expr_b027_casualty_count_three_001": [
+                    "casualty count two",
+                    "crew count three"
+                ],
+                "phrase_b027_two_casualties_on_board_001": [
+                    "Three casualties on board",
+                    "Two crew on board"
+                ],
+                "phrase_b027_three_casualties_need_transfer_001": [
+                    "Two casualties require transfer",
+                    "Three casualties require treatment only"
+                ],
+                "phrase_b027_casualty_one_unconscious_001": [
+                    "Casualty two is unconscious",
+                    "Casualty one is conscious"
+                ],
+                "phrase_b027_casualty_two_conscious_001": [
+                    "Casualty two is unconscious",
+                    "Casualty one is conscious"
+                ]
+            },
+            "reason": "Casualty count, casualty number, casualty/crew identity, and conscious status must stay exact."
+        },
+        {
+            "pair": "b027 casualty transfer route group",
+            "items": [
+                "expr_b027_casualty_transfer_001",
+                "expr_b027_prepare_stretcher_transfer_001",
+                "expr_b027_request_medical_evacuation_001",
+                "phrase_b027_transfer_casualty_to_rescue_boat_001",
+                "phrase_b027_transfer_casualty_to_helicopter_001"
+            ],
+            "must_accept": {
+                "expr_b027_casualty_transfer_001": [
+                    "casualty transfer"
+                ],
+                "expr_b027_prepare_stretcher_transfer_001": [
+                    "prepare stretcher transfer"
+                ],
+                "expr_b027_request_medical_evacuation_001": [
+                    "request medical evacuation"
+                ],
+                "phrase_b027_transfer_casualty_to_rescue_boat_001": [
+                    "Transfer casualty to rescue boat."
+                ],
+                "phrase_b027_transfer_casualty_to_helicopter_001": [
+                    "Transfer casualty to helicopter."
+                ]
+            },
+            "must_reject": {
+                "expr_b027_casualty_transfer_001": [
+                    "casualty count",
+                    "cargo transfer"
+                ],
+                "expr_b027_prepare_stretcher_transfer_001": [
+                    "prepare basket transfer",
+                    "prepare body transfer"
+                ],
+                "expr_b027_request_medical_evacuation_001": [
+                    "request medical advice",
+                    "cancel medical evacuation"
+                ],
+                "phrase_b027_transfer_casualty_to_rescue_boat_001": [
+                    "Transfer casualty to helicopter",
+                    "Transfer crew to rescue boat"
+                ],
+                "phrase_b027_transfer_casualty_to_helicopter_001": [
+                    "Transfer casualty to rescue boat",
+                    "Transfer crew to helicopter"
+                ]
+            },
+            "reason": "Casualty transfer type, destination unit, and request/cancel boundaries must stay exact."
+        },
+        {
+            "pair": "b027 helicopter winching equipment group",
+            "items": [
+                "expr_b027_helicopter_winching_001",
+                "expr_b027_winchman_ready_001",
+                "phrase_b027_prepare_winch_transfer_stretcher_001",
+                "phrase_b027_stretcher_lowered_to_deck_001",
+                "phrase_b027_basket_lift_started_001"
+            ],
+            "must_accept": {
+                "expr_b027_helicopter_winching_001": [
+                    "helicopter winching"
+                ],
+                "expr_b027_winchman_ready_001": [
+                    "winchman ready"
+                ],
+                "phrase_b027_prepare_winch_transfer_stretcher_001": [
+                    "Prepare winch transfer of stretcher."
+                ],
+                "phrase_b027_stretcher_lowered_to_deck_001": [
+                    "Stretcher lowered to deck."
+                ],
+                "phrase_b027_basket_lift_started_001": [
+                    "Basket lift started."
+                ]
+            },
+            "must_reject": {
+                "expr_b027_helicopter_winching_001": [
+                    "helicopter landing",
+                    "boat winching"
+                ],
+                "expr_b027_winchman_ready_001": [
+                    "winchman not ready",
+                    "stretcher ready"
+                ],
+                "phrase_b027_prepare_winch_transfer_stretcher_001": [
+                    "Prepare boat transfer of stretcher",
+                    "Prepare winch transfer of basket"
+                ],
+                "phrase_b027_stretcher_lowered_to_deck_001": [
+                    "Stretcher lifted from deck",
+                    "Basket lowered to deck"
+                ],
+                "phrase_b027_basket_lift_started_001": [
+                    "Basket lift completed",
+                    "Stretcher lift started"
+                ]
+            },
+            "reason": "Winching/landing, winchman readiness, stretcher/basket, and lift/lower status must stay exact."
+        },
+        {
+            "pair": "b027 helicopter timing and deck safety group",
+            "items": [
+                "phrase_b027_helicopter_overhead_in_five_minutes_001",
+                "phrase_b027_keep_deck_clear_for_winching_001",
+                "phrase_b027_do_not_fire_flare_during_winching_001",
+                "phrase_b027_casualty_packaged_for_hoist_001"
+            ],
+            "must_accept": {
+                "phrase_b027_helicopter_overhead_in_five_minutes_001": [
+                    "Helicopter overhead in five minutes."
+                ],
+                "phrase_b027_keep_deck_clear_for_winching_001": [
+                    "Keep deck clear for winching."
+                ],
+                "phrase_b027_do_not_fire_flare_during_winching_001": [
+                    "Do not fire flare during winching."
+                ],
+                "phrase_b027_casualty_packaged_for_hoist_001": [
+                    "Casualty packaged for hoist."
+                ]
+            },
+            "must_reject": {
+                "phrase_b027_helicopter_overhead_in_five_minutes_001": [
+                    "Helicopter overhead in ten minutes",
+                    "Rescue boat overhead in five minutes"
+                ],
+                "phrase_b027_keep_deck_clear_for_winching_001": [
+                    "Keep deck clear for landing",
+                    "Keep bridge clear for winching"
+                ],
+                "phrase_b027_do_not_fire_flare_during_winching_001": [
+                    "Fire flare during winching",
+                    "Do not fire flare after winching"
+                ],
+                "phrase_b027_casualty_packaged_for_hoist_001": [
+                    "Casualty packaged for treatment",
+                    "Crew packaged for hoist"
+                ]
+            },
+            "reason": "Helicopter ETA, deck/winching safety, flare prohibition, and hoist readiness must stay exact."
+        },
+        {
+            "pair": "b027 on-scene coordinator role group",
+            "items": [
+                "word_b027_on_scene_coordinator_001",
+                "expr_b027_on_scene_coordinator_assigned_001",
+                "phrase_b027_osc_assumes_coordination_001",
+                "phrase_b027_osc_relieved_by_rescue_unit_001",
+                "phrase_b027_report_to_osc_every_ten_minutes_001"
+            ],
+            "must_accept": {
+                "word_b027_on_scene_coordinator_001": [
+                    "on-scene coordinator"
+                ],
+                "expr_b027_on_scene_coordinator_assigned_001": [
+                    "on-scene coordinator assigned"
+                ],
+                "phrase_b027_osc_assumes_coordination_001": [
+                    "On-scene coordinator assumes coordination."
+                ],
+                "phrase_b027_osc_relieved_by_rescue_unit_001": [
+                    "On-scene coordinator relieved by rescue unit."
+                ],
+                "phrase_b027_report_to_osc_every_ten_minutes_001": [
+                    "Report to on-scene coordinator every ten minutes."
+                ]
+            },
+            "must_reject": {
+                "word_b027_on_scene_coordinator_001": [
+                    "coast station coordinator",
+                    "medical coordinator"
+                ],
+                "expr_b027_on_scene_coordinator_assigned_001": [
+                    "on-scene coordinator relieved",
+                    "medical coordinator assigned"
+                ],
+                "phrase_b027_osc_assumes_coordination_001": [
+                    "On-scene coordinator transfers coordination",
+                    "Coast station assumes coordination"
+                ],
+                "phrase_b027_osc_relieved_by_rescue_unit_001": [
+                    "On-scene coordinator assigned by rescue unit",
+                    "Medical coordinator relieved by rescue unit"
+                ],
+                "phrase_b027_report_to_osc_every_ten_minutes_001": [
+                    "Report to on-scene coordinator every five minutes",
+                    "Report to coast station every ten minutes"
+                ]
+            },
+            "reason": "OSC role, assigned/relieved/assumes coordination, recipient, and report interval must stay exact."
+        },
+        {
+            "pair": "b027 relay update content group",
+            "items": [
+                "expr_b027_relay_casualty_update_001",
+                "phrase_b027_relay_update_casualty_count_three_001",
+                "phrase_b027_relay_update_helicopter_eta_15_001",
+                "phrase_b027_relay_update_transfer_completed_001",
+                "phrase_b027_final_relay_casualty_ashore_001"
+            ],
+            "must_accept": {
+                "expr_b027_relay_casualty_update_001": [
+                    "relay casualty update"
+                ],
+                "phrase_b027_relay_update_casualty_count_three_001": [
+                    "Relay update: casualty count three."
+                ],
+                "phrase_b027_relay_update_helicopter_eta_15_001": [
+                    "Relay update: helicopter ETA one five minutes."
+                ],
+                "phrase_b027_relay_update_transfer_completed_001": [
+                    "Relay update: transfer completed."
+                ],
+                "phrase_b027_final_relay_casualty_ashore_001": [
+                    "Final relay: casualty ashore."
+                ]
+            },
+            "must_reject": {
+                "expr_b027_relay_casualty_update_001": [
+                    "relay weather update",
+                    "relay casualty count cancelled"
+                ],
+                "phrase_b027_relay_update_casualty_count_three_001": [
+                    "Relay update casualty count two",
+                    "Relay weather update casualty count three"
+                ],
+                "phrase_b027_relay_update_helicopter_eta_15_001": [
+                    "Relay update helicopter ETA five minutes",
+                    "Relay update rescue boat ETA one five minutes"
+                ],
+                "phrase_b027_relay_update_transfer_completed_001": [
+                    "Relay update transfer pending",
+                    "Relay update transfer cancelled"
+                ],
+                "phrase_b027_final_relay_casualty_ashore_001": [
+                    "Final relay casualty still aboard",
+                    "Final relay crew ashore"
+                ]
+            },
+            "reason": "Relay update content, ETA, final/initial status, and casualty state must stay exact."
+        },
+        {
+            "pair": "b027 medical handling caution group",
+            "items": [
+                "phrase_b027_medical_team_ready_for_transfer_001",
+                "phrase_b027_do_not_move_casualty_before_medic_001",
+                "phrase_b027_casualty_has_head_injury_001",
+                "phrase_b027_casualty_bleeding_controlled_001"
+            ],
+            "must_accept": {
+                "phrase_b027_medical_team_ready_for_transfer_001": [
+                    "Medical team ready for transfer."
+                ],
+                "phrase_b027_do_not_move_casualty_before_medic_001": [
+                    "Do not move casualty before medic arrives."
+                ],
+                "phrase_b027_casualty_has_head_injury_001": [
+                    "Casualty has head injury."
+                ],
+                "phrase_b027_casualty_bleeding_controlled_001": [
+                    "Casualty bleeding controlled."
+                ]
+            },
+            "must_reject": {
+                "phrase_b027_medical_team_ready_for_transfer_001": [
+                    "Medical team not ready for transfer",
+                    "Deck team ready for transfer"
+                ],
+                "phrase_b027_do_not_move_casualty_before_medic_001": [
+                    "Move casualty before medic arrives",
+                    "Do not move casualty after medic arrives"
+                ],
+                "phrase_b027_casualty_has_head_injury_001": [
+                    "Casualty has leg injury",
+                    "Crew has head injury"
+                ],
+                "phrase_b027_casualty_bleeding_controlled_001": [
+                    "Casualty bleeding not controlled",
+                    "Casualty breathing controlled"
+                ]
+            },
+            "reason": "Medical readiness, do-not-move timing, injury type, and bleeding control must stay exact."
+        },
+        {
+            "pair": "b027 survivor water and search handover group",
+            "items": [
+                "phrase_b027_survivor_in_water_001",
+                "phrase_b027_rescue_unit_takes_over_search_001"
+            ],
+            "must_accept": {
+                "phrase_b027_survivor_in_water_001": [
+                    "Survivor in water."
+                ],
+                "phrase_b027_rescue_unit_takes_over_search_001": [
+                    "Rescue unit takes over search."
+                ]
+            },
+            "must_reject": {
+                "phrase_b027_survivor_in_water_001": [
+                    "Survivor on deck",
+                    "Body in water"
+                ],
+                "phrase_b027_rescue_unit_takes_over_search_001": [
+                    "Rescue unit takes over medical transfer",
+                    "On-scene coordinator takes over search"
+                ]
+            },
+            "reason": "Survivor/body status, in-water location, and rescue unit search handover must stay exact."
+        },
+        {
+            "pair": "b027 rescue platform distinction group",
+            "items": [
+                "phrase_b027_transfer_casualty_to_rescue_boat_001",
+                "phrase_b027_transfer_casualty_to_helicopter_001",
+                "phrase_b027_relay_update_helicopter_eta_15_001"
+            ],
+            "must_accept": {
+                "phrase_b027_transfer_casualty_to_rescue_boat_001": [
+                    "Transfer casualty to rescue boat."
+                ],
+                "phrase_b027_transfer_casualty_to_helicopter_001": [
+                    "Transfer casualty to helicopter."
+                ],
+                "phrase_b027_relay_update_helicopter_eta_15_001": [
+                    "Relay update: helicopter ETA one five minutes."
+                ]
+            },
+            "must_reject": {
+                "phrase_b027_transfer_casualty_to_rescue_boat_001": [
+                    "Transfer casualty to helicopter",
+                    "Transfer crew to rescue boat"
+                ],
+                "phrase_b027_transfer_casualty_to_helicopter_001": [
+                    "Transfer casualty to rescue boat",
+                    "Transfer crew to helicopter"
+                ],
+                "phrase_b027_relay_update_helicopter_eta_15_001": [
+                    "Relay update helicopter ETA five minutes",
+                    "Relay update rescue boat ETA one five minutes"
+                ]
+            },
+            "reason": "Rescue boat/helicopter destination and ETA platform must stay exact."
+        },
+        {
+            "pair": "b027 completion and cancellation group",
+            "items": [
+                "phrase_b027_relay_update_transfer_completed_001",
+                "phrase_b027_basket_lift_started_001",
+                "expr_b027_request_medical_evacuation_001",
+                "phrase_b027_final_relay_casualty_ashore_001"
+            ],
+            "must_accept": {
+                "phrase_b027_relay_update_transfer_completed_001": [
+                    "Relay update: transfer completed."
+                ],
+                "phrase_b027_basket_lift_started_001": [
+                    "Basket lift started."
+                ],
+                "expr_b027_request_medical_evacuation_001": [
+                    "request medical evacuation"
+                ],
+                "phrase_b027_final_relay_casualty_ashore_001": [
+                    "Final relay: casualty ashore."
+                ]
+            },
+            "must_reject": {
+                "phrase_b027_relay_update_transfer_completed_001": [
+                    "Relay update transfer pending",
+                    "Relay update transfer cancelled"
+                ],
+                "phrase_b027_basket_lift_started_001": [
+                    "Basket lift completed",
+                    "Stretcher lift started"
+                ],
+                "expr_b027_request_medical_evacuation_001": [
+                    "request medical advice",
+                    "cancel medical evacuation"
+                ],
+                "phrase_b027_final_relay_casualty_ashore_001": [
+                    "Final relay casualty still aboard",
+                    "Final relay crew ashore"
+                ]
+            },
+            "reason": "Started/completed/cancelled/final statuses must stay exact."
+        },
+        {
+            "pair": "b027 injury and transfer priority group",
+            "items": [
+                "phrase_b027_casualty_has_head_injury_001",
+                "phrase_b027_casualty_bleeding_controlled_001",
+                "phrase_b027_casualty_packaged_for_hoist_001",
+                "phrase_b027_three_casualties_need_transfer_001"
+            ],
+            "must_accept": {
+                "phrase_b027_casualty_has_head_injury_001": [
+                    "Casualty has head injury."
+                ],
+                "phrase_b027_casualty_bleeding_controlled_001": [
+                    "Casualty bleeding controlled."
+                ],
+                "phrase_b027_casualty_packaged_for_hoist_001": [
+                    "Casualty packaged for hoist."
+                ],
+                "phrase_b027_three_casualties_need_transfer_001": [
+                    "Three casualties require transfer."
+                ]
+            },
+            "must_reject": {
+                "phrase_b027_casualty_has_head_injury_001": [
+                    "Casualty has leg injury",
+                    "Crew has head injury"
+                ],
+                "phrase_b027_casualty_bleeding_controlled_001": [
+                    "Casualty bleeding not controlled",
+                    "Casualty breathing controlled"
+                ],
+                "phrase_b027_casualty_packaged_for_hoist_001": [
+                    "Casualty packaged for treatment",
+                    "Crew packaged for hoist"
+                ],
+                "phrase_b027_three_casualties_need_transfer_001": [
+                    "Two casualties require transfer",
+                    "Three casualties require treatment only"
+                ]
+            },
+            "reason": "Injury, bleeding, hoist readiness, and casualty count transfer priority must stay exact."
         }
     ],
     "items": [
@@ -20753,6 +21231,426 @@
                 "Use alternate route south of area Delta",
                 "Use primary route north of area Delta",
                 "Use alternate route north of area Charlie"
+            ]
+        },
+        {
+            "id": "word_b027_on_scene_coordinator_001",
+            "target_text": "on-scene coordinator",
+            "should_accept": [
+                "on-scene coordinator"
+            ],
+            "should_reject": [
+                "coast station coordinator",
+                "medical coordinator",
+                "rescue helicopter"
+            ]
+        },
+        {
+            "id": "expr_b027_casualty_transfer_001",
+            "target_text": "casualty transfer",
+            "should_accept": [
+                "casualty transfer"
+            ],
+            "should_reject": [
+                "casualty count",
+                "cargo transfer",
+                "crew transfer"
+            ]
+        },
+        {
+            "id": "expr_b027_prepare_stretcher_transfer_001",
+            "target_text": "prepare stretcher transfer",
+            "should_accept": [
+                "prepare stretcher transfer"
+            ],
+            "should_reject": [
+                "prepare basket transfer",
+                "prepare body transfer",
+                "cancel stretcher transfer"
+            ]
+        },
+        {
+            "id": "expr_b027_request_medical_evacuation_001",
+            "target_text": "request medical evacuation",
+            "should_accept": [
+                "request medical evacuation"
+            ],
+            "should_reject": [
+                "request medical advice",
+                "cancel medical evacuation",
+                "request crew evacuation"
+            ]
+        },
+        {
+            "id": "expr_b027_helicopter_winching_001",
+            "target_text": "helicopter winching",
+            "should_accept": [
+                "helicopter winching"
+            ],
+            "should_reject": [
+                "helicopter landing",
+                "boat winching",
+                "helicopter search"
+            ]
+        },
+        {
+            "id": "expr_b027_winchman_ready_001",
+            "target_text": "winchman ready",
+            "should_accept": [
+                "winchman ready"
+            ],
+            "should_reject": [
+                "winchman not ready",
+                "stretcher ready",
+                "pilot ready"
+            ]
+        },
+        {
+            "id": "expr_b027_on_scene_coordinator_assigned_001",
+            "target_text": "on-scene coordinator assigned",
+            "should_accept": [
+                "on-scene coordinator assigned"
+            ],
+            "should_reject": [
+                "on-scene coordinator relieved",
+                "medical coordinator assigned",
+                "rescue unit assigned"
+            ]
+        },
+        {
+            "id": "expr_b027_relay_casualty_update_001",
+            "target_text": "relay casualty update",
+            "should_accept": [
+                "relay casualty update"
+            ],
+            "should_reject": [
+                "relay weather update",
+                "relay casualty count cancelled",
+                "send final report"
+            ]
+        },
+        {
+            "id": "expr_b027_casualty_count_three_001",
+            "target_text": "casualty count three",
+            "should_accept": [
+                "casualty count three"
+            ],
+            "should_reject": [
+                "casualty count two",
+                "crew count three",
+                "casualty count unknown"
+            ]
+        },
+        {
+            "id": "phrase_b027_survivor_in_water_001",
+            "target_text": "Survivor in water.",
+            "should_accept": [
+                "Survivor in water."
+            ],
+            "should_reject": [
+                "Survivor on deck",
+                "Body in water",
+                "Crew in water"
+            ]
+        },
+        {
+            "id": "phrase_b027_two_casualties_on_board_001",
+            "target_text": "Two casualties on board.",
+            "should_accept": [
+                "Two casualties on board."
+            ],
+            "should_reject": [
+                "Three casualties on board",
+                "Two crew on board",
+                "Two casualties overboard"
+            ]
+        },
+        {
+            "id": "phrase_b027_three_casualties_need_transfer_001",
+            "target_text": "Three casualties require transfer.",
+            "should_accept": [
+                "Three casualties require transfer."
+            ],
+            "should_reject": [
+                "Two casualties require transfer",
+                "Three casualties require treatment only",
+                "Three crew require transfer"
+            ]
+        },
+        {
+            "id": "phrase_b027_casualty_one_unconscious_001",
+            "target_text": "Casualty one is unconscious.",
+            "should_accept": [
+                "Casualty one is unconscious."
+            ],
+            "should_reject": [
+                "Casualty two is unconscious",
+                "Casualty one is conscious",
+                "Crew one is unconscious"
+            ]
+        },
+        {
+            "id": "phrase_b027_casualty_two_conscious_001",
+            "target_text": "Casualty two is conscious.",
+            "should_accept": [
+                "Casualty two is conscious."
+            ],
+            "should_reject": [
+                "Casualty two is unconscious",
+                "Casualty one is conscious",
+                "Crew two is conscious"
+            ]
+        },
+        {
+            "id": "phrase_b027_prepare_winch_transfer_stretcher_001",
+            "target_text": "Prepare winch transfer of stretcher.",
+            "should_accept": [
+                "Prepare winch transfer of stretcher."
+            ],
+            "should_reject": [
+                "Prepare boat transfer of stretcher",
+                "Prepare winch transfer of basket",
+                "Cancel winch transfer of stretcher"
+            ]
+        },
+        {
+            "id": "phrase_b027_helicopter_overhead_in_five_minutes_001",
+            "target_text": "Helicopter overhead in five minutes.",
+            "should_accept": [
+                "Helicopter overhead in five minutes."
+            ],
+            "should_reject": [
+                "Helicopter overhead in ten minutes",
+                "Rescue boat overhead in five minutes",
+                "Helicopter landing in five minutes"
+            ]
+        },
+        {
+            "id": "phrase_b027_keep_deck_clear_for_winching_001",
+            "target_text": "Keep deck clear for winching.",
+            "should_accept": [
+                "Keep deck clear for winching."
+            ],
+            "should_reject": [
+                "Keep deck clear for landing",
+                "Keep bridge clear for winching",
+                "Clear deck after winching"
+            ]
+        },
+        {
+            "id": "phrase_b027_do_not_fire_flare_during_winching_001",
+            "target_text": "Do not fire flare during winching.",
+            "should_accept": [
+                "Do not fire flare during winching."
+            ],
+            "should_reject": [
+                "Fire flare during winching",
+                "Do not fire flare after winching",
+                "Do not switch on light during winching"
+            ]
+        },
+        {
+            "id": "phrase_b027_osc_assumes_coordination_001",
+            "target_text": "On-scene coordinator assumes coordination.",
+            "should_accept": [
+                "On-scene coordinator assumes coordination."
+            ],
+            "should_reject": [
+                "On-scene coordinator transfers coordination",
+                "Coast station assumes coordination",
+                "Medical officer assumes coordination"
+            ]
+        },
+        {
+            "id": "phrase_b027_osc_relieved_by_rescue_unit_001",
+            "target_text": "On-scene coordinator relieved by rescue unit.",
+            "should_accept": [
+                "On-scene coordinator relieved by rescue unit."
+            ],
+            "should_reject": [
+                "On-scene coordinator assigned by rescue unit",
+                "Medical coordinator relieved by rescue unit",
+                "On-scene coordinator relieved by helicopter"
+            ]
+        },
+        {
+            "id": "phrase_b027_report_to_osc_every_ten_minutes_001",
+            "target_text": "Report to on-scene coordinator every ten minutes.",
+            "should_accept": [
+                "Report to on-scene coordinator every ten minutes."
+            ],
+            "should_reject": [
+                "Report to on-scene coordinator every five minutes",
+                "Report to coast station every ten minutes",
+                "Report from on-scene coordinator every ten minutes"
+            ]
+        },
+        {
+            "id": "phrase_b027_relay_update_casualty_count_three_001",
+            "target_text": "Relay update: casualty count three.",
+            "should_accept": [
+                "Relay update: casualty count three."
+            ],
+            "should_reject": [
+                "Relay update casualty count two",
+                "Relay weather update casualty count three",
+                "Relay update crew count three"
+            ]
+        },
+        {
+            "id": "phrase_b027_relay_update_helicopter_eta_15_001",
+            "target_text": "Relay update: helicopter ETA one five minutes.",
+            "should_accept": [
+                "Relay update: helicopter ETA one five minutes."
+            ],
+            "should_reject": [
+                "Relay update helicopter ETA five minutes",
+                "Relay update rescue boat ETA one five minutes",
+                "Relay update helicopter cancelled"
+            ]
+        },
+        {
+            "id": "phrase_b027_relay_update_transfer_completed_001",
+            "target_text": "Relay update: transfer completed.",
+            "should_accept": [
+                "Relay update: transfer completed."
+            ],
+            "should_reject": [
+                "Relay update transfer pending",
+                "Relay update transfer cancelled",
+                "Relay update treatment completed"
+            ]
+        },
+        {
+            "id": "phrase_b027_medical_team_ready_for_transfer_001",
+            "target_text": "Medical team ready for transfer.",
+            "should_accept": [
+                "Medical team ready for transfer."
+            ],
+            "should_reject": [
+                "Medical team not ready for transfer",
+                "Deck team ready for transfer",
+                "Medical team ready for treatment only"
+            ]
+        },
+        {
+            "id": "phrase_b027_transfer_casualty_to_rescue_boat_001",
+            "target_text": "Transfer casualty to rescue boat.",
+            "should_accept": [
+                "Transfer casualty to rescue boat."
+            ],
+            "should_reject": [
+                "Transfer casualty to helicopter",
+                "Transfer crew to rescue boat",
+                "Recover casualty from rescue boat"
+            ]
+        },
+        {
+            "id": "phrase_b027_transfer_casualty_to_helicopter_001",
+            "target_text": "Transfer casualty to helicopter.",
+            "should_accept": [
+                "Transfer casualty to helicopter."
+            ],
+            "should_reject": [
+                "Transfer casualty to rescue boat",
+                "Transfer crew to helicopter",
+                "Recover casualty from helicopter"
+            ]
+        },
+        {
+            "id": "phrase_b027_stretcher_lowered_to_deck_001",
+            "target_text": "Stretcher lowered to deck.",
+            "should_accept": [
+                "Stretcher lowered to deck."
+            ],
+            "should_reject": [
+                "Stretcher lifted from deck",
+                "Basket lowered to deck",
+                "Stretcher lowered to water"
+            ]
+        },
+        {
+            "id": "phrase_b027_basket_lift_started_001",
+            "target_text": "Basket lift started.",
+            "should_accept": [
+                "Basket lift started."
+            ],
+            "should_reject": [
+                "Basket lift completed",
+                "Stretcher lift started",
+                "Basket lowering started"
+            ]
+        },
+        {
+            "id": "phrase_b027_casualty_packaged_for_hoist_001",
+            "target_text": "Casualty packaged for hoist.",
+            "should_accept": [
+                "Casualty packaged for hoist."
+            ],
+            "should_reject": [
+                "Casualty packaged for treatment",
+                "Crew packaged for hoist",
+                "Casualty not packaged for hoist"
+            ]
+        },
+        {
+            "id": "phrase_b027_do_not_move_casualty_before_medic_001",
+            "target_text": "Do not move casualty before medic arrives.",
+            "should_accept": [
+                "Do not move casualty before medic arrives."
+            ],
+            "should_reject": [
+                "Move casualty before medic arrives",
+                "Do not move casualty after medic arrives",
+                "Do not move crew before medic arrives"
+            ]
+        },
+        {
+            "id": "phrase_b027_casualty_has_head_injury_001",
+            "target_text": "Casualty has head injury.",
+            "should_accept": [
+                "Casualty has head injury."
+            ],
+            "should_reject": [
+                "Casualty has leg injury",
+                "Crew has head injury",
+                "Casualty has no injury"
+            ]
+        },
+        {
+            "id": "phrase_b027_casualty_bleeding_controlled_001",
+            "target_text": "Casualty bleeding controlled.",
+            "should_accept": [
+                "Casualty bleeding controlled."
+            ],
+            "should_reject": [
+                "Casualty bleeding not controlled",
+                "Casualty breathing controlled",
+                "Crew bleeding controlled"
+            ]
+        },
+        {
+            "id": "phrase_b027_rescue_unit_takes_over_search_001",
+            "target_text": "Rescue unit takes over search.",
+            "should_accept": [
+                "Rescue unit takes over search."
+            ],
+            "should_reject": [
+                "Rescue unit takes over medical transfer",
+                "On-scene coordinator takes over search",
+                "Rescue unit cancels search"
+            ]
+        },
+        {
+            "id": "phrase_b027_final_relay_casualty_ashore_001",
+            "target_text": "Final relay: casualty ashore.",
+            "should_accept": [
+                "Final relay: casualty ashore."
+            ],
+            "should_reject": [
+                "Final relay casualty still aboard",
+                "Final relay crew ashore",
+                "Initial relay casualty ashore"
             ]
         }
     ],

@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 026 production-synced and release-ready at the 935-item baseline; Batch 027 acceptance QA passed and is ready for staged local/GitHub merge
+Canonical status: Batch 027 merged locally/GitHub at the 970-item baseline; production remains synced to Batch 026 at 935 until post-merge QA and a separate production sync decision
 
 ## 1. Read This First
 
@@ -26,13 +26,13 @@ state.
 
 ## 2. Current Playable State
 
-Local/GitHub/production playable baseline is now Batch 026 after CE-0174 production sync.
+Local/GitHub playable baseline is now Batch 027 after CE-0179 staged merge. Production remains Batch 026 after CE-0174 production sync until a separate production sync task.
 
 ```text
-local_github_starter_items=935
-local_github_grammar_patterns=516
-local_github_qa_items=935
-local_github_dangerous_pairs=216
+local_github_starter_items=970
+local_github_grammar_patterns=551
+local_github_qa_items=970
+local_github_dangerous_pairs=227
 batch_024_status=merged
 batch_025_status=merged
 batch_026_status=merged
@@ -40,21 +40,21 @@ production_starter_items=935
 production_grammar_patterns=516
 production_qa_items=935
 production_dangerous_pairs=216
-production_delta_items=0
+production_delta_items=-35
 production_route=HTTP 200
 anonymous_start_watch=HTTP 401 Login required
 ```
 
 ## 3. Current Draft Backlog
 
-Batch 027 exists as an isolated draft only. It is not merged into starter/QA registry and is not deployed.
+Batch 027 is merged locally/GitHub only. It is not deployed to production yet.
 
 ```text
-draft_backlog_items=35
-draft_backlog_grammar_patterns=35
-draft_backlog_qa_items=35
-draft_backlog_dangerous_pairs=11
-batch_027_status=draft_acceptance_qa_passed
+draft_backlog_items=0
+draft_backlog_grammar_patterns=0
+draft_backlog_qa_items=0
+draft_backlog_dangerous_pairs=0
+batch_027_status=merged
 ```
 
 ## 4. Latest Closed Gates
@@ -105,6 +105,7 @@ CE-0175 Batch 026 Production Release Readiness QA: PASS / RELEASE_READY_FOR_CURR
 CE-0176 Batch 027 SAR / Casualty-Transfer Draft Gate: DONE / DRAFT_READY_FOR_LINGUIST_ENGINEERING_GATE
 CE-0177 Batch 027 Linguist / Engineering Gate: PASS / READY_FOR_ACCEPTANCE_QA
 CE-0178 Batch 027 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
+CE-0179 Batch 027 Staged Merge Preparation: MERGED_LOCALLY / PASS
 ```
 
 Important reports:
@@ -152,6 +153,7 @@ content/captain-ether/roles/content-producer/reports/batch-027-sar-casualty-tran
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0176-batch-027-sar-casualty-transfer-draft-2026-06-03.md
 content/captain-ether/roles/sea-speak-linguist/reports/batch-027-sar-casualty-transfer-reinforcement-risk-review-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0178-batch-027-acceptance-qa-merge-decision-2026-06-03.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0179-batch-027-staged-merge-preparation-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -159,44 +161,43 @@ content/captain-ether/roles/qa/reports/sprint-ce-0178-batch-027-acceptance-qa-me
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0179-batch-027-staged-merge-preparation-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0180-batch-027-post-merge-qa-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run Batch 027 staged merge preparation. Merge Batch 027 locally/GitHub only, then validate; no production deploy.
+Run Batch 027 post-merge QA. Revalidate the 970-item local/GitHub baseline and confirm production drift remains intentional; no production deploy.
 ```
 
-Expected Set B local/GitHub baseline:
+Expected current local/GitHub/production baseline:
 
 ```text
-local_github_starter_items=935
-local_github_grammar_patterns=516
-local_github_qa_items=935
-local_github_dangerous_pairs=216
+local_github_starter_items=970
+local_github_grammar_patterns=551
+local_github_qa_items=970
+local_github_dangerous_pairs=227
 production_starter_items=935
 production_grammar_patterns=516
 production_qa_items=935
 production_dangerous_pairs=216
-production_delta_items=0
-draft_backlog_items=35
-draft_backlog_grammar_patterns=35
-draft_backlog_dangerous_pairs=11
+production_delta_items=-35
+draft_backlog_items=0
+draft_backlog_grammar_patterns=0
+draft_backlog_dangerous_pairs=0
 ```
 
-Production is synced and release-ready at 935. Batch 027 is isolated draft only and has passed acceptance QA; next gate is staged local/GitHub merge, with production still untouched.
+Local/GitHub is now 970 after Batch 027 staged merge. Production is still 935 and untouched; run post-merge QA before any production sync decision.
 
 ## 6. Recommended Merge Plan After QA
 
-Run post-merge QA Set B, then open a separate Set B production sync task only if
-QA passes.
+Run Batch 027 post-merge QA, then open a separate Batch 027 production sync task only if QA passes.
 
 Recommended sequence:
 
 ```text
-1. CE-0179 Batch 027 Staged Merge Preparation.
-2. Then run Batch 027 acceptance QA, staged merge, post-merge QA, production sync, release-readiness QA.
+1. CE-0180 Batch 027 Post-Merge QA.
+2. Then run Batch 027 production sync decision and release-readiness QA.
 ```
 
 This keeps production parity checkpoints small enough to debug.
