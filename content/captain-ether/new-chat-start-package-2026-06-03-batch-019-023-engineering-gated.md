@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 026 merged locally/GitHub at the 935-item baseline; production remains at 900 until separate sync task
+Canonical status: Batch 026 post-merge QA passed locally/GitHub at the 935-item baseline; production remains at 900 until CE-0174 sync decision
 
 ## 1. Read This First
 
@@ -99,6 +99,7 @@ CE-0169 Batch 026 Weather-Routing / Navigation-Warning Draft Gate: DONE / DRAFT_
 CE-0170 Batch 026 Linguist / Engineering Gate: PASS / READY_FOR_ACCEPTANCE_QA
 CE-0171 Batch 026 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
 CE-0172 Batch 026 Staged Merge Preparation: MERGED_LOCALLY / PASS
+CE-0173 Batch 026 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 ```
 
 Important reports:
@@ -139,6 +140,7 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0169-batch-026-w
 content/captain-ether/roles/sea-speak-linguist/reports/batch-026-weather-routing-navigation-warning-reinforcement-risk-review-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0171-batch-026-acceptance-qa-merge-decision-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0172-batch-026-staged-merge-preparation-2026-06-03.md
+content/captain-ether/roles/qa/reports/sprint-ce-0173-batch-026-post-merge-qa-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -146,13 +148,13 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0172-batch-026-s
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0173-batch-026-post-merge-qa-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0174-batch-026-production-sync-decision-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run Batch 026 post-merge QA for the 935-item local/GitHub baseline. No production deploy in this task.
+Run controlled production sync decision for Batch 026. If all gates remain green, sync production from 900 to 935 items.
 ```
 
 Expected Set B local/GitHub baseline:
@@ -172,7 +174,7 @@ draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
 ```
 
-Production is synced and release-ready at 900, but local/GitHub is now 35 items ahead. No production deploy until a separate sync task after post-merge QA.
+Production is synced and release-ready at 900, but local/GitHub is now 35 items ahead. CE-0174 is the explicit production-sync decision task.
 
 ## 6. Recommended Merge Plan After QA
 
@@ -182,8 +184,8 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. CE-0173 Batch 026 Post-Merge QA.
-2. Then run Batch 026 production sync decision if post-merge QA passes.
+1. CE-0174 Batch 026 Production Sync Decision.
+2. After production sync, stop for a separate release-readiness QA checkpoint.
 ```
 
 This keeps production parity checkpoints small enough to debug.

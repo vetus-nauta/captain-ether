@@ -42,6 +42,7 @@ CE-0169 Batch 026 draft gate done: created isolated draft batch with 35 weather-
 CE-0170 Batch 026 linguist/engineering gate passed; added one bearing coverage correction and revalidated to 0 collisions, PASS, 0 warnings.
 CE-0171 Batch 026 acceptance QA passed; decision PASS_FOR_STAGED_MERGE. Next planned task is CE-0172 staged merge preparation, no production deploy.
 CE-0172 Batch 026 staged merge passed locally/GitHub; production not deployed. Local/GitHub now intentionally ahead of production until a separate sync task.
+CE-0173 Batch 026 post-merge QA passed; local/GitHub 935 baseline is ready for production sync decision.
 local_github_starter_items=935
 local_github_grammar_patterns=516
 local_github_qa_items=935
@@ -55,7 +56,7 @@ validator_warn_count=0
 draft_backlog_items=0
 draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
-Next task: CE-0173 Batch 026 Post-Merge QA
+Next task: CE-0174 Batch 026 Production Sync Decision
 ```
 
 Older sections below preserve historical context and may mention earlier
