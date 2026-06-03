@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 019-023 fully merged and synced to production
+Canonical status: Batch 019-023 fully merged, production-synced, and release-readiness QA passed
 
 ## 1. Read This First
 
@@ -71,6 +71,7 @@ CE-0144 Batch 019-020 Production Sync: CLOSED / PASS / PRODUCTION_SYNCED
 CE-0145 Batch 021-023 Merge Set B: MERGED LOCALLY / PASS
 CE-0146 Batch 021-023 Post-Merge QA Set B: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 CE-0147 Batch 021-023 Production Sync: CLOSED / PASS / PRODUCTION_SYNCED
+CE-0148 Captain Ether Release Readiness QA: PASS / RELEASE_READY_FOR_CURRENT_SCOPE
 ```
 
 Important reports:
@@ -85,6 +86,7 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0144-batch-019-0
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0145-batch-021-023-merge-set-b-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0146-batch-021-023-post-merge-qa-set-b-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0147-batch-021-023-production-sync-2026-06-03.md
+content/captain-ether/roles/qa/reports/sprint-ce-0148-captain-ether-release-readiness-qa-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -92,13 +94,14 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0147-batch-021-0
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0148-captain-ether-release-readiness-qa-2026-06-03.md
+No mandatory next task is open inside the Batch 019-023 release cycle.
 ```
 
-Goal:
+Recommended next decision:
 
 ```text
-Final release-readiness QA for current Captain Ether production baseline.
+Choose between release hardening/manual authenticated playthrough or the next
+content expansion batch series.
 ```
 
 Expected Set B local/GitHub baseline:
@@ -110,7 +113,7 @@ qa_items=830
 dangerous_pairs=193
 ```
 
-No production deploy is authorized by CE-0148.
+Do not deploy again unless a new explicit production-sync task is opened.
 
 ## 6. Recommended Merge Plan After QA
 
@@ -120,8 +123,9 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. Release-readiness QA on the 830-item production baseline.
-2. Decide whether to continue content expansion or product hardening.
+1. Optional authenticated browser/manual playthrough smoke.
+2. Optional cleanup task for known starter WARN (9).
+3. Next content expansion batch series if product direction remains expansion.
 ```
 
 This keeps production parity checkpoints small enough to debug.
