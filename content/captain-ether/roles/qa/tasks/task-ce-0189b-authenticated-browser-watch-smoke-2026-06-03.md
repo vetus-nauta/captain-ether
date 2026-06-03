@@ -3,7 +3,7 @@
 Date: 2026-06-03
 Owner: QA / Director-Engineer
 Scope: Captain Ether authenticated production watch smoke
-Status: PLANNED
+Status: DONE / AUTH_BLOCKED_WITH_NEXT_STEPS
 
 ## Activation Condition
 
@@ -54,4 +54,16 @@ Expected output:
 ```text
 content/captain-ether/roles/qa/reports/sprint-ce-0189b-authenticated-browser-watch-smoke-2026-06-03.md
 status PASS_AUTHENTICATED_WATCH_SMOKE, AUTH_BLOCKED_WITH_NEXT_STEPS, or CHANGES_REQUIRED
+```
+
+## Result
+
+```text
+AUTH_BLOCKED_WITH_NEXT_STEPS
+auth_me_without_session=HTTP 200 user=null
+request_code_invalid_email=HTTP 422
+start_watch_without_session=HTTP 401 Login required
+atlas_ping=PASS
+blocker_owner=production auth/access channel
+next_task=CE-0189C Main Course Technical Closure Audit
 ```

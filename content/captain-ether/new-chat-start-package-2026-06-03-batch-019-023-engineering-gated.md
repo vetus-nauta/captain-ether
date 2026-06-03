@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 028 production release-readiness QA passed; local/GitHub/production match at the 1000-item M5 baseline; next gate is authenticated browser watch smoke
+Canonical status: Batch 028 production release-readiness QA passed and authenticated watch smoke is blocked only by production QA access; local/GitHub/production match at the 1000-item M5 baseline; next gate is main-course technical closure audit
 
 ## 1. Read This First
 
@@ -51,7 +51,8 @@ production_delta_items=0
 post_merge_qa=PASS
 production_sync=PASS
 production_release_readiness_qa=PASS
-ready_for_authenticated_browser_watch_smoke=true
+authenticated_browser_watch_smoke=AUTH_BLOCKED_WITH_NEXT_STEPS
+ready_for_main_course_technical_closure_audit=true
 production_route=HTTP 200
 anonymous_start_watch=HTTP 401 Login required
 ```
@@ -128,6 +129,7 @@ CE-0186 Batch 028 Staged Merge Preparation: MERGED_LOCALLY / PASS
 CE-0187 Batch 028 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 CE-0188 Batch 028 Production Sync Decision: CLOSED / PASS / PRODUCTION_SYNCED
 CE-0189A Batch 028 Production Release-Readiness QA: PASS / RELEASE_READY_FOR_1000_ITEM_SCOPE
+CE-0189B Authenticated Browser Watch Smoke: AUTH_BLOCKED_WITH_NEXT_STEPS
 ```
 
 Important reports:
@@ -187,6 +189,7 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0186-batch-028-s
 content/captain-ether/roles/qa/reports/sprint-ce-0187-batch-028-post-merge-qa-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0188-batch-028-production-sync-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0189a-batch-028-production-release-readiness-qa-2026-06-03.md
+content/captain-ether/roles/qa/reports/sprint-ce-0189b-authenticated-browser-watch-smoke-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -194,13 +197,13 @@ content/captain-ether/roles/qa/reports/sprint-ce-0189a-batch-028-production-rele
 Next task to run:
 
 ```text
-content/captain-ether/roles/qa/tasks/task-ce-0189b-authenticated-browser-watch-smoke-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0189c-main-course-technical-closure-audit-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run authenticated production browser/API watch smoke using only an approved QA account/session; do not expose login codes, cookies, sessions, CSRF values, player email, or player identity.
+Run main-course technical closure audit for the 1000-item baseline, recording authenticated smoke as blocked by access channel only.
 ```
 
 Expected current local/GitHub/production baseline:
@@ -220,17 +223,17 @@ draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
 ```
 
-Local/GitHub/production now match at 1000 and CE-0189A release-readiness QA passed. The next risk is authenticated production watch smoke.
+Local/GitHub/production now match at 1000 and CE-0189A release-readiness QA passed. CE-0189B is blocked by production QA access only, so technical closure audit may continue while auth access remains separately owned.
 
 ## 6. Recommended Merge Plan After QA
 
-Run authenticated browser watch smoke, then main-course technical closure audit.
+Run main-course technical closure audit, then answer-log/matcher noise review.
 
 Recommended sequence:
 
 ```text
-1. CE-0189B Authenticated Browser Watch Smoke.
-2. CE-0189C Main Course Technical Closure Audit if auth smoke passes or has a clean non-content blocker owner.
+1. CE-0189C Main Course Technical Closure Audit.
+2. CE-0189D Answer-Log And Matcher Noise Review.
 ```
 
 This keeps production parity checkpoints small enough to debug.
