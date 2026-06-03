@@ -14,19 +14,15 @@ Current canonical status:
 Batch 018 production synced.
 Batch 019-020 merged locally/GitHub as Set A.
 Batch 019-020 post-merge QA passed locally/GitHub.
+Batch 019-020 synced to production.
 Batch 021-023 remain linguist-reviewed, engineering-gated, and QA accepted for staged merge.
-Production remains Batch 018 until explicit sync task.
-local_github_starter_items=730
-local_github_grammar_patterns=311
-local_github_qa_items=730
-local_github_dangerous_pairs=173
-production_starter_items=650
-production_grammar_patterns=237
-production_qa_items=650
-production_dangerous_pairs=152
+local_github_production_starter_items=730
+local_github_production_grammar_patterns=311
+local_github_production_qa_items=730
+local_github_production_dangerous_pairs=173
 draft_backlog_items=100
 draft_backlog_grammar_patterns=100
-Next task: CE-0144 Batch 019-020 Production Sync Decision
+Next task: CE-0145 Batch 021-023 Merge Set B
 ```
 
 Older sections below preserve historical context and may mention earlier
@@ -70,7 +66,7 @@ content/captain-ether/director-ether-beta-1-handoff-2026-05-27.md
 ```
 
 Use the Batch 019-023 start package first. It states the current
-local/GitHub/production drift status, WebStorm workspace context, local server
+local/GitHub/production parity status, WebStorm workspace context, local server
 checks, production checks, next sprint recommendation, and anti-confusion rules
 for Captain Ether vs Watch Officer/platform scope. The older 2026-06-02 and
 Beta 1.0 handoffs are historical context for baseline, role folder map, closed
