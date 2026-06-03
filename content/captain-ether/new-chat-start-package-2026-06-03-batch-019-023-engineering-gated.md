@@ -82,6 +82,7 @@ CE-0155 Batch 024 Draft Gate: DONE / DRAFT_READY_FOR_LINGUIST_ENGINEERING_GATE
 CE-0156 Batch 024 Linguist / Engineering Gate: PASS / READY_FOR_ACCEPTANCE_QA
 CE-0157 Batch 024 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
 CE-0158 Batch 024 Staged Merge Preparation: MERGED_LOCALLY / PASS
+CE-0159 Batch 024 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 ```
 
 Important reports:
@@ -107,6 +108,7 @@ content/captain-ether/roles/content-producer/reports/batch-024-engine-room-damag
 content/captain-ether/roles/sea-speak-linguist/reports/batch-024-engine-room-damage-control-communications-risk-review-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0157-batch-024-acceptance-qa-merge-decision-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0158-batch-024-staged-merge-preparation-2026-06-03.md
+content/captain-ether/roles/qa/reports/sprint-ce-0159-batch-024-post-merge-qa-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -114,13 +116,13 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0158-batch-024-s
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0159-batch-024-post-merge-qa-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0160-batch-024-production-sync-decision-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run post-merge QA for the 865-item local/GitHub baseline before any production sync decision.
+Decide and prepare whether to sync the 865-item local/GitHub Batch 024 baseline to production.
 ```
 
 Expected Set B local/GitHub baseline:
@@ -134,6 +136,7 @@ production_starter_items=830
 production_grammar_patterns=411
 production_qa_items=830
 production_dangerous_pairs=193
+production_delta_items=-35
 draft_backlog_items=0
 draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
@@ -149,7 +152,7 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. CE-0159 Batch 024 Post-Merge QA.
+1. CE-0160 Batch 024 Production Sync Decision.
 ```
 
 This keeps production parity checkpoints small enough to debug.

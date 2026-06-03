@@ -28,6 +28,7 @@ CE-0155 Batch 024 draft gate done: created isolated draft batch with 35 items, 3
 CE-0156 Batch 024 linguist/engineering gate passed; fixed 3 starter target collisions and revalidated to 0 collisions, PASS, 0 warnings.
 CE-0157 Batch 024 acceptance QA passed; decision PASS_FOR_STAGED_MERGE. Next planned task is CE-0158 staged merge preparation, no production deploy.
 CE-0158 Batch 024 staged merge passed locally/GitHub; production not deployed. Local/GitHub now intentionally ahead of production until a separate sync task.
+CE-0159 Batch 024 post-merge QA passed; local/GitHub 865 baseline is ready for production sync decision.
 local_github_starter_items=865
 local_github_grammar_patterns=446
 local_github_qa_items=865
@@ -36,11 +37,12 @@ production_starter_items=830
 production_grammar_patterns=411
 production_qa_items=830
 production_dangerous_pairs=193
+production_delta_items=-35
 validator_warn_count=0
 draft_backlog_items=0
 draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
-Next task: CE-0159 Batch 024 Post-Merge QA
+Next task: CE-0160 Batch 024 Production Sync Decision
 ```
 
 Older sections below preserve historical context and may mention earlier
