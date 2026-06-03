@@ -3,7 +3,7 @@
 Date: 2026-06-03
 Owner: QA / Director-Engineer
 Scope: Captain Ether Batch 027 production release-readiness QA
-Status: PLANNED
+Status: DONE / PASS / RELEASE_READY_FOR_CURRENT_SCOPE
 
 ## Activation Condition
 
@@ -40,4 +40,23 @@ Expected output:
 ```text
 content/captain-ether/roles/qa/reports/sprint-ce-0182-batch-027-production-release-readiness-qa-2026-06-03.md
 next task for Batch 028 draft gate if release-readiness passes
+```
+
+## Result
+
+```text
+PASS / RELEASE_READY_FOR_CURRENT_SCOPE
+full_validator=PASS
+validator_runs=180
+api_smoke=PASS captain-ether-api-smoke checks=334
+production_ftp_readback=PASS
+production_counts=970/551/970/227
+starter_hash_match=PASS
+qa_hash_match=PASS
+http_smoke=PASS
+protected_api_anonymous_401=PASS
+atlas_ping=PASS
+public_payload_secret_scan=PASS
+production_deploy=false
+next_task=CE-0183 Batch 028 Draft Gate
 ```

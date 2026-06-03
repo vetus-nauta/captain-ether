@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 027 production-synced at the 970-item baseline; next gate is production release-readiness QA
+Canonical status: Batch 027 production release-ready at the 970-item baseline; next gate is Batch 028 isolated draft toward the 1000-item M5 baseline
 
 ## 1. Read This First
 
@@ -43,7 +43,8 @@ production_dangerous_pairs=227
 production_delta_items=0
 post_merge_qa=PASS
 production_sync=PASS
-ready_for_production_release_readiness_qa=true
+production_release_readiness_qa=PASS
+ready_for_batch_028_draft_gate=true
 production_route=HTTP 200
 anonymous_start_watch=HTTP 401 Login required
 ```
@@ -111,6 +112,7 @@ CE-0178 Batch 027 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
 CE-0179 Batch 027 Staged Merge Preparation: MERGED_LOCALLY / PASS
 CE-0180 Batch 027 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 CE-0181 Batch 027 Production Sync Decision: CLOSED / PASS / PRODUCTION_SYNCED
+CE-0182 Batch 027 Production Release-Readiness QA: PASS / RELEASE_READY_FOR_CURRENT_SCOPE
 ```
 
 Important reports:
@@ -161,6 +163,7 @@ content/captain-ether/roles/qa/reports/sprint-ce-0178-batch-027-acceptance-qa-me
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0179-batch-027-staged-merge-preparation-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0180-batch-027-post-merge-qa-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0181-batch-027-production-sync-2026-06-03.md
+content/captain-ether/roles/qa/reports/sprint-ce-0182-batch-027-production-release-readiness-qa-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -168,13 +171,13 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0181-batch-027-p
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0182-batch-027-production-release-readiness-qa-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0183-batch-028-draft-gate-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run Batch 027 production release-readiness QA. Revalidate production parity at 970 and public/anonymous runtime safety; no deploy.
+Run Batch 028 isolated draft gate. Create the final M5 draft batch toward 1000 items; no merge and no deploy.
 ```
 
 Expected current local/GitHub/production baseline:
@@ -194,17 +197,17 @@ draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
 ```
 
-Local/GitHub/production now match at 970 after Batch 027 production sync. Next gate is release-readiness QA; no deploy in that task.
+Local/GitHub/production now match at 970 and Batch 027 release-readiness QA passed. Next gate is isolated Batch 028 draft; no merge/deploy.
 
 ## 6. Recommended Merge Plan After QA
 
-Run Batch 027 production release-readiness QA, then start Batch 028 draft gate if QA passes.
+Run Batch 028 isolated draft gate, then Batch 028 linguist/engineering gate if draft passes.
 
 Recommended sequence:
 
 ```text
-1. CE-0182 Batch 027 Production Release-Readiness QA.
-2. Then open Batch 028 draft gate.
+1. CE-0183 Batch 028 Draft Gate.
+2. Then run Batch 028 linguist/engineering gate.
 ```
 
 This keeps production parity checkpoints small enough to debug.
