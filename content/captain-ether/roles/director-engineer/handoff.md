@@ -63,6 +63,7 @@ CE-0189B authenticated browser watch smoke is blocked by missing approved produc
 CE-0189C main-course technical closure audit passed for content/runtime but keeps auth smoke open; status AUTH_BLOCKED_BUT_CONTENT_RUNTIME_READY.
 CE-0189D answer-log and matcher-noise review passed; matcher noise acceptable and answer-log remains protected anonymously.
 CE-0189E Director closure decision closed the 1000-item main-course content/runtime scope; authenticated production watch smoke remains open and gamification remains parked.
+CE-0190 Gamification v1 design spec completed as report-only work after Director accepted auth smoke as an external blocker for planning purposes; no implementation, runtime, UI, storage, content, or production files changed.
 local_github_starter_items=1000
 local_github_grammar_patterns=581
 local_github_qa_items=1000
@@ -76,7 +77,7 @@ validator_warn_count=0
 draft_backlog_items=0
 draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
-Next task: no automatic next task; resolve approved production QA access for authenticated watch smoke before new content or gamification.
+Next task: CE-0191 Gamification v1 Copy And Placement Spec; report-only UX/HUD spec. Authenticated production watch smoke remains open.
 ```
 
 Older sections below preserve historical context and may mention earlier

@@ -17,3 +17,30 @@ Existing loop:
 
 Design a light progression model for branch mastery without streak pressure or
 punitive failure states.
+
+## Current Design State
+
+CE-0190 Gamification v1 Design Spec is ready for Director review.
+
+Approved direction for v1:
+
+- watch ritual;
+- branch mastery signals;
+- Lost Oars recovery signal;
+- critical meaning-drift events;
+- one next quiet step after watch.
+
+Rejected for v1:
+
+- daily streak loss;
+- leaderboards;
+- speed bonuses;
+- failure badges;
+- global rank demotion;
+- public certification claims.
+
+Next planned task:
+
+```text
+CE-0191 Gamification v1 Copy And Placement Spec
+```
