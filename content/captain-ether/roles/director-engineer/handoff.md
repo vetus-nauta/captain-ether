@@ -16,6 +16,7 @@ Batch 019-020 merged locally/GitHub as Set A.
 Batch 019-020 post-merge QA passed locally/GitHub.
 Batch 019-020 synced to production.
 Batch 021-023 merged locally/GitHub as Set B.
+Batch 021-023 post-merge QA passed locally/GitHub.
 Production remains Batch 020 until explicit Set B sync task.
 local_github_starter_items=830
 local_github_grammar_patterns=411
@@ -27,7 +28,7 @@ production_qa_items=730
 production_dangerous_pairs=173
 draft_backlog_items=0
 draft_backlog_grammar_patterns=0
-Next task: CE-0146 Batch 021-023 Post-Merge QA Set B
+Next task: CE-0147 Batch 021-023 Production Sync Decision
 ```
 
 Older sections below preserve historical context and may mention earlier
