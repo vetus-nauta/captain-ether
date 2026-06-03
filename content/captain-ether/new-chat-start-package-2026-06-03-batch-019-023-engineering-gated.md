@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 028 post-merge QA passed locally/GitHub at the 1000-item M5 baseline; production remains at the Batch 027 970-item baseline until a separate Batch 028 production sync decision passes
+Canonical status: Batch 028 production sync passed; local/GitHub/production now match at the 1000-item M5 baseline; next gate is production release-readiness QA
 
 ## 1. Read This First
 
@@ -27,7 +27,7 @@ state.
 ## 2. Current Playable State
 
 Local/GitHub playable baseline is now Batch 028 after CE-0186 staged merge.
-Production remains Batch 027 after CE-0181 production sync.
+Production is now Batch 028 after CE-0188 production sync.
 
 ```text
 local_github_starter_items=1000
@@ -43,15 +43,15 @@ batch_025_status=merged
 batch_026_status=merged
 batch_027_status=merged
 batch_028_status=merged
-production_starter_items=970
-production_grammar_patterns=551
-production_qa_items=970
-production_dangerous_pairs=227
-production_delta_items=-30
+production_starter_items=1000
+production_grammar_patterns=581
+production_qa_items=1000
+production_dangerous_pairs=243
+production_delta_items=0
 post_merge_qa=PASS
 production_sync=PASS
 production_release_readiness_qa=PASS
-ready_for_batch_028_production_sync_decision=true
+ready_for_batch_028_production_release_readiness_qa=true
 production_route=HTTP 200
 anonymous_start_watch=HTTP 401 Login required
 ```
@@ -126,6 +126,7 @@ CE-0184 Batch 028 Linguist / Engineering Gate: PASS / READY_FOR_ACCEPTANCE_QA
 CE-0185 Batch 028 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
 CE-0186 Batch 028 Staged Merge Preparation: MERGED_LOCALLY / PASS
 CE-0187 Batch 028 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
+CE-0188 Batch 028 Production Sync Decision: CLOSED / PASS / PRODUCTION_SYNCED
 ```
 
 Important reports:
@@ -183,6 +184,7 @@ content/captain-ether/roles/sea-speak-linguist/reports/batch-028-exam-style-mini
 content/captain-ether/roles/qa/reports/sprint-ce-0185-batch-028-acceptance-qa-merge-decision-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0186-batch-028-staged-merge-preparation-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0187-batch-028-post-merge-qa-2026-06-03.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0188-batch-028-production-sync-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -190,13 +192,13 @@ content/captain-ether/roles/qa/reports/sprint-ce-0187-batch-028-post-merge-qa-20
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0188-batch-028-production-sync-decision-2026-06-03.md
+content/captain-ether/roles/qa/tasks/task-ce-0189a-batch-028-production-release-readiness-qa-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run controlled Batch 028 production sync decision after pre-deploy gates; production deploy is allowed only inside that explicit task.
+Run Batch 028 production release-readiness QA against the 1000-item production baseline; read-only production checks only.
 ```
 
 Expected current local/GitHub/production baseline:
@@ -206,27 +208,27 @@ local_github_starter_items=1000
 local_github_grammar_patterns=581
 local_github_qa_items=1000
 local_github_dangerous_pairs=243
-production_starter_items=970
-production_grammar_patterns=551
-production_qa_items=970
-production_dangerous_pairs=227
-production_delta_items=-30
+production_starter_items=1000
+production_grammar_patterns=581
+production_qa_items=1000
+production_dangerous_pairs=243
+production_delta_items=0
 draft_backlog_items=0
 draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
 ```
 
-Local/GitHub is intentionally ahead of production at 1000 after CE-0186 and CE-0187. Batch 028 is ready for a separate production sync decision task.
+Local/GitHub/production now match at 1000 after CE-0188. Batch 028 is ready for production release-readiness QA.
 
 ## 6. Recommended Merge Plan After QA
 
-Run Batch 028 production sync decision, then production release-readiness QA if sync passes.
+Run Batch 028 production release-readiness QA, then authenticated browser watch smoke.
 
 Recommended sequence:
 
 ```text
-1. CE-0188 Batch 028 Production Sync Decision.
-2. Then run Batch 028 Production Release-Readiness QA if sync passes.
+1. CE-0189A Batch 028 Production Release-Readiness QA.
+2. CE-0189B Authenticated Browser Watch Smoke if release-readiness passes.
 ```
 
 This keeps production parity checkpoints small enough to debug.
