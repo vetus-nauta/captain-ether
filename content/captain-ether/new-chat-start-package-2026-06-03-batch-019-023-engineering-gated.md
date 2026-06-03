@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 027 production release-ready at the 970-item baseline; next gate is Batch 028 isolated draft toward the 1000-item M5 baseline
+Canonical status: Batch 027 production release-ready at the 970-item baseline; Batch 028 isolated draft is ready for linguist/engineering gate toward the 1000-item M5 baseline
 
 ## 1. Read This First
 
@@ -44,21 +44,22 @@ production_delta_items=0
 post_merge_qa=PASS
 production_sync=PASS
 production_release_readiness_qa=PASS
-ready_for_batch_028_draft_gate=true
+ready_for_batch_028_linguist_engineering_gate=true
 production_route=HTTP 200
 anonymous_start_watch=HTTP 401 Login required
 ```
 
 ## 3. Current Draft Backlog
 
-Batch 027 is merged locally/GitHub only. It is not deployed to production yet.
+Batch 028 exists as an isolated draft only. It is not merged into starter/QA registry and is not deployed.
 
 ```text
-draft_backlog_items=0
-draft_backlog_grammar_patterns=0
-draft_backlog_qa_items=0
-draft_backlog_dangerous_pairs=0
+draft_backlog_items=30
+draft_backlog_grammar_patterns=30
+draft_backlog_qa_items=30
+draft_backlog_dangerous_pairs=16
 batch_027_status=merged
+batch_028_status=draft
 ```
 
 ## 4. Latest Closed Gates
@@ -113,6 +114,7 @@ CE-0179 Batch 027 Staged Merge Preparation: MERGED_LOCALLY / PASS
 CE-0180 Batch 027 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 CE-0181 Batch 027 Production Sync Decision: CLOSED / PASS / PRODUCTION_SYNCED
 CE-0182 Batch 027 Production Release-Readiness QA: PASS / RELEASE_READY_FOR_CURRENT_SCOPE
+CE-0183 Batch 028 Draft Gate: DONE / DRAFT_READY_FOR_LINGUIST_ENGINEERING_GATE
 ```
 
 Important reports:
@@ -164,6 +166,8 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0179-batch-027-s
 content/captain-ether/roles/qa/reports/sprint-ce-0180-batch-027-post-merge-qa-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0181-batch-027-production-sync-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0182-batch-027-production-release-readiness-qa-2026-06-03.md
+content/captain-ether/roles/content-producer/reports/batch-028-exam-style-minimal-pair-reinforcement-card-2026-06-03.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0183-batch-028-draft-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -171,13 +175,13 @@ content/captain-ether/roles/qa/reports/sprint-ce-0182-batch-027-production-relea
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0183-batch-028-draft-gate-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0184-batch-028-linguist-engineering-gate-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run Batch 028 isolated draft gate. Create the final M5 draft batch toward 1000 items; no merge and no deploy.
+Run Batch 028 linguist/engineering gate. Review exam-style minimal-pair safety boundaries; no merge and no deploy.
 ```
 
 Expected current local/GitHub/production baseline:
@@ -192,22 +196,22 @@ production_grammar_patterns=551
 production_qa_items=970
 production_dangerous_pairs=227
 production_delta_items=0
-draft_backlog_items=0
-draft_backlog_grammar_patterns=0
-draft_backlog_dangerous_pairs=0
+draft_backlog_items=30
+draft_backlog_grammar_patterns=30
+draft_backlog_dangerous_pairs=16
 ```
 
-Local/GitHub/production now match at 970 and Batch 027 release-readiness QA passed. Next gate is isolated Batch 028 draft; no merge/deploy.
+Local/GitHub/production now match at 970 and Batch 027 release-readiness QA passed. Batch 028 isolated draft is ready for linguist/engineering gate; no merge/deploy.
 
 ## 6. Recommended Merge Plan After QA
 
-Run Batch 028 isolated draft gate, then Batch 028 linguist/engineering gate if draft passes.
+Run Batch 028 linguist/engineering gate, then acceptance QA if gate passes.
 
 Recommended sequence:
 
 ```text
-1. CE-0183 Batch 028 Draft Gate.
-2. Then run Batch 028 linguist/engineering gate.
+1. CE-0184 Batch 028 Linguist / Engineering Gate.
+2. Then run Batch 028 acceptance QA / merge decision.
 ```
 
 This keeps production parity checkpoints small enough to debug.

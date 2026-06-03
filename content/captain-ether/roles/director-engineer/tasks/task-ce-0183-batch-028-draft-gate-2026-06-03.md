@@ -3,7 +3,7 @@
 Date: 2026-06-03
 Owner: Content Producer / Director-Engineer
 Scope: Captain Ether Batch 028 isolated draft gate
-Status: PLANNED
+Status: DONE / DRAFT_READY_FOR_LINGUIST_ENGINEERING_GATE
 
 ## Activation Condition
 
@@ -55,4 +55,21 @@ content/captain-ether/batches/batch-028-*.json
 content/captain-ether/roles/content-producer/reports/batch-028-*-card-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0183-batch-028-draft-2026-06-03.md
 next task for Batch 028 linguist/engineering gate if draft passes
+```
+
+## Result
+
+```text
+DONE / DRAFT_READY_FOR_LINGUIST_ENGINEERING_GATE
+batch_028_status=draft
+batch_028_items=30
+batch_028_grammar_patterns=30
+batch_028_dangerous_pairs=16
+validator=PASS
+validator_runs=100
+validator_warnings=0
+collision_scan=PASS
+production_deploy=false
+starter_merge=false
+next_task=CE-0184 Batch 028 Linguist / Engineering Gate
 ```

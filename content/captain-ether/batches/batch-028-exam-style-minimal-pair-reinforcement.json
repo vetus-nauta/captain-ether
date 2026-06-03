@@ -1,0 +1,1673 @@
+{
+    "version": "1.0",
+    "batch_id": "batch-028-exam-style-minimal-pair-reinforcement",
+    "status": "draft",
+    "date": "2026-06-03",
+    "branch": "review_minimal_pairs",
+    "scope": "M5 Batch 028 draft. Final bridge to 1000-item baseline with exam-style mixed review and minimal-pair reinforcement. Draft only; not merged into starter and not deployed.",
+    "items": [
+        {
+            "id": "expr_b028_channel_one_six_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 1,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "review_minimal_pairs",
+            "module": "numbers_channels_headings",
+            "source_language": "en",
+            "source_text": "working channel one six",
+            "target_language": "en",
+            "target_text": "working channel one six",
+            "accepted_answers": [
+                "working channel one six"
+            ],
+            "grammar_pattern": "b028_channel_one_six_pattern",
+            "hint_beginner": "working channel...",
+            "hint_intermediate": "working channel one six...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "working channel one six"
+                ],
+                "should_reject": [
+                    "channel one five",
+                    "channel six one",
+                    "channel one six zero"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Channel one six must not become channel one five, six one, or one six zero."
+                ],
+                "linguist_note": "Channel one six must not become channel one five, six one, or one six zero."
+            }
+        },
+        {
+            "id": "expr_b028_channel_one_three_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 1,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "review_minimal_pairs",
+            "module": "numbers_channels_headings",
+            "source_language": "en",
+            "source_text": "channel one three",
+            "target_language": "en",
+            "target_text": "channel one three",
+            "accepted_answers": [
+                "channel one three"
+            ],
+            "grammar_pattern": "b028_channel_one_three_pattern",
+            "hint_beginner": "channel one...",
+            "hint_intermediate": "channel one three...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "channel one three"
+                ],
+                "should_reject": [
+                    "channel three one",
+                    "channel one two",
+                    "channel one three zero"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Channel one three must not become channel three one, one two, or one three zero."
+                ],
+                "linguist_note": "Channel one three must not become channel three one, one two, or one three zero."
+            }
+        },
+        {
+            "id": "expr_b028_heading_zero_nine_zero_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 1,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "review_minimal_pairs",
+            "module": "numbers_channels_headings",
+            "source_language": "en",
+            "source_text": "heading zero nine zero",
+            "target_language": "en",
+            "target_text": "heading zero nine zero",
+            "accepted_answers": [
+                "heading zero nine zero"
+            ],
+            "grammar_pattern": "b028_heading_zero_nine_zero_pattern",
+            "hint_beginner": "heading zero...",
+            "hint_intermediate": "heading zero nine zero...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "heading zero nine zero"
+                ],
+                "should_reject": [
+                    "heading zero eight zero",
+                    "heading one eight zero",
+                    "speed zero nine zero"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Heading zero nine zero must not become another heading or speed."
+                ],
+                "linguist_note": "Heading zero nine zero must not become another heading or speed."
+            }
+        },
+        {
+            "id": "expr_b028_heading_two_seven_zero_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 2,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "review_minimal_pairs",
+            "module": "numbers_channels_headings",
+            "source_language": "en",
+            "source_text": "heading two seven zero",
+            "target_language": "en",
+            "target_text": "heading two seven zero",
+            "accepted_answers": [
+                "heading two seven zero"
+            ],
+            "grammar_pattern": "b028_heading_two_seven_zero_pattern",
+            "hint_beginner": "heading two...",
+            "hint_intermediate": "heading two seven zero...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "heading two seven zero"
+                ],
+                "should_reject": [
+                    "heading two six zero",
+                    "heading zero seven two",
+                    "bearing two seven zero"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Heading two seven zero must not become another heading or bearing."
+                ],
+                "linguist_note": "Heading two seven zero must not become another heading or bearing."
+            }
+        },
+        {
+            "id": "expr_b028_port_side_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 1,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "review_minimal_pairs",
+            "module": "port_starboard",
+            "source_language": "en",
+            "source_text": "port side",
+            "target_language": "en",
+            "target_text": "port side",
+            "accepted_answers": [
+                "port side"
+            ],
+            "grammar_pattern": "b028_port_side_pattern",
+            "hint_beginner": "port side...",
+            "hint_intermediate": "port side...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "port side"
+                ],
+                "should_reject": [
+                    "starboard side",
+                    "port bow",
+                    "port quarter"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Port side must not become starboard, bow, or quarter."
+                ],
+                "linguist_note": "Port side must not become starboard, bow, or quarter."
+            }
+        },
+        {
+            "id": "expr_b028_starboard_side_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 1,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "review_minimal_pairs",
+            "module": "port_starboard",
+            "source_language": "en",
+            "source_text": "starboard side",
+            "target_language": "en",
+            "target_text": "starboard side",
+            "accepted_answers": [
+                "starboard side"
+            ],
+            "grammar_pattern": "b028_starboard_side_pattern",
+            "hint_beginner": "starboard side...",
+            "hint_intermediate": "starboard side...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "starboard side"
+                ],
+                "should_reject": [
+                    "port side",
+                    "starboard bow",
+                    "starboard quarter"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Starboard side must not become port, bow, or quarter."
+                ],
+                "linguist_note": "Starboard side must not become port, bow, or quarter."
+            }
+        },
+        {
+            "id": "expr_b028_roger_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 1,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "review_minimal_pairs",
+            "module": "roger_affirmative",
+            "source_language": "en",
+            "source_text": "roger received",
+            "target_language": "en",
+            "target_text": "roger received",
+            "accepted_answers": [
+                "roger received"
+            ],
+            "grammar_pattern": "b028_roger_pattern",
+            "hint_beginner": "roger received...",
+            "hint_intermediate": "roger received...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "roger received"
+                ],
+                "should_reject": [
+                    "affirmative",
+                    "negative",
+                    "over"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Roger means message received, not yes/no or over."
+                ],
+                "linguist_note": "Roger means message received, not yes/no or over."
+            }
+        },
+        {
+            "id": "expr_b028_affirmative_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 1,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "review_minimal_pairs",
+            "module": "roger_affirmative",
+            "source_language": "en",
+            "source_text": "affirmative confirmed",
+            "target_language": "en",
+            "target_text": "affirmative confirmed",
+            "accepted_answers": [
+                "affirmative confirmed"
+            ],
+            "grammar_pattern": "b028_affirmative_pattern",
+            "hint_beginner": "affirmative confirmed...",
+            "hint_intermediate": "affirmative confirmed...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "affirmative confirmed"
+                ],
+                "should_reject": [
+                    "roger",
+                    "negative",
+                    "out"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Affirmative means yes, not received, no, or out."
+                ],
+                "linguist_note": "Affirmative means yes, not received, no, or out."
+            }
+        },
+        {
+            "id": "expr_b028_say_again_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 1,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "review_minimal_pairs",
+            "module": "say_again_repeat",
+            "source_language": "en",
+            "source_text": "say again very slowly",
+            "target_language": "en",
+            "target_text": "say again very slowly",
+            "accepted_answers": [
+                "say again very slowly"
+            ],
+            "grammar_pattern": "b028_say_again_pattern",
+            "hint_beginner": "say again...",
+            "hint_intermediate": "say again very slowly...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "say again very slowly"
+                ],
+                "should_reject": [
+                    "repeat",
+                    "read back",
+                    "stand by"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Say again must not become repeat, read back, or stand by."
+                ],
+                "linguist_note": "Say again must not become repeat, read back, or stand by."
+            }
+        },
+        {
+            "id": "expr_b028_read_back_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 2,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "core_radio",
+            "module": "say_again_repeat",
+            "source_language": "en",
+            "source_text": "read back now",
+            "target_language": "en",
+            "target_text": "read back now",
+            "accepted_answers": [
+                "read back now"
+            ],
+            "grammar_pattern": "b028_read_back_pattern",
+            "hint_beginner": "read back...",
+            "hint_intermediate": "read back now...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "read back now"
+                ],
+                "should_reject": [
+                    "say again",
+                    "repeat",
+                    "report back"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Read back must not become say again, repeat, or report back."
+                ],
+                "linguist_note": "Read back must not become say again, repeat, or report back."
+            }
+        },
+        {
+            "id": "expr_b028_over_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 1,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "review_minimal_pairs",
+            "module": "over_out",
+            "source_language": "en",
+            "source_text": "over to you",
+            "target_language": "en",
+            "target_text": "over to you",
+            "accepted_answers": [
+                "over to you"
+            ],
+            "grammar_pattern": "b028_over_pattern",
+            "hint_beginner": "over to...",
+            "hint_intermediate": "over to you...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "over to you"
+                ],
+                "should_reject": [
+                    "out",
+                    "roger",
+                    "stand by"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Over keeps the exchange open, not closed or acknowledged."
+                ],
+                "linguist_note": "Over keeps the exchange open, not closed or acknowledged."
+            }
+        },
+        {
+            "id": "expr_b028_out_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 2,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "review_minimal_pairs",
+            "module": "over_out",
+            "source_language": "en",
+            "source_text": "message complete out",
+            "target_language": "en",
+            "target_text": "message complete out",
+            "accepted_answers": [
+                "message complete out"
+            ],
+            "grammar_pattern": "b028_out_pattern",
+            "hint_beginner": "message complete...",
+            "hint_intermediate": "message complete out...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "message complete out"
+                ],
+                "should_reject": [
+                    "over",
+                    "roger",
+                    "standing by"
+                ],
+                "dangerous_minimal_pairs": [
+                    "Out closes the exchange, not over, roger, or standing by."
+                ],
+                "linguist_note": "Out closes the exchange, not over, roger, or standing by."
+            }
+        },
+        {
+            "id": "phrase_b028_change_to_channel_one_two_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 2,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "core_radio",
+            "module": "numbers_channels_headings",
+            "source_language": "en",
+            "source_text": "Change to channel one two.",
+            "target_language": "en",
+            "target_text": "Change to channel one two.",
+            "accepted_answers": [
+                "Change to channel one two."
+            ],
+            "grammar_pattern": "b028_change_to_channel_one_two_pattern",
+            "hint_beginner": "Change to...",
+            "hint_intermediate": "Change to channel one...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "Change to channel one two."
+                ],
+                "should_reject": [
+                    "Change to channel two one.",
+                    "Change to channel one six.",
+                    "Stand by on channel one two."
+                ],
+                "dangerous_minimal_pairs": [
+                    "Channel one two must not become two one, one six, or stand by."
+                ],
+                "linguist_note": "Channel one two must not become two one, one six, or stand by."
+            }
+        },
+        {
+            "id": "phrase_b028_call_on_channel_one_four_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 2,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "core_radio",
+            "module": "numbers_channels_headings",
+            "source_language": "en",
+            "source_text": "Call on channel one four.",
+            "target_language": "en",
+            "target_text": "Call on channel one four.",
+            "accepted_answers": [
+                "Call on channel one four."
+            ],
+            "grammar_pattern": "b028_call_on_channel_one_four_pattern",
+            "hint_beginner": "Call on...",
+            "hint_intermediate": "Call on channel one...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "Call on channel one four."
+                ],
+                "should_reject": [
+                    "Call on channel four one.",
+                    "Call on channel one five.",
+                    "Listen on channel one four."
+                ],
+                "dangerous_minimal_pairs": [
+                    "Call on channel one four must not become four one, one five, or listen only."
+                ],
+                "linguist_note": "Call on channel one four must not become four one, one five, or listen only."
+            }
+        },
+        {
+            "id": "phrase_b028_alter_course_to_zero_nine_zero_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 2,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "traffic_collision",
+            "module": "numbers_channels_headings",
+            "source_language": "en",
+            "source_text": "Alter course to zero nine zero.",
+            "target_language": "en",
+            "target_text": "Alter course to zero nine zero.",
+            "accepted_answers": [
+                "Alter course to zero nine zero."
+            ],
+            "grammar_pattern": "b028_alter_course_to_zero_nine_zero_pattern",
+            "hint_beginner": "Alter course...",
+            "hint_intermediate": "Alter course to zero...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "Alter course to zero nine zero."
+                ],
+                "should_reject": [
+                    "Alter course to zero eight zero.",
+                    "Alter speed to zero nine zero.",
+                    "Alter course to one eight zero."
+                ],
+                "dangerous_minimal_pairs": [
+                    "Course zero nine zero must not become speed or another course."
+                ],
+                "linguist_note": "Course zero nine zero must not become speed or another course."
+            }
+        },
+        {
+            "id": "phrase_b028_alter_course_to_one_eight_zero_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 3,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "traffic_collision",
+            "module": "numbers_channels_headings",
+            "source_language": "en",
+            "source_text": "Alter course to one eight zero.",
+            "target_language": "en",
+            "target_text": "Alter course to one eight zero.",
+            "accepted_answers": [
+                "Alter course to one eight zero."
+            ],
+            "grammar_pattern": "b028_alter_course_to_one_eight_zero_pattern",
+            "hint_beginner": "Alter course...",
+            "hint_intermediate": "Alter course to one...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "Alter course to one eight zero."
+                ],
+                "should_reject": [
+                    "Alter course to zero nine zero.",
+                    "Alter bearing to one eight zero.",
+                    "Alter speed to one eight zero."
+                ],
+                "dangerous_minimal_pairs": [
+                    "Course one eight zero must not become course zero nine zero, bearing, or speed."
+                ],
+                "linguist_note": "Course one eight zero must not become course zero nine zero, bearing, or speed."
+            }
+        },
+        {
+            "id": "phrase_b028_vessel_on_port_bow_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 2,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "traffic_collision",
+            "module": "port_starboard",
+            "source_language": "en",
+            "source_text": "Vessel on port bow.",
+            "target_language": "en",
+            "target_text": "Vessel on port bow.",
+            "accepted_answers": [
+                "Vessel on port bow."
+            ],
+            "grammar_pattern": "b028_vessel_on_port_bow_pattern",
+            "hint_beginner": "Vessel on...",
+            "hint_intermediate": "Vessel on port bow....",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "Vessel on port bow."
+                ],
+                "should_reject": [
+                    "Vessel on starboard bow.",
+                    "Vessel on port quarter.",
+                    "Vessel on port side."
+                ],
+                "dangerous_minimal_pairs": [
+                    "Port bow must not become starboard bow, port quarter, or generic port side."
+                ],
+                "linguist_note": "Port bow must not become starboard bow, port quarter, or generic port side."
+            }
+        },
+        {
+            "id": "phrase_b028_vessel_on_starboard_quarter_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 3,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "traffic_collision",
+            "module": "port_starboard",
+            "source_language": "en",
+            "source_text": "Vessel on starboard quarter.",
+            "target_language": "en",
+            "target_text": "Vessel on starboard quarter.",
+            "accepted_answers": [
+                "Vessel on starboard quarter."
+            ],
+            "grammar_pattern": "b028_vessel_on_starboard_quarter_pattern",
+            "hint_beginner": "Vessel on...",
+            "hint_intermediate": "Vessel on starboard quarter....",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "Vessel on starboard quarter."
+                ],
+                "should_reject": [
+                    "Vessel on port quarter.",
+                    "Vessel on starboard bow.",
+                    "Vessel on starboard side."
+                ],
+                "dangerous_minimal_pairs": [
+                    "Starboard quarter must not become port quarter, bow, or generic side."
+                ],
+                "linguist_note": "Starboard quarter must not become port quarter, bow, or generic side."
+            }
+        },
+        {
+            "id": "phrase_b028_risk_of_collision_port_side_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 3,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "traffic_collision",
+            "module": "port_starboard",
+            "source_language": "en",
+            "source_text": "Risk of collision on port side.",
+            "target_language": "en",
+            "target_text": "Risk of collision on port side.",
+            "accepted_answers": [
+                "Risk of collision on port side."
+            ],
+            "grammar_pattern": "b028_risk_of_collision_port_side_pattern",
+            "hint_beginner": "Risk of...",
+            "hint_intermediate": "Risk of collision on...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "Risk of collision on port side."
+                ],
+                "should_reject": [
+                    "Risk of collision on starboard side.",
+                    "No risk of collision on port side.",
+                    "Risk of grounding on port side."
+                ],
+                "dangerous_minimal_pairs": [
+                    "Collision risk on port side must not become starboard, no risk, or grounding."
+                ],
+                "linguist_note": "Collision risk on port side must not become starboard, no risk, or grounding."
+            }
+        },
+        {
+            "id": "phrase_b028_risk_of_collision_starboard_side_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 3,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "traffic_collision",
+            "module": "port_starboard",
+            "source_language": "en",
+            "source_text": "Risk of collision on starboard side.",
+            "target_language": "en",
+            "target_text": "Risk of collision on starboard side.",
+            "accepted_answers": [
+                "Risk of collision on starboard side."
+            ],
+            "grammar_pattern": "b028_risk_of_collision_starboard_side_pattern",
+            "hint_beginner": "Risk of...",
+            "hint_intermediate": "Risk of collision on...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "Risk of collision on starboard side."
+                ],
+                "should_reject": [
+                    "Risk of collision on port side.",
+                    "No risk of collision on starboard side.",
+                    "Risk of grounding on starboard side."
+                ],
+                "dangerous_minimal_pairs": [
+                    "Collision risk on starboard side must not become port, no risk, or grounding."
+                ],
+                "linguist_note": "Collision risk on starboard side must not become port, no risk, or grounding."
+            }
+        },
+        {
+            "id": "phrase_b028_roger_stand_by_on_one_six_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 2,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "core_radio",
+            "module": "roger_affirmative",
+            "source_language": "en",
+            "source_text": "Roger, stand by on channel one six.",
+            "target_language": "en",
+            "target_text": "Roger, stand by on channel one six.",
+            "accepted_answers": [
+                "Roger, stand by on channel one six."
+            ],
+            "grammar_pattern": "b028_roger_stand_by_on_one_six_pattern",
+            "hint_beginner": "Roger, stand...",
+            "hint_intermediate": "Roger, stand by on...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "Roger, stand by on channel one six."
+                ],
+                "should_reject": [
+                    "Affirmative, stand by on channel one six.",
+                    "Roger, change to channel one six.",
+                    "Roger, stand by on channel six one."
+                ],
+                "dangerous_minimal_pairs": [
+                    "Roger/stand by/channel one six must stay exact."
+                ],
+                "linguist_note": "Roger/stand by/channel one six must stay exact."
+            }
+        },
+        {
+            "id": "phrase_b028_affirmative_i_will_alter_course_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 3,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "traffic_collision",
+            "module": "roger_affirmative",
+            "source_language": "en",
+            "source_text": "Affirmative, I will alter course.",
+            "target_language": "en",
+            "target_text": "Affirmative, I will alter course.",
+            "accepted_answers": [
+                "Affirmative, I will alter course."
+            ],
+            "grammar_pattern": "b028_affirmative_i_will_alter_course_pattern",
+            "hint_beginner": "Affirmative, I...",
+            "hint_intermediate": "Affirmative, I will alter...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "Affirmative, I will alter course."
+                ],
+                "should_reject": [
+                    "Roger, I will alter course.",
+                    "Negative, I will alter course.",
+                    "Affirmative, I will maintain course."
+                ],
+                "dangerous_minimal_pairs": [
+                    "Affirmative and alter course must not become roger, negative, or maintain course."
+                ],
+                "linguist_note": "Affirmative and alter course must not become roger, negative, or maintain course."
+            }
+        },
+        {
+            "id": "phrase_b028_say_again_your_position_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 2,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "core_radio",
+            "module": "say_again_repeat",
+            "source_language": "en",
+            "source_text": "Say again your last position.",
+            "target_language": "en",
+            "target_text": "Say again your last position.",
+            "accepted_answers": [
+                "Say again your last position."
+            ],
+            "grammar_pattern": "b028_say_again_your_position_pattern",
+            "hint_beginner": "Say again...",
+            "hint_intermediate": "Say again your last...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "Say again your last position."
+                ],
+                "should_reject": [
+                    "Repeat your position.",
+                    "Read back your position.",
+                    "Say again your course."
+                ],
+                "dangerous_minimal_pairs": [
+                    "Say again position must not become repeat, read back, or course."
+                ],
+                "linguist_note": "Say again position must not become repeat, read back, or course."
+            }
+        },
+        {
+            "id": "phrase_b028_read_back_my_course_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 3,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "core_radio",
+            "module": "say_again_repeat",
+            "source_language": "en",
+            "source_text": "Read back my course.",
+            "target_language": "en",
+            "target_text": "Read back my course.",
+            "accepted_answers": [
+                "Read back my course."
+            ],
+            "grammar_pattern": "b028_read_back_my_course_pattern",
+            "hint_beginner": "Read back...",
+            "hint_intermediate": "Read back my course....",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "Read back my course."
+                ],
+                "should_reject": [
+                    "Say again my course.",
+                    "Repeat my course.",
+                    "Read back my speed."
+                ],
+                "dangerous_minimal_pairs": [
+                    "Read back course must not become say again, repeat, or speed."
+                ],
+                "linguist_note": "Read back course must not become say again, repeat, or speed."
+            }
+        },
+        {
+            "id": "phrase_b028_do_not_repeat_distress_call_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 3,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "core_radio",
+            "module": "say_again_repeat",
+            "source_language": "en",
+            "source_text": "Do not repeat the distress call.",
+            "target_language": "en",
+            "target_text": "Do not repeat the distress call.",
+            "accepted_answers": [
+                "Do not repeat the distress call."
+            ],
+            "grammar_pattern": "b028_do_not_repeat_distress_call_pattern",
+            "hint_beginner": "Do not...",
+            "hint_intermediate": "Do not repeat the...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "Do not repeat the distress call."
+                ],
+                "should_reject": [
+                    "Repeat the distress call.",
+                    "Say again the distress call.",
+                    "Do not relay the distress call."
+                ],
+                "dangerous_minimal_pairs": [
+                    "Do not repeat must not become repeat, say again, or do not relay."
+                ],
+                "linguist_note": "Do not repeat must not become repeat, say again, or do not relay."
+            }
+        },
+        {
+            "id": "phrase_b028_message_received_over_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 2,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "core_radio",
+            "module": "over_out",
+            "source_language": "en",
+            "source_text": "Message received, over.",
+            "target_language": "en",
+            "target_text": "Message received, over.",
+            "accepted_answers": [
+                "Message received, over."
+            ],
+            "grammar_pattern": "b028_message_received_over_pattern",
+            "hint_beginner": "Message received,...",
+            "hint_intermediate": "Message received, over....",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "Message received, over."
+                ],
+                "should_reject": [
+                    "Message received, out.",
+                    "Message not received, over.",
+                    "Message received, roger."
+                ],
+                "dangerous_minimal_pairs": [
+                    "Message received over must not become out, not received, or roger only."
+                ],
+                "linguist_note": "Message received over must not become out, not received, or roger only."
+            }
+        },
+        {
+            "id": "phrase_b028_message_complete_out_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 3,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "core_radio",
+            "module": "over_out",
+            "source_language": "en",
+            "source_text": "Message complete, out.",
+            "target_language": "en",
+            "target_text": "Message complete, out.",
+            "accepted_answers": [
+                "Message complete, out."
+            ],
+            "grammar_pattern": "b028_message_complete_out_pattern",
+            "hint_beginner": "Message complete,...",
+            "hint_intermediate": "Message complete, out....",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "Message complete, out."
+                ],
+                "should_reject": [
+                    "Message complete, over.",
+                    "Message incomplete, out.",
+                    "Message complete, stand by."
+                ],
+                "dangerous_minimal_pairs": [
+                    "Message complete out must not become over, incomplete, or stand by."
+                ],
+                "linguist_note": "Message complete out must not become over, incomplete, or stand by."
+            }
+        },
+        {
+            "id": "phrase_b028_do_not_cross_ahead_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 3,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "traffic_collision",
+            "module": "traffic_contrasts",
+            "source_language": "en",
+            "source_text": "Do not cross ahead.",
+            "target_language": "en",
+            "target_text": "Do not cross ahead.",
+            "accepted_answers": [
+                "Do not cross ahead."
+            ],
+            "grammar_pattern": "b028_do_not_cross_ahead_pattern",
+            "hint_beginner": "Do not...",
+            "hint_intermediate": "Do not cross ahead....",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "Do not cross ahead."
+                ],
+                "should_reject": [
+                    "Cross ahead.",
+                    "Do not cross astern.",
+                    "Do not overtake ahead."
+                ],
+                "dangerous_minimal_pairs": [
+                    "Do not cross ahead must not become cross ahead, astern, or overtake."
+                ],
+                "linguist_note": "Do not cross ahead must not become cross ahead, astern, or overtake."
+            }
+        },
+        {
+            "id": "phrase_b028_pass_astern_of_my_vessel_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 3,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "traffic_collision",
+            "module": "traffic_contrasts",
+            "source_language": "en",
+            "source_text": "Pass astern of my vessel.",
+            "target_language": "en",
+            "target_text": "Pass astern of my vessel.",
+            "accepted_answers": [
+                "Pass astern of my vessel."
+            ],
+            "grammar_pattern": "b028_pass_astern_of_my_vessel_pattern",
+            "hint_beginner": "Pass astern...",
+            "hint_intermediate": "Pass astern of my...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "Pass astern of my vessel."
+                ],
+                "should_reject": [
+                    "Pass ahead of my vessel.",
+                    "Pass abeam of my vessel.",
+                    "Do not pass astern of my vessel."
+                ],
+                "dangerous_minimal_pairs": [
+                    "Pass astern must not become ahead, abeam, or do not pass."
+                ],
+                "linguist_note": "Pass astern must not become ahead, abeam, or do not pass."
+            }
+        },
+        {
+            "id": "phrase_b028_report_when_clear_of_traffic_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 3,
+            "topic": "exam style mixed review minimal pair reinforcement",
+            "branch": "traffic_collision",
+            "module": "traffic_contrasts",
+            "source_language": "en",
+            "source_text": "Report when clear of traffic.",
+            "target_language": "en",
+            "target_text": "Report when clear of traffic.",
+            "accepted_answers": [
+                "Report when clear of traffic."
+            ],
+            "grammar_pattern": "b028_report_when_clear_of_traffic_pattern",
+            "hint_beginner": "Report when...",
+            "hint_intermediate": "Report when clear of...",
+            "hint_advanced": "Exact radio phrase; keep numbers, side, status, and procedure word strict.",
+            "qa_notes": {
+                "should_accept": [
+                    "Report when clear of traffic."
+                ],
+                "should_reject": [
+                    "Report when in traffic.",
+                    "Report when clear of channel.",
+                    "Do not report when clear of traffic."
+                ],
+                "dangerous_minimal_pairs": [
+                    "Clear of traffic must not become in traffic, clear of channel, or do not report."
+                ],
+                "linguist_note": "Clear of traffic must not become in traffic, clear of channel, or do not report."
+            }
+        }
+    ],
+    "grammar_patterns": [
+        {
+            "id": "b028_channel_one_six_pattern",
+            "description": "Exact review phrase: working channel one six",
+            "examples": [
+                "working channel one six"
+            ]
+        },
+        {
+            "id": "b028_channel_one_three_pattern",
+            "description": "Exact review phrase: channel one three",
+            "examples": [
+                "channel one three"
+            ]
+        },
+        {
+            "id": "b028_heading_zero_nine_zero_pattern",
+            "description": "Exact review phrase: heading zero nine zero",
+            "examples": [
+                "heading zero nine zero"
+            ]
+        },
+        {
+            "id": "b028_heading_two_seven_zero_pattern",
+            "description": "Exact review phrase: heading two seven zero",
+            "examples": [
+                "heading two seven zero"
+            ]
+        },
+        {
+            "id": "b028_port_side_pattern",
+            "description": "Exact review phrase: port side",
+            "examples": [
+                "port side"
+            ]
+        },
+        {
+            "id": "b028_starboard_side_pattern",
+            "description": "Exact review phrase: starboard side",
+            "examples": [
+                "starboard side"
+            ]
+        },
+        {
+            "id": "b028_roger_pattern",
+            "description": "Exact review phrase: roger received",
+            "examples": [
+                "roger received"
+            ]
+        },
+        {
+            "id": "b028_affirmative_pattern",
+            "description": "Exact review phrase: affirmative confirmed",
+            "examples": [
+                "affirmative confirmed"
+            ]
+        },
+        {
+            "id": "b028_say_again_pattern",
+            "description": "Exact review phrase: say again very slowly",
+            "examples": [
+                "say again very slowly"
+            ]
+        },
+        {
+            "id": "b028_read_back_pattern",
+            "description": "Exact review phrase: read back now",
+            "examples": [
+                "read back now"
+            ]
+        },
+        {
+            "id": "b028_over_pattern",
+            "description": "Exact review phrase: over to you",
+            "examples": [
+                "over to you"
+            ]
+        },
+        {
+            "id": "b028_out_pattern",
+            "description": "Exact review phrase: message complete out",
+            "examples": [
+                "message complete out"
+            ]
+        },
+        {
+            "id": "b028_change_to_channel_one_two_pattern",
+            "description": "Exact review phrase: Change to channel one two.",
+            "examples": [
+                "Change to channel one two."
+            ]
+        },
+        {
+            "id": "b028_call_on_channel_one_four_pattern",
+            "description": "Exact review phrase: Call on channel one four.",
+            "examples": [
+                "Call on channel one four."
+            ]
+        },
+        {
+            "id": "b028_alter_course_to_zero_nine_zero_pattern",
+            "description": "Exact review phrase: Alter course to zero nine zero.",
+            "examples": [
+                "Alter course to zero nine zero."
+            ]
+        },
+        {
+            "id": "b028_alter_course_to_one_eight_zero_pattern",
+            "description": "Exact review phrase: Alter course to one eight zero.",
+            "examples": [
+                "Alter course to one eight zero."
+            ]
+        },
+        {
+            "id": "b028_vessel_on_port_bow_pattern",
+            "description": "Exact review phrase: Vessel on port bow.",
+            "examples": [
+                "Vessel on port bow."
+            ]
+        },
+        {
+            "id": "b028_vessel_on_starboard_quarter_pattern",
+            "description": "Exact review phrase: Vessel on starboard quarter.",
+            "examples": [
+                "Vessel on starboard quarter."
+            ]
+        },
+        {
+            "id": "b028_risk_of_collision_port_side_pattern",
+            "description": "Exact review phrase: Risk of collision on port side.",
+            "examples": [
+                "Risk of collision on port side."
+            ]
+        },
+        {
+            "id": "b028_risk_of_collision_starboard_side_pattern",
+            "description": "Exact review phrase: Risk of collision on starboard side.",
+            "examples": [
+                "Risk of collision on starboard side."
+            ]
+        },
+        {
+            "id": "b028_roger_stand_by_on_one_six_pattern",
+            "description": "Exact review phrase: Roger, stand by on channel one six.",
+            "examples": [
+                "Roger, stand by on channel one six."
+            ]
+        },
+        {
+            "id": "b028_affirmative_i_will_alter_course_pattern",
+            "description": "Exact review phrase: Affirmative, I will alter course.",
+            "examples": [
+                "Affirmative, I will alter course."
+            ]
+        },
+        {
+            "id": "b028_say_again_your_position_pattern",
+            "description": "Exact review phrase: Say again your last position.",
+            "examples": [
+                "Say again your last position."
+            ]
+        },
+        {
+            "id": "b028_read_back_my_course_pattern",
+            "description": "Exact review phrase: Read back my course.",
+            "examples": [
+                "Read back my course."
+            ]
+        },
+        {
+            "id": "b028_do_not_repeat_distress_call_pattern",
+            "description": "Exact review phrase: Do not repeat the distress call.",
+            "examples": [
+                "Do not repeat the distress call."
+            ]
+        },
+        {
+            "id": "b028_message_received_over_pattern",
+            "description": "Exact review phrase: Message received, over.",
+            "examples": [
+                "Message received, over."
+            ]
+        },
+        {
+            "id": "b028_message_complete_out_pattern",
+            "description": "Exact review phrase: Message complete, out.",
+            "examples": [
+                "Message complete, out."
+            ]
+        },
+        {
+            "id": "b028_do_not_cross_ahead_pattern",
+            "description": "Exact review phrase: Do not cross ahead.",
+            "examples": [
+                "Do not cross ahead."
+            ]
+        },
+        {
+            "id": "b028_pass_astern_of_my_vessel_pattern",
+            "description": "Exact review phrase: Pass astern of my vessel.",
+            "examples": [
+                "Pass astern of my vessel."
+            ]
+        },
+        {
+            "id": "b028_report_when_clear_of_traffic_pattern",
+            "description": "Exact review phrase: Report when clear of traffic.",
+            "examples": [
+                "Report when clear of traffic."
+            ]
+        }
+    ],
+    "dangerous_minimal_pairs": [
+        {
+            "pair": "b028 channel one six strictness",
+            "items": [
+                "expr_b028_channel_one_six_001"
+            ],
+            "must_accept": {
+                "expr_b028_channel_one_six_001": [
+                    "working channel one six"
+                ]
+            },
+            "must_reject": {
+                "expr_b028_channel_one_six_001": [
+                    "channel one five",
+                    "channel six one",
+                    "channel one six zero"
+                ]
+            },
+            "reason": "Channel one six numeric order stays strict."
+        },
+        {
+            "pair": "b028 channel one three strictness",
+            "items": [
+                "expr_b028_channel_one_three_001"
+            ],
+            "must_accept": {
+                "expr_b028_channel_one_three_001": [
+                    "channel one three"
+                ]
+            },
+            "must_reject": {
+                "expr_b028_channel_one_three_001": [
+                    "channel three one",
+                    "channel one two",
+                    "channel one three zero"
+                ]
+            },
+            "reason": "Channel one three numeric order stays strict."
+        },
+        {
+            "pair": "b028 heading zero nine zero strictness",
+            "items": [
+                "expr_b028_heading_zero_nine_zero_001",
+                "phrase_b028_alter_course_to_zero_nine_zero_001"
+            ],
+            "must_accept": {
+                "expr_b028_heading_zero_nine_zero_001": [
+                    "heading zero nine zero"
+                ],
+                "phrase_b028_alter_course_to_zero_nine_zero_001": [
+                    "Alter course to zero nine zero."
+                ]
+            },
+            "must_reject": {
+                "expr_b028_heading_zero_nine_zero_001": [
+                    "heading zero eight zero",
+                    "Alter speed to zero nine zero.",
+                    "Alter course to one eight zero."
+                ],
+                "phrase_b028_alter_course_to_zero_nine_zero_001": [
+                    "heading zero eight zero",
+                    "Alter speed to zero nine zero.",
+                    "Alter course to one eight zero."
+                ]
+            },
+            "reason": "Heading/course zero nine zero must not become speed or other headings."
+        },
+        {
+            "pair": "b028 heading two seven zero strictness",
+            "items": [
+                "expr_b028_heading_two_seven_zero_001"
+            ],
+            "must_accept": {
+                "expr_b028_heading_two_seven_zero_001": [
+                    "heading two seven zero"
+                ]
+            },
+            "must_reject": {
+                "expr_b028_heading_two_seven_zero_001": [
+                    "heading two six zero",
+                    "heading zero seven two",
+                    "bearing two seven zero"
+                ]
+            },
+            "reason": "Heading two seven zero must not become other numbers or bearing."
+        },
+        {
+            "pair": "b028 port starboard side strictness",
+            "items": [
+                "expr_b028_port_side_001",
+                "expr_b028_starboard_side_001"
+            ],
+            "must_accept": {
+                "expr_b028_port_side_001": [
+                    "port side"
+                ],
+                "expr_b028_starboard_side_001": [
+                    "starboard side"
+                ]
+            },
+            "must_reject": {
+                "expr_b028_port_side_001": [
+                    "starboard side",
+                    "port bow",
+                    "port quarter"
+                ],
+                "expr_b028_starboard_side_001": [
+                    "port side",
+                    "starboard bow",
+                    "starboard quarter"
+                ]
+            },
+            "reason": "Port and starboard side stay separate."
+        },
+        {
+            "pair": "b028 bow quarter strictness",
+            "items": [
+                "phrase_b028_vessel_on_port_bow_001",
+                "phrase_b028_vessel_on_starboard_quarter_001"
+            ],
+            "must_accept": {
+                "phrase_b028_vessel_on_port_bow_001": [
+                    "Vessel on port bow."
+                ],
+                "phrase_b028_vessel_on_starboard_quarter_001": [
+                    "Vessel on starboard quarter."
+                ]
+            },
+            "must_reject": {
+                "phrase_b028_vessel_on_port_bow_001": [
+                    "Vessel on starboard bow.",
+                    "Vessel on port quarter.",
+                    "Vessel on starboard side."
+                ],
+                "phrase_b028_vessel_on_starboard_quarter_001": [
+                    "Vessel on starboard bow.",
+                    "Vessel on port quarter.",
+                    "Vessel on starboard side."
+                ]
+            },
+            "reason": "Bow/quarter and port/starboard stay strict."
+        },
+        {
+            "pair": "b028 collision side strictness",
+            "items": [
+                "phrase_b028_risk_of_collision_port_side_001",
+                "phrase_b028_risk_of_collision_starboard_side_001"
+            ],
+            "must_accept": {
+                "phrase_b028_risk_of_collision_port_side_001": [
+                    "Risk of collision on port side."
+                ],
+                "phrase_b028_risk_of_collision_starboard_side_001": [
+                    "Risk of collision on starboard side."
+                ]
+            },
+            "must_reject": {
+                "phrase_b028_risk_of_collision_port_side_001": [
+                    "Risk of collision on starboard side.",
+                    "No risk of collision on port side.",
+                    "Risk of grounding on port side."
+                ],
+                "phrase_b028_risk_of_collision_starboard_side_001": [
+                    "Risk of collision on port side.",
+                    "No risk of collision on starboard side.",
+                    "Risk of grounding on starboard side."
+                ]
+            },
+            "reason": "Collision side and risk status stay strict."
+        },
+        {
+            "pair": "b028 roger affirmative strictness",
+            "items": [
+                "expr_b028_roger_001",
+                "expr_b028_affirmative_001"
+            ],
+            "must_accept": {
+                "expr_b028_roger_001": [
+                    "roger received"
+                ],
+                "expr_b028_affirmative_001": [
+                    "affirmative confirmed"
+                ]
+            },
+            "must_reject": {
+                "expr_b028_roger_001": [
+                    "affirmative confirmed",
+                    "negative",
+                    "over to you"
+                ],
+                "expr_b028_affirmative_001": [
+                    "roger received",
+                    "negative",
+                    "message complete out"
+                ]
+            },
+            "reason": "Roger and affirmative must not collapse."
+        },
+        {
+            "pair": "b028 roger stand by channel strictness",
+            "items": [
+                "phrase_b028_roger_stand_by_on_one_six_001"
+            ],
+            "must_accept": {
+                "phrase_b028_roger_stand_by_on_one_six_001": [
+                    "Roger, stand by on channel one six."
+                ]
+            },
+            "must_reject": {
+                "phrase_b028_roger_stand_by_on_one_six_001": [
+                    "Affirmative, stand by on channel one six.",
+                    "Roger, change to channel one six.",
+                    "Roger, stand by on channel six one."
+                ]
+            },
+            "reason": "Roger, stand by, and channel one six stay exact."
+        },
+        {
+            "pair": "b028 affirmative alter course strictness",
+            "items": [
+                "phrase_b028_affirmative_i_will_alter_course_001"
+            ],
+            "must_accept": {
+                "phrase_b028_affirmative_i_will_alter_course_001": [
+                    "Affirmative, I will alter course."
+                ]
+            },
+            "must_reject": {
+                "phrase_b028_affirmative_i_will_alter_course_001": [
+                    "Roger, I will alter course.",
+                    "Negative, I will alter course.",
+                    "Affirmative, I will maintain course."
+                ]
+            },
+            "reason": "Affirmative and alter course stay strict."
+        },
+        {
+            "pair": "b028 say again repeat strictness",
+            "items": [
+                "expr_b028_say_again_001",
+                "phrase_b028_say_again_your_position_001"
+            ],
+            "must_accept": {
+                "expr_b028_say_again_001": [
+                    "say again very slowly"
+                ],
+                "phrase_b028_say_again_your_position_001": [
+                    "Say again your last position."
+                ]
+            },
+            "must_reject": {
+                "expr_b028_say_again_001": [
+                    "repeat",
+                    "read back now",
+                    "stand by"
+                ],
+                "phrase_b028_say_again_your_position_001": [
+                    "Repeat your last position.",
+                    "Read back your last position.",
+                    "Say again your course."
+                ]
+            },
+            "reason": "Say again must not become repeat or read back."
+        },
+        {
+            "pair": "b028 read back strictness",
+            "items": [
+                "expr_b028_read_back_001",
+                "phrase_b028_read_back_my_course_001"
+            ],
+            "must_accept": {
+                "expr_b028_read_back_001": [
+                    "read back now"
+                ],
+                "phrase_b028_read_back_my_course_001": [
+                    "Read back my course."
+                ]
+            },
+            "must_reject": {
+                "expr_b028_read_back_001": [
+                    "say again very slowly",
+                    "repeat",
+                    "report back"
+                ],
+                "phrase_b028_read_back_my_course_001": [
+                    "say again",
+                    "Repeat my course.",
+                    "Read back my speed."
+                ]
+            },
+            "reason": "Read back must not become say again/repeat or wrong field."
+        },
+        {
+            "pair": "b028 do not repeat distress strictness",
+            "items": [
+                "phrase_b028_do_not_repeat_distress_call_001"
+            ],
+            "must_accept": {
+                "phrase_b028_do_not_repeat_distress_call_001": [
+                    "Do not repeat the distress call."
+                ]
+            },
+            "must_reject": {
+                "phrase_b028_do_not_repeat_distress_call_001": [
+                    "Repeat the distress call.",
+                    "Say again the distress call.",
+                    "Do not relay the distress call."
+                ]
+            },
+            "reason": "Do not repeat distress call stays strict."
+        },
+        {
+            "pair": "b028 over out strictness",
+            "items": [
+                "expr_b028_over_001",
+                "expr_b028_out_001"
+            ],
+            "must_accept": {
+                "expr_b028_over_001": [
+                    "over to you"
+                ],
+                "expr_b028_out_001": [
+                    "message complete out"
+                ]
+            },
+            "must_reject": {
+                "expr_b028_over_001": [
+                    "message complete out",
+                    "roger received",
+                    "stand by"
+                ],
+                "expr_b028_out_001": [
+                    "over to you",
+                    "roger received",
+                    "standing by"
+                ]
+            },
+            "reason": "Over and out stay separate."
+        },
+        {
+            "pair": "b028 message ending strictness",
+            "items": [
+                "phrase_b028_message_received_over_001",
+                "phrase_b028_message_complete_out_001"
+            ],
+            "must_accept": {
+                "phrase_b028_message_received_over_001": [
+                    "Message received, over."
+                ],
+                "phrase_b028_message_complete_out_001": [
+                    "Message complete, out."
+                ]
+            },
+            "must_reject": {
+                "phrase_b028_message_received_over_001": [
+                    "Message received, out.",
+                    "Message complete, over.",
+                    "Message incomplete, out."
+                ],
+                "phrase_b028_message_complete_out_001": [
+                    "Message received, out.",
+                    "Message complete, over.",
+                    "Message incomplete, out."
+                ]
+            },
+            "reason": "Message ending and status stay strict."
+        },
+        {
+            "pair": "b028 traffic crossing strictness",
+            "items": [
+                "phrase_b028_do_not_cross_ahead_001",
+                "phrase_b028_pass_astern_of_my_vessel_001",
+                "phrase_b028_report_when_clear_of_traffic_001"
+            ],
+            "must_accept": {
+                "phrase_b028_do_not_cross_ahead_001": [
+                    "Do not cross ahead."
+                ],
+                "phrase_b028_pass_astern_of_my_vessel_001": [
+                    "Pass astern of my vessel."
+                ],
+                "phrase_b028_report_when_clear_of_traffic_001": [
+                    "Report when clear of traffic."
+                ]
+            },
+            "must_reject": {
+                "phrase_b028_do_not_cross_ahead_001": [
+                    "Cross ahead.",
+                    "Pass ahead of my vessel.",
+                    "Report when in traffic."
+                ],
+                "phrase_b028_pass_astern_of_my_vessel_001": [
+                    "Cross ahead.",
+                    "Pass ahead of my vessel.",
+                    "Report when in traffic."
+                ],
+                "phrase_b028_report_when_clear_of_traffic_001": [
+                    "Cross ahead.",
+                    "Pass ahead of my vessel.",
+                    "Report when in traffic."
+                ]
+            },
+            "reason": "Traffic action/direction/status stay strict."
+        }
+    ],
+    "producer_notes": {
+        "locked_scope": "CE-0154 Batch 028",
+        "items": 30,
+        "target_types": {
+            "short_expression": 12,
+            "phrase": 18
+        },
+        "target_levels": {
+            "beginner": 9,
+            "intermediate": 10,
+            "advanced": 11
+        },
+        "primary_branches": [
+            "review_minimal_pairs",
+            "core_radio",
+            "traffic_collision"
+        ],
+        "modules": [
+            "numbers_channels_headings",
+            "over_out",
+            "roger_affirmative",
+            "port_starboard",
+            "say_again_repeat"
+        ],
+        "qa_focus": "must-stay-wrong regression coverage, no fuzzy numeric/channel leaks"
+    }
+}

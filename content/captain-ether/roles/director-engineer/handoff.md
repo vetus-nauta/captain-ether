@@ -52,6 +52,7 @@ CE-0179 Batch 027 staged merge passed locally/GitHub; production not deployed. L
 CE-0180 Batch 027 post-merge QA passed; local/GitHub 970 baseline is ready for production sync decision.
 CE-0181 Batch 027 production sync passed; production now equals local/GitHub at the 970-item baseline.
 CE-0182 Batch 027 production release-readiness QA passed; current 970-item production scope is release-ready.
+CE-0183 Batch 028 draft gate done: created isolated draft batch with 30 exam-style minimal-pair items, 30 grammar patterns, 16 dangerous-pair groups; validator PASS with 0 warnings.
 local_github_starter_items=970
 local_github_grammar_patterns=551
 local_github_qa_items=970
@@ -62,10 +63,10 @@ production_qa_items=970
 production_dangerous_pairs=227
 production_delta_items=0
 validator_warn_count=0
-draft_backlog_items=0
-draft_backlog_grammar_patterns=0
-draft_backlog_dangerous_pairs=0
-Next task: CE-0183 Batch 028 Draft Gate
+draft_backlog_items=30
+draft_backlog_grammar_patterns=30
+draft_backlog_dangerous_pairs=16
+Next task: CE-0184 Batch 028 Linguist / Engineering Gate
 ```
 
 Older sections below preserve historical context and may mention earlier
