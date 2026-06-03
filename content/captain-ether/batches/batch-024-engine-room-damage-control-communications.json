@@ -221,30 +221,30 @@
             "branch": "urgency_panpan",
             "module": "steering_failure",
             "source_language": "ru",
-            "source_text": "Отказ рулевого управления.",
+            "source_text": "Доложен отказ рулевого устройства.",
             "target_language": "en",
-            "target_text": "steering failure",
+            "target_text": "steering gear failure reported",
             "accepted_answers": [
-                "steering failure",
-                "steering gear failure"
+                "steering gear failure reported",
+                "steering gear failure is reported"
             ],
             "grammar_pattern": "b024_b024_steering_failure_pattern",
-            "hint_beginner": "steering failure...",
-            "hint_intermediate": "steering failure...",
+            "hint_beginner": "steering gear...",
+            "hint_intermediate": "steering gear failure...",
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "steering failure"
+                    "steering gear failure reported"
                 ],
                 "should_reject": [
-                    "engine failure",
-                    "radio failure",
-                    "steering normal"
+                    "engine failure reported",
+                    "radio failure reported",
+                    "steering gear normal"
                 ],
                 "dangerous_minimal_pairs": [
-                    "Steering failure"
+                    "Reported steering gear failure"
                 ],
-                "linguist_note": "Steering failure must not become engine/radio failure or normal status."
+                "linguist_note": "Reported steering gear failure must not become engine/radio failure or normal status."
             }
         },
         {
@@ -256,20 +256,20 @@
             "branch": "onboard_operations",
             "module": "flooding_control",
             "source_language": "ru",
-            "source_text": "Осушительный насос работает.",
+            "source_text": "Осушительный насос машинного отделения работает.",
             "target_language": "en",
-            "target_text": "bilge pump running",
+            "target_text": "engine-room bilge pump running",
             "accepted_answers": [
-                "bilge pump running",
-                "bilge pump is running"
+                "engine-room bilge pump running",
+                "engine room bilge pump is running"
             ],
             "grammar_pattern": "b024_b024_bilge_pump_running_pattern",
-            "hint_beginner": "bilge pump...",
-            "hint_intermediate": "bilge pump running...",
+            "hint_beginner": "engine-room bilge...",
+            "hint_intermediate": "engine-room bilge pump...",
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "bilge pump running"
+                    "engine-room bilge pump running"
                 ],
                 "should_reject": [
                     "fuel pump running",
@@ -277,9 +277,9 @@
                     "fire pump running"
                 ],
                 "dangerous_minimal_pairs": [
-                    "Pump identity and running/stopped polarity are safety-critical"
+                    "Engine-room bilge pump identity and running/stopped polarity are safety-critical"
                 ],
-                "linguist_note": "Pump identity and running/stopped polarity are safety-critical."
+                "linguist_note": "Engine-room bilge pump identity and running/stopped polarity are safety-critical."
             }
         },
         {
@@ -361,30 +361,30 @@
             "branch": "urgency_panpan",
             "module": "fire_response",
             "source_language": "ru",
-            "source_text": "Изолировать подачу топлива.",
+            "source_text": "Изолировать подачу топлива в машинном отделении.",
             "target_language": "en",
-            "target_text": "isolate fuel supply",
+            "target_text": "isolate engine-room fuel supply",
             "accepted_answers": [
-                "isolate fuel supply",
-                "shut off fuel supply"
+                "isolate engine-room fuel supply",
+                "shut off engine-room fuel supply"
             ],
             "grammar_pattern": "b024_b024_isolate_fuel_supply_pattern",
-            "hint_beginner": "isolate fuel...",
-            "hint_intermediate": "isolate fuel supply...",
+            "hint_beginner": "isolate engine-room...",
+            "hint_intermediate": "isolate engine-room fuel...",
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "isolate fuel supply"
+                    "isolate engine-room fuel supply"
                 ],
                 "should_reject": [
-                    "increase fuel supply",
+                    "increase engine-room fuel supply",
                     "isolate water supply",
-                    "open fuel supply"
+                    "open engine-room fuel supply"
                 ],
                 "dangerous_minimal_pairs": [
-                    "Fuel isolation"
+                    "Engine-room fuel isolation"
                 ],
-                "linguist_note": "Fuel isolation must not become water isolation, opening, or increasing fuel."
+                "linguist_note": "Engine-room fuel isolation must not become water isolation, opening, or increasing fuel."
             }
         },
         {
@@ -1272,14 +1272,14 @@
             "id": "b024_b024_steering_failure_pattern",
             "pattern": "steering_failure short_expression pattern",
             "examples": [
-                "steering failure"
+                "steering gear failure reported"
             ]
         },
         {
             "id": "b024_b024_bilge_pump_running_pattern",
             "pattern": "flooding_control short_expression pattern",
             "examples": [
-                "bilge pump running"
+                "engine-room bilge pump running"
             ]
         },
         {
@@ -1300,7 +1300,7 @@
             "id": "b024_b024_isolate_fuel_supply_pattern",
             "pattern": "fire_response short_expression pattern",
             "examples": [
-                "isolate fuel supply"
+                "isolate engine-room fuel supply"
             ]
         },
         {
@@ -1537,7 +1537,7 @@
                     "bilge pump"
                 ],
                 "expr_b024_bilge_pump_running_001": [
-                    "bilge pump running"
+                    "engine-room bilge pump running"
                 ],
                 "phrase_b024_bilge_pump_running_water_rising_001": [
                     "Bilge pump running, water level rising."
@@ -1587,7 +1587,7 @@
                     "steering gear"
                 ],
                 "expr_b024_steering_failure_001": [
-                    "steering failure"
+                    "steering gear failure reported"
                 ],
                 "phrase_b024_steering_gear_failure_nuc_001": [
                     "Steering gear failure, vessel not under command."
@@ -1605,8 +1605,8 @@
                     "engine gear"
                 ],
                 "expr_b024_steering_failure_001": [
-                    "engine failure",
-                    "radio failure"
+                    "engine failure reported",
+                    "radio failure reported"
                 ],
                 "phrase_b024_steering_gear_failure_nuc_001": [
                     "Engine failure vessel not under command",
@@ -1640,7 +1640,7 @@
                     "fire pump ready"
                 ],
                 "expr_b024_isolate_fuel_supply_001": [
-                    "isolate fuel supply"
+                    "isolate engine-room fuel supply"
                 ],
                 "phrase_b024_isolate_fuel_supply_main_engine_001": [
                     "Isolate fuel supply to main engine."
@@ -1659,7 +1659,7 @@
                     "fuel pump ready"
                 ],
                 "expr_b024_isolate_fuel_supply_001": [
-                    "increase fuel supply",
+                    "increase engine-room fuel supply",
                     "isolate water supply"
                 ],
                 "phrase_b024_isolate_fuel_supply_main_engine_001": [
