@@ -38,6 +38,7 @@ CE-0165 Batch 025 staged merge passed locally/GitHub; production not deployed. L
 CE-0166 Batch 025 post-merge QA passed; local/GitHub 900 baseline is ready for production sync decision.
 CE-0167 Batch 025 production sync passed; production now equals local/GitHub at the 900-item baseline.
 CE-0168 Batch 025 production release-readiness QA passed; current 900-item production scope is release-ready.
+CE-0169 Batch 026 draft gate done: created isolated draft batch with 35 weather-routing/navigation-warning items, 35 grammar patterns, 8 dangerous-pair groups; validator PASS with 0 warnings.
 local_github_starter_items=900
 local_github_grammar_patterns=481
 local_github_qa_items=900
@@ -48,10 +49,10 @@ production_qa_items=900
 production_dangerous_pairs=208
 production_delta_items=0
 validator_warn_count=0
-draft_backlog_items=0
-draft_backlog_grammar_patterns=0
-draft_backlog_dangerous_pairs=0
-Next task: CE-0169 Batch 026 Weather-Routing / Navigation-Warning Draft Gate
+draft_backlog_items=35
+draft_backlog_grammar_patterns=35
+draft_backlog_dangerous_pairs=8
+Next task: CE-0170 Batch 026 Linguist / Engineering Gate
 ```
 
 Older sections below preserve historical context and may mention earlier

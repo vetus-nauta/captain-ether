@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 025 production-synced and release-ready at the 900-item baseline; next is M5 Batch 026 draft gate
+Canonical status: Batch 025 production-synced and release-ready at the 900-item baseline; Batch 026 isolated draft is ready for linguist/engineering gate
 
 ## 1. Read This First
 
@@ -46,14 +46,14 @@ anonymous_start_watch=HTTP 401 Login required
 
 ## 3. Current Draft Backlog
 
-Batch 019-023 are all merged locally/GitHub. There is no remaining Batch 019-023
-draft backlog.
+Batch 026 exists as an isolated draft only. It is not merged into starter/QA registry and is not deployed.
 
 ```text
-draft_backlog_items=0
-draft_backlog_grammar_patterns=0
-draft_backlog_qa_items=0
-draft_backlog_dangerous_pairs=0
+draft_backlog_items=35
+draft_backlog_grammar_patterns=35
+draft_backlog_qa_items=35
+draft_backlog_dangerous_pairs=8
+batch_026_status=draft
 ```
 
 ## 4. Latest Closed Gates
@@ -94,6 +94,7 @@ CE-0165 Batch 025 Staged Merge Preparation: MERGED_LOCALLY / PASS
 CE-0166 Batch 025 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 CE-0167 Batch 025 Production Sync Decision: CLOSED / PASS / PRODUCTION_SYNCED
 CE-0168 Batch 025 Production Release Readiness QA: PASS / RELEASE_READY_FOR_CURRENT_SCOPE
+CE-0169 Batch 026 Weather-Routing / Navigation-Warning Draft Gate: DONE / DRAFT_READY_FOR_LINGUIST_ENGINEERING_GATE
 ```
 
 Important reports:
@@ -129,6 +130,8 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0165-batch-025-s
 content/captain-ether/roles/qa/reports/sprint-ce-0166-batch-025-post-merge-qa-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0167-batch-025-production-sync-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0168-batch-025-production-release-readiness-qa-2026-06-03.md
+content/captain-ether/roles/content-producer/reports/batch-026-weather-routing-navigation-warning-reinforcement-card-2026-06-03.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0169-batch-026-weather-routing-navigation-warning-draft-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -136,13 +139,13 @@ content/captain-ether/roles/qa/reports/sprint-ce-0168-batch-025-production-relea
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0169-batch-026-weather-routing-navigation-warning-draft-gate-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0170-batch-026-linguist-engineering-gate-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Create isolated Batch 026 draft: weather-routing and navigation-warning reinforcement, 35 items. No merge, no deploy.
+Run Batch 026 linguist/engineering gate. Review weather-routing/navigation-warning safety boundaries; no merge, no deploy.
 ```
 
 Expected Set B local/GitHub baseline:
@@ -157,12 +160,12 @@ production_grammar_patterns=481
 production_qa_items=900
 production_dangerous_pairs=208
 production_delta_items=0
-draft_backlog_items=0
-draft_backlog_grammar_patterns=0
-draft_backlog_dangerous_pairs=0
+draft_backlog_items=35
+draft_backlog_grammar_patterns=35
+draft_backlog_dangerous_pairs=8
 ```
 
-Production is synced and release-ready at 900. Batch 026 work starts as isolated draft only; no merge/deploy until later gates pass.
+Production is synced and release-ready at 900. Batch 026 is isolated draft only; no merge/deploy until later gates pass.
 
 ## 6. Recommended Merge Plan After QA
 
@@ -172,8 +175,8 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. CE-0169 Batch 026 Weather-Routing / Navigation-Warning Draft Gate.
-2. Then run Batch 026 linguist/engineering gate, acceptance QA, staged merge, post-merge QA, production sync, release-readiness QA.
+1. CE-0170 Batch 026 Linguist / Engineering Gate.
+2. Then run Batch 026 acceptance QA, staged merge, post-merge QA, production sync, release-readiness QA.
 ```
 
 This keeps production parity checkpoints small enough to debug.
@@ -184,7 +187,7 @@ Local validation:
 
 ```sh
 $HOME/.local/php-codex/bin/php content/captain-ether/tools/validate-captain-ether.php
-for b in 024 025; do
+for b in 024 025 026; do
   f=$(ls content/captain-ether/batches/batch-${b}-*.json)
   $HOME/.local/php-codex/bin/php content/captain-ether/tools/validate-captain-ether.php --batch="$f"
 done
