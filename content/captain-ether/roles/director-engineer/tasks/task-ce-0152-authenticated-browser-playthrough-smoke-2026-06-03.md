@@ -3,7 +3,7 @@
 Date: 2026-06-03
 Owner: Director-Engineer / QA
 Scope: Captain Ether production user-flow QA
-Status: OPEN
+Status: DONE / AUTH_BLOCKED_WITH_NEXT_STEPS
 
 ## Activation Condition
 
@@ -41,3 +41,21 @@ if authenticated session is unavailable: mark AUTH_BLOCKED and document exact mi
 ```
 
 No production deploy is authorized by this task.
+
+## Result
+
+```text
+git_status=clean
+github_sync=0 0
+production_route=HTTP 200
+auth_me_anonymous=HTTP 200 user null
+anonymous_start_watch=HTTP 401 Login required
+anonymous_progress=HTTP 401 Login required
+request_code_invalid_email=HTTP 422
+request_code_qa_email=HTTP 500 Could not send login code
+verify_bad_code=HTTP 401
+logout_anonymous=HTTP 200
+authenticated_playthrough=AUTH_BLOCKED
+blocker=production email-code delivery unavailable and no QA session present
+next_task=CE-0153 Production Runtime And UX Edge Smoke
+```

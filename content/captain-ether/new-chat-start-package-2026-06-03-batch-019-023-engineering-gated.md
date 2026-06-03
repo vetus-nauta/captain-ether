@@ -75,6 +75,7 @@ CE-0148 Captain Ether Release Readiness QA: PASS / RELEASE_READY_FOR_CURRENT_SCO
 CE-0149 Starter Duplicate Accepted Answers Cleanup: PASS / READY_FOR_PRODUCTION_SYNC
 CE-0150 Starter Duplicate Accepted Answers Production Sync: CLOSED / PASS / PRODUCTION_SYNCED
 CE-0151 Big Sprint Production Hardening And Expansion Plan: ORGANIZED / READY_TO_EXECUTE
+CE-0152 Authenticated Browser / Manual Playthrough Smoke: AUTH_BLOCKED_WITH_NEXT_STEPS
 ```
 
 Important reports:
@@ -93,6 +94,7 @@ content/captain-ether/roles/qa/reports/sprint-ce-0148-captain-ether-release-read
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0149-starter-duplicate-accepted-answers-cleanup-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0150-starter-duplicate-accepted-answers-production-sync-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0151-big-sprint-production-hardening-and-expansion-plan-2026-06-03.md
+content/captain-ether/roles/qa/reports/sprint-ce-0152-authenticated-browser-playthrough-smoke-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -100,14 +102,13 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0151-big-sprint-
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0152-authenticated-browser-playthrough-smoke-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0153-production-runtime-ux-edge-smoke-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run or prepare authenticated browser/manual playthrough smoke for the current
-830-item production baseline.
+Run production runtime and UX edge smoke for the current 830-item baseline.
 ```
 
 Expected Set B local/GitHub baseline:
@@ -129,12 +130,11 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. CE-0152 Authenticated Browser / Manual Playthrough Smoke.
-2. CE-0153 Production Runtime And UX Edge Smoke.
-3. CE-0154 M5 Content Expansion Scope Design.
-4. CE-0155 Batch 024 Draft Gate.
-5. CE-0156 Batch 024 Linguist / Engineering Gate.
-6. CE-0157 Batch 024 Acceptance QA / Merge Decision.
+1. CE-0153 Production Runtime And UX Edge Smoke.
+2. CE-0154 M5 Content Expansion Scope Design.
+3. CE-0155 Batch 024 Draft Gate.
+4. CE-0156 Batch 024 Linguist / Engineering Gate.
+5. CE-0157 Batch 024 Acceptance QA / Merge Decision.
 ```
 
 This keeps production parity checkpoints small enough to debug.
