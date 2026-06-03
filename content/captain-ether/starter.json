@@ -717,8 +717,7 @@
             "target_language": "en",
             "target_text": "Pan-Pan, Pan-Pan, Pan-Pan.",
             "accepted_answers": [
-                "pan pan pan pan pan pan",
-                "pan-pan pan-pan pan-pan"
+                "pan pan pan pan pan pan"
             ],
             "grammar_pattern": "urgency_call_opening",
             "hint_beginner": "Pan-Pan...",
@@ -1448,8 +1447,7 @@
             "target_language": "en",
             "target_text": "Radio check, over.",
             "accepted_answers": [
-                "radio check over",
-                "radio check, over"
+                "radio check over"
             ],
             "grammar_pattern": "radio_check_with_over",
             "hint_beginner": "Radio check, o___",
@@ -1610,8 +1608,7 @@
             "target_text": "Correction, channel one three.",
             "accepted_answers": [
                 "correction channel one three",
-                "correction channel 13",
-                "correction, channel one three"
+                "correction channel 13"
             ],
             "grammar_pattern": "correction_with_replacement",
             "hint_beginner": "Correction, channel...",
@@ -1632,8 +1629,7 @@
             "target_text": "Question, are you underway?",
             "accepted_answers": [
                 "question are you underway",
-                "question are you under way",
-                "question, are you underway"
+                "question are you under way"
             ],
             "grammar_pattern": "message_marker_question",
             "hint_beginner": "Question, are you...",
@@ -1654,8 +1650,7 @@
             "target_text": "Answer, affirmative.",
             "accepted_answers": [
                 "answer affirmative",
-                "answer is affirmative",
-                "answer, affirmative"
+                "answer is affirmative"
             ],
             "grammar_pattern": "message_marker_answer",
             "hint_beginner": "Answer, a__________",
@@ -1676,8 +1671,7 @@
             "target_text": "Answer, negative.",
             "accepted_answers": [
                 "answer negative",
-                "answer is negative",
-                "answer, negative"
+                "answer is negative"
             ],
             "grammar_pattern": "message_marker_answer",
             "hint_beginner": "Answer, n_______",
@@ -4976,8 +4970,7 @@
             "target_language": "en",
             "target_text": "Pan-Pan",
             "accepted_answers": [
-                "Pan-Pan",
-                "Pan Pan"
+                "Pan-Pan"
             ],
             "hint_beginner": "P__-P__",
             "hint_intermediate": "Pan...",
@@ -5111,8 +5104,7 @@
             "target_language": "en",
             "target_text": "Pan-Pan Pan-Pan Pan-Pan",
             "accepted_answers": [
-                "Pan-Pan Pan-Pan Pan-Pan",
-                "Pan Pan Pan Pan Pan Pan"
+                "Pan-Pan Pan-Pan Pan-Pan"
             ],
             "hint_beginner": "P__-P__ P__-P__ P__-P__",
             "hint_intermediate": "Pan-Pan Pan-Pan...",
@@ -5377,8 +5369,7 @@
             "target_text": "Read back Pan-Pan details",
             "accepted_answers": [
                 "Read back Pan-Pan details",
-                "Readback Pan-Pan details",
-                "Read back Pan Pan details"
+                "Readback Pan-Pan details"
             ],
             "hint_beginner": "R___ b___ P__-P__ d______",
             "hint_intermediate": "Read back Pan-Pan...",
