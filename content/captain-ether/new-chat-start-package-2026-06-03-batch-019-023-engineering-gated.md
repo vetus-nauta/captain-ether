@@ -86,6 +86,7 @@ CE-0159 Batch 024 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 CE-0160 Batch 024 Production Sync Decision: CLOSED / PASS / PRODUCTION_SYNCED
 CE-0161 Batch 024 Production Release Readiness QA: PASS / RELEASE_READY_FOR_CURRENT_SCOPE
 CE-0162 Batch 025 Draft Gate: DONE / DRAFT_READY_FOR_LINGUIST_ENGINEERING_GATE
+CE-0163 Batch 025 Linguist / Engineering Gate: PASS / READY_FOR_ACCEPTANCE_QA
 ```
 
 Important reports:
@@ -115,6 +116,7 @@ content/captain-ether/roles/qa/reports/sprint-ce-0159-batch-024-post-merge-qa-20
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0160-batch-024-production-sync-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0161-batch-024-production-release-readiness-qa-2026-06-03.md
 content/captain-ether/roles/content-producer/reports/batch-025-port-services-clearance-communications-card-2026-06-03.md
+content/captain-ether/roles/sea-speak-linguist/reports/batch-025-port-services-clearance-communications-risk-review-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -122,13 +124,13 @@ content/captain-ether/roles/content-producer/reports/batch-025-port-services-cle
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0163-batch-025-linguist-engineering-gate-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0164-batch-025-acceptance-qa-merge-decision-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Review Batch 025 for linguist, matcher, schema, and engineering safety before acceptance QA.
+Run Batch 025 acceptance QA and decide whether it is ready for staged merge.
 ```
 
 Expected Set B local/GitHub baseline:
@@ -154,7 +156,7 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. CE-0163 Batch 025 Linguist / Engineering Gate.
+1. CE-0164 Batch 025 Acceptance QA / Merge Decision.
 ```
 
 This keeps production parity checkpoints small enough to debug.
