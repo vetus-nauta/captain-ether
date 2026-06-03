@@ -19,13 +19,15 @@ Batch 021-023 merged locally/GitHub as Set B.
 Batch 021-023 post-merge QA passed locally/GitHub.
 Batch 021-023 synced to production.
 Release-readiness QA passed for current 830-item production baseline.
+Historical duplicate accepted-answer WARN (9) cleaned and synced to production.
 local_github_production_starter_items=830
 local_github_production_grammar_patterns=411
 local_github_production_qa_items=830
 local_github_production_dangerous_pairs=193
+validator_warn_count=0
 draft_backlog_items=0
 draft_backlog_grammar_patterns=0
-Next decision: release hardening/manual authenticated playthrough or next content expansion series
+Next decision: authenticated browser/manual playthrough or next content expansion series
 ```
 
 Older sections below preserve historical context and may mention earlier

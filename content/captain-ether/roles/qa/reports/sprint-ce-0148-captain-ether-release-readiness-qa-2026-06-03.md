@@ -3,7 +3,7 @@
 Date: 2026-06-03
 Owner: QA / Director-Engineer
 Scope: Captain Ether production release-readiness QA
-Status: PASS / RELEASE_READY_FOR_CURRENT_SCOPE
+Status: PASS / RELEASE_READY_FOR_CURRENT_SCOPE / WARN_CLEANED_AND_SYNCED
 
 ## Baseline Under Test
 
@@ -41,9 +41,7 @@ Production FTP content counts: PASS 830/411/830/193
 Production Set A+B targeted matcher: PASS items=180 accept=292 reject=541
 ```
 
-The known `WARN (9)` entries are historical duplicate accepted-answer warnings in
-older starter content. They remain a technical-debt cleanup candidate, not a
-release blocker for the current scope.
+The historical `WARN (9)` duplicate accepted-answer entries were cleaned in CE-0149 and synced to production in CE-0150. The current validator passes without WARN.
 
 ## Acceptance Result
 
@@ -59,7 +57,7 @@ on production read-back content.
 ## Residual Risks
 
 ```text
-known_starter_warn_9=historical duplicate accepted_answers cleanup candidate
+known_starter_warn_9=resolved in CE-0149/CE-0150
 no_authenticated_browser_session_smoke=not run in this task
 no_long_manual_playthrough=not run in this task
 ```

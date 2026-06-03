@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 019-023 fully merged, production-synced, and release-readiness QA passed
+Canonical status: Batch 019-023 fully merged, production-synced, release-readiness QA passed, and duplicate-answer WARN cleaned
 
 ## 1. Read This First
 
@@ -72,6 +72,8 @@ CE-0145 Batch 021-023 Merge Set B: MERGED LOCALLY / PASS
 CE-0146 Batch 021-023 Post-Merge QA Set B: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 CE-0147 Batch 021-023 Production Sync: CLOSED / PASS / PRODUCTION_SYNCED
 CE-0148 Captain Ether Release Readiness QA: PASS / RELEASE_READY_FOR_CURRENT_SCOPE
+CE-0149 Starter Duplicate Accepted Answers Cleanup: PASS / READY_FOR_PRODUCTION_SYNC
+CE-0150 Starter Duplicate Accepted Answers Production Sync: CLOSED / PASS / PRODUCTION_SYNCED
 ```
 
 Important reports:
@@ -87,6 +89,8 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0145-batch-021-0
 content/captain-ether/roles/qa/reports/sprint-ce-0146-batch-021-023-post-merge-qa-set-b-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0147-batch-021-023-production-sync-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0148-captain-ether-release-readiness-qa-2026-06-03.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0149-starter-duplicate-accepted-answers-cleanup-2026-06-03.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0150-starter-duplicate-accepted-answers-production-sync-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -124,8 +128,7 @@ Recommended sequence:
 
 ```text
 1. Optional authenticated browser/manual playthrough smoke.
-2. Optional cleanup task for known starter WARN (9).
-3. Next content expansion batch series if product direction remains expansion.
+2. Next content expansion batch series if product direction remains expansion.
 ```
 
 This keeps production parity checkpoints small enough to debug.
