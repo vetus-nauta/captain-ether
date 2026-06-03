@@ -13,6 +13,7 @@ Current canonical status:
 ```text
 Batch 018 production synced.
 Batch 019-020 merged locally/GitHub as Set A.
+Batch 019-020 post-merge QA passed locally/GitHub.
 Batch 021-023 remain linguist-reviewed, engineering-gated, and QA accepted for staged merge.
 Production remains Batch 018 until explicit sync task.
 local_github_starter_items=730
@@ -25,7 +26,7 @@ production_qa_items=650
 production_dangerous_pairs=152
 draft_backlog_items=100
 draft_backlog_grammar_patterns=100
-Next task: CE-0143 Batch 019-020 Post-Merge QA Set A
+Next task: CE-0144 Batch 019-020 Production Sync Decision
 ```
 
 Older sections below preserve historical context and may mention earlier

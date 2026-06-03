@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 019-020 merged locally/GitHub; production remains Batch 018 until explicit sync
+Canonical status: Batch 019-020 post-merge QA passed locally/GitHub; production remains Batch 018 until explicit sync decision
 
 ## 1. Read This First
 
@@ -93,6 +93,7 @@ CE-0137 Batch 023 Draft: DONE
 CE-0140 Batch 019-023 Combined Engineering Gate: PASS FOR QA ACCEPTANCE
 CE-0141 Batch 019-023 Combined Acceptance QA: PASS_FOR_MERGE
 CE-0142 Batch 019-020 Merge Set A: MERGED LOCALLY / PASS
+CE-0143 Batch 019-020 Post-Merge QA Set A: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 ```
 
 Important reports:
@@ -102,6 +103,7 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0140-batch-019-0
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0139-batches-021-023-vocabulary-expansion-summary-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0141-batch-019-023-combined-acceptance-qa-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0142-batch-019-020-merge-set-a-2026-06-03.md
+content/captain-ether/roles/qa/reports/sprint-ce-0143-batch-019-020-post-merge-qa-set-a-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -109,13 +111,13 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0142-batch-019-0
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0143-batch-019-020-post-merge-qa-set-a-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0144-batch-019-020-production-sync-decision-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Post-merge QA for Batch 019+020 Set A before any production sync.
+Production sync decision for Batch 019+020 Set A only.
 ```
 
 Expected Set A baseline:
@@ -127,7 +129,7 @@ qa_items=730
 dangerous_pairs=173
 ```
 
-No production deploy is authorized by CE-0143.
+CE-0144 must first verify deploy scope and pre-deploy checks before any sync.
 
 ## 6. Recommended Merge Plan After QA
 
@@ -137,8 +139,8 @@ post-merge QA and production sync decision.
 Recommended sequence:
 
 ```text
-1. Post-merge QA Set A.
-2. Production sync Set A, only after explicit production-sync task.
+1. Production sync decision Set A.
+2. Production sync Set A only if CE-0144 verifies scope/checks and proceeds.
 3. Merge Set B: Batch 021+022+023, 100 items.
 4. Post-merge QA Set B.
 5. Production sync Set B, only after explicit production-sync task.

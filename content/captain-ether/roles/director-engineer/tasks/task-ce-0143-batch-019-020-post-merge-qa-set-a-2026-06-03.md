@@ -3,7 +3,7 @@
 Date: 2026-06-03
 Owner: Director-Engineer / QA
 Scope: Captain Ether local/GitHub post-merge QA only
-Status: OPEN
+Status: DONE / PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 
 ## Activation Condition
 
@@ -49,3 +49,18 @@ no production deploy
 ```
 
 No production deploy is authorized by this QA task.
+
+## Result
+
+```text
+full_validator=PASS runs=60
+batch_019_validator=PASS status=merged runs=60
+batch_020_validator=PASS status=merged runs=60
+api_smoke=PASS checks=334
+post_merge_set_a_qa=PASS set_a_items=80 accept=153 reject=240 qa_notes_in_starter=0
+production_route_read_only=HTTP 200
+production_anonymous_start_watch_read_only=HTTP 401 Login required
+production_deploy=not_run
+result=PASS_FOR_PRODUCTION_SYNC_DECISION
+next_task=CE-0144 Batch 019-020 Production Sync Decision
+```
