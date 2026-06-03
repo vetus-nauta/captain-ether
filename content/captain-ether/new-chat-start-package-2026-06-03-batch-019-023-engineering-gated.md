@@ -84,6 +84,7 @@ CE-0157 Batch 024 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
 CE-0158 Batch 024 Staged Merge Preparation: MERGED_LOCALLY / PASS
 CE-0159 Batch 024 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 CE-0160 Batch 024 Production Sync Decision: CLOSED / PASS / PRODUCTION_SYNCED
+CE-0161 Batch 024 Production Release Readiness QA: PASS / RELEASE_READY_FOR_CURRENT_SCOPE
 ```
 
 Important reports:
@@ -111,6 +112,7 @@ content/captain-ether/roles/qa/reports/sprint-ce-0157-batch-024-acceptance-qa-me
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0158-batch-024-staged-merge-preparation-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0159-batch-024-post-merge-qa-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0160-batch-024-production-sync-2026-06-03.md
+content/captain-ether/roles/qa/reports/sprint-ce-0161-batch-024-production-release-readiness-qa-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -118,13 +120,13 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0160-batch-024-p
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0161-batch-024-production-release-readiness-qa-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0162-batch-025-draft-gate-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run final release-readiness QA for the current 865-item production baseline.
+Draft Batch 025 port-services and clearance communications in isolation.
 ```
 
 Expected Set B local/GitHub baseline:
@@ -150,7 +152,7 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. CE-0161 Batch 024 Production Release Readiness QA.
+1. CE-0162 Batch 025 Draft Gate.
 ```
 
 This keeps production parity checkpoints small enough to debug.
