@@ -47,6 +47,7 @@ CE-0174 Batch 026 production sync passed; production now equals local/GitHub at 
 CE-0175 Batch 026 production release-readiness QA passed; current 935-item production scope is release-ready.
 CE-0176 Batch 027 draft gate done: created isolated draft batch with 35 SAR/casualty-transfer items, 35 grammar patterns, 11 dangerous-pair groups; validator PASS with 0 warnings.
 CE-0177 Batch 027 linguist/engineering gate passed; fixed medical evacuation slug typo and revalidated to 0 collisions, PASS, 0 warnings.
+CE-0178 Batch 027 acceptance QA passed; decision PASS_FOR_STAGED_MERGE. Next planned task is CE-0179 staged merge preparation, no production deploy.
 local_github_starter_items=935
 local_github_grammar_patterns=516
 local_github_qa_items=935
@@ -60,7 +61,7 @@ validator_warn_count=0
 draft_backlog_items=35
 draft_backlog_grammar_patterns=35
 draft_backlog_dangerous_pairs=11
-Next task: CE-0178 Batch 027 Acceptance QA / Merge Decision
+Next task: CE-0179 Batch 027 Staged Merge Preparation
 ```
 
 Older sections below preserve historical context and may mention earlier
