@@ -35,6 +35,7 @@ CE-0162 Batch 025 draft gate done: created isolated draft batch with 35 port-ser
 CE-0163 Batch 025 linguist/engineering gate passed; no corrections required, collision/id/pattern checks all 0.
 CE-0164 Batch 025 acceptance QA passed; decision PASS_FOR_STAGED_MERGE. Next planned task is CE-0165 staged merge preparation, no production deploy.
 CE-0165 Batch 025 staged merge passed locally/GitHub; production not deployed. Local/GitHub now intentionally ahead of production until a separate sync task.
+CE-0166 Batch 025 post-merge QA passed; local/GitHub 900 baseline is ready for production sync decision.
 local_github_starter_items=900
 local_github_grammar_patterns=481
 local_github_qa_items=900
@@ -48,7 +49,7 @@ validator_warn_count=0
 draft_backlog_items=0
 draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
-Next task: CE-0166 Batch 025 Post-Merge QA
+Next task: CE-0167 Batch 025 Production Sync Decision
 ```
 
 Older sections below preserve historical context and may mention earlier

@@ -3,7 +3,7 @@
 Date: 2026-06-03
 Owner: QA / Director-Engineer
 Scope: Captain Ether local/GitHub post-merge QA only
-Status: PLANNED
+Status: DONE / PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 
 ## Activation Condition
 
@@ -18,7 +18,7 @@ TASK-CE-0165 Batch 025 Staged Merge Preparation: MERGED_LOCALLY / PASS
 Run post-merge QA for the 900-item local/GitHub baseline before any production
 sync decision.
 
-Expected local/GitHub baseline:
+Final local/GitHub baseline:
 
 ```text
 starter_items=900
@@ -28,16 +28,28 @@ dangerous_pairs=208
 validator_warn_count=0
 ```
 
-## Required Checks
+## Completed Checks
 
 ```text
-full validator with runs >=100
-Batch 025 validator after merged status
-API smoke
-Batch 025 targeted matcher sample
-local/prod drift statement
-secret scan
-diff whitespace check
+full validator with runs >=100: PASS
+Batch 025 validator after merged status: PASS
+API smoke: PASS captain-ether-api-smoke checks=334
+Batch 025 targeted presence/matcher registry: PASS
+local/prod drift statement: PASS, production_delta_items=-35
+secret scan: PASS
+diff whitespace check: PASS
 ```
 
-No production deploy is authorized by this task.
+## Result
+
+```text
+PASS / READY_FOR_PRODUCTION_SYNC_DECISION
+```
+
+Report:
+
+```text
+content/captain-ether/roles/qa/reports/sprint-ce-0166-batch-025-post-merge-qa-2026-06-03.md
+```
+
+No production deploy was performed by this task.
