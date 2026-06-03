@@ -3,7 +3,7 @@
 Date: 2026-06-03
 Owner: Director-Engineer / QA
 Scope: Captain Ether production sync decision only
-Status: PLANNED
+Status: DONE / CLOSED / PASS / PRODUCTION_SYNCED
 
 ## Activation Condition
 
@@ -40,3 +40,21 @@ diff whitespace check
 
 A production deploy must stay inside this task or a direct follow-up production
 sync task, and must be followed by production smoke.
+
+## Result
+
+```text
+decision=SYNC_TO_PRODUCTION
+deploy=PASS
+backup_root=/game.brkovic.ltd/_deploy-backups/captain-ether/20260603T082346Z
+prod_starter_items=865
+prod_grammar_patterns=446
+prod_qa_items=865
+prod_dangerous_pairs=201
+starter_hash_match=PASS
+qa_hash_match=PASS
+production_http_smoke=PASS
+atlas_ping=PASS
+production_delta_items=0
+next_task=CE-0161 Batch 024 Production Release Readiness QA
+```
