@@ -80,6 +80,7 @@ CE-0153 Production Runtime And UX Edge Smoke: PASS / RUNTIME_UX_SMOKE_CLEAN
 CE-0154 M5 Content Expansion Scope Design: DONE / M5_SCOPE_LOCKED
 CE-0155 Batch 024 Draft Gate: DONE / DRAFT_READY_FOR_LINGUIST_ENGINEERING_GATE
 CE-0156 Batch 024 Linguist / Engineering Gate: PASS / READY_FOR_ACCEPTANCE_QA
+CE-0157 Batch 024 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
 ```
 
 Important reports:
@@ -103,6 +104,7 @@ content/captain-ether/roles/qa/reports/sprint-ce-0153-production-runtime-ux-edge
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0154-m5-content-expansion-scope-design-2026-06-03.md
 content/captain-ether/roles/content-producer/reports/batch-024-engine-room-damage-control-communications-card-2026-06-03.md
 content/captain-ether/roles/sea-speak-linguist/reports/batch-024-engine-room-damage-control-communications-risk-review-2026-06-03.md
+content/captain-ether/roles/qa/reports/sprint-ce-0157-batch-024-acceptance-qa-merge-decision-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -110,13 +112,13 @@ content/captain-ether/roles/sea-speak-linguist/reports/batch-024-engine-room-dam
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0157-batch-024-acceptance-qa-merge-decision-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0158-batch-024-staged-merge-preparation-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run Batch 024 acceptance QA and decide whether it is ready for staged merge.
+Merge Batch 024 into local/GitHub playable content and run post-merge validation.
 ```
 
 Expected Set B local/GitHub baseline:
@@ -129,6 +131,10 @@ dangerous_pairs=193
 draft_backlog_items=35
 draft_backlog_grammar_patterns=35
 draft_backlog_dangerous_pairs=8
+expected_post_merge_starter_items=865
+expected_post_merge_grammar_patterns=446
+expected_post_merge_qa_items=865
+expected_post_merge_dangerous_pairs=201
 ```
 
 Do not deploy again unless a new explicit production-sync task is opened.
@@ -141,7 +147,7 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. CE-0157 Batch 024 Acceptance QA / Merge Decision.
+1. CE-0158 Batch 024 Staged Merge Preparation.
 ```
 
 This keeps production parity checkpoints small enough to debug.

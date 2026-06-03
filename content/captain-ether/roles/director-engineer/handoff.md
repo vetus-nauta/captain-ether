@@ -26,6 +26,7 @@ CE-0153 production runtime and UX edge smoke passed; checked shell/static assets
 CE-0154 M5 scope locked: +170 items to 1000 across batches 024-028; next cycle is isolated Batch 024 draft gate with 35 engine-room/damage-control items.
 CE-0155 Batch 024 draft gate done: created isolated draft batch with 35 items, 35 grammar patterns, 8 dangerous-pair groups; validator PASS with 0 warnings.
 CE-0156 Batch 024 linguist/engineering gate passed; fixed 3 starter target collisions and revalidated to 0 collisions, PASS, 0 warnings.
+CE-0157 Batch 024 acceptance QA passed; decision PASS_FOR_STAGED_MERGE. Next planned task is CE-0158 staged merge preparation, no production deploy.
 local_github_production_starter_items=830
 local_github_production_grammar_patterns=411
 local_github_production_qa_items=830
@@ -34,7 +35,11 @@ validator_warn_count=0
 draft_backlog_items=35
 draft_backlog_grammar_patterns=35
 draft_backlog_dangerous_pairs=8
-Next task: CE-0157 Batch 024 Acceptance QA / Merge Decision
+expected_post_merge_starter_items=865
+expected_post_merge_grammar_patterns=446
+expected_post_merge_qa_items=865
+expected_post_merge_dangerous_pairs=201
+Next task: CE-0158 Batch 024 Staged Merge Preparation
 ```
 
 Older sections below preserve historical context and may mention earlier
