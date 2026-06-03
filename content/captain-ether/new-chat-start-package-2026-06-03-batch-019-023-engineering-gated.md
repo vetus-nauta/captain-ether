@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 028 production sync passed; local/GitHub/production now match at the 1000-item M5 baseline; next gate is production release-readiness QA
+Canonical status: Batch 028 production release-readiness QA passed; local/GitHub/production match at the 1000-item M5 baseline; next gate is authenticated browser watch smoke
 
 ## 1. Read This First
 
@@ -51,7 +51,7 @@ production_delta_items=0
 post_merge_qa=PASS
 production_sync=PASS
 production_release_readiness_qa=PASS
-ready_for_batch_028_production_release_readiness_qa=true
+ready_for_authenticated_browser_watch_smoke=true
 production_route=HTTP 200
 anonymous_start_watch=HTTP 401 Login required
 ```
@@ -127,6 +127,7 @@ CE-0185 Batch 028 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
 CE-0186 Batch 028 Staged Merge Preparation: MERGED_LOCALLY / PASS
 CE-0187 Batch 028 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 CE-0188 Batch 028 Production Sync Decision: CLOSED / PASS / PRODUCTION_SYNCED
+CE-0189A Batch 028 Production Release-Readiness QA: PASS / RELEASE_READY_FOR_1000_ITEM_SCOPE
 ```
 
 Important reports:
@@ -185,6 +186,7 @@ content/captain-ether/roles/qa/reports/sprint-ce-0185-batch-028-acceptance-qa-me
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0186-batch-028-staged-merge-preparation-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0187-batch-028-post-merge-qa-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0188-batch-028-production-sync-2026-06-03.md
+content/captain-ether/roles/qa/reports/sprint-ce-0189a-batch-028-production-release-readiness-qa-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -192,13 +194,13 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0188-batch-028-p
 Next task to run:
 
 ```text
-content/captain-ether/roles/qa/tasks/task-ce-0189a-batch-028-production-release-readiness-qa-2026-06-03.md
+content/captain-ether/roles/qa/tasks/task-ce-0189b-authenticated-browser-watch-smoke-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run Batch 028 production release-readiness QA against the 1000-item production baseline; read-only production checks only.
+Run authenticated production browser/API watch smoke using only an approved QA account/session; do not expose login codes, cookies, sessions, CSRF values, player email, or player identity.
 ```
 
 Expected current local/GitHub/production baseline:
@@ -218,17 +220,17 @@ draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
 ```
 
-Local/GitHub/production now match at 1000 after CE-0188. Batch 028 is ready for production release-readiness QA.
+Local/GitHub/production now match at 1000 and CE-0189A release-readiness QA passed. The next risk is authenticated production watch smoke.
 
 ## 6. Recommended Merge Plan After QA
 
-Run Batch 028 production release-readiness QA, then authenticated browser watch smoke.
+Run authenticated browser watch smoke, then main-course technical closure audit.
 
 Recommended sequence:
 
 ```text
-1. CE-0189A Batch 028 Production Release-Readiness QA.
-2. CE-0189B Authenticated Browser Watch Smoke if release-readiness passes.
+1. CE-0189B Authenticated Browser Watch Smoke.
+2. CE-0189C Main Course Technical Closure Audit if auth smoke passes or has a clean non-content blocker owner.
 ```
 
 This keeps production parity checkpoints small enough to debug.
