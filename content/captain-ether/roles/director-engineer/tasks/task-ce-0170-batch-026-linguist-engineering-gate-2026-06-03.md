@@ -3,11 +3,11 @@
 Date: 2026-06-03
 Owner: Sea Speak Linguist / Director-Engineer
 Scope: Captain Ether Batch 026 draft review
-Status: PLANNED
+Status: DONE / PASS / READY_FOR_ACCEPTANCE_QA
 
 ## Activation Condition
 
-Start after:
+Started after:
 
 ```text
 TASK-CE-0169 Batch 026 Weather-Routing / Navigation-Warning Draft Gate: DONE / DRAFT_READY_FOR_LINGUIST_ENGINEERING_GATE
@@ -33,19 +33,26 @@ visibility/swell values and sectors
 lee-shore, shallow-water, deep-water, and alternate-route safety meaning
 ```
 
-## Required Checks
+## Completed Checks
 
 ```text
-linguist risk review report
-engineering collision/id/pattern scan
+linguist risk review report=PASS
+engineering collision/id/pattern scan=PASS
 validator PASS with warnings=0
-no merge into starter.json
-no production deploy
+bearing coverage correction=PASS
+no merge into starter.json=PASS
+no production deploy=PASS
 ```
 
-Expected output:
+## Result
+
+```text
+PASS / READY_FOR_ACCEPTANCE_QA
+next_task=CE-0171 Batch 026 Acceptance QA / Merge Decision
+```
+
+Report:
 
 ```text
 content/captain-ether/roles/sea-speak-linguist/reports/batch-026-weather-routing-navigation-warning-reinforcement-risk-review-2026-06-03.md
-next task for acceptance QA if gate passes
 ```

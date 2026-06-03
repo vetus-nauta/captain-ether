@@ -1129,7 +1129,7 @@
             }
         },
         {
-            "id": "phrase_b026_no_route_through_area_delta_001",
+            "id": "phrase_b026_avoid_hazard_bearing_045_alpha_001",
             "type": "phrase",
             "level": "advanced",
             "difficulty_score": 9,
@@ -1137,29 +1137,29 @@
             "branch": "navigation_reports",
             "module": "waypoint_avoidance",
             "source_language": "ru",
-            "source_text": "Нет маршрута через район Дельта.",
+            "source_text": "Избегать опасности по пеленгу ноль четыре пять от точки Альфа.",
             "target_language": "en",
-            "target_text": "No route through area Delta.",
+            "target_text": "Avoid hazard bearing zero four five from waypoint Alpha.",
             "accepted_answers": [
-                "No route through area Delta."
+                "Avoid hazard bearing zero four five from waypoint Alpha."
             ],
-            "grammar_pattern": "b026_no_route_through_area_delta_pattern",
-            "hint_beginner": "No route...",
-            "hint_intermediate": "No route through area...",
+            "grammar_pattern": "b026_avoid_hazard_bearing_045_alpha_pattern",
+            "hint_beginner": "Avoid hazard...",
+            "hint_intermediate": "Avoid hazard bearing zero...",
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "No route through area Delta."
+                    "Avoid hazard bearing zero four five from waypoint Alpha."
                 ],
                 "should_reject": [
-                    "Route through area Delta approved",
-                    "No route through area Charlie",
-                    "Weather through area Delta"
+                    "Avoid hazard bearing zero five four from waypoint Alpha",
+                    "Proceed to hazard bearing zero four five from waypoint Alpha",
+                    "Avoid hazard bearing zero four five from waypoint Bravo"
                 ],
                 "dangerous_minimal_pairs": [
-                    "No-route polarity and area must stay exact."
+                    "Bearing zero four five and waypoint Alpha must not become zero five four, proceed-to-hazard, or waypoint Bravo."
                 ],
-                "linguist_note": "No-route polarity and area must stay exact."
+                "linguist_note": "Bearing zero four five and waypoint Alpha must not become zero five four, proceed-to-hazard, or waypoint Bravo."
             }
         },
         {
@@ -1430,10 +1430,10 @@
             ]
         },
         {
-            "id": "b026_no_route_through_area_delta_pattern",
+            "id": "b026_avoid_hazard_bearing_045_alpha_pattern",
             "pattern": "waypoint_avoidance phrase pattern",
             "examples": [
-                "No route through area Delta."
+                "Avoid hazard bearing zero four five from waypoint Alpha."
             ]
         },
         {
@@ -1772,21 +1772,21 @@
             "reason": "Weather routing, lee-shore hazard, shallow/deep-water route, distance, and do-not-enter/recommended polarity must stay exact."
         },
         {
-            "pair": "b026 route availability group",
+            "pair": "b026 route availability and bearing group",
             "items": [
                 "phrase_b026_temporary_route_closed_until_0600_001",
-                "phrase_b026_no_route_through_area_delta_001",
+                "phrase_b026_avoid_hazard_bearing_045_alpha_001",
                 "phrase_b026_use_alternate_route_north_of_area_delta_001"
             ],
             "must_accept": {
                 "phrase_b026_temporary_route_closed_until_0600_001": [
                     "Temporary route closed until zero six zero zero."
                 ],
-                "phrase_b026_no_route_through_area_delta_001": [
-                    "No route through area Delta."
-                ],
                 "phrase_b026_use_alternate_route_north_of_area_delta_001": [
                     "Use alternate route north of area Delta."
+                ],
+                "phrase_b026_avoid_hazard_bearing_045_alpha_001": [
+                    "Avoid hazard bearing zero four five from waypoint Alpha."
                 ]
             },
             "must_reject": {
@@ -1794,16 +1794,16 @@
                     "Temporary route open until zero six zero zero",
                     "Temporary route closed until zero eight zero zero"
                 ],
-                "phrase_b026_no_route_through_area_delta_001": [
-                    "Route through area Delta approved",
-                    "No route through area Charlie"
-                ],
                 "phrase_b026_use_alternate_route_north_of_area_delta_001": [
                     "Use alternate route south of area Delta",
                     "Use primary route north of area Delta"
+                ],
+                "phrase_b026_avoid_hazard_bearing_045_alpha_001": [
+                    "Avoid hazard bearing zero five four from waypoint Alpha",
+                    "Proceed to hazard bearing zero four five from waypoint Alpha"
                 ]
             },
-            "reason": "Route availability, temporary status, time, side, and area must stay exact."
+            "reason": "Route availability, temporary status, time, bearing number, side, and waypoint/area must stay exact."
         }
     ],
     "producer_notes": {
