@@ -12,7 +12,7 @@ Current canonical status:
 
 ```text
 Batch 018 production synced.
-Batch 019-023 linguist-reviewed and engineering-gated for QA acceptance.
+Batch 019-023 linguist-reviewed, engineering-gated, and QA accepted for staged merge.
 Playable local/GitHub/production remains aligned for Captain Ether narrow scope.
 starter_items=650
 grammar_patterns=237
@@ -20,7 +20,7 @@ qa_items=650
 dangerous_pairs=152
 draft_backlog_items=180
 draft_backlog_grammar_patterns=174
-Latest product baseline commit: 3d7740e captain-ether: sync batch 018 to production
+Next task: CE-0142 Batch 019-020 Merge Set A
 ```
 
 Older sections below preserve historical context and may mention earlier
@@ -63,7 +63,7 @@ content/captain-ether/new-director-start-handoff-2026-06-02.md
 content/captain-ether/director-ether-beta-1-handoff-2026-05-27.md
 ```
 
-Use the Batch 019-023 engineering-gated start package first. It states the current
+Use the Batch 019-023 start package first. It states the current
 local/GitHub/production parity status, WebStorm workspace context, local server
 checks, production checks, next sprint recommendation, and anti-confusion rules
 for Captain Ether vs Watch Officer/platform scope. The older 2026-06-02 and

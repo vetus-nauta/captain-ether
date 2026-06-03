@@ -20,7 +20,7 @@ status=linguist_reviewed
 items=30
 grammar_patterns=27
 dangerous_pairs=8
-should_accept=60
+should_accept=55
 should_reject=90
 ```
 

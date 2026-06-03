@@ -8,8 +8,8 @@ Status: PASS FOR QA ACCEPTANCE
 ## Batch State
 
 ```text
-Batch 019: items=30, grammar=27, dangerous=8, accept=60, reject=90
-Batch 020: items=50, grammar=47, dangerous=13, accept=100, reject=150
+Batch 019: items=30, grammar=27, dangerous=8, accept=55, reject=90
+Batch 020: items=50, grammar=47, dangerous=13, accept=98, reject=150
 Batch 021: items=35, grammar=35, dangerous=7, accept=50, reject=105
 Batch 022: items=35, grammar=35, dangerous=7, accept=49, reject=105
 Batch 023: items=30, grammar=30, dangerous=6, accept=40, reject=90
@@ -21,7 +21,7 @@ Combined reviewed draft backlog:
 items=180
 grammar_patterns=174
 dangerous_pairs=41
-should_accept=299
+should_accept=292
 should_reject=540
 status=linguist_reviewed
 ```

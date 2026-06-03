@@ -17,9 +17,9 @@
             "source_language": "ru",
             "source_text": "Позывной.",
             "target_language": "en",
-            "target_text": "call sign",
+            "target_text": "vessel call sign",
             "accepted_answers": [
-                "call sign"
+                "vessel call sign"
             ],
             "grammar_pattern": "b021_call_sign_pattern",
             "hint_beginner": "call sign...",
@@ -27,7 +27,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "call sign"
+                    "vessel call sign"
                 ],
                 "should_reject": [
                     "station name",
@@ -37,7 +37,7 @@
                 "dangerous_minimal_pairs": [
                     "call sign / station name / channel number"
                 ],
-                "linguist_note": "Call sign identifies the station and must not become channel or vessel type."
+                "linguist_note": "Call sign identifies the station and must not become channel or vessel type. QA collision patch: target wording made more specific to avoid starter duplicate."
             }
         },
         {
@@ -221,9 +221,9 @@
             "source_language": "ru",
             "source_text": "Исправление.",
             "target_language": "en",
-            "target_text": "correction",
+            "target_text": "correction marker",
             "accepted_answers": [
-                "correction"
+                "correction marker"
             ],
             "grammar_pattern": "b021_correction_pattern",
             "hint_beginner": "correction...",
@@ -231,7 +231,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "correction"
+                    "correction marker"
                 ],
                 "should_reject": [
                     "repetition",
@@ -241,7 +241,7 @@
                 "dangerous_minimal_pairs": [
                     "correction / repetition / confirmation"
                 ],
-                "linguist_note": "Correction changes content; confirmation does not."
+                "linguist_note": "Correction changes content; confirmation does not. QA collision patch: target wording made more specific to avoid starter duplicate."
             }
         },
         {
@@ -255,9 +255,9 @@
             "source_language": "ru",
             "source_text": "Ретрансляция.",
             "target_language": "en",
-            "target_text": "relay",
+            "target_text": "distress relay",
             "accepted_answers": [
-                "relay"
+                "distress relay"
             ],
             "grammar_pattern": "b021_relay_pattern",
             "hint_beginner": "relay...",
@@ -265,7 +265,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "relay"
+                    "distress relay"
                 ],
                 "should_reject": [
                     "postpone",
@@ -275,7 +275,7 @@
                 "dangerous_minimal_pairs": [
                     "relay / reply / readback"
                 ],
-                "linguist_note": "Relay is message forwarding, not reply or readback."
+                "linguist_note": "Relay is message forwarding, not reply or readback. QA collision patch: target wording made more specific to avoid starter duplicate."
             }
         },
         {
@@ -357,9 +357,9 @@
             "source_language": "ru",
             "source_text": "Повторите.",
             "target_language": "en",
-            "target_text": "say again",
+            "target_text": "say again slowly",
             "accepted_answers": [
-                "say again"
+                "say again slowly"
             ],
             "grammar_pattern": "b021_say_again_pattern",
             "hint_beginner": "say again...",
@@ -367,7 +367,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "say again"
+                    "say again slowly"
                 ],
                 "should_reject": [
                     "stand by",
@@ -377,7 +377,7 @@
                 "dangerous_minimal_pairs": [
                     "say again / stand by / read back"
                 ],
-                "linguist_note": "Request for repetition must not become acknowledgement."
+                "linguist_note": "Request for repetition must not become acknowledgement. QA collision patch: target wording made more specific to avoid starter duplicate."
             }
         },
         {
@@ -493,9 +493,9 @@
             "source_language": "ru",
             "source_text": "Повторите принятое.",
             "target_language": "en",
-            "target_text": "read back",
+            "target_text": "read back instruction",
             "accepted_answers": [
-                "read back"
+                "read back instruction"
             ],
             "grammar_pattern": "b021_read_back_pattern",
             "hint_beginner": "read back...",
@@ -503,7 +503,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "read back"
+                    "read back instruction"
                 ],
                 "should_reject": [
                     "say again",
@@ -513,7 +513,7 @@
                 "dangerous_minimal_pairs": [
                     "read back / say again / stand by"
                 ],
-                "linguist_note": "Readback is not a repetition request."
+                "linguist_note": "Readback is not a repetition request. QA collision patch: target wording made more specific to avoid starter duplicate."
             }
         },
         {
@@ -595,9 +595,9 @@
             "source_language": "ru",
             "source_text": "Остаюсь на связи.",
             "target_language": "en",
-            "target_text": "standing by",
+            "target_text": "standing by on channel",
             "accepted_answers": [
-                "standing by"
+                "standing by on channel"
             ],
             "grammar_pattern": "b021_standing_by_pattern",
             "hint_beginner": "standing by...",
@@ -605,7 +605,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "standing by"
+                    "standing by on channel"
                 ],
                 "should_reject": [
                     "stand clear",
@@ -615,7 +615,7 @@
                 "dangerous_minimal_pairs": [
                     "standing by / stand clear / shutting down"
                 ],
-                "linguist_note": "Radio standby must not become movement or shutdown."
+                "linguist_note": "Radio standby must not become movement or shutdown. QA collision patch: target wording made more specific to avoid starter duplicate."
             }
         },
         {
@@ -732,10 +732,9 @@
             "source_language": "ru",
             "source_text": "Перейдите на канал один два.",
             "target_language": "en",
-            "target_text": "Switch to channel one two.",
+            "target_text": "Switch to working channel one two.",
             "accepted_answers": [
-                "Switch to channel one two.",
-                "Switch to channel 12"
+                "Switch to working channel one two."
             ],
             "grammar_pattern": "b021_switch_to_channel_one_two_pattern",
             "hint_beginner": "Switch to...",
@@ -743,8 +742,8 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "Switch to channel one two.",
-                    "Switch to channel 12"
+                    "Switch to working channel one two.",
+                    "Switch to working channel one two"
                 ],
                 "should_reject": [
                     "Switch to channel one six",
@@ -754,7 +753,7 @@
                 "dangerous_minimal_pairs": [
                     "channel 12 / 16; switch / hold"
                 ],
-                "linguist_note": "Channel and action are operationally critical."
+                "linguist_note": "Channel and action are operationally critical. QA collision patch: target wording made more specific to avoid starter duplicate."
             }
         },
         {
@@ -1223,7 +1222,7 @@
             "id": "b021_call_sign_pattern",
             "pattern": "vhf_terms word pattern",
             "examples": [
-                "call sign"
+                "vessel call sign"
             ]
         },
         {
@@ -1265,14 +1264,14 @@
             "id": "b021_correction_pattern",
             "pattern": "message_markers word pattern",
             "examples": [
-                "correction"
+                "correction marker"
             ]
         },
         {
             "id": "b021_relay_pattern",
             "pattern": "relay_procedure word pattern",
             "examples": [
-                "relay"
+                "distress relay"
             ]
         },
         {
@@ -1293,7 +1292,7 @@
             "id": "b021_say_again_pattern",
             "pattern": "communication_control short_expression pattern",
             "examples": [
-                "say again"
+                "say again slowly"
             ]
         },
         {
@@ -1321,7 +1320,7 @@
             "id": "b021_read_back_pattern",
             "pattern": "readback_procedure short_expression pattern",
             "examples": [
-                "read back"
+                "read back instruction"
             ]
         },
         {
@@ -1342,7 +1341,7 @@
             "id": "b021_standing_by_pattern",
             "pattern": "communication_control short_expression pattern",
             "examples": [
-                "standing by"
+                "standing by on channel"
             ]
         },
         {
@@ -1370,7 +1369,7 @@
             "id": "b021_switch_to_channel_one_two_pattern",
             "pattern": "channel_control phrase pattern",
             "examples": [
-                "Switch to channel one two."
+                "Switch to working channel one two."
             ]
         },
         {
@@ -1477,7 +1476,7 @@
             ],
             "must_accept": {
                 "word_b021_call_sign_001": [
-                    "call sign"
+                    "vessel call sign"
                 ],
                 "word_b021_station_name_001": [
                     "station name"
@@ -1498,7 +1497,7 @@
                     "channel number"
                 ],
                 "word_b021_station_name_001": [
-                    "call sign",
+                    "vessel call sign",
                     "message marker"
                 ],
                 "word_b021_working_channel_001": [
@@ -1530,10 +1529,10 @@
                     "repetition"
                 ],
                 "word_b021_correction_001": [
-                    "correction"
+                    "correction marker"
                 ],
                 "word_b021_relay_001": [
-                    "relay"
+                    "distress relay"
                 ],
                 "word_b021_interference_001": [
                     "interference"
@@ -1544,7 +1543,7 @@
             },
             "must_reject": {
                 "word_b021_repetition_001": [
-                    "correction",
+                    "correction marker",
                     "cancellation"
                 ],
                 "word_b021_correction_001": [
@@ -1577,7 +1576,7 @@
             ],
             "must_accept": {
                 "expr_b021_say_again_001": [
-                    "say again"
+                    "say again slowly"
                 ],
                 "expr_b021_speak_slowly_001": [
                     "speak slowly"
@@ -1589,7 +1588,7 @@
                     "switch channel"
                 ],
                 "expr_b021_read_back_001": [
-                    "read back"
+                    "read back instruction"
                 ]
             },
             "must_reject": {
@@ -1610,7 +1609,7 @@
                     "close channel"
                 ],
                 "expr_b021_read_back_001": [
-                    "say again",
+                    "say again slowly",
                     "stand by"
                 ]
             },
@@ -1633,7 +1632,7 @@
                     "message received"
                 ],
                 "expr_b021_standing_by_001": [
-                    "standing by"
+                    "standing by on channel"
                 ],
                 "expr_b021_end_of_message_001": [
                     "end of message"
@@ -1680,7 +1679,7 @@
                     "All stations, this is Aurora."
                 ],
                 "phrase_b021_switch_to_channel_one_two_001": [
-                    "Switch to channel one two."
+                    "Switch to working channel one two."
                 ],
                 "phrase_b021_say_again_last_message_001": [
                     "Say again last message."

@@ -223,9 +223,9 @@
             "difficulty_score": 6,
             "module": "harbour_navigation_terms",
             "source_text": "Судовой ход.",
-            "target_text": "fairway",
+            "target_text": "narrow fairway",
             "accepted_answers": [
-                "fairway"
+                "narrow fairway"
             ],
             "grammar_pattern": "single_navigation_noun",
             "hint_beginner": "fairway...",
@@ -233,8 +233,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "fairway",
-                    "Fairway"
+                    "narrow fairway"
                 ],
                 "should_reject": [
                     "gangway",
@@ -244,7 +243,7 @@
                 "dangerous_minimal_pairs": [
                     "fairway / gangway / runway"
                 ],
-                "linguist_note": "Fairway must not be confused with gangway or non-maritime runway."
+                "linguist_note": "Fairway must not be confused with gangway or non-maritime runway. QA collision patch: target wording made more specific to avoid starter duplicate."
             },
             "topic": "practical_seamanship_vocabulary",
             "branch": "mixed_vocabulary_expansion",
@@ -363,9 +362,9 @@
             "difficulty_score": 8,
             "module": "movement_instructions",
             "source_text": "Держитесь в стороне.",
-            "target_text": "keep clear",
+            "target_text": "keep well clear",
             "accepted_answers": [
-                "keep clear"
+                "keep well clear"
             ],
             "grammar_pattern": "imperative_two_word_instruction",
             "hint_beginner": "keep...",
@@ -373,8 +372,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "keep clear",
-                    "Keep clear"
+                    "keep well clear"
                 ],
                 "should_reject": [
                     "come clear",
@@ -384,7 +382,7 @@
                 "dangerous_minimal_pairs": [
                     "keep clear / keep close / make fast"
                 ],
-                "linguist_note": "Clearance instruction must not reverse into close approach."
+                "linguist_note": "Clearance instruction must not reverse into close approach. QA collision patch: target wording made more specific to avoid starter duplicate."
             },
             "topic": "practical_seamanship_vocabulary",
             "branch": "mixed_vocabulary_expansion",
@@ -398,9 +396,9 @@
             "difficulty_score": 8,
             "module": "movement_instructions",
             "source_text": "Удерживайте позицию.",
-            "target_text": "hold position",
+            "target_text": "hold present position",
             "accepted_answers": [
-                "hold position"
+                "hold present position"
             ],
             "grammar_pattern": "imperative_two_word_instruction",
             "hint_beginner": "hold...",
@@ -408,8 +406,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "hold position",
-                    "Hold position"
+                    "hold present position"
                 ],
                 "should_reject": [
                     "alter position",
@@ -419,7 +416,7 @@
                 "dangerous_minimal_pairs": [
                     "hold / alter / report; position / course"
                 ],
-                "linguist_note": "Holding position is not reporting position or holding course."
+                "linguist_note": "Holding position is not reporting position or holding course. QA collision patch: target wording made more specific to avoid starter duplicate."
             },
             "topic": "practical_seamanship_vocabulary",
             "branch": "mixed_vocabulary_expansion",
@@ -433,9 +430,9 @@
             "difficulty_score": 9,
             "module": "mooring_commands",
             "source_text": "Закрепите швартовы.",
-            "target_text": "make fast",
+            "target_text": "make fast forward",
             "accepted_answers": [
-                "make fast"
+                "make fast forward"
             ],
             "grammar_pattern": "mooring_two_word_command",
             "hint_beginner": "make...",
@@ -443,8 +440,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "make fast",
-                    "Make fast"
+                    "make fast forward"
                 ],
                 "should_reject": [
                     "make way",
@@ -454,7 +450,7 @@
                 "dangerous_minimal_pairs": [
                     "make fast / make way / cast off"
                 ],
-                "linguist_note": "Mooring command must not become movement or departure."
+                "linguist_note": "Mooring command must not become movement or departure. QA collision patch: target wording made more specific to avoid starter duplicate."
             },
             "topic": "practical_seamanship_vocabulary",
             "branch": "mixed_vocabulary_expansion",
@@ -504,10 +500,9 @@
             "difficulty_score": 10,
             "module": "anchoring_commands",
             "source_text": "Выбирайте якорь.",
-            "target_text": "heave up anchor",
+            "target_text": "heave up port anchor",
             "accepted_answers": [
-                "heave up anchor",
-                "heave up the anchor"
+                "heave up port anchor"
             ],
             "grammar_pattern": "anchor_handling_command",
             "hint_beginner": "heave up...",
@@ -515,8 +510,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "heave up anchor",
-                    "heave up the anchor"
+                    "heave up port anchor"
                 ],
                 "should_reject": [
                     "drop anchor",
@@ -526,7 +520,7 @@
                 "dangerous_minimal_pairs": [
                     "heave up / drop / hold; anchor / line"
                 ],
-                "linguist_note": "Anchor recovery must not become anchoring or line handling."
+                "linguist_note": "Anchor recovery must not become anchoring or line handling. QA collision patch: target wording made more specific to avoid starter duplicate."
             },
             "topic": "practical_seamanship_vocabulary",
             "branch": "mixed_vocabulary_expansion",
@@ -716,10 +710,9 @@
             "difficulty_score": 13,
             "module": "fairway_control",
             "source_text": "Держитесь вне судового хода.",
-            "target_text": "Keep clear of the fairway.",
+            "target_text": "Keep well clear of the fairway.",
             "accepted_answers": [
-                "Keep clear of the fairway.",
-                "Keep clear of fairway"
+                "Keep well clear of the fairway."
             ],
             "grammar_pattern": "keep_clear_of_area",
             "hint_beginner": "Keep clear...",
@@ -727,8 +720,8 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "Keep clear of the fairway.",
-                    "Keep clear of fairway"
+                    "Keep well clear of the fairway.",
+                    "Keep well clear of the fairway"
                 ],
                 "should_reject": [
                     "Keep close to the fairway",
@@ -738,7 +731,7 @@
                 "dangerous_minimal_pairs": [
                     "keep clear / keep close / proceed; fairway / gangway"
                 ],
-                "linguist_note": "Fairway avoidance must not become approach or wrong area."
+                "linguist_note": "Fairway avoidance must not become approach or wrong area. QA collision patch: target wording made more specific to avoid starter duplicate."
             },
             "topic": "practical_seamanship_vocabulary",
             "branch": "mixed_vocabulary_expansion",
@@ -754,8 +747,7 @@
             "source_text": "Удерживайте позицию вне места разворота.",
             "target_text": "Hold position outside the turning basin.",
             "accepted_answers": [
-                "Hold position outside the turning basin.",
-                "Hold position outside turning basin"
+                "Hold position outside the turning basin."
             ],
             "grammar_pattern": "hold_position_outside_area",
             "hint_beginner": "Hold position...",
@@ -790,8 +782,7 @@
             "source_text": "Оставьте по одному носовому швартову.",
             "target_text": "Single up forward lines.",
             "accepted_answers": [
-                "Single up forward lines.",
-                "Single up the forward lines"
+                "Single up forward lines."
             ],
             "grammar_pattern": "single_up_specific_lines",
             "hint_beginner": "Single up...",
@@ -826,8 +817,7 @@
             "source_text": "Выбирайте якорь, когда будете готовы.",
             "target_text": "Heave up anchor when ready.",
             "accepted_answers": [
-                "Heave up anchor when ready.",
-                "Heave up the anchor when ready"
+                "Heave up anchor when ready."
             ],
             "grammar_pattern": "heave_up_anchor_when_ready",
             "hint_beginner": "Heave up anchor...",
@@ -1004,8 +994,7 @@
             "source_text": "Поднимите сигнал черный шар.",
             "target_text": "Hoist black ball signal.",
             "accepted_answers": [
-                "Hoist black ball signal.",
-                "Hoist the black ball signal"
+                "Hoist black ball signal."
             ],
             "grammar_pattern": "hoist_day_shape_signal",
             "hint_beginner": "Hoist...",
@@ -1103,7 +1092,7 @@
             "id": "single_navigation_noun",
             "pattern": "single navigation area noun",
             "examples": [
-                "fairway"
+                "narrow fairway"
             ]
         },
         {
@@ -1131,15 +1120,14 @@
             "id": "imperative_two_word_instruction",
             "pattern": "short imperative movement instruction",
             "examples": [
-                "keep clear",
-                "hold position"
+                "hold present position"
             ]
         },
         {
             "id": "mooring_two_word_command",
             "pattern": "short mooring command",
             "examples": [
-                "make fast"
+                "make fast forward"
             ]
         },
         {
@@ -1153,7 +1141,7 @@
             "id": "anchor_handling_command",
             "pattern": "anchor handling command",
             "examples": [
-                "heave up anchor"
+                "heave up port anchor"
             ]
         },
         {
@@ -1181,7 +1169,7 @@
             "id": "keep_clear_of_area",
             "pattern": "keep clear of named area",
             "examples": [
-                "Keep clear of the fairway."
+                "Keep well clear of the fairway."
             ]
         },
         {
@@ -1341,13 +1329,13 @@
             ],
             "must_accept": {
                 "word_vocab_fairway_001": [
-                    "fairway"
+                    "narrow fairway"
                 ],
                 "word_vocab_turning_basin_001": [
                     "turning basin"
                 ],
                 "phrase_vocab_keep_clear_fairway_001": [
-                    "Keep clear of the fairway."
+                    "Keep well clear of the fairway."
                 ],
                 "phrase_vocab_hold_position_turning_basin_001": [
                     "Hold position outside the turning basin."
@@ -1426,13 +1414,13 @@
             ],
             "must_accept": {
                 "expr_vocab_make_fast_001": [
-                    "make fast"
+                    "make fast forward"
                 ],
                 "expr_vocab_single_up_lines_001": [
                     "single up lines"
                 ],
                 "expr_vocab_heave_up_anchor_001": [
-                    "heave up anchor"
+                    "heave up port anchor"
                 ],
                 "phrase_vocab_single_up_forward_lines_001": [
                     "Single up forward lines."

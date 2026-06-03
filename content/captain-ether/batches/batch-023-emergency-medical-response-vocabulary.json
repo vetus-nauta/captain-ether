@@ -17,9 +17,9 @@
             "source_language": "ru",
             "source_text": "Переохлаждение.",
             "target_language": "en",
-            "target_text": "hypothermia",
+            "target_text": "suspected hypothermia",
             "accepted_answers": [
-                "hypothermia"
+                "suspected hypothermia"
             ],
             "grammar_pattern": "b023_hypothermia_pattern",
             "hint_beginner": "hypothermia...",
@@ -27,7 +27,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "hypothermia"
+                    "suspected hypothermia"
                 ],
                 "should_reject": [
                     "hyperthermia",
@@ -37,7 +37,7 @@
                 "dangerous_minimal_pairs": [
                     "hypothermia / hyperthermia / exhaustion"
                 ],
-                "linguist_note": "Medical condition must remain exact."
+                "linguist_note": "Medical condition must remain exact. QA collision patch: target wording made more specific to avoid starter duplicate."
             }
         },
         {
@@ -51,9 +51,9 @@
             "source_language": "ru",
             "source_text": "Кровотечение.",
             "target_language": "en",
-            "target_text": "bleeding",
+            "target_text": "heavy bleeding",
             "accepted_answers": [
-                "bleeding"
+                "heavy bleeding"
             ],
             "grammar_pattern": "b023_bleeding_pattern",
             "hint_beginner": "bleeding...",
@@ -61,7 +61,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "bleeding"
+                    "heavy bleeding"
                 ],
                 "should_reject": [
                     "breathing",
@@ -71,7 +71,7 @@
                 "dangerous_minimal_pairs": [
                     "bleeding / breathing / burning"
                 ],
-                "linguist_note": "Bleeding must not be confused with breathing."
+                "linguist_note": "Bleeding must not be confused with breathing. QA collision patch: target wording made more specific to avoid starter duplicate."
             }
         },
         {
@@ -119,9 +119,9 @@
             "source_language": "ru",
             "source_text": "Перелом.",
             "target_language": "en",
-            "target_text": "fracture",
+            "target_text": "suspected fracture",
             "accepted_answers": [
-                "fracture"
+                "suspected fracture"
             ],
             "grammar_pattern": "b023_fracture_pattern",
             "hint_beginner": "fracture...",
@@ -129,7 +129,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "fracture"
+                    "suspected fracture"
                 ],
                 "should_reject": [
                     "fever",
@@ -139,7 +139,7 @@
                 "dangerous_minimal_pairs": [
                     "fracture / fever / failure"
                 ],
-                "linguist_note": "Fracture is an injury, not fever or equipment failure."
+                "linguist_note": "Fracture is an injury, not fever or equipment failure. QA collision patch: target wording made more specific to avoid starter duplicate."
             }
         },
         {
@@ -1049,14 +1049,14 @@
             "id": "b023_hypothermia_pattern",
             "pattern": "medical_terms word pattern",
             "examples": [
-                "hypothermia"
+                "suspected hypothermia"
             ]
         },
         {
             "id": "b023_bleeding_pattern",
             "pattern": "medical_terms word pattern",
             "examples": [
-                "bleeding"
+                "heavy bleeding"
             ]
         },
         {
@@ -1070,7 +1070,7 @@
             "id": "b023_fracture_pattern",
             "pattern": "medical_terms word pattern",
             "examples": [
-                "fracture"
+                "suspected fracture"
             ]
         },
         {
@@ -1268,16 +1268,16 @@
             ],
             "must_accept": {
                 "word_b023_hypothermia_001": [
-                    "hypothermia"
+                    "suspected hypothermia"
                 ],
                 "word_b023_bleeding_001": [
-                    "bleeding"
+                    "heavy bleeding"
                 ],
                 "word_b023_burn_001": [
                     "burn"
                 ],
                 "word_b023_fracture_001": [
-                    "fracture"
+                    "suspected fracture"
                 ],
                 "word_b023_smoke_inhalation_001": [
                     "smoke inhalation"

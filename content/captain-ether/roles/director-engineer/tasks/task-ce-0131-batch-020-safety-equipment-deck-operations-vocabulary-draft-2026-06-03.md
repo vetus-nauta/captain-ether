@@ -74,7 +74,7 @@ new_short_expressions=15
 new_phrases=20
 new_grammar_patterns=47
 new_dangerous_minimal_pairs=13
-new_should_accept=100
+new_should_accept=98
 new_should_reject=150
 ```
 

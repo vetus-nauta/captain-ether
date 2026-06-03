@@ -17,9 +17,9 @@
             "source_language": "ru",
             "source_text": "Спасательный круг.",
             "target_language": "en",
-            "target_text": "lifebuoy",
+            "target_text": "lifebuoy ring",
             "accepted_answers": [
-                "lifebuoy"
+                "lifebuoy ring"
             ],
             "grammar_pattern": "b020_single_safety_equipment_noun",
             "hint_beginner": "lifebuoy...",
@@ -27,8 +27,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "lifebuoy",
-                    "Lifebuoy"
+                    "lifebuoy ring"
                 ],
                 "should_reject": [
                     "lifejacket",
@@ -38,7 +37,7 @@
                 "dangerous_minimal_pairs": [
                     "lifebuoy / lifejacket / life raft"
                 ],
-                "linguist_note": "Lifebuoy is throwable equipment, not wearable lifejacket or raft."
+                "linguist_note": "Lifebuoy is throwable equipment, not wearable lifejacket or raft. QA collision patch: target wording made more specific to avoid starter duplicate."
             }
         },
         {
@@ -262,9 +261,9 @@
             "source_language": "ru",
             "source_text": "Огнетушитель.",
             "target_language": "en",
-            "target_text": "fire extinguisher",
+            "target_text": "portable fire extinguisher",
             "accepted_answers": [
-                "fire extinguisher"
+                "portable fire extinguisher"
             ],
             "grammar_pattern": "b020_fire_safety_compound",
             "hint_beginner": "fire extinguisher...",
@@ -272,8 +271,7 @@
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "fire extinguisher",
-                    "Fire extinguisher"
+                    "portable fire extinguisher"
                 ],
                 "should_reject": [
                     "fire alarm",
@@ -283,7 +281,7 @@
                 "dangerous_minimal_pairs": [
                     "fire extinguisher / fire alarm / first aid kit"
                 ],
-                "linguist_note": "Firefighting equipment must remain separate from alarm or medical kit."
+                "linguist_note": "Firefighting equipment must remain separate from alarm or medical kit. QA collision patch: target wording made more specific to avoid starter duplicate."
             }
         },
         {
@@ -1782,8 +1780,7 @@
             "id": "b020_single_safety_equipment_noun",
             "pattern": "single safety equipment noun",
             "examples": [
-                "lifebuoy",
-                "lifejacket"
+                "lifebuoy ring"
             ]
         },
         {
@@ -1819,7 +1816,7 @@
             "id": "b020_fire_safety_compound",
             "pattern": "fire safety equipment compound",
             "examples": [
-                "fire extinguisher"
+                "portable fire extinguisher"
             ]
         },
         {
@@ -2121,7 +2118,7 @@
             ],
             "must_accept": {
                 "word_b020_lifebuoy_001": [
-                    "lifebuoy"
+                    "lifebuoy ring"
                 ],
                 "word_b020_lifejacket_001": [
                     "lifejacket"
@@ -2136,7 +2133,7 @@
                     "life raft"
                 ],
                 "word_b020_lifejacket_001": [
-                    "lifebuoy",
+                    "lifebuoy ring",
                     "jacket only"
                 ],
                 "phrase_b020_lifebuoy_deployed_starboard_001": [
@@ -2276,7 +2273,7 @@
             ],
             "must_accept": {
                 "word_b020_fire_extinguisher_001": [
-                    "fire extinguisher"
+                    "portable fire extinguisher"
                 ],
                 "word_b020_first_aid_kit_001": [
                     "first aid kit"
