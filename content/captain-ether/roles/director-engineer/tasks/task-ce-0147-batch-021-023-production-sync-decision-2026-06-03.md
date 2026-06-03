@@ -3,7 +3,7 @@
 Date: 2026-06-03
 Owner: Director-Engineer
 Scope: Captain Ether production sync decision for Set B only
-Status: OPEN
+Status: DONE / CLOSED / PASS / PRODUCTION_SYNCED
 
 ## Activation Condition
 
@@ -85,4 +85,28 @@ production anonymous start-watch HTTP 401 Login required
 deployed file/hash parity for Captain Ether scope
 production content count check if available
 no platform registry drift
+```
+
+## Result
+
+```text
+predeploy_git_sync=0 0
+predeploy_validator=PASS runs=60
+predeploy_api_smoke=PASS checks=334
+predeploy_atlas_ping=PASS
+predeploy_production=730/311/730/173
+deploy_command=tools/captain-ether-production-deploy.sh
+backup_root=/game.brkovic.ltd/_deploy-backups/captain-ether/20260603T055505Z
+postdeploy_production=830/411/830/193
+postdeploy_http_smoke=PASS
+postdeploy_content_hash=PASS starter_and_qa
+postdeploy_asset_hash=PASS app_js_app_css_service_worker_manifest
+postdeploy_set_b_integrity=PASS batch021 35/35 batch022 35/35 batch023 30/30
+postdeploy_set_b_targeted=PASS items=100 accept=139 reject=301
+production_registry_not_touched=true
+production_config_not_touched=true
+atlas_secret_not_touched=true
+atlas_driver_not_touched=true
+result=PRODUCTION_SYNCED
+next_task=CE-0148 Captain Ether Release Readiness QA
 ```

@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 021-023 post-merge QA passed locally/GitHub; production remains Batch 020 until explicit sync
+Canonical status: Batch 019-023 fully merged and synced to production
 
 ## 1. Read This First
 
@@ -26,27 +26,18 @@ state.
 
 ## 2. Current Playable State
 
-Local/GitHub playable baseline is now Batch 023 after Set B merge:
+Local/GitHub/production playable baseline is now Batch 023 after Set B production sync:
 
 ```text
-local_github_starter_items=830
-local_github_grammar_patterns=411
-local_github_qa_items=830
-local_github_dangerous_pairs=193
+starter_items=830
+grammar_patterns=411
+qa_items=830
+dangerous_pairs=193
 batch_019_status=merged
 batch_020_status=merged
 batch_021_status=merged
 batch_022_status=merged
 batch_023_status=merged
-```
-
-Production remains Batch 020 until a later explicit Set B production sync task:
-
-```text
-production_starter_items=730
-production_grammar_patterns=311
-production_qa_items=730
-production_dangerous_pairs=173
 production_route=HTTP 200
 anonymous_start_watch=HTTP 401 Login required
 ```
@@ -79,6 +70,7 @@ CE-0143 Batch 019-020 Post-Merge QA Set A: PASS / READY_FOR_PRODUCTION_SYNC_DECI
 CE-0144 Batch 019-020 Production Sync: CLOSED / PASS / PRODUCTION_SYNCED
 CE-0145 Batch 021-023 Merge Set B: MERGED LOCALLY / PASS
 CE-0146 Batch 021-023 Post-Merge QA Set B: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
+CE-0147 Batch 021-023 Production Sync: CLOSED / PASS / PRODUCTION_SYNCED
 ```
 
 Important reports:
@@ -92,6 +84,7 @@ content/captain-ether/roles/qa/reports/sprint-ce-0143-batch-019-020-post-merge-q
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0144-batch-019-020-production-sync-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0145-batch-021-023-merge-set-b-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0146-batch-021-023-post-merge-qa-set-b-2026-06-03.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0147-batch-021-023-production-sync-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -99,13 +92,13 @@ content/captain-ether/roles/qa/reports/sprint-ce-0146-batch-021-023-post-merge-q
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0147-batch-021-023-production-sync-decision-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0148-captain-ether-release-readiness-qa-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Production sync decision for Batch 021+022+023 Set B only.
+Final release-readiness QA for current Captain Ether production baseline.
 ```
 
 Expected Set B local/GitHub baseline:
@@ -117,7 +110,7 @@ qa_items=830
 dangerous_pairs=193
 ```
 
-CE-0147 must first verify deploy scope and pre-deploy checks before any sync.
+No production deploy is authorized by CE-0148.
 
 ## 6. Recommended Merge Plan After QA
 
@@ -127,8 +120,8 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. Production sync decision Set B.
-2. Production sync Set B only if CE-0147 verifies scope/checks and proceeds.
+1. Release-readiness QA on the 830-item production baseline.
+2. Decide whether to continue content expansion or product hardening.
 ```
 
 This keeps production parity checkpoints small enough to debug.
