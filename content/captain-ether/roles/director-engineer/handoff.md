@@ -24,14 +24,16 @@ Big sprint CE-0151 organized for production hardening and M5 expansion planning.
 CE-0152 authenticated playthrough is AUTH_BLOCKED because production email-code delivery returned HTTP 500 and no QA session is available.
 CE-0153 production runtime and UX edge smoke passed; checked shell/static assets/service worker/manifest/registry/protected API privacy with no deploy.
 CE-0154 M5 scope locked: +170 items to 1000 across batches 024-028; next cycle is isolated Batch 024 draft gate with 35 engine-room/damage-control items.
+CE-0155 Batch 024 draft gate done: created isolated draft batch with 35 items, 35 grammar patterns, 8 dangerous-pair groups; validator PASS with 0 warnings.
 local_github_production_starter_items=830
 local_github_production_grammar_patterns=411
 local_github_production_qa_items=830
 local_github_production_dangerous_pairs=193
 validator_warn_count=0
-draft_backlog_items=0
-draft_backlog_grammar_patterns=0
-Next task: CE-0155 Batch 024 Draft Gate
+draft_backlog_items=35
+draft_backlog_grammar_patterns=35
+draft_backlog_dangerous_pairs=8
+Next task: CE-0156 Batch 024 Linguist / Engineering Gate
 ```
 
 Older sections below preserve historical context and may mention earlier

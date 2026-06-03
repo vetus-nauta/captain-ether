@@ -78,6 +78,7 @@ CE-0151 Big Sprint Production Hardening And Expansion Plan: ORGANIZED / READY_TO
 CE-0152 Authenticated Browser / Manual Playthrough Smoke: AUTH_BLOCKED_WITH_NEXT_STEPS
 CE-0153 Production Runtime And UX Edge Smoke: PASS / RUNTIME_UX_SMOKE_CLEAN
 CE-0154 M5 Content Expansion Scope Design: DONE / M5_SCOPE_LOCKED
+CE-0155 Batch 024 Draft Gate: DONE / DRAFT_READY_FOR_LINGUIST_ENGINEERING_GATE
 ```
 
 Important reports:
@@ -99,6 +100,7 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0151-big-sprint-
 content/captain-ether/roles/qa/reports/sprint-ce-0152-authenticated-browser-playthrough-smoke-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0153-production-runtime-ux-edge-smoke-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0154-m5-content-expansion-scope-design-2026-06-03.md
+content/captain-ether/roles/content-producer/reports/batch-024-engine-room-damage-control-communications-card-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -106,13 +108,13 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0154-m5-content-
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0155-batch-024-draft-gate-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0156-batch-024-linguist-engineering-gate-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Draft Batch 024 engine-room and damage-control communications in isolation.
+Review Batch 024 for linguist, matcher, schema, and engineering safety before acceptance QA.
 ```
 
 Expected Set B local/GitHub baseline:
@@ -122,6 +124,9 @@ starter_items=830
 grammar_patterns=411
 qa_items=830
 dangerous_pairs=193
+draft_backlog_items=35
+draft_backlog_grammar_patterns=35
+draft_backlog_dangerous_pairs=8
 ```
 
 Do not deploy again unless a new explicit production-sync task is opened.
@@ -134,9 +139,8 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. CE-0155 Batch 024 Draft Gate.
-2. CE-0156 Batch 024 Linguist / Engineering Gate.
-3. CE-0157 Batch 024 Acceptance QA / Merge Decision.
+1. CE-0156 Batch 024 Linguist / Engineering Gate.
+2. CE-0157 Batch 024 Acceptance QA / Merge Decision.
 ```
 
 This keeps production parity checkpoints small enough to debug.
