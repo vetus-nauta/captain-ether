@@ -3,7 +3,7 @@
 Date: 2026-06-03
 Owner: Director-Engineer / QA
 Scope: Captain Ether local/GitHub staged merge only
-Status: PLANNED
+Status: DONE / MERGED_LOCALLY / PASS
 
 ## Activation Condition
 
@@ -39,3 +39,19 @@ diff whitespace check
 ```
 
 No production deploy is authorized by this task.
+
+## Result
+
+```text
+merge=MERGED_LOCALLY
+starter_items=900
+grammar_patterns=481
+qa_items=900
+dangerous_pairs=208
+validator=PASS
+validator_warnings=0
+api_smoke=PASS captain-ether-api-smoke checks=334
+qa_notes_in_starter=0
+production_deploy=false
+next_task=CE-0166 Batch 025 Post-Merge QA
+```

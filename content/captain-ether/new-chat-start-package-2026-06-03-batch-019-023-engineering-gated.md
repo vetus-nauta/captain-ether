@@ -88,6 +88,7 @@ CE-0161 Batch 024 Production Release Readiness QA: PASS / RELEASE_READY_FOR_CURR
 CE-0162 Batch 025 Draft Gate: DONE / DRAFT_READY_FOR_LINGUIST_ENGINEERING_GATE
 CE-0163 Batch 025 Linguist / Engineering Gate: PASS / READY_FOR_ACCEPTANCE_QA
 CE-0164 Batch 025 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
+CE-0165 Batch 025 Staged Merge Preparation: MERGED_LOCALLY / PASS
 ```
 
 Important reports:
@@ -119,6 +120,7 @@ content/captain-ether/roles/qa/reports/sprint-ce-0161-batch-024-production-relea
 content/captain-ether/roles/content-producer/reports/batch-025-port-services-clearance-communications-card-2026-06-03.md
 content/captain-ether/roles/sea-speak-linguist/reports/batch-025-port-services-clearance-communications-risk-review-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0164-batch-025-acceptance-qa-merge-decision-2026-06-03.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0165-batch-025-staged-merge-preparation-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -126,30 +128,30 @@ content/captain-ether/roles/qa/reports/sprint-ce-0164-batch-025-acceptance-qa-me
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0165-batch-025-staged-merge-preparation-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0166-batch-025-post-merge-qa-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Merge Batch 025 into local/GitHub playable content and run post-merge validation.
+Run post-merge QA for the 900-item local/GitHub baseline before any production sync decision.
 ```
 
 Expected Set B local/GitHub baseline:
 
 ```text
-local_github_production_starter_items=865
-local_github_production_grammar_patterns=446
-local_github_production_qa_items=865
-local_github_production_dangerous_pairs=201
-production_delta_items=0
-draft_backlog_items=35
-draft_backlog_grammar_patterns=35
-draft_backlog_dangerous_pairs=7
-expected_post_merge_starter_items=900
-expected_post_merge_grammar_patterns=481
-expected_post_merge_qa_items=900
-expected_post_merge_dangerous_pairs=208
+local_github_starter_items=900
+local_github_grammar_patterns=481
+local_github_qa_items=900
+local_github_dangerous_pairs=208
+production_starter_items=865
+production_grammar_patterns=446
+production_qa_items=865
+production_dangerous_pairs=201
+production_delta_items=-35
+draft_backlog_items=0
+draft_backlog_grammar_patterns=0
+draft_backlog_dangerous_pairs=0
 ```
 
 Do not deploy again unless a new explicit production-sync task is opened.
@@ -162,7 +164,7 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. CE-0165 Batch 025 Staged Merge Preparation.
+1. CE-0166 Batch 025 Post-Merge QA.
 ```
 
 This keeps production parity checkpoints small enough to debug.

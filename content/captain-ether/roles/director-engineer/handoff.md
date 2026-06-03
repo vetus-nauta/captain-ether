@@ -34,20 +34,21 @@ CE-0161 Batch 024 production release-readiness QA passed; current 865-item produ
 CE-0162 Batch 025 draft gate done: created isolated draft batch with 35 port-services/clearance items, 35 grammar patterns, 7 dangerous-pair groups; validator PASS with 0 warnings.
 CE-0163 Batch 025 linguist/engineering gate passed; no corrections required, collision/id/pattern checks all 0.
 CE-0164 Batch 025 acceptance QA passed; decision PASS_FOR_STAGED_MERGE. Next planned task is CE-0165 staged merge preparation, no production deploy.
-local_github_production_starter_items=865
-local_github_production_grammar_patterns=446
-local_github_production_qa_items=865
-local_github_production_dangerous_pairs=201
-production_delta_items=0
+CE-0165 Batch 025 staged merge passed locally/GitHub; production not deployed. Local/GitHub now intentionally ahead of production until a separate sync task.
+local_github_starter_items=900
+local_github_grammar_patterns=481
+local_github_qa_items=900
+local_github_dangerous_pairs=208
+production_starter_items=865
+production_grammar_patterns=446
+production_qa_items=865
+production_dangerous_pairs=201
+production_delta_items=-35
 validator_warn_count=0
-draft_backlog_items=35
-draft_backlog_grammar_patterns=35
-draft_backlog_dangerous_pairs=7
-expected_post_merge_starter_items=900
-expected_post_merge_grammar_patterns=481
-expected_post_merge_qa_items=900
-expected_post_merge_dangerous_pairs=208
-Next task: CE-0165 Batch 025 Staged Merge Preparation
+draft_backlog_items=0
+draft_backlog_grammar_patterns=0
+draft_backlog_dangerous_pairs=0
+Next task: CE-0166 Batch 025 Post-Merge QA
 ```
 
 Older sections below preserve historical context and may mention earlier

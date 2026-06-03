@@ -7533,6 +7533,340 @@
                 ]
             },
             "reason": "Tug/pilot assistance, propulsion/steering/fire failures, and Pan-Pan/Mayday boundaries must stay exact."
+        },
+        {
+            "pair": "b025 clearance polarity and timing group",
+            "items": [
+                "expr_b025_request_port_clearance_001",
+                "expr_b025_clearance_granted_001",
+                "expr_b025_clearance_not_granted_001",
+                "phrase_b025_clearance_granted_proceed_visitor_berth_001",
+                "phrase_b025_clearance_not_granted_wait_outside_limits_001"
+            ],
+            "must_accept": {
+                "expr_b025_request_port_clearance_001": [
+                    "request port clearance"
+                ],
+                "expr_b025_clearance_granted_001": [
+                    "clearance granted"
+                ],
+                "expr_b025_clearance_not_granted_001": [
+                    "clearance not granted"
+                ],
+                "phrase_b025_clearance_granted_proceed_visitor_berth_001": [
+                    "Clearance granted, proceed to visitor berth."
+                ],
+                "phrase_b025_clearance_not_granted_wait_outside_limits_001": [
+                    "Clearance not granted, wait outside port limits."
+                ]
+            },
+            "must_reject": {
+                "expr_b025_request_port_clearance_001": [
+                    "request pilot clearance",
+                    "request berth clearance"
+                ],
+                "expr_b025_clearance_granted_001": [
+                    "clearance not granted",
+                    "clearance pending"
+                ],
+                "expr_b025_clearance_not_granted_001": [
+                    "clearance granted",
+                    "clearance complete"
+                ],
+                "phrase_b025_clearance_granted_proceed_visitor_berth_001": [
+                    "Clearance not granted proceed to visitor berth",
+                    "Clearance granted proceed to fuel berth"
+                ],
+                "phrase_b025_clearance_not_granted_wait_outside_limits_001": [
+                    "Clearance granted wait outside port limits",
+                    "Clearance not granted enter port limits"
+                ]
+            },
+            "reason": "Clearance request/granted/not-granted and timing boundaries must stay exact."
+        },
+        {
+            "pair": "b025 customs immigration document group",
+            "items": [
+                "word_b025_crew_list_001",
+                "expr_b025_submit_crew_list_001",
+                "expr_b025_customs_clearance_required_001",
+                "expr_b025_immigration_inspection_required_001",
+                "phrase_b025_submit_crew_list_to_port_control_001"
+            ],
+            "must_accept": {
+                "word_b025_crew_list_001": [
+                    "crew list"
+                ],
+                "expr_b025_submit_crew_list_001": [
+                    "submit crew list"
+                ],
+                "expr_b025_customs_clearance_required_001": [
+                    "customs clearance required"
+                ],
+                "expr_b025_immigration_inspection_required_001": [
+                    "immigration inspection required"
+                ],
+                "phrase_b025_submit_crew_list_to_port_control_001": [
+                    "Submit crew list to Port Control."
+                ]
+            },
+            "must_reject": {
+                "word_b025_crew_list_001": [
+                    "passenger list",
+                    "cargo list"
+                ],
+                "expr_b025_submit_crew_list_001": [
+                    "submit passenger list",
+                    "submit cargo list"
+                ],
+                "expr_b025_customs_clearance_required_001": [
+                    "immigration clearance required",
+                    "customs clearance complete"
+                ],
+                "expr_b025_immigration_inspection_required_001": [
+                    "customs inspection required",
+                    "immigration inspection complete"
+                ],
+                "phrase_b025_submit_crew_list_to_port_control_001": [
+                    "Submit passenger list to Port Control",
+                    "Submit crew list to Marina Office"
+                ]
+            },
+            "reason": "Crew-list, customs, immigration, and authority boundaries must stay exact."
+        },
+        {
+            "pair": "b025 pilot boarding station time group",
+            "items": [
+                "expr_b025_pilot_boarding_station_001",
+                "expr_b025_pilot_boarding_time_001",
+                "phrase_b025_pilot_boarding_station_alpha_001",
+                "phrase_b025_boarding_pilot_at_0930_001",
+                "phrase_b025_pilot_boarding_delayed_1000_001"
+            ],
+            "must_accept": {
+                "expr_b025_pilot_boarding_station_001": [
+                    "pilot boarding station"
+                ],
+                "expr_b025_pilot_boarding_time_001": [
+                    "pilot boarding time"
+                ],
+                "phrase_b025_pilot_boarding_station_alpha_001": [
+                    "Pilot boarding station Alpha."
+                ],
+                "phrase_b025_boarding_pilot_at_0930_001": [
+                    "Pilot boarding at zero nine three zero."
+                ],
+                "phrase_b025_pilot_boarding_delayed_1000_001": [
+                    "Pilot boarding delayed until one zero zero zero."
+                ]
+            },
+            "must_reject": {
+                "expr_b025_pilot_boarding_station_001": [
+                    "pilot ladder station",
+                    "tug boarding station"
+                ],
+                "expr_b025_pilot_boarding_time_001": [
+                    "pilot departure time",
+                    "tug boarding time"
+                ],
+                "phrase_b025_pilot_boarding_station_alpha_001": [
+                    "Pilot boarding station Bravo",
+                    "Tug boarding station Alpha"
+                ],
+                "phrase_b025_boarding_pilot_at_0930_001": [
+                    "Pilot boarding at one zero three zero",
+                    "Pilot leaving at zero nine three zero"
+                ],
+                "phrase_b025_pilot_boarding_delayed_1000_001": [
+                    "Pilot boarding cancelled until one zero zero zero",
+                    "Pilot boarding delayed until zero nine zero zero"
+                ]
+            },
+            "reason": "Pilot boarding station/time and tug/disembarkation boundaries must stay exact."
+        },
+        {
+            "pair": "b025 port entry limit group",
+            "items": [
+                "expr_b025_proceed_quarantine_berth_001",
+                "phrase_b025_hold_waiting_area_until_clearance_001",
+                "phrase_b025_enter_port_after_clearance_granted_001",
+                "phrase_b025_do_not_enter_before_clearance_001"
+            ],
+            "must_accept": {
+                "expr_b025_proceed_quarantine_berth_001": [
+                    "proceed to quarantine berth"
+                ],
+                "phrase_b025_hold_waiting_area_until_clearance_001": [
+                    "Hold in waiting area until clearance."
+                ],
+                "phrase_b025_enter_port_after_clearance_granted_001": [
+                    "Enter port after clearance granted."
+                ],
+                "phrase_b025_do_not_enter_before_clearance_001": [
+                    "Do not enter port before clearance."
+                ]
+            },
+            "must_reject": {
+                "expr_b025_proceed_quarantine_berth_001": [
+                    "proceed to visitor berth",
+                    "proceed to fuel berth"
+                ],
+                "phrase_b025_hold_waiting_area_until_clearance_001": [
+                    "Enter fairway until clearance",
+                    "Hold in waiting area after clearance"
+                ],
+                "phrase_b025_enter_port_after_clearance_granted_001": [
+                    "Enter port before clearance granted",
+                    "Leave port after clearance granted"
+                ],
+                "phrase_b025_do_not_enter_before_clearance_001": [
+                    "Enter port before clearance",
+                    "Do not leave port before clearance"
+                ]
+            },
+            "reason": "Port entry, quarantine berth, waiting area, and before/after clearance boundaries must stay exact."
+        },
+        {
+            "pair": "b025 port service after clearance group",
+            "items": [
+                "phrase_b025_request_garbage_collection_after_clearance_001",
+                "phrase_b025_request_bunkering_after_customs_clearance_001",
+                "phrase_b025_fresh_water_after_customs_clearance_001",
+                "phrase_b025_shore_power_after_immigration_clearance_001"
+            ],
+            "must_accept": {
+                "phrase_b025_request_garbage_collection_after_clearance_001": [
+                    "Request garbage collection after clearance."
+                ],
+                "phrase_b025_request_bunkering_after_customs_clearance_001": [
+                    "Request bunkering after customs clearance."
+                ],
+                "phrase_b025_fresh_water_after_customs_clearance_001": [
+                    "Fresh water after customs clearance."
+                ],
+                "phrase_b025_shore_power_after_immigration_clearance_001": [
+                    "Shore power after immigration clearance."
+                ]
+            },
+            "must_reject": {
+                "phrase_b025_request_garbage_collection_after_clearance_001": [
+                    "Request fuel collection after clearance",
+                    "Request garbage collection before clearance"
+                ],
+                "phrase_b025_request_bunkering_after_customs_clearance_001": [
+                    "Request bunkering before customs clearance",
+                    "Request water after customs clearance"
+                ],
+                "phrase_b025_fresh_water_after_customs_clearance_001": [
+                    "Fuel after customs clearance",
+                    "Fresh water before customs clearance"
+                ],
+                "phrase_b025_shore_power_after_immigration_clearance_001": [
+                    "Shore power before immigration clearance",
+                    "Water after immigration clearance"
+                ]
+            },
+            "reason": "Port-service type and customs/immigration clearance boundaries must stay exact."
+        },
+        {
+            "pair": "b025 customs launch and shore leave group",
+            "items": [
+                "expr_b025_wait_for_customs_launch_001",
+                "phrase_b025_customs_launch_alongside_0900_001",
+                "phrase_b025_all_crew_remain_on_board_001",
+                "phrase_b025_no_persons_ashore_before_clearance_001",
+                "phrase_b025_readback_wait_customs_launch_channel_12_001"
+            ],
+            "must_accept": {
+                "expr_b025_wait_for_customs_launch_001": [
+                    "wait for customs launch"
+                ],
+                "phrase_b025_customs_launch_alongside_0900_001": [
+                    "Customs launch alongside at zero nine zero zero."
+                ],
+                "phrase_b025_all_crew_remain_on_board_001": [
+                    "All crew remain on board."
+                ],
+                "phrase_b025_no_persons_ashore_before_clearance_001": [
+                    "No persons go ashore before clearance."
+                ],
+                "phrase_b025_readback_wait_customs_launch_channel_12_001": [
+                    "Read back, wait for customs launch on channel one two."
+                ]
+            },
+            "must_reject": {
+                "expr_b025_wait_for_customs_launch_001": [
+                    "wait for pilot launch",
+                    "wait for tug"
+                ],
+                "phrase_b025_customs_launch_alongside_0900_001": [
+                    "Pilot launch alongside at zero nine zero zero",
+                    "Customs launch alongside at one zero zero zero"
+                ],
+                "phrase_b025_all_crew_remain_on_board_001": [
+                    "All passengers remain on board",
+                    "All crew go ashore"
+                ],
+                "phrase_b025_no_persons_ashore_before_clearance_001": [
+                    "Persons may go ashore before clearance",
+                    "No crew go ashore after clearance"
+                ],
+                "phrase_b025_readback_wait_customs_launch_channel_12_001": [
+                    "Read back wait for pilot launch on channel one two",
+                    "Read back wait for customs launch on channel one three"
+                ]
+            },
+            "reason": "Customs launch, crew/person shore-leave, readback, and channel boundaries must stay exact."
+        },
+        {
+            "pair": "b025 departure clearance group",
+            "items": [
+                "word_b025_free_pratique_001",
+                "phrase_b025_request_inward_clearance_on_arrival_001",
+                "phrase_b025_request_outward_clearance_before_departure_001",
+                "phrase_b025_customs_clearance_complete_departure_pending_001",
+                "phrase_b025_confirm_tug_not_required_for_entry_001"
+            ],
+            "must_accept": {
+                "word_b025_free_pratique_001": [
+                    "free pratique"
+                ],
+                "phrase_b025_request_inward_clearance_on_arrival_001": [
+                    "Request inward clearance on arrival."
+                ],
+                "phrase_b025_request_outward_clearance_before_departure_001": [
+                    "Request outward clearance before departure."
+                ],
+                "phrase_b025_customs_clearance_complete_departure_pending_001": [
+                    "Customs clearance complete, departure clearance pending."
+                ],
+                "phrase_b025_confirm_tug_not_required_for_entry_001": [
+                    "Confirm tug not required for port entry."
+                ]
+            },
+            "must_reject": {
+                "word_b025_free_pratique_001": [
+                    "free traffic",
+                    "free passage"
+                ],
+                "phrase_b025_request_inward_clearance_on_arrival_001": [
+                    "Request outward clearance on arrival",
+                    "Request berth on arrival"
+                ],
+                "phrase_b025_request_outward_clearance_before_departure_001": [
+                    "Request inward clearance before departure",
+                    "Request departure before clearance"
+                ],
+                "phrase_b025_customs_clearance_complete_departure_pending_001": [
+                    "Customs clearance pending departure clearance complete",
+                    "Immigration clearance complete departure clearance pending"
+                ],
+                "phrase_b025_confirm_tug_not_required_for_entry_001": [
+                    "Confirm tug required for port entry",
+                    "Confirm pilot not required for port entry"
+                ]
+            },
+            "reason": "Inward/outward clearance, free pratique, pending/granted departure, and tug requirement boundaries must stay exact."
         }
     ],
     "items": [
@@ -19219,6 +19553,426 @@
                 "Pan-Pan engine-room fire not under control",
                 "Mayday engine-room fire under control",
                 "Mayday galley fire not under control"
+            ]
+        },
+        {
+            "id": "word_b025_crew_list_001",
+            "target_text": "crew list",
+            "should_accept": [
+                "crew list"
+            ],
+            "should_reject": [
+                "passenger list",
+                "cargo list",
+                "watch list"
+            ]
+        },
+        {
+            "id": "word_b025_free_pratique_001",
+            "target_text": "free pratique",
+            "should_accept": [
+                "free pratique"
+            ],
+            "should_reject": [
+                "free traffic",
+                "free passage",
+                "port clearance"
+            ]
+        },
+        {
+            "id": "expr_b025_request_port_clearance_001",
+            "target_text": "request port clearance",
+            "should_accept": [
+                "request port clearance"
+            ],
+            "should_reject": [
+                "request pilot clearance",
+                "request berth clearance",
+                "cancel port clearance"
+            ]
+        },
+        {
+            "id": "expr_b025_submit_crew_list_001",
+            "target_text": "submit crew list",
+            "should_accept": [
+                "submit crew list"
+            ],
+            "should_reject": [
+                "submit passenger list",
+                "submit cargo list",
+                "cancel crew list"
+            ]
+        },
+        {
+            "id": "expr_b025_customs_clearance_required_001",
+            "target_text": "customs clearance required",
+            "should_accept": [
+                "customs clearance required"
+            ],
+            "should_reject": [
+                "immigration clearance required",
+                "customs clearance complete",
+                "customs clearance not required"
+            ]
+        },
+        {
+            "id": "expr_b025_immigration_inspection_required_001",
+            "target_text": "immigration inspection required",
+            "should_accept": [
+                "immigration inspection required"
+            ],
+            "should_reject": [
+                "customs inspection required",
+                "immigration inspection complete",
+                "safety inspection required"
+            ]
+        },
+        {
+            "id": "expr_b025_pilot_boarding_station_001",
+            "target_text": "pilot boarding station",
+            "should_accept": [
+                "pilot boarding station"
+            ],
+            "should_reject": [
+                "pilot ladder station",
+                "tug boarding station",
+                "pilot disembarkation station"
+            ]
+        },
+        {
+            "id": "expr_b025_pilot_boarding_time_001",
+            "target_text": "pilot boarding time",
+            "should_accept": [
+                "pilot boarding time"
+            ],
+            "should_reject": [
+                "pilot departure time",
+                "tug boarding time",
+                "berth assignment time"
+            ]
+        },
+        {
+            "id": "expr_b025_wait_for_customs_launch_001",
+            "target_text": "wait for customs launch",
+            "should_accept": [
+                "wait for customs launch"
+            ],
+            "should_reject": [
+                "wait for pilot launch",
+                "wait for tug",
+                "wait for fuel launch"
+            ]
+        },
+        {
+            "id": "expr_b025_clearance_granted_001",
+            "target_text": "clearance granted",
+            "should_accept": [
+                "clearance granted"
+            ],
+            "should_reject": [
+                "clearance not granted",
+                "clearance pending",
+                "pilot granted"
+            ]
+        },
+        {
+            "id": "expr_b025_clearance_not_granted_001",
+            "target_text": "clearance not granted",
+            "should_accept": [
+                "clearance not granted"
+            ],
+            "should_reject": [
+                "clearance granted",
+                "clearance complete",
+                "berth granted"
+            ]
+        },
+        {
+            "id": "expr_b025_proceed_quarantine_berth_001",
+            "target_text": "proceed to quarantine berth",
+            "should_accept": [
+                "proceed to quarantine berth"
+            ],
+            "should_reject": [
+                "proceed to visitor berth",
+                "proceed to fuel berth",
+                "leave quarantine berth"
+            ]
+        },
+        {
+            "id": "phrase_b025_request_inward_clearance_on_arrival_001",
+            "target_text": "Request inward clearance on arrival.",
+            "should_accept": [
+                "Request inward clearance on arrival."
+            ],
+            "should_reject": [
+                "Request outward clearance on arrival",
+                "Request berth on arrival",
+                "Cancel inward clearance on arrival"
+            ]
+        },
+        {
+            "id": "phrase_b025_submit_crew_list_to_port_control_001",
+            "target_text": "Submit crew list to Port Control.",
+            "should_accept": [
+                "Submit crew list to Port Control."
+            ],
+            "should_reject": [
+                "Submit passenger list to Port Control",
+                "Submit crew list to Marina Office",
+                "Cancel crew list to Port Control"
+            ]
+        },
+        {
+            "id": "phrase_b025_customs_launch_alongside_0900_001",
+            "target_text": "Customs launch alongside at zero nine zero zero.",
+            "should_accept": [
+                "Customs launch alongside at zero nine zero zero."
+            ],
+            "should_reject": [
+                "Pilot launch alongside at zero nine zero zero",
+                "Customs launch alongside at one zero zero zero",
+                "Customs launch departing at zero nine zero zero"
+            ]
+        },
+        {
+            "id": "phrase_b025_immigration_officer_boarding_service_pontoon_001",
+            "target_text": "Immigration officer boarding at service pontoon.",
+            "should_accept": [
+                "Immigration officer boarding at service pontoon."
+            ],
+            "should_reject": [
+                "Customs officer boarding at service pontoon",
+                "Immigration officer boarding at fuel berth",
+                "Immigration officer leaving at service pontoon"
+            ]
+        },
+        {
+            "id": "phrase_b025_clearance_granted_proceed_visitor_berth_001",
+            "target_text": "Clearance granted, proceed to visitor berth.",
+            "should_accept": [
+                "Clearance granted, proceed to visitor berth."
+            ],
+            "should_reject": [
+                "Clearance not granted proceed to visitor berth",
+                "Clearance granted proceed to fuel berth",
+                "Pilot granted proceed to visitor berth"
+            ]
+        },
+        {
+            "id": "phrase_b025_clearance_not_granted_wait_outside_limits_001",
+            "target_text": "Clearance not granted, wait outside port limits.",
+            "should_accept": [
+                "Clearance not granted, wait outside port limits."
+            ],
+            "should_reject": [
+                "Clearance granted wait outside port limits",
+                "Clearance not granted enter port limits",
+                "Clearance not granted wait inside port limits"
+            ]
+        },
+        {
+            "id": "phrase_b025_all_crew_remain_on_board_001",
+            "target_text": "All crew remain on board.",
+            "should_accept": [
+                "All crew remain on board."
+            ],
+            "should_reject": [
+                "All passengers remain on board",
+                "All crew go ashore",
+                "One crew remains on board"
+            ]
+        },
+        {
+            "id": "phrase_b025_no_persons_ashore_before_clearance_001",
+            "target_text": "No persons go ashore before clearance.",
+            "should_accept": [
+                "No persons go ashore before clearance."
+            ],
+            "should_reject": [
+                "Persons may go ashore before clearance",
+                "No crew go ashore after clearance",
+                "No persons come aboard before clearance"
+            ]
+        },
+        {
+            "id": "phrase_b025_request_outward_clearance_before_departure_001",
+            "target_text": "Request outward clearance before departure.",
+            "should_accept": [
+                "Request outward clearance before departure."
+            ],
+            "should_reject": [
+                "Request inward clearance before departure",
+                "Request departure before clearance",
+                "Cancel outward clearance before departure"
+            ]
+        },
+        {
+            "id": "phrase_b025_port_clearance_documents_ready_001",
+            "target_text": "Port clearance documents ready.",
+            "should_accept": [
+                "Port clearance documents ready."
+            ],
+            "should_reject": [
+                "Port clearance documents missing",
+                "Pilot documents ready",
+                "Cargo documents ready"
+            ]
+        },
+        {
+            "id": "phrase_b025_pilot_boarding_station_alpha_001",
+            "target_text": "Pilot boarding station Alpha.",
+            "should_accept": [
+                "Pilot boarding station Alpha."
+            ],
+            "should_reject": [
+                "Pilot boarding station Bravo",
+                "Tug boarding station Alpha",
+                "Pilot disembarkation station Alpha"
+            ]
+        },
+        {
+            "id": "phrase_b025_boarding_pilot_at_0930_001",
+            "target_text": "Pilot boarding at zero nine three zero.",
+            "should_accept": [
+                "Pilot boarding at zero nine three zero."
+            ],
+            "should_reject": [
+                "Pilot boarding at one zero three zero",
+                "Pilot leaving at zero nine three zero",
+                "Tug boarding at zero nine three zero"
+            ]
+        },
+        {
+            "id": "phrase_b025_pilot_boarding_delayed_1000_001",
+            "target_text": "Pilot boarding delayed until one zero zero zero.",
+            "should_accept": [
+                "Pilot boarding delayed until one zero zero zero."
+            ],
+            "should_reject": [
+                "Pilot boarding cancelled until one zero zero zero",
+                "Pilot boarding delayed until zero nine zero zero",
+                "Tug boarding delayed until one zero zero zero"
+            ]
+        },
+        {
+            "id": "phrase_b025_confirm_tug_not_required_for_entry_001",
+            "target_text": "Confirm tug not required for port entry.",
+            "should_accept": [
+                "Confirm tug not required for port entry."
+            ],
+            "should_reject": [
+                "Confirm tug required for port entry",
+                "Confirm pilot not required for port entry",
+                "Confirm tug not required for departure"
+            ]
+        },
+        {
+            "id": "phrase_b025_request_garbage_collection_after_clearance_001",
+            "target_text": "Request garbage collection after clearance.",
+            "should_accept": [
+                "Request garbage collection after clearance."
+            ],
+            "should_reject": [
+                "Request fuel collection after clearance",
+                "Request garbage collection before clearance",
+                "Cancel garbage collection after clearance"
+            ]
+        },
+        {
+            "id": "phrase_b025_request_bunkering_after_customs_clearance_001",
+            "target_text": "Request bunkering after customs clearance.",
+            "should_accept": [
+                "Request bunkering after customs clearance."
+            ],
+            "should_reject": [
+                "Request bunkering before customs clearance",
+                "Request water after customs clearance",
+                "Request bunkering after immigration clearance"
+            ]
+        },
+        {
+            "id": "phrase_b025_fresh_water_after_customs_clearance_001",
+            "target_text": "Fresh water after customs clearance.",
+            "should_accept": [
+                "Fresh water after customs clearance."
+            ],
+            "should_reject": [
+                "Fuel after customs clearance",
+                "Fresh water before customs clearance",
+                "Fresh water after immigration clearance"
+            ]
+        },
+        {
+            "id": "phrase_b025_shore_power_after_immigration_clearance_001",
+            "target_text": "Shore power after immigration clearance.",
+            "should_accept": [
+                "Shore power after immigration clearance."
+            ],
+            "should_reject": [
+                "Shore power before immigration clearance",
+                "Water after immigration clearance",
+                "Shore power after customs clearance"
+            ]
+        },
+        {
+            "id": "phrase_b025_hold_waiting_area_until_clearance_001",
+            "target_text": "Hold in waiting area until clearance.",
+            "should_accept": [
+                "Hold in waiting area until clearance."
+            ],
+            "should_reject": [
+                "Enter fairway until clearance",
+                "Hold in waiting area after clearance",
+                "Hold in berth until clearance"
+            ]
+        },
+        {
+            "id": "phrase_b025_enter_port_after_clearance_granted_001",
+            "target_text": "Enter port after clearance granted.",
+            "should_accept": [
+                "Enter port after clearance granted."
+            ],
+            "should_reject": [
+                "Enter port before clearance granted",
+                "Leave port after clearance granted",
+                "Enter marina after berth granted"
+            ]
+        },
+        {
+            "id": "phrase_b025_do_not_enter_before_clearance_001",
+            "target_text": "Do not enter port before clearance.",
+            "should_accept": [
+                "Do not enter port before clearance."
+            ],
+            "should_reject": [
+                "Enter port before clearance",
+                "Do not leave port before clearance",
+                "Do not enter berth before clearance"
+            ]
+        },
+        {
+            "id": "phrase_b025_customs_clearance_complete_departure_pending_001",
+            "target_text": "Customs clearance complete, departure clearance pending.",
+            "should_accept": [
+                "Customs clearance complete, departure clearance pending."
+            ],
+            "should_reject": [
+                "Customs clearance pending departure clearance complete",
+                "Immigration clearance complete departure clearance pending",
+                "Customs clearance complete departure clearance granted"
+            ]
+        },
+        {
+            "id": "phrase_b025_readback_wait_customs_launch_channel_12_001",
+            "target_text": "Read back, wait for customs launch on channel one two.",
+            "should_accept": [
+                "Read back, wait for customs launch on channel one two."
+            ],
+            "should_reject": [
+                "Read back wait for pilot launch on channel one two",
+                "Read back wait for customs launch on channel one three",
+                "Read back proceed for customs launch on channel one two"
             ]
         }
     ],
