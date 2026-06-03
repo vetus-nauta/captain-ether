@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Captain Ether 1000-item main course is content/runtime ready; authenticated watch smoke remains blocked only by production QA access; next gate is answer-log and matcher-noise review
+Canonical status: Captain Ether 1000-item main course is content/runtime ready and matcher noise is acceptable; authenticated watch smoke remains blocked only by production QA access; next gate is Director closure decision
 
 ## 1. Read This First
 
@@ -54,7 +54,8 @@ production_release_readiness_qa=PASS
 authenticated_browser_watch_smoke=AUTH_BLOCKED_WITH_NEXT_STEPS
 ready_for_main_course_technical_closure_audit=true
 main_course_technical_closure_audit=AUTH_BLOCKED_BUT_CONTENT_RUNTIME_READY
-ready_for_answer_log_matcher_noise_review=true
+answer_log_matcher_noise_review=MATCHER_NOISE_ACCEPTABLE
+ready_for_director_closure_decision=true
 production_route=HTTP 200
 anonymous_start_watch=HTTP 401 Login required
 ```
@@ -133,6 +134,7 @@ CE-0188 Batch 028 Production Sync Decision: CLOSED / PASS / PRODUCTION_SYNCED
 CE-0189A Batch 028 Production Release-Readiness QA: PASS / RELEASE_READY_FOR_1000_ITEM_SCOPE
 CE-0189B Authenticated Browser Watch Smoke: AUTH_BLOCKED_WITH_NEXT_STEPS
 CE-0189C Main Course Technical Closure Audit: AUTH_BLOCKED_BUT_CONTENT_RUNTIME_READY
+CE-0189D Answer-Log And Matcher Noise Review: MATCHER_NOISE_ACCEPTABLE
 ```
 
 Important reports:
@@ -194,6 +196,7 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0188-batch-028-p
 content/captain-ether/roles/qa/reports/sprint-ce-0189a-batch-028-production-release-readiness-qa-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0189b-authenticated-browser-watch-smoke-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0189c-main-course-technical-closure-audit-2026-06-03.md
+content/captain-ether/roles/qa/reports/sprint-ce-0189d-answer-log-matcher-noise-review-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -201,13 +204,13 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0189c-main-cours
 Next task to run:
 
 ```text
-content/captain-ether/roles/qa/tasks/task-ce-0189d-answer-log-matcher-noise-review-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0189e-director-closure-decision-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run answer-log and matcher-noise review; keep auth smoke open as a separate access-channel blocker.
+Run Director closure decision for the 1000-item main course, explicitly keeping authenticated watch smoke open as an auth/access-channel blocker.
 ```
 
 Expected current local/GitHub/production baseline:
@@ -227,17 +230,17 @@ draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
 ```
 
-Local/GitHub/production now match at 1000, CE-0189A release-readiness QA passed, and CE-0189C confirms content/runtime readiness. CE-0189B remains blocked by production QA access only.
+Local/GitHub/production now match at 1000, CE-0189A release-readiness QA passed, CE-0189C confirms content/runtime readiness, and CE-0189D found matcher noise acceptable. CE-0189B remains blocked by production QA access only.
 
 ## 6. Recommended Merge Plan After QA
 
-Run answer-log/matcher noise review, then Director closure decision.
+Run Director closure decision. Do not implement gamification in this sprint.
 
 Recommended sequence:
 
 ```text
-1. CE-0189D Answer-Log And Matcher Noise Review.
-2. CE-0189E Director Closure Decision.
+1. CE-0189E Director Closure Decision.
+2. Keep authenticated production watch smoke open until approved QA access is available.
 ```
 
 This keeps production parity checkpoints small enough to debug.

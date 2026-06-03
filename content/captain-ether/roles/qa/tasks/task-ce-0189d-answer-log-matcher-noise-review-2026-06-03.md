@@ -3,7 +3,7 @@
 Date: 2026-06-03
 Owner: QA / Director-Engineer
 Scope: Captain Ether answer-log protection and matcher-noise review
-Status: PLANNED
+Status: DONE / MATCHER_NOISE_ACCEPTABLE
 
 ## Activation Condition
 
@@ -53,4 +53,17 @@ Expected output:
 ```text
 content/captain-ether/roles/qa/reports/sprint-ce-0189d-answer-log-matcher-noise-review-2026-06-03.md
 status MATCHER_NOISE_ACCEPTABLE or TARGETED_MATCHER_FIXES_REQUIRED
+```
+
+## Result
+
+```text
+MATCHER_NOISE_ACCEPTABLE
+full_validator=PASS
+validator_warnings=0
+production_answer_log_anonymous=HTTP 401 Login required
+targeted_matcher_cases=24
+targeted_matcher_pass=24
+targeted_matcher_fail=0
+next_task=CE-0189E Director Closure Decision
 ```
