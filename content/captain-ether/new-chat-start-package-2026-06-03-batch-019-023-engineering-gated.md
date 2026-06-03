@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 027 production release-ready at the 970-item baseline; Batch 028 isolated draft passed linguist/engineering gate and is ready for acceptance QA toward the 1000-item M5 baseline
+Canonical status: Batch 027 production release-ready at the 970-item baseline; Batch 028 acceptance QA passed and is ready for staged local/GitHub merge toward the 1000-item M5 baseline
 
 ## 1. Read This First
 
@@ -44,7 +44,7 @@ production_delta_items=0
 post_merge_qa=PASS
 production_sync=PASS
 production_release_readiness_qa=PASS
-ready_for_batch_028_acceptance_qa=true
+ready_for_batch_028_staged_merge=true
 production_route=HTTP 200
 anonymous_start_watch=HTTP 401 Login required
 ```
@@ -59,7 +59,7 @@ draft_backlog_grammar_patterns=30
 draft_backlog_qa_items=30
 draft_backlog_dangerous_pairs=16
 batch_027_status=merged
-batch_028_status=draft_linguist_engineering_passed
+batch_028_status=draft_acceptance_qa_passed
 ```
 
 ## 4. Latest Closed Gates
@@ -116,6 +116,7 @@ CE-0181 Batch 027 Production Sync Decision: CLOSED / PASS / PRODUCTION_SYNCED
 CE-0182 Batch 027 Production Release-Readiness QA: PASS / RELEASE_READY_FOR_CURRENT_SCOPE
 CE-0183 Batch 028 Draft Gate: DONE / DRAFT_READY_FOR_LINGUIST_ENGINEERING_GATE
 CE-0184 Batch 028 Linguist / Engineering Gate: PASS / READY_FOR_ACCEPTANCE_QA
+CE-0185 Batch 028 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
 ```
 
 Important reports:
@@ -170,6 +171,7 @@ content/captain-ether/roles/qa/reports/sprint-ce-0182-batch-027-production-relea
 content/captain-ether/roles/content-producer/reports/batch-028-exam-style-minimal-pair-reinforcement-card-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0183-batch-028-draft-2026-06-03.md
 content/captain-ether/roles/sea-speak-linguist/reports/batch-028-exam-style-minimal-pair-reinforcement-risk-review-2026-06-03.md
+content/captain-ether/roles/qa/reports/sprint-ce-0185-batch-028-acceptance-qa-merge-decision-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -177,13 +179,13 @@ content/captain-ether/roles/sea-speak-linguist/reports/batch-028-exam-style-mini
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0185-batch-028-acceptance-qa-merge-decision-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0186-batch-028-staged-merge-preparation-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run Batch 028 acceptance QA and merge decision. Revalidate minimal-pair safety boundaries; no merge and no deploy unless a separate staged merge task is opened.
+Run Batch 028 staged merge preparation. Merge Batch 028 locally/GitHub only, then validate; no production deploy.
 ```
 
 Expected current local/GitHub/production baseline:
@@ -203,17 +205,17 @@ draft_backlog_grammar_patterns=30
 draft_backlog_dangerous_pairs=16
 ```
 
-Local/GitHub/production now match at 970 and Batch 027 release-readiness QA passed. Batch 028 isolated draft passed linguist/engineering gate and is ready for acceptance QA; no merge/deploy.
+Local/GitHub/production now match at 970 and Batch 027 release-readiness QA passed. Batch 028 isolated draft passed acceptance QA and is ready for staged local/GitHub merge; no production deploy.
 
 ## 6. Recommended Merge Plan After QA
 
-Run Batch 028 acceptance QA, then staged merge preparation if QA passes.
+Run Batch 028 staged merge preparation, then post-merge QA if merge passes.
 
 Recommended sequence:
 
 ```text
-1. CE-0185 Batch 028 Acceptance QA / Merge Decision.
-2. Then run Batch 028 staged merge preparation.
+1. CE-0186 Batch 028 Staged Merge Preparation.
+2. Then run Batch 028 post-merge QA.
 ```
 
 This keeps production parity checkpoints small enough to debug.

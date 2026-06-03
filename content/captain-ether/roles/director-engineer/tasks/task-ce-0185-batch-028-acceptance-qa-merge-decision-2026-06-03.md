@@ -3,7 +3,7 @@
 Date: 2026-06-03
 Owner: QA / Director-Engineer
 Scope: Captain Ether Batch 028 isolated draft acceptance QA
-Status: PLANNED
+Status: DONE / PASS_FOR_STAGED_MERGE
 
 ## Activation Condition
 
@@ -48,4 +48,22 @@ Expected output:
 ```text
 content/captain-ether/roles/qa/reports/sprint-ce-0185-batch-028-acceptance-qa-merge-decision-2026-06-03.md
 next task for staged merge preparation if QA passes
+```
+
+## Result
+
+```text
+PASS_FOR_STAGED_MERGE
+batch_validator=PASS
+batch_validator_runs=120
+full_validator=PASS
+full_validator_runs=120
+api_smoke=PASS captain-ether-api-smoke checks=334
+collision_scan=PASS
+sample_missing_targets=0
+production_read_only_counts=PASS
+production_delta_items=0
+starter_merge=false
+production_deploy=false
+next_task=CE-0186 Batch 028 Staged Merge Preparation
 ```
