@@ -1,10 +1,10 @@
 {
     "version": 1,
     "batch_id": "batch-026-weather-routing-navigation-warning-reinforcement",
-    "status": "draft",
+    "status": "merged",
     "date": "2026-06-03",
     "branch": "safety_securite",
-    "scope": "M5 Batch 026 draft. Adds weather-routing and navigation-warning reinforcement: route weather warnings, wind shifts, swell/visibility changes, waypoint avoidance, and warning/advice/readback boundaries. Draft only; not merged into starter and not deployed.",
+    "scope": "M5 Batch 026 draft. Adds weather-routing and navigation-warning reinforcement: route weather warnings, wind shifts, swell/visibility changes, waypoint avoidance, heading/bearing/distance strictness, and warning/advice/readback boundaries. Merged into local/GitHub starter by CE-0172. No production deploy.",
     "items": [
         {
             "id": "word_b026_weather_routing_001",
@@ -1811,6 +1811,6 @@
         "type_mix": "2 word, 10 short_expression, 23 phrase",
         "level_mix": "5 beginner, 17 intermediate, 13 advanced",
         "production_scope": "none",
-        "next_gate": "Linguist/engineering gate before acceptance QA"
+        "next_gate": "Post-merge QA before any production sync"
     }
 }

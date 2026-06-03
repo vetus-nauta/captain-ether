@@ -18413,6 +18413,706 @@
             "hint_beginner": "Read back,...",
             "hint_intermediate": "Read back, wait...",
             "hint_advanced": ""
+        },
+        {
+            "id": "word_b026_weather_routing_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "safety_securite",
+            "module": "route_warning",
+            "source_language": "ru",
+            "source_text": "Погодная маршрутизация.",
+            "target_language": "en",
+            "target_text": "weather routing",
+            "accepted_answers": [
+                "weather routing"
+            ],
+            "grammar_pattern": "b026_weather_routing_pattern",
+            "hint_beginner": "weather routing...",
+            "hint_intermediate": "weather routing...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b026_squall_line_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "safety_securite",
+            "module": "wind_shift",
+            "source_language": "ru",
+            "source_text": "Линия шквалов.",
+            "target_language": "en",
+            "target_text": "squall line",
+            "accepted_answers": [
+                "squall line"
+            ],
+            "grammar_pattern": "b026_squall_line_pattern",
+            "hint_beginner": "squall line...",
+            "hint_intermediate": "squall line...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b026_route_weather_warning_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "safety_securite",
+            "module": "route_warning",
+            "source_language": "ru",
+            "source_text": "Предупреждение о погоде по маршруту.",
+            "target_language": "en",
+            "target_text": "route weather warning",
+            "accepted_answers": [
+                "route weather warning"
+            ],
+            "grammar_pattern": "b026_route_weather_warning_pattern",
+            "hint_beginner": "route weather...",
+            "hint_intermediate": "route weather warning...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b026_navigation_warning_in_force_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "route_warning",
+            "source_language": "ru",
+            "source_text": "Навигационное предупреждение действует.",
+            "target_language": "en",
+            "target_text": "navigation warning in force",
+            "accepted_answers": [
+                "navigation warning in force"
+            ],
+            "grammar_pattern": "b026_navigation_warning_in_force_pattern",
+            "hint_beginner": "navigation warning...",
+            "hint_intermediate": "navigation warning in force...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b026_alter_route_to_starboard_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "waypoint_avoidance",
+            "source_language": "ru",
+            "source_text": "Изменить маршрут вправо.",
+            "target_language": "en",
+            "target_text": "alter route to starboard",
+            "accepted_answers": [
+                "alter route to starboard"
+            ],
+            "grammar_pattern": "b026_alter_route_to_starboard_pattern",
+            "hint_beginner": "alter route...",
+            "hint_intermediate": "alter route to starboard...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b026_alter_route_to_port_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "waypoint_avoidance",
+            "source_language": "ru",
+            "source_text": "Изменить маршрут влево.",
+            "target_language": "en",
+            "target_text": "alter route to port",
+            "accepted_answers": [
+                "alter route to port"
+            ],
+            "grammar_pattern": "b026_alter_route_to_port_pattern",
+            "hint_beginner": "alter route...",
+            "hint_intermediate": "alter route to port...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b026_avoid_waypoint_alpha_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "waypoint_avoidance",
+            "source_language": "ru",
+            "source_text": "Избегать точки Альфа.",
+            "target_language": "en",
+            "target_text": "avoid waypoint Alpha",
+            "accepted_answers": [
+                "avoid waypoint Alpha"
+            ],
+            "grammar_pattern": "b026_avoid_waypoint_alpha_pattern",
+            "hint_beginner": "avoid waypoint...",
+            "hint_intermediate": "avoid waypoint Alpha...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b026_proceed_waypoint_bravo_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "waypoint_avoidance",
+            "source_language": "ru",
+            "source_text": "Следовать к точке Браво.",
+            "target_language": "en",
+            "target_text": "proceed to waypoint Bravo",
+            "accepted_answers": [
+                "proceed to waypoint Bravo"
+            ],
+            "grammar_pattern": "b026_proceed_waypoint_bravo_pattern",
+            "hint_beginner": "proceed to...",
+            "hint_intermediate": "proceed to waypoint Bravo...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b026_wind_shift_northwest_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "safety_securite",
+            "module": "wind_shift",
+            "source_language": "ru",
+            "source_text": "Смена ветра на северо-западный.",
+            "target_language": "en",
+            "target_text": "wind shift to north-west",
+            "accepted_answers": [
+                "wind shift to north-west"
+            ],
+            "grammar_pattern": "b026_wind_shift_northwest_pattern",
+            "hint_beginner": "wind shift...",
+            "hint_intermediate": "wind shift to north-west...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b026_visibility_reduced_two_miles_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "safety_securite",
+            "module": "swell_visibility",
+            "source_language": "ru",
+            "source_text": "Видимость снижена до двух миль.",
+            "target_language": "en",
+            "target_text": "visibility reduced to two miles",
+            "accepted_answers": [
+                "visibility reduced to two miles"
+            ],
+            "grammar_pattern": "b026_visibility_reduced_two_miles_pattern",
+            "hint_beginner": "visibility reduced...",
+            "hint_intermediate": "visibility reduced to two...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b026_heavy_swell_from_west_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "safety_securite",
+            "module": "swell_visibility",
+            "source_language": "ru",
+            "source_text": "Сильная зыбь с запада.",
+            "target_language": "en",
+            "target_text": "heavy swell from west",
+            "accepted_answers": [
+                "heavy swell from west"
+            ],
+            "grammar_pattern": "b026_heavy_swell_from_west_pattern",
+            "hint_beginner": "heavy swell...",
+            "hint_intermediate": "heavy swell from west...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b026_recommended_route_cancelled_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "route_warning",
+            "source_language": "ru",
+            "source_text": "Рекомендованный маршрут отменен.",
+            "target_language": "en",
+            "target_text": "recommended route cancelled",
+            "accepted_answers": [
+                "recommended route cancelled"
+            ],
+            "grammar_pattern": "b026_recommended_route_cancelled_pattern",
+            "hint_beginner": "recommended route...",
+            "hint_intermediate": "recommended route cancelled...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_alter_route_090_weather_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "route_warning",
+            "source_language": "ru",
+            "source_text": "Изменить маршрут на курс ноль девять ноль из-за погоды.",
+            "target_language": "en",
+            "target_text": "Alter route to zero nine zero due to weather.",
+            "accepted_answers": [
+                "Alter route to zero nine zero due to weather."
+            ],
+            "grammar_pattern": "b026_alter_route_090_weather_pattern",
+            "hint_beginner": "Alter route...",
+            "hint_intermediate": "Alter route to zero...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_alter_route_120_weather_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "route_warning",
+            "source_language": "ru",
+            "source_text": "Изменить маршрут на курс один два ноль из-за погоды.",
+            "target_language": "en",
+            "target_text": "Alter route to one two zero due to weather.",
+            "accepted_answers": [
+                "Alter route to one two zero due to weather."
+            ],
+            "grammar_pattern": "b026_alter_route_120_weather_pattern",
+            "hint_beginner": "Alter route...",
+            "hint_intermediate": "Alter route to one...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_avoid_lee_shore_two_miles_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "safety_securite",
+            "module": "waypoint_avoidance",
+            "source_language": "ru",
+            "source_text": "Держаться в двух милях от подветренного берега.",
+            "target_language": "en",
+            "target_text": "Keep two miles off the lee shore.",
+            "accepted_answers": [
+                "Keep two miles off the lee shore."
+            ],
+            "grammar_pattern": "b026_avoid_lee_shore_two_miles_pattern",
+            "hint_beginner": "Keep two...",
+            "hint_intermediate": "Keep two miles off...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_avoid_waypoint_alpha_heavy_swell_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "waypoint_avoidance",
+            "source_language": "ru",
+            "source_text": "Избегать точки Альфа из-за сильной зыби.",
+            "target_language": "en",
+            "target_text": "Avoid waypoint Alpha due to heavy swell.",
+            "accepted_answers": [
+                "Avoid waypoint Alpha due to heavy swell."
+            ],
+            "grammar_pattern": "b026_avoid_waypoint_alpha_heavy_swell_pattern",
+            "hint_beginner": "Avoid waypoint...",
+            "hint_intermediate": "Avoid waypoint Alpha due...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_proceed_bravo_after_squall_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "waypoint_avoidance",
+            "source_language": "ru",
+            "source_text": "Следовать к точке Браво после прохождения шквала.",
+            "target_language": "en",
+            "target_text": "Proceed to waypoint Bravo after squall passes.",
+            "accepted_answers": [
+                "Proceed to waypoint Bravo after squall passes."
+            ],
+            "grammar_pattern": "b026_proceed_bravo_after_squall_pattern",
+            "hint_beginner": "Proceed to...",
+            "hint_intermediate": "Proceed to waypoint Bravo...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_navigation_warning_area_charlie_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "route_warning",
+            "source_language": "ru",
+            "source_text": "Навигационное предупреждение для района Чарли.",
+            "target_language": "en",
+            "target_text": "Navigation warning for area Charlie.",
+            "accepted_answers": [
+                "Navigation warning for area Charlie."
+            ],
+            "grammar_pattern": "b026_navigation_warning_area_charlie_pattern",
+            "hint_beginner": "Navigation warning...",
+            "hint_intermediate": "Navigation warning for area...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_weather_advice_area_delta_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "safety_securite",
+            "module": "route_warning",
+            "source_language": "ru",
+            "source_text": "Метеорологическая рекомендация для района Дельта.",
+            "target_language": "en",
+            "target_text": "Weather advice for area Delta.",
+            "accepted_answers": [
+                "Weather advice for area Delta."
+            ],
+            "grammar_pattern": "b026_weather_advice_area_delta_pattern",
+            "hint_beginner": "Weather advice...",
+            "hint_intermediate": "Weather advice for area...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_gale_warning_area_delta_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "safety_securite",
+            "module": "route_warning",
+            "source_language": "ru",
+            "source_text": "Штормовое предупреждение для района Дельта.",
+            "target_language": "en",
+            "target_text": "Gale warning in area Delta.",
+            "accepted_answers": [
+                "Gale warning in area Delta."
+            ],
+            "grammar_pattern": "b026_gale_warning_area_delta_pattern",
+            "hint_beginner": "Gale warning...",
+            "hint_intermediate": "Gale warning in area...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_wind_shift_270_at_noon_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "safety_securite",
+            "module": "wind_shift",
+            "source_language": "ru",
+            "source_text": "Ожидается смена ветра на два семь ноль в полдень.",
+            "target_language": "en",
+            "target_text": "Wind shift to two seven zero expected at noon.",
+            "accepted_answers": [
+                "Wind shift to two seven zero expected at noon."
+            ],
+            "grammar_pattern": "b026_wind_shift_270_at_noon_pattern",
+            "hint_beginner": "Wind shift...",
+            "hint_intermediate": "Wind shift to two...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_wind_backing_after_1800_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "safety_securite",
+            "module": "wind_shift",
+            "source_language": "ru",
+            "source_text": "Ветер заходит против часовой стрелки после один восемь ноль ноль.",
+            "target_language": "en",
+            "target_text": "Wind backing after one eight zero zero.",
+            "accepted_answers": [
+                "Wind backing after one eight zero zero."
+            ],
+            "grammar_pattern": "b026_wind_backing_after_1800_pattern",
+            "hint_beginner": "Wind backing...",
+            "hint_intermediate": "Wind backing after one...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_visibility_less_one_mile_sector_east_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "safety_securite",
+            "module": "swell_visibility",
+            "source_language": "ru",
+            "source_text": "Видимость менее одной мили в восточном секторе.",
+            "target_language": "en",
+            "target_text": "Visibility less than one mile in east sector.",
+            "accepted_answers": [
+                "Visibility less than one mile in east sector."
+            ],
+            "grammar_pattern": "b026_visibility_less_one_mile_sector_east_pattern",
+            "hint_beginner": "Visibility less...",
+            "hint_intermediate": "Visibility less than one...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_visibility_improving_after_1600_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "safety_securite",
+            "module": "swell_visibility",
+            "source_language": "ru",
+            "source_text": "Видимость улучшается после один шесть ноль ноль.",
+            "target_language": "en",
+            "target_text": "Visibility improving after one six zero zero.",
+            "accepted_answers": [
+                "Visibility improving after one six zero zero."
+            ],
+            "grammar_pattern": "b026_visibility_improving_after_1600_pattern",
+            "hint_beginner": "Visibility improving...",
+            "hint_intermediate": "Visibility improving after one...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_swell_three_metres_from_southwest_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "safety_securite",
+            "module": "swell_visibility",
+            "source_language": "ru",
+            "source_text": "Зыбь три метра с юго-запада.",
+            "target_language": "en",
+            "target_text": "Swell three metres from south-west.",
+            "accepted_answers": [
+                "Swell three metres from south-west."
+            ],
+            "grammar_pattern": "b026_swell_three_metres_from_southwest_pattern",
+            "hint_beginner": "Swell three...",
+            "hint_intermediate": "Swell three metres from...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_cross_swell_reported_near_waypoint_bravo_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "swell_visibility",
+            "source_language": "ru",
+            "source_text": "Перекрестная зыбь у точки Браво.",
+            "target_language": "en",
+            "target_text": "Cross swell reported near waypoint Bravo.",
+            "accepted_answers": [
+                "Cross swell reported near waypoint Bravo."
+            ],
+            "grammar_pattern": "b026_cross_swell_reported_near_waypoint_bravo_pattern",
+            "hint_beginner": "Cross swell...",
+            "hint_intermediate": "Cross swell reported near...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_do_not_enter_shallow_water_route_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "waypoint_avoidance",
+            "source_language": "ru",
+            "source_text": "Не входить в мелководный маршрут.",
+            "target_language": "en",
+            "target_text": "Do not enter the shallow-water route.",
+            "accepted_answers": [
+                "Do not enter the shallow-water route."
+            ],
+            "grammar_pattern": "b026_do_not_enter_shallow_water_route_pattern",
+            "hint_beginner": "Do not...",
+            "hint_intermediate": "Do not enter the...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_deep_water_route_recommended_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "route_warning",
+            "source_language": "ru",
+            "source_text": "Рекомендован глубоководный маршрут.",
+            "target_language": "en",
+            "target_text": "Deep-water route recommended.",
+            "accepted_answers": [
+                "Deep-water route recommended."
+            ],
+            "grammar_pattern": "b026_deep_water_route_recommended_pattern",
+            "hint_beginner": "Deep-water route...",
+            "hint_intermediate": "Deep-water route recommended....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_temporary_route_closed_until_0600_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "route_warning",
+            "source_language": "ru",
+            "source_text": "Временный маршрут закрыт до ноль шесть ноль ноль.",
+            "target_language": "en",
+            "target_text": "Temporary route closed until zero six zero zero.",
+            "accepted_answers": [
+                "Temporary route closed until zero six zero zero."
+            ],
+            "grammar_pattern": "b026_temporary_route_closed_until_0600_pattern",
+            "hint_beginner": "Temporary route...",
+            "hint_intermediate": "Temporary route closed until...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_readback_alter_route_090_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "route_warning",
+            "source_language": "ru",
+            "source_text": "Повторить: изменить маршрут на ноль девять ноль.",
+            "target_language": "en",
+            "target_text": "Read back, alter route to zero nine zero.",
+            "accepted_answers": [
+                "Read back, alter route to zero nine zero."
+            ],
+            "grammar_pattern": "b026_readback_alter_route_090_pattern",
+            "hint_beginner": "Read back,...",
+            "hint_intermediate": "Read back, alter route...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_readback_avoid_waypoint_alpha_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "waypoint_avoidance",
+            "source_language": "ru",
+            "source_text": "Повторить: избегать точки Альфа.",
+            "target_language": "en",
+            "target_text": "Read back, avoid waypoint Alpha.",
+            "accepted_answers": [
+                "Read back, avoid waypoint Alpha."
+            ],
+            "grammar_pattern": "b026_readback_avoid_waypoint_alpha_pattern",
+            "hint_beginner": "Read back,...",
+            "hint_intermediate": "Read back, avoid waypoint...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_readback_visibility_two_miles_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "safety_securite",
+            "module": "swell_visibility",
+            "source_language": "ru",
+            "source_text": "Повторить: видимость две мили.",
+            "target_language": "en",
+            "target_text": "Read back, visibility two miles.",
+            "accepted_answers": [
+                "Read back, visibility two miles."
+            ],
+            "grammar_pattern": "b026_readback_visibility_two_miles_pattern",
+            "hint_beginner": "Read back,...",
+            "hint_intermediate": "Read back, visibility two...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_report_when_clear_of_squall_line_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "safety_securite",
+            "module": "wind_shift",
+            "source_language": "ru",
+            "source_text": "Доложить, когда выйдете из линии шквалов.",
+            "target_language": "en",
+            "target_text": "Report when clear of the squall line.",
+            "accepted_answers": [
+                "Report when clear of the squall line."
+            ],
+            "grammar_pattern": "b026_report_when_clear_of_squall_line_pattern",
+            "hint_beginner": "Report when...",
+            "hint_intermediate": "Report when clear of...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_avoid_hazard_bearing_045_alpha_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "waypoint_avoidance",
+            "source_language": "ru",
+            "source_text": "Избегать опасности по пеленгу ноль четыре пять от точки Альфа.",
+            "target_language": "en",
+            "target_text": "Avoid hazard bearing zero four five from waypoint Alpha.",
+            "accepted_answers": [
+                "Avoid hazard bearing zero four five from waypoint Alpha."
+            ],
+            "grammar_pattern": "b026_avoid_hazard_bearing_045_alpha_pattern",
+            "hint_beginner": "Avoid hazard...",
+            "hint_intermediate": "Avoid hazard bearing zero...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b026_use_alternate_route_north_of_area_delta_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "weather_routing_navigation_warning",
+            "branch": "navigation_reports",
+            "module": "waypoint_avoidance",
+            "source_language": "ru",
+            "source_text": "Использовать запасной маршрут севернее района Дельта.",
+            "target_language": "en",
+            "target_text": "Use alternate route north of area Delta.",
+            "accepted_answers": [
+                "Use alternate route north of area Delta."
+            ],
+            "grammar_pattern": "b026_use_alternate_route_north_of_area_delta_pattern",
+            "hint_beginner": "Use alternate...",
+            "hint_intermediate": "Use alternate route north...",
+            "hint_advanced": ""
         }
     ],
     "grammar_patterns": [
@@ -22391,6 +23091,251 @@
             "pattern": "customs_immigration phrase pattern",
             "examples": [
                 "Read back, wait for customs launch on channel one two."
+            ]
+        },
+        {
+            "id": "b026_weather_routing_pattern",
+            "pattern": "route_warning word pattern",
+            "examples": [
+                "weather routing"
+            ]
+        },
+        {
+            "id": "b026_squall_line_pattern",
+            "pattern": "wind_shift word pattern",
+            "examples": [
+                "squall line"
+            ]
+        },
+        {
+            "id": "b026_route_weather_warning_pattern",
+            "pattern": "route_warning short_expression pattern",
+            "examples": [
+                "route weather warning"
+            ]
+        },
+        {
+            "id": "b026_navigation_warning_in_force_pattern",
+            "pattern": "route_warning short_expression pattern",
+            "examples": [
+                "navigation warning in force"
+            ]
+        },
+        {
+            "id": "b026_alter_route_to_starboard_pattern",
+            "pattern": "waypoint_avoidance short_expression pattern",
+            "examples": [
+                "alter route to starboard"
+            ]
+        },
+        {
+            "id": "b026_alter_route_to_port_pattern",
+            "pattern": "waypoint_avoidance short_expression pattern",
+            "examples": [
+                "alter route to port"
+            ]
+        },
+        {
+            "id": "b026_avoid_waypoint_alpha_pattern",
+            "pattern": "waypoint_avoidance short_expression pattern",
+            "examples": [
+                "avoid waypoint Alpha"
+            ]
+        },
+        {
+            "id": "b026_proceed_waypoint_bravo_pattern",
+            "pattern": "waypoint_avoidance short_expression pattern",
+            "examples": [
+                "proceed to waypoint Bravo"
+            ]
+        },
+        {
+            "id": "b026_wind_shift_northwest_pattern",
+            "pattern": "wind_shift short_expression pattern",
+            "examples": [
+                "wind shift to north-west"
+            ]
+        },
+        {
+            "id": "b026_visibility_reduced_two_miles_pattern",
+            "pattern": "swell_visibility short_expression pattern",
+            "examples": [
+                "visibility reduced to two miles"
+            ]
+        },
+        {
+            "id": "b026_heavy_swell_from_west_pattern",
+            "pattern": "swell_visibility short_expression pattern",
+            "examples": [
+                "heavy swell from west"
+            ]
+        },
+        {
+            "id": "b026_recommended_route_cancelled_pattern",
+            "pattern": "route_warning short_expression pattern",
+            "examples": [
+                "recommended route cancelled"
+            ]
+        },
+        {
+            "id": "b026_alter_route_090_weather_pattern",
+            "pattern": "route_warning phrase pattern",
+            "examples": [
+                "Alter route to zero nine zero due to weather."
+            ]
+        },
+        {
+            "id": "b026_alter_route_120_weather_pattern",
+            "pattern": "route_warning phrase pattern",
+            "examples": [
+                "Alter route to one two zero due to weather."
+            ]
+        },
+        {
+            "id": "b026_avoid_lee_shore_two_miles_pattern",
+            "pattern": "waypoint_avoidance phrase pattern",
+            "examples": [
+                "Keep two miles off the lee shore."
+            ]
+        },
+        {
+            "id": "b026_avoid_waypoint_alpha_heavy_swell_pattern",
+            "pattern": "waypoint_avoidance phrase pattern",
+            "examples": [
+                "Avoid waypoint Alpha due to heavy swell."
+            ]
+        },
+        {
+            "id": "b026_proceed_bravo_after_squall_pattern",
+            "pattern": "waypoint_avoidance phrase pattern",
+            "examples": [
+                "Proceed to waypoint Bravo after squall passes."
+            ]
+        },
+        {
+            "id": "b026_navigation_warning_area_charlie_pattern",
+            "pattern": "route_warning phrase pattern",
+            "examples": [
+                "Navigation warning for area Charlie."
+            ]
+        },
+        {
+            "id": "b026_weather_advice_area_delta_pattern",
+            "pattern": "route_warning phrase pattern",
+            "examples": [
+                "Weather advice for area Delta."
+            ]
+        },
+        {
+            "id": "b026_gale_warning_area_delta_pattern",
+            "pattern": "route_warning phrase pattern",
+            "examples": [
+                "Gale warning in area Delta."
+            ]
+        },
+        {
+            "id": "b026_wind_shift_270_at_noon_pattern",
+            "pattern": "wind_shift phrase pattern",
+            "examples": [
+                "Wind shift to two seven zero expected at noon."
+            ]
+        },
+        {
+            "id": "b026_wind_backing_after_1800_pattern",
+            "pattern": "wind_shift phrase pattern",
+            "examples": [
+                "Wind backing after one eight zero zero."
+            ]
+        },
+        {
+            "id": "b026_visibility_less_one_mile_sector_east_pattern",
+            "pattern": "swell_visibility phrase pattern",
+            "examples": [
+                "Visibility less than one mile in east sector."
+            ]
+        },
+        {
+            "id": "b026_visibility_improving_after_1600_pattern",
+            "pattern": "swell_visibility phrase pattern",
+            "examples": [
+                "Visibility improving after one six zero zero."
+            ]
+        },
+        {
+            "id": "b026_swell_three_metres_from_southwest_pattern",
+            "pattern": "swell_visibility phrase pattern",
+            "examples": [
+                "Swell three metres from south-west."
+            ]
+        },
+        {
+            "id": "b026_cross_swell_reported_near_waypoint_bravo_pattern",
+            "pattern": "swell_visibility phrase pattern",
+            "examples": [
+                "Cross swell reported near waypoint Bravo."
+            ]
+        },
+        {
+            "id": "b026_do_not_enter_shallow_water_route_pattern",
+            "pattern": "waypoint_avoidance phrase pattern",
+            "examples": [
+                "Do not enter the shallow-water route."
+            ]
+        },
+        {
+            "id": "b026_deep_water_route_recommended_pattern",
+            "pattern": "route_warning phrase pattern",
+            "examples": [
+                "Deep-water route recommended."
+            ]
+        },
+        {
+            "id": "b026_temporary_route_closed_until_0600_pattern",
+            "pattern": "route_warning phrase pattern",
+            "examples": [
+                "Temporary route closed until zero six zero zero."
+            ]
+        },
+        {
+            "id": "b026_readback_alter_route_090_pattern",
+            "pattern": "route_warning phrase pattern",
+            "examples": [
+                "Read back, alter route to zero nine zero."
+            ]
+        },
+        {
+            "id": "b026_readback_avoid_waypoint_alpha_pattern",
+            "pattern": "waypoint_avoidance phrase pattern",
+            "examples": [
+                "Read back, avoid waypoint Alpha."
+            ]
+        },
+        {
+            "id": "b026_readback_visibility_two_miles_pattern",
+            "pattern": "swell_visibility phrase pattern",
+            "examples": [
+                "Read back, visibility two miles."
+            ]
+        },
+        {
+            "id": "b026_report_when_clear_of_squall_line_pattern",
+            "pattern": "wind_shift phrase pattern",
+            "examples": [
+                "Report when clear of the squall line."
+            ]
+        },
+        {
+            "id": "b026_avoid_hazard_bearing_045_alpha_pattern",
+            "pattern": "waypoint_avoidance phrase pattern",
+            "examples": [
+                "Avoid hazard bearing zero four five from waypoint Alpha."
+            ]
+        },
+        {
+            "id": "b026_use_alternate_route_north_of_area_delta_pattern",
+            "pattern": "waypoint_avoidance phrase pattern",
+            "examples": [
+                "Use alternate route north of area Delta."
             ]
         }
     ],

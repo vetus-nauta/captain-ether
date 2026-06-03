@@ -3,11 +3,11 @@
 Date: 2026-06-03
 Owner: Director-Engineer / QA
 Scope: Captain Ether Batch 026 local/GitHub staged merge only
-Status: PLANNED
+Status: DONE / MERGED_LOCALLY / PASS
 
 ## Activation Condition
 
-Start after:
+Started after:
 
 ```text
 TASK-CE-0171 Batch 026 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
@@ -16,23 +16,13 @@ TASK-CE-0171 Batch 026 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
 ## Target
 
 Merge Batch 026 into local/GitHub `starter.json` and
-`accept-reject-qa-pairs.json` only, then run post-merge local gates. Do not
-deploy production in this task.
+`accept-reject-qa-pairs.json` only, then run local gates. Do not deploy
+production in this task.
 
-Expected pre-merge source:
-
-```text
-batch_026_status=draft
-batch_026_items=35
-batch_026_grammar_patterns=35
-batch_026_dangerous_pairs=8
-local_github_production_starter_items=900
-local_github_production_qa_items=900
-```
-
-Expected post-merge local/GitHub candidate:
+## Result
 
 ```text
+batch_026_status=merged
 local_github_starter_items=935
 local_github_grammar_patterns=516
 local_github_qa_items=935
@@ -42,15 +32,14 @@ production_qa_items=900
 production_delta_items=-35
 ```
 
-## Required Checks
+## Completed Checks
 
 ```text
-merge batch items into starter without qa_notes
-merge batch qa_notes into accept-reject registry
-merge grammar_patterns and dangerous_minimal_pairs
-set batch_026_status=merged
-full validator PASS with runs >=100
-Batch 026 validator PASS after merged status
+merge batch items into starter without qa_notes=PASS
+merge batch qa_notes into accept-reject registry=PASS
+merge grammar_patterns and dangerous_minimal_pairs=PASS
+set batch_026_status=merged=PASS
+full/batch validator PASS with runs=120
 API smoke PASS
 Batch 026 presence check PASS
 secret scan PASS
@@ -58,4 +47,10 @@ diff whitespace check PASS
 production read-only drift statement PASS
 ```
 
-No production deploy is authorized by this task.
+No production deploy was performed by this task.
+
+## Report
+
+```text
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0172-batch-026-staged-merge-preparation-2026-06-03.md
+```

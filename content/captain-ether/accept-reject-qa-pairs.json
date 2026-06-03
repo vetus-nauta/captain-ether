@@ -7867,6 +7867,366 @@
                 ]
             },
             "reason": "Inward/outward clearance, free pratique, pending/granted departure, and tug requirement boundaries must stay exact."
+        },
+        {
+            "pair": "b026 route heading and alteration group",
+            "items": [
+                "expr_b026_alter_route_to_starboard_001",
+                "expr_b026_alter_route_to_port_001",
+                "phrase_b026_alter_route_090_weather_001",
+                "phrase_b026_alter_route_120_weather_001",
+                "phrase_b026_readback_alter_route_090_001"
+            ],
+            "must_accept": {
+                "expr_b026_alter_route_to_starboard_001": [
+                    "alter route to starboard"
+                ],
+                "expr_b026_alter_route_to_port_001": [
+                    "alter route to port"
+                ],
+                "phrase_b026_alter_route_090_weather_001": [
+                    "Alter route to zero nine zero due to weather."
+                ],
+                "phrase_b026_alter_route_120_weather_001": [
+                    "Alter route to one two zero due to weather."
+                ],
+                "phrase_b026_readback_alter_route_090_001": [
+                    "Read back, alter route to zero nine zero."
+                ]
+            },
+            "must_reject": {
+                "expr_b026_alter_route_to_starboard_001": [
+                    "alter route to port",
+                    "alter course to starboard"
+                ],
+                "expr_b026_alter_route_to_port_001": [
+                    "alter route to starboard",
+                    "alter course to port"
+                ],
+                "phrase_b026_alter_route_090_weather_001": [
+                    "Alter route to zero six zero due to weather",
+                    "Alter course to zero nine zero due to traffic"
+                ],
+                "phrase_b026_alter_route_120_weather_001": [
+                    "Alter route to zero nine zero due to weather",
+                    "Alter course to one two zero due to traffic"
+                ],
+                "phrase_b026_readback_alter_route_090_001": [
+                    "Read back alter route to one two zero",
+                    "Read back maintain route zero nine zero"
+                ]
+            },
+            "reason": "Route alteration side, course/route wording, heading numbers, and readback action must stay exact."
+        },
+        {
+            "pair": "b026 waypoint avoid proceed group",
+            "items": [
+                "expr_b026_avoid_waypoint_alpha_001",
+                "expr_b026_proceed_waypoint_bravo_001",
+                "phrase_b026_avoid_waypoint_alpha_heavy_swell_001",
+                "phrase_b026_proceed_bravo_after_squall_001",
+                "phrase_b026_readback_avoid_waypoint_alpha_001"
+            ],
+            "must_accept": {
+                "expr_b026_avoid_waypoint_alpha_001": [
+                    "avoid waypoint Alpha"
+                ],
+                "expr_b026_proceed_waypoint_bravo_001": [
+                    "proceed to waypoint Bravo"
+                ],
+                "phrase_b026_avoid_waypoint_alpha_heavy_swell_001": [
+                    "Avoid waypoint Alpha due to heavy swell."
+                ],
+                "phrase_b026_proceed_bravo_after_squall_001": [
+                    "Proceed to waypoint Bravo after squall passes."
+                ],
+                "phrase_b026_readback_avoid_waypoint_alpha_001": [
+                    "Read back, avoid waypoint Alpha."
+                ]
+            },
+            "must_reject": {
+                "expr_b026_avoid_waypoint_alpha_001": [
+                    "proceed to waypoint Alpha",
+                    "avoid waypoint Bravo"
+                ],
+                "expr_b026_proceed_waypoint_bravo_001": [
+                    "avoid waypoint Bravo",
+                    "proceed to waypoint Alpha"
+                ],
+                "phrase_b026_avoid_waypoint_alpha_heavy_swell_001": [
+                    "Proceed to waypoint Alpha due to heavy swell",
+                    "Avoid waypoint Bravo due to heavy swell"
+                ],
+                "phrase_b026_proceed_bravo_after_squall_001": [
+                    "Proceed to waypoint Alpha after squall passes",
+                    "Avoid waypoint Bravo after squall passes"
+                ],
+                "phrase_b026_readback_avoid_waypoint_alpha_001": [
+                    "Read back proceed to waypoint Alpha",
+                    "Read back avoid waypoint Bravo"
+                ]
+            },
+            "reason": "Waypoint avoid/proceed polarity and Alpha/Bravo names must stay exact."
+        },
+        {
+            "pair": "b026 warning advice cancellation group",
+            "items": [
+                "expr_b026_route_weather_warning_001",
+                "expr_b026_navigation_warning_in_force_001",
+                "expr_b026_recommended_route_cancelled_001",
+                "phrase_b026_navigation_warning_area_charlie_001",
+                "phrase_b026_weather_advice_area_delta_001",
+                "phrase_b026_gale_warning_area_delta_001"
+            ],
+            "must_accept": {
+                "expr_b026_route_weather_warning_001": [
+                    "route weather warning"
+                ],
+                "expr_b026_navigation_warning_in_force_001": [
+                    "navigation warning in force"
+                ],
+                "expr_b026_recommended_route_cancelled_001": [
+                    "recommended route cancelled"
+                ],
+                "phrase_b026_navigation_warning_area_charlie_001": [
+                    "Navigation warning for area Charlie."
+                ],
+                "phrase_b026_weather_advice_area_delta_001": [
+                    "Weather advice for area Delta."
+                ],
+                "phrase_b026_gale_warning_area_delta_001": [
+                    "Gale warning in area Delta."
+                ]
+            },
+            "must_reject": {
+                "expr_b026_route_weather_warning_001": [
+                    "route weather advice",
+                    "route traffic warning"
+                ],
+                "expr_b026_navigation_warning_in_force_001": [
+                    "navigation warning cancelled",
+                    "weather warning in force"
+                ],
+                "expr_b026_recommended_route_cancelled_001": [
+                    "recommended route active",
+                    "recommended route advised"
+                ],
+                "phrase_b026_navigation_warning_area_charlie_001": [
+                    "Navigation warning for area Delta",
+                    "Weather advice for area Charlie"
+                ],
+                "phrase_b026_weather_advice_area_delta_001": [
+                    "Weather warning for area Delta",
+                    "Navigation advice for area Delta"
+                ],
+                "phrase_b026_gale_warning_area_delta_001": [
+                    "Gale warning in area Charlie",
+                    "Gale advice in area Delta"
+                ]
+            },
+            "reason": "Warning/advice/cancelled/in-force status and area names must stay exact."
+        },
+        {
+            "pair": "b026 wind shift direction timing group",
+            "items": [
+                "word_b026_squall_line_001",
+                "expr_b026_wind_shift_northwest_001",
+                "phrase_b026_wind_shift_270_at_noon_001",
+                "phrase_b026_wind_backing_after_1800_001",
+                "phrase_b026_report_when_clear_of_squall_line_001"
+            ],
+            "must_accept": {
+                "word_b026_squall_line_001": [
+                    "squall line"
+                ],
+                "expr_b026_wind_shift_northwest_001": [
+                    "wind shift to north-west"
+                ],
+                "phrase_b026_wind_shift_270_at_noon_001": [
+                    "Wind shift to two seven zero expected at noon."
+                ],
+                "phrase_b026_wind_backing_after_1800_001": [
+                    "Wind backing after one eight zero zero."
+                ],
+                "phrase_b026_report_when_clear_of_squall_line_001": [
+                    "Report when clear of the squall line."
+                ]
+            },
+            "must_reject": {
+                "word_b026_squall_line_001": [
+                    "swell line",
+                    "shore line"
+                ],
+                "expr_b026_wind_shift_northwest_001": [
+                    "wind shift to south-west",
+                    "swell from north-west"
+                ],
+                "phrase_b026_wind_shift_270_at_noon_001": [
+                    "Wind shift to two four zero expected at noon",
+                    "Swell shift to two seven zero expected at noon"
+                ],
+                "phrase_b026_wind_backing_after_1800_001": [
+                    "Wind veering after one eight zero zero",
+                    "Wind backing before one eight zero zero"
+                ],
+                "phrase_b026_report_when_clear_of_squall_line_001": [
+                    "Report when entering the squall line",
+                    "Report when clear of the swell line"
+                ]
+            },
+            "reason": "Wind shift, squall line, direction, backing/veering, and timing boundaries must stay exact."
+        },
+        {
+            "pair": "b026 visibility value and sector group",
+            "items": [
+                "expr_b026_visibility_reduced_two_miles_001",
+                "phrase_b026_visibility_less_one_mile_sector_east_001",
+                "phrase_b026_visibility_improving_after_1600_001",
+                "phrase_b026_readback_visibility_two_miles_001"
+            ],
+            "must_accept": {
+                "expr_b026_visibility_reduced_two_miles_001": [
+                    "visibility reduced to two miles"
+                ],
+                "phrase_b026_visibility_less_one_mile_sector_east_001": [
+                    "Visibility less than one mile in east sector."
+                ],
+                "phrase_b026_visibility_improving_after_1600_001": [
+                    "Visibility improving after one six zero zero."
+                ],
+                "phrase_b026_readback_visibility_two_miles_001": [
+                    "Read back, visibility two miles."
+                ]
+            },
+            "must_reject": {
+                "expr_b026_visibility_reduced_two_miles_001": [
+                    "visibility reduced to five miles",
+                    "visibility improved to two miles"
+                ],
+                "phrase_b026_visibility_less_one_mile_sector_east_001": [
+                    "Visibility more than one mile in east sector",
+                    "Visibility less than two miles in east sector"
+                ],
+                "phrase_b026_visibility_improving_after_1600_001": [
+                    "Visibility reducing after one six zero zero",
+                    "Visibility improving before one six zero zero"
+                ],
+                "phrase_b026_readback_visibility_two_miles_001": [
+                    "Read back visibility five miles",
+                    "Read back swell two metres"
+                ]
+            },
+            "reason": "Visibility values, improving/reducing polarity, sector, and readback value must stay exact."
+        },
+        {
+            "pair": "b026 swell source severity group",
+            "items": [
+                "expr_b026_heavy_swell_from_west_001",
+                "phrase_b026_swell_three_metres_from_southwest_001",
+                "phrase_b026_cross_swell_reported_near_waypoint_bravo_001"
+            ],
+            "must_accept": {
+                "expr_b026_heavy_swell_from_west_001": [
+                    "heavy swell from west"
+                ],
+                "phrase_b026_swell_three_metres_from_southwest_001": [
+                    "Swell three metres from south-west."
+                ],
+                "phrase_b026_cross_swell_reported_near_waypoint_bravo_001": [
+                    "Cross swell reported near waypoint Bravo."
+                ]
+            },
+            "must_reject": {
+                "expr_b026_heavy_swell_from_west_001": [
+                    "heavy swell from east",
+                    "heavy wind from west"
+                ],
+                "phrase_b026_swell_three_metres_from_southwest_001": [
+                    "Swell two metres from south-west",
+                    "Swell three metres from north-west"
+                ],
+                "phrase_b026_cross_swell_reported_near_waypoint_bravo_001": [
+                    "Cross swell reported near waypoint Alpha",
+                    "Cross wind reported near waypoint Bravo"
+                ]
+            },
+            "reason": "Swell height, direction, cross-swell report, and waypoint location must stay exact."
+        },
+        {
+            "pair": "b026 weather-routing lee-shore and shallow-route group",
+            "items": [
+                "word_b026_weather_routing_001",
+                "phrase_b026_avoid_lee_shore_two_miles_001",
+                "phrase_b026_do_not_enter_shallow_water_route_001",
+                "phrase_b026_deep_water_route_recommended_001"
+            ],
+            "must_accept": {
+                "phrase_b026_avoid_lee_shore_two_miles_001": [
+                    "Keep two miles off the lee shore."
+                ],
+                "phrase_b026_do_not_enter_shallow_water_route_001": [
+                    "Do not enter the shallow-water route."
+                ],
+                "phrase_b026_deep_water_route_recommended_001": [
+                    "Deep-water route recommended."
+                ],
+                "word_b026_weather_routing_001": [
+                    "weather routing"
+                ]
+            },
+            "must_reject": {
+                "phrase_b026_avoid_lee_shore_two_miles_001": [
+                    "Keep five miles off the lee shore",
+                    "Keep two miles off the windward shore"
+                ],
+                "phrase_b026_do_not_enter_shallow_water_route_001": [
+                    "Enter the shallow-water route",
+                    "Do not leave the shallow-water route"
+                ],
+                "phrase_b026_deep_water_route_recommended_001": [
+                    "Deep-water route cancelled",
+                    "Shallow-water route recommended"
+                ],
+                "word_b026_weather_routing_001": [
+                    "traffic routing",
+                    "voyage planning"
+                ]
+            },
+            "reason": "Weather routing, lee-shore hazard, shallow/deep-water route, distance, and do-not-enter/recommended polarity must stay exact."
+        },
+        {
+            "pair": "b026 route availability and bearing group",
+            "items": [
+                "phrase_b026_temporary_route_closed_until_0600_001",
+                "phrase_b026_avoid_hazard_bearing_045_alpha_001",
+                "phrase_b026_use_alternate_route_north_of_area_delta_001"
+            ],
+            "must_accept": {
+                "phrase_b026_temporary_route_closed_until_0600_001": [
+                    "Temporary route closed until zero six zero zero."
+                ],
+                "phrase_b026_use_alternate_route_north_of_area_delta_001": [
+                    "Use alternate route north of area Delta."
+                ],
+                "phrase_b026_avoid_hazard_bearing_045_alpha_001": [
+                    "Avoid hazard bearing zero four five from waypoint Alpha."
+                ]
+            },
+            "must_reject": {
+                "phrase_b026_temporary_route_closed_until_0600_001": [
+                    "Temporary route open until zero six zero zero",
+                    "Temporary route closed until zero eight zero zero"
+                ],
+                "phrase_b026_use_alternate_route_north_of_area_delta_001": [
+                    "Use alternate route south of area Delta",
+                    "Use primary route north of area Delta"
+                ],
+                "phrase_b026_avoid_hazard_bearing_045_alpha_001": [
+                    "Avoid hazard bearing zero five four from waypoint Alpha",
+                    "Proceed to hazard bearing zero four five from waypoint Alpha"
+                ]
+            },
+            "reason": "Route availability, temporary status, time, bearing number, side, and waypoint/area must stay exact."
         }
     ],
     "items": [
@@ -19973,6 +20333,426 @@
                 "Read back wait for pilot launch on channel one two",
                 "Read back wait for customs launch on channel one three",
                 "Read back proceed for customs launch on channel one two"
+            ]
+        },
+        {
+            "id": "word_b026_weather_routing_001",
+            "target_text": "weather routing",
+            "should_accept": [
+                "weather routing"
+            ],
+            "should_reject": [
+                "traffic routing",
+                "voyage planning",
+                "route warning"
+            ]
+        },
+        {
+            "id": "word_b026_squall_line_001",
+            "target_text": "squall line",
+            "should_accept": [
+                "squall line"
+            ],
+            "should_reject": [
+                "swell line",
+                "shore line",
+                "traffic line"
+            ]
+        },
+        {
+            "id": "expr_b026_route_weather_warning_001",
+            "target_text": "route weather warning",
+            "should_accept": [
+                "route weather warning"
+            ],
+            "should_reject": [
+                "route weather advice",
+                "route traffic warning",
+                "weather route clear"
+            ]
+        },
+        {
+            "id": "expr_b026_navigation_warning_in_force_001",
+            "target_text": "navigation warning in force",
+            "should_accept": [
+                "navigation warning in force"
+            ],
+            "should_reject": [
+                "navigation warning cancelled",
+                "weather warning in force",
+                "navigation advice in force"
+            ]
+        },
+        {
+            "id": "expr_b026_alter_route_to_starboard_001",
+            "target_text": "alter route to starboard",
+            "should_accept": [
+                "alter route to starboard"
+            ],
+            "should_reject": [
+                "alter route to port",
+                "alter course to starboard",
+                "keep route to starboard"
+            ]
+        },
+        {
+            "id": "expr_b026_alter_route_to_port_001",
+            "target_text": "alter route to port",
+            "should_accept": [
+                "alter route to port"
+            ],
+            "should_reject": [
+                "alter route to starboard",
+                "alter course to port",
+                "keep route to port"
+            ]
+        },
+        {
+            "id": "expr_b026_avoid_waypoint_alpha_001",
+            "target_text": "avoid waypoint Alpha",
+            "should_accept": [
+                "avoid waypoint Alpha"
+            ],
+            "should_reject": [
+                "proceed to waypoint Alpha",
+                "avoid waypoint Bravo",
+                "cancel waypoint Alpha"
+            ]
+        },
+        {
+            "id": "expr_b026_proceed_waypoint_bravo_001",
+            "target_text": "proceed to waypoint Bravo",
+            "should_accept": [
+                "proceed to waypoint Bravo"
+            ],
+            "should_reject": [
+                "avoid waypoint Bravo",
+                "proceed to waypoint Alpha",
+                "hold at waypoint Bravo"
+            ]
+        },
+        {
+            "id": "expr_b026_wind_shift_northwest_001",
+            "target_text": "wind shift to north-west",
+            "should_accept": [
+                "wind shift to north-west"
+            ],
+            "should_reject": [
+                "wind shift to south-west",
+                "swell from north-west",
+                "wind steady north-west"
+            ]
+        },
+        {
+            "id": "expr_b026_visibility_reduced_two_miles_001",
+            "target_text": "visibility reduced to two miles",
+            "should_accept": [
+                "visibility reduced to two miles"
+            ],
+            "should_reject": [
+                "visibility reduced to five miles",
+                "visibility improved to two miles",
+                "swell reduced to two metres"
+            ]
+        },
+        {
+            "id": "expr_b026_heavy_swell_from_west_001",
+            "target_text": "heavy swell from west",
+            "should_accept": [
+                "heavy swell from west"
+            ],
+            "should_reject": [
+                "heavy swell from east",
+                "heavy wind from west",
+                "moderate swell from west"
+            ]
+        },
+        {
+            "id": "expr_b026_recommended_route_cancelled_001",
+            "target_text": "recommended route cancelled",
+            "should_accept": [
+                "recommended route cancelled"
+            ],
+            "should_reject": [
+                "recommended route active",
+                "recommended route advised",
+                "weather warning cancelled"
+            ]
+        },
+        {
+            "id": "phrase_b026_alter_route_090_weather_001",
+            "target_text": "Alter route to zero nine zero due to weather.",
+            "should_accept": [
+                "Alter route to zero nine zero due to weather."
+            ],
+            "should_reject": [
+                "Alter route to zero six zero due to weather",
+                "Alter course to zero nine zero due to traffic",
+                "Maintain route zero nine zero due to weather"
+            ]
+        },
+        {
+            "id": "phrase_b026_alter_route_120_weather_001",
+            "target_text": "Alter route to one two zero due to weather.",
+            "should_accept": [
+                "Alter route to one two zero due to weather."
+            ],
+            "should_reject": [
+                "Alter route to zero nine zero due to weather",
+                "Alter course to one two zero due to traffic",
+                "Maintain route one two zero due to weather"
+            ]
+        },
+        {
+            "id": "phrase_b026_avoid_lee_shore_two_miles_001",
+            "target_text": "Keep two miles off the lee shore.",
+            "should_accept": [
+                "Keep two miles off the lee shore."
+            ],
+            "should_reject": [
+                "Keep five miles off the lee shore",
+                "Keep two miles off the windward shore",
+                "Proceed to the lee shore"
+            ]
+        },
+        {
+            "id": "phrase_b026_avoid_waypoint_alpha_heavy_swell_001",
+            "target_text": "Avoid waypoint Alpha due to heavy swell.",
+            "should_accept": [
+                "Avoid waypoint Alpha due to heavy swell."
+            ],
+            "should_reject": [
+                "Proceed to waypoint Alpha due to heavy swell",
+                "Avoid waypoint Bravo due to heavy swell",
+                "Avoid waypoint Alpha due to heavy traffic"
+            ]
+        },
+        {
+            "id": "phrase_b026_proceed_bravo_after_squall_001",
+            "target_text": "Proceed to waypoint Bravo after squall passes.",
+            "should_accept": [
+                "Proceed to waypoint Bravo after squall passes."
+            ],
+            "should_reject": [
+                "Proceed to waypoint Alpha after squall passes",
+                "Avoid waypoint Bravo after squall passes",
+                "Proceed to waypoint Bravo before squall passes"
+            ]
+        },
+        {
+            "id": "phrase_b026_navigation_warning_area_charlie_001",
+            "target_text": "Navigation warning for area Charlie.",
+            "should_accept": [
+                "Navigation warning for area Charlie."
+            ],
+            "should_reject": [
+                "Navigation warning for area Delta",
+                "Weather advice for area Charlie",
+                "Navigation warning cancelled for area Charlie"
+            ]
+        },
+        {
+            "id": "phrase_b026_weather_advice_area_delta_001",
+            "target_text": "Weather advice for area Delta.",
+            "should_accept": [
+                "Weather advice for area Delta."
+            ],
+            "should_reject": [
+                "Weather warning for area Delta",
+                "Navigation advice for area Delta",
+                "Weather advice for area Charlie"
+            ]
+        },
+        {
+            "id": "phrase_b026_gale_warning_area_delta_001",
+            "target_text": "Gale warning in area Delta.",
+            "should_accept": [
+                "Gale warning in area Delta."
+            ],
+            "should_reject": [
+                "Gale warning in area Charlie",
+                "Gale advice in area Delta",
+                "Gale warning cancelled in area Delta"
+            ]
+        },
+        {
+            "id": "phrase_b026_wind_shift_270_at_noon_001",
+            "target_text": "Wind shift to two seven zero expected at noon.",
+            "should_accept": [
+                "Wind shift to two seven zero expected at noon."
+            ],
+            "should_reject": [
+                "Wind shift to two four zero expected at noon",
+                "Swell shift to two seven zero expected at noon",
+                "Wind shift to two seven zero expected at midnight"
+            ]
+        },
+        {
+            "id": "phrase_b026_wind_backing_after_1800_001",
+            "target_text": "Wind backing after one eight zero zero.",
+            "should_accept": [
+                "Wind backing after one eight zero zero."
+            ],
+            "should_reject": [
+                "Wind veering after one eight zero zero",
+                "Wind backing before one eight zero zero",
+                "Swell backing after one eight zero zero"
+            ]
+        },
+        {
+            "id": "phrase_b026_visibility_less_one_mile_sector_east_001",
+            "target_text": "Visibility less than one mile in east sector.",
+            "should_accept": [
+                "Visibility less than one mile in east sector."
+            ],
+            "should_reject": [
+                "Visibility more than one mile in east sector",
+                "Visibility less than two miles in east sector",
+                "Visibility less than one mile in west sector"
+            ]
+        },
+        {
+            "id": "phrase_b026_visibility_improving_after_1600_001",
+            "target_text": "Visibility improving after one six zero zero.",
+            "should_accept": [
+                "Visibility improving after one six zero zero."
+            ],
+            "should_reject": [
+                "Visibility reducing after one six zero zero",
+                "Visibility improving before one six zero zero",
+                "Swell improving after one six zero zero"
+            ]
+        },
+        {
+            "id": "phrase_b026_swell_three_metres_from_southwest_001",
+            "target_text": "Swell three metres from south-west.",
+            "should_accept": [
+                "Swell three metres from south-west."
+            ],
+            "should_reject": [
+                "Swell two metres from south-west",
+                "Swell three metres from north-west",
+                "Wind three metres from south-west"
+            ]
+        },
+        {
+            "id": "phrase_b026_cross_swell_reported_near_waypoint_bravo_001",
+            "target_text": "Cross swell reported near waypoint Bravo.",
+            "should_accept": [
+                "Cross swell reported near waypoint Bravo."
+            ],
+            "should_reject": [
+                "Cross swell reported near waypoint Alpha",
+                "Cross wind reported near waypoint Bravo",
+                "Swell clear near waypoint Bravo"
+            ]
+        },
+        {
+            "id": "phrase_b026_do_not_enter_shallow_water_route_001",
+            "target_text": "Do not enter the shallow-water route.",
+            "should_accept": [
+                "Do not enter the shallow-water route."
+            ],
+            "should_reject": [
+                "Enter the shallow-water route",
+                "Do not leave the shallow-water route",
+                "Do not enter the deep-water route"
+            ]
+        },
+        {
+            "id": "phrase_b026_deep_water_route_recommended_001",
+            "target_text": "Deep-water route recommended.",
+            "should_accept": [
+                "Deep-water route recommended."
+            ],
+            "should_reject": [
+                "Deep-water route cancelled",
+                "Shallow-water route recommended",
+                "Deep-water route prohibited"
+            ]
+        },
+        {
+            "id": "phrase_b026_temporary_route_closed_until_0600_001",
+            "target_text": "Temporary route closed until zero six zero zero.",
+            "should_accept": [
+                "Temporary route closed until zero six zero zero."
+            ],
+            "should_reject": [
+                "Temporary route open until zero six zero zero",
+                "Temporary route closed until zero eight zero zero",
+                "Permanent route closed until zero six zero zero"
+            ]
+        },
+        {
+            "id": "phrase_b026_readback_alter_route_090_001",
+            "target_text": "Read back, alter route to zero nine zero.",
+            "should_accept": [
+                "Read back, alter route to zero nine zero."
+            ],
+            "should_reject": [
+                "Read back alter route to one two zero",
+                "Read back maintain route zero nine zero",
+                "Read back alter course to zero nine zero"
+            ]
+        },
+        {
+            "id": "phrase_b026_readback_avoid_waypoint_alpha_001",
+            "target_text": "Read back, avoid waypoint Alpha.",
+            "should_accept": [
+                "Read back, avoid waypoint Alpha."
+            ],
+            "should_reject": [
+                "Read back proceed to waypoint Alpha",
+                "Read back avoid waypoint Bravo",
+                "Read back cancel waypoint Alpha"
+            ]
+        },
+        {
+            "id": "phrase_b026_readback_visibility_two_miles_001",
+            "target_text": "Read back, visibility two miles.",
+            "should_accept": [
+                "Read back, visibility two miles."
+            ],
+            "should_reject": [
+                "Read back visibility five miles",
+                "Read back swell two metres",
+                "Read back visibility improving"
+            ]
+        },
+        {
+            "id": "phrase_b026_report_when_clear_of_squall_line_001",
+            "target_text": "Report when clear of the squall line.",
+            "should_accept": [
+                "Report when clear of the squall line."
+            ],
+            "should_reject": [
+                "Report when entering the squall line",
+                "Report when clear of the swell line",
+                "Report when clear of traffic line"
+            ]
+        },
+        {
+            "id": "phrase_b026_avoid_hazard_bearing_045_alpha_001",
+            "target_text": "Avoid hazard bearing zero four five from waypoint Alpha.",
+            "should_accept": [
+                "Avoid hazard bearing zero four five from waypoint Alpha."
+            ],
+            "should_reject": [
+                "Avoid hazard bearing zero five four from waypoint Alpha",
+                "Proceed to hazard bearing zero four five from waypoint Alpha",
+                "Avoid hazard bearing zero four five from waypoint Bravo"
+            ]
+        },
+        {
+            "id": "phrase_b026_use_alternate_route_north_of_area_delta_001",
+            "target_text": "Use alternate route north of area Delta.",
+            "should_accept": [
+                "Use alternate route north of area Delta."
+            ],
+            "should_reject": [
+                "Use alternate route south of area Delta",
+                "Use primary route north of area Delta",
+                "Use alternate route north of area Charlie"
             ]
         }
     ],

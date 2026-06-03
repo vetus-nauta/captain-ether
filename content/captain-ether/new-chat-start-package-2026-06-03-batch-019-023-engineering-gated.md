@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 025 production-synced and release-ready at the 900-item baseline; Batch 026 acceptance QA passed and is ready for staged merge
+Canonical status: Batch 026 merged locally/GitHub at the 935-item baseline; production remains at 900 until separate sync task
 
 ## 1. Read This First
 
@@ -26,34 +26,35 @@ state.
 
 ## 2. Current Playable State
 
-Local/GitHub/production playable baseline is now Batch 025 after CE-0167 production sync.
+Local/GitHub playable baseline is now Batch 026 after CE-0172 staged merge. Production is still Batch 025 until a separate sync task.
 
 ```text
-local_github_starter_items=900
-local_github_grammar_patterns=481
-local_github_qa_items=900
-local_github_dangerous_pairs=208
+local_github_starter_items=935
+local_github_grammar_patterns=516
+local_github_qa_items=935
+local_github_dangerous_pairs=216
 batch_024_status=merged
 batch_025_status=merged
+batch_026_status=merged
 production_starter_items=900
 production_grammar_patterns=481
 production_qa_items=900
 production_dangerous_pairs=208
-production_delta_items=0
+production_delta_items=-35
 production_route=HTTP 200
 anonymous_start_watch=HTTP 401 Login required
 ```
 
 ## 3. Current Draft Backlog
 
-Batch 026 exists as an isolated draft only. It is not merged into starter/QA registry and is not deployed.
+Batch 026 is merged locally/GitHub. There is no remaining draft backlog.
 
 ```text
-draft_backlog_items=35
-draft_backlog_grammar_patterns=35
-draft_backlog_qa_items=35
-draft_backlog_dangerous_pairs=8
-batch_026_status=draft
+draft_backlog_items=0
+draft_backlog_grammar_patterns=0
+draft_backlog_qa_items=0
+draft_backlog_dangerous_pairs=0
+batch_026_status=merged
 ```
 
 ## 4. Latest Closed Gates
@@ -97,6 +98,7 @@ CE-0168 Batch 025 Production Release Readiness QA: PASS / RELEASE_READY_FOR_CURR
 CE-0169 Batch 026 Weather-Routing / Navigation-Warning Draft Gate: DONE / DRAFT_READY_FOR_LINGUIST_ENGINEERING_GATE
 CE-0170 Batch 026 Linguist / Engineering Gate: PASS / READY_FOR_ACCEPTANCE_QA
 CE-0171 Batch 026 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
+CE-0172 Batch 026 Staged Merge Preparation: MERGED_LOCALLY / PASS
 ```
 
 Important reports:
@@ -136,6 +138,7 @@ content/captain-ether/roles/content-producer/reports/batch-026-weather-routing-n
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0169-batch-026-weather-routing-navigation-warning-draft-2026-06-03.md
 content/captain-ether/roles/sea-speak-linguist/reports/batch-026-weather-routing-navigation-warning-reinforcement-risk-review-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0171-batch-026-acceptance-qa-merge-decision-2026-06-03.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0172-batch-026-staged-merge-preparation-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -143,33 +146,33 @@ content/captain-ether/roles/qa/reports/sprint-ce-0171-batch-026-acceptance-qa-me
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0172-batch-026-staged-merge-preparation-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0173-batch-026-post-merge-qa-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run Batch 026 staged merge into local/GitHub only. No production deploy in this task.
+Run Batch 026 post-merge QA for the 935-item local/GitHub baseline. No production deploy in this task.
 ```
 
 Expected Set B local/GitHub baseline:
 
 ```text
-local_github_starter_items=900
-local_github_grammar_patterns=481
-local_github_qa_items=900
-local_github_dangerous_pairs=208
+local_github_starter_items=935
+local_github_grammar_patterns=516
+local_github_qa_items=935
+local_github_dangerous_pairs=216
 production_starter_items=900
 production_grammar_patterns=481
 production_qa_items=900
 production_dangerous_pairs=208
-production_delta_items=0
-draft_backlog_items=35
-draft_backlog_grammar_patterns=35
-draft_backlog_dangerous_pairs=8
+production_delta_items=-35
+draft_backlog_items=0
+draft_backlog_grammar_patterns=0
+draft_backlog_dangerous_pairs=0
 ```
 
-Production is synced and release-ready at 900. Batch 026 remains isolated draft until CE-0172 merges it locally/GitHub; no production deploy in CE-0172.
+Production is synced and release-ready at 900, but local/GitHub is now 35 items ahead. No production deploy until a separate sync task after post-merge QA.
 
 ## 6. Recommended Merge Plan After QA
 
@@ -179,8 +182,8 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. CE-0172 Batch 026 Staged Merge Preparation.
-2. Then run Batch 026 post-merge QA, production sync, release-readiness QA if merge gates pass.
+1. CE-0173 Batch 026 Post-Merge QA.
+2. Then run Batch 026 production sync decision if post-merge QA passes.
 ```
 
 This keeps production parity checkpoints small enough to debug.
