@@ -23,6 +23,7 @@ Historical duplicate accepted-answer WARN (9) cleaned and synced to production.
 Big sprint CE-0151 organized for production hardening and M5 expansion planning.
 CE-0152 authenticated playthrough is AUTH_BLOCKED because production email-code delivery returned HTTP 500 and no QA session is available.
 CE-0153 production runtime and UX edge smoke passed; checked shell/static assets/service worker/manifest/registry/protected API privacy with no deploy.
+CE-0154 M5 scope locked: +170 items to 1000 across batches 024-028; next cycle is isolated Batch 024 draft gate with 35 engine-room/damage-control items.
 local_github_production_starter_items=830
 local_github_production_grammar_patterns=411
 local_github_production_qa_items=830
@@ -30,7 +31,7 @@ local_github_production_dangerous_pairs=193
 validator_warn_count=0
 draft_backlog_items=0
 draft_backlog_grammar_patterns=0
-Next task: CE-0154 M5 Content Expansion Scope Design
+Next task: CE-0155 Batch 024 Draft Gate
 ```
 
 Older sections below preserve historical context and may mention earlier

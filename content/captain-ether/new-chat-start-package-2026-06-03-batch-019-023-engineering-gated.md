@@ -77,6 +77,7 @@ CE-0150 Starter Duplicate Accepted Answers Production Sync: CLOSED / PASS / PROD
 CE-0151 Big Sprint Production Hardening And Expansion Plan: ORGANIZED / READY_TO_EXECUTE
 CE-0152 Authenticated Browser / Manual Playthrough Smoke: AUTH_BLOCKED_WITH_NEXT_STEPS
 CE-0153 Production Runtime And UX Edge Smoke: PASS / RUNTIME_UX_SMOKE_CLEAN
+CE-0154 M5 Content Expansion Scope Design: DONE / M5_SCOPE_LOCKED
 ```
 
 Important reports:
@@ -97,6 +98,7 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0150-starter-dup
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0151-big-sprint-production-hardening-and-expansion-plan-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0152-authenticated-browser-playthrough-smoke-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0153-production-runtime-ux-edge-smoke-2026-06-03.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0154-m5-content-expansion-scope-design-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -104,13 +106,13 @@ content/captain-ether/roles/qa/reports/sprint-ce-0153-production-runtime-ux-edge
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0154-m5-content-expansion-scope-design-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0155-batch-024-draft-gate-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Design the M5 expansion wave after the 830-item production baseline.
+Draft Batch 024 engine-room and damage-control communications in isolation.
 ```
 
 Expected Set B local/GitHub baseline:
@@ -132,10 +134,9 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. CE-0154 M5 Content Expansion Scope Design.
-2. CE-0155 Batch 024 Draft Gate.
-3. CE-0156 Batch 024 Linguist / Engineering Gate.
-4. CE-0157 Batch 024 Acceptance QA / Merge Decision.
+1. CE-0155 Batch 024 Draft Gate.
+2. CE-0156 Batch 024 Linguist / Engineering Gate.
+3. CE-0157 Batch 024 Acceptance QA / Merge Decision.
 ```
 
 This keeps production parity checkpoints small enough to debug.

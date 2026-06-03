@@ -3,7 +3,7 @@
 Date: 2026-06-03
 Owner: Director-Engineer / Content Producer / Sea Speak Linguist
 Scope: Captain Ether next expansion wave planning only
-Status: PLANNED
+Status: DONE / M5_SCOPE_LOCKED
 
 ## Target
 
@@ -20,3 +20,18 @@ Batch 028: exam-style mixed review and minimal-pair reinforcement
 ```
 
 No content draft, merge, or production deploy is authorized by this planning task.
+
+## Result
+
+```text
+m5_scope=locked
+m5_total_new_items=170
+m5_target_post_count=1000
+batch_024=engine-room and damage-control communications, 35 items
+batch_025=port-services and clearance communications, 35 items
+batch_026=weather-routing and navigation-warning reinforcement, 35 items
+batch_027=SAR coordination and casualty-transfer reinforcement, 35 items
+batch_028=exam-style mixed review and minimal-pair reinforcement, 30 items
+production_deploy=false
+next_task=CE-0155 Batch 024 Draft Gate
+```

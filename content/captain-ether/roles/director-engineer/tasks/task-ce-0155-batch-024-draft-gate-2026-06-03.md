@@ -21,9 +21,9 @@ Proposed focus:
 
 ```text
 engine-room and damage-control communications
-items=40-50
-grammar_patterns=35-50
-dangerous_pairs=8-12
+items=35
+grammar_patterns=25-35
+dangerous_pairs=8-10
 ```
 
 No merge or production deploy is authorized by this draft task.
