@@ -6148,6 +6148,1007 @@
                 ]
             },
             "reason": "Boarding safety polarity must not reverse."
+        },
+        {
+            "pair": "b021 safety boundary group 1",
+            "items": [
+                "word_b021_call_sign_001",
+                "word_b021_station_name_001",
+                "word_b021_working_channel_001",
+                "word_b021_distress_channel_001",
+                "word_b021_message_marker_001"
+            ],
+            "must_accept": {
+                "word_b021_call_sign_001": [
+                    "vessel call sign"
+                ],
+                "word_b021_station_name_001": [
+                    "station name"
+                ],
+                "word_b021_working_channel_001": [
+                    "working channel"
+                ],
+                "word_b021_distress_channel_001": [
+                    "distress channel"
+                ],
+                "word_b021_message_marker_001": [
+                    "message marker"
+                ]
+            },
+            "must_reject": {
+                "word_b021_call_sign_001": [
+                    "station name",
+                    "channel number"
+                ],
+                "word_b021_station_name_001": [
+                    "vessel call sign",
+                    "message marker"
+                ],
+                "word_b021_working_channel_001": [
+                    "distress channel",
+                    "weather channel"
+                ],
+                "word_b021_distress_channel_001": [
+                    "working channel",
+                    "traffic channel"
+                ],
+                "word_b021_message_marker_001": [
+                    "message received",
+                    "station marker"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b021 safety boundary group 2",
+            "items": [
+                "word_b021_repetition_001",
+                "word_b021_correction_001",
+                "word_b021_relay_001",
+                "word_b021_interference_001",
+                "word_b021_priority_001"
+            ],
+            "must_accept": {
+                "word_b021_repetition_001": [
+                    "repetition"
+                ],
+                "word_b021_correction_001": [
+                    "correction marker"
+                ],
+                "word_b021_relay_001": [
+                    "distress relay"
+                ],
+                "word_b021_interference_001": [
+                    "interference"
+                ],
+                "word_b021_priority_001": [
+                    "priority"
+                ]
+            },
+            "must_reject": {
+                "word_b021_repetition_001": [
+                    "correction marker",
+                    "cancellation"
+                ],
+                "word_b021_correction_001": [
+                    "repetition",
+                    "confirmation"
+                ],
+                "word_b021_relay_001": [
+                    "postpone",
+                    "reply"
+                ],
+                "word_b021_interference_001": [
+                    "silence",
+                    "weak signal"
+                ],
+                "word_b021_priority_001": [
+                    "routine",
+                    "security"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b021 safety boundary group 3",
+            "items": [
+                "expr_b021_say_again_001",
+                "expr_b021_speak_slowly_001",
+                "expr_b021_wait_one_001",
+                "expr_b021_switch_channel_001",
+                "expr_b021_read_back_001"
+            ],
+            "must_accept": {
+                "expr_b021_say_again_001": [
+                    "say again slowly"
+                ],
+                "expr_b021_speak_slowly_001": [
+                    "speak slowly"
+                ],
+                "expr_b021_wait_one_001": [
+                    "wait one"
+                ],
+                "expr_b021_switch_channel_001": [
+                    "switch channel"
+                ],
+                "expr_b021_read_back_001": [
+                    "read back instruction"
+                ]
+            },
+            "must_reject": {
+                "expr_b021_say_again_001": [
+                    "stand by",
+                    "message received"
+                ],
+                "expr_b021_speak_slowly_001": [
+                    "speak louder",
+                    "stand by"
+                ],
+                "expr_b021_wait_one_001": [
+                    "wait two",
+                    "proceed one"
+                ],
+                "expr_b021_switch_channel_001": [
+                    "hold channel",
+                    "close channel"
+                ],
+                "expr_b021_read_back_001": [
+                    "say again slowly",
+                    "stand by"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b021 safety boundary group 4",
+            "items": [
+                "expr_b021_correction_follows_001",
+                "expr_b021_message_received_001",
+                "expr_b021_standing_by_001",
+                "expr_b021_end_of_message_001",
+                "expr_b021_relay_message_001"
+            ],
+            "must_accept": {
+                "expr_b021_correction_follows_001": [
+                    "correction follows"
+                ],
+                "expr_b021_message_received_001": [
+                    "message received"
+                ],
+                "expr_b021_standing_by_001": [
+                    "standing by on channel"
+                ],
+                "expr_b021_end_of_message_001": [
+                    "end of message"
+                ],
+                "expr_b021_relay_message_001": [
+                    "relay message"
+                ]
+            },
+            "must_reject": {
+                "expr_b021_correction_follows_001": [
+                    "repetition follows",
+                    "question follows"
+                ],
+                "expr_b021_message_received_001": [
+                    "message repeated",
+                    "message cancelled"
+                ],
+                "expr_b021_standing_by_001": [
+                    "stand clear",
+                    "shutting down"
+                ],
+                "expr_b021_end_of_message_001": [
+                    "start of message",
+                    "end of watch"
+                ],
+                "expr_b021_relay_message_001": [
+                    "store message",
+                    "reply message"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b021 safety boundary group 5",
+            "items": [
+                "phrase_b021_all_stations_this_is_aurora_001",
+                "phrase_b021_switch_to_channel_one_two_001",
+                "phrase_b021_say_again_last_message_001",
+                "phrase_b021_speak_slowly_signal_weak_001",
+                "phrase_b021_read_back_course_two_seven_zero_001"
+            ],
+            "must_accept": {
+                "phrase_b021_all_stations_this_is_aurora_001": [
+                    "All stations, this is Aurora."
+                ],
+                "phrase_b021_switch_to_channel_one_two_001": [
+                    "Switch to working channel one two."
+                ],
+                "phrase_b021_say_again_last_message_001": [
+                    "Say again last message."
+                ],
+                "phrase_b021_speak_slowly_signal_weak_001": [
+                    "Speak slowly, signal weak."
+                ],
+                "phrase_b021_read_back_course_two_seven_zero_001": [
+                    "Read back course two seven zero."
+                ]
+            },
+            "must_reject": {
+                "phrase_b021_all_stations_this_is_aurora_001": [
+                    "All stations this is Orion",
+                    "Port Control this is Aurora"
+                ],
+                "phrase_b021_switch_to_channel_one_two_001": [
+                    "Switch to channel one six",
+                    "Hold channel one two"
+                ],
+                "phrase_b021_say_again_last_message_001": [
+                    "Read back last message",
+                    "Cancel last message"
+                ],
+                "phrase_b021_speak_slowly_signal_weak_001": [
+                    "Speak louder signal weak",
+                    "Speak slowly signal clear"
+                ],
+                "phrase_b021_read_back_course_two_seven_zero_001": [
+                    "Read back course two eight zero",
+                    "Say again course two seven zero"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b021 safety boundary group 6",
+            "items": [
+                "phrase_b021_correction_channel_one_two_001",
+                "phrase_b021_message_received_standing_by_001",
+                "phrase_b021_relay_message_to_coast_station_001",
+                "phrase_b021_interference_on_working_channel_001",
+                "phrase_b021_wait_one_checking_position_001"
+            ],
+            "must_accept": {
+                "phrase_b021_correction_channel_one_two_001": [
+                    "Correction, channel one two."
+                ],
+                "phrase_b021_message_received_standing_by_001": [
+                    "Message received, standing by."
+                ],
+                "phrase_b021_relay_message_to_coast_station_001": [
+                    "Relay message to coast station."
+                ],
+                "phrase_b021_interference_on_working_channel_001": [
+                    "Interference on working channel."
+                ],
+                "phrase_b021_wait_one_checking_position_001": [
+                    "Wait one, checking position."
+                ]
+            },
+            "must_reject": {
+                "phrase_b021_correction_channel_one_two_001": [
+                    "Repetition channel one two",
+                    "Correction channel one six"
+                ],
+                "phrase_b021_message_received_standing_by_001": [
+                    "Message cancelled standing by",
+                    "Message received shutting down"
+                ],
+                "phrase_b021_relay_message_to_coast_station_001": [
+                    "Store message at coast station",
+                    "Relay message to pilot station"
+                ],
+                "phrase_b021_interference_on_working_channel_001": [
+                    "Silence on working channel",
+                    "Interference on distress channel"
+                ],
+                "phrase_b021_wait_one_checking_position_001": [
+                    "Wait two checking position",
+                    "Wait one reporting position"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b021 safety boundary group 7",
+            "items": [
+                "phrase_b021_message_marker_question_001",
+                "phrase_b021_priority_message_follows_001",
+                "phrase_b021_readback_incorrect_correcting_001",
+                "phrase_b021_end_of_message_switching_channel_one_two_001",
+                "phrase_b021_relay_distress_message_to_all_stations_001"
+            ],
+            "must_accept": {
+                "phrase_b021_message_marker_question_001": [
+                    "Message marker, question."
+                ],
+                "phrase_b021_priority_message_follows_001": [
+                    "Priority message follows."
+                ],
+                "phrase_b021_readback_incorrect_correcting_001": [
+                    "Readback incorrect, correcting."
+                ],
+                "phrase_b021_end_of_message_switching_channel_one_two_001": [
+                    "End of message, switching channel one two."
+                ],
+                "phrase_b021_relay_distress_message_to_all_stations_001": [
+                    "Relay distress message to all stations."
+                ]
+            },
+            "must_reject": {
+                "phrase_b021_message_marker_question_001": [
+                    "Message marker answer",
+                    "Message received question"
+                ],
+                "phrase_b021_priority_message_follows_001": [
+                    "Routine message follows",
+                    "Priority message cancelled"
+                ],
+                "phrase_b021_readback_incorrect_correcting_001": [
+                    "Readback correct correcting",
+                    "Readback incorrect cancelling"
+                ],
+                "phrase_b021_end_of_message_switching_channel_one_two_001": [
+                    "Start of message switching channel one two",
+                    "End of message switching channel one six"
+                ],
+                "phrase_b021_relay_distress_message_to_all_stations_001": [
+                    "Store distress message for all stations",
+                    "Relay urgency message to all stations"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b022 safety boundary group 1",
+            "items": [
+                "word_b022_cardinal_mark_001",
+                "word_b022_lateral_mark_001",
+                "word_b022_isolated_danger_001",
+                "word_b022_safe_water_mark_001",
+                "word_b022_special_mark_001"
+            ],
+            "must_accept": {
+                "word_b022_cardinal_mark_001": [
+                    "cardinal mark"
+                ],
+                "word_b022_lateral_mark_001": [
+                    "lateral mark"
+                ],
+                "word_b022_isolated_danger_001": [
+                    "isolated danger"
+                ],
+                "word_b022_safe_water_mark_001": [
+                    "safe water mark"
+                ],
+                "word_b022_special_mark_001": [
+                    "special mark"
+                ]
+            },
+            "must_reject": {
+                "word_b022_cardinal_mark_001": [
+                    "lateral mark",
+                    "special mark"
+                ],
+                "word_b022_lateral_mark_001": [
+                    "cardinal mark",
+                    "safe water mark"
+                ],
+                "word_b022_isolated_danger_001": [
+                    "safe water",
+                    "special mark"
+                ],
+                "word_b022_safe_water_mark_001": [
+                    "isolated danger mark",
+                    "special mark"
+                ],
+                "word_b022_special_mark_001": [
+                    "safe water mark",
+                    "cardinal mark"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b022 safety boundary group 2",
+            "items": [
+                "word_b022_leading_lights_001",
+                "word_b022_sector_light_001",
+                "word_b022_fog_signal_001",
+                "word_b022_shoal_001",
+                "word_b022_wreck_001"
+            ],
+            "must_accept": {
+                "word_b022_leading_lights_001": [
+                    "leading lights"
+                ],
+                "word_b022_sector_light_001": [
+                    "sector light"
+                ],
+                "word_b022_fog_signal_001": [
+                    "fog signal"
+                ],
+                "word_b022_shoal_001": [
+                    "shoal"
+                ],
+                "word_b022_wreck_001": [
+                    "wreck"
+                ]
+            },
+            "must_reject": {
+                "word_b022_leading_lights_001": [
+                    "anchor lights",
+                    "sector light"
+                ],
+                "word_b022_sector_light_001": [
+                    "leading lights",
+                    "anchor light"
+                ],
+                "word_b022_fog_signal_001": [
+                    "sound signal only",
+                    "distress signal"
+                ],
+                "word_b022_shoal_001": [
+                    "shore",
+                    "school"
+                ],
+                "word_b022_wreck_001": [
+                    "rock",
+                    "wake"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b022 safety boundary group 3",
+            "items": [
+                "expr_b022_keep_to_starboard_001",
+                "expr_b022_pass_port_to_port_001",
+                "expr_b022_buoy_missing_001",
+                "expr_b022_light_unlit_001",
+                "expr_b022_fog_signal_heard_001"
+            ],
+            "must_accept": {
+                "expr_b022_keep_to_starboard_001": [
+                    "keep to starboard"
+                ],
+                "expr_b022_pass_port_to_port_001": [
+                    "pass port to port"
+                ],
+                "expr_b022_buoy_missing_001": [
+                    "buoy missing"
+                ],
+                "expr_b022_light_unlit_001": [
+                    "light unlit"
+                ],
+                "expr_b022_fog_signal_heard_001": [
+                    "fog signal heard"
+                ]
+            },
+            "must_reject": {
+                "expr_b022_keep_to_starboard_001": [
+                    "keep to port",
+                    "turn to starboard"
+                ],
+                "expr_b022_pass_port_to_port_001": [
+                    "pass starboard to starboard",
+                    "pass port to starboard"
+                ],
+                "expr_b022_buoy_missing_001": [
+                    "buoy sighted",
+                    "light missing"
+                ],
+                "expr_b022_light_unlit_001": [
+                    "light lit",
+                    "buoy unlit"
+                ],
+                "expr_b022_fog_signal_heard_001": [
+                    "distress signal heard",
+                    "fog signal not heard"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b022 safety boundary group 4",
+            "items": [
+                "expr_b022_visibility_reduced_001",
+                "expr_b022_wreck_reported_001",
+                "expr_b022_shoal_ahead_001",
+                "expr_b022_alter_to_port_001",
+                "expr_b022_alter_to_starboard_001"
+            ],
+            "must_accept": {
+                "expr_b022_visibility_reduced_001": [
+                    "visibility reduced"
+                ],
+                "expr_b022_wreck_reported_001": [
+                    "wreck reported"
+                ],
+                "expr_b022_shoal_ahead_001": [
+                    "shoal ahead"
+                ],
+                "expr_b022_alter_to_port_001": [
+                    "alter to port"
+                ],
+                "expr_b022_alter_to_starboard_001": [
+                    "alter to starboard"
+                ]
+            },
+            "must_reject": {
+                "expr_b022_visibility_reduced_001": [
+                    "visibility good",
+                    "speed reduced"
+                ],
+                "expr_b022_wreck_reported_001": [
+                    "rock reported",
+                    "wreck cleared"
+                ],
+                "expr_b022_shoal_ahead_001": [
+                    "shore ahead",
+                    "clear ahead"
+                ],
+                "expr_b022_alter_to_port_001": [
+                    "alter to starboard",
+                    "keep to port"
+                ],
+                "expr_b022_alter_to_starboard_001": [
+                    "alter to port",
+                    "keep to starboard"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b022 safety boundary group 5",
+            "items": [
+                "phrase_b022_cardinal_mark_missing_from_position_001",
+                "phrase_b022_pass_starboard_of_lateral_mark_001",
+                "phrase_b022_isolated_danger_ahead_on_track_001",
+                "phrase_b022_leading_lights_visible_001",
+                "phrase_b022_sector_light_showing_red_001"
+            ],
+            "must_accept": {
+                "phrase_b022_cardinal_mark_missing_from_position_001": [
+                    "Cardinal mark missing from position."
+                ],
+                "phrase_b022_pass_starboard_of_lateral_mark_001": [
+                    "Pass starboard of lateral mark."
+                ],
+                "phrase_b022_isolated_danger_ahead_on_track_001": [
+                    "Isolated danger ahead on track."
+                ],
+                "phrase_b022_leading_lights_visible_001": [
+                    "Leading lights visible."
+                ],
+                "phrase_b022_sector_light_showing_red_001": [
+                    "Sector light showing red."
+                ]
+            },
+            "must_reject": {
+                "phrase_b022_cardinal_mark_missing_from_position_001": [
+                    "Lateral mark missing from position",
+                    "Cardinal mark sighted on position"
+                ],
+                "phrase_b022_pass_starboard_of_lateral_mark_001": [
+                    "Pass port of lateral mark",
+                    "Pass starboard of cardinal mark"
+                ],
+                "phrase_b022_isolated_danger_ahead_on_track_001": [
+                    "Safe water ahead on track",
+                    "Isolated danger astern on track"
+                ],
+                "phrase_b022_leading_lights_visible_001": [
+                    "Leading lights not visible",
+                    "Sector light visible"
+                ],
+                "phrase_b022_sector_light_showing_red_001": [
+                    "Sector light showing green",
+                    "Leading lights showing red"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b022 safety boundary group 6",
+            "items": [
+                "phrase_b022_visibility_reduced_to_one_mile_001",
+                "phrase_b022_sound_fog_signal_every_two_minutes_001",
+                "phrase_b022_wreck_marked_by_buoy_001",
+                "phrase_b022_shoal_extends_to_east_001",
+                "phrase_b022_pass_port_to_port_001"
+            ],
+            "must_accept": {
+                "phrase_b022_visibility_reduced_to_one_mile_001": [
+                    "Visibility reduced to one mile."
+                ],
+                "phrase_b022_sound_fog_signal_every_two_minutes_001": [
+                    "Sound fog signal every two minutes."
+                ],
+                "phrase_b022_wreck_marked_by_buoy_001": [
+                    "Wreck marked by buoy."
+                ],
+                "phrase_b022_shoal_extends_to_east_001": [
+                    "Shoal extends to east."
+                ],
+                "phrase_b022_pass_port_to_port_001": [
+                    "Pass port to port at safe distance."
+                ]
+            },
+            "must_reject": {
+                "phrase_b022_visibility_reduced_to_one_mile_001": [
+                    "Visibility reduced to two miles",
+                    "Speed reduced to one mile"
+                ],
+                "phrase_b022_sound_fog_signal_every_two_minutes_001": [
+                    "Sound distress signal every two minutes",
+                    "Sound fog signal every one minute"
+                ],
+                "phrase_b022_wreck_marked_by_buoy_001": [
+                    "Rock marked by buoy",
+                    "Wreck not marked by buoy"
+                ],
+                "phrase_b022_shoal_extends_to_east_001": [
+                    "Shoal extends to west",
+                    "Shore extends to east"
+                ],
+                "phrase_b022_pass_port_to_port_001": [
+                    "Pass starboard to starboard",
+                    "Pass port to starboard",
+                    "Pass port to port"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b022 safety boundary group 7",
+            "items": [
+                "phrase_b022_altering_to_port_to_avoid_shoal_001",
+                "phrase_b022_altering_to_starboard_due_to_wreck_001",
+                "phrase_b022_special_mark_north_of_fairway_001",
+                "phrase_b022_buoy_light_unlit_001",
+                "phrase_b022_safe_speed_in_restricted_visibility_001"
+            ],
+            "must_accept": {
+                "phrase_b022_altering_to_port_to_avoid_shoal_001": [
+                    "Altering to port to avoid shoal."
+                ],
+                "phrase_b022_altering_to_starboard_due_to_wreck_001": [
+                    "Altering to starboard due to wreck."
+                ],
+                "phrase_b022_special_mark_north_of_fairway_001": [
+                    "Special mark north of fairway."
+                ],
+                "phrase_b022_buoy_light_unlit_001": [
+                    "Buoy light unlit."
+                ],
+                "phrase_b022_safe_speed_in_restricted_visibility_001": [
+                    "Safe speed in restricted visibility."
+                ]
+            },
+            "must_reject": {
+                "phrase_b022_altering_to_port_to_avoid_shoal_001": [
+                    "Altering to starboard to avoid shoal",
+                    "Altering to port to approach shoal"
+                ],
+                "phrase_b022_altering_to_starboard_due_to_wreck_001": [
+                    "Altering to port due to wreck",
+                    "Altering to starboard due to wake"
+                ],
+                "phrase_b022_special_mark_north_of_fairway_001": [
+                    "Cardinal mark north of fairway",
+                    "Special mark south of fairway"
+                ],
+                "phrase_b022_buoy_light_unlit_001": [
+                    "Buoy light lit",
+                    "Anchor light unlit"
+                ],
+                "phrase_b022_safe_speed_in_restricted_visibility_001": [
+                    "Full speed in restricted visibility",
+                    "Safe speed in clear visibility"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b023 safety boundary group 1",
+            "items": [
+                "word_b023_hypothermia_001",
+                "word_b023_bleeding_001",
+                "word_b023_burn_001",
+                "word_b023_fracture_001",
+                "word_b023_smoke_inhalation_001"
+            ],
+            "must_accept": {
+                "word_b023_hypothermia_001": [
+                    "suspected hypothermia"
+                ],
+                "word_b023_bleeding_001": [
+                    "heavy bleeding"
+                ],
+                "word_b023_burn_001": [
+                    "burn"
+                ],
+                "word_b023_fracture_001": [
+                    "suspected fracture"
+                ],
+                "word_b023_smoke_inhalation_001": [
+                    "smoke inhalation"
+                ]
+            },
+            "must_reject": {
+                "word_b023_hypothermia_001": [
+                    "hyperthermia",
+                    "exhaustion"
+                ],
+                "word_b023_bleeding_001": [
+                    "breathing",
+                    "burning"
+                ],
+                "word_b023_burn_001": [
+                    "bleed",
+                    "bruise"
+                ],
+                "word_b023_fracture_001": [
+                    "fever",
+                    "failure"
+                ],
+                "word_b023_smoke_inhalation_001": [
+                    "smoke signal",
+                    "water inhalation"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b023 safety boundary group 2",
+            "items": [
+                "word_b023_unconscious_001",
+                "word_b023_evacuation_001",
+                "word_b023_stretcher_001",
+                "word_b023_defibrillator_001",
+                "word_b023_medication_001"
+            ],
+            "must_accept": {
+                "word_b023_unconscious_001": [
+                    "unconscious"
+                ],
+                "word_b023_evacuation_001": [
+                    "evacuation"
+                ],
+                "word_b023_stretcher_001": [
+                    "stretcher"
+                ],
+                "word_b023_defibrillator_001": [
+                    "defibrillator"
+                ],
+                "word_b023_medication_001": [
+                    "medication"
+                ]
+            },
+            "must_reject": {
+                "word_b023_unconscious_001": [
+                    "conscious",
+                    "injured"
+                ],
+                "word_b023_evacuation_001": [
+                    "assessment",
+                    "navigation"
+                ],
+                "word_b023_stretcher_001": [
+                    "stretcher line",
+                    "ladder"
+                ],
+                "word_b023_defibrillator_001": [
+                    "generator",
+                    "ventilator"
+                ],
+                "word_b023_medication_001": [
+                    "navigation",
+                    "medical advice"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b023 safety boundary group 3",
+            "items": [
+                "expr_b023_stop_bleeding_001",
+                "expr_b023_apply_bandage_001",
+                "expr_b023_monitor_breathing_001",
+                "expr_b023_prepare_stretcher_001",
+                "expr_b023_request_medical_advice_001"
+            ],
+            "must_accept": {
+                "expr_b023_stop_bleeding_001": [
+                    "stop bleeding"
+                ],
+                "expr_b023_apply_bandage_001": [
+                    "apply bandage"
+                ],
+                "expr_b023_monitor_breathing_001": [
+                    "monitor breathing"
+                ],
+                "expr_b023_prepare_stretcher_001": [
+                    "prepare stretcher"
+                ],
+                "expr_b023_request_medical_advice_001": [
+                    "request medical advice"
+                ]
+            },
+            "must_reject": {
+                "expr_b023_stop_bleeding_001": [
+                    "start bleeding",
+                    "stop breathing"
+                ],
+                "expr_b023_apply_bandage_001": [
+                    "remove bandage",
+                    "apply blanket"
+                ],
+                "expr_b023_monitor_breathing_001": [
+                    "monitor bleeding",
+                    "stop breathing"
+                ],
+                "expr_b023_prepare_stretcher_001": [
+                    "remove stretcher",
+                    "prepare ladder"
+                ],
+                "expr_b023_request_medical_advice_001": [
+                    "cancel medical advice",
+                    "request navigation advice"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b023 safety boundary group 4",
+            "items": [
+                "expr_b023_oxygen_required_001",
+                "expr_b023_patient_conscious_001",
+                "expr_b023_patient_unconscious_001",
+                "expr_b023_evacuate_casualty_001",
+                "expr_b023_administer_medication_001"
+            ],
+            "must_accept": {
+                "expr_b023_oxygen_required_001": [
+                    "oxygen required"
+                ],
+                "expr_b023_patient_conscious_001": [
+                    "patient conscious"
+                ],
+                "expr_b023_patient_unconscious_001": [
+                    "patient unconscious"
+                ],
+                "expr_b023_evacuate_casualty_001": [
+                    "evacuate casualty"
+                ],
+                "expr_b023_administer_medication_001": [
+                    "administer medication"
+                ]
+            },
+            "must_reject": {
+                "expr_b023_oxygen_required_001": [
+                    "oxygen not required",
+                    "fuel required"
+                ],
+                "expr_b023_patient_conscious_001": [
+                    "patient unconscious",
+                    "patient missing"
+                ],
+                "expr_b023_patient_unconscious_001": [
+                    "patient conscious",
+                    "patient stable"
+                ],
+                "expr_b023_evacuate_casualty_001": [
+                    "stabilize casualty",
+                    "evacuate vessel"
+                ],
+                "expr_b023_administer_medication_001": [
+                    "administer navigation",
+                    "withhold medication"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b023 safety boundary group 5",
+            "items": [
+                "phrase_b023_severe_bleeding_apply_pressure_001",
+                "phrase_b023_patient_unconscious_breathing_present_001",
+                "phrase_b023_request_medical_advice_for_burn_001",
+                "phrase_b023_prepare_stretcher_for_evacuation_001",
+                "phrase_b023_oxygen_required_for_patient_001"
+            ],
+            "must_accept": {
+                "phrase_b023_severe_bleeding_apply_pressure_001": [
+                    "Severe bleeding, apply pressure."
+                ],
+                "phrase_b023_patient_unconscious_breathing_present_001": [
+                    "Patient unconscious, breathing present."
+                ],
+                "phrase_b023_request_medical_advice_for_burn_001": [
+                    "Request medical advice for burn."
+                ],
+                "phrase_b023_prepare_stretcher_for_evacuation_001": [
+                    "Prepare stretcher for evacuation."
+                ],
+                "phrase_b023_oxygen_required_for_patient_001": [
+                    "Oxygen required for patient."
+                ]
+            },
+            "must_reject": {
+                "phrase_b023_severe_bleeding_apply_pressure_001": [
+                    "Severe breathing apply pressure",
+                    "Minor bleeding apply pressure"
+                ],
+                "phrase_b023_patient_unconscious_breathing_present_001": [
+                    "Patient conscious breathing present",
+                    "Patient unconscious breathing absent"
+                ],
+                "phrase_b023_request_medical_advice_for_burn_001": [
+                    "Cancel medical advice for burn",
+                    "Request navigation advice for burn"
+                ],
+                "phrase_b023_prepare_stretcher_for_evacuation_001": [
+                    "Prepare ladder for evacuation",
+                    "Prepare stretcher for inspection"
+                ],
+                "phrase_b023_oxygen_required_for_patient_001": [
+                    "Oxygen not required for patient",
+                    "Fuel required for patient"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
+        },
+        {
+            "pair": "b023 safety boundary group 6",
+            "items": [
+                "phrase_b023_defibrillator_ready_on_main_deck_001",
+                "phrase_b023_do_not_administer_medication_without_advice_001",
+                "phrase_b023_casualty_stable_monitor_breathing_001",
+                "phrase_b023_evacuate_casualty_to_port_clinic_001",
+                "phrase_b023_report_one_patient_with_hypothermia_001"
+            ],
+            "must_accept": {
+                "phrase_b023_defibrillator_ready_on_main_deck_001": [
+                    "Defibrillator ready on main deck."
+                ],
+                "phrase_b023_do_not_administer_medication_without_advice_001": [
+                    "Do not administer medication without advice."
+                ],
+                "phrase_b023_casualty_stable_monitor_breathing_001": [
+                    "Casualty stable, monitor breathing."
+                ],
+                "phrase_b023_evacuate_casualty_to_port_clinic_001": [
+                    "Evacuate casualty to port clinic."
+                ],
+                "phrase_b023_report_one_patient_with_hypothermia_001": [
+                    "Report one patient with hypothermia."
+                ]
+            },
+            "must_reject": {
+                "phrase_b023_defibrillator_ready_on_main_deck_001": [
+                    "Generator ready on main deck",
+                    "Defibrillator not ready on main deck"
+                ],
+                "phrase_b023_do_not_administer_medication_without_advice_001": [
+                    "Administer medication without advice",
+                    "Do not administer navigation without advice"
+                ],
+                "phrase_b023_casualty_stable_monitor_breathing_001": [
+                    "Casualty unstable monitor breathing",
+                    "Casualty stable stop breathing"
+                ],
+                "phrase_b023_evacuate_casualty_to_port_clinic_001": [
+                    "Transfer casualty to fuel berth",
+                    "Evacuate vessel to port clinic"
+                ],
+                "phrase_b023_report_one_patient_with_hypothermia_001": [
+                    "Report two patients with hypothermia",
+                    "Report one patient with hyperthermia"
+                ]
+            },
+            "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."
         }
     ],
     "items": [
@@ -16075,6 +17076,1346 @@
                 "Report one person missing from quay"
             ],
             "reason": "Batch batch-020-safety-equipment-deck-operations-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b021_call_sign_001",
+            "target_text": "vessel call sign",
+            "should_accept": [
+                "vessel call sign"
+            ],
+            "should_reject": [
+                "station name",
+                "channel number",
+                "vessel type"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b021_station_name_001",
+            "target_text": "station name",
+            "should_accept": [
+                "station name"
+            ],
+            "should_reject": [
+                "call sign",
+                "message marker",
+                "traffic lane"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b021_working_channel_001",
+            "target_text": "working channel",
+            "should_accept": [
+                "working channel"
+            ],
+            "should_reject": [
+                "distress channel",
+                "weather channel",
+                "working party"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b021_distress_channel_001",
+            "target_text": "distress channel",
+            "should_accept": [
+                "distress channel"
+            ],
+            "should_reject": [
+                "working channel",
+                "traffic channel",
+                "distress signal"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b021_message_marker_001",
+            "target_text": "message marker",
+            "should_accept": [
+                "message marker"
+            ],
+            "should_reject": [
+                "message received",
+                "station marker",
+                "danger marker"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b021_repetition_001",
+            "target_text": "repetition",
+            "should_accept": [
+                "repetition"
+            ],
+            "should_reject": [
+                "correction",
+                "cancellation",
+                "readback"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b021_correction_001",
+            "target_text": "correction marker",
+            "should_accept": [
+                "correction marker"
+            ],
+            "should_reject": [
+                "repetition",
+                "confirmation",
+                "question"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b021_relay_001",
+            "target_text": "distress relay",
+            "should_accept": [
+                "distress relay"
+            ],
+            "should_reject": [
+                "postpone",
+                "reply",
+                "readback"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b021_interference_001",
+            "target_text": "interference",
+            "should_accept": [
+                "interference"
+            ],
+            "should_reject": [
+                "silence",
+                "weak signal",
+                "clear signal"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b021_priority_001",
+            "target_text": "priority",
+            "should_accept": [
+                "priority"
+            ],
+            "should_reject": [
+                "routine",
+                "security",
+                "position"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b021_say_again_001",
+            "target_text": "say again slowly",
+            "should_accept": [
+                "say again slowly"
+            ],
+            "should_reject": [
+                "stand by",
+                "message received",
+                "read back"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b021_speak_slowly_001",
+            "target_text": "speak slowly",
+            "should_accept": [
+                "speak slowly"
+            ],
+            "should_reject": [
+                "speak louder",
+                "stand by",
+                "keep listening"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b021_wait_one_001",
+            "target_text": "wait one",
+            "should_accept": [
+                "wait one"
+            ],
+            "should_reject": [
+                "wait two",
+                "proceed one",
+                "switch one"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b021_switch_channel_001",
+            "target_text": "switch channel",
+            "should_accept": [
+                "switch channel"
+            ],
+            "should_reject": [
+                "hold channel",
+                "close channel",
+                "report channel"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b021_read_back_001",
+            "target_text": "read back instruction",
+            "should_accept": [
+                "read back instruction"
+            ],
+            "should_reject": [
+                "say again",
+                "stand by",
+                "report back"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b021_correction_follows_001",
+            "target_text": "correction follows",
+            "should_accept": [
+                "correction follows"
+            ],
+            "should_reject": [
+                "repetition follows",
+                "question follows",
+                "message follows"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b021_message_received_001",
+            "target_text": "message received",
+            "should_accept": [
+                "message received"
+            ],
+            "should_reject": [
+                "message repeated",
+                "message cancelled",
+                "message marker"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b021_standing_by_001",
+            "target_text": "standing by on channel",
+            "should_accept": [
+                "standing by on channel"
+            ],
+            "should_reject": [
+                "stand clear",
+                "shutting down",
+                "going ahead"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b021_end_of_message_001",
+            "target_text": "end of message",
+            "should_accept": [
+                "end of message"
+            ],
+            "should_reject": [
+                "start of message",
+                "end of watch",
+                "message received"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b021_relay_message_001",
+            "target_text": "relay message",
+            "should_accept": [
+                "relay message"
+            ],
+            "should_reject": [
+                "store message",
+                "reply message",
+                "cancel message"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b021_all_stations_this_is_aurora_001",
+            "target_text": "All stations, this is Aurora.",
+            "should_accept": [
+                "All stations, this is Aurora.",
+                "All stations this is Aurora"
+            ],
+            "should_reject": [
+                "All stations this is Orion",
+                "Port Control this is Aurora",
+                "All vessels this is Aurora"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b021_switch_to_channel_one_two_001",
+            "target_text": "Switch to working channel one two.",
+            "should_accept": [
+                "Switch to working channel one two.",
+                "Switch to working channel one two"
+            ],
+            "should_reject": [
+                "Switch to channel one six",
+                "Hold channel one two",
+                "Close channel one two"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b021_say_again_last_message_001",
+            "target_text": "Say again last message.",
+            "should_accept": [
+                "Say again last message.",
+                "Say again the last message"
+            ],
+            "should_reject": [
+                "Read back last message",
+                "Cancel last message",
+                "Say again first message"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b021_speak_slowly_signal_weak_001",
+            "target_text": "Speak slowly, signal weak.",
+            "should_accept": [
+                "Speak slowly, signal weak.",
+                "Speak slowly signal weak"
+            ],
+            "should_reject": [
+                "Speak louder signal weak",
+                "Speak slowly signal clear",
+                "Stand by signal weak"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b021_read_back_course_two_seven_zero_001",
+            "target_text": "Read back course two seven zero.",
+            "should_accept": [
+                "Read back course two seven zero.",
+                "Read back course 270"
+            ],
+            "should_reject": [
+                "Read back course two eight zero",
+                "Say again course two seven zero",
+                "Read back speed two seven zero"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b021_correction_channel_one_two_001",
+            "target_text": "Correction, channel one two.",
+            "should_accept": [
+                "Correction, channel one two.",
+                "Correction channel 12"
+            ],
+            "should_reject": [
+                "Repetition channel one two",
+                "Correction channel one six",
+                "Question channel one two"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b021_message_received_standing_by_001",
+            "target_text": "Message received, standing by.",
+            "should_accept": [
+                "Message received, standing by.",
+                "Message received standing by"
+            ],
+            "should_reject": [
+                "Message cancelled standing by",
+                "Message received shutting down",
+                "Message repeated standing by"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b021_relay_message_to_coast_station_001",
+            "target_text": "Relay message to coast station.",
+            "should_accept": [
+                "Relay message to coast station.",
+                "Relay the message to coast station"
+            ],
+            "should_reject": [
+                "Store message at coast station",
+                "Relay message to pilot station",
+                "Cancel message to coast station"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b021_interference_on_working_channel_001",
+            "target_text": "Interference on working channel.",
+            "should_accept": [
+                "Interference on working channel.",
+                "Interference on the working channel"
+            ],
+            "should_reject": [
+                "Silence on working channel",
+                "Interference on distress channel",
+                "Weak signal on working channel"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b021_wait_one_checking_position_001",
+            "target_text": "Wait one, checking position.",
+            "should_accept": [
+                "Wait one, checking position.",
+                "Wait one checking position"
+            ],
+            "should_reject": [
+                "Wait two checking position",
+                "Wait one reporting position",
+                "Proceed one checking position"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b021_message_marker_question_001",
+            "target_text": "Message marker, question.",
+            "should_accept": [
+                "Message marker, question.",
+                "Message marker question"
+            ],
+            "should_reject": [
+                "Message marker answer",
+                "Message received question",
+                "Message marker correction"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b021_priority_message_follows_001",
+            "target_text": "Priority message follows.",
+            "should_accept": [
+                "Priority message follows.",
+                "Priority message is following"
+            ],
+            "should_reject": [
+                "Routine message follows",
+                "Priority message cancelled",
+                "Security message follows"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b021_readback_incorrect_correcting_001",
+            "target_text": "Readback incorrect, correcting.",
+            "should_accept": [
+                "Readback incorrect, correcting.",
+                "Read back incorrect correcting"
+            ],
+            "should_reject": [
+                "Readback correct correcting",
+                "Readback incorrect cancelling",
+                "Repetition incorrect correcting"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b021_end_of_message_switching_channel_one_two_001",
+            "target_text": "End of message, switching channel one two.",
+            "should_accept": [
+                "End of message, switching channel one two.",
+                "End of message switching channel 12"
+            ],
+            "should_reject": [
+                "Start of message switching channel one two",
+                "End of message switching channel one six",
+                "End of watch switching channel one two"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b021_relay_distress_message_to_all_stations_001",
+            "target_text": "Relay distress message to all stations.",
+            "should_accept": [
+                "Relay distress message to all stations.",
+                "Relay the distress message to all stations"
+            ],
+            "should_reject": [
+                "Store distress message for all stations",
+                "Relay urgency message to all stations",
+                "Relay distress message to one station"
+            ],
+            "reason": "Batch batch-021-vhf-procedure-message-markers-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b022_cardinal_mark_001",
+            "target_text": "cardinal mark",
+            "should_accept": [
+                "cardinal mark"
+            ],
+            "should_reject": [
+                "lateral mark",
+                "special mark",
+                "cardinal course"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b022_lateral_mark_001",
+            "target_text": "lateral mark",
+            "should_accept": [
+                "lateral mark"
+            ],
+            "should_reject": [
+                "cardinal mark",
+                "safe water mark",
+                "lateral course"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b022_isolated_danger_001",
+            "target_text": "isolated danger",
+            "should_accept": [
+                "isolated danger"
+            ],
+            "should_reject": [
+                "safe water",
+                "special mark",
+                "dangerous cargo"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b022_safe_water_mark_001",
+            "target_text": "safe water mark",
+            "should_accept": [
+                "safe water mark"
+            ],
+            "should_reject": [
+                "isolated danger mark",
+                "special mark",
+                "safe speed mark"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b022_special_mark_001",
+            "target_text": "special mark",
+            "should_accept": [
+                "special mark"
+            ],
+            "should_reject": [
+                "safe water mark",
+                "cardinal mark",
+                "special signal"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b022_leading_lights_001",
+            "target_text": "leading lights",
+            "should_accept": [
+                "leading lights"
+            ],
+            "should_reject": [
+                "anchor lights",
+                "sector light",
+                "deck lights"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b022_sector_light_001",
+            "target_text": "sector light",
+            "should_accept": [
+                "sector light"
+            ],
+            "should_reject": [
+                "leading lights",
+                "anchor light",
+                "search light"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b022_fog_signal_001",
+            "target_text": "fog signal",
+            "should_accept": [
+                "fog signal"
+            ],
+            "should_reject": [
+                "sound signal only",
+                "distress signal",
+                "fog bank"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b022_shoal_001",
+            "target_text": "shoal",
+            "should_accept": [
+                "shoal"
+            ],
+            "should_reject": [
+                "shore",
+                "school",
+                "channel"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b022_wreck_001",
+            "target_text": "wreck",
+            "should_accept": [
+                "wreck"
+            ],
+            "should_reject": [
+                "rock",
+                "wake",
+                "vessel afloat"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b022_keep_to_starboard_001",
+            "target_text": "keep to starboard",
+            "should_accept": [
+                "keep to starboard"
+            ],
+            "should_reject": [
+                "keep to port",
+                "turn to starboard",
+                "keep clear"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b022_pass_port_to_port_001",
+            "target_text": "pass port to port",
+            "should_accept": [
+                "pass port to port"
+            ],
+            "should_reject": [
+                "pass starboard to starboard",
+                "pass port to starboard",
+                "alter port to port"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b022_buoy_missing_001",
+            "target_text": "buoy missing",
+            "should_accept": [
+                "buoy missing"
+            ],
+            "should_reject": [
+                "buoy sighted",
+                "light missing",
+                "buoy moved"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b022_light_unlit_001",
+            "target_text": "light unlit",
+            "should_accept": [
+                "light unlit"
+            ],
+            "should_reject": [
+                "light lit",
+                "buoy unlit",
+                "light obscured"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b022_fog_signal_heard_001",
+            "target_text": "fog signal heard",
+            "should_accept": [
+                "fog signal heard"
+            ],
+            "should_reject": [
+                "distress signal heard",
+                "fog signal not heard",
+                "sound signal cancelled"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b022_visibility_reduced_001",
+            "target_text": "visibility reduced",
+            "should_accept": [
+                "visibility reduced"
+            ],
+            "should_reject": [
+                "visibility good",
+                "speed reduced",
+                "visibility restored"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b022_wreck_reported_001",
+            "target_text": "wreck reported",
+            "should_accept": [
+                "wreck reported"
+            ],
+            "should_reject": [
+                "rock reported",
+                "wreck cleared",
+                "wake reported"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b022_shoal_ahead_001",
+            "target_text": "shoal ahead",
+            "should_accept": [
+                "shoal ahead"
+            ],
+            "should_reject": [
+                "shore ahead",
+                "clear ahead",
+                "shoal astern"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b022_alter_to_port_001",
+            "target_text": "alter to port",
+            "should_accept": [
+                "alter to port"
+            ],
+            "should_reject": [
+                "alter to starboard",
+                "keep to port",
+                "report to port"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b022_alter_to_starboard_001",
+            "target_text": "alter to starboard",
+            "should_accept": [
+                "alter to starboard"
+            ],
+            "should_reject": [
+                "alter to port",
+                "keep to starboard",
+                "report starboard"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b022_cardinal_mark_missing_from_position_001",
+            "target_text": "Cardinal mark missing from position.",
+            "should_accept": [
+                "Cardinal mark missing from position.",
+                "Cardinal mark is missing from position"
+            ],
+            "should_reject": [
+                "Lateral mark missing from position",
+                "Cardinal mark sighted on position",
+                "Cardinal course missing from position"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b022_pass_starboard_of_lateral_mark_001",
+            "target_text": "Pass starboard of lateral mark.",
+            "should_accept": [
+                "Pass starboard of lateral mark.",
+                "Pass to starboard of lateral mark"
+            ],
+            "should_reject": [
+                "Pass port of lateral mark",
+                "Pass starboard of cardinal mark",
+                "Hold starboard of lateral mark"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b022_isolated_danger_ahead_on_track_001",
+            "target_text": "Isolated danger ahead on track.",
+            "should_accept": [
+                "Isolated danger ahead on track.",
+                "Isolated danger is ahead on track"
+            ],
+            "should_reject": [
+                "Safe water ahead on track",
+                "Isolated danger astern on track",
+                "Special mark ahead on track"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b022_leading_lights_visible_001",
+            "target_text": "Leading lights visible.",
+            "should_accept": [
+                "Leading lights visible.",
+                "Leading lights are visible"
+            ],
+            "should_reject": [
+                "Leading lights not visible",
+                "Sector light visible",
+                "Anchor lights visible"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b022_sector_light_showing_red_001",
+            "target_text": "Sector light showing red.",
+            "should_accept": [
+                "Sector light showing red.",
+                "Sector light is showing red"
+            ],
+            "should_reject": [
+                "Sector light showing green",
+                "Leading lights showing red",
+                "Anchor light showing red"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b022_visibility_reduced_to_one_mile_001",
+            "target_text": "Visibility reduced to one mile.",
+            "should_accept": [
+                "Visibility reduced to one mile.",
+                "Visibility is reduced to one mile"
+            ],
+            "should_reject": [
+                "Visibility reduced to two miles",
+                "Speed reduced to one mile",
+                "Visibility restored to one mile"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b022_sound_fog_signal_every_two_minutes_001",
+            "target_text": "Sound fog signal every two minutes.",
+            "should_accept": [
+                "Sound fog signal every two minutes.",
+                "Sound the fog signal every two minutes"
+            ],
+            "should_reject": [
+                "Sound distress signal every two minutes",
+                "Sound fog signal every one minute",
+                "Cancel fog signal every two minutes"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b022_wreck_marked_by_buoy_001",
+            "target_text": "Wreck marked by buoy.",
+            "should_accept": [
+                "Wreck marked by buoy.",
+                "Wreck is marked by buoy"
+            ],
+            "should_reject": [
+                "Rock marked by buoy",
+                "Wreck not marked by buoy",
+                "Wake marked by buoy"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b022_shoal_extends_to_east_001",
+            "target_text": "Shoal extends to east.",
+            "should_accept": [
+                "Shoal extends to east.",
+                "Shoal is extending to east"
+            ],
+            "should_reject": [
+                "Shoal extends to west",
+                "Shore extends to east",
+                "Channel extends to east"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b022_pass_port_to_port_001",
+            "target_text": "Pass port to port at safe distance.",
+            "should_accept": [
+                "Pass port to port at safe distance."
+            ],
+            "should_reject": [
+                "Pass starboard to starboard",
+                "Pass port to starboard",
+                "Alter port to port",
+                "Pass port to port"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b022_altering_to_port_to_avoid_shoal_001",
+            "target_text": "Altering to port to avoid shoal.",
+            "should_accept": [
+                "Altering to port to avoid shoal.",
+                "Alter to port to avoid shoal"
+            ],
+            "should_reject": [
+                "Altering to starboard to avoid shoal",
+                "Altering to port to approach shoal",
+                "Altering to port to avoid shore"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b022_altering_to_starboard_due_to_wreck_001",
+            "target_text": "Altering to starboard due to wreck.",
+            "should_accept": [
+                "Altering to starboard due to wreck.",
+                "Alter to starboard due to wreck"
+            ],
+            "should_reject": [
+                "Altering to port due to wreck",
+                "Altering to starboard due to wake",
+                "Altering to starboard clear of wreck"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b022_special_mark_north_of_fairway_001",
+            "target_text": "Special mark north of fairway.",
+            "should_accept": [
+                "Special mark north of fairway.",
+                "Special mark is north of fairway"
+            ],
+            "should_reject": [
+                "Cardinal mark north of fairway",
+                "Special mark south of fairway",
+                "Special signal north of fairway"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b022_buoy_light_unlit_001",
+            "target_text": "Buoy light unlit.",
+            "should_accept": [
+                "Buoy light unlit.",
+                "Buoy light is unlit"
+            ],
+            "should_reject": [
+                "Buoy light lit",
+                "Anchor light unlit",
+                "Buoy missing unlit"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b022_safe_speed_in_restricted_visibility_001",
+            "target_text": "Safe speed in restricted visibility.",
+            "should_accept": [
+                "Safe speed in restricted visibility.",
+                "Safe speed during restricted visibility"
+            ],
+            "should_reject": [
+                "Full speed in restricted visibility",
+                "Safe speed in clear visibility",
+                "Safe course in restricted visibility"
+            ],
+            "reason": "Batch batch-022-navigation-hazards-buoyage-visibility-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b023_hypothermia_001",
+            "target_text": "suspected hypothermia",
+            "should_accept": [
+                "suspected hypothermia"
+            ],
+            "should_reject": [
+                "hyperthermia",
+                "exhaustion",
+                "seasickness"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b023_bleeding_001",
+            "target_text": "heavy bleeding",
+            "should_accept": [
+                "heavy bleeding"
+            ],
+            "should_reject": [
+                "breathing",
+                "burning",
+                "bruising"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b023_burn_001",
+            "target_text": "burn",
+            "should_accept": [
+                "burn"
+            ],
+            "should_reject": [
+                "bleed",
+                "bruise",
+                "break"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b023_fracture_001",
+            "target_text": "suspected fracture",
+            "should_accept": [
+                "suspected fracture"
+            ],
+            "should_reject": [
+                "fever",
+                "failure",
+                "fender"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b023_smoke_inhalation_001",
+            "target_text": "smoke inhalation",
+            "should_accept": [
+                "smoke inhalation"
+            ],
+            "should_reject": [
+                "smoke signal",
+                "water inhalation",
+                "smoke observation"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b023_unconscious_001",
+            "target_text": "unconscious",
+            "should_accept": [
+                "unconscious"
+            ],
+            "should_reject": [
+                "conscious",
+                "injured",
+                "confused"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b023_evacuation_001",
+            "target_text": "evacuation",
+            "should_accept": [
+                "evacuation"
+            ],
+            "should_reject": [
+                "assessment",
+                "navigation",
+                "muster"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b023_stretcher_001",
+            "target_text": "stretcher",
+            "should_accept": [
+                "stretcher"
+            ],
+            "should_reject": [
+                "stretcher line",
+                "ladder",
+                "fender"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b023_defibrillator_001",
+            "target_text": "defibrillator",
+            "should_accept": [
+                "defibrillator"
+            ],
+            "should_reject": [
+                "generator",
+                "ventilator",
+                "battery charger"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "word_b023_medication_001",
+            "target_text": "medication",
+            "should_accept": [
+                "medication"
+            ],
+            "should_reject": [
+                "navigation",
+                "medical advice",
+                "equipment"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b023_stop_bleeding_001",
+            "target_text": "stop bleeding",
+            "should_accept": [
+                "stop bleeding"
+            ],
+            "should_reject": [
+                "start bleeding",
+                "stop breathing",
+                "report bleeding"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b023_apply_bandage_001",
+            "target_text": "apply bandage",
+            "should_accept": [
+                "apply bandage"
+            ],
+            "should_reject": [
+                "remove bandage",
+                "apply blanket",
+                "report bandage"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b023_monitor_breathing_001",
+            "target_text": "monitor breathing",
+            "should_accept": [
+                "monitor breathing"
+            ],
+            "should_reject": [
+                "monitor bleeding",
+                "stop breathing",
+                "report breathing"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b023_prepare_stretcher_001",
+            "target_text": "prepare stretcher",
+            "should_accept": [
+                "prepare stretcher"
+            ],
+            "should_reject": [
+                "remove stretcher",
+                "prepare ladder",
+                "prepare fender"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b023_request_medical_advice_001",
+            "target_text": "request medical advice",
+            "should_accept": [
+                "request medical advice"
+            ],
+            "should_reject": [
+                "cancel medical advice",
+                "request navigation advice",
+                "report medical advice"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b023_oxygen_required_001",
+            "target_text": "oxygen required",
+            "should_accept": [
+                "oxygen required"
+            ],
+            "should_reject": [
+                "oxygen not required",
+                "fuel required",
+                "oxygen available"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b023_patient_conscious_001",
+            "target_text": "patient conscious",
+            "should_accept": [
+                "patient conscious"
+            ],
+            "should_reject": [
+                "patient unconscious",
+                "patient missing",
+                "passenger conscious"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b023_patient_unconscious_001",
+            "target_text": "patient unconscious",
+            "should_accept": [
+                "patient unconscious"
+            ],
+            "should_reject": [
+                "patient conscious",
+                "patient stable",
+                "passenger unconscious"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b023_evacuate_casualty_001",
+            "target_text": "evacuate casualty",
+            "should_accept": [
+                "evacuate casualty"
+            ],
+            "should_reject": [
+                "stabilize casualty",
+                "evacuate vessel",
+                "treat casualty"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "expr_b023_administer_medication_001",
+            "target_text": "administer medication",
+            "should_accept": [
+                "administer medication"
+            ],
+            "should_reject": [
+                "administer navigation",
+                "withhold medication",
+                "request medication"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b023_severe_bleeding_apply_pressure_001",
+            "target_text": "Severe bleeding, apply pressure.",
+            "should_accept": [
+                "Severe bleeding, apply pressure.",
+                "Severe bleeding apply pressure"
+            ],
+            "should_reject": [
+                "Severe breathing apply pressure",
+                "Minor bleeding apply pressure",
+                "Severe bleeding release pressure"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b023_patient_unconscious_breathing_present_001",
+            "target_text": "Patient unconscious, breathing present.",
+            "should_accept": [
+                "Patient unconscious, breathing present.",
+                "Patient is unconscious breathing present"
+            ],
+            "should_reject": [
+                "Patient conscious breathing present",
+                "Patient unconscious breathing absent",
+                "Passenger unconscious breathing present"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b023_request_medical_advice_for_burn_001",
+            "target_text": "Request medical advice for burn.",
+            "should_accept": [
+                "Request medical advice for burn.",
+                "Requesting medical advice for burn"
+            ],
+            "should_reject": [
+                "Cancel medical advice for burn",
+                "Request navigation advice for burn",
+                "Request medical advice for fracture"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b023_prepare_stretcher_for_evacuation_001",
+            "target_text": "Prepare stretcher for evacuation.",
+            "should_accept": [
+                "Prepare stretcher for evacuation.",
+                "Prepare the stretcher for evacuation"
+            ],
+            "should_reject": [
+                "Prepare ladder for evacuation",
+                "Prepare stretcher for inspection",
+                "Remove stretcher for evacuation"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b023_oxygen_required_for_patient_001",
+            "target_text": "Oxygen required for patient.",
+            "should_accept": [
+                "Oxygen required for patient.",
+                "Oxygen is required for patient"
+            ],
+            "should_reject": [
+                "Oxygen not required for patient",
+                "Fuel required for patient",
+                "Oxygen required for engine"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b023_defibrillator_ready_on_main_deck_001",
+            "target_text": "Defibrillator ready on main deck.",
+            "should_accept": [
+                "Defibrillator ready on main deck.",
+                "Defibrillator is ready on main deck"
+            ],
+            "should_reject": [
+                "Generator ready on main deck",
+                "Defibrillator not ready on main deck",
+                "Defibrillator ready below deck"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b023_do_not_administer_medication_without_advice_001",
+            "target_text": "Do not administer medication without advice.",
+            "should_accept": [
+                "Do not administer medication without advice.",
+                "Do not give medication without advice"
+            ],
+            "should_reject": [
+                "Administer medication without advice",
+                "Do not administer navigation without advice",
+                "Do not request medication without advice"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b023_casualty_stable_monitor_breathing_001",
+            "target_text": "Casualty stable, monitor breathing.",
+            "should_accept": [
+                "Casualty stable, monitor breathing.",
+                "Casualty is stable monitor breathing"
+            ],
+            "should_reject": [
+                "Casualty unstable monitor breathing",
+                "Casualty stable stop breathing",
+                "Passenger stable monitor breathing"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b023_evacuate_casualty_to_port_clinic_001",
+            "target_text": "Evacuate casualty to port clinic.",
+            "should_accept": [
+                "Evacuate casualty to port clinic.",
+                "Evacuate the casualty to port clinic"
+            ],
+            "should_reject": [
+                "Transfer casualty to fuel berth",
+                "Evacuate vessel to port clinic",
+                "Evacuate casualty to fuel berth"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
+        },
+        {
+            "id": "phrase_b023_report_one_patient_with_hypothermia_001",
+            "target_text": "Report one patient with hypothermia.",
+            "should_accept": [
+                "Report one patient with hypothermia.",
+                "Report one patient has hypothermia"
+            ],
+            "should_reject": [
+                "Report two patients with hypothermia",
+                "Report one patient with hyperthermia",
+                "Report one passenger with hypothermia"
+            ],
+            "reason": "Batch batch-023-emergency-medical-response-vocabulary acceptance coverage."
         }
     ],
     "matcher_suggestions": [

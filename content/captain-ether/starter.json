@@ -14967,6 +14967,2031 @@
             "hint_beginner": "Report one...",
             "hint_intermediate": "Report one person missing...",
             "hint_advanced": ""
+        },
+        {
+            "id": "word_b021_call_sign_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 6,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "vhf_terms",
+            "source_language": "ru",
+            "source_text": "Позывной.",
+            "target_language": "en",
+            "target_text": "vessel call sign",
+            "accepted_answers": [
+                "vessel call sign"
+            ],
+            "grammar_pattern": "b021_call_sign_pattern",
+            "hint_beginner": "call sign...",
+            "hint_intermediate": "call sign...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b021_station_name_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 6,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "vhf_terms",
+            "source_language": "ru",
+            "source_text": "Название станции.",
+            "target_language": "en",
+            "target_text": "station name",
+            "accepted_answers": [
+                "station name"
+            ],
+            "grammar_pattern": "b021_station_name_pattern",
+            "hint_beginner": "station name...",
+            "hint_intermediate": "station name...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b021_working_channel_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 7,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "vhf_terms",
+            "source_language": "ru",
+            "source_text": "Рабочий канал.",
+            "target_language": "en",
+            "target_text": "working channel",
+            "accepted_answers": [
+                "working channel"
+            ],
+            "grammar_pattern": "b021_working_channel_pattern",
+            "hint_beginner": "working channel...",
+            "hint_intermediate": "working channel...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b021_distress_channel_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "vhf_terms",
+            "source_language": "ru",
+            "source_text": "Канал бедствия.",
+            "target_language": "en",
+            "target_text": "distress channel",
+            "accepted_answers": [
+                "distress channel"
+            ],
+            "grammar_pattern": "b021_distress_channel_pattern",
+            "hint_beginner": "distress channel...",
+            "hint_intermediate": "distress channel...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b021_message_marker_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 8,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "message_markers",
+            "source_language": "ru",
+            "source_text": "Маркер сообщения.",
+            "target_language": "en",
+            "target_text": "message marker",
+            "accepted_answers": [
+                "message marker"
+            ],
+            "grammar_pattern": "b021_message_marker_pattern",
+            "hint_beginner": "message marker...",
+            "hint_intermediate": "message marker...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b021_repetition_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 7,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "message_markers",
+            "source_language": "ru",
+            "source_text": "Повторение.",
+            "target_language": "en",
+            "target_text": "repetition",
+            "accepted_answers": [
+                "repetition"
+            ],
+            "grammar_pattern": "b021_repetition_pattern",
+            "hint_beginner": "repetition...",
+            "hint_intermediate": "repetition...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b021_correction_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "message_markers",
+            "source_language": "ru",
+            "source_text": "Исправление.",
+            "target_language": "en",
+            "target_text": "correction marker",
+            "accepted_answers": [
+                "correction marker"
+            ],
+            "grammar_pattern": "b021_correction_pattern",
+            "hint_beginner": "correction...",
+            "hint_intermediate": "correction...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b021_relay_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "relay_procedure",
+            "source_language": "ru",
+            "source_text": "Ретрансляция.",
+            "target_language": "en",
+            "target_text": "distress relay",
+            "accepted_answers": [
+                "distress relay"
+            ],
+            "grammar_pattern": "b021_relay_pattern",
+            "hint_beginner": "relay...",
+            "hint_intermediate": "relay...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b021_interference_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "vhf_terms",
+            "source_language": "ru",
+            "source_text": "Помехи.",
+            "target_language": "en",
+            "target_text": "interference",
+            "accepted_answers": [
+                "interference"
+            ],
+            "grammar_pattern": "b021_interference_pattern",
+            "hint_beginner": "interference...",
+            "hint_intermediate": "interference...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b021_priority_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "vhf_terms",
+            "source_language": "ru",
+            "source_text": "Срочность.",
+            "target_language": "en",
+            "target_text": "priority",
+            "accepted_answers": [
+                "priority"
+            ],
+            "grammar_pattern": "b021_priority_pattern",
+            "hint_beginner": "priority...",
+            "hint_intermediate": "priority...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b021_say_again_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "communication_control",
+            "source_language": "ru",
+            "source_text": "Повторите.",
+            "target_language": "en",
+            "target_text": "say again slowly",
+            "accepted_answers": [
+                "say again slowly"
+            ],
+            "grammar_pattern": "b021_say_again_pattern",
+            "hint_beginner": "say again...",
+            "hint_intermediate": "say again...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b021_speak_slowly_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "communication_control",
+            "source_language": "ru",
+            "source_text": "Говорите медленно.",
+            "target_language": "en",
+            "target_text": "speak slowly",
+            "accepted_answers": [
+                "speak slowly"
+            ],
+            "grammar_pattern": "b021_speak_slowly_pattern",
+            "hint_beginner": "speak slowly...",
+            "hint_intermediate": "speak slowly...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b021_wait_one_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "communication_control",
+            "source_language": "ru",
+            "source_text": "Ждите один.",
+            "target_language": "en",
+            "target_text": "wait one",
+            "accepted_answers": [
+                "wait one"
+            ],
+            "grammar_pattern": "b021_wait_one_pattern",
+            "hint_beginner": "wait one...",
+            "hint_intermediate": "wait one...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b021_switch_channel_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "channel_control",
+            "source_language": "ru",
+            "source_text": "Смените канал.",
+            "target_language": "en",
+            "target_text": "switch channel",
+            "accepted_answers": [
+                "switch channel"
+            ],
+            "grammar_pattern": "b021_switch_channel_pattern",
+            "hint_beginner": "switch channel...",
+            "hint_intermediate": "switch channel...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b021_read_back_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "readback_procedure",
+            "source_language": "ru",
+            "source_text": "Повторите принятое.",
+            "target_language": "en",
+            "target_text": "read back instruction",
+            "accepted_answers": [
+                "read back instruction"
+            ],
+            "grammar_pattern": "b021_read_back_pattern",
+            "hint_beginner": "read back...",
+            "hint_intermediate": "read back...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b021_correction_follows_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "message_markers",
+            "source_language": "ru",
+            "source_text": "Следует исправление.",
+            "target_language": "en",
+            "target_text": "correction follows",
+            "accepted_answers": [
+                "correction follows"
+            ],
+            "grammar_pattern": "b021_correction_follows_pattern",
+            "hint_beginner": "correction follows...",
+            "hint_intermediate": "correction follows...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b021_message_received_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "acknowledgement",
+            "source_language": "ru",
+            "source_text": "Сообщение принято.",
+            "target_language": "en",
+            "target_text": "message received",
+            "accepted_answers": [
+                "message received"
+            ],
+            "grammar_pattern": "b021_message_received_pattern",
+            "hint_beginner": "message received...",
+            "hint_intermediate": "message received...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b021_standing_by_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "communication_control",
+            "source_language": "ru",
+            "source_text": "Остаюсь на связи.",
+            "target_language": "en",
+            "target_text": "standing by on channel",
+            "accepted_answers": [
+                "standing by on channel"
+            ],
+            "grammar_pattern": "b021_standing_by_pattern",
+            "hint_beginner": "standing by...",
+            "hint_intermediate": "standing by...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b021_end_of_message_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "message_markers",
+            "source_language": "ru",
+            "source_text": "Конец сообщения.",
+            "target_language": "en",
+            "target_text": "end of message",
+            "accepted_answers": [
+                "end of message"
+            ],
+            "grammar_pattern": "b021_end_of_message_pattern",
+            "hint_beginner": "end of...",
+            "hint_intermediate": "end of message...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b021_relay_message_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 10,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "relay_procedure",
+            "source_language": "ru",
+            "source_text": "Передайте сообщение.",
+            "target_language": "en",
+            "target_text": "relay message",
+            "accepted_answers": [
+                "relay message"
+            ],
+            "grammar_pattern": "b021_relay_message_pattern",
+            "hint_beginner": "relay message...",
+            "hint_intermediate": "relay message...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b021_all_stations_this_is_aurora_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 12,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "station_calls",
+            "source_language": "ru",
+            "source_text": "Всем станциям, это Аврора.",
+            "target_language": "en",
+            "target_text": "All stations, this is Aurora.",
+            "accepted_answers": [
+                "All stations, this is Aurora."
+            ],
+            "grammar_pattern": "b021_all_stations_this_is_aurora_pattern",
+            "hint_beginner": "All stations,...",
+            "hint_intermediate": "All stations, this is...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b021_switch_to_channel_one_two_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "channel_control",
+            "source_language": "ru",
+            "source_text": "Перейдите на канал один два.",
+            "target_language": "en",
+            "target_text": "Switch to working channel one two.",
+            "accepted_answers": [
+                "Switch to working channel one two."
+            ],
+            "grammar_pattern": "b021_switch_to_channel_one_two_pattern",
+            "hint_beginner": "Switch to...",
+            "hint_intermediate": "Switch to channel one...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b021_say_again_last_message_001",
+            "type": "phrase",
+            "level": "beginner",
+            "difficulty_score": 12,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "communication_control",
+            "source_language": "ru",
+            "source_text": "Повторите последнее сообщение.",
+            "target_language": "en",
+            "target_text": "Say again last message.",
+            "accepted_answers": [
+                "Say again last message."
+            ],
+            "grammar_pattern": "b021_say_again_last_message_pattern",
+            "hint_beginner": "Say again...",
+            "hint_intermediate": "Say again last message....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b021_speak_slowly_signal_weak_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "communication_control",
+            "source_language": "ru",
+            "source_text": "Говорите медленно, сигнал слабый.",
+            "target_language": "en",
+            "target_text": "Speak slowly, signal weak.",
+            "accepted_answers": [
+                "Speak slowly, signal weak."
+            ],
+            "grammar_pattern": "b021_speak_slowly_signal_weak_pattern",
+            "hint_beginner": "Speak slowly,...",
+            "hint_intermediate": "Speak slowly, signal weak....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b021_read_back_course_two_seven_zero_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 14,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "readback_procedure",
+            "source_language": "ru",
+            "source_text": "Повторите курс два семь ноль.",
+            "target_language": "en",
+            "target_text": "Read back course two seven zero.",
+            "accepted_answers": [
+                "Read back course two seven zero.",
+                "Read back course 270"
+            ],
+            "grammar_pattern": "b021_read_back_course_two_seven_zero_pattern",
+            "hint_beginner": "Read back...",
+            "hint_intermediate": "Read back course two...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b021_correction_channel_one_two_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "message_markers",
+            "source_language": "ru",
+            "source_text": "Исправление: канал один два.",
+            "target_language": "en",
+            "target_text": "Correction, channel one two.",
+            "accepted_answers": [
+                "Correction, channel one two.",
+                "Correction channel 12"
+            ],
+            "grammar_pattern": "b021_correction_channel_one_two_pattern",
+            "hint_beginner": "Correction, channel...",
+            "hint_intermediate": "Correction, channel one two....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b021_message_received_standing_by_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "acknowledgement",
+            "source_language": "ru",
+            "source_text": "Сообщение принято, остаюсь на связи.",
+            "target_language": "en",
+            "target_text": "Message received, standing by.",
+            "accepted_answers": [
+                "Message received, standing by."
+            ],
+            "grammar_pattern": "b021_message_received_standing_by_pattern",
+            "hint_beginner": "Message received,...",
+            "hint_intermediate": "Message received, standing by....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b021_relay_message_to_coast_station_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "relay_procedure",
+            "source_language": "ru",
+            "source_text": "Передайте сообщение береговой станции.",
+            "target_language": "en",
+            "target_text": "Relay message to coast station.",
+            "accepted_answers": [
+                "Relay message to coast station."
+            ],
+            "grammar_pattern": "b021_relay_message_to_coast_station_pattern",
+            "hint_beginner": "Relay message...",
+            "hint_intermediate": "Relay message to coast...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b021_interference_on_working_channel_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "interference_report",
+            "source_language": "ru",
+            "source_text": "Помехи на рабочем канале.",
+            "target_language": "en",
+            "target_text": "Interference on working channel.",
+            "accepted_answers": [
+                "Interference on working channel."
+            ],
+            "grammar_pattern": "b021_interference_on_working_channel_pattern",
+            "hint_beginner": "Interference on...",
+            "hint_intermediate": "Interference on working channel....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b021_wait_one_checking_position_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "communication_control",
+            "source_language": "ru",
+            "source_text": "Ждите один, я проверяю позицию.",
+            "target_language": "en",
+            "target_text": "Wait one, checking position.",
+            "accepted_answers": [
+                "Wait one, checking position."
+            ],
+            "grammar_pattern": "b021_wait_one_checking_position_pattern",
+            "hint_beginner": "Wait one,...",
+            "hint_intermediate": "Wait one, checking position....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b021_message_marker_question_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "message_markers",
+            "source_language": "ru",
+            "source_text": "Метка сообщения: вопрос.",
+            "target_language": "en",
+            "target_text": "Message marker, question.",
+            "accepted_answers": [
+                "Message marker, question."
+            ],
+            "grammar_pattern": "b021_message_marker_question_pattern",
+            "hint_beginner": "Message marker,...",
+            "hint_intermediate": "Message marker, question....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b021_priority_message_follows_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "priority_messages",
+            "source_language": "ru",
+            "source_text": "Приоритетное сообщение следует.",
+            "target_language": "en",
+            "target_text": "Priority message follows.",
+            "accepted_answers": [
+                "Priority message follows.",
+                "Priority message is following"
+            ],
+            "grammar_pattern": "b021_priority_message_follows_pattern",
+            "hint_beginner": "Priority message...",
+            "hint_intermediate": "Priority message follows....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b021_readback_incorrect_correcting_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "readback_procedure",
+            "source_language": "ru",
+            "source_text": "Повтор принятого неверен, исправляю.",
+            "target_language": "en",
+            "target_text": "Readback incorrect, correcting.",
+            "accepted_answers": [
+                "Readback incorrect, correcting.",
+                "Read back incorrect correcting"
+            ],
+            "grammar_pattern": "b021_readback_incorrect_correcting_pattern",
+            "hint_beginner": "Readback incorrect,...",
+            "hint_intermediate": "Readback incorrect, correcting....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b021_end_of_message_switching_channel_one_two_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "message_closure",
+            "source_language": "ru",
+            "source_text": "Конец сообщения, перехожу на канал один два.",
+            "target_language": "en",
+            "target_text": "End of message, switching channel one two.",
+            "accepted_answers": [
+                "End of message, switching channel one two.",
+                "End of message switching channel 12"
+            ],
+            "grammar_pattern": "b021_end_of_message_switching_channel_one_two_pattern",
+            "hint_beginner": "End of...",
+            "hint_intermediate": "End of message, switching...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b021_relay_distress_message_to_all_stations_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "vhf_procedure_message_markers_vocabulary",
+            "branch": "vhf_procedure_message_markers",
+            "module": "distress_relay",
+            "source_language": "ru",
+            "source_text": "Передайте бедственное сообщение всем станциям.",
+            "target_language": "en",
+            "target_text": "Relay distress message to all stations.",
+            "accepted_answers": [
+                "Relay distress message to all stations."
+            ],
+            "grammar_pattern": "b021_relay_distress_message_to_all_stations_pattern",
+            "hint_beginner": "Relay distress...",
+            "hint_intermediate": "Relay distress message to...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b022_cardinal_mark_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "buoyage_terms",
+            "source_language": "ru",
+            "source_text": "Кардинальный знак.",
+            "target_language": "en",
+            "target_text": "cardinal mark",
+            "accepted_answers": [
+                "cardinal mark"
+            ],
+            "grammar_pattern": "b022_cardinal_mark_pattern",
+            "hint_beginner": "cardinal mark...",
+            "hint_intermediate": "cardinal mark...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b022_lateral_mark_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "buoyage_terms",
+            "source_language": "ru",
+            "source_text": "Латеральный знак.",
+            "target_language": "en",
+            "target_text": "lateral mark",
+            "accepted_answers": [
+                "lateral mark"
+            ],
+            "grammar_pattern": "b022_lateral_mark_pattern",
+            "hint_beginner": "lateral mark...",
+            "hint_intermediate": "lateral mark...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b022_isolated_danger_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "buoyage_terms",
+            "source_language": "ru",
+            "source_text": "Отдельная опасность.",
+            "target_language": "en",
+            "target_text": "isolated danger",
+            "accepted_answers": [
+                "isolated danger"
+            ],
+            "grammar_pattern": "b022_isolated_danger_pattern",
+            "hint_beginner": "isolated danger...",
+            "hint_intermediate": "isolated danger...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b022_safe_water_mark_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "buoyage_terms",
+            "source_language": "ru",
+            "source_text": "Знак чистой воды.",
+            "target_language": "en",
+            "target_text": "safe water mark",
+            "accepted_answers": [
+                "safe water mark"
+            ],
+            "grammar_pattern": "b022_safe_water_mark_pattern",
+            "hint_beginner": "safe water...",
+            "hint_intermediate": "safe water mark...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b022_special_mark_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "buoyage_terms",
+            "source_language": "ru",
+            "source_text": "Специальный знак.",
+            "target_language": "en",
+            "target_text": "special mark",
+            "accepted_answers": [
+                "special mark"
+            ],
+            "grammar_pattern": "b022_special_mark_pattern",
+            "hint_beginner": "special mark...",
+            "hint_intermediate": "special mark...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b022_leading_lights_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "navigation_lights",
+            "source_language": "ru",
+            "source_text": "Створные огни.",
+            "target_language": "en",
+            "target_text": "leading lights",
+            "accepted_answers": [
+                "leading lights"
+            ],
+            "grammar_pattern": "b022_leading_lights_pattern",
+            "hint_beginner": "leading lights...",
+            "hint_intermediate": "leading lights...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b022_sector_light_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "navigation_lights",
+            "source_language": "ru",
+            "source_text": "Секторный огонь.",
+            "target_language": "en",
+            "target_text": "sector light",
+            "accepted_answers": [
+                "sector light"
+            ],
+            "grammar_pattern": "b022_sector_light_pattern",
+            "hint_beginner": "sector light...",
+            "hint_intermediate": "sector light...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b022_fog_signal_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Туманный сигнал.",
+            "target_language": "en",
+            "target_text": "fog signal",
+            "accepted_answers": [
+                "fog signal"
+            ],
+            "grammar_pattern": "b022_fog_signal_pattern",
+            "hint_beginner": "fog signal...",
+            "hint_intermediate": "fog signal...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b022_shoal_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "hazard_terms",
+            "source_language": "ru",
+            "source_text": "Мель.",
+            "target_language": "en",
+            "target_text": "shoal",
+            "accepted_answers": [
+                "shoal"
+            ],
+            "grammar_pattern": "b022_shoal_pattern",
+            "hint_beginner": "shoal...",
+            "hint_intermediate": "shoal...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b022_wreck_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "hazard_terms",
+            "source_language": "ru",
+            "source_text": "Затонувшее судно.",
+            "target_language": "en",
+            "target_text": "wreck",
+            "accepted_answers": [
+                "wreck"
+            ],
+            "grammar_pattern": "b022_wreck_pattern",
+            "hint_beginner": "wreck...",
+            "hint_intermediate": "wreck...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b022_keep_to_starboard_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "collision_avoidance",
+            "source_language": "ru",
+            "source_text": "Держитесь правой стороны.",
+            "target_language": "en",
+            "target_text": "keep to starboard",
+            "accepted_answers": [
+                "keep to starboard"
+            ],
+            "grammar_pattern": "b022_keep_to_starboard_pattern",
+            "hint_beginner": "keep to...",
+            "hint_intermediate": "keep to starboard...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b022_pass_port_to_port_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "collision_avoidance",
+            "source_language": "ru",
+            "source_text": "Разойдитесь левыми бортами.",
+            "target_language": "en",
+            "target_text": "pass port to port",
+            "accepted_answers": [
+                "pass port to port"
+            ],
+            "grammar_pattern": "b022_pass_port_to_port_pattern",
+            "hint_beginner": "pass port...",
+            "hint_intermediate": "pass port to port...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b022_buoy_missing_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 10,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "buoyage_reports",
+            "source_language": "ru",
+            "source_text": "Буй отсутствует.",
+            "target_language": "en",
+            "target_text": "buoy missing",
+            "accepted_answers": [
+                "buoy missing"
+            ],
+            "grammar_pattern": "b022_buoy_missing_pattern",
+            "hint_beginner": "buoy missing...",
+            "hint_intermediate": "buoy missing...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b022_light_unlit_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 10,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "navigation_lights",
+            "source_language": "ru",
+            "source_text": "Огонь не горит.",
+            "target_language": "en",
+            "target_text": "light unlit",
+            "accepted_answers": [
+                "light unlit"
+            ],
+            "grammar_pattern": "b022_light_unlit_pattern",
+            "hint_beginner": "light unlit...",
+            "hint_intermediate": "light unlit...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b022_fog_signal_heard_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Слышен туманный сигнал.",
+            "target_language": "en",
+            "target_text": "fog signal heard",
+            "accepted_answers": [
+                "fog signal heard"
+            ],
+            "grammar_pattern": "b022_fog_signal_heard_pattern",
+            "hint_beginner": "fog signal...",
+            "hint_intermediate": "fog signal heard...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b022_visibility_reduced_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Видимость уменьшена.",
+            "target_language": "en",
+            "target_text": "visibility reduced",
+            "accepted_answers": [
+                "visibility reduced"
+            ],
+            "grammar_pattern": "b022_visibility_reduced_pattern",
+            "hint_beginner": "visibility reduced...",
+            "hint_intermediate": "visibility reduced...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b022_wreck_reported_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "hazard_reports",
+            "source_language": "ru",
+            "source_text": "Сообщено о затонувшем судне.",
+            "target_language": "en",
+            "target_text": "wreck reported",
+            "accepted_answers": [
+                "wreck reported"
+            ],
+            "grammar_pattern": "b022_wreck_reported_pattern",
+            "hint_beginner": "wreck reported...",
+            "hint_intermediate": "wreck reported...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b022_shoal_ahead_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "hazard_reports",
+            "source_language": "ru",
+            "source_text": "Мель впереди.",
+            "target_language": "en",
+            "target_text": "shoal ahead",
+            "accepted_answers": [
+                "shoal ahead"
+            ],
+            "grammar_pattern": "b022_shoal_ahead_pattern",
+            "hint_beginner": "shoal ahead...",
+            "hint_intermediate": "shoal ahead...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b022_alter_to_port_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "course_action",
+            "source_language": "ru",
+            "source_text": "Измените курс влево.",
+            "target_language": "en",
+            "target_text": "alter to port",
+            "accepted_answers": [
+                "alter to port"
+            ],
+            "grammar_pattern": "b022_alter_to_port_pattern",
+            "hint_beginner": "alter to...",
+            "hint_intermediate": "alter to port...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b022_alter_to_starboard_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "course_action",
+            "source_language": "ru",
+            "source_text": "Измените курс вправо.",
+            "target_language": "en",
+            "target_text": "alter to starboard",
+            "accepted_answers": [
+                "alter to starboard"
+            ],
+            "grammar_pattern": "b022_alter_to_starboard_pattern",
+            "hint_beginner": "alter to...",
+            "hint_intermediate": "alter to starboard...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b022_cardinal_mark_missing_from_position_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "buoyage_reports",
+            "source_language": "ru",
+            "source_text": "Кардинальный знак отсутствует на позиции.",
+            "target_language": "en",
+            "target_text": "Cardinal mark missing from position.",
+            "accepted_answers": [
+                "Cardinal mark missing from position.",
+                "Cardinal mark is missing from position"
+            ],
+            "grammar_pattern": "b022_cardinal_mark_missing_from_position_pattern",
+            "hint_beginner": "Cardinal mark...",
+            "hint_intermediate": "Cardinal mark missing from...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b022_pass_starboard_of_lateral_mark_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "buoyage_reports",
+            "source_language": "ru",
+            "source_text": "Проходите справа от латерального знака.",
+            "target_language": "en",
+            "target_text": "Pass starboard of lateral mark.",
+            "accepted_answers": [
+                "Pass starboard of lateral mark.",
+                "Pass to starboard of lateral mark"
+            ],
+            "grammar_pattern": "b022_pass_starboard_of_lateral_mark_pattern",
+            "hint_beginner": "Pass starboard...",
+            "hint_intermediate": "Pass starboard of lateral...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b022_isolated_danger_ahead_on_track_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "hazard_reports",
+            "source_language": "ru",
+            "source_text": "Отдельная опасность впереди по курсу.",
+            "target_language": "en",
+            "target_text": "Isolated danger ahead on track.",
+            "accepted_answers": [
+                "Isolated danger ahead on track.",
+                "Isolated danger is ahead on track"
+            ],
+            "grammar_pattern": "b022_isolated_danger_ahead_on_track_pattern",
+            "hint_beginner": "Isolated danger...",
+            "hint_intermediate": "Isolated danger ahead on...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b022_leading_lights_visible_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "navigation_lights",
+            "source_language": "ru",
+            "source_text": "Створные огни видны.",
+            "target_language": "en",
+            "target_text": "Leading lights visible.",
+            "accepted_answers": [
+                "Leading lights visible.",
+                "Leading lights are visible"
+            ],
+            "grammar_pattern": "b022_leading_lights_visible_pattern",
+            "hint_beginner": "Leading lights...",
+            "hint_intermediate": "Leading lights visible....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b022_sector_light_showing_red_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 14,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "navigation_lights",
+            "source_language": "ru",
+            "source_text": "Секторный огонь красный.",
+            "target_language": "en",
+            "target_text": "Sector light showing red.",
+            "accepted_answers": [
+                "Sector light showing red.",
+                "Sector light is showing red"
+            ],
+            "grammar_pattern": "b022_sector_light_showing_red_pattern",
+            "hint_beginner": "Sector light...",
+            "hint_intermediate": "Sector light showing red....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b022_visibility_reduced_to_one_mile_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Видимость уменьшена до одной мили.",
+            "target_language": "en",
+            "target_text": "Visibility reduced to one mile.",
+            "accepted_answers": [
+                "Visibility reduced to one mile.",
+                "Visibility is reduced to one mile"
+            ],
+            "grammar_pattern": "b022_visibility_reduced_to_one_mile_pattern",
+            "hint_beginner": "Visibility reduced...",
+            "hint_intermediate": "Visibility reduced to one...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b022_sound_fog_signal_every_two_minutes_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Подавайте туманный сигнал каждые две минуты.",
+            "target_language": "en",
+            "target_text": "Sound fog signal every two minutes.",
+            "accepted_answers": [
+                "Sound fog signal every two minutes."
+            ],
+            "grammar_pattern": "b022_sound_fog_signal_every_two_minutes_pattern",
+            "hint_beginner": "Sound fog...",
+            "hint_intermediate": "Sound fog signal every...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b022_wreck_marked_by_buoy_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "hazard_reports",
+            "source_language": "ru",
+            "source_text": "Затонувшее судно отмечено буем.",
+            "target_language": "en",
+            "target_text": "Wreck marked by buoy.",
+            "accepted_answers": [
+                "Wreck marked by buoy.",
+                "Wreck is marked by buoy"
+            ],
+            "grammar_pattern": "b022_wreck_marked_by_buoy_pattern",
+            "hint_beginner": "Wreck marked...",
+            "hint_intermediate": "Wreck marked by buoy....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b022_shoal_extends_to_east_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "hazard_reports",
+            "source_language": "ru",
+            "source_text": "Мель простирается к востоку.",
+            "target_language": "en",
+            "target_text": "Shoal extends to east.",
+            "accepted_answers": [
+                "Shoal extends to east.",
+                "Shoal is extending to east"
+            ],
+            "grammar_pattern": "b022_shoal_extends_to_east_pattern",
+            "hint_beginner": "Shoal extends...",
+            "hint_intermediate": "Shoal extends to east....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b022_pass_port_to_port_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "collision_avoidance",
+            "source_language": "ru",
+            "source_text": "Разойдитесь левыми бортами.",
+            "target_language": "en",
+            "target_text": "Pass port to port at safe distance.",
+            "accepted_answers": [
+                "Pass port to port at safe distance."
+            ],
+            "grammar_pattern": "b022_pass_port_to_port_pattern_phrase",
+            "hint_beginner": "Pass port...",
+            "hint_intermediate": "Pass port to port at safe...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b022_altering_to_port_to_avoid_shoal_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "course_action",
+            "source_language": "ru",
+            "source_text": "Изменяю курс влево, чтобы избежать мели.",
+            "target_language": "en",
+            "target_text": "Altering to port to avoid shoal.",
+            "accepted_answers": [
+                "Altering to port to avoid shoal.",
+                "Alter to port to avoid shoal"
+            ],
+            "grammar_pattern": "b022_altering_to_port_to_avoid_shoal_pattern",
+            "hint_beginner": "Altering to...",
+            "hint_intermediate": "Altering to port to...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b022_altering_to_starboard_due_to_wreck_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "course_action",
+            "source_language": "ru",
+            "source_text": "Изменяю курс вправо из-за затонувшего судна.",
+            "target_language": "en",
+            "target_text": "Altering to starboard due to wreck.",
+            "accepted_answers": [
+                "Altering to starboard due to wreck.",
+                "Alter to starboard due to wreck"
+            ],
+            "grammar_pattern": "b022_altering_to_starboard_due_to_wreck_pattern",
+            "hint_beginner": "Altering to...",
+            "hint_intermediate": "Altering to starboard due...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b022_special_mark_north_of_fairway_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "buoyage_reports",
+            "source_language": "ru",
+            "source_text": "Специальный знак к северу от фарватера.",
+            "target_language": "en",
+            "target_text": "Special mark north of fairway.",
+            "accepted_answers": [
+                "Special mark north of fairway.",
+                "Special mark is north of fairway"
+            ],
+            "grammar_pattern": "b022_special_mark_north_of_fairway_pattern",
+            "hint_beginner": "Special mark...",
+            "hint_intermediate": "Special mark north of...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b022_buoy_light_unlit_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "navigation_lights",
+            "source_language": "ru",
+            "source_text": "Огонь буя не горит.",
+            "target_language": "en",
+            "target_text": "Buoy light unlit.",
+            "accepted_answers": [
+                "Buoy light unlit.",
+                "Buoy light is unlit"
+            ],
+            "grammar_pattern": "b022_buoy_light_unlit_pattern",
+            "hint_beginner": "Buoy light...",
+            "hint_intermediate": "Buoy light unlit....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b022_safe_speed_in_restricted_visibility_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "navigation_hazards_buoyage_visibility_vocabulary",
+            "branch": "navigation_hazards_buoyage_visibility",
+            "module": "restricted_visibility",
+            "source_language": "ru",
+            "source_text": "Безопасная скорость в условиях ограниченной видимости.",
+            "target_language": "en",
+            "target_text": "Safe speed in restricted visibility.",
+            "accepted_answers": [
+                "Safe speed in restricted visibility.",
+                "Safe speed during restricted visibility"
+            ],
+            "grammar_pattern": "b022_safe_speed_in_restricted_visibility_pattern",
+            "hint_beginner": "Safe speed...",
+            "hint_intermediate": "Safe speed in restricted...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b023_hypothermia_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "medical_terms",
+            "source_language": "ru",
+            "source_text": "Переохлаждение.",
+            "target_language": "en",
+            "target_text": "suspected hypothermia",
+            "accepted_answers": [
+                "suspected hypothermia"
+            ],
+            "grammar_pattern": "b023_hypothermia_pattern",
+            "hint_beginner": "hypothermia...",
+            "hint_intermediate": "hypothermia...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b023_bleeding_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "medical_terms",
+            "source_language": "ru",
+            "source_text": "Кровотечение.",
+            "target_language": "en",
+            "target_text": "heavy bleeding",
+            "accepted_answers": [
+                "heavy bleeding"
+            ],
+            "grammar_pattern": "b023_bleeding_pattern",
+            "hint_beginner": "bleeding...",
+            "hint_intermediate": "bleeding...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b023_burn_001",
+            "type": "word",
+            "level": "beginner",
+            "difficulty_score": 7,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "medical_terms",
+            "source_language": "ru",
+            "source_text": "Ожог.",
+            "target_language": "en",
+            "target_text": "burn",
+            "accepted_answers": [
+                "burn"
+            ],
+            "grammar_pattern": "b023_burn_pattern",
+            "hint_beginner": "burn...",
+            "hint_intermediate": "burn...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b023_fracture_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "medical_terms",
+            "source_language": "ru",
+            "source_text": "Перелом.",
+            "target_language": "en",
+            "target_text": "suspected fracture",
+            "accepted_answers": [
+                "suspected fracture"
+            ],
+            "grammar_pattern": "b023_fracture_pattern",
+            "hint_beginner": "fracture...",
+            "hint_intermediate": "fracture...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b023_smoke_inhalation_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "medical_terms",
+            "source_language": "ru",
+            "source_text": "Вдыхание дыма.",
+            "target_language": "en",
+            "target_text": "smoke inhalation",
+            "accepted_answers": [
+                "smoke inhalation"
+            ],
+            "grammar_pattern": "b023_smoke_inhalation_pattern",
+            "hint_beginner": "smoke inhalation...",
+            "hint_intermediate": "smoke inhalation...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b023_unconscious_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "casualty_status",
+            "source_language": "ru",
+            "source_text": "Без сознания.",
+            "target_language": "en",
+            "target_text": "unconscious",
+            "accepted_answers": [
+                "unconscious"
+            ],
+            "grammar_pattern": "b023_unconscious_pattern",
+            "hint_beginner": "unconscious...",
+            "hint_intermediate": "unconscious...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b023_evacuation_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "evacuation_terms",
+            "source_language": "ru",
+            "source_text": "Эвакуация.",
+            "target_language": "en",
+            "target_text": "evacuation",
+            "accepted_answers": [
+                "evacuation"
+            ],
+            "grammar_pattern": "b023_evacuation_pattern",
+            "hint_beginner": "evacuation...",
+            "hint_intermediate": "evacuation...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b023_stretcher_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "medical_equipment",
+            "source_language": "ru",
+            "source_text": "Носилки.",
+            "target_language": "en",
+            "target_text": "stretcher",
+            "accepted_answers": [
+                "stretcher"
+            ],
+            "grammar_pattern": "b023_stretcher_pattern",
+            "hint_beginner": "stretcher...",
+            "hint_intermediate": "stretcher...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b023_defibrillator_001",
+            "type": "word",
+            "level": "advanced",
+            "difficulty_score": 9,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "medical_equipment",
+            "source_language": "ru",
+            "source_text": "Дефибриллятор.",
+            "target_language": "en",
+            "target_text": "defibrillator",
+            "accepted_answers": [
+                "defibrillator"
+            ],
+            "grammar_pattern": "b023_defibrillator_pattern",
+            "hint_beginner": "defibrillator...",
+            "hint_intermediate": "defibrillator...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "word_b023_medication_001",
+            "type": "word",
+            "level": "intermediate",
+            "difficulty_score": 8,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "medical_terms",
+            "source_language": "ru",
+            "source_text": "Лекарство.",
+            "target_language": "en",
+            "target_text": "medication",
+            "accepted_answers": [
+                "medication"
+            ],
+            "grammar_pattern": "b023_medication_pattern",
+            "hint_beginner": "medication...",
+            "hint_intermediate": "medication...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b023_stop_bleeding_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "first_aid_actions",
+            "source_language": "ru",
+            "source_text": "Остановите кровотечение.",
+            "target_language": "en",
+            "target_text": "stop bleeding",
+            "accepted_answers": [
+                "stop bleeding"
+            ],
+            "grammar_pattern": "b023_stop_bleeding_pattern",
+            "hint_beginner": "stop bleeding...",
+            "hint_intermediate": "stop bleeding...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b023_apply_bandage_001",
+            "type": "short_expression",
+            "level": "beginner",
+            "difficulty_score": 8,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "first_aid_actions",
+            "source_language": "ru",
+            "source_text": "Наложите повязку.",
+            "target_language": "en",
+            "target_text": "apply bandage",
+            "accepted_answers": [
+                "apply bandage"
+            ],
+            "grammar_pattern": "b023_apply_bandage_pattern",
+            "hint_beginner": "apply bandage...",
+            "hint_intermediate": "apply bandage...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b023_monitor_breathing_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "casualty_monitoring",
+            "source_language": "ru",
+            "source_text": "Следите за дыханием.",
+            "target_language": "en",
+            "target_text": "monitor breathing",
+            "accepted_answers": [
+                "monitor breathing"
+            ],
+            "grammar_pattern": "b023_monitor_breathing_pattern",
+            "hint_beginner": "monitor breathing...",
+            "hint_intermediate": "monitor breathing...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b023_prepare_stretcher_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "medical_equipment",
+            "source_language": "ru",
+            "source_text": "Подготовьте носилки.",
+            "target_language": "en",
+            "target_text": "prepare stretcher",
+            "accepted_answers": [
+                "prepare stretcher"
+            ],
+            "grammar_pattern": "b023_prepare_stretcher_pattern",
+            "hint_beginner": "prepare stretcher...",
+            "hint_intermediate": "prepare stretcher...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b023_request_medical_advice_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "medical_advice",
+            "source_language": "ru",
+            "source_text": "Запросите медицинскую консультацию.",
+            "target_language": "en",
+            "target_text": "request medical advice",
+            "accepted_answers": [
+                "request medical advice"
+            ],
+            "grammar_pattern": "b023_request_medical_advice_pattern",
+            "hint_beginner": "request medical...",
+            "hint_intermediate": "request medical advice...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b023_oxygen_required_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 10,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "medical_response",
+            "source_language": "ru",
+            "source_text": "Требуется кислород.",
+            "target_language": "en",
+            "target_text": "oxygen required",
+            "accepted_answers": [
+                "oxygen required"
+            ],
+            "grammar_pattern": "b023_oxygen_required_pattern",
+            "hint_beginner": "oxygen required...",
+            "hint_intermediate": "oxygen required...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b023_patient_conscious_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "casualty_status",
+            "source_language": "ru",
+            "source_text": "Пациент в сознании.",
+            "target_language": "en",
+            "target_text": "patient conscious",
+            "accepted_answers": [
+                "patient conscious"
+            ],
+            "grammar_pattern": "b023_patient_conscious_pattern",
+            "hint_beginner": "patient conscious...",
+            "hint_intermediate": "patient conscious...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b023_patient_unconscious_001",
+            "type": "short_expression",
+            "level": "intermediate",
+            "difficulty_score": 9,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "casualty_status",
+            "source_language": "ru",
+            "source_text": "Пациент без сознания.",
+            "target_language": "en",
+            "target_text": "patient unconscious",
+            "accepted_answers": [
+                "patient unconscious"
+            ],
+            "grammar_pattern": "b023_patient_unconscious_pattern",
+            "hint_beginner": "patient unconscious...",
+            "hint_intermediate": "patient unconscious...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b023_evacuate_casualty_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 10,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "evacuation_actions",
+            "source_language": "ru",
+            "source_text": "Эвакуируйте пострадавшего.",
+            "target_language": "en",
+            "target_text": "evacuate casualty",
+            "accepted_answers": [
+                "evacuate casualty"
+            ],
+            "grammar_pattern": "b023_evacuate_casualty_pattern",
+            "hint_beginner": "evacuate casualty...",
+            "hint_intermediate": "evacuate casualty...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "expr_b023_administer_medication_001",
+            "type": "short_expression",
+            "level": "advanced",
+            "difficulty_score": 10,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "medical_response",
+            "source_language": "ru",
+            "source_text": "Дайте лекарство.",
+            "target_language": "en",
+            "target_text": "administer medication",
+            "accepted_answers": [
+                "administer medication"
+            ],
+            "grammar_pattern": "b023_administer_medication_pattern",
+            "hint_beginner": "administer medication...",
+            "hint_intermediate": "administer medication...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b023_severe_bleeding_apply_pressure_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "first_aid_actions",
+            "source_language": "ru",
+            "source_text": "Сильное кровотечение, наложите давление.",
+            "target_language": "en",
+            "target_text": "Severe bleeding, apply pressure.",
+            "accepted_answers": [
+                "Severe bleeding, apply pressure."
+            ],
+            "grammar_pattern": "b023_severe_bleeding_apply_pressure_pattern",
+            "hint_beginner": "Severe bleeding,...",
+            "hint_intermediate": "Severe bleeding, apply pressure....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b023_patient_unconscious_breathing_present_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "casualty_monitoring",
+            "source_language": "ru",
+            "source_text": "Пациент без сознания, дыхание есть.",
+            "target_language": "en",
+            "target_text": "Patient unconscious, breathing present.",
+            "accepted_answers": [
+                "Patient unconscious, breathing present.",
+                "Patient is unconscious breathing present"
+            ],
+            "grammar_pattern": "b023_patient_unconscious_breathing_present_pattern",
+            "hint_beginner": "Patient unconscious,...",
+            "hint_intermediate": "Patient unconscious, breathing present....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b023_request_medical_advice_for_burn_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "medical_advice",
+            "source_language": "ru",
+            "source_text": "Запрашиваем медицинскую консультацию по ожогу.",
+            "target_language": "en",
+            "target_text": "Request medical advice for burn.",
+            "accepted_answers": [
+                "Request medical advice for burn.",
+                "Requesting medical advice for burn"
+            ],
+            "grammar_pattern": "b023_request_medical_advice_for_burn_pattern",
+            "hint_beginner": "Request medical...",
+            "hint_intermediate": "Request medical advice for...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b023_prepare_stretcher_for_evacuation_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "evacuation_actions",
+            "source_language": "ru",
+            "source_text": "Подготовьте носилки для эвакуации.",
+            "target_language": "en",
+            "target_text": "Prepare stretcher for evacuation.",
+            "accepted_answers": [
+                "Prepare stretcher for evacuation."
+            ],
+            "grammar_pattern": "b023_prepare_stretcher_for_evacuation_pattern",
+            "hint_beginner": "Prepare stretcher...",
+            "hint_intermediate": "Prepare stretcher for evacuation....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b023_oxygen_required_for_patient_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "medical_response",
+            "source_language": "ru",
+            "source_text": "Требуется кислород для пациента.",
+            "target_language": "en",
+            "target_text": "Oxygen required for patient.",
+            "accepted_answers": [
+                "Oxygen required for patient.",
+                "Oxygen is required for patient"
+            ],
+            "grammar_pattern": "b023_oxygen_required_for_patient_pattern",
+            "hint_beginner": "Oxygen required...",
+            "hint_intermediate": "Oxygen required for patient....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b023_defibrillator_ready_on_main_deck_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "medical_equipment",
+            "source_language": "ru",
+            "source_text": "Дефибриллятор готов на главной палубе.",
+            "target_language": "en",
+            "target_text": "Defibrillator ready on main deck.",
+            "accepted_answers": [
+                "Defibrillator ready on main deck.",
+                "Defibrillator is ready on main deck"
+            ],
+            "grammar_pattern": "b023_defibrillator_ready_on_main_deck_pattern",
+            "hint_beginner": "Defibrillator ready...",
+            "hint_intermediate": "Defibrillator ready on main...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b023_do_not_administer_medication_without_advice_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "medical_response",
+            "source_language": "ru",
+            "source_text": "Не давайте лекарство без консультации.",
+            "target_language": "en",
+            "target_text": "Do not administer medication without advice.",
+            "accepted_answers": [
+                "Do not administer medication without advice.",
+                "Do not give medication without advice"
+            ],
+            "grammar_pattern": "b023_do_not_administer_medication_without_advice_pattern",
+            "hint_beginner": "Do not...",
+            "hint_intermediate": "Do not administer medication...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b023_casualty_stable_monitor_breathing_001",
+            "type": "phrase",
+            "level": "intermediate",
+            "difficulty_score": 13,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "casualty_status",
+            "source_language": "ru",
+            "source_text": "Пострадавший стабилен, наблюдайте за дыханием.",
+            "target_language": "en",
+            "target_text": "Casualty stable, monitor breathing.",
+            "accepted_answers": [
+                "Casualty stable, monitor breathing.",
+                "Casualty is stable monitor breathing"
+            ],
+            "grammar_pattern": "b023_casualty_stable_monitor_breathing_pattern",
+            "hint_beginner": "Casualty stable,...",
+            "hint_intermediate": "Casualty stable, monitor breathing....",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b023_evacuate_casualty_to_port_clinic_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 15,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "evacuation_actions",
+            "source_language": "ru",
+            "source_text": "Эвакуируйте пострадавшего в портовую клинику.",
+            "target_language": "en",
+            "target_text": "Evacuate casualty to port clinic.",
+            "accepted_answers": [
+                "Evacuate casualty to port clinic."
+            ],
+            "grammar_pattern": "b023_evacuate_casualty_to_port_clinic_pattern",
+            "hint_beginner": "Evacuate casualty...",
+            "hint_intermediate": "Evacuate casualty to port...",
+            "hint_advanced": ""
+        },
+        {
+            "id": "phrase_b023_report_one_patient_with_hypothermia_001",
+            "type": "phrase",
+            "level": "advanced",
+            "difficulty_score": 16,
+            "topic": "emergency_medical_response_vocabulary",
+            "branch": "emergency_medical_response",
+            "module": "medical_reports",
+            "source_language": "ru",
+            "source_text": "Сообщите: один пациент с переохлаждением.",
+            "target_language": "en",
+            "target_text": "Report one patient with hypothermia.",
+            "accepted_answers": [
+                "Report one patient with hypothermia.",
+                "Report one patient has hypothermia"
+            ],
+            "grammar_pattern": "b023_report_one_patient_with_hypothermia_pattern",
+            "hint_beginner": "Report one...",
+            "hint_intermediate": "Report one patient with...",
+            "hint_advanced": ""
         }
     ],
     "grammar_patterns": [
@@ -17755,6 +19780,706 @@
             "pattern": "report missing person from location",
             "examples": [
                 "Report one person missing from deck."
+            ]
+        },
+        {
+            "id": "b021_call_sign_pattern",
+            "pattern": "vhf_terms word pattern",
+            "examples": [
+                "vessel call sign"
+            ]
+        },
+        {
+            "id": "b021_station_name_pattern",
+            "pattern": "vhf_terms word pattern",
+            "examples": [
+                "station name"
+            ]
+        },
+        {
+            "id": "b021_working_channel_pattern",
+            "pattern": "vhf_terms word pattern",
+            "examples": [
+                "working channel"
+            ]
+        },
+        {
+            "id": "b021_distress_channel_pattern",
+            "pattern": "vhf_terms word pattern",
+            "examples": [
+                "distress channel"
+            ]
+        },
+        {
+            "id": "b021_message_marker_pattern",
+            "pattern": "message_markers word pattern",
+            "examples": [
+                "message marker"
+            ]
+        },
+        {
+            "id": "b021_repetition_pattern",
+            "pattern": "message_markers word pattern",
+            "examples": [
+                "repetition"
+            ]
+        },
+        {
+            "id": "b021_correction_pattern",
+            "pattern": "message_markers word pattern",
+            "examples": [
+                "correction marker"
+            ]
+        },
+        {
+            "id": "b021_relay_pattern",
+            "pattern": "relay_procedure word pattern",
+            "examples": [
+                "distress relay"
+            ]
+        },
+        {
+            "id": "b021_interference_pattern",
+            "pattern": "vhf_terms word pattern",
+            "examples": [
+                "interference"
+            ]
+        },
+        {
+            "id": "b021_priority_pattern",
+            "pattern": "vhf_terms word pattern",
+            "examples": [
+                "priority"
+            ]
+        },
+        {
+            "id": "b021_say_again_pattern",
+            "pattern": "communication_control short_expression pattern",
+            "examples": [
+                "say again slowly"
+            ]
+        },
+        {
+            "id": "b021_speak_slowly_pattern",
+            "pattern": "communication_control short_expression pattern",
+            "examples": [
+                "speak slowly"
+            ]
+        },
+        {
+            "id": "b021_wait_one_pattern",
+            "pattern": "communication_control short_expression pattern",
+            "examples": [
+                "wait one"
+            ]
+        },
+        {
+            "id": "b021_switch_channel_pattern",
+            "pattern": "channel_control short_expression pattern",
+            "examples": [
+                "switch channel"
+            ]
+        },
+        {
+            "id": "b021_read_back_pattern",
+            "pattern": "readback_procedure short_expression pattern",
+            "examples": [
+                "read back instruction"
+            ]
+        },
+        {
+            "id": "b021_correction_follows_pattern",
+            "pattern": "message_markers short_expression pattern",
+            "examples": [
+                "correction follows"
+            ]
+        },
+        {
+            "id": "b021_message_received_pattern",
+            "pattern": "acknowledgement short_expression pattern",
+            "examples": [
+                "message received"
+            ]
+        },
+        {
+            "id": "b021_standing_by_pattern",
+            "pattern": "communication_control short_expression pattern",
+            "examples": [
+                "standing by on channel"
+            ]
+        },
+        {
+            "id": "b021_end_of_message_pattern",
+            "pattern": "message_markers short_expression pattern",
+            "examples": [
+                "end of message"
+            ]
+        },
+        {
+            "id": "b021_relay_message_pattern",
+            "pattern": "relay_procedure short_expression pattern",
+            "examples": [
+                "relay message"
+            ]
+        },
+        {
+            "id": "b021_all_stations_this_is_aurora_pattern",
+            "pattern": "station_calls phrase pattern",
+            "examples": [
+                "All stations, this is Aurora."
+            ]
+        },
+        {
+            "id": "b021_switch_to_channel_one_two_pattern",
+            "pattern": "channel_control phrase pattern",
+            "examples": [
+                "Switch to working channel one two."
+            ]
+        },
+        {
+            "id": "b021_say_again_last_message_pattern",
+            "pattern": "communication_control phrase pattern",
+            "examples": [
+                "Say again last message."
+            ]
+        },
+        {
+            "id": "b021_speak_slowly_signal_weak_pattern",
+            "pattern": "communication_control phrase pattern",
+            "examples": [
+                "Speak slowly, signal weak."
+            ]
+        },
+        {
+            "id": "b021_read_back_course_two_seven_zero_pattern",
+            "pattern": "readback_procedure phrase pattern",
+            "examples": [
+                "Read back course two seven zero."
+            ]
+        },
+        {
+            "id": "b021_correction_channel_one_two_pattern",
+            "pattern": "message_markers phrase pattern",
+            "examples": [
+                "Correction, channel one two."
+            ]
+        },
+        {
+            "id": "b021_message_received_standing_by_pattern",
+            "pattern": "acknowledgement phrase pattern",
+            "examples": [
+                "Message received, standing by."
+            ]
+        },
+        {
+            "id": "b021_relay_message_to_coast_station_pattern",
+            "pattern": "relay_procedure phrase pattern",
+            "examples": [
+                "Relay message to coast station."
+            ]
+        },
+        {
+            "id": "b021_interference_on_working_channel_pattern",
+            "pattern": "interference_report phrase pattern",
+            "examples": [
+                "Interference on working channel."
+            ]
+        },
+        {
+            "id": "b021_wait_one_checking_position_pattern",
+            "pattern": "communication_control phrase pattern",
+            "examples": [
+                "Wait one, checking position."
+            ]
+        },
+        {
+            "id": "b021_message_marker_question_pattern",
+            "pattern": "message_markers phrase pattern",
+            "examples": [
+                "Message marker, question."
+            ]
+        },
+        {
+            "id": "b021_priority_message_follows_pattern",
+            "pattern": "priority_messages phrase pattern",
+            "examples": [
+                "Priority message follows."
+            ]
+        },
+        {
+            "id": "b021_readback_incorrect_correcting_pattern",
+            "pattern": "readback_procedure phrase pattern",
+            "examples": [
+                "Readback incorrect, correcting."
+            ]
+        },
+        {
+            "id": "b021_end_of_message_switching_channel_one_two_pattern",
+            "pattern": "message_closure phrase pattern",
+            "examples": [
+                "End of message, switching channel one two."
+            ]
+        },
+        {
+            "id": "b021_relay_distress_message_to_all_stations_pattern",
+            "pattern": "distress_relay phrase pattern",
+            "examples": [
+                "Relay distress message to all stations."
+            ]
+        },
+        {
+            "id": "b022_cardinal_mark_pattern",
+            "pattern": "buoyage_terms word pattern",
+            "examples": [
+                "cardinal mark"
+            ]
+        },
+        {
+            "id": "b022_lateral_mark_pattern",
+            "pattern": "buoyage_terms word pattern",
+            "examples": [
+                "lateral mark"
+            ]
+        },
+        {
+            "id": "b022_isolated_danger_pattern",
+            "pattern": "buoyage_terms word pattern",
+            "examples": [
+                "isolated danger"
+            ]
+        },
+        {
+            "id": "b022_safe_water_mark_pattern",
+            "pattern": "buoyage_terms word pattern",
+            "examples": [
+                "safe water mark"
+            ]
+        },
+        {
+            "id": "b022_special_mark_pattern",
+            "pattern": "buoyage_terms word pattern",
+            "examples": [
+                "special mark"
+            ]
+        },
+        {
+            "id": "b022_leading_lights_pattern",
+            "pattern": "navigation_lights word pattern",
+            "examples": [
+                "leading lights"
+            ]
+        },
+        {
+            "id": "b022_sector_light_pattern",
+            "pattern": "navigation_lights word pattern",
+            "examples": [
+                "sector light"
+            ]
+        },
+        {
+            "id": "b022_fog_signal_pattern",
+            "pattern": "restricted_visibility word pattern",
+            "examples": [
+                "fog signal"
+            ]
+        },
+        {
+            "id": "b022_shoal_pattern",
+            "pattern": "hazard_terms word pattern",
+            "examples": [
+                "shoal"
+            ]
+        },
+        {
+            "id": "b022_wreck_pattern",
+            "pattern": "hazard_terms word pattern",
+            "examples": [
+                "wreck"
+            ]
+        },
+        {
+            "id": "b022_keep_to_starboard_pattern",
+            "pattern": "collision_avoidance short_expression pattern",
+            "examples": [
+                "keep to starboard"
+            ]
+        },
+        {
+            "id": "b022_pass_port_to_port_pattern",
+            "pattern": "collision_avoidance short_expression pattern",
+            "examples": [
+                "pass port to port"
+            ]
+        },
+        {
+            "id": "b022_buoy_missing_pattern",
+            "pattern": "buoyage_reports short_expression pattern",
+            "examples": [
+                "buoy missing"
+            ]
+        },
+        {
+            "id": "b022_light_unlit_pattern",
+            "pattern": "navigation_lights short_expression pattern",
+            "examples": [
+                "light unlit"
+            ]
+        },
+        {
+            "id": "b022_fog_signal_heard_pattern",
+            "pattern": "restricted_visibility short_expression pattern",
+            "examples": [
+                "fog signal heard"
+            ]
+        },
+        {
+            "id": "b022_visibility_reduced_pattern",
+            "pattern": "restricted_visibility short_expression pattern",
+            "examples": [
+                "visibility reduced"
+            ]
+        },
+        {
+            "id": "b022_wreck_reported_pattern",
+            "pattern": "hazard_reports short_expression pattern",
+            "examples": [
+                "wreck reported"
+            ]
+        },
+        {
+            "id": "b022_shoal_ahead_pattern",
+            "pattern": "hazard_reports short_expression pattern",
+            "examples": [
+                "shoal ahead"
+            ]
+        },
+        {
+            "id": "b022_alter_to_port_pattern",
+            "pattern": "course_action short_expression pattern",
+            "examples": [
+                "alter to port"
+            ]
+        },
+        {
+            "id": "b022_alter_to_starboard_pattern",
+            "pattern": "course_action short_expression pattern",
+            "examples": [
+                "alter to starboard"
+            ]
+        },
+        {
+            "id": "b022_cardinal_mark_missing_from_position_pattern",
+            "pattern": "buoyage_reports phrase pattern",
+            "examples": [
+                "Cardinal mark missing from position."
+            ]
+        },
+        {
+            "id": "b022_pass_starboard_of_lateral_mark_pattern",
+            "pattern": "buoyage_reports phrase pattern",
+            "examples": [
+                "Pass starboard of lateral mark."
+            ]
+        },
+        {
+            "id": "b022_isolated_danger_ahead_on_track_pattern",
+            "pattern": "hazard_reports phrase pattern",
+            "examples": [
+                "Isolated danger ahead on track."
+            ]
+        },
+        {
+            "id": "b022_leading_lights_visible_pattern",
+            "pattern": "navigation_lights phrase pattern",
+            "examples": [
+                "Leading lights visible."
+            ]
+        },
+        {
+            "id": "b022_sector_light_showing_red_pattern",
+            "pattern": "navigation_lights phrase pattern",
+            "examples": [
+                "Sector light showing red."
+            ]
+        },
+        {
+            "id": "b022_visibility_reduced_to_one_mile_pattern",
+            "pattern": "restricted_visibility phrase pattern",
+            "examples": [
+                "Visibility reduced to one mile."
+            ]
+        },
+        {
+            "id": "b022_sound_fog_signal_every_two_minutes_pattern",
+            "pattern": "restricted_visibility phrase pattern",
+            "examples": [
+                "Sound fog signal every two minutes."
+            ]
+        },
+        {
+            "id": "b022_wreck_marked_by_buoy_pattern",
+            "pattern": "hazard_reports phrase pattern",
+            "examples": [
+                "Wreck marked by buoy."
+            ]
+        },
+        {
+            "id": "b022_shoal_extends_to_east_pattern",
+            "pattern": "hazard_reports phrase pattern",
+            "examples": [
+                "Shoal extends to east."
+            ]
+        },
+        {
+            "id": "b022_pass_port_to_port_pattern_phrase",
+            "pattern": "collision_avoidance phrase pattern",
+            "examples": [
+                "Pass port to port at safe distance."
+            ]
+        },
+        {
+            "id": "b022_altering_to_port_to_avoid_shoal_pattern",
+            "pattern": "course_action phrase pattern",
+            "examples": [
+                "Altering to port to avoid shoal."
+            ]
+        },
+        {
+            "id": "b022_altering_to_starboard_due_to_wreck_pattern",
+            "pattern": "course_action phrase pattern",
+            "examples": [
+                "Altering to starboard due to wreck."
+            ]
+        },
+        {
+            "id": "b022_special_mark_north_of_fairway_pattern",
+            "pattern": "buoyage_reports phrase pattern",
+            "examples": [
+                "Special mark north of fairway."
+            ]
+        },
+        {
+            "id": "b022_buoy_light_unlit_pattern",
+            "pattern": "navigation_lights phrase pattern",
+            "examples": [
+                "Buoy light unlit."
+            ]
+        },
+        {
+            "id": "b022_safe_speed_in_restricted_visibility_pattern",
+            "pattern": "restricted_visibility phrase pattern",
+            "examples": [
+                "Safe speed in restricted visibility."
+            ]
+        },
+        {
+            "id": "b023_hypothermia_pattern",
+            "pattern": "medical_terms word pattern",
+            "examples": [
+                "suspected hypothermia"
+            ]
+        },
+        {
+            "id": "b023_bleeding_pattern",
+            "pattern": "medical_terms word pattern",
+            "examples": [
+                "heavy bleeding"
+            ]
+        },
+        {
+            "id": "b023_burn_pattern",
+            "pattern": "medical_terms word pattern",
+            "examples": [
+                "burn"
+            ]
+        },
+        {
+            "id": "b023_fracture_pattern",
+            "pattern": "medical_terms word pattern",
+            "examples": [
+                "suspected fracture"
+            ]
+        },
+        {
+            "id": "b023_smoke_inhalation_pattern",
+            "pattern": "medical_terms word pattern",
+            "examples": [
+                "smoke inhalation"
+            ]
+        },
+        {
+            "id": "b023_unconscious_pattern",
+            "pattern": "casualty_status word pattern",
+            "examples": [
+                "unconscious"
+            ]
+        },
+        {
+            "id": "b023_evacuation_pattern",
+            "pattern": "evacuation_terms word pattern",
+            "examples": [
+                "evacuation"
+            ]
+        },
+        {
+            "id": "b023_stretcher_pattern",
+            "pattern": "medical_equipment word pattern",
+            "examples": [
+                "stretcher"
+            ]
+        },
+        {
+            "id": "b023_defibrillator_pattern",
+            "pattern": "medical_equipment word pattern",
+            "examples": [
+                "defibrillator"
+            ]
+        },
+        {
+            "id": "b023_medication_pattern",
+            "pattern": "medical_terms word pattern",
+            "examples": [
+                "medication"
+            ]
+        },
+        {
+            "id": "b023_stop_bleeding_pattern",
+            "pattern": "first_aid_actions short_expression pattern",
+            "examples": [
+                "stop bleeding"
+            ]
+        },
+        {
+            "id": "b023_apply_bandage_pattern",
+            "pattern": "first_aid_actions short_expression pattern",
+            "examples": [
+                "apply bandage"
+            ]
+        },
+        {
+            "id": "b023_monitor_breathing_pattern",
+            "pattern": "casualty_monitoring short_expression pattern",
+            "examples": [
+                "monitor breathing"
+            ]
+        },
+        {
+            "id": "b023_prepare_stretcher_pattern",
+            "pattern": "medical_equipment short_expression pattern",
+            "examples": [
+                "prepare stretcher"
+            ]
+        },
+        {
+            "id": "b023_request_medical_advice_pattern",
+            "pattern": "medical_advice short_expression pattern",
+            "examples": [
+                "request medical advice"
+            ]
+        },
+        {
+            "id": "b023_oxygen_required_pattern",
+            "pattern": "medical_response short_expression pattern",
+            "examples": [
+                "oxygen required"
+            ]
+        },
+        {
+            "id": "b023_patient_conscious_pattern",
+            "pattern": "casualty_status short_expression pattern",
+            "examples": [
+                "patient conscious"
+            ]
+        },
+        {
+            "id": "b023_patient_unconscious_pattern",
+            "pattern": "casualty_status short_expression pattern",
+            "examples": [
+                "patient unconscious"
+            ]
+        },
+        {
+            "id": "b023_evacuate_casualty_pattern",
+            "pattern": "evacuation_actions short_expression pattern",
+            "examples": [
+                "evacuate casualty"
+            ]
+        },
+        {
+            "id": "b023_administer_medication_pattern",
+            "pattern": "medical_response short_expression pattern",
+            "examples": [
+                "administer medication"
+            ]
+        },
+        {
+            "id": "b023_severe_bleeding_apply_pressure_pattern",
+            "pattern": "first_aid_actions phrase pattern",
+            "examples": [
+                "Severe bleeding, apply pressure."
+            ]
+        },
+        {
+            "id": "b023_patient_unconscious_breathing_present_pattern",
+            "pattern": "casualty_monitoring phrase pattern",
+            "examples": [
+                "Patient unconscious, breathing present."
+            ]
+        },
+        {
+            "id": "b023_request_medical_advice_for_burn_pattern",
+            "pattern": "medical_advice phrase pattern",
+            "examples": [
+                "Request medical advice for burn."
+            ]
+        },
+        {
+            "id": "b023_prepare_stretcher_for_evacuation_pattern",
+            "pattern": "evacuation_actions phrase pattern",
+            "examples": [
+                "Prepare stretcher for evacuation."
+            ]
+        },
+        {
+            "id": "b023_oxygen_required_for_patient_pattern",
+            "pattern": "medical_response phrase pattern",
+            "examples": [
+                "Oxygen required for patient."
+            ]
+        },
+        {
+            "id": "b023_defibrillator_ready_on_main_deck_pattern",
+            "pattern": "medical_equipment phrase pattern",
+            "examples": [
+                "Defibrillator ready on main deck."
+            ]
+        },
+        {
+            "id": "b023_do_not_administer_medication_without_advice_pattern",
+            "pattern": "medical_response phrase pattern",
+            "examples": [
+                "Do not administer medication without advice."
+            ]
+        },
+        {
+            "id": "b023_casualty_stable_monitor_breathing_pattern",
+            "pattern": "casualty_status phrase pattern",
+            "examples": [
+                "Casualty stable, monitor breathing."
+            ]
+        },
+        {
+            "id": "b023_evacuate_casualty_to_port_clinic_pattern",
+            "pattern": "evacuation_actions phrase pattern",
+            "examples": [
+                "Evacuate casualty to port clinic."
+            ]
+        },
+        {
+            "id": "b023_report_one_patient_with_hypothermia_pattern",
+            "pattern": "medical_reports phrase pattern",
+            "examples": [
+                "Report one patient with hypothermia."
             ]
         }
     ],

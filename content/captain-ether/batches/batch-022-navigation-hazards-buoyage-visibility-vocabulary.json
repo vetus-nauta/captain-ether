@@ -1,7 +1,7 @@
 {
     "version": 1,
     "batch_id": "batch-022-navigation-hazards-buoyage-visibility-vocabulary",
-    "status": "linguist_reviewed",
+    "status": "merged",
     "date": "2026-06-03",
     "branch": "navigation_hazards_buoyage_visibility",
     "scope": "M4 navigation hazards, buoyage, lights and restricted visibility vocabulary draft. Draft only: no starter merge and no production deploy.",
@@ -1020,22 +1020,23 @@
             "source_language": "ru",
             "source_text": "Разойдитесь левыми бортами.",
             "target_language": "en",
-            "target_text": "Pass port to port.",
+            "target_text": "Pass port to port at safe distance.",
             "accepted_answers": [
-                "Pass port to port."
+                "Pass port to port at safe distance."
             ],
             "grammar_pattern": "b022_pass_port_to_port_pattern_phrase",
             "hint_beginner": "Pass port...",
-            "hint_intermediate": "Pass port to port....",
+            "hint_intermediate": "Pass port to port at safe...",
             "hint_advanced": "",
             "qa_notes": {
                 "should_accept": [
-                    "Pass port to port."
+                    "Pass port to port at safe distance."
                 ],
                 "should_reject": [
                     "Pass starboard to starboard",
                     "Pass port to starboard",
-                    "Alter port to port"
+                    "Alter port to port",
+                    "Pass port to port"
                 ],
                 "dangerous_minimal_pairs": [
                     "port/starboard passing arrangement"
@@ -1432,7 +1433,7 @@
             "id": "b022_pass_port_to_port_pattern_phrase",
             "pattern": "collision_avoidance phrase pattern",
             "examples": [
-                "Pass port to port."
+                "Pass port to port at safe distance."
             ]
         },
         {
@@ -1745,7 +1746,7 @@
                     "Shoal extends to east."
                 ],
                 "phrase_b022_pass_port_to_port_001": [
-                    "Pass port to port."
+                    "Pass port to port at safe distance."
                 ]
             },
             "must_reject": {
@@ -1767,7 +1768,8 @@
                 ],
                 "phrase_b022_pass_port_to_port_001": [
                     "Pass starboard to starboard",
-                    "Pass port to starboard"
+                    "Pass port to starboard",
+                    "Pass port to port"
                 ]
             },
             "reason": "Grouped dangerous boundaries preserve operational term, action, polarity, side, channel, number, or location."

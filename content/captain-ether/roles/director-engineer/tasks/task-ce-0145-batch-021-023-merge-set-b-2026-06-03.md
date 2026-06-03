@@ -3,7 +3,7 @@
 Date: 2026-06-03
 Owner: Director-Engineer
 Scope: Captain Ether local merge preparation only
-Status: OPEN
+Status: DONE / MERGED LOCALLY / PASS
 
 ## Activation Condition
 
@@ -45,3 +45,21 @@ no production deploy
 ```
 
 No production deploy is authorized by this merge task.
+
+## Result
+
+```text
+merged_items=100
+merged_grammar_patterns=100
+merged_qa_items=100
+merged_dangerous_pairs=20
+starter_items=830
+grammar_patterns=411
+qa_items=830
+dangerous_pairs=193
+qa_notes_in_starter=0
+post_merge_targeted_matcher=PASS items=100 accept=139 reject=301
+api_smoke=PASS checks=334
+production_deploy=not_run
+next_task=CE-0146 Batch 021-023 Post-Merge QA Set B
+```

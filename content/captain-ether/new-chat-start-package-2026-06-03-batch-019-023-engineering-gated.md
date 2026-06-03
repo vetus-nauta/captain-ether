@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 019-020 synced to production; Batch 021-023 remain staged draft backlog
+Canonical status: Batch 021-023 merged locally/GitHub; production remains Batch 020 until explicit sync
 
 ## 1. Read This First
 
@@ -26,50 +26,41 @@ state.
 
 ## 2. Current Playable State
 
-Local/GitHub/production playable baseline is now Batch 020 after Set A production sync:
+Local/GitHub playable baseline is now Batch 023 after Set B merge:
 
 ```text
-starter_items=730
-grammar_patterns=311
-qa_items=730
-dangerous_pairs=173
+local_github_starter_items=830
+local_github_grammar_patterns=411
+local_github_qa_items=830
+local_github_dangerous_pairs=193
 batch_019_status=merged
 batch_020_status=merged
+batch_021_status=merged
+batch_022_status=merged
+batch_023_status=merged
+```
+
+Production remains Batch 020 until a later explicit Set B production sync task:
+
+```text
+production_starter_items=730
+production_grammar_patterns=311
+production_qa_items=730
+production_dangerous_pairs=173
 production_route=HTTP 200
 anonymous_start_watch=HTTP 401 Login required
 ```
 
-Production was synced by CE-0144.
-
 ## 3. Current Draft Backlog
 
-Batch 021-023 remain unmerged. They are reviewed, passed engineering gate, and
-passed combined acceptance QA for staged merge.
+Batch 019-023 are all merged locally/GitHub. There is no remaining Batch 019-023
+draft backlog.
 
 ```text
-Batch 021 status=linguist_reviewed, items=35, grammar_patterns=35, dangerous_pairs=7
-Batch 022 status=linguist_reviewed, items=35, grammar_patterns=35, dangerous_pairs=7
-Batch 023 status=linguist_reviewed, items=30, grammar_patterns=30, dangerous_pairs=6
-```
-
-Combined draft backlog:
-
-```text
-draft_backlog_items=100
-draft_backlog_grammar_patterns=100
-draft_backlog_qa_items=100
-draft_backlog_dangerous_pairs=20
-draft_should_accept=139
-draft_should_reject=300
-```
-
-If Batch 021-023 later merge, expected local/GitHub playable baseline:
-
-```text
-starter_items: 730 -> 830
-grammar_patterns: 311 -> 411
-qa_items: 730 -> 830
-dangerous_pairs: 173 -> 193
+draft_backlog_items=0
+draft_backlog_grammar_patterns=0
+draft_backlog_qa_items=0
+draft_backlog_dangerous_pairs=0
 ```
 
 ## 4. Latest Closed Gates
@@ -86,6 +77,7 @@ CE-0141 Batch 019-023 Combined Acceptance QA: PASS_FOR_MERGE
 CE-0142 Batch 019-020 Merge Set A: MERGED LOCALLY / PASS
 CE-0143 Batch 019-020 Post-Merge QA Set A: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 CE-0144 Batch 019-020 Production Sync: CLOSED / PASS / PRODUCTION_SYNCED
+CE-0145 Batch 021-023 Merge Set B: MERGED LOCALLY / PASS
 ```
 
 Important reports:
@@ -97,6 +89,7 @@ content/captain-ether/roles/qa/reports/sprint-ce-0141-batch-019-023-combined-acc
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0142-batch-019-020-merge-set-a-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0143-batch-019-020-post-merge-qa-set-a-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0144-batch-019-020-production-sync-2026-06-03.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0145-batch-021-023-merge-set-b-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -104,37 +97,36 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0144-batch-019-0
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0145-batch-021-023-merge-set-b-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0146-batch-021-023-post-merge-qa-set-b-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Merge Set B only: Batch 021+022+023 into local playable content.
+Post-merge QA for Batch 021+022+023 Set B before any production sync.
 ```
 
-Expected Set B local increase:
+Expected Set B local/GitHub baseline:
 
 ```text
-starter_items: 730 -> 830
-grammar_patterns: 311 -> 411
-qa_items: 730 -> 830
-dangerous_pairs: 173 -> 193
+starter_items=830
+grammar_patterns=411
+qa_items=830
+dangerous_pairs=193
 ```
 
-No production deploy is authorized by CE-0145.
+No production deploy is authorized by CE-0146.
 
 ## 6. Recommended Merge Plan After QA
 
-Merge the remaining 100 draft items only as Set B, then run post-merge QA before
-any separate Set B production sync task.
+Run post-merge QA Set B, then open a separate Set B production sync task only if
+QA passes.
 
 Recommended sequence:
 
 ```text
-1. Merge Set B: Batch 021+022+023, 100 items.
-2. Post-merge QA Set B.
-3. Production sync Set B, only after explicit production-sync task.
+1. Post-merge QA Set B.
+2. Production sync Set B, only after explicit production-sync task.
 ```
 
 This keeps production parity checkpoints small enough to debug.

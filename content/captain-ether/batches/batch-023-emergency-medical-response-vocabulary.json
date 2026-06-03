@@ -1,7 +1,7 @@
 {
     "version": 1,
     "batch_id": "batch-023-emergency-medical-response-vocabulary",
-    "status": "linguist_reviewed",
+    "status": "merged",
     "date": "2026-06-03",
     "branch": "emergency_medical_response",
     "scope": "M4 onboard emergency and medical response vocabulary draft. Adds casualty status, first-aid actions, evacuation and medical-advice phrases. Draft only: no starter merge and no production deploy.",
