@@ -22,6 +22,7 @@ Release-readiness QA passed for current 830-item production baseline.
 Historical duplicate accepted-answer WARN (9) cleaned and synced to production.
 Big sprint CE-0151 organized for production hardening and M5 expansion planning.
 CE-0152 authenticated playthrough is AUTH_BLOCKED because production email-code delivery returned HTTP 500 and no QA session is available.
+CE-0153 production runtime and UX edge smoke passed; checked shell/static assets/service worker/manifest/registry/protected API privacy with no deploy.
 local_github_production_starter_items=830
 local_github_production_grammar_patterns=411
 local_github_production_qa_items=830
@@ -29,7 +30,7 @@ local_github_production_dangerous_pairs=193
 validator_warn_count=0
 draft_backlog_items=0
 draft_backlog_grammar_patterns=0
-Next task: CE-0153 Production Runtime And UX Edge Smoke
+Next task: CE-0154 M5 Content Expansion Scope Design
 ```
 
 Older sections below preserve historical context and may mention earlier
