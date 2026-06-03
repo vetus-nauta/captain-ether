@@ -37,6 +37,7 @@ CE-0164 Batch 025 acceptance QA passed; decision PASS_FOR_STAGED_MERGE. Next pla
 CE-0165 Batch 025 staged merge passed locally/GitHub; production not deployed. Local/GitHub now intentionally ahead of production until a separate sync task.
 CE-0166 Batch 025 post-merge QA passed; local/GitHub 900 baseline is ready for production sync decision.
 CE-0167 Batch 025 production sync passed; production now equals local/GitHub at the 900-item baseline.
+CE-0168 Batch 025 production release-readiness QA passed; current 900-item production scope is release-ready.
 local_github_starter_items=900
 local_github_grammar_patterns=481
 local_github_qa_items=900
@@ -50,7 +51,7 @@ validator_warn_count=0
 draft_backlog_items=0
 draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
-Next task: CE-0168 Batch 025 Production Release Readiness QA
+Next task: CE-0169 Batch 026 Weather-Routing / Navigation-Warning Draft Gate
 ```
 
 Older sections below preserve historical context and may mention earlier

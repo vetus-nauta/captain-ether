@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 025 production-synced; local/GitHub/production are at the 900-item baseline pending CE-0168 release-readiness QA
+Canonical status: Batch 025 production-synced and release-ready at the 900-item baseline; next is M5 Batch 026 draft gate
 
 ## 1. Read This First
 
@@ -93,6 +93,7 @@ CE-0164 Batch 025 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
 CE-0165 Batch 025 Staged Merge Preparation: MERGED_LOCALLY / PASS
 CE-0166 Batch 025 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 CE-0167 Batch 025 Production Sync Decision: CLOSED / PASS / PRODUCTION_SYNCED
+CE-0168 Batch 025 Production Release Readiness QA: PASS / RELEASE_READY_FOR_CURRENT_SCOPE
 ```
 
 Important reports:
@@ -127,6 +128,7 @@ content/captain-ether/roles/qa/reports/sprint-ce-0164-batch-025-acceptance-qa-me
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0165-batch-025-staged-merge-preparation-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0166-batch-025-post-merge-qa-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0167-batch-025-production-sync-2026-06-03.md
+content/captain-ether/roles/qa/reports/sprint-ce-0168-batch-025-production-release-readiness-qa-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -134,13 +136,13 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0167-batch-025-p
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0168-batch-025-production-release-readiness-qa-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0169-batch-026-weather-routing-navigation-warning-draft-gate-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run release-readiness QA for the current 900-item production baseline. No deploy.
+Create isolated Batch 026 draft: weather-routing and navigation-warning reinforcement, 35 items. No merge, no deploy.
 ```
 
 Expected Set B local/GitHub baseline:
@@ -160,7 +162,7 @@ draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
 ```
 
-Production is synced at 900. Do not deploy in CE-0168; run release-readiness QA only.
+Production is synced and release-ready at 900. Batch 026 work starts as isolated draft only; no merge/deploy until later gates pass.
 
 ## 6. Recommended Merge Plan After QA
 
@@ -170,8 +172,8 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. CE-0168 Batch 025 Production Release Readiness QA.
-2. If release-readiness passes, continue M5 expansion with Batch 026 draft gate.
+1. CE-0169 Batch 026 Weather-Routing / Navigation-Warning Draft Gate.
+2. Then run Batch 026 linguist/engineering gate, acceptance QA, staged merge, post-merge QA, production sync, release-readiness QA.
 ```
 
 This keeps production parity checkpoints small enough to debug.
