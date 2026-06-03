@@ -3,11 +3,11 @@
 Date: 2026-06-03
 Owner: Director-Engineer / QA
 Scope: Captain Ether Batch 026 controlled production sync
-Status: PLANNED
+Status: CLOSED / PASS / PRODUCTION_SYNCED
 
 ## Activation Condition
 
-Start after:
+Started after:
 
 ```text
 TASK-CE-0173 Batch 026 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
@@ -18,61 +18,49 @@ TASK-CE-0173 Batch 026 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
 Decide and, if gates remain green, sync the Batch 026 local/GitHub baseline to
 production.
 
-Expected source baseline:
+## Result
 
 ```text
-local_github_starter_items=935
-local_github_grammar_patterns=516
-local_github_qa_items=935
-local_github_dangerous_pairs=216
+local_github_production_starter_items=935
+local_github_production_grammar_patterns=516
+local_github_production_qa_items=935
+local_github_production_dangerous_pairs=216
 batch_026_status=merged
 validator_warn_count=0
+production_delta_items=0
 ```
 
-Expected production pre-sync baseline:
+## Completed Gates
 
 ```text
-production_starter_items=900
-production_grammar_patterns=481
-production_qa_items=900
-production_dangerous_pairs=208
-production_delta_items=-35
+git status clean: PASS
+github_sync=0 0: PASS
+full validator with runs >=100: PASS, runs=120
+API smoke: PASS captain-ether-api-smoke checks=334
+Atlas ping: PASS
+production FTP content read-back counts pre-deploy: PASS
+secret scan: PASS
+FTP round-trip/hash parity: PASS
+production route/assets/API smoke: PASS
+public payload privacy scan: PASS
 ```
 
-## Required Pre-Deploy Gates
+## Deploy Command
 
-```text
-git status clean
-github_sync=0 0
-full validator with runs >=100
-API smoke
-Atlas ping
-production route/API read-only smoke
-production FTP content read-back counts
-secret scan
-```
-
-## Deploy Command If Approved By Gates
+Executed:
 
 ```sh
 tools/captain-ether-production-deploy.sh
 ```
 
-## Required Post-Deploy Gates
+Deploy backup root:
 
 ```text
-FTP round-trip/hash parity
-production starter/QA counts equal local/GitHub 935 baseline
-production route/assets/API smoke
-Atlas ping
-public payload privacy scan
-handoff/start package update
-commit and push final report
+/game.brkovic.ltd/_deploy-backups/captain-ether/20260603T112625Z
 ```
 
-## Boundaries
+## Report
 
-Do not touch Watch Officer, Nav Desk, shared registry, production config, Atlas
-secret file, Atlas driver, SMTP, sessions/cookies/CSRF behavior, player email,
-player identity data, WebStorm DB console, WebStorm datasource, or foreign
-database.
+```text
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0174-batch-026-production-sync-2026-06-03.md
+```

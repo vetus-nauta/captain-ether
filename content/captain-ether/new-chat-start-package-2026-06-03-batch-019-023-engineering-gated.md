@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Batch 026 post-merge QA passed locally/GitHub at the 935-item baseline; production remains at 900 until CE-0174 sync decision
+Canonical status: Batch 026 production-synced at the 935-item baseline; next is CE-0175 release-readiness QA
 
 ## 1. Read This First
 
@@ -26,7 +26,7 @@ state.
 
 ## 2. Current Playable State
 
-Local/GitHub playable baseline is now Batch 026 after CE-0172 staged merge. Production is still Batch 025 until a separate sync task.
+Local/GitHub/production playable baseline is now Batch 026 after CE-0174 production sync.
 
 ```text
 local_github_starter_items=935
@@ -36,11 +36,11 @@ local_github_dangerous_pairs=216
 batch_024_status=merged
 batch_025_status=merged
 batch_026_status=merged
-production_starter_items=900
-production_grammar_patterns=481
-production_qa_items=900
-production_dangerous_pairs=208
-production_delta_items=-35
+production_starter_items=935
+production_grammar_patterns=516
+production_qa_items=935
+production_dangerous_pairs=216
+production_delta_items=0
 production_route=HTTP 200
 anonymous_start_watch=HTTP 401 Login required
 ```
@@ -100,6 +100,7 @@ CE-0170 Batch 026 Linguist / Engineering Gate: PASS / READY_FOR_ACCEPTANCE_QA
 CE-0171 Batch 026 Acceptance QA / Merge Decision: PASS_FOR_STAGED_MERGE
 CE-0172 Batch 026 Staged Merge Preparation: MERGED_LOCALLY / PASS
 CE-0173 Batch 026 Post-Merge QA: PASS / READY_FOR_PRODUCTION_SYNC_DECISION
+CE-0174 Batch 026 Production Sync Decision: CLOSED / PASS / PRODUCTION_SYNCED
 ```
 
 Important reports:
@@ -141,6 +142,7 @@ content/captain-ether/roles/sea-speak-linguist/reports/batch-026-weather-routing
 content/captain-ether/roles/qa/reports/sprint-ce-0171-batch-026-acceptance-qa-merge-decision-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0172-batch-026-staged-merge-preparation-2026-06-03.md
 content/captain-ether/roles/qa/reports/sprint-ce-0173-batch-026-post-merge-qa-2026-06-03.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0174-batch-026-production-sync-2026-06-03.md
 ```
 
 ## 5. Current Next Task
@@ -148,13 +150,13 @@ content/captain-ether/roles/qa/reports/sprint-ce-0173-batch-026-post-merge-qa-20
 Next task to run:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0174-batch-026-production-sync-decision-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0175-batch-026-production-release-readiness-qa-2026-06-03.md
 ```
 
 Goal:
 
 ```text
-Run controlled production sync decision for Batch 026. If all gates remain green, sync production from 900 to 935 items.
+Run release-readiness QA for the current 935-item production baseline. No deploy.
 ```
 
 Expected Set B local/GitHub baseline:
@@ -164,17 +166,17 @@ local_github_starter_items=935
 local_github_grammar_patterns=516
 local_github_qa_items=935
 local_github_dangerous_pairs=216
-production_starter_items=900
-production_grammar_patterns=481
-production_qa_items=900
-production_dangerous_pairs=208
-production_delta_items=-35
+production_starter_items=935
+production_grammar_patterns=516
+production_qa_items=935
+production_dangerous_pairs=216
+production_delta_items=0
 draft_backlog_items=0
 draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
 ```
 
-Production is synced and release-ready at 900, but local/GitHub is now 35 items ahead. CE-0174 is the explicit production-sync decision task.
+Production is synced at 935. Do not deploy in CE-0175; run release-readiness QA only.
 
 ## 6. Recommended Merge Plan After QA
 
@@ -184,8 +186,8 @@ QA passes.
 Recommended sequence:
 
 ```text
-1. CE-0174 Batch 026 Production Sync Decision.
-2. After production sync, stop for a separate release-readiness QA checkpoint.
+1. CE-0175 Batch 026 Production Release Readiness QA.
+2. If release-readiness passes, continue M5 expansion with Batch 027 draft gate.
 ```
 
 This keeps production parity checkpoints small enough to debug.

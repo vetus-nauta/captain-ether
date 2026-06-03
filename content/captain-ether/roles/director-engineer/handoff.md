@@ -43,20 +43,21 @@ CE-0170 Batch 026 linguist/engineering gate passed; added one bearing coverage c
 CE-0171 Batch 026 acceptance QA passed; decision PASS_FOR_STAGED_MERGE. Next planned task is CE-0172 staged merge preparation, no production deploy.
 CE-0172 Batch 026 staged merge passed locally/GitHub; production not deployed. Local/GitHub now intentionally ahead of production until a separate sync task.
 CE-0173 Batch 026 post-merge QA passed; local/GitHub 935 baseline is ready for production sync decision.
+CE-0174 Batch 026 production sync passed; production now equals local/GitHub at the 935-item baseline.
 local_github_starter_items=935
 local_github_grammar_patterns=516
 local_github_qa_items=935
 local_github_dangerous_pairs=216
-production_starter_items=900
-production_grammar_patterns=481
-production_qa_items=900
-production_dangerous_pairs=208
-production_delta_items=-35
+production_starter_items=935
+production_grammar_patterns=516
+production_qa_items=935
+production_dangerous_pairs=216
+production_delta_items=0
 validator_warn_count=0
 draft_backlog_items=0
 draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
-Next task: CE-0174 Batch 026 Production Sync Decision
+Next task: CE-0175 Batch 026 Production Release Readiness QA
 ```
 
 Older sections below preserve historical context and may mention earlier
