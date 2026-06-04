@@ -52,6 +52,7 @@ post_merge_qa=PASS
 production_sync=PASS
 production_release_readiness_qa=PASS
 authenticated_browser_watch_smoke=AUTH_BLOCKED_WITH_NEXT_STEPS
+authenticated_watch_smoke_reattempt=AUTH_BLOCKED_RECONFIRMED
 ready_for_main_course_technical_closure_audit=true
 main_course_technical_closure_audit=AUTH_BLOCKED_BUT_CONTENT_RUNTIME_READY
 answer_log_matcher_noise_review=MATCHER_NOISE_ACCEPTABLE
@@ -142,6 +143,7 @@ CE-0189D Answer-Log And Matcher Noise Review: MATCHER_NOISE_ACCEPTABLE
 CE-0189E Director Closure Decision: MAIN_COURSE_CONTENT_RUNTIME_CLOSED_AUTH_SMOKE_OPEN
 CE-0190 Gamification v1 Design Spec: DESIGN_SPEC_READY_FOR_DIRECTOR_REVIEW
 CE-0191A Main Course And Runtime Finalization: PASS / INTERNAL_100_AUTH_EXTERNAL_BLOCKER
+CE-0191B Authenticated Watch Smoke Reattempt: AUTH_BLOCKED_RECONFIRMED
 ```
 
 Important reports:
@@ -207,6 +209,7 @@ content/captain-ether/roles/qa/reports/sprint-ce-0189d-answer-log-matcher-noise-
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0189e-director-closure-decision-2026-06-03.md
 content/captain-ether/roles/gamification-designer/reports/sprint-ce-0190-gamification-v1-design-spec-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0191a-main-course-runtime-finalization-2026-06-04.md
+content/captain-ether/roles/qa/reports/sprint-ce-0191b-authenticated-watch-smoke-reattempt-2026-06-04.md
 ```
 
 ## 5. Current Next Task
@@ -246,7 +249,7 @@ draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
 ```
 
-Local/GitHub/production now match at 1000, CE-0189A release-readiness QA passed, CE-0189C confirms content/runtime readiness, CE-0189D found matcher noise acceptable, CE-0189E closed the main course content/runtime scope, and CE-0191A reconfirmed content/main-course plus runtime/API/production parity as internally closed to 100% for the current scope. CE-0189B remains blocked by production QA access only. CE-0190 completed report-only Gamification v1 design; implementation is not approved yet.
+Local/GitHub/production now match at 1000, CE-0189A release-readiness QA passed, CE-0189C confirms content/runtime readiness, CE-0189D found matcher noise acceptable, CE-0189E closed the main course content/runtime scope, and CE-0191A reconfirmed content/main-course plus runtime/API/production parity as internally closed to 100% for the current scope. CE-0191B reattempted authenticated watch smoke and reconfirmed the approved-QA-access blocker without finding a content/runtime/parity defect. CE-0190 completed report-only Gamification v1 design; implementation is not approved yet.
 
 ## 6. Recommended Merge Plan After QA
 

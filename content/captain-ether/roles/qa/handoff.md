@@ -10,6 +10,26 @@ None.
 
 ## Last QA
 
+CE-0191B Authenticated Watch Smoke Reattempt:
+
+- report file:
+  `content/captain-ether/roles/qa/reports/sprint-ce-0191b-authenticated-watch-smoke-reattempt-2026-06-04.md`
+- mode:
+  production read-only / invalid-input auth-boundary smoke
+- target:
+  `https://game.brkovic.ltd/games/captain-ether`
+- result:
+  `AUTH_BLOCKED_RECONFIRMED`
+- confirmed:
+  route HTTP `200`, anonymous `auth/me` user `null`, invalid email `422`,
+  invalid synthetic code `401`, anonymous Captain Ether protected endpoints
+  `401`, validator `PASS`, API smoke `PASS captain-ether-api-smoke checks=334`,
+  and production Atlas ping `PASS`.
+- blocked:
+  authenticated start-watch / submit-answer / finish-watch / progress / Lost
+  Oars verification because no approved QA account identifier, one-time code, or
+  authenticated session is available in the current secure context.
+
 TASK-CE-0079 Batch 012 post-merge QA:
 
 - task file:
