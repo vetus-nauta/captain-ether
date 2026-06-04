@@ -72,6 +72,7 @@ CE-0191C Authenticated User Session Log prepared for Director-initiated producti
 CE-0193 CEO session findings captured and committed as documentation-only work; six narrow agent starter folders created for onboarding flow, watch HUD interaction, auth email deliverability, beginner curriculum, semantic acceptance, and progression algorithm. No code/runtime/UI/content JSON/production changes.
 CE-0194 Agent Wave 1 launched five report-only agents in parallel: onboarding flow, watch HUD interaction, beginner curriculum, semantic acceptance, and auth email deliverability. All five returned REPORT_READY_FOR_DIRECTOR_REVIEW with current-standard/source-based reports. Progression Algorithm Architect intentionally held for Wave 2 pending beginner/semantic outputs.
 CE-0194F Progression Algorithm Architect launched as Wave 2 after beginner/semantic inputs were ready; report returned REPORT_READY_FOR_DIRECTOR_REVIEW and is accepted for implementation backlog consolidation. No code/runtime/UI/content JSON/matcher/API/storage/auth/production changes.
+CE-0195 Implementation Backlog From Agent Reports consolidated CE-0194A through CE-0194F into seven sequenced implementation slices with dependencies, future write scopes, QA gates, risks, and CEO approval gates. No code changes.
 local_github_starter_items=1000
 local_github_grammar_patterns=581
 local_github_qa_items=1000
@@ -95,7 +96,8 @@ authenticated_user_session_log=SESSION_PREPARED_WAITING_FOR_USER_LOGIN
 ceo_session_findings=CEO_FINDINGS_CAPTURED_AGENT_STARTERS_CREATED_NO_CODE
 agent_wave_1=REPORTS_READY_NO_CODE
 progression_algorithm_architect=REPORT_READY_ACCEPTED_FOR_BACKLOG_CONSOLIDATION_NO_CODE
-Next task: Consolidate CE-0194A through CE-0194F into a sequenced implementation backlog. Do not code until CEO approves implementation.
+agent_report_implementation_backlog=BACKLOG_READY_NO_CODE
+Next task: Run pre-code inspection for CE-0195A First-Run Funnel Cleanup and CE-0195B Active Watch HUD Interaction Cleanup only after CEO approves implementation.
 ```
 
 Older sections below preserve historical context and may mention earlier
