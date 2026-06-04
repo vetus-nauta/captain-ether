@@ -53,6 +53,7 @@ production_sync=PASS
 production_release_readiness_qa=PASS
 authenticated_browser_watch_smoke=AUTH_BLOCKED_WITH_NEXT_STEPS
 authenticated_watch_smoke_reattempt=AUTH_BLOCKED_RECONFIRMED
+authenticated_user_session_log=SESSION_PREPARED_WAITING_FOR_USER_LOGIN
 ready_for_main_course_technical_closure_audit=true
 main_course_technical_closure_audit=AUTH_BLOCKED_BUT_CONTENT_RUNTIME_READY
 answer_log_matcher_noise_review=MATCHER_NOISE_ACCEPTABLE
@@ -148,6 +149,7 @@ CE-0191A Main Course And Runtime Finalization: PASS / INTERNAL_100_AUTH_EXTERNAL
 CE-0191B Authenticated Watch Smoke Reattempt: AUTH_BLOCKED_RECONFIRMED
 CE-0191 Gamification v1 Copy And Placement Spec: UX_SPEC_READY_FOR_DATA_CONTRACT
 CE-0192 Gamification v1 Progression Data Contract: DATA_CONTRACT_READY_FOR_IMPLEMENTATION_PLANNING
+CE-0191C Authenticated User Session Log: SESSION_PREPARED / WAITING_FOR_USER_LOGIN
 ```
 
 Important reports:
@@ -216,6 +218,7 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0191a-main-cours
 content/captain-ether/roles/qa/reports/sprint-ce-0191b-authenticated-watch-smoke-reattempt-2026-06-04.md
 content/captain-ether/roles/ux-hud-designer/reports/sprint-ce-0191-gamification-v1-copy-placement-spec-2026-06-04.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0192-gamification-v1-progression-data-contract-2026-06-04.md
+content/captain-ether/roles/qa/reports/sprint-ce-0191c-authenticated-user-session-log-2026-06-04.md
 ```
 
 ## 5. Current Next Task
@@ -223,7 +226,7 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0192-gamificatio
 Next task to run if approved production QA access becomes available:
 
 ```text
-Authenticated production browser watch smoke for Captain Ether.
+After Director completes production login in the opened browser, record non-secret authenticated smoke observations for Captain Ether.
 ```
 
 Fallback next task if approved production QA access is still unavailable:

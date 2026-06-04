@@ -6,7 +6,19 @@ Use only after Director-Engineer names the exact target and test type.
 
 ## Current Prepared QA
 
-None.
+CE-0191C Authenticated User Session Log:
+
+- report file:
+  `content/captain-ether/roles/qa/reports/sprint-ce-0191c-authenticated-user-session-log-2026-06-04.md`
+- mode:
+  production authenticated session log / waiting for user login
+- target:
+  `https://game.brkovic.ltd/games/captain-ether`
+- result:
+  `SESSION_PREPARED / WAITING_FOR_USER_LOGIN`
+- privacy:
+  Director-provided email address is not recorded; no login code, cookie,
+  session, CSRF value, player email, or player identity is recorded.
 
 ## Last QA
 

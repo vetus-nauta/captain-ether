@@ -68,6 +68,7 @@ CE-0191A Main Course And Runtime Finalization passed read-only gates; content/ma
 CE-0191B Authenticated Watch Smoke Reattempt reconfirmed the auth blocker: no approved QA account/code/session is available in the current secure context; route/auth guard/local regression/Atlas checks passed and no content/runtime/parity defect was found.
 CE-0191 Gamification v1 Copy And Placement Spec completed as report-only UX/HUD work; status UX_SPEC_READY_FOR_DATA_CONTRACT.
 CE-0192 Gamification v1 Progression Data Contract completed as report-only Director/Validation work; status DATA_CONTRACT_READY_FOR_IMPLEMENTATION_PLANNING.
+CE-0191C Authenticated User Session Log prepared for Director-initiated production login; start page opened, email/code/session values are not recorded, status SESSION_PREPARED / WAITING_FOR_USER_LOGIN.
 local_github_starter_items=1000
 local_github_grammar_patterns=581
 local_github_qa_items=1000
@@ -87,7 +88,8 @@ release_truth=INTERNAL_100_AUTH_EXTERNAL_BLOCKER
 authenticated_watch_smoke_reattempt=AUTH_BLOCKED_RECONFIRMED
 gamification_v1_copy_placement_spec=UX_SPEC_READY_FOR_DATA_CONTRACT
 gamification_v1_data_contract=DATA_CONTRACT_READY_FOR_IMPLEMENTATION_PLANNING
-Next task: If approved production QA access becomes available, rerun authenticated production watch smoke. Otherwise open CE-0193A Gamification v1 backend helper/API payload implementation planning.
+authenticated_user_session_log=SESSION_PREPARED_WAITING_FOR_USER_LOGIN
+Next task: After Director completes production login in the opened browser, record non-secret authenticated smoke observations. Otherwise open CE-0193A Gamification v1 backend helper/API payload implementation planning.
 ```
 
 Older sections below preserve historical context and may mention earlier
