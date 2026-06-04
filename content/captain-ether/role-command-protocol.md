@@ -311,6 +311,139 @@ Responsibilities:
 - identify must-stay-wrong answers for regression;
 - flag confusing prompts or UX friction.
 
+### Onboarding Flow Architect
+
+Default mode: report-only.
+
+May change only when assigned:
+
+- an assigned onboarding-flow report under
+  `content/captain-ether/roles/onboarding-flow-architect/reports/`.
+
+Must not edit runtime/API/UI, content JSON, matcher, auth, router, registry,
+deploy state, Nav Desk, Watch Officer, or other games.
+
+Responsibilities:
+
+- first-launch funnel clarity;
+- game hub / Captain Ether / login / level-select transition map;
+- recommended clean entry sequence;
+- mobile/desktop onboarding risks;
+- handoff to UX/HUD Designer and Director-Engineer.
+
+### Watch HUD Interaction Designer
+
+Default mode: report-only.
+
+May change only when assigned:
+
+- an assigned watch-HUD interaction report under
+  `content/captain-ether/roles/watch-hud-interaction-designer/reports/`.
+
+Must not edit `public/assets/`, runtime/API, matcher, content JSON, auth,
+router, registry, deploy state, Nav Desk, Watch Officer, or other games unless a
+separate implementation task explicitly grants it.
+
+Responsibilities:
+
+- active watch question/answer/result card design;
+- answer button loading/disabled/error behavior;
+- hint ladder proposal;
+- final-answer-to-summary transition;
+- right-column placeholder and mobile layout behavior;
+- summary clarity and duplicate-action cleanup.
+
+### Auth Email Deliverability Steward
+
+Default mode: report-only.
+
+May change only when assigned:
+
+- an assigned deliverability report under
+  `content/captain-ether/roles/auth-email-deliverability-steward/reports/`.
+
+Must not edit auth implementation, SMTP config, private config, DNS, secrets,
+router, registry, deploy state, Nav Desk, Watch Officer, or other games.
+
+Must never record player email, login codes, SMTP credentials, cookies,
+sessions, CSRF values, private config, or `.netrc`.
+
+Responsibilities:
+
+- login-code sender identity recommendation;
+- common no-reply vs game-specific sender tradeoff;
+- SPF/DKIM/DMARC and display-name requirements;
+- Platform/Auth handoff when config/DNS/auth changes are needed.
+
+### Beginner Curriculum Curator
+
+Default mode: report-only.
+
+May change only when assigned:
+
+- an assigned beginner curriculum report under
+  `content/captain-ether/roles/beginner-curriculum-curator/reports/`.
+
+Must not edit content JSON, `starter.json`, matcher/API/UI, answer policy,
+deploy state, auth, router, registry, Nav Desk, Watch Officer, or other games
+unless explicitly assigned.
+
+Responsibilities:
+
+- first-session beginner pool audit;
+- level and role-context filtering;
+- technical/onboard/station-side item exclusion proposals;
+- staged onboarding content recommendations;
+- handoff to Curriculum Architect, Content Producer, Sea Speak Linguist, and
+  Director-Engineer.
+
+### Semantic Acceptance Architect
+
+Default mode: report-only.
+
+May change only when assigned:
+
+- an assigned semantic-acceptance report under
+  `content/captain-ether/roles/semantic-acceptance-architect/reports/`.
+
+Must not edit matcher/API/UI/content JSON/regression/policy/deploy state unless
+a separate Director-Engineer implementation task explicitly grants it.
+
+Must not widen accepted answers without Sea Speak Linguist review and regression
+coverage.
+
+Responsibilities:
+
+- `understood_non_standard` soft-accept taxonomy;
+- scoring consequences for meaning-preserving but non-standard answers;
+- user-vs-standard comparison feedback;
+- answer-log review routing;
+- dangerous-drift boundary recommendations.
+
+### Progression Algorithm Architect
+
+Default mode: report-only.
+
+May change only when assigned:
+
+- an assigned progression-algorithm report under
+  `content/captain-ether/roles/progression-algorithm-architect/reports/`.
+
+Must not edit runtime/API/UI/content JSON/matcher/storage/deploy state/auth,
+router, registry, Nav Desk, Watch Officer, or other games unless explicitly
+assigned.
+
+Must not propose raw-answer storage in player progression, player identity
+exposure, leaderboards, streak loss, public ranking, or certification claims.
+
+Responsibilities:
+
+- stage-based difficulty growth;
+- unlock/hold/review rules;
+- answer-signal learning filters;
+- first-session and role-based routing logic;
+- QA fixtures and implementation-slice recommendations.
+
 ## Command Format
 
 Every role assignment should include:
@@ -352,6 +485,17 @@ content/captain-ether/roles/<role-name>/reports/<report-name>.md
 - Real player answer-log cluster -> Answer Log Analyst.
 - UI language policy, system-language detection, or localized copy coverage ->
   Localization Architect.
+- First-launch flow confusion -> Onboarding Flow Architect.
+- Active watch interaction, hints, submit behavior, summary action confusion, or
+  right-column/mobile layout -> Watch HUD Interaction Designer.
+- Login-code sender identity or deliverability decision -> Auth Email
+  Deliverability Steward.
+- First-session beginner difficulty, role mismatch, or technical item leakage ->
+  Beginner Curriculum Curator.
+- Meaning-preserving non-standard answers, comparison feedback, or soft-accept
+  scoring -> Semantic Acceptance Architect.
+- Difficulty growth, unlock/hold/review algorithm, or learning filters ->
+  Progression Algorithm Architect.
 
 ## Rule
 

@@ -29,6 +29,12 @@ Every role is narrow by default. No role self-activates.
 | `answer-log-analyst/` | Dormant, ready | Admin answer-log clustering and disputed-answer triage | Report-only | `content/captain-ether/roles/answer-log-analyst/reports/` |
 | `localization-architect/` | Dormant, ready | UI language policy, system-language detection, fallback behavior, localization QA | Report-only | `content/captain-ether/roles/localization-architect/reports/` |
 | `validation-steward/` | Dormant, ready | Local validation environment, reproducible gates, validator triage, smoke preparation | Report-only | `content/captain-ether/roles/validation-steward/reports/` |
+| `onboarding-flow-architect/` | Dormant, ready | First-launch funnel, login/start layering, clean entry into first watch | Report-only | `content/captain-ether/roles/onboarding-flow-architect/reports/` |
+| `watch-hud-interaction-designer/` | Dormant, ready | Active-watch card, submit behavior, hints, feedback states, summary clarity, ad-slot layout | Report-only | `content/captain-ether/roles/watch-hud-interaction-designer/reports/` |
+| `auth-email-deliverability-steward/` | Dormant, ready | Login-code sender identity, no-reply policy, deliverability boundaries | Report-only | `content/captain-ether/roles/auth-email-deliverability-steward/reports/` |
+| `beginner-curriculum-curator/` | Dormant, ready | First-session beginner pool, role filters, technical/onboard item exclusion | Report-only | `content/captain-ether/roles/beginner-curriculum-curator/reports/` |
+| `semantic-acceptance-architect/` | Dormant, ready | Soft-accept taxonomy, understood-non-standard answers, comparison feedback | Report-only | `content/captain-ether/roles/semantic-acceptance-architect/reports/` |
+| `progression-algorithm-architect/` | Dormant, ready | Stage-based difficulty growth, unlock/hold rules, learning filters | Report-only | `content/captain-ether/roles/progression-algorithm-architect/reports/` |
 
 ## Standard Folder Contract
 
@@ -195,8 +201,14 @@ For public UI selector work:
 Curriculum Architect -> UX/HUD Designer -> Director-Engineer -> QA -> Game Director deploy gate
 ```
 
+For CEO first-session corrective work:
+
+```text
+Onboarding Flow Architect -> Watch HUD Interaction Designer -> Beginner Curriculum Curator -> Semantic Acceptance Architect -> Progression Algorithm Architect -> Director-Engineer consolidation -> QA
+```
+
 ## Current Ready Roles
 
-All ten role folders are prepared and can be activated by assignment.
+All role folders are prepared and can be activated by assignment.
 
 Dormant roles remain inactive until explicitly tasked.

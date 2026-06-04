@@ -62,6 +62,7 @@ gamification_v1_design_spec=DESIGN_SPEC_READY_FOR_DIRECTOR_REVIEW
 gamification_implementation=false
 gamification_v1_copy_placement_spec=UX_SPEC_READY_FOR_DATA_CONTRACT
 gamification_v1_data_contract=DATA_CONTRACT_READY_FOR_IMPLEMENTATION_PLANNING
+ceo_session_findings=CEO_FINDINGS_CAPTURED_AGENT_STARTERS_CREATED_NO_CODE
 main_course_finalization_reconfirmation=PASS_INTERNAL_100_AUTH_EXTERNAL_BLOCKER
 runtime_api_production_parity_reconfirmation=PASS_INTERNAL_100_AUTH_EXTERNAL_BLOCKER
 production_route=HTTP 200
@@ -150,6 +151,7 @@ CE-0191B Authenticated Watch Smoke Reattempt: AUTH_BLOCKED_RECONFIRMED
 CE-0191 Gamification v1 Copy And Placement Spec: UX_SPEC_READY_FOR_DATA_CONTRACT
 CE-0192 Gamification v1 Progression Data Contract: DATA_CONTRACT_READY_FOR_IMPLEMENTATION_PLANNING
 CE-0191C Authenticated User Session Log: SESSION_PREPARED / WAITING_FOR_USER_LOGIN
+CE-0193 CEO Session Findings And Agent Roster: CEO_FINDINGS_CAPTURED / AGENT_STARTERS_CREATED / NO_CODE
 ```
 
 Important reports:
@@ -219,6 +221,7 @@ content/captain-ether/roles/qa/reports/sprint-ce-0191b-authenticated-watch-smoke
 content/captain-ether/roles/ux-hud-designer/reports/sprint-ce-0191-gamification-v1-copy-placement-spec-2026-06-04.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0192-gamification-v1-progression-data-contract-2026-06-04.md
 content/captain-ether/roles/qa/reports/sprint-ce-0191c-authenticated-user-session-log-2026-06-04.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0193-ceo-session-findings-and-agent-roster-2026-06-04.md
 ```
 
 ## 5. Current Next Task
@@ -232,13 +235,13 @@ After Director completes production login in the opened browser, record non-secr
 Fallback next task if approved production QA access is still unavailable:
 
 ```text
-content/captain-ether/roles/director-engineer/tasks/task-ce-0193a-gamification-v1-backend-api-payload-planning-2026-06-04.md
+CEO chooses which narrow agent to activate first; recommended first activation is Onboarding Flow Architect, followed by Watch HUD Interaction Designer.
 ```
 
 Goal:
 
 ```text
-Plan the first code slice for gamification v1 within the CE-0191 UX spec and CE-0192 data contract. Do not deploy production until local validation/API/i18n/privacy gates pass.
+No code yet. Produce narrow report-only specifications for CEO-observed first-session and watch-flow defects before implementation.
 ```
 
 Expected current local/GitHub/production baseline:
@@ -258,7 +261,7 @@ draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
 ```
 
-Local/GitHub/production now match at 1000, CE-0189A release-readiness QA passed, CE-0189C confirms content/runtime readiness, CE-0189D found matcher noise acceptable, CE-0189E closed the main course content/runtime scope, and CE-0191A reconfirmed content/main-course plus runtime/API/production parity as internally closed to 100% for the current scope. CE-0191B reattempted authenticated watch smoke and reconfirmed the approved-QA-access blocker without finding a content/runtime/parity defect. CE-0190, CE-0191, and CE-0192 completed report-only Gamification v1 design/copy/data-contract work; implementation is not deployed yet.
+Local/GitHub/production now match at 1000, CE-0189A release-readiness QA passed, CE-0189C confirms content/runtime readiness, CE-0189D found matcher noise acceptable, CE-0189E closed the main course content/runtime scope, and CE-0191A reconfirmed content/main-course plus runtime/API/production parity as internally closed to 100% for the current scope. CE-0191B reattempted authenticated watch smoke and reconfirmed the approved-QA-access blocker without finding a content/runtime/parity defect. CE-0190, CE-0191, and CE-0192 completed report-only Gamification v1 design/copy/data-contract work; implementation is not deployed yet. CE-0193 captured CEO play-session findings and created six narrow agent starter folders; no code work has been approved.
 
 ## 6. Recommended Merge Plan After QA
 

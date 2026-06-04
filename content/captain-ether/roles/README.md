@@ -56,6 +56,18 @@ Director-Engineer explicitly assigns a task.
   fallback behavior, and localization QA scope.
 - `validation-steward/`: local validation environment, reproducible gates,
   validator triage, and QA smoke preparation.
+- `onboarding-flow-architect/`: first-launch funnel, login/start layering, and
+  clean entry into the first watch.
+- `watch-hud-interaction-designer/`: active-watch card, submit behavior, hints,
+  result feedback, summary clarity, and right-column/mobile layout proposals.
+- `auth-email-deliverability-steward/`: login-code sender identity and
+  deliverability recommendations without touching auth/SMTP secrets.
+- `beginner-curriculum-curator/`: first-session beginner pool, role filters,
+  and technical/onboard item exclusion proposals.
+- `semantic-acceptance-architect/`: soft-accept taxonomy for meaning-preserving
+  non-standard answers and user-vs-standard feedback.
+- `progression-algorithm-architect/`: stage-based difficulty growth, unlock
+  rules, and learning filters.
 
 ## Activation Rule
 
