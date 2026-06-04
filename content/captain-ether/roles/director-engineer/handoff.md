@@ -64,6 +64,7 @@ CE-0189C main-course technical closure audit passed for content/runtime but keep
 CE-0189D answer-log and matcher-noise review passed; matcher noise acceptable and answer-log remains protected anonymously.
 CE-0189E Director closure decision closed the 1000-item main-course content/runtime scope; authenticated production watch smoke remains open and gamification remains parked.
 CE-0190 Gamification v1 design spec completed as report-only work after Director accepted auth smoke as an external blocker for planning purposes; no implementation, runtime, UI, storage, content, or production files changed.
+CE-0191A Main Course And Runtime Finalization passed read-only gates; content/main-course and runtime/API/production parity are internally closed to 100% for the current 1000-item scope, with authenticated production watch smoke still blocked by approved QA access only.
 local_github_starter_items=1000
 local_github_grammar_patterns=581
 local_github_qa_items=1000
@@ -77,7 +78,10 @@ validator_warn_count=0
 draft_backlog_items=0
 draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
-Next task: CE-0191 Gamification v1 Copy And Placement Spec; report-only UX/HUD spec. Authenticated production watch smoke remains open.
+main_course_internal_closure=100_PERCENT_INTERNAL_CLOSED
+runtime_api_production_parity_internal_closure=100_PERCENT_INTERNAL_CLOSED
+release_truth=INTERNAL_100_AUTH_EXTERNAL_BLOCKER
+Next task: If approved production QA access becomes available, run authenticated production watch smoke. Otherwise continue CE-0191 Gamification v1 Copy And Placement Spec as report-only UX/HUD spec.
 ```
 
 Older sections below preserve historical context and may mention earlier

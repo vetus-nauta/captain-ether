@@ -5,7 +5,7 @@ Role: Director Ether / Captain Ether Director
 Repository: `/home/alexey/WebstormProjects/captain-ether`
 GitHub: `git@github.com:vetus-nauta/captain-ether.git`
 Production: `https://game.brkovic.ltd/games/captain-ether`
-Canonical status: Captain Ether 1000-item main course content/runtime is closed; authenticated watch smoke remains open because production QA access is blocked; Gamification v1 design spec is ready, with no implementation yet
+Canonical status: Captain Ether 1000-item main course content/runtime and runtime/API/production parity are internally closed to 100% for the current scope; authenticated watch smoke remains open because approved production QA access is blocked; Gamification v1 design spec is ready, with no implementation yet
 
 ## 1. Read This First
 
@@ -58,6 +58,8 @@ answer_log_matcher_noise_review=MATCHER_NOISE_ACCEPTABLE
 director_closure_decision=MAIN_COURSE_CONTENT_RUNTIME_CLOSED_AUTH_SMOKE_OPEN
 gamification_v1_design_spec=DESIGN_SPEC_READY_FOR_DIRECTOR_REVIEW
 gamification_implementation=false
+main_course_finalization_reconfirmation=PASS_INTERNAL_100_AUTH_EXTERNAL_BLOCKER
+runtime_api_production_parity_reconfirmation=PASS_INTERNAL_100_AUTH_EXTERNAL_BLOCKER
 production_route=HTTP 200
 anonymous_start_watch=HTTP 401 Login required
 ```
@@ -139,6 +141,7 @@ CE-0189C Main Course Technical Closure Audit: AUTH_BLOCKED_BUT_CONTENT_RUNTIME_R
 CE-0189D Answer-Log And Matcher Noise Review: MATCHER_NOISE_ACCEPTABLE
 CE-0189E Director Closure Decision: MAIN_COURSE_CONTENT_RUNTIME_CLOSED_AUTH_SMOKE_OPEN
 CE-0190 Gamification v1 Design Spec: DESIGN_SPEC_READY_FOR_DIRECTOR_REVIEW
+CE-0191A Main Course And Runtime Finalization: PASS / INTERNAL_100_AUTH_EXTERNAL_BLOCKER
 ```
 
 Important reports:
@@ -203,11 +206,18 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0189c-main-cours
 content/captain-ether/roles/qa/reports/sprint-ce-0189d-answer-log-matcher-noise-review-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0189e-director-closure-decision-2026-06-03.md
 content/captain-ether/roles/gamification-designer/reports/sprint-ce-0190-gamification-v1-design-spec-2026-06-03.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0191a-main-course-runtime-finalization-2026-06-04.md
 ```
 
 ## 5. Current Next Task
 
-Next task to run:
+Next task to run if approved production QA access becomes available:
+
+```text
+Authenticated production browser watch smoke for Captain Ether.
+```
+
+Fallback next task if approved production QA access is still unavailable:
 
 ```text
 content/captain-ether/roles/ux-hud-designer/tasks/task-ce-0191-gamification-v1-copy-placement-spec-2026-06-03.md
@@ -236,7 +246,7 @@ draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
 ```
 
-Local/GitHub/production now match at 1000, CE-0189A release-readiness QA passed, CE-0189C confirms content/runtime readiness, CE-0189D found matcher noise acceptable, and CE-0189E closed the main course content/runtime scope. CE-0189B remains blocked by production QA access only. CE-0190 completed report-only Gamification v1 design; implementation is not approved yet.
+Local/GitHub/production now match at 1000, CE-0189A release-readiness QA passed, CE-0189C confirms content/runtime readiness, CE-0189D found matcher noise acceptable, CE-0189E closed the main course content/runtime scope, and CE-0191A reconfirmed content/main-course plus runtime/API/production parity as internally closed to 100% for the current scope. CE-0189B remains blocked by production QA access only. CE-0190 completed report-only Gamification v1 design; implementation is not approved yet.
 
 ## 6. Recommended Merge Plan After QA
 
