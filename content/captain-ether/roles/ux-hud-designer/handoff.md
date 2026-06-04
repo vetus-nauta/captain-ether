@@ -12,6 +12,20 @@ made Lost Oars calmer, and reduced mobile header weight.
 
 ## Last Completed Task
 
+CE-0191 Gamification v1 Copy And Placement Spec:
+
+- task:
+  `content/captain-ether/roles/ux-hud-designer/tasks/task-ce-0191-gamification-v1-copy-placement-spec-2026-06-03.md`;
+- report:
+  `content/captain-ether/roles/ux-hud-designer/reports/sprint-ce-0191-gamification-v1-copy-placement-spec-2026-06-04.md`;
+- mode:
+  report-only / UX-HUD copy and placement spec.
+- result:
+  `UX_SPEC_READY_FOR_DATA_CONTRACT`.
+- confirmed:
+  watch ritual, branch signal placement, Lost Oars recovery copy, meaning-drift
+  summary language, one next quiet step, mobile risks, and i18n keys.
+
 TASK-CE-0019 Public Stream Selector UX Contract:
 
 - task:

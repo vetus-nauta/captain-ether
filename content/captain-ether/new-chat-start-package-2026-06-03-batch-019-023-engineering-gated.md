@@ -59,6 +59,8 @@ answer_log_matcher_noise_review=MATCHER_NOISE_ACCEPTABLE
 director_closure_decision=MAIN_COURSE_CONTENT_RUNTIME_CLOSED_AUTH_SMOKE_OPEN
 gamification_v1_design_spec=DESIGN_SPEC_READY_FOR_DIRECTOR_REVIEW
 gamification_implementation=false
+gamification_v1_copy_placement_spec=UX_SPEC_READY_FOR_DATA_CONTRACT
+gamification_v1_data_contract=DATA_CONTRACT_READY_FOR_IMPLEMENTATION_PLANNING
 main_course_finalization_reconfirmation=PASS_INTERNAL_100_AUTH_EXTERNAL_BLOCKER
 runtime_api_production_parity_reconfirmation=PASS_INTERNAL_100_AUTH_EXTERNAL_BLOCKER
 production_route=HTTP 200
@@ -144,6 +146,8 @@ CE-0189E Director Closure Decision: MAIN_COURSE_CONTENT_RUNTIME_CLOSED_AUTH_SMOK
 CE-0190 Gamification v1 Design Spec: DESIGN_SPEC_READY_FOR_DIRECTOR_REVIEW
 CE-0191A Main Course And Runtime Finalization: PASS / INTERNAL_100_AUTH_EXTERNAL_BLOCKER
 CE-0191B Authenticated Watch Smoke Reattempt: AUTH_BLOCKED_RECONFIRMED
+CE-0191 Gamification v1 Copy And Placement Spec: UX_SPEC_READY_FOR_DATA_CONTRACT
+CE-0192 Gamification v1 Progression Data Contract: DATA_CONTRACT_READY_FOR_IMPLEMENTATION_PLANNING
 ```
 
 Important reports:
@@ -210,6 +214,8 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0189e-director-c
 content/captain-ether/roles/gamification-designer/reports/sprint-ce-0190-gamification-v1-design-spec-2026-06-03.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0191a-main-course-runtime-finalization-2026-06-04.md
 content/captain-ether/roles/qa/reports/sprint-ce-0191b-authenticated-watch-smoke-reattempt-2026-06-04.md
+content/captain-ether/roles/ux-hud-designer/reports/sprint-ce-0191-gamification-v1-copy-placement-spec-2026-06-04.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0192-gamification-v1-progression-data-contract-2026-06-04.md
 ```
 
 ## 5. Current Next Task
@@ -223,13 +229,13 @@ Authenticated production browser watch smoke for Captain Ether.
 Fallback next task if approved production QA access is still unavailable:
 
 ```text
-content/captain-ether/roles/ux-hud-designer/tasks/task-ce-0191-gamification-v1-copy-placement-spec-2026-06-03.md
+content/captain-ether/roles/director-engineer/tasks/task-ce-0193a-gamification-v1-backend-api-payload-planning-2026-06-04.md
 ```
 
 Goal:
 
 ```text
-Run report-only UX/HUD copy and placement spec for Gamification v1. Do not implement UI/runtime/storage changes yet.
+Plan the first code slice for gamification v1 within the CE-0191 UX spec and CE-0192 data contract. Do not deploy production until local validation/API/i18n/privacy gates pass.
 ```
 
 Expected current local/GitHub/production baseline:
@@ -249,17 +255,18 @@ draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
 ```
 
-Local/GitHub/production now match at 1000, CE-0189A release-readiness QA passed, CE-0189C confirms content/runtime readiness, CE-0189D found matcher noise acceptable, CE-0189E closed the main course content/runtime scope, and CE-0191A reconfirmed content/main-course plus runtime/API/production parity as internally closed to 100% for the current scope. CE-0191B reattempted authenticated watch smoke and reconfirmed the approved-QA-access blocker without finding a content/runtime/parity defect. CE-0190 completed report-only Gamification v1 design; implementation is not approved yet.
+Local/GitHub/production now match at 1000, CE-0189A release-readiness QA passed, CE-0189C confirms content/runtime readiness, CE-0189D found matcher noise acceptable, CE-0189E closed the main course content/runtime scope, and CE-0191A reconfirmed content/main-course plus runtime/API/production parity as internally closed to 100% for the current scope. CE-0191B reattempted authenticated watch smoke and reconfirmed the approved-QA-access blocker without finding a content/runtime/parity defect. CE-0190, CE-0191, and CE-0192 completed report-only Gamification v1 design/copy/data-contract work; implementation is not deployed yet.
 
 ## 6. Recommended Merge Plan After QA
 
-Continue only with report-only gamification specs until implementation is explicitly approved.
+CE-0191 and CE-0192 report-only gamification specs are complete. Next implementation work must stay inside their UX/data-contract boundaries.
 
 Recommended sequence:
 
 ```text
-1. CE-0191 Gamification v1 Copy And Placement Spec.
-2. CE-0192 Progression Data Contract after UX/HUD spec passes.
+1. CE-0193A backend helper functions and API payload contract.
+2. CE-0193B UI rendering and i18n keys.
+3. CE-0193C local QA and production read-only smoke.
 ```
 
 This keeps production parity checkpoints small enough to debug.

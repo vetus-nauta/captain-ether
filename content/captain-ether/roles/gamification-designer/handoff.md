@@ -39,8 +39,20 @@ Rejected for v1:
 - global rank demotion;
 - public certification claims.
 
+CE-0191 UX/HUD Copy And Placement Spec is complete:
+
+```text
+UX_SPEC_READY_FOR_DATA_CONTRACT
+```
+
+CE-0192 Progression Data Contract is complete:
+
+```text
+DATA_CONTRACT_READY_FOR_IMPLEMENTATION_PLANNING
+```
+
 Next planned task:
 
 ```text
-CE-0191 Gamification v1 Copy And Placement Spec
+CE-0193A Gamification v1 backend helper/API payload implementation planning
 ```

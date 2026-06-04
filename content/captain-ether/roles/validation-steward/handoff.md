@@ -27,27 +27,35 @@ $HOME/.local/php-codex/bin/php content/captain-ether/tools/validate-captain-ethe
 
 Latest known result:
 
-- `start-watch.php` syntax: PASS.
 - Captain Ether validator: PASS.
-- Remaining validator warnings: 9 duplicate `accepted_answers` after
-  normalization.
+- Captain Ether API smoke: PASS.
+- Current 1000-item content/runtime and runtime/API/production parity are
+  internally closed.
+- CE-0192 Gamification v1 Progression Data Contract is ready for implementation
+  planning.
 
 ## Active Concerns
 
-- QA 32-case branch-filter smoke still needs independent QA report.
-- Duplicate-normalization warnings should be triaged as a separate cleanup
-  task, not mixed into branch-filter implementation.
-- `navigation_reports` beginner focused watch is now reject by contract because
-  beginner content has no phrase items and cannot meet the beginner type floor.
-- Production smoke/deploy remains separate and requires Game Director approval.
+- Authenticated production watch smoke is still blocked by approved QA access,
+  not by a content/runtime/parity defect.
+- Gamification v1 implementation must not store raw answers, prompts, target
+  text, player email, player identity, login code, cookie, session, CSRF, token,
+  Atlas URI, or private config in progression evidence.
+- Branch mastery must use qualitative states only: `new_waters`,
+  `getting_familiar`, `holding_watch`, `review_soon`.
+- No percentages, leaderboards, streak loss, ranks, demotion, speed bonuses, or
+  certification claims are allowed in v1.
 
 ## First Useful Task
 
-Prepare a reproducible validation gate card for the Beta 1.1 branch-filter QA
-rerun:
+For CE-0193A implementation planning, prepare validation gates for the
+Gamification v1 data contract:
 
-- exact command list;
-- expected branch/level fixture table;
-- environment note for `$HOME/.local/php-codex/bin/php`;
-- remaining warnings and owner route;
-- PASS/BLOCKED criteria for QA.
+- `validate-captain-ether.php`;
+- `smoke-start-watch-api.php`;
+- `check-pwa-i18n.mjs`;
+- protected API anonymous `401` smoke;
+- public payload privacy scan;
+- storage evidence scan proving no raw answers/private identity values in
+  `gamification_v1`;
+- mobile 360px no-overflow check for the new HUD copy.

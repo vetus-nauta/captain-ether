@@ -3,7 +3,7 @@
 Date: 2026-06-03
 Owner: UX/HUD Designer
 Scope: Captain Ether gamification v1 UX/HUD copy and placement spec
-Status: PLANNED
+Status: DONE / UX_SPEC_READY_FOR_DATA_CONTRACT
 
 ## Activation Condition
 
@@ -51,4 +51,12 @@ Expected output:
 ```text
 content/captain-ether/roles/ux-hud-designer/reports/sprint-ce-0191-gamification-v1-copy-placement-spec-2026-06-03.md
 status UX_SPEC_READY_FOR_DATA_CONTRACT
+```
+
+## Result
+
+```text
+report=content/captain-ether/roles/ux-hud-designer/reports/sprint-ce-0191-gamification-v1-copy-placement-spec-2026-06-04.md
+status=UX_SPEC_READY_FOR_DATA_CONTRACT
+next_task=CE-0192 Gamification v1 Progression Data Contract
 ```
