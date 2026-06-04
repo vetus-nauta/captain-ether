@@ -64,7 +64,7 @@ gamification_v1_copy_placement_spec=UX_SPEC_READY_FOR_DATA_CONTRACT
 gamification_v1_data_contract=DATA_CONTRACT_READY_FOR_IMPLEMENTATION_PLANNING
 ceo_session_findings=CEO_FINDINGS_CAPTURED_AGENT_STARTERS_CREATED_NO_CODE
 agent_wave_1=REPORTS_READY_NO_CODE
-progression_algorithm_architect=HELD_FOR_WAVE_2
+progression_algorithm_architect=REPORT_READY_ACCEPTED_FOR_BACKLOG_CONSOLIDATION_NO_CODE
 main_course_finalization_reconfirmation=PASS_INTERNAL_100_AUTH_EXTERNAL_BLOCKER
 runtime_api_production_parity_reconfirmation=PASS_INTERNAL_100_AUTH_EXTERNAL_BLOCKER
 production_route=HTTP 200
@@ -155,6 +155,7 @@ CE-0192 Gamification v1 Progression Data Contract: DATA_CONTRACT_READY_FOR_IMPLE
 CE-0191C Authenticated User Session Log: SESSION_PREPARED / WAITING_FOR_USER_LOGIN
 CE-0193 CEO Session Findings And Agent Roster: CEO_FINDINGS_CAPTURED / AGENT_STARTERS_CREATED / NO_CODE
 CE-0194 Agent Wave 1 Launch And Acceptance: WAVE_1_REPORTS_READY / NO_CODE
+CE-0194F Progression Algorithm Acceptance: WAVE_2_REPORT_READY / ACCEPTED_FOR_BACKLOG_CONSOLIDATION / NO_CODE
 ```
 
 Important reports:
@@ -226,6 +227,8 @@ content/captain-ether/roles/director-engineer/reports/sprint-ce-0192-gamificatio
 content/captain-ether/roles/qa/reports/sprint-ce-0191c-authenticated-user-session-log-2026-06-04.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0193-ceo-session-findings-and-agent-roster-2026-06-04.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0194-agent-wave-1-launch-and-acceptance-2026-06-04.md
+content/captain-ether/roles/progression-algorithm-architect/reports/sprint-ce-0194f-progression-growth-learning-filter-spec-2026-06-04.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0194f-progression-algorithm-acceptance-2026-06-04.md
 content/captain-ether/roles/onboarding-flow-architect/reports/sprint-ce-0194a-first-launch-funnel-spec-2026-06-04.md
 content/captain-ether/roles/watch-hud-interaction-designer/reports/sprint-ce-0194b-watch-hud-interaction-spec-2026-06-04.md
 content/captain-ether/roles/beginner-curriculum-curator/reports/sprint-ce-0194c-beginner-first-session-pool-audit-2026-06-04.md
@@ -244,13 +247,13 @@ After Director completes production login in the opened browser, record non-secr
 Fallback next task if approved production QA access is still unavailable:
 
 ```text
-Activate Progression Algorithm Architect with CE-0194C beginner pool audit and CE-0194D semantic acceptance taxonomy as inputs.
+Consolidate CE-0194A through CE-0194F into a sequenced implementation backlog.
 ```
 
 Goal:
 
 ```text
-No code yet. Produce stage-based difficulty growth and learning-filter spec based on the accepted Wave 1 reports.
+No code yet. Convert accepted agent reports into implementation slices, ownership boundaries, QA gates, and CEO approval points.
 ```
 
 Expected current local/GitHub/production baseline:
