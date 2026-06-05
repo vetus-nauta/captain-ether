@@ -503,6 +503,7 @@ function captain_recent_watch_summary(array $progress): ?array {
         'hint' => (int) ($summary['hint'] ?? 0),
         'lost' => (int) ($summary['lost'] ?? 0),
         'spelling' => (int) ($summary['spelling'] ?? 0),
+        'soft_accept' => (int) ($summary['soft_accept'] ?? 0),
     ];
 }
 
@@ -623,6 +624,7 @@ function captain_watch_debrief_drivers(array $summary, array $progressSummary, a
     $clean = (int) ($summary['clean'] ?? 0);
     $hint = (int) ($summary['hint'] ?? 0);
     $spelling = (int) ($summary['spelling'] ?? 0);
+    $softAccept = (int) ($summary['soft_accept'] ?? 0);
     $lost = (int) ($summary['lost'] ?? 0);
 
     if ($unresolved >= 5) {
@@ -654,6 +656,10 @@ function captain_watch_debrief_drivers(array $summary, array $progressSummary, a
         $drivers[] = ['kind' => 'spelling_load', 'count' => $spelling];
     }
 
+    if ($softAccept > 0) {
+        $drivers[] = ['kind' => 'standard_form', 'count' => $softAccept];
+    }
+
     if ($nextStep === 'build_rhythm') {
         $drivers[] = ['kind' => 'rhythm_build', 'count' => $completed];
     } elseif ($nextStep === 'step_up') {
@@ -669,10 +675,58 @@ function captain_watch_debrief_drivers(array $summary, array $progressSummary, a
     return array_slice($drivers, 0, 3);
 }
 
+function captain_watch_debrief_primary_action(array $progressSummary): string {
+    return (string) ($progressSummary['next_step'] ?? '') === 'clear_revision'
+        ? 'lost_oars'
+        : 'recommended_watch';
+}
+
+function captain_watch_debrief_secondary_action(string $primaryAction, array $progressSummary): string {
+    $unresolved = (int) ($progressSummary['unresolved_lost_oars'] ?? 0);
+    return $primaryAction === 'recommended_watch' && $unresolved > 0 ? 'lost_oars' : '';
+}
+
+function captain_watch_debrief_evidence(array $drivers): array {
+    $evidence = [];
+    $seen = [];
+
+    foreach ($drivers as $driver) {
+        if (!is_array($driver)) continue;
+        $kind = (string) ($driver['kind'] ?? '');
+        $publicKind = match ($kind) {
+            'branch_pressure' => 'focus_area',
+            'type_pressure' => 'form_practice',
+            default => $kind,
+        };
+        if ($publicKind === '' || isset($seen[$publicKind])) continue;
+
+        $row = [
+            'kind' => $publicKind,
+            'count' => (int) ($driver['count'] ?? 0),
+        ];
+        if ($publicKind === 'step_up_ready') {
+            $row['level'] = (string) ($driver['level'] ?? 'beginner');
+        }
+        $evidence[] = $row;
+        $seen[$publicKind] = true;
+    }
+
+    return array_slice($evidence, 0, 3);
+}
+
 function captain_watch_debrief(array $summary, array $questions, array $itemsById, array $progressSummary): array {
     $pressureSummary = captain_watch_pressure_summary($questions, $itemsById);
+    $drivers = captain_watch_debrief_drivers($summary, $progressSummary, $pressureSummary);
+    $primaryAction = captain_watch_debrief_primary_action($progressSummary);
+    $nextStep = (string) ($progressSummary['next_step'] ?? 'hold_course');
+
     return [
-        'drivers' => captain_watch_debrief_drivers($summary, $progressSummary, $pressureSummary),
+        'primary_action' => $primaryAction,
+        'secondary_action' => captain_watch_debrief_secondary_action($primaryAction, $progressSummary),
+        'recommendation_copy_key' => 'summary.recommendation.' . $nextStep,
+        'evidence' => captain_watch_debrief_evidence($drivers),
+        'drivers' => $drivers,
+        'show_pressure_maps' => false,
         'pressure_by_branch' => $pressureSummary['by_branch'],
         'pressure_by_type' => $pressureSummary['by_type'],
         'pressure_by_reason' => $pressureSummary['by_reason'],

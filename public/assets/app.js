@@ -196,28 +196,46 @@ const I18N = {
     'summary.clean': 'Clean',
     'summary.hint': 'With hint',
     'summary.revision': 'To revise',
+    'summary.softAccept': 'Understood',
     'summary.score': 'Score',
     'summary.continue': 'Continue',
     'summary.nextTitle': 'Next move',
     'summary.nextWatch': 'Start recommended watch',
     'summary.nextBranchWatch': 'Start focused watch',
     'summary.reviseNow': 'Revise now',
+    'summary.secondaryRevision': 'Review Lost Oars separately',
     'summary.recommendedLevel': 'Recommended level',
-    'summary.recommendedBranch': 'Recommended branch',
+    'summary.recommendedBranch': 'Focus',
     'summary.recommendedPace': 'Recommended pace',
     'summary.recommendedLength': 'Recommended length',
-    'summary.debriefTitle': 'Why this route',
+    'summary.debriefTitle': 'Why this next step',
+    'summary.evidenceTitle': 'Evidence',
     'summary.pressureBranches': 'Pressure by branch',
     'summary.pressureTypes': 'Pressure by type',
+    'summary.recommendation.clear_revision': 'First clear the phrases that would block the next watch.',
+    'summary.recommendation.build_rhythm': 'Take one balanced watch to make the route steadier.',
+    'summary.recommendation.step_up': 'The last watch is steady enough to raise the level.',
+    'summary.recommendation.hold_course': 'Stay on this level and smooth the remaining friction.',
     'summary.driver.revision_load': 'Revision load is still high: {count}',
     'summary.driver.branch_pressure': 'Most pressure in {branch}: {count}',
     'summary.driver.type_pressure': 'Main friction in {type}: {count}',
     'summary.driver.hint_load': 'Hints still carry too much of the watch: {count}',
     'summary.driver.spelling_load': 'Spelling slowed the watch: {count}',
+    'summary.driver.standard_form': 'Meaning was clear, standard form still needs tightening: {count}',
     'summary.driver.rhythm_build': 'You still need watch rhythm before stepping up: {count}',
     'summary.driver.step_up_ready': 'This watch is steady enough for {level}: {count}',
     'summary.driver.watch_errors': 'Wrong or skipped calls still distort the route: {count}',
     'summary.driver.consistency': 'Clean calls are holding the route together: {count}',
+    'summary.evidence.revision_load': 'Open revision items: {count}',
+    'summary.evidence.focus_area': 'One area repeated: {count}',
+    'summary.evidence.form_practice': 'Phrase form needs one more pass: {count}',
+    'summary.evidence.hint_load': 'Answered with hints: {count}',
+    'summary.evidence.spelling_load': 'Spelling fixes: {count}',
+    'summary.evidence.standard_form': 'Understood, but not standard yet: {count}',
+    'summary.evidence.rhythm_build': 'Completed watches before step-up: {count}',
+    'summary.evidence.step_up_ready': 'Clean calls support {level}: {count}',
+    'summary.evidence.watch_errors': 'Calls to revise from this watch: {count}',
+    'summary.evidence.consistency': 'Clean calls held the watch: {count}',
     'pace.profile.recovery': 'Recovery',
     'pace.profile.steady': 'Steady',
     'pace.profile.push': 'Push',
@@ -530,28 +548,46 @@ I18N.ru = {
   'summary.clean': 'Чисто',
   'summary.hint': 'С подсказкой',
   'summary.revision': 'На доработку',
+  'summary.softAccept': 'Смысл принят',
   'summary.score': 'Счёт',
   'summary.continue': 'Продолжить',
   'summary.nextTitle': 'Следующий ход',
   'summary.nextWatch': 'Начать рекомендованную вахту',
   'summary.nextBranchWatch': 'Начать целевую вахту',
   'summary.reviseNow': 'Сразу в доработку',
+  'summary.secondaryRevision': 'Отдельно разобрать Lost Oars',
   'summary.recommendedLevel': 'Рекомендованный уровень',
-  'summary.recommendedBranch': 'Рекомендованная ветка',
+  'summary.recommendedBranch': 'Фокус',
   'summary.recommendedPace': 'Рекомендованный темп',
   'summary.recommendedLength': 'Рекомендованная длина',
-  'summary.debriefTitle': 'Почему такой маршрут',
+  'summary.debriefTitle': 'Почему такой следующий шаг',
+  'summary.evidenceTitle': 'Основание',
   'summary.pressureBranches': 'Давление по ветке',
   'summary.pressureTypes': 'Давление по типу',
+  'summary.recommendation.clear_revision': 'Сначала закрываем фразы, которые помешают следующей вахте.',
+  'summary.recommendation.build_rhythm': 'Нужна одна ровная вахта, чтобы маршрут стал устойчивее.',
+  'summary.recommendation.step_up': 'Последняя вахта достаточно ровная, можно поднять уровень.',
+  'summary.recommendation.hold_course': 'Остаемся на этом уровне и сглаживаем оставшееся трение.',
   'summary.driver.revision_load': 'Нагрузка на доработку все еще высокая: {count}',
   'summary.driver.branch_pressure': 'Главное давление идет из ветки {branch}: {count}',
   'summary.driver.type_pressure': 'Основное трение сейчас в типе {type}: {count}',
   'summary.driver.hint_load': 'Подсказки все еще слишком сильно держат вахту: {count}',
   'summary.driver.spelling_load': 'Орфография тормозила ход вахты: {count}',
+  'summary.driver.standard_form': 'Смысл был понятен, но стандартную форму надо подтянуть: {count}',
   'summary.driver.rhythm_build': 'До следующего шага еще нужен ритм вахт: {count}',
   'summary.driver.step_up_ready': 'Эта вахта уже достаточно ровная для {level}: {count}',
   'summary.driver.watch_errors': 'Ошибки и пропуски еще заметно искажают маршрут: {count}',
   'summary.driver.consistency': 'Чистые вызовы уже держат маршрут: {count}',
+  'summary.evidence.revision_load': 'Открытых фраз на доработку: {count}',
+  'summary.evidence.focus_area': 'Повторилась одна зона: {count}',
+  'summary.evidence.form_practice': 'Форму фразы нужно пройти еще раз: {count}',
+  'summary.evidence.hint_load': 'Ответов с подсказкой: {count}',
+  'summary.evidence.spelling_load': 'Исправлений написания: {count}',
+  'summary.evidence.standard_form': 'Смысл принят, но форма не стандартная: {count}',
+  'summary.evidence.rhythm_build': 'Закрытых вахт до повышения: {count}',
+  'summary.evidence.step_up_ready': 'Чистые вызовы поддерживают {level}: {count}',
+  'summary.evidence.watch_errors': 'Вызовов на доработку из этой вахты: {count}',
+  'summary.evidence.consistency': 'Чистые вызовы удержали вахту: {count}',
   'pace.profile.recovery': 'Восстановительный',
   'pace.profile.steady': 'Ровный',
   'pace.profile.push': 'Ускоряющий',
@@ -884,6 +920,7 @@ function summaryDriverCopy(driver) {
     case 'revision_load':
     case 'hint_load':
     case 'spelling_load':
+    case 'standard_form':
     case 'rhythm_build':
     case 'watch_errors':
     case 'consistency':
@@ -897,6 +934,19 @@ function summaryDriverCopy(driver) {
     default:
       return '';
   }
+}
+
+function summaryEvidenceCopy(evidence) {
+  if (!evidence || typeof evidence !== 'object') return '';
+  if (evidence.kind === 'step_up_ready') {
+    return tf('summary.evidence.step_up_ready', {
+      level: levelLabel(evidence.level || 'beginner'),
+      count: evidence.count ?? 0,
+    });
+  }
+  const key = `summary.evidence.${evidence.kind}`;
+  const copy = tf(key, { count: evidence.count ?? 0 });
+  return copy === key ? '' : copy;
 }
 
 function labeledCountMapMarkup(map, labeler = (key) => key) {
@@ -1604,17 +1654,21 @@ async function finishWatch() {
   const recommendedPacing = recommendedWatch.pacing || { profile: 'steady', intensity: 'standard' };
   const recommendedLength = recommendedWatch.length || recommendedPacing.target_length || 0;
   const debrief = s.debrief || {};
-  const drivers = Array.isArray(debrief.drivers) ? debrief.drivers.map(summaryDriverCopy).filter(Boolean) : [];
+  const evidence = Array.isArray(debrief.evidence)
+    ? debrief.evidence.map(summaryEvidenceCopy).filter(Boolean)
+    : (Array.isArray(debrief.drivers) ? debrief.drivers.map(summaryDriverCopy).filter(Boolean) : []);
   const summaryTitle = s.title_key ? t(s.title_key) : t('summary.title');
-  const summaryGuidance = s.guidance_key ? t(s.guidance_key) : '';
+  const recommendationKey = debrief.recommendation_copy_key || s.guidance_key;
+  const summaryGuidance = recommendationKey ? t(recommendationKey) : '';
+  const secondaryAction = debrief.secondary_action || '';
   app.innerHTML = html`
     <section class="panel watch-summary">
       <p class="eyebrow">${escapeHtml(t('summary.eyebrow'))}</p>
       <h1>${escapeHtml(summaryTitle)}</h1>
-      ${summaryGuidance ? `<p class="muted">${escapeHtml(summaryGuidance)}</p>` : ''}
       <div class="stat-grid">
         <div class="stat-card"><small>${escapeHtml(t('summary.clean'))}</small><strong>${s.clean}</strong></div>
         <div class="stat-card"><small>${escapeHtml(t('summary.hint'))}</small><strong>${s.hint}</strong></div>
+        <div class="stat-card"><small>${escapeHtml(t('summary.softAccept'))}</small><strong>${s.soft_accept ?? 0}</strong></div>
         <div class="stat-card"><small>${escapeHtml(t('summary.revision'))}</small><strong>${s.unresolved_lost_oars}</strong></div>
         <div class="stat-card"><small>${escapeHtml(t('summary.score'))}</small><strong>${s.final_score}</strong></div>
       </div>
@@ -1633,27 +1687,23 @@ async function finishWatch() {
       <div class="progress-overview__meta watch-summary__debrief">
         <div>
           <p class="eyebrow">${escapeHtml(t('summary.debriefTitle'))}</p>
+          <p class="muted">${escapeHtml(summaryGuidance || progressStepCopy(s.next_step))}</p>
+        </div>
+        <div>
+          <p class="eyebrow">${escapeHtml(t('summary.evidenceTitle'))}</p>
           <div class="pill-row">
-            ${drivers.length ? drivers.map((driver) => `<span class="mini-pill amber">${escapeHtml(driver)}</span>`).join('') : `<span class="muted">${escapeHtml(t('empty.none'))}</span>`}
+            ${evidence.length ? evidence.map((item) => `<span class="mini-pill amber">${escapeHtml(item)}</span>`).join('') : `<span class="muted">${escapeHtml(t('empty.none'))}</span>`}
           </div>
-        </div>
-        <div>
-          <p class="eyebrow">${escapeHtml(t('summary.pressureBranches'))}</p>
-          <div class="pill-row">${labeledCountMapMarkup(debrief.pressure_by_branch, branchLabel)}</div>
-        </div>
-        <div>
-          <p class="eyebrow">${escapeHtml(t('summary.pressureTypes'))}</p>
-          <div class="pill-row">${labeledCountMapMarkup(debrief.pressure_by_type, questionTypeLabel)}</div>
         </div>
       </div>
       <div class="actions">
-        <button class="button amber" id="collectButton">${escapeHtml(t('home.lostOars'))}</button>
         <button class="button primary" id="continueButton">${escapeHtml(nextWatchActionLabel(s))}</button>
+        ${secondaryAction === 'lost_oars' ? `<button class="button ghost" id="secondaryRevisionButton">${escapeHtml(t('summary.secondaryRevision'))}</button>` : ''}
       </div>
       <p class="status-line" id="summaryStatus"></p>
     </section>
   `;
-  document.querySelector('#collectButton')?.addEventListener('click', renderLostOars);
+  document.querySelector('#secondaryRevisionButton')?.addEventListener('click', renderLostOars);
   document.querySelector('#continueButton')?.addEventListener('click', async () => {
     const status = document.querySelector('#summaryStatus');
     if ((s.next_step || '') === 'clear_revision') {

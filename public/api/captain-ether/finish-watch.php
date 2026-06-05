@@ -25,6 +25,7 @@ $watchResult = watch_sessions_mutate(function (array &$store) use ($sessionId, $
     $clean = 0;
     $hint = 0;
     $spelling = 0;
+    $softAccept = 0;
     $lost = 0;
     $points = 0.0;
     foreach ($watch['questions'] ?? [] as $question) {
@@ -34,6 +35,7 @@ $watchResult = watch_sessions_mutate(function (array &$store) use ($sessionId, $
         if (in_array($result['reason'] ?? '', ['clean', 'spelling'], true)) $clean++;
         if (($result['reason'] ?? '') === 'hint') $hint++;
         if (($result['reason'] ?? '') === 'spelling') $spelling++;
+        if (($result['reason'] ?? '') === 'soft_accept') $softAccept++;
         if (in_array($result['reason'] ?? '', ['wrong', 'skip'], true)) $lost++;
     }
 
@@ -43,6 +45,7 @@ $watchResult = watch_sessions_mutate(function (array &$store) use ($sessionId, $
         'clean' => $clean,
         'hint' => $hint,
         'spelling' => $spelling,
+        'soft_accept' => $softAccept,
         'lost' => $lost,
         'base_score' => $points,
     ];

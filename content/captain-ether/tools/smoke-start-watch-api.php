@@ -722,6 +722,7 @@ try {
     $finish = smoke_post('/api/captain-ether/finish-watch.php', ['watch_id' => $flowWatch]);
     smoke_check('finish status', $finish['status'] === 200, 'expected 200, got ' . $finish['status']);
     smoke_check('finish summary', isset($finish['json']['summary']['final_score']), 'final score missing');
+    smoke_check('finish soft accept counter present', array_key_exists('soft_accept', $finish['json']['summary'] ?? []), 'soft_accept counter missing');
     smoke_check('finish recommended level', in_array(($finish['json']['summary']['recommended_level'] ?? ''), ['beginner', 'intermediate', 'advanced'], true), 'recommended level missing or invalid');
     smoke_check('finish next step', smoke_valid_next_step((string) ($finish['json']['summary']['next_step'] ?? '')), 'next step missing or invalid');
     smoke_check('finish recommended watch level parity', ($finish['json']['summary']['recommended_watch']['level'] ?? '') === ($finish['json']['summary']['recommended_level'] ?? ''), 'recommended watch level mismatch');
@@ -730,6 +731,9 @@ try {
     smoke_check('finish summary title key', ($finish['json']['summary']['title_key'] ?? '') === 'summary.title.' . ($finish['json']['summary']['pacing_profile'] ?? ''), 'summary title key mismatch');
     smoke_check('finish summary guidance key', ($finish['json']['summary']['guidance_key'] ?? '') === 'summary.guidance.' . ($finish['json']['summary']['pacing_profile'] ?? ''), 'summary guidance key mismatch');
     smoke_check('finish debrief drivers', count($finish['json']['summary']['debrief']['drivers'] ?? []) >= 1, 'finish debrief drivers missing');
+    smoke_check('finish debrief primary action', in_array(($finish['json']['summary']['debrief']['primary_action'] ?? ''), ['lost_oars', 'recommended_watch'], true), 'finish debrief primary action missing');
+    smoke_check('finish debrief evidence', count($finish['json']['summary']['debrief']['evidence'] ?? []) >= 1, 'finish debrief evidence missing');
+    smoke_check('finish debrief hides pressure maps', ($finish['json']['summary']['debrief']['show_pressure_maps'] ?? true) === false, 'finish debrief pressure maps are marked visible');
     smoke_check('finish debrief branch map', is_array($finish['json']['summary']['debrief']['pressure_by_branch'] ?? null), 'finish debrief branch map missing');
     smoke_check('finish debrief type map', is_array($finish['json']['summary']['debrief']['pressure_by_type'] ?? null), 'finish debrief type map missing');
 
