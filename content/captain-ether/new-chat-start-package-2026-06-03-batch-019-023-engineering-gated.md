@@ -265,7 +265,7 @@ After Director completes production login in the opened browser, record non-secr
 Fallback next task if approved production QA access is still unavailable:
 
 ```text
-Run CE-0196G Release-Candidate QA And Production Sync Decision locally. Do not deploy production without explicit production-sync task.
+Captain Ether CE-0196 local/GitHub release candidate is ready. Next task is explicit production sync only if Director authorizes it; otherwise hold RC and do non-production QA/manual review.
 ```
 
 Goal:
@@ -291,7 +291,7 @@ draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
 ```
 
-Local/GitHub/production now match at 1000, CE-0189A release-readiness QA passed, CE-0189C confirms content/runtime readiness, CE-0189D found matcher noise acceptable, CE-0189E closed the main course content/runtime scope, and CE-0191A reconfirmed content/main-course plus runtime/API/production parity as internally closed to 100% for the current scope. CE-0191B reattempted authenticated watch smoke and reconfirmed the approved-QA-access blocker without finding a content/runtime/parity defect. CE-0190, CE-0191, and CE-0192 completed report-only Gamification v1 design/copy/data-contract work; implementation is not deployed yet. CE-0193 captured CEO play-session findings and created six narrow agent starter folders. CE-0194 launched Wave 1 report-only agents and produced five source-based reports. CE-0194F completed Wave 2 progression architecture. CE-0195 consolidated all agent outputs into a sequenced implementation backlog. CE-0196 prepared the big implementation sprint runbook. CE-0196A pre-code baseline passed. CE-0196B first-run funnel implemented locally and QA-passed. CE-0196C active watch HUD implemented locally and QA-passed. CE-0196D Stage 0 routing implemented locally and QA-passed. CE-0196E semantic soft acceptance implemented locally and QA-passed. CE-0196F progression summary simplification implemented locally and QA-passed. Production remains unchanged.
+Local/GitHub/production now match at 1000, CE-0189A release-readiness QA passed, CE-0189C confirms content/runtime readiness, CE-0189D found matcher noise acceptable, CE-0189E closed the main course content/runtime scope, and CE-0191A reconfirmed content/main-course plus runtime/API/production parity as internally closed to 100% for the current scope. CE-0191B reattempted authenticated watch smoke and reconfirmed the approved-QA-access blocker without finding a content/runtime/parity defect. CE-0190, CE-0191, and CE-0192 completed report-only Gamification v1 design/copy/data-contract work; implementation is not deployed yet. CE-0193 captured CEO play-session findings and created six narrow agent starter folders. CE-0194 launched Wave 1 report-only agents and produced five source-based reports. CE-0194F completed Wave 2 progression architecture. CE-0195 consolidated all agent outputs into a sequenced implementation backlog. CE-0196 prepared the big implementation sprint runbook. CE-0196A pre-code baseline passed. CE-0196B first-run funnel implemented locally and QA-passed. CE-0196C active watch HUD implemented locally and QA-passed. CE-0196D Stage 0 routing implemented locally and QA-passed. CE-0196E semantic soft acceptance implemented locally and QA-passed. CE-0196F progression summary simplification implemented locally and QA-passed. CE-0196G release-candidate QA passed. Production remains unchanged.
 
 ## 6. Recommended CE-0196 Sprint Execution Plan
 
@@ -307,7 +307,7 @@ Recommended sequence:
 4. CE-0196D Stage 0 beginner routing and metadata.
 5. CE-0196E semantic soft acceptance. DONE_LOCAL_QA_PASS.
 6. CE-0196F progression evidence and summary simplification. DONE_LOCAL_QA_PASS.
-7. CE-0196G release-candidate QA and production sync decision.
+7. CE-0196G release-candidate QA and production sync decision. DONE_LOCAL_GITHUB_RC_READY_PRODUCTION_SYNC_NOT_RUN.
 ```
 
 Production sync remains a separate explicit task after local/GitHub release-candidate QA.

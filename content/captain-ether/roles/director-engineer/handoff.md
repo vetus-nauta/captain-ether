@@ -80,6 +80,7 @@ CE-0196C Active Watch HUD implemented locally: submit/finish busy states, double
 CE-0196D Stage 0 Beginner Routing And Metadata implemented locally: added learning metadata to 1000 starter items, Stage 0 pool 43, first beginner mixed watch filter, validator metadata gate, and API smoke leakage check. QA PASS. Production unchanged.
 CE-0196E Semantic Soft Acceptance implemented locally: deterministic item-local `understood_non_standard` matcher, `soft_accept` scoring at 80%, answer-log standard-form friction, regression `should_soft_accept=5`, and API smoke soft-boundary checks. QA PASS. Production unchanged.
 CE-0196F Progression Evidence And Summary Simplification implemented locally: finish summary now exposes `soft_accept`, `primary_action`, plain evidence, and `show_pressure_maps=false`; player UI hides technical pressure maps and avoids duplicate revision CTAs. QA PASS. Production unchanged.
+CE-0196G Release-Candidate QA passed: GitHub parity 0 0, PHP/JS/JSON syntax gates PASS, validator PASS, API smoke PASS checks=347. Local/GitHub release candidate is ready; production sync was not run and requires explicit authorization.
 local_github_starter_items=1000
 local_github_grammar_patterns=581
 local_github_qa_items=1000
