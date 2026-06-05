@@ -67,6 +67,7 @@ agent_wave_1=REPORTS_READY_NO_CODE
 progression_algorithm_architect=REPORT_READY_ACCEPTED_FOR_BACKLOG_CONSOLIDATION_NO_CODE
 agent_report_implementation_backlog=BACKLOG_READY_NO_CODE
 big_implementation_sprint_plan=SPRINT_READY_NO_CODE
+ce_0196a_pre_code_baseline=BASELINE_PASS_READY_FOR_CE_0196B_NO_CODE
 main_course_finalization_reconfirmation=PASS_INTERNAL_100_AUTH_EXTERNAL_BLOCKER
 runtime_api_production_parity_reconfirmation=PASS_INTERNAL_100_AUTH_EXTERNAL_BLOCKER
 production_route=HTTP 200
@@ -160,6 +161,7 @@ CE-0194 Agent Wave 1 Launch And Acceptance: WAVE_1_REPORTS_READY / NO_CODE
 CE-0194F Progression Algorithm Acceptance: WAVE_2_REPORT_READY / ACCEPTED_FOR_BACKLOG_CONSOLIDATION / NO_CODE
 CE-0195 Implementation Backlog From Agent Reports: BACKLOG_READY / NO_CODE
 CE-0196 Big Implementation Sprint Plan: SPRINT_READY / NO_CODE
+CE-0196A Pre-Code Inspection And Baseline QA: BASELINE_PASS / READY_FOR_CE_0196B / NO_CODE
 ```
 
 Important reports:
@@ -235,6 +237,7 @@ content/captain-ether/roles/progression-algorithm-architect/reports/sprint-ce-01
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0194f-progression-algorithm-acceptance-2026-06-04.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0195-implementation-backlog-from-agent-reports-2026-06-04.md
 content/captain-ether/roles/director-engineer/reports/sprint-ce-0196-big-implementation-sprint-plan-2026-06-06.md
+content/captain-ether/roles/director-engineer/reports/sprint-ce-0196a-pre-code-inspection-baseline-qa-2026-06-06.md
 content/captain-ether/roles/onboarding-flow-architect/reports/sprint-ce-0194a-first-launch-funnel-spec-2026-06-04.md
 content/captain-ether/roles/watch-hud-interaction-designer/reports/sprint-ce-0194b-watch-hud-interaction-spec-2026-06-04.md
 content/captain-ether/roles/beginner-curriculum-curator/reports/sprint-ce-0194c-beginner-first-session-pool-audit-2026-06-04.md
@@ -253,13 +256,13 @@ After Director completes production login in the opened browser, record non-secr
 Fallback next task if approved production QA access is still unavailable:
 
 ```text
-Run CE-0196A pre-code inspection and baseline QA before implementation.
+Implement CE-0196B First-Run Funnel Cleanup locally.
 ```
 
 Goal:
 
 ```text
-No code changed by planning. Big sprint is ready; next action is CE-0196A local pre-code inspection and baseline QA. Production sync remains a separate explicit task.
+CE-0196A baseline passed with validator PASS and API smoke PASS checks=334. Next action is CE-0196B local first-run funnel implementation. Production sync remains a separate explicit task.
 ```
 
 Expected current local/GitHub/production baseline:
@@ -279,7 +282,7 @@ draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
 ```
 
-Local/GitHub/production now match at 1000, CE-0189A release-readiness QA passed, CE-0189C confirms content/runtime readiness, CE-0189D found matcher noise acceptable, CE-0189E closed the main course content/runtime scope, and CE-0191A reconfirmed content/main-course plus runtime/API/production parity as internally closed to 100% for the current scope. CE-0191B reattempted authenticated watch smoke and reconfirmed the approved-QA-access blocker without finding a content/runtime/parity defect. CE-0190, CE-0191, and CE-0192 completed report-only Gamification v1 design/copy/data-contract work; implementation is not deployed yet. CE-0193 captured CEO play-session findings and created six narrow agent starter folders. CE-0194 launched Wave 1 report-only agents and produced five source-based reports. CE-0194F completed Wave 2 progression architecture. CE-0195 consolidated all agent outputs into a sequenced implementation backlog. CE-0196 prepared the big implementation sprint runbook. No runtime code work has been started.
+Local/GitHub/production now match at 1000, CE-0189A release-readiness QA passed, CE-0189C confirms content/runtime readiness, CE-0189D found matcher noise acceptable, CE-0189E closed the main course content/runtime scope, and CE-0191A reconfirmed content/main-course plus runtime/API/production parity as internally closed to 100% for the current scope. CE-0191B reattempted authenticated watch smoke and reconfirmed the approved-QA-access blocker without finding a content/runtime/parity defect. CE-0190, CE-0191, and CE-0192 completed report-only Gamification v1 design/copy/data-contract work; implementation is not deployed yet. CE-0193 captured CEO play-session findings and created six narrow agent starter folders. CE-0194 launched Wave 1 report-only agents and produced five source-based reports. CE-0194F completed Wave 2 progression architecture. CE-0195 consolidated all agent outputs into a sequenced implementation backlog. CE-0196 prepared the big implementation sprint runbook. CE-0196A pre-code baseline passed. No runtime implementation changes have been started yet.
 
 ## 6. Recommended CE-0196 Sprint Execution Plan
 
