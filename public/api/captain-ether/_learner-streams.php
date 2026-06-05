@@ -436,7 +436,7 @@ function captain_watch_session_pacing_profile(array $watch): string {
 }
 
 function captain_result_message_kind(bool $correct, string $reason, string $matchType): string {
-    if ($correct && in_array($matchType, ['spelling', 'variant'], true)) return 'soft';
+    if ($correct && in_array($matchType, ['spelling', 'variant', 'understood_non_standard'], true)) return 'soft';
     if ($correct && $reason === 'hint') return 'hint';
     if ($correct) return 'clean';
     return 'weak';

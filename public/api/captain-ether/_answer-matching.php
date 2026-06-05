@@ -119,6 +119,33 @@ function captain_answer_is_close_typo(string $answer, string $expected): bool {
     return $hasTypo;
 }
 
+function captain_soft_accept_examples(array $item): array {
+    if (($item['soft_accept_allowed'] ?? false) !== true) return [];
+    if (!isset($item['soft_accept_answers']) || !is_array($item['soft_accept_answers'])) return [];
+
+    $examples = [];
+    foreach ($item['soft_accept_answers'] as $entry) {
+        if (is_string($entry)) {
+            $answer = $entry;
+            $scoreFactor = 0.8;
+        } elseif (is_array($entry)) {
+            $answer = (string) ($entry['answer'] ?? '');
+            $scoreFactor = (float) ($entry['score_factor'] ?? 0.8);
+        } else {
+            continue;
+        }
+
+        $answer = trim($answer);
+        if ($answer === '') continue;
+        $examples[] = [
+            'answer' => $answer,
+            'score_factor' => max(0.0, min(1.0, $scoreFactor)),
+        ];
+    }
+
+    return $examples;
+}
+
 function captain_match_answer(string $answer, array $item, bool $skipped = false): array {
     if ($skipped) {
         return [
@@ -155,6 +182,27 @@ function captain_match_answer(string $answer, array $item, bool $skipped = false
                 'correct' => true,
                 'match_type' => 'variant',
                 'message' => 'Принято. Стандартная форма ниже.',
+            ];
+        }
+    }
+
+    foreach (captain_soft_accept_examples($item) as $example) {
+        $softAnswer = (string) $example['answer'];
+        if (
+            $normalized !== ''
+            && (
+                $normalized === normalize_answer($softAnswer)
+                || (
+                    $semantic !== ''
+                    && ($semantic === captain_answer_semantic_key($softAnswer) || $compact === captain_answer_compact_key($softAnswer))
+                )
+            )
+        ) {
+            return [
+                'correct' => true,
+                'match_type' => 'understood_non_standard',
+                'score_factor' => $example['score_factor'],
+                'message' => 'Вас поймут. Ниже стандартная форма.',
             ];
         }
     }

@@ -12,6 +12,7 @@ function captain_answer_logs_default(): array {
 function captain_answer_log_kind(array $event): string {
     if (!empty($event['skipped'])) return 'skip';
     if (empty($event['correct'])) return 'wrong';
+    if (($event['reason'] ?? '') === 'soft_accept' || ($event['match_type'] ?? '') === 'understood_non_standard') return 'soft_accept';
     if (!empty($event['used_hint']) || ($event['reason'] ?? '') === 'hint') return 'hint';
     if (($event['match_type'] ?? '') === 'spelling') return 'spelling';
     if (($event['match_type'] ?? '') === 'variant') return 'variant';
@@ -33,6 +34,7 @@ function captain_should_log_answer_event(array $event): bool {
         'spelling',
         'variant',
         'accepted_variant',
+        'soft_accept',
     ], true);
 }
 
@@ -193,6 +195,9 @@ function captain_answer_log_review_flags(array $group): array {
     if (($byKind['accepted_variant'] ?? 0) > 0 || ($byKind['variant'] ?? 0) > 0) {
         $flags[] = 'accepted_variant_review';
     }
+    if (($byKind['soft_accept'] ?? 0) > 0) {
+        $flags[] = 'standard_form_friction';
+    }
     if (($byKind['spelling'] ?? 0) > 0) {
         $flags[] = 'common_spelling_review';
     }
@@ -289,7 +294,7 @@ function captain_answer_log_review_groups(array $entries, int $groupLimit = 20, 
         $wrongWeight = (int) ($group['by_kind']['wrong'] ?? 0) * 4;
         $skipWeight = (int) ($group['by_kind']['skip'] ?? 0) * 3;
         $hintWeight = (int) ($group['by_kind']['hint'] ?? 0) * 2;
-        $variantWeight = (int) (($group['by_kind']['variant'] ?? 0) + ($group['by_kind']['accepted_variant'] ?? 0));
+        $variantWeight = (int) (($group['by_kind']['variant'] ?? 0) + ($group['by_kind']['accepted_variant'] ?? 0) + ($group['by_kind']['soft_accept'] ?? 0));
         $spellingWeight = (int) ($group['by_kind']['spelling'] ?? 0);
 
         $group['priority_score'] = $wrongWeight + $skipWeight + $hintWeight + $variantWeight + $spellingWeight;

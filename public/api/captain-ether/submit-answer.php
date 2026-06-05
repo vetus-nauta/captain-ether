@@ -49,14 +49,20 @@ $result = watch_sessions_mutate(function (array &$store) use ($sessionId, $index
 
     $match = captain_match_answer($answer, $item, $skipped);
     $correct = (bool) $match['correct'];
+    $matchType = (string) $match['match_type'];
+    $scoreFactor = max(0.0, min(1.0, (float) ($match['score_factor'] ?? 1.0)));
     $hintReward = max(0.0, min(1.0, (float) ($question['hint_reward'] ?? 0.5)));
     $skipReward = max(0.0, min(1.0, (float) ($question['skip_reward'] ?? 0.0)));
     $points = $skipped
         ? $skipReward
-        : ($correct ? ($effectiveHint ? $hintReward : 1.0) : 0.0);
-    $reason = $skipped ? 'skip' : ($correct && $effectiveHint ? 'hint' : ($correct ? ((string) $match['match_type'] === 'spelling' ? 'spelling' : 'clean') : 'wrong'));
+        : ($correct ? ($effectiveHint ? $hintReward : 1.0) * $scoreFactor : 0.0);
+    $reason = $skipped
+        ? 'skip'
+        : ($correct && $matchType === 'understood_non_standard'
+            ? 'soft_accept'
+            : ($correct && $effectiveHint ? 'hint' : ($correct ? ($matchType === 'spelling' ? 'spelling' : 'clean') : 'wrong')));
     $pacingProfile = captain_watch_session_pacing_profile($watch);
-    $messageKey = captain_result_message_key($pacingProfile, $correct, $reason, (string) $match['match_type']);
+    $messageKey = captain_result_message_key($pacingProfile, $correct, $reason, $matchType);
 
     $watch['questions'][$index]['answer'] = $answer;
     $watch['questions'][$index]['used_hint'] = $effectiveHint;
@@ -65,7 +71,8 @@ $result = watch_sessions_mutate(function (array &$store) use ($sessionId, $index
         'correct' => $correct,
         'points' => $points,
         'reason' => $reason,
-        'match_type' => $match['match_type'],
+        'match_type' => $matchType,
+        'score_factor' => $scoreFactor,
         'answered_at' => iso_time(),
     ];
 
@@ -90,8 +97,9 @@ $result = watch_sessions_mutate(function (array &$store) use ($sessionId, $index
         'reason' => $reason,
         'hint_applied' => $effectiveHint,
         'skip_applied' => $skipped,
-        'match_type' => $match['match_type'],
-        'message' => $effectiveHint && $correct ? maritime_message('hint') : (string) $match['message'],
+        'match_type' => $matchType,
+        'score_factor' => $scoreFactor,
+        'message' => $effectiveHint && $correct && $matchType !== 'understood_non_standard' ? maritime_message('hint') : (string) $match['message'],
         'message_key' => $messageKey,
         'message_profile' => $pacingProfile,
         'target_text' => $item['target_text'] ?? '',
@@ -108,7 +116,7 @@ $result = watch_sessions_mutate(function (array &$store) use ($sessionId, $index
             'answer' => $answer,
             'correct' => $correct,
             'reason' => $reason,
-            'match_type' => $match['match_type'],
+            'match_type' => $matchType,
             'used_hint' => $effectiveHint,
             'skipped' => $skipped,
         ],

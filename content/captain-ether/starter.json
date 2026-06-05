@@ -18771,6 +18771,13 @@
             "first_session_allowed": false,
             "strict_smcp_required": false,
             "soft_accept_allowed": true,
+            "soft_accept_answers": [
+                {
+                    "answer": "bring first aid",
+                    "score_factor": 0.8,
+                    "note": "Meaning is understood in the command context; standard equipment noun remains first aid kit."
+                }
+            ],
             "protected_family": "mixed_safety_equipment_deck_operations_medical_safety"
         },
         {
@@ -23342,8 +23349,25 @@
             "voice_role": "shore_station_origin",
             "stage_min": 2,
             "first_session_allowed": false,
-            "strict_smcp_required": true,
-            "soft_accept_allowed": false,
+            "strict_smcp_required": false,
+            "soft_accept_allowed": true,
+            "soft_accept_answers": [
+                {
+                    "answer": "Clearace granted, follow to the guest pear",
+                    "score_factor": 0.8,
+                    "note": "Meaning is understood despite spelling and non-standard wording; standard form uses clearance, proceed, and visitor berth."
+                },
+                {
+                    "answer": "Clearance granted, follow to the guest pier",
+                    "score_factor": 0.8,
+                    "note": "Meaning is understood; standard maritime instruction uses proceed to visitor berth."
+                },
+                {
+                    "answer": "Clearance granted proceed to guest berth",
+                    "score_factor": 0.8,
+                    "note": "Meaning is understood; standard form keeps visitor berth."
+                }
+            ],
             "protected_family": "marina_harbour_clearance_request"
         },
         {

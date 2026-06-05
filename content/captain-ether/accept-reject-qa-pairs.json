@@ -18735,6 +18735,10 @@
                 "bring first aid kit",
                 "Bring first aid kit"
             ],
+            "should_soft_accept": [
+                "bring first aid",
+                "Bring first aid"
+            ],
             "should_reject": [
                 "bring fire kit",
                 "bring repair kit",
@@ -20993,6 +20997,11 @@
             "target_text": "Clearance granted, proceed to visitor berth.",
             "should_accept": [
                 "Clearance granted, proceed to visitor berth."
+            ],
+            "should_soft_accept": [
+                "Clearace granted, follow to the guest pear",
+                "Clearance granted, follow to the guest pier",
+                "Clearance granted proceed to guest berth"
             ],
             "should_reject": [
                 "Clearance not granted proceed to visitor berth",

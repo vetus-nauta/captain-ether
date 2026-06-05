@@ -252,9 +252,11 @@ const I18N = {
     'log.spelling': 'spelling',
     'log.variant': 'variant',
     'log.accepted_variant': 'accepted variant',
+    'log.soft_accept': 'understood',
     'flag.possible_missing_variant': 'check variant',
     'flag.prompt_or_hint_friction': 'check hint',
     'flag.accepted_variant_review': 'to dictionary',
+    'flag.standard_form_friction': 'standard form',
     'flag.common_spelling_review': 'common typo',
     'flag.repeated_pattern': 'repeats',
     'date.none': 'no date',
@@ -584,9 +586,11 @@ I18N.ru = {
   'log.spelling': 'написание',
   'log.variant': 'вариант',
   'log.accepted_variant': 'принятый вариант',
+  'log.soft_accept': 'смысл принят',
   'flag.possible_missing_variant': 'проверить вариант',
   'flag.prompt_or_hint_friction': 'проверить подсказку',
   'flag.accepted_variant_review': 'в словарь',
+  'flag.standard_form_friction': 'стандартная форма',
   'flag.common_spelling_review': 'частая опечатка',
   'flag.repeated_pattern': 'повторяется',
   'date.none': 'нет даты',
@@ -1495,7 +1499,7 @@ function renderWatch() {
 
 function resultClass(result) {
   if (!result) return '';
-  if (result.correct && ['spelling', 'variant'].includes(result.match_type)) return 'is-soft-correct';
+  if (result.correct && ['spelling', 'variant', 'understood_non_standard'].includes(result.match_type)) return 'is-soft-correct';
   return result.correct ? 'is-correct' : 'is-wrong';
 }
 
@@ -1503,7 +1507,7 @@ function resultTitle(result) {
   if (result?.message_key) {
     return t(result.message_key);
   }
-  if (result.correct && ['spelling', 'variant'].includes(result.match_type)) {
+  if (result.correct && ['spelling', 'variant', 'understood_non_standard'].includes(result.match_type)) {
     return t('result.standardAccepted');
   }
   return result.message;

@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 require __DIR__ . '/../../../private/bootstrap.php';
 require __DIR__ . '/../../../public/api/captain-ether/_learner-streams.php';
+require __DIR__ . '/../../../public/api/captain-ether/_answer-matching.php';
 
 $appRoot = dirname(__DIR__, 3);
 $phpBin = getenv('CAPTAIN_ETHER_PHP') ?: PHP_BINARY;
@@ -282,6 +283,24 @@ function smoke_item_map(string $stream = CAPTAIN_LEARNER_STREAM_RU): array {
     return captain_stream_items_by_id($stream);
 }
 
+function smoke_check_soft_accept_contract(): void {
+    $items = smoke_item_map();
+    $firstAidCommand = $items['expr_b020_bring_first_aid_kit_001'] ?? [];
+    $firstAidNoun = $items['word_b020_first_aid_kit_001'] ?? [];
+    $clearance = $items['phrase_b025_clearance_granted_proceed_visitor_berth_001'] ?? [];
+
+    $firstAidSoft = captain_match_answer('bring first aid', $firstAidCommand);
+    smoke_check('soft accept first aid command correct', ($firstAidSoft['correct'] ?? false) === true, 'bring first aid was not accepted');
+    smoke_check('soft accept first aid command type', ($firstAidSoft['match_type'] ?? '') === 'understood_non_standard', 'unexpected first-aid match type');
+    smoke_check('soft accept first aid command factor', abs((float) ($firstAidSoft['score_factor'] ?? 0) - 0.8) < 0.001, 'unexpected first-aid score factor');
+
+    $clearanceSoft = captain_match_answer('Clearace granted, follow to the guest pear', $clearance);
+    smoke_check('soft accept clearance correct', ($clearanceSoft['correct'] ?? false) === true, 'clearance soft answer was not accepted');
+    smoke_check('soft accept clearance type', ($clearanceSoft['match_type'] ?? '') === 'understood_non_standard', 'unexpected clearance match type');
+    smoke_check('soft accept first aid noun boundary', (captain_match_answer('first aid', $firstAidNoun)['correct'] ?? true) === false, 'first aid noun boundary was loosened');
+    smoke_check('soft accept clearance danger boundary', (captain_match_answer('Clearance granted proceed to fuel berth', $clearance)['correct'] ?? true) === false, 'fuel berth drift was accepted');
+}
+
 function smoke_watch_stream(string $watchId): string {
     $store = smoke_read_json('watch_sessions', ['sessions' => []]);
     $watch = $store['sessions'][$watchId] ?? [];
@@ -530,6 +549,7 @@ try {
     ]);
     $server = smoke_start_server($phpBin, $appRoot, $port, (string) $serverLog);
     smoke_wait_for_server('127.0.0.1', $port);
+    smoke_check_soft_accept_contract();
 
     $firstBeginnerWatch = smoke_start_watch('mixed beginner default', ['level' => 'beginner'], 'beginner');
     smoke_check('mixed beginner default first-session flag', (smoke_read_json('watch_sessions', ['sessions' => []])['sessions'][$firstBeginnerWatch]['level'] ?? '') === 'beginner', 'beginner watch was not stored');

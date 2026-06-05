@@ -265,7 +265,7 @@ After Director completes production login in the opened browser, record non-secr
 Fallback next task if approved production QA access is still unavailable:
 
 ```text
-Implement CE-0196E Semantic Soft Acceptance locally.
+Implement CE-0196F Progression Evidence And Summary Simplification locally.
 ```
 
 Goal:
@@ -291,7 +291,7 @@ draft_backlog_grammar_patterns=0
 draft_backlog_dangerous_pairs=0
 ```
 
-Local/GitHub/production now match at 1000, CE-0189A release-readiness QA passed, CE-0189C confirms content/runtime readiness, CE-0189D found matcher noise acceptable, CE-0189E closed the main course content/runtime scope, and CE-0191A reconfirmed content/main-course plus runtime/API/production parity as internally closed to 100% for the current scope. CE-0191B reattempted authenticated watch smoke and reconfirmed the approved-QA-access blocker without finding a content/runtime/parity defect. CE-0190, CE-0191, and CE-0192 completed report-only Gamification v1 design/copy/data-contract work; implementation is not deployed yet. CE-0193 captured CEO play-session findings and created six narrow agent starter folders. CE-0194 launched Wave 1 report-only agents and produced five source-based reports. CE-0194F completed Wave 2 progression architecture. CE-0195 consolidated all agent outputs into a sequenced implementation backlog. CE-0196 prepared the big implementation sprint runbook. CE-0196A pre-code baseline passed. CE-0196B first-run funnel implemented locally and QA-passed. CE-0196C active watch HUD implemented locally and QA-passed. CE-0196D Stage 0 routing implemented locally and QA-passed. Production remains unchanged.
+Local/GitHub/production now match at 1000, CE-0189A release-readiness QA passed, CE-0189C confirms content/runtime readiness, CE-0189D found matcher noise acceptable, CE-0189E closed the main course content/runtime scope, and CE-0191A reconfirmed content/main-course plus runtime/API/production parity as internally closed to 100% for the current scope. CE-0191B reattempted authenticated watch smoke and reconfirmed the approved-QA-access blocker without finding a content/runtime/parity defect. CE-0190, CE-0191, and CE-0192 completed report-only Gamification v1 design/copy/data-contract work; implementation is not deployed yet. CE-0193 captured CEO play-session findings and created six narrow agent starter folders. CE-0194 launched Wave 1 report-only agents and produced five source-based reports. CE-0194F completed Wave 2 progression architecture. CE-0195 consolidated all agent outputs into a sequenced implementation backlog. CE-0196 prepared the big implementation sprint runbook. CE-0196A pre-code baseline passed. CE-0196B first-run funnel implemented locally and QA-passed. CE-0196C active watch HUD implemented locally and QA-passed. CE-0196D Stage 0 routing implemented locally and QA-passed. CE-0196E semantic soft acceptance implemented locally and QA-passed. Production remains unchanged.
 
 ## 6. Recommended CE-0196 Sprint Execution Plan
 
@@ -305,7 +305,7 @@ Recommended sequence:
 2. CE-0196B first-run funnel implementation.
 3. CE-0196C active watch HUD implementation.
 4. CE-0196D Stage 0 beginner routing and metadata.
-5. CE-0196E semantic soft acceptance.
+5. CE-0196E semantic soft acceptance. DONE_LOCAL_QA_PASS.
 6. CE-0196F progression evidence and summary simplification.
 7. CE-0196G release-candidate QA and production sync decision.
 ```
@@ -331,7 +331,7 @@ Expected:
 ```text
 validator PASS
 batch validators PASS
-API smoke PASS captain-ether-api-smoke checks=334
+API smoke PASS captain-ether-api-smoke checks=343
 validator_warn_count=0
 ```
 

@@ -185,6 +185,20 @@ function validate_learning_metadata(array &$failures, array $items, int $runs): 
         if (trim((string) ($item['protected_family'] ?? '')) === '') {
             add_failure($failures, 'learning_metadata', 'protected_family is empty', ['item_id' => $id]);
         }
+        if (isset($item['soft_accept_answers'])) {
+            if (!is_array($item['soft_accept_answers'])) {
+                add_failure($failures, 'learning_metadata', 'soft_accept_answers is not an array', ['item_id' => $id]);
+            } elseif (($item['soft_accept_allowed'] ?? false) !== true) {
+                add_failure($failures, 'learning_metadata', 'soft_accept_answers requires soft_accept_allowed=true', ['item_id' => $id]);
+            } else {
+                foreach ($item['soft_accept_answers'] as $softIndex => $softEntry) {
+                    $softAnswer = is_array($softEntry) ? (string) ($softEntry['answer'] ?? '') : (is_string($softEntry) ? $softEntry : '');
+                    if (trim($softAnswer) === '') {
+                        add_failure($failures, 'learning_metadata', 'soft_accept_answers entry is empty', ['item_id' => $id, 'index' => $softIndex]);
+                    }
+                }
+            }
+        }
 
         if (($item['first_session_allowed'] ?? false) === true) {
             $stage0Items[] = $item;
@@ -240,6 +254,7 @@ function validate_matcher_cases(array &$failures, array $items, ?array $cases, s
     $itemsById = items_by_id($items);
     $targetCount = 0;
     $acceptCount = 0;
+    $softAcceptCount = 0;
     $rejectCount = 0;
 
     if ($cases === null) {
@@ -278,7 +293,7 @@ function validate_matcher_cases(array &$failures, array $items, ?array $cases, s
                 }
             }
         }
-        return [$targetCount, $acceptCount, $rejectCount];
+        return [$targetCount, $acceptCount, $softAcceptCount, $rejectCount];
     }
 
     foreach ($items as $item) {
@@ -312,6 +327,18 @@ function validate_matcher_cases(array &$failures, array $items, ?array $cases, s
                 ]);
             }
         }
+        foreach ($case['should_soft_accept'] ?? [] as $answer) {
+            $softAcceptCount++;
+            $result = captain_match_answer((string) $answer, $item);
+            if (!$result['correct'] || ($result['match_type'] ?? '') !== 'understood_non_standard') {
+                add_failure($failures, $block, 'should_soft_accept did not pass as understood_non_standard', [
+                    'item_id' => $caseId,
+                    'answer' => $answer,
+                    'correct' => $result['correct'] ?? false,
+                    'match_type' => $result['match_type'] ?? '',
+                ]);
+            }
+        }
         foreach ($case['should_reject'] ?? [] as $answer) {
             $rejectCount++;
             $result = captain_match_answer((string) $answer, $item);
@@ -325,7 +352,7 @@ function validate_matcher_cases(array &$failures, array $items, ?array $cases, s
         }
     }
 
-    return [$targetCount, $acceptCount, $rejectCount];
+    return [$targetCount, $acceptCount, $softAcceptCount, $rejectCount];
 }
 
 function validate_dangerous_pairs(array &$failures, array $items, array $pairs, string $block): array {
@@ -596,10 +623,11 @@ function validate_batch(array &$failures, array &$warnings, array $batch, array 
         }
     }
 
-    [$targets, $accepts, $rejects] = validate_matcher_cases($failures, $batch['items'] ?? [], null, 'batch_matcher');
+    [$targets, $accepts, $softAccepts, $rejects] = validate_matcher_cases($failures, $batch['items'] ?? [], null, 'batch_matcher');
     [$pairAccepts, $pairRejects] = validate_dangerous_pairs($failures, $batch['items'] ?? [], $batch['dangerous_minimal_pairs'] ?? [], 'batch_dangerous_pairs');
     $summary['target_text'] = $targets;
     $summary['should_accept'] = $accepts;
+    $summary['should_soft_accept'] = $softAccepts;
     $summary['should_reject'] = $rejects;
     $summary['danger_must_accept'] = $pairAccepts;
     $summary['danger_must_reject'] = $pairRejects;
@@ -631,7 +659,7 @@ foreach ($starter['items'] ?? [] as $item) {
 validate_id_sets($failures, $starter, $qa);
 $learningSummary = validate_learning_metadata($failures, $starter['items'] ?? [], $runs);
 
-[$targetCount, $acceptCount, $rejectCount] = validate_matcher_cases($failures, $starter['items'] ?? [], $qa['items'] ?? [], 'starter_regression');
+[$targetCount, $acceptCount, $softAcceptCount, $rejectCount] = validate_matcher_cases($failures, $starter['items'] ?? [], $qa['items'] ?? [], 'starter_regression');
 [$pairAcceptCount, $pairRejectCount] = validate_dangerous_pairs($failures, $starter['items'] ?? [], $qa['dangerous_minimal_pairs'] ?? [], 'starter_dangerous_pairs');
 $watchSummary = validate_watch_selection($failures, $starter, $runs);
 
@@ -661,6 +689,7 @@ echo "Regression:\n";
 echo "  qa_items: " . count($qa['items'] ?? []) . "\n";
 echo "  target_text: " . $targetCount . "\n";
 echo "  should_accept: " . $acceptCount . "\n";
+echo "  should_soft_accept: " . $softAcceptCount . "\n";
 echo "  should_reject: " . $rejectCount . "\n";
 echo "  dangerous_pairs: " . count($qa['dangerous_minimal_pairs'] ?? []) . "\n";
 echo "  danger_must_accept: " . $pairAcceptCount . "\n";
