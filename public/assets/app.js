@@ -8,6 +8,9 @@ const state = {
   usedHint: false,
   lastResult: null,
   postLoginAction: null,
+  answerBusy: false,
+  finishBusy: false,
+  finalResult: null,
 };
 
 const SUPPORTED_LOCALES = ['en', 'ru', 'de', 'it', 'es', 'sr', 'zh'];
@@ -143,7 +146,12 @@ const I18N = {
     'watch.previous': 'Previous answer',
     'watch.answerLabel': 'Your answer',
     'watch.answer': 'Answer',
+    'watch.checking': 'Checking...',
+    'watch.viewSummary': 'View summary',
+    'watch.closing': 'Closing watch...',
+    'watch.answerError': 'Keep your answer. The radio link did not close cleanly.',
     'watch.hint': 'Hint',
+    'watch.hintStep': 'Hint 1 of 1',
     'watch.hintSupportive': 'Hint support',
     'watch.hintStandard': 'Hint support',
     'watch.hintSparse': 'Hint pressure',
@@ -157,9 +165,14 @@ const I18N = {
     'watch.level': 'Level',
     'watch.type': 'Type',
     'watch.topic': 'Topic',
+    'watch.context': 'Watch context',
+    'watch.partnerTitle': 'Reserved partner space',
+    'watch.partnerCopy': 'Future maritime partner message. It stays outside the answer flow.',
     'watch.exitHub': 'Exit to hub',
     'result.standardAccepted': 'Accepted, here is the standard form',
+    'result.youWrote': 'You wrote',
     'result.standardForm': 'Standard form',
+    'result.finalComplete': 'Final call complete',
     'result.clean.recovery': 'Good. Keep it calm and repeat the standard form.',
     'result.clean.steady': 'Accepted. Keep the watch rhythm.',
     'result.clean.push': 'Correct. Next call.',
@@ -465,7 +478,12 @@ I18N.ru = {
   'watch.previous': 'Предыдущий ответ',
   'watch.answerLabel': 'Ваш ответ',
   'watch.answer': 'Ответить',
+  'watch.checking': 'Проверяем...',
+  'watch.viewSummary': 'Показать итог',
+  'watch.closing': 'Закрываем вахту...',
+  'watch.answerError': 'Ответ сохранён в поле. Радиосвязь не закрылась чисто.',
   'watch.hint': 'Подсказка',
+  'watch.hintStep': 'Подсказка 1 из 1',
   'watch.hintSupportive': 'Поддержка подсказки',
   'watch.hintStandard': 'Поддержка подсказки',
   'watch.hintSparse': 'Давление подсказки',
@@ -479,9 +497,14 @@ I18N.ru = {
   'watch.level': 'Уровень',
   'watch.type': 'Тип',
   'watch.topic': 'Тема',
+  'watch.context': 'Контекст вахты',
+  'watch.partnerTitle': 'Место для партнера',
+  'watch.partnerCopy': 'Будущее сообщение морского партнера. Оно не вмешивается в ответ.',
   'watch.exitHub': 'Выйти в хаб',
   'result.standardAccepted': 'Засчитано, вот стандартная форма',
+  'result.youWrote': 'Вы написали',
   'result.standardForm': 'Стандартная форма',
+  'result.finalComplete': 'Финальный вызов завершён',
   'result.clean.recovery': 'Хорошо. Спокойно повтори стандартную форму.',
   'result.clean.steady': 'Принято. Держи ритм вахты.',
   'result.clean.push': 'Верно. Следующий вызов.',
@@ -1352,7 +1375,7 @@ function levelCopy(level) {
 }
 
 async function startWatch(level, options = {}) {
-  app.innerHTML = `<section class="panel"><p class="status-line">${escapeHtml(t('status.loadingRadio'))}</p></section>`;
+  app.innerHTML = `<section class="panel"><p class="status-line" role="status" aria-live="polite">${escapeHtml(t('status.loadingRadio'))}</p></section>`;
   const body = { level };
   if (options && typeof options === 'object') {
     if (options.mode) body.mode = options.mode;
@@ -1367,11 +1390,16 @@ async function startWatch(level, options = {}) {
   state.currentQuestion = data.watch.current;
   state.usedHint = false;
   state.lastResult = null;
+  state.answerBusy = false;
+  state.finishBusy = false;
+  state.finalResult = null;
   renderWatch();
 }
 
 function renderWatch() {
   const q = state.currentQuestion;
+  const finalResult = state.finalResult;
+  const controlsLocked = state.answerBusy || state.finishBusy || !!finalResult;
   const progress = Math.round((q.index / state.watch.total) * 100);
   const remainingAfterThis = state.watch.total - q.index - 1;
   const hintPolicy = state.watch.hint_policy || {};
@@ -1383,7 +1411,7 @@ function renderWatch() {
   const skipReward = q.skip_reward ?? skipPolicy.reward ?? 0;
   const skipAvailable = q.skip_available !== false;
   app.innerHTML = html`
-    <section class="watch-layout captain-watch">
+    <section class="watch-layout captain-watch" aria-busy="${state.answerBusy || state.finishBusy ? 'true' : 'false'}">
       <div class="panel question-card">
         <header class="watch-hud">
           <div>
@@ -1404,28 +1432,31 @@ function renderWatch() {
           <p class="question-prompt" id="questionPrompt">${escapeHtml(q.prompt)}</p>
         </section>
 
-        <div id="resultBox" class="result-box result-box--previous ${resultClass(state.lastResult)} ${state.lastResult ? '' : 'is-hidden'}">
-          ${state.lastResult ? resultMarkup(state.lastResult, t('watch.previous')) : ''}
+        <div id="resultBox" class="result-box result-box--previous ${resultClass(finalResult || state.lastResult)} ${finalResult || state.lastResult ? '' : 'is-hidden'}">
+          ${finalResult ? resultMarkup(finalResult, t('result.finalComplete')) : (state.lastResult ? resultMarkup(state.lastResult, t('watch.previous')) : '')}
         </div>
 
         <form class="answer-form" id="answerForm">
           <label class="answer-field" for="answerInput">
             <span>${escapeHtml(t('watch.answerLabel'))}</span>
-            <input id="answerInput" autocomplete="off" placeholder="English radio phrase" />
+            <input id="answerInput" autocomplete="off" placeholder="English radio phrase" ${controlsLocked ? 'disabled' : ''} />
           </label>
-          <button class="button primary" id="answerButton" type="submit">${escapeHtml(t('watch.answer'))}</button>
+          <button class="button primary" id="answerButton" type="${finalResult ? 'button' : 'submit'}" ${state.answerBusy || state.finishBusy ? 'disabled' : ''}>
+            ${escapeHtml(state.answerBusy ? t('watch.checking') : (state.finishBusy ? t('watch.closing') : (finalResult ? t('watch.viewSummary') : t('watch.answer'))))}
+          </button>
         </form>
         <div class="watch-tools">
-          <button class="button" id="hintButton" type="button" ${hintAvailable ? '' : 'disabled'}>${escapeHtml(t('watch.hint'))}</button>
-          <button class="button ghost" id="skipButton" type="button" ${skipAvailable ? '' : 'disabled'}>${escapeHtml(t('watch.skip'))}</button>
+          <button class="button" id="hintButton" type="button" ${hintAvailable && !controlsLocked ? '' : 'disabled'}>${escapeHtml(t('watch.hintStep'))}</button>
+          <button class="button ghost" id="skipButton" type="button" ${skipAvailable && !controlsLocked ? '' : 'disabled'}>${escapeHtml(t('watch.skip'))}</button>
         </div>
         <div id="hintBox" class="result-box result-box--hint is-hidden">
           <span class="result-box__label">${escapeHtml(t('watch.hintLabel'))}</span>
           <p>${escapeHtml(q.hint || t('watch.noHint'))}</p>
         </div>
+        <p class="status-line" id="watchStatus" role="status" aria-live="polite"></p>
       </div>
       <aside class="panel watch-side">
-        <p class="eyebrow">${escapeHtml(t('watch.side'))}</p>
+        <p class="eyebrow">${escapeHtml(t('watch.context'))}</p>
         <div class="watch-side__grid">
           <div><small>${escapeHtml(t('watch.level'))}</small><strong>${levelLabel(q.level)}</strong></div>
           <div><small>${escapeHtml(t('watch.type'))}</small><strong>${questionTypeLabel(q.type)}</strong></div>
@@ -1433,12 +1464,16 @@ function renderWatch() {
           <div><small>${escapeHtml(hintMode === 'sparse' ? t('watch.hintSparse') : (hintMode === 'supportive' ? t('watch.hintSupportive') : t('watch.hintStandard')))}</small><strong>${escapeHtml(hintModeLabel(hintMode))} · ${hintReward}</strong></div>
           <div><small>${escapeHtml(skipMode === 'limited' ? t('watch.skipLimited') : (skipMode === 'supportive' ? t('watch.skipSupportive') : t('watch.skipStandard')))}</small><strong>${escapeHtml(skipModeLabel(skipMode))} · ${skipReward}</strong></div>
         </div>
+        <div class="partner-slot" aria-label="${escapeHtml(t('watch.partnerTitle'))}">
+          <strong>${escapeHtml(t('watch.partnerTitle'))}</strong>
+          <p>${escapeHtml(t('watch.partnerCopy'))}</p>
+        </div>
         <button class="button ghost" id="backHomeButton">${escapeHtml(t('watch.exitHub'))}</button>
       </aside>
     </section>
   `;
 
-  document.querySelector('#answerInput')?.focus();
+  if (!finalResult) document.querySelector('#answerInput')?.focus();
   document.querySelector('#hintButton')?.addEventListener('click', () => {
     if (!hintAvailable) return;
     state.usedHint = true;
@@ -1447,6 +1482,9 @@ function renderWatch() {
   document.querySelector('#answerForm')?.addEventListener('submit', (event) => {
     event.preventDefault();
     submitAnswer(false);
+  });
+  document.querySelector('#answerButton')?.addEventListener('click', () => {
+    if (state.finalResult) finishWatch();
   });
   document.querySelector('#skipButton')?.addEventListener('click', () => {
     if (!skipAvailable) return;
@@ -1475,38 +1513,86 @@ function resultMarkup(result, label = null) {
   return html`
     ${label ? `<span class="result-box__label">${escapeHtml(label)}</span>` : ''}
     <strong>${escapeHtml(resultTitle(result))}</strong>
+    ${result.user_answer !== undefined ? `<p><span>${escapeHtml(t('result.youWrote'))}</span>${escapeHtml(result.user_answer || '—')}</p>` : ''}
     <p><span>${escapeHtml(t('result.standardForm'))}</span>${escapeHtml(result.target_text)}</p>
   `;
 }
 
 async function submitAnswer(skipped) {
+  if (state.answerBusy || state.finishBusy || state.finalResult) return;
   const input = document.querySelector('#answerInput');
-  const data = await api('/api/captain-ether/submit-answer.php', {
-    method: 'POST',
-    body: JSON.stringify({
-      watch_id: state.watch.id,
-      index: state.currentQuestion.index,
-      answer: skipped ? '' : input.value,
-      used_hint: state.usedHint,
-      skipped,
-    }),
-  });
+  const submittedAnswer = skipped ? '' : input.value;
+  const status = document.querySelector('#watchStatus');
+  state.answerBusy = true;
+  document.querySelector('#answerButton')?.setAttribute('disabled', 'disabled');
+  document.querySelector('#hintButton')?.setAttribute('disabled', 'disabled');
+  document.querySelector('#skipButton')?.setAttribute('disabled', 'disabled');
+  input?.setAttribute('disabled', 'disabled');
+  if (status) status.textContent = t('watch.checking');
 
-  state.lastResult = data;
-  if (data.done) {
-    await finishWatch();
-    return;
+  try {
+    const data = await api('/api/captain-ether/submit-answer.php', {
+      method: 'POST',
+      body: JSON.stringify({
+        watch_id: state.watch.id,
+        index: state.currentQuestion.index,
+        answer: submittedAnswer,
+        used_hint: state.usedHint,
+        skipped,
+      }),
+    });
+
+    data.user_answer = submittedAnswer;
+    state.answerBusy = false;
+    state.lastResult = data;
+    if (data.done) {
+      state.finalResult = data;
+      renderWatch();
+      return;
+    }
+    state.currentQuestion = data.next;
+    state.usedHint = false;
+    renderWatch();
+  } catch (error) {
+    state.answerBusy = false;
+    document.querySelector('#answerButton')?.removeAttribute('disabled');
+    if (state.currentQuestion?.hint_available !== false) {
+      document.querySelector('#hintButton')?.removeAttribute('disabled');
+    }
+    if (state.currentQuestion?.skip_available !== false) {
+      document.querySelector('#skipButton')?.removeAttribute('disabled');
+    }
+    input?.removeAttribute('disabled');
+    if (status) status.textContent = `${t('watch.answerError')} ${error.message}`;
   }
-  state.currentQuestion = data.next;
-  state.usedHint = false;
-  renderWatch();
 }
 
 async function finishWatch() {
-  const data = await api('/api/captain-ether/finish-watch.php', {
-    method: 'POST',
-    body: JSON.stringify({ watch_id: state.watch.id }),
-  });
+  if (state.finishBusy) return;
+  state.finishBusy = true;
+  const status = document.querySelector('#watchStatus');
+  const button = document.querySelector('#answerButton');
+  if (status) status.textContent = t('watch.closing');
+  if (button) {
+    button.setAttribute('disabled', 'disabled');
+    button.textContent = t('watch.closing');
+  }
+  let data;
+  try {
+    data = await api('/api/captain-ether/finish-watch.php', {
+      method: 'POST',
+      body: JSON.stringify({ watch_id: state.watch.id }),
+    });
+  } catch (error) {
+    state.finishBusy = false;
+    if (button) {
+      button.removeAttribute('disabled');
+      button.textContent = t('watch.viewSummary');
+    }
+    if (status) status.textContent = error.message;
+    return;
+  }
+  state.finalResult = null;
   const s = data.summary;
   const recommendedLevel = s.recommended_level || 'beginner';
   const recommendedBranch = s.recommended_branch || '';
