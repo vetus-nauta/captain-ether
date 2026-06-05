@@ -79,6 +79,15 @@ function captain_filter_error(string $error, string $reason, int $status = 400):
     ]);
 }
 
+function captain_first_session_items(array $items): array {
+    return array_values(array_filter($items, static function ($item): bool {
+        return is_array($item)
+            && ($item['first_session_allowed'] ?? false) === true
+            && (int) ($item['stage_min'] ?? 99) === 0
+            && in_array((string) ($item['voice_role'] ?? ''), ['vessel_origin', 'neutral_procedure'], true);
+    }));
+}
+
 function captain_focused_branch_enabled(string $branch, string $level): bool {
     if (in_array($branch, ['core_radio', 'marina_harbour'], true)) {
         return true;
@@ -493,6 +502,14 @@ $weak = captain_stream_unresolved_weak_points($user['id'], $learnerStream);
 $progress = captain_stream_user_progress($user['id'], $learnerStream);
 $selectionContext = captain_selection_context($progress + ['learner_stream' => $learnerStream], $weak, $byId);
 $selectionContext['pacing'] = captain_watch_pacing($level, $progress + ['learner_stream' => $learnerStream], count($weak));
+$isFirstSessionWatch = $learnerStream !== CAPTAIN_LEARNER_STREAM_ENGLISH_NATIVE
+    && $level === 'beginner'
+    && $mode === 'mixed'
+    && (int) ($progress['completed_watches'] ?? 0) === 0;
+if ($isFirstSessionWatch) {
+    $items = captain_first_session_items($items);
+    $selectionContext['first_session'] = true;
+}
 $hintPolicy = captain_hint_policy($selectionContext['pacing'], $level);
 $sessionSkipPolicy = captain_skip_policy($selectionContext['pacing'], ['type' => 'phrase']);
 
@@ -559,6 +576,7 @@ json_response(200, [
         'learner_stream' => $learnerStream,
         'level' => $level,
         'pacing' => $selectionContext['pacing'],
+        'first_session' => $isFirstSessionWatch,
         'hint_policy' => $hintPolicy,
         'skip_policy' => $sessionSkipPolicy,
         'total' => count($questions),

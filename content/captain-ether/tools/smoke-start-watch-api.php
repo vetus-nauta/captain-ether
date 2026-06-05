@@ -348,6 +348,16 @@ function smoke_selected_items(string $watchId): array {
     return $result;
 }
 
+function smoke_all_stage0_items(array $items): bool {
+    if (!$items) return false;
+    foreach ($items as $item) {
+        if (($item['first_session_allowed'] ?? false) !== true) return false;
+        if ((int) ($item['stage_min'] ?? 99) !== 0) return false;
+        if (!in_array((string) ($item['voice_role'] ?? ''), ['vessel_origin', 'neutral_procedure'], true)) return false;
+    }
+    return true;
+}
+
 function smoke_count_branch(array $items, string $branch): int {
     return count(array_filter($items, static fn(array $item): bool => ($item['branch'] ?? '') === $branch));
 }
@@ -521,7 +531,9 @@ try {
     $server = smoke_start_server($phpBin, $appRoot, $port, (string) $serverLog);
     smoke_wait_for_server('127.0.0.1', $port);
 
-    smoke_start_watch('mixed beginner default', ['level' => 'beginner'], 'beginner');
+    $firstBeginnerWatch = smoke_start_watch('mixed beginner default', ['level' => 'beginner'], 'beginner');
+    smoke_check('mixed beginner default first-session flag', (smoke_read_json('watch_sessions', ['sessions' => []])['sessions'][$firstBeginnerWatch]['level'] ?? '') === 'beginner', 'beginner watch was not stored');
+    smoke_check('mixed beginner default stage0 selection', smoke_all_stage0_items(smoke_selected_items($firstBeginnerWatch)), 'first beginner watch leaked non Stage 0 item');
     smoke_start_watch('mixed intermediate', ['level' => 'intermediate'], 'intermediate');
     smoke_start_watch('mixed advanced', ['level' => 'advanced'], 'advanced');
     smoke_start_watch('legacy branch ignored', ['level' => 'beginner', 'branch' => 'core_radio'], 'beginner');

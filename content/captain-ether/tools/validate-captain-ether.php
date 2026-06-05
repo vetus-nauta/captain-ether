@@ -151,6 +151,91 @@ function validate_required_item_fields(array &$failures, array &$warnings, array
     }
 }
 
+function validate_learning_metadata(array &$failures, array $items, int $runs): array {
+    $voiceRoles = ['vessel_origin', 'shore_station_origin', 'onboard_internal', 'neutral_procedure', 'exam_meta'];
+    $stage0Items = [];
+    $badStage0Branches = [
+        'onboard_operations' => true,
+        'mixed_safety_equipment_deck_operations' => true,
+        'emergency_medical_response' => true,
+        'review_minimal_pairs' => true,
+        'traffic_collision' => true,
+        'vts_port_control' => true,
+    ];
+
+    foreach ($items as $item) {
+        if (!is_array($item)) continue;
+        $id = (string) ($item['id'] ?? '');
+        foreach (['voice_role', 'stage_min', 'first_session_allowed', 'strict_smcp_required', 'soft_accept_allowed', 'protected_family'] as $field) {
+            if (!array_key_exists($field, $item)) {
+                add_failure($failures, 'learning_metadata', 'Missing learning metadata field', ['item_id' => $id, 'field' => $field]);
+            }
+        }
+        if (!in_array((string) ($item['voice_role'] ?? ''), $voiceRoles, true)) {
+            add_failure($failures, 'learning_metadata', 'Invalid voice_role', ['item_id' => $id, 'voice_role' => $item['voice_role'] ?? null]);
+        }
+        if (!in_array((int) ($item['stage_min'] ?? -1), [0, 1, 2, 3], true)) {
+            add_failure($failures, 'learning_metadata', 'Invalid stage_min', ['item_id' => $id, 'stage_min' => $item['stage_min'] ?? null]);
+        }
+        foreach (['first_session_allowed', 'strict_smcp_required', 'soft_accept_allowed'] as $field) {
+            if (!is_bool($item[$field] ?? null)) {
+                add_failure($failures, 'learning_metadata', 'Learning metadata boolean field is not boolean', ['item_id' => $id, 'field' => $field]);
+            }
+        }
+        if (trim((string) ($item['protected_family'] ?? '')) === '') {
+            add_failure($failures, 'learning_metadata', 'protected_family is empty', ['item_id' => $id]);
+        }
+
+        if (($item['first_session_allowed'] ?? false) === true) {
+            $stage0Items[] = $item;
+            if (($item['level'] ?? '') !== 'beginner') {
+                add_failure($failures, 'stage0_metadata', 'Stage 0 item is not beginner', ['item_id' => $id]);
+            }
+            if ((int) ($item['stage_min'] ?? -1) !== 0) {
+                add_failure($failures, 'stage0_metadata', 'Stage 0 item stage_min is not 0', ['item_id' => $id]);
+            }
+            if (!in_array((string) ($item['voice_role'] ?? ''), ['vessel_origin', 'neutral_procedure'], true)) {
+                add_failure($failures, 'stage0_metadata', 'Stage 0 item has blocked voice_role', ['item_id' => $id, 'voice_role' => $item['voice_role'] ?? null]);
+            }
+            if (isset($badStage0Branches[(string) ($item['branch'] ?? '')])) {
+                add_failure($failures, 'stage0_metadata', 'Stage 0 item is in blocked branch', ['item_id' => $id, 'branch' => $item['branch'] ?? '']);
+            }
+        }
+    }
+
+    if (count($stage0Items) < 40) {
+        add_failure($failures, 'stage0_metadata', 'Stage 0 eligible pool is below minimum', ['count' => count($stage0Items), 'minimum' => 40]);
+    }
+
+    $reached = [];
+    $badRuns = 0;
+    for ($run = 0; $run < $runs; $run++) {
+        $selected = validator_select_watch_items($stage0Items, validator_watch_length('beginner'), 'beginner');
+        foreach ($selected as $item) {
+            $reached[(string) ($item['id'] ?? '')] = true;
+        }
+        if (count($selected) !== validator_watch_length('beginner')) {
+            $badRuns++;
+            add_failure($failures, 'stage0_selection', 'Stage 0 watch length mismatch', ['run' => $run + 1, 'actual' => count($selected)]);
+        }
+        foreach ($selected as $item) {
+            if (($item['first_session_allowed'] ?? false) !== true || (int) ($item['stage_min'] ?? 99) !== 0) {
+                $badRuns++;
+                add_failure($failures, 'stage0_selection', 'Stage 0 selection leaked blocked item', ['run' => $run + 1, 'item_id' => $item['id'] ?? '']);
+                break;
+            }
+        }
+    }
+
+    return [
+        'stage0_allowed' => count($stage0Items),
+        'runs' => $runs,
+        'length' => validator_watch_length('beginner'),
+        'bad_runs' => $badRuns,
+        'reached' => count($reached),
+    ];
+}
+
 function validate_matcher_cases(array &$failures, array $items, ?array $cases, string $block): array {
     $itemsById = items_by_id($items);
     $targetCount = 0;
@@ -544,6 +629,7 @@ foreach ($starter['items'] ?? [] as $item) {
     }
 }
 validate_id_sets($failures, $starter, $qa);
+$learningSummary = validate_learning_metadata($failures, $starter['items'] ?? [], $runs);
 
 [$targetCount, $acceptCount, $rejectCount] = validate_matcher_cases($failures, $starter['items'] ?? [], $qa['items'] ?? [], 'starter_regression');
 [$pairAcceptCount, $pairRejectCount] = validate_dangerous_pairs($failures, $starter['items'] ?? [], $qa['dangerous_minimal_pairs'] ?? [], 'starter_dangerous_pairs');
@@ -567,6 +653,9 @@ echo "  type_counts: " . json_encode(count_by($starter['items'] ?? [], 'type'), 
 echo "  level_counts: " . json_encode(count_by($starter['items'] ?? [], 'level'), JSON_UNESCAPED_SLASHES) . "\n";
 echo "  branch_counts: " . json_encode(count_by($starter['items'] ?? [], 'branch'), JSON_UNESCAPED_SLASHES) . "\n";
 echo "  module_counts: " . json_encode(count_by($starter['items'] ?? [], 'module'), JSON_UNESCAPED_SLASHES) . "\n";
+echo "  voice_role_counts: " . json_encode(count_by($starter['items'] ?? [], 'voice_role'), JSON_UNESCAPED_SLASHES) . "\n";
+echo "  stage_min_counts: " . json_encode(count_by($starter['items'] ?? [], 'stage_min'), JSON_UNESCAPED_SLASHES) . "\n";
+echo "  first_session_allowed: " . json_encode($learningSummary, JSON_UNESCAPED_SLASHES) . "\n";
 echo "\n";
 echo "Regression:\n";
 echo "  qa_items: " . count($qa['items'] ?? []) . "\n";
