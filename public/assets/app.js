@@ -7,6 +7,7 @@ const state = {
   currentQuestion: null,
   usedHint: false,
   lastResult: null,
+  postLoginAction: null,
 };
 
 const SUPPORTED_LOCALES = ['en', 'ru', 'de', 'it', 'es', 'sr', 'zh'];
@@ -102,6 +103,27 @@ const I18N = {
     'auth.localCode': 'Local code: {code}',
     'auth.sent': 'Code sent by email.',
     'auth.verifying': 'Checking call sign...',
+    'auth.firstWatchTitle': 'Log in to take your first watch',
+    'auth.firstWatchCopy': 'The code keeps your watch, hints, and Lost Oars attached to this Captain Ether session.',
+    'firstRun.eyebrow': 'Captain Ether',
+    'firstRun.title': 'Take your first radio watch',
+    'firstRun.copy': 'Start with a calm 12-call watch: plain radio words, short phrases, and first replies on air.',
+    'firstRun.primary': 'Take first watch',
+    'firstRun.loginPrimary': 'Log in and take first watch',
+    'firstRun.readyTitle': 'Ready for the first watch',
+    'firstRun.readyCopy': 'Beginner mode is selected. You can start now; harder watches stay secondary until the first rhythm is clear.',
+    'firstRun.beginnerBadge': 'Recommended first',
+    'firstRun.beginnerTitle': 'Beginner short watch',
+    'firstRun.beginnerCopy': '12 calls. No exam noise. The goal is to answer calmly and see the standard form.',
+    'firstRun.whatTitle': 'What happens next',
+    'firstRun.what1': 'You translate one short call into English Sea Speak.',
+    'firstRun.what2': 'The system shows the standard form after each answer.',
+    'firstRun.what3': 'The summary tells you the next useful move without technical pressure.',
+    'firstRun.otherTitle': 'Other watches',
+    'firstRun.otherCopy': 'Use these after the first watch or when you already know the radio rhythm.',
+    'firstRun.showLevels': 'Show other levels',
+    'firstRun.hideLevels': 'Hide other levels',
+    'firstRun.backHub': 'Back to game hub',
     'levels.eyebrow': 'Captain Ether',
     'levels.title': 'Choose a watch',
     'levels.copy': 'Short radio watches: no exam noise, from simple words to working phrases.',
@@ -403,6 +425,27 @@ I18N.ru = {
   'auth.localCode': 'Локальный код: {code}',
   'auth.sent': 'Код отправлен на email.',
   'auth.verifying': 'Проверяем позывной...',
+  'auth.firstWatchTitle': 'Войдите, чтобы начать первую вахту',
+  'auth.firstWatchCopy': 'Код привяжет вахту, подсказки и Lost Oars к этой сессии Captain Ether.',
+  'firstRun.eyebrow': 'Captain Ether',
+  'firstRun.title': 'Начните первую радиовахту',
+  'firstRun.copy': 'Спокойная вахта на 12 вызовов: базовые радиослова, короткие фразы и первые ответы в эфире.',
+  'firstRun.primary': 'Начать первую вахту',
+  'firstRun.loginPrimary': 'Войти и начать первую вахту',
+  'firstRun.readyTitle': 'Первая вахта готова',
+  'firstRun.readyCopy': 'Выбран beginner. Можно начинать; сложные вахты остаются вторым действием, пока не появится ритм.',
+  'firstRun.beginnerBadge': 'Рекомендуется первой',
+  'firstRun.beginnerTitle': 'Короткая beginner-вахта',
+  'firstRun.beginnerCopy': '12 вызовов. Без экзаменационного шума. Цель - спокойно ответить и увидеть стандартную форму.',
+  'firstRun.whatTitle': 'Что будет дальше',
+  'firstRun.what1': 'Вы переводите один короткий вызов в английский Sea Speak.',
+  'firstRun.what2': 'После ответа система показывает стандартную форму.',
+  'firstRun.what3': 'Итог подсказывает следующий полезный шаг без технического давления.',
+  'firstRun.otherTitle': 'Другие вахты',
+  'firstRun.otherCopy': 'Используйте их после первой вахты или если уже понимаете ритм радиообмена.',
+  'firstRun.showLevels': 'Показать другие уровни',
+  'firstRun.hideLevels': 'Скрыть другие уровни',
+  'firstRun.backHub': 'Вернуться в игровой хаб',
   'levels.eyebrow': 'Капитан — Эфир',
   'levels.title': 'Выберите вахту',
   'levels.copy': 'Короткие радио-вахты: без экзаменационного шума, от простых слов к рабочим фразам.',
@@ -1040,11 +1083,7 @@ function openGame(slug) {
 
 function renderGameRoute(game) {
   if (game.slug === 'captain_ether') {
-    if (!state.user) {
-      renderLogin();
-      return;
-    }
-    renderLevelSelect();
+    renderCaptainFirstRun();
     return;
   }
   renderGameBrief(game);
@@ -1106,14 +1145,20 @@ function lostReasonLabel(reason) {
   return t(`lostReason.${reason}`) || t('lostReason.wrong');
 }
 
-function renderLogin() {
+function renderLogin(options = {}) {
+  const title = options.title || t('auth.title');
+  const copy = options.copy || t('auth.copy');
+  const afterLogin = typeof options.afterLogin === 'function' ? options.afterLogin : null;
+  if (afterLogin) {
+    state.postLoginAction = afterLogin;
+  }
   app.innerHTML = html`
     ${languageReminderMarkup()}
     <section class="panel auth-panel">
       <div>
         <p class="eyebrow">${escapeHtml(t('auth.eyebrow'))}</p>
-        <h1>${escapeHtml(t('auth.title'))}</h1>
-        <p class="muted">${escapeHtml(t('auth.copy'))}</p>
+        <h1>${escapeHtml(title)}</h1>
+        <p class="muted">${escapeHtml(copy)}</p>
       </div>
       <form class="auth-form" id="loginForm">
         <label>
@@ -1125,11 +1170,11 @@ function renderLogin() {
       <form class="auth-form is-hidden" id="codeForm">
         <label>
           <span>${escapeHtml(t('auth.codeLabel'))}</span>
-          <input type="text" name="code" inputmode="numeric" maxlength="6" required placeholder="000000" />
+          <input type="text" name="code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" required placeholder="000000" />
         </label>
         <button class="button primary" type="submit">${escapeHtml(t('auth.submit'))}</button>
       </form>
-      <p class="status-line" id="authStatus"></p>
+      <p class="status-line" id="authStatus" role="status" aria-live="polite"></p>
     </section>
   `;
   let email = '';
@@ -1169,11 +1214,107 @@ function renderLogin() {
       state.user = data.user;
       state.csrf = data.csrf;
       renderProfile();
-      await renderCurrentRoute();
+      const next = state.postLoginAction;
+      state.postLoginAction = null;
+      if (typeof next === 'function') {
+        await next();
+      } else {
+        await renderCurrentRoute();
+      }
     } catch (error) {
       status.textContent = error.message;
     }
   });
+}
+
+function renderCaptainFirstRun(options = {}) {
+  const isReady = !!state.user || options.ready;
+  app.innerHTML = html`
+    ${languageReminderMarkup()}
+    <section class="captain-first-run">
+      <div class="panel captain-first-run__hero">
+        <p class="eyebrow">${escapeHtml(t('firstRun.eyebrow'))}</p>
+        <h1>${escapeHtml(isReady ? t('firstRun.readyTitle') : t('firstRun.title'))}</h1>
+        <p class="muted">${escapeHtml(isReady ? t('firstRun.readyCopy') : t('firstRun.copy'))}</p>
+        <div class="first-watch-card" aria-label="${escapeHtml(t('firstRun.beginnerTitle'))}">
+          <span class="status-pill">${escapeHtml(t('firstRun.beginnerBadge'))}</span>
+          <strong>${escapeHtml(t('firstRun.beginnerTitle'))}</strong>
+          <p class="muted">${escapeHtml(t('firstRun.beginnerCopy'))}</p>
+        </div>
+        <div class="actions">
+          <button class="button primary" id="firstWatchButton">${escapeHtml(state.user ? t('firstRun.primary') : t('firstRun.loginPrimary'))}</button>
+          <button class="button ghost" id="firstRunBackButton">${escapeHtml(t('firstRun.backHub'))}</button>
+        </div>
+        <p class="status-line" id="firstRunStatus" role="status" aria-live="polite"></p>
+      </div>
+      <aside class="panel captain-first-run__side">
+        <p class="eyebrow">${escapeHtml(t('firstRun.whatTitle'))}</p>
+        <ol class="first-run-steps">
+          <li>${escapeHtml(t('firstRun.what1'))}</li>
+          <li>${escapeHtml(t('firstRun.what2'))}</li>
+          <li>${escapeHtml(t('firstRun.what3'))}</li>
+        </ol>
+        <div class="first-run-secondary">
+          <p class="eyebrow">${escapeHtml(t('firstRun.otherTitle'))}</p>
+          <p class="muted">${escapeHtml(t('firstRun.otherCopy'))}</p>
+          <button class="button" id="toggleLevelsButton" type="button" aria-expanded="false">${escapeHtml(t('firstRun.showLevels'))}</button>
+        </div>
+      </aside>
+    </section>
+    <section class="panel captain-levels captain-levels--secondary is-hidden" id="secondaryLevels">
+      <p class="eyebrow">${escapeHtml(t('levels.eyebrow'))}</p>
+      <h2>${escapeHtml(t('levels.title'))}</h2>
+      <p class="muted">${escapeHtml(t('levels.copy'))}</p>
+      <div class="game-grid">
+        ${['intermediate', 'advanced'].map((level) => html`
+          <article class="game-card">
+            <span class="status-pill">${levelLabel(level)}</span>
+            <strong>${levelCopy(level).title}</strong>
+            <p class="muted">${levelCopy(level).text}</p>
+            <button class="button" data-level="${level}">${escapeHtml(t('levels.start'))}</button>
+          </article>
+        `).join('')}
+      </div>
+      ${isAdmin() ? `<div class="actions"><button class="button" id="answerLogLevelButton">${escapeHtml(t('home.answerLog'))}</button></div>` : ''}
+    </section>
+  `;
+
+  document.querySelector('#firstWatchButton')?.addEventListener('click', startFirstWatchFlow);
+  document.querySelector('#firstRunBackButton')?.addEventListener('click', navigateHome);
+  document.querySelector('#toggleLevelsButton')?.addEventListener('click', (event) => {
+    const levels = document.querySelector('#secondaryLevels');
+    const expanded = !levels?.classList.contains('is-hidden');
+    levels?.classList.toggle('is-hidden', expanded);
+    event.currentTarget.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+    event.currentTarget.textContent = expanded ? t('firstRun.showLevels') : t('firstRun.hideLevels');
+  });
+  document.querySelectorAll('#secondaryLevels [data-level]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const level = button.dataset.level;
+      if (!state.user) {
+        renderLogin({
+          title: t('auth.firstWatchTitle'),
+          copy: t('auth.firstWatchCopy'),
+          afterLogin: () => startWatch(level),
+        });
+        return;
+      }
+      startWatch(level);
+    });
+  });
+  document.querySelector('#answerLogLevelButton')?.addEventListener('click', renderAnswerLog);
+}
+
+function startFirstWatchFlow() {
+  if (!state.user) {
+    renderLogin({
+      title: t('auth.firstWatchTitle'),
+      copy: t('auth.firstWatchCopy'),
+      afterLogin: () => startWatch('beginner', { mode: 'mixed' }),
+    });
+    return;
+  }
+  startWatch('beginner', { mode: 'mixed' });
 }
 
 function renderLevelSelect() {

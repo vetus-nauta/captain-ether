@@ -75,6 +75,7 @@ CE-0194F Progression Algorithm Architect launched as Wave 2 after beginner/seman
 CE-0195 Implementation Backlog From Agent Reports consolidated CE-0194A through CE-0194F into seven sequenced implementation slices with dependencies, future write scopes, QA gates, risks, and CEO approval gates. No code changes.
 CE-0196 Big Implementation Sprint Plan prepared the execution runbook for CE-0195: local-first implementation slices, commit strategy, QA gates, stop rules, optional agent ownership matrix, and production-sync separation. No code changes.
 CE-0196A Pre-Code Inspection And Baseline QA passed: Git synced, validator PASS, API smoke PASS checks=334, implementation contracts inspected, and next slice is CE-0196B first-run funnel. No runtime code changes.
+CE-0196B First-Run Funnel Cleanup implemented locally: dedicated Captain Ether first-run screen, preserved first-watch login intent, hidden secondary harder levels, accessible status lines, and responsive first-run layout. QA PASS. Production unchanged.
 local_github_starter_items=1000
 local_github_grammar_patterns=581
 local_github_qa_items=1000
@@ -101,7 +102,8 @@ progression_algorithm_architect=REPORT_READY_ACCEPTED_FOR_BACKLOG_CONSOLIDATION_
 agent_report_implementation_backlog=BACKLOG_READY_NO_CODE
 big_implementation_sprint_plan=SPRINT_READY_NO_CODE
 ce_0196a_pre_code_baseline=BASELINE_PASS_READY_FOR_CE_0196B_NO_CODE
-Next task: Implement CE-0196B First-Run Funnel Cleanup locally. Production sync remains a separate explicit task.
+ce_0196b_first_run_funnel=IMPLEMENTED_LOCAL_QA_PASS_PRODUCTION_UNCHANGED
+Next task: Implement CE-0196C Active Watch HUD locally. Production sync remains a separate explicit task.
 ```
 
 Older sections below preserve historical context and may mention earlier
