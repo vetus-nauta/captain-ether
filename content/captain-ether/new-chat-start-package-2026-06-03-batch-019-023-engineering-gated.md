@@ -11,6 +11,19 @@ Canonical status: Captain Ether 1000-item main course content/runtime and runtim
 
 This file is the canonical start point for the next chat.
 
+Current Director handoff for continuation from CE-0196 RC:
+
+```text
+content/captain-ether/new-director-start-handoff-2026-06-06.md
+```
+
+GitHub-only local bootstrap guide:
+
+```text
+docs/local-bootstrap-from-github-2026-06-06.md
+```
+
+
 It supersedes older start handoff files that mention only Batch 018 production
 sync, pre-production parity, `500` local items, or full local/production parity.
 Those files are historical context only.

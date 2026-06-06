@@ -81,6 +81,7 @@ CE-0196D Stage 0 Beginner Routing And Metadata implemented locally: added learni
 CE-0196E Semantic Soft Acceptance implemented locally: deterministic item-local `understood_non_standard` matcher, `soft_accept` scoring at 80%, answer-log standard-form friction, regression `should_soft_accept=5`, and API smoke soft-boundary checks. QA PASS. Production unchanged.
 CE-0196F Progression Evidence And Summary Simplification implemented locally: finish summary now exposes `soft_accept`, `primary_action`, plain evidence, and `show_pressure_maps=false`; player UI hides technical pressure maps and avoids duplicate revision CTAs. QA PASS. Production unchanged.
 CE-0196G Release-Candidate QA passed: GitHub parity 0 0, PHP/JS/JSON syntax gates PASS, validator PASS, API smoke PASS checks=347. Local/GitHub release candidate is ready; production sync was not run and requires explicit authorization.
+New Director handoff created for 2026-06-06: `content/captain-ether/new-director-start-handoff-2026-06-06.md`; GitHub-only bootstrap guide: `docs/local-bootstrap-from-github-2026-06-06.md`.
 local_github_starter_items=1000
 local_github_grammar_patterns=581
 local_github_qa_items=1000

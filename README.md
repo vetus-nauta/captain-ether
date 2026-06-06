@@ -36,10 +36,16 @@ this filter. GitHub sync is not production deploy.
 
 ## Current Handoff
 
-For a fresh Codex/ChatGPT session, start with:
+For a fresh Codex/ChatGPT session or a new Captain Ether director, start with:
 
 ```text
-docs/new-chat-handoff-2026-05-26.md
+content/captain-ether/new-director-start-handoff-2026-06-06.md
+```
+
+For GitHub-only local bootstrap on another PC, use:
+
+```text
+docs/local-bootstrap-from-github-2026-06-06.md
 ```
 
 ## Local Run
